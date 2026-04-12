@@ -81,8 +81,8 @@ a{text-decoration:none;color:inherit}
 .m-bar{height:100%;border-radius:99px}
 .m-val{font-size:11.5px;font-weight:600;color:#444}
 .m-na{font-size:11.5px;color:#ccc}
-.card-foot{display:flex;align-items:flex-end;justify-content:space-between;border-top:1px solid #f0f0ee;padding-top:10px;gap:8px;margin-top:auto}
-.card-phone{font-size:11.5px;color:#444;font-weight:500;display:flex;align-items:center;gap:4px;white-space:nowrap;}
+.card-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0ee;padding-top:10px;gap:8px;margin-top:auto}
+.card-phone{font-size:11.5px;color:#444;font-weight:500;display:flex;align-items:center;gap:4px}
 .card-phone:hover{color:#003087}
 .actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
 .pill{font-size:10.5px;padding:4px 9px;border-radius:6px;font-weight:600;white-space:nowrap;transition:opacity .15s}
@@ -319,7 +319,7 @@ function render(){
         <div class="actions">
           <a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>
           ${cqcBtn}
-          <a class="pill pill-ods" href="https://www.odsdatasearchandexport.nhs.uk/?search=generalorg&query=${d.o}" target="_blank">View on ODS</a>
+           <a class="pill pill-ods" href="https://www.odsdatasearchandexport.nhs.uk/Organisation/Search?Code=${d.o}
         </div>
       </div>
       ${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}
