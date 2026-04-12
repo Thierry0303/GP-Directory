@@ -6,22 +6,32 @@ from datetime import datetime
 print("Loading gps.json...")
 with open("gps.json") as f:
     BASE_DATA = json.load(f)
+
+# Filter to genuine GP practices only
+# Keep: has GPPS score, has CQC rating, or standard GP ODS prefix
+GP_PREFIXES = ('E83','E84','E85','E86','E87','F83','F84','F85','F86',
+               'G83','G84','G85','H83','H84','H85')
+BASE_DATA = [d for d in BASE_DATA if
+    d.get('gpps_overall_pct') or
+    d.get('cqc_rating') or
+    d.get('ods_code','')[:3] in GP_PREFIXES]
+
 base_by_ods = {d["ods_code"]: d for d in BASE_DATA}
 ods_codes = list(base_by_ods.keys())
-print(f"  {len(ods_codes)} practices")
+print(f"  {len(ods_codes)} genuine GP practices")
 
 def fetch(ods):
-    url = f"https://directory.spineservices.nhs.uk/STU3/Organization?identifier=https%3A%2F%2Ffhir.nhs.uk%2FId%2Fods-organization-code%7C{ods}&_format=json"
+    url = (f"https://directory.spineservices.nhs.uk/STU3/Organization"
+           f"?identifier=https%3A%2F%2Ffhir.nhs.uk%2FId%2Fods-organization-code%7C{ods}"
+           f"&_format=json")
     try:
         req = urllib.request.Request(url, headers={"Accept": "application/json"})
         with urllib.request.urlopen(req, timeout=8) as r:
             data = json.loads(r.read())
             entries = data.get("entry", [])
-            if not entries:
-                return ods, None
+            if not entries: return ods, None
             res = entries[0].get("resource", {})
-            if not res.get("active", True):
-                return ods, {"inactive": True}
+            if not res.get("active", True): return ods, {"inactive": True}
             tc = res.get("telecom", [])
             phone = next((t.get("value","") for t in tc if t.get("system")=="phone"), "")
             addrs = res.get("address", [])
@@ -33,7 +43,7 @@ def fetch(ods):
             city = addr.get("city","")
             address = ", ".join(filter(None, lines + ([city] if city else [])))
             address = address.title() if address.isupper() else address
-            return ods, {"name": name, "phone": phone, "address": address, "postcode": postcode}
+            return ods, {"name":name,"phone":phone,"address":address,"postcode":postcode}
     except Exception:
         return ods, None
 
@@ -98,7 +108,6 @@ PC = {
   "W10":(51.5208,-0.2153),"W11":(51.5105,-0.2034),"W12":(51.5067,-0.2311),
   "W13":(51.5045,-0.3178),"W14":(51.4969,-0.2158),
 }
-
 AREAS = {
   "N1":"Islington","N4":"Finsbury Park","N5":"Highbury","N6":"Highgate",
   "N7":"Holloway","N8":"Hornsey","N9":"Edmonton","N10":"Muswell Hill",
@@ -128,7 +137,7 @@ def geo(pc):
     if d in PC: return PC[d]
     s = re.match(r'^([A-Z]{1,2}\d)', p)
     d2 = s.group(1) if s else ""
-    return PC.get(d2, (None, None))
+    return PC.get(d2,(None,None))
 
 def area(pc):
     if not pc: return ""
@@ -166,14 +175,17 @@ for ods in ods_codes:
         "ln": round(lng,5) if lng else None,
     })
 
-print(f"  {len(merged)} active practices")
+print(f"  {len(merged)} active GP practices")
 
 print("Writing index.html...")
 DATA_JS = json.dumps(merged, separators=(",",":"))
 date = datetime.utcnow().strftime("%-d %B %Y")
 with open("index.template.html") as f:
     html = f.read()
-html = html.replace("__DATA_PLACEHOLDER__", DATA_JS).replace("__UPDATED_DATE__", date).replace("__PRACTICE_COUNT__", str(len(merged)))
+html = (html
+    .replace("__DATA_PLACEHOLDER__", DATA_JS)
+    .replace("__UPDATED_DATE__", date)
+    .replace("__PRACTICE_COUNT__", str(len(merged))))
 with open("index.html","w") as f:
     f.write(html)
 print(f"Done! {len(merged)} practices, {date}, {len(html)//1024}KB")
