@@ -108,45 +108,58 @@ PC = {
   "W10":(51.5208,-0.2153),"W11":(51.5105,-0.2034),"W12":(51.5067,-0.2311),
   "W13":(51.5045,-0.3178),"W14":(51.4969,-0.2158),
 }
-AREAS = {
-  "N1":"Islington","N4":"Finsbury Park","N5":"Highbury","N6":"Highgate",
-  "N7":"Holloway","N8":"Hornsey","N9":"Edmonton","N10":"Muswell Hill",
-  "N11":"New Southgate","N12":"Finchley","N13":"Palmers Green","N14":"Southgate",
-  "N15":"South Tottenham","N16":"Stoke Newington","N17":"Tottenham",
-  "N18":"Edmonton","N19":"Archway","N20":"Whetstone","N21":"Winchmore Hill",
-  "N22":"Wood Green","NW1":"Camden","NW2":"Cricklewood","NW3":"Hampstead",
-  "NW4":"Hendon","NW5":"Kentish Town","NW6":"Queens Park","NW7":"Mill Hill",
-  "NW8":"St Johns Wood","NW9":"The Hyde","NW10":"Harlesden","NW11":"Golders Green",
-  "SW1A":"Westminster","SW1E":"Westminster","SW1P":"Westminster","SW1V":"Pimlico",
-  "SW1W":"Belgravia","SW1X":"Belgravia","SW2":"Brixton","SW3":"Chelsea",
-  "SW4":"Clapham","SW5":"Earls Court","SW6":"Fulham","SW7":"South Kensington",
-  "SW8":"South Lambeth","SW9":"Stockwell","SW10":"West Brompton","SW11":"Battersea",
-  "SW12":"Balham","SW13":"Barnes","SW14":"Mortlake","SW15":"Putney",
-  "SW16":"Streatham","SW17":"Tooting","SW18":"Wandsworth","SW19":"Wimbledon",
-  "SW20":"West Wimbledon","W2":"Bayswater","W3":"Acton","W4":"Chiswick",
-  "W5":"Ealing","W6":"Hammersmith","W7":"Hanwell","W8":"Kensington",
-  "W9":"Maida Vale","W10":"North Kensington","W11":"Notting Hill",
-  "W12":"Shepherds Bush","W13":"West Ealing","W14":"West Kensington",
+BOROUGH_MAP = {
+    "E10":"Waltham Forest","E11":"Redbridge","E12":"Newham","E13":"Newham",
+    "E14":"Tower Hamlets","E15":"Newham","E16":"Newham","E17":"Waltham Forest",
+    "E18":"Redbridge","E20":"Newham",
+    "EC1A":"City of London","EC1R":"Islington","EC1V":"Islington",
+    "N10":"Haringey","N11":"Barnet","N12":"Barnet","N13":"Enfield",
+    "N14":"Enfield","N15":"Haringey","N16":"Hackney","N17":"Haringey",
+    "N18":"Enfield","N19":"Islington","N20":"Barnet","N21":"Enfield","N22":"Haringey",
+    "NW1":"Camden","NW2":"Brent","NW3":"Camden","NW4":"Barnet","NW5":"Camden",
+    "NW6":"Brent","NW7":"Barnet","NW8":"Westminster","NW9":"Brent",
+    "NW10":"Brent","NW11":"Barnet",
+    "SE1":"Southwark","SE2":"Greenwich","SE3":"Greenwich","SE4":"Lewisham",
+    "SE5":"Southwark","SE6":"Lewisham","SE7":"Greenwich","SE8":"Lewisham",
+    "SE9":"Greenwich","SE10":"Greenwich","SE11":"Lambeth","SE12":"Lewisham",
+    "SE13":"Lewisham","SE14":"Lewisham","SE15":"Southwark","SE16":"Southwark",
+    "SE17":"Southwark","SE18":"Greenwich","SE19":"Bromley","SE20":"Bromley",
+    "SE21":"Southwark","SE22":"Southwark","SE23":"Lewisham","SE24":"Lambeth",
+    "SE25":"Croydon","SE26":"Lewisham","SE27":"Lambeth","SE28":"Greenwich",
+    "SW1P":"Westminster","SW1V":"Westminster","SW1W":"Westminster","SW1X":"Westminster",
+    "SW2":"Lambeth","SW3":"Kensington & Chelsea","SW4":"Lambeth",
+    "SW5":"Kensington & Chelsea","SW6":"Hammersmith & Fulham",
+    "SW7":"Kensington & Chelsea","SW8":"Lambeth","SW9":"Lambeth",
+    "SW10":"Kensington & Chelsea","SW11":"Wandsworth","SW12":"Wandsworth",
+    "SW13":"Richmond","SW14":"Richmond","SW15":"Wandsworth","SW16":"Lambeth",
+    "SW17":"Wandsworth","SW18":"Wandsworth","SW19":"Merton","SW20":"Merton",
+    "W10":"Kensington & Chelsea","W11":"Kensington & Chelsea",
+    "W12":"Hammersmith & Fulham","W13":"Ealing","W14":"Hammersmith & Fulham",
+    "WC1B":"Camden","WC1E":"Camden","WC1N":"Camden","WC1X":"Islington",
+    "WC2A":"Camden","WC2B":"Westminster","WC2H":"Westminster","WC2N":"Westminster",
 }
+
+def get_district(pc):
+    """Extract outward postcode district. Handles both spaced and unspaced."""
+    if not pc: return ""
+    pc = pc.strip().upper()
+    if " " in pc:
+        return pc.split()[0]
+    pc = pc.replace(" ", "")
+    return pc[:-3] if len(pc) >= 5 else pc
 
 def geo(pc):
     if not pc: return None, None
-    p = pc.strip().upper().replace(" ","")
-    m = re.match(r'^([A-Z]{1,2}\d{1,2}[A-Z]?)', p)
-    d = m.group(1) if m else ""
+    d = get_district(pc)
     if d in PC: return PC[d]
-    s = re.match(r'^([A-Z]{1,2}\d)', p)
-    d2 = s.group(1) if s else ""
-    return PC.get(d2,(None,None))
+    # Try shorter prefix
+    m = re.match(r'^([A-Z]{1,2}\d)', d)
+    d2 = m.group(1) if m else ""
+    return PC.get(d2, (None, None))
 
 def area(pc):
-    if not pc: return ""
-    p = pc.strip().upper().replace(" ","")
-    m = re.match(r'^([A-Z]{1,2}\d{1,2}[A-Z]?)', p)
-    d = m.group(1) if m else ""
-    if d in AREAS: return AREAS[d]
-    s = re.match(r'^([A-Z]{1,2}\d)', p)
-    return AREAS.get(s.group(1) if s else "", d)
+    d = get_district(pc)
+    return BOROUGH_MAP.get(d, "")
 
 print("Building merged dataset...")
 merged = []
