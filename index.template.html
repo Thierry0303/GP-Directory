@@ -148,18 +148,102 @@ footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:1
 footer a{color:rgba(255,255,255,.8)}
 footer a:hover{color:#fff}
 
-/* Responsive */
+/* ========== Responsive ========== */
+
+/* Tablet — collapse to single column main */
 @media(max-width:900px){
-  .layout{grid-template-columns:1fr}
+  .layout{grid-template-columns:1fr;gap:14px;padding-top:14px}
   .sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .panel,.nhs-panel{margin-bottom:0}
-  .hdr-stats{display:none}
+  .nhs-panel{grid-column:1/-1;margin-bottom:0}
+  .panel{margin-bottom:0}
+  .hdr-stats{gap:14px}
+  .hdr-stats strong{font-size:1.15rem}
+  .hdr-stats span{font-size:.6rem}
 }
-@media(max-width:580px){
-  .layout,.hdr,.search-zone{padding-left:16px;padding-right:16px}
-  .sidebar{grid-template-columns:1fr}
-  #grid{grid-template-columns:1fr}
+
+/* Phone */
+@media(max-width:600px){
+  .hdr{padding:0 16px;gap:8px}
+  .hdr-in{padding:10px 0;gap:10px}
+  .logo h1{font-size:1.2rem}
+  .logo p{font-size:.62rem;margin-top:2px}
+  /* Show 2 most useful stats only, smaller */
+  .hdr-stats{gap:14px;flex:0 0 auto}
+  .hdr-stats div:nth-child(2),.hdr-stats div:nth-child(3){display:none}
+  .hdr-stats strong{font-size:1rem;font-weight:600}
+  .hdr-stats span{font-size:.55rem;letter-spacing:.03em}
+
+  .search-zone{padding:0 16px 12px}
+  #q{padding:13px 12px 13px 38px;font-size:16px} /* 16px prevents iOS auto-zoom */
+  .clr{padding:13px 14px;font-size:13px}
+
+  /* Borough nav — horizontal scroll instead of wrap, hides scrollbar */
+  .borough-nav{padding:10px 0;overflow:hidden}
+  .borough-nav-inner{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
+    scrollbar-width:none;-ms-overflow-style:none;padding:0 16px;gap:6px;
+    -webkit-overflow-scrolling:touch}
+  .borough-nav-inner::-webkit-scrollbar{display:none}
+  .borough-nav-label{position:sticky;left:0;background:#fff;padding-right:6px;
+    z-index:1;flex-shrink:0}
+  .borough-nav a{flex-shrink:0;padding:6px 11px;font-size:12px}
+
+  .layout{padding:14px 16px 32px;gap:10px}
+
+  /* Sidebar — single column, tighter */
+  .sidebar{grid-template-columns:1fr;gap:8px}
+  .nhs-panel{padding:11px 14px}
+  .nhs-panel p{font-size:11px;margin-bottom:6px}
+
+  /* Filter panels collapse to <details> on phone — saves vertical space */
+  .panel{border-radius:10px}
+  .panel-hdr{font-size:10px;padding:11px 14px 9px;cursor:pointer;
+    user-select:none;display:flex;align-items:center;justify-content:space-between}
+  .panel-hdr::after{content:"\25BE";font-size:11px;color:#bbb;
+    transition:transform .15s;font-weight:400;letter-spacing:0}
+  .panel.collapsed .panel-hdr::after{transform:rotate(-90deg)}
+  .panel.collapsed .opts,.panel.collapsed select{display:none}
+  .opts{max-height:240px}
+  .opts label{padding:8px 14px;font-size:14px} /* bigger tap target */
+  .opts input[type=checkbox]{width:16px;height:16px}
+  .panel select{padding:11px 14px;font-size:14px}
+
+  /* Card grid — single column with comfortable spacing */
+  #grid{grid-template-columns:1fr;gap:10px}
+  .card{padding:14px 14px}
+  .card-name{font-size:15px}
+  .card-addr{font-size:12px}
+
+  /* Stats row tighter on phone */
+  .metrics{gap:10px;margin-bottom:10px}
+  .m-val{font-size:12px}
+
+  /* Card footer — wrap nicely, bigger tap targets */
+  .card-foot{flex-wrap:wrap;gap:10px;padding-top:11px}
+  .card-phone{font-size:13px;padding:4px 0;min-height:32px}
+  .actions{gap:6px;width:100%}
+  .pill{padding:7px 11px;font-size:12px;min-height:32px;display:inline-flex;
+    align-items:center}
+
+  /* Results bar */
+  .results-bar p{font-size:12px}
+
+  /* Pagination — bigger tap targets, allow wrap */
+  .pager{margin-top:18px;gap:4px}
+  .pg{min-width:38px;height:38px;font-size:13px}
+
+  /* Footer */
+  footer{padding:14px 16px;font-size:11px;line-height:1.7}
 }
+
+/* Very small phones */
+@media(max-width:380px){
+  .logo h1{font-size:1.1rem}
+  .hdr-stats{display:none} /* phone too narrow — give logo room */
+  .pill{font-size:11px;padding:6px 9px}
+  .borough-nav-label{font-size:9px}
+}
+
+/* Make filter panels collapsed-by-default on phones via JS hook */
 </style>
 </head>
 <body>
@@ -409,6 +493,21 @@ if (_urlQ) document.getElementById('q').value = _urlQ;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 buildFilters();
 render();
+
+/* On phones, collapse filter panels by default and toggle on header tap */
+(function(){
+  if (window.matchMedia('(max-width:600px)').matches) {
+    document.querySelectorAll('.panel').forEach(p => {
+      // skip the sort dropdown — it's small and useful as-is
+      if (p.querySelector('select')) return;
+      p.classList.add('collapsed');
+    });
+    document.querySelectorAll('.panel-hdr').forEach(h => {
+      if (!h.parentElement.querySelector('.opts')) return;
+      h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed'));
+    });
+  }
+})();
 </script>
 </body>
 </html>
