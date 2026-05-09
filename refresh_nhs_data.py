@@ -9,14 +9,18 @@ print("Loading gps.json...")
 with open("gps.json") as f:
     BASE_DATA = json.load(f)
 
-# Filter to genuine GP practices only
-# Keep: has GPPS score, has CQC rating, or standard GP ODS prefix
-GP_PREFIXES = ('E83','E84','E85','E86','E87','F83','F84','F85','F86',
-               'G83','G84','G85','H83','H84','H85')
+# Filter to genuine GP practices only.
+# A record is kept only if either:
+#   (a) it has a GP Patient Survey score (only real GPs are surveyed), OR
+#   (b) CQC has given it a substantive rating (Outstanding / Good /
+#       Requires improvement / Inadequate). Empty or 'Not rated' values
+#       are NOT enough — those typically belong to NHS support services,
+#       PCN admin entities, hubs and referral pathways that share the
+#       GP ODS code ranges but aren't surgeries patients can register at.
+_VALID_CQC = {"Outstanding", "Good", "Requires improvement", "Inadequate"}
 BASE_DATA = [d for d in BASE_DATA if
              d.get('gpps_overall_pct') or
-             d.get('cqc_rating') or
-             d.get('ods_code','')[:3] in GP_PREFIXES]
+             (d.get('cqc_rating') in _VALID_CQC)]
 
 base_by_ods = {d["ods_code"]: d for d in BASE_DATA}
 ods_codes = list(base_by_ods.keys())
@@ -204,10 +208,21 @@ date = datetime.utcnow().strftime("%-d %B %Y")
 with open("index.template.html") as f:
     html = f.read()
 
+# Build borough nav HTML (server-side so links are in static HTML for SEO)
+def _slug(s):
+    s = (s or "").lower().replace("&", "and")
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+
+boroughs_sorted = sorted({p["ar"] for p in merged if p.get("ar")})
+borough_nav = " ".join(
+    f'<a href="/practice/{_slug(b)}/">{b}</a>' for b in boroughs_sorted
+)
+
 html = (html
         .replace("__DATA_PLACEHOLDER__", DATA_JS)
         .replace("__UPDATED_DATE__", date)
-        .replace("__PRACTICE_COUNT__", str(len(merged))))
+        .replace("__PRACTICE_COUNT__", str(len(merged)))
+        .replace("__BOROUGH_NAV__", borough_nav))
 
 with open("index.html","w") as f:
     f.write(html)
