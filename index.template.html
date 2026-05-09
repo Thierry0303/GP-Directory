@@ -3,7 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>London GP Directory</title>
+<title>London GP Directory — Find &amp; Compare NHS GP Practices in London</title>
+<meta name="description" content="Free directory of every NHS GP practice in London. Compare __PRACTICE_COUNT__ practices by patient survey, CQC rating and contact details. Updated weekly from NHS ODS.">
+<meta name="keywords" content="London GP, NHS GP practice, find a GP London, GP directory, GP surgery London, CQC rating, NHS practice search">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#003087">
+<meta name="author" content="London GP Directory">
+<link rel="canonical" href="https://londongp.directory/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23003087'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='42' font-weight='700' fill='white'%3EGP%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="London GP Directory">
+<meta property="og:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
+<meta property="og:description" content="Free directory of every NHS GP practice in London. Compare patient scores, CQC ratings and contact details across __PRACTICE_COUNT__ practices.">
+<meta property="og:url" content="https://londongp.directory/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://londongp.directory/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
+<meta name="twitter:description" content="Free directory of every NHS GP practice in London. Patient scores, CQC ratings, contact details.">
+<meta name="twitter:image" content="https://londongp.directory/og-image.png">
+
+<!-- JSON-LD: WebSite + Sitelinks Searchbox -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","url":"https://londongp.directory/","name":"London GP Directory","description":"Find & compare every NHS GP practice in London by patient score, CQC rating and contact details.","inLanguage":"en-GB","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://londongp.directory/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"London GP Directory","url":"https://londongp.directory/","description":"An independent directory of NHS GP practices across London, sourced from the NHS Organisation Data Service (ODS), GP Patient Survey and CQC.","areaServed":{"@type":"AdministrativeArea","name":"London"}}
+</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
@@ -354,6 +386,8 @@ function go(n){
 }
 
 /* ── Boot ── */
+const _urlQ = new URLSearchParams(location.search).get('q');
+if (_urlQ) document.getElementById('q').value = _urlQ;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 buildFilters();
 render();
