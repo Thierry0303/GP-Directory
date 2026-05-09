@@ -18,7 +18,7 @@ jobs:
       - name: Fetch NHS ODS data and rebuild index.html
         run: python refresh_nhs_data.py
       - name: Build borough hub pages
-        run: python build_borough_pages_gp.py
+        run: python build_borough_pages.py
       - name: Build per-practice pages
         run: python build_practice_pages.py
       - name: Commit refreshed pages
