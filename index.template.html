@@ -105,12 +105,22 @@ a{text-decoration:none;color:inherit}
 .cqc-I{background:#FCEBEB;color:#A32D2D}
 .cqc-N{background:#f0f0ee;color:#777}
 .area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start}
-/* Borough nav */
-.borough-nav{background:#fff;border-bottom:1px solid #e5e5e3;padding:11px 24px}
-.borough-nav-inner{max-width:1300px;margin:0 auto;display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
-.borough-nav-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;margin-right:8px;white-space:nowrap}
-.borough-nav a{display:inline-block;padding:3px 9px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:11.5px;font-weight:600;transition:all .12s}
+/* Borough nav (now a <details> for collapse-on-mobile) */
+.borough-nav{background:#fff;border-bottom:1px solid #e5e5e3}
+.borough-nav-summary{list-style:none;cursor:pointer;padding:11px 24px;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;display:flex;align-items:center;gap:10px;justify-content:flex-start;user-select:none}
+.borough-nav-summary::-webkit-details-marker{display:none}
+.borough-nav-summary::after{content:"\25B8";font-size:10px;color:#bbb;transition:transform .15s;font-weight:400;letter-spacing:0;margin-left:4px}
+.borough-nav[open] .borough-nav-summary::after{transform:rotate(90deg)}
+.borough-count{font-weight:500;color:#aaa;text-transform:none;letter-spacing:0;font-size:11px}
+.borough-nav-inner{max-width:1300px;margin:0 auto;padding:0 24px 12px;display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
+.borough-nav a{display:inline-block;padding:4px 10px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:11.5px;font-weight:600;transition:all .12s}
 .borough-nav a:hover{background:#003087;color:#fff}
+
+/* Open by default on tablet+ — only collapsed on mobile */
+@media(min-width:601px){
+  .borough-nav{border-bottom:1px solid #e5e5e3}
+  .borough-nav[open] .borough-nav-summary{padding-bottom:6px}
+}
 .area-tag{cursor:pointer;transition:background .12s,color .12s}
 .area-tag:hover{background:#003087;color:#fff}
 @media(max-width:580px){.borough-nav{padding-left:16px;padding-right:16px}}
@@ -163,10 +173,10 @@ footer a:hover{color:#fff}
 
 /* Phone */
 @media(max-width:600px){
-  .hdr{padding:0 16px;gap:8px}
-  .hdr-in{padding:10px 0;gap:10px}
-  .logo h1{font-size:1.2rem}
-  .logo p{font-size:.62rem;margin-top:2px}
+  .hdr{padding:0 14px;gap:8px}
+  .hdr-in{padding:9px 0;gap:8px}
+  .logo h1{font-size:1.15rem;line-height:1.05}
+  .logo p{display:none}  /* save vertical space — title alone is clear enough */
   /* Show 2 most useful stats only, smaller */
   .hdr-stats{gap:14px;flex:0 0 auto}
   .hdr-stats div:nth-child(2),.hdr-stats div:nth-child(3){display:none}
@@ -177,22 +187,23 @@ footer a:hover{color:#fff}
   #q{padding:13px 12px 13px 38px;font-size:16px} /* 16px prevents iOS auto-zoom */
   .clr{padding:13px 14px;font-size:13px}
 
-  /* Borough nav — horizontal scroll instead of wrap, hides scrollbar */
-  .borough-nav{padding:10px 0;overflow:hidden}
-  .borough-nav-inner{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
-    scrollbar-width:none;-ms-overflow-style:none;padding:0 16px;gap:6px;
+  /* Borough nav — collapsed by default on mobile, expand to swipe row */
+  .borough-nav-summary{padding:11px 16px;font-size:11px}
+  .borough-count{display:none} /* save space on phone */
+  .borough-nav-inner{padding:4px 16px 12px;flex-wrap:nowrap;overflow-x:auto;
+    overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;gap:6px;
     -webkit-overflow-scrolling:touch}
   .borough-nav-inner::-webkit-scrollbar{display:none}
-  .borough-nav-label{position:sticky;left:0;background:#fff;padding-right:6px;
-    z-index:1;flex-shrink:0}
-  .borough-nav a{flex-shrink:0;padding:6px 11px;font-size:12px}
+  .borough-nav a{flex-shrink:0;padding:6px 12px;font-size:12px}
 
   .layout{padding:14px 16px 32px;gap:10px}
 
   /* Sidebar — single column, tighter */
   .sidebar{grid-template-columns:1fr;gap:8px}
-  .nhs-panel{padding:11px 14px}
-  .nhs-panel p{font-size:11px;margin-bottom:6px}
+  .nhs-panel{padding:10px 12px}
+  .nhs-panel-hdr{margin-bottom:3px}
+  .nhs-panel p{font-size:11px;margin-bottom:6px;line-height:1.4}
+  .nhs-tag{font-size:10px;padding:3px 8px}
 
   /* Filter panels collapse to <details> on phone — saves vertical space */
   .panel{border-radius:10px}
@@ -273,12 +284,12 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
-<nav class="borough-nav" aria-label="Browse by London borough">
+<details class="borough-nav" id="boroughNav">
+  <summary class="borough-nav-summary">Browse by borough <span class="borough-count">__PRACTICE_COUNT__ practices across 32 boroughs</span></summary>
   <div class="borough-nav-inner">
-    <span class="borough-nav-label">Browse by borough</span>
     __BOROUGH_NAV__
   </div>
-</nav>
+</details>
 
 <div class="layout">
   <aside class="sidebar">
@@ -494,9 +505,14 @@ document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 buildFilters();
 render();
 
-/* On phones, collapse filter panels by default and toggle on header tap */
+/* On phones, collapse filter panels by default and toggle on header tap.
+   Borough nav <details> is also closed by default on phones (open on tablet+). */
 (function(){
-  if (window.matchMedia('(max-width:600px)').matches) {
+  const isPhone = window.matchMedia('(max-width:600px)').matches;
+  const boroughNav = document.getElementById('boroughNav');
+  if (boroughNav && !isPhone) boroughNav.open = true;
+
+  if (isPhone) {
     document.querySelectorAll('.panel').forEach(p => {
       // skip the sort dropdown — it's small and useful as-is
       if (p.querySelector('select')) return;
