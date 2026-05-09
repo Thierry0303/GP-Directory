@@ -105,6 +105,15 @@ a{text-decoration:none;color:inherit}
 .cqc-I{background:#FCEBEB;color:#A32D2D}
 .cqc-N{background:#f0f0ee;color:#777}
 .area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start}
+/* Borough nav */
+.borough-nav{background:#fff;border-bottom:1px solid #e5e5e3;padding:11px 24px}
+.borough-nav-inner{max-width:1300px;margin:0 auto;display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
+.borough-nav-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;margin-right:8px;white-space:nowrap}
+.borough-nav a{display:inline-block;padding:3px 9px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:11.5px;font-weight:600;transition:all .12s}
+.borough-nav a:hover{background:#003087;color:#fff}
+.area-tag{cursor:pointer;transition:background .12s,color .12s}
+.area-tag:hover{background:#003087;color:#fff}
+@media(max-width:580px){.borough-nav{padding-left:16px;padding-right:16px}}
 .card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
 .metrics{display:flex;gap:12px;margin-bottom:12px}
 .metric{flex:1}
@@ -180,6 +189,13 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
+<nav class="borough-nav" aria-label="Browse by London borough">
+  <div class="borough-nav-inner">
+    <span class="borough-nav-label">Browse by borough</span>
+    __BOROUGH_NAV__
+  </div>
+</nav>
+
 <div class="layout">
   <aside class="sidebar">
 
@@ -236,6 +252,8 @@ footer a:hover{color:#fff}
 
 <script>
 const DATA = __DATA_PLACEHOLDER__;
+
+const slugify = s => (s||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 
 const PAGE = 24;
 let page = 1;
@@ -341,7 +359,7 @@ function render(){
         <div class="card-name">${d.n}</div>
         <span class="cqc ${cc}">${cqcLabel(d.cqc)}</span>
       </div>
-      ${d.ar?`<span class="area-tag">${d.ar}</span>`:''}
+      ${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}
       <div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>
       <div class="metrics">
         <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div>
