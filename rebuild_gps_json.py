@@ -1,81 +1,44 @@
 #!/usr/bin/env python3
 """
-Rebuild gps.json from NHS Digital's authoritative ePraccur dataset, enriched
-with CQC ratings — including all outer London boroughs (Richmond/Twickenham,
-Kingston, Bromley, Croydon, etc.) that were missing from the previous file.
+Build gps.json from ePraccur — run once, on your own machine.
 
-What this fixes
----------------
-The previous gps.json appeared to cover only certain ICBs (likely Inner
-London / North Central / North West). Practices in TW, KT, HA, UB, BR, DA,
-SM, CR, IG, RM, EN postcodes were absent. A Google Maps check showed at
-least 6 missing GP surgeries in Twickenham alone.
+Why local? NHS Digital's CDN (files.digital.nhs.uk) blocks data-centre IPs
+(GitHub Actions, AWS, etc.) with HTTP 403. From your home internet
+connection it works fine. So: do the rebuild once locally, commit the
+result, never run it in CI again.
 
-ePraccur (https://digital.nhs.uk/services/organisation-data-service/
-export-data/miscellaneous/epraccur) is the official NHS Organisation Data
-Service file: every active GP practice in England, refreshed weekly,
-canonical source. ~7,000 records nationally; ~1,300 in Greater London.
+Usage
+-----
+1. Download ePraccur in your browser (right-click → Save As):
+       https://files.digital.nhs.uk/assets/ods/current/epraccur.zip
+   Save it next to this script.
 
-What this produces
-------------------
-A new gps.json with the same record shape your existing scripts expect:
+2. Run:
+       python3 build_gps_locally.py epraccur.zip
 
-    {
-        "ods_code":          "F83019",
-        "name":              "Abbey Medical Centre",
-        "address":           "85 Abbey Road, London",
-        "postcode":          "NW8 0AG",
-        "phone":             "020 7624 2455",
-        "cqc_rating":        "Good",
-        "cqc_url":           "https://www.cqc.org.uk/location/1-...",
-        "gpps_overall_pct":  78.5,
-        "gpps_contact_pct":  65.3,
-        "gpps_pcn":          "West Camden"
-    }
+3. The script writes `gps.json` next to itself. Replace your repo's
+   gps.json with this file, commit, push.
 
-GPPS fields are PRESERVED from the existing gps.json where possible (matched
-by ODS code). Practices new to this run will have empty GPPS fields until
-the next NHS GP Patient Survey publishes updated data.
+That's it. The next scheduled NHS refresh will enrich CQC ratings on top
+of the new master list.
 
-Run order
----------
-This script is a one-off rebuild — drop it in the repo root, run it once,
-commit the new gps.json, then your usual weekly refresh continues unchanged.
-
-    export CQC_KEY=...        # same key as fetch_private_clinics.py
-    python3 rebuild_gps_json.py
-
-Or trigger it from the workflow once. After the rebuild, you can keep this
-file in the repo for future re-runs but no need to add it to the weekly
-schedule — gp practice openings/closures are slow.
+If you want to merge with an existing gps.json (preserving GPPS scores
+for practices that haven't changed), pass `--merge ./old_gps.json`.
 """
 
-import json, os, re, sys, csv, io, time, zipfile, argparse
-import urllib.request, urllib.error, urllib.parse
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import argparse, csv, io, json, re, sys, zipfile
+from collections import Counter
 from pathlib import Path
-from collections import defaultdict
 
-ROOT = Path(__file__).resolve().parent
-EXISTING_GPS = ROOT / "gps.json"
-OUT_GPS = ROOT / "gps.json"  # overwrite — keep a backup before running!
+EPRACCUR_COLS = [
+    "Code", "Name", "NationalGrouping", "HighLevelHealthGeography",
+    "AddressLine1", "AddressLine2", "AddressLine3", "AddressLine4", "AddressLine5",
+    "Postcode", "OpenDate", "CloseDate", "Status", "OrgSubTypeCode",
+    "Commissioner", "JoinProviderDate", "LeftProviderDate", "ContactTelephoneNumber",
+]
 
-EPRACCUR_URL = "https://files.digital.nhs.uk/assets/ods/current/epraccur.zip"
-CQC_BASE = "https://api.service.cqc.org.uk/public/v1"
-
-# NHS ORD (Organisation Reference Data) JSON API — same source ePraccur is
-# built from, but served as a public JSON API instead of a downloadable file.
-# This endpoint is reachable from GitHub Actions (files.digital.nhs.uk is not).
-ORD_BASE = "https://directory.spineservices.nhs.uk/ORD/2-0-0"
-ORD_GP_ROLE = "RO177"  # = GP Practice
-
-# NHS FHIR STU3 endpoint — same one refresh_nhs_data.py uses successfully
-# from GitHub Actions. Supports search by ODS code (identifier), postcode
-# (address-postalcode), and primary role (primary-role-id).
-FHIR_BASE = "https://directory.spineservices.nhs.uk/STU3"
-
-# London postcode prefixes (Inner + Outer)
-LONDON_POSTCODE_PREFIXES = {
+# Inner + Outer London postcode districts.
+LONDON_PREFIXES = {
     "EC1A","EC1R","EC1V","EC2A","WC1B","WC1E","WC1N","WC1X","WC2A","WC2B","WC2H","WC2N",
     "E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","E11","E12","E13","E14","E15",
     "E16","E17","E18","E20",
@@ -106,515 +69,113 @@ LONDON_POSTCODE_PREFIXES = {
 def postcode_district(pc):
     if not pc: return ""
     pc = pc.strip().upper()
-    if " " in pc: return pc.split()[0]
+    if " " in pc:
+        return pc.split()[0]
     pc = pc.replace(" ", "")
     return pc[:-3] if len(pc) >= 5 else pc
 
 def is_london(pc):
     d = postcode_district(pc)
-    if d in LONDON_POSTCODE_PREFIXES: return True
+    if d in LONDON_PREFIXES:
+        return True
     m = re.match(r"^([A-Z]{1,2}\d)", d)
-    return bool(m and m.group(1) in LONDON_POSTCODE_PREFIXES)
-
-# --------------------------------------------------------------- ePraccur
-
-EPRACCUR_COLS = [
-    "Code", "Name", "NationalGrouping", "HighLevelHealthGeography",
-    "AddressLine1", "AddressLine2", "AddressLine3", "AddressLine4", "AddressLine5",
-    "Postcode", "OpenDate", "CloseDate", "Status", "OrgSubTypeCode",
-    "Commissioner", "JoinProviderDate", "LeftProviderDate", "ContactTelephoneNumber",
-    "Null18", "Null19", "Null20", "AmendedRecordIndicator", "Null22",
-    "CurrentCarerIdentifier", "Null24", "ProviderProfileType",
-]
-
-def download_epraccur():
-    """Download and unzip the ePraccur CSV in memory.
-
-    NHS Digital's CDN (files.digital.nhs.uk) blocks requests that don't look
-    like a normal browser — short or generic User-Agents return HTTP 403.
-    We mimic Firefox and add Accept headers; if that still fails we try a
-    known mirror via the ODS portal root.
-    """
-    headers = {
-        "User-Agent": ("Mozilla/5.0 (X11; Linux x86_64; rv:128.0) "
-                       "Gecko/20100101 Firefox/128.0"),
-        "Accept": "application/zip,application/octet-stream,*/*;q=0.8",
-        "Accept-Language": "en-GB,en;q=0.9",
-        "Accept-Encoding": "gzip, deflate",
-        "Referer": "https://digital.nhs.uk/services/organisation-data-service/export-data-files/csv-downloads/gp-and-gp-practice-related-data",
-    }
-    candidate_urls = [
-        EPRACCUR_URL,
-        # Known alternates seen historically:
-        "https://files.digital.nhs.uk/assets/ods/current/epraccur.zip",
-        "https://digital.nhs.uk/binaries/content/assets/website-assets/services/ods/data-downloads-other-nhs-organisations/epraccur.zip",
-    ]
-    last_err = None
-    data = None
-    for url in candidate_urls:
-        print(f"Downloading ePraccur: {url}")
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=60) as r:
-                raw = r.read()
-                # urllib doesn't auto-decode gzip; handle it.
-                if r.headers.get("Content-Encoding", "").lower() == "gzip":
-                    import gzip
-                    raw = gzip.decompress(raw)
-                data = raw
-            print(f"  ok — {len(data)//1024} KB")
-            break
-        except urllib.error.HTTPError as e:
-            print(f"  HTTP {e.code} — trying next candidate")
-            last_err = e
-            time.sleep(1)
-        except Exception as e:
-            print(f"  error: {e} — trying next candidate")
-            last_err = e
-            time.sleep(1)
-    if data is None:
-        raise SystemExit(f"All ePraccur download URLs failed. Last error: {last_err}")
-
-    zf = zipfile.ZipFile(io.BytesIO(data))
-    csv_name = next(n for n in zf.namelist() if n.lower().endswith(".csv"))
-    with zf.open(csv_name) as f:
-        text = f.read().decode("utf-8", errors="replace")
-    return text
-
-def parse_epraccur_london(csv_text):
-    """Parse ePraccur, filter to active GPs in London."""
-    london_gps = []
-    reader = csv.reader(io.StringIO(csv_text))
-    for row in reader:
-        if len(row) < 18: continue
-        rec = dict(zip(EPRACCUR_COLS, row + [""] * (len(EPRACCUR_COLS) - len(row))))
-        # Status A = Active. Anything else (C = Closed, P = Proposed, D = Dormant) skip.
-        if rec.get("Status", "").strip().upper() != "A": continue
-        pc = rec.get("Postcode", "").strip().upper()
-        if not is_london(pc): continue
-        london_gps.append({
-            "ods_code":      rec.get("Code", "").strip().upper(),
-            "name":          rec.get("Name", "").strip().title(),
-            "address_lines": [rec.get(f"AddressLine{i}", "").strip() for i in range(1, 6)],
-            "postcode":      pc,
-            "phone":         rec.get("ContactTelephoneNumber", "").strip(),
-        })
-    return london_gps
-
-# --------------------------------------------------------------- ORD JSON API
-# Fallback path when the ePraccur ZIP is blocked. Uses the same ODS data
-# source, just served as a public JSON API at directory.spineservices.nhs.uk
-# (no auth, no IP filter — refresh_nhs_data.py already uses this endpoint).
-
-def _ord_get(url):
-    headers = {
-        "Accept": "application/json",
-        "User-Agent": "londongp.directory/1.0 (rebuild-gps-json via ORD)",
-    }
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read())
-
-def list_active_gps_via_ord():
-    """Return a list of {ods_code, name, postcode, link} for all active GP
-    practices nationally. Pagination via the Limit/Offset query params."""
-    out = []
-    offset = 0
-    page = 1
-    limit = 1000
-    while True:
-        url = (f"{ORD_BASE}/organisations"
-               f"?PrimaryRoleId={ORD_GP_ROLE}&Status=Active"
-               f"&Limit={limit}&Offset={offset}")
-        print(f"  ORD page {page} (offset {offset})…")
-        try:
-            data = _ord_get(url)
-        except urllib.error.HTTPError as e:
-            print(f"    HTTP {e.code} from ORD — stopping pagination")
-            break
-        orgs = data.get("Organisations", []) or []
-        if not orgs:
-            break
-        for o in orgs:
-            out.append({
-                "ods_code": (o.get("OrgId") or "").upper(),
-                "name":     (o.get("Name") or "").title(),
-                "postcode": (o.get("PostCode") or "").upper(),
-                "link":     (o.get("OrgLink") or ""),
-            })
-        if len(orgs) < limit:
-            break
-        offset += limit
-        page += 1
-        time.sleep(0.2)
-    return out
-
-def _fetch_ord_detail(org):
-    """Fetch full address + phone for one org. Returns the org dict updated."""
-    if not org.get("link"):
-        org["address_lines"] = []
-        org["phone"] = ""
-        return org
-    try:
-        d = _ord_get(org["link"])
-    except Exception:
-        org["address_lines"] = []
-        org["phone"] = ""
-        return org
-    o = (d.get("Organisation") or {})
-    geo = (o.get("GeoLoc") or {}).get("Location") or {}
-    addr_lines = [
-        geo.get("AddrLn1") or "",
-        geo.get("AddrLn2") or "",
-        geo.get("AddrLn3") or "",
-        geo.get("Town")    or "",
-        geo.get("County")  or "",
-    ]
-    contacts = (o.get("Contacts") or {}).get("Contact") or []
-    if isinstance(contacts, dict):
-        contacts = [contacts]
-    phone = ""
-    for c in contacts:
-        if (c.get("type") or "").lower() == "tel":
-            phone = c.get("value") or ""
-            break
-    org["address_lines"] = [a.strip() for a in addr_lines if (a or "").strip()]
-    org["phone"] = phone.strip()
-    return org
-
-# --------------------------------------------------------------- FHIR
-# This is the most reliable path: same endpoint refresh_nhs_data.py uses,
-# already proven to work from GitHub Actions. We iterate London postcode
-# districts and search by postcode + primary-role-id=RO177 (GP Practice).
-
-def _fhir_get(url):
-    headers = {
-        "Accept": "application/fhir+json,application/json",
-        "User-Agent": "londongp.directory/1.0",
-    }
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.loads(r.read())
-
-def _fhir_extract(entry):
-    """Pull the fields we need out of one Bundle.entry.resource."""
-    res = entry.get("resource", {}) or {}
-    if not res.get("active", True):
-        return None
-    ods = ""
-    for ident in res.get("identifier", []) or []:
-        if ident.get("system", "").endswith("ods-organization-code"):
-            ods = (ident.get("value") or "").upper()
-            break
-    if not ods:
-        ods = (res.get("id") or "").upper()
-    raw_name = res.get("name", "") or ""
-    name = raw_name.title() if raw_name.isupper() else raw_name
-    addrs = res.get("address", []) or []
-    addr = addrs[0] if addrs else {}
-    pc = (addr.get("postalCode") or "").strip().upper()
-    lines = addr.get("line", []) or []
-    city = addr.get("city", "") or ""
-    address_lines = [l for l in (lines + [city]) if l]
-    phone = ""
-    for tc in (res.get("telecom") or []):
-        if tc.get("system") == "phone":
-            phone = tc.get("value", "") or ""
-            break
-    return {
-        "ods_code":      ods,
-        "name":          name,
-        "address_lines": address_lines,
-        "postcode":      pc,
-        "phone":         phone,
-    }
-
-def _fhir_search_postcode(district):
-    """Return all active GP practices whose postcode starts with `district`.
-    Paginates through Bundle.link[next]."""
-    out = []
-    url = (f"{FHIR_BASE}/Organization"
-           f"?address-postalcode={urllib.parse.quote(district)}"
-           f"&primary-role-id={ORD_GP_ROLE}"
-           f"&active=true&_count=200&_format=json")
-    seen_urls = set()
-    page = 0
-    while url and url not in seen_urls and page < 20:
-        seen_urls.add(url)
-        page += 1
-        try:
-            bundle = _fhir_get(url)
-        except urllib.error.HTTPError as e:
-            if e.code == 404:
-                break
-            raise
-        for entry in bundle.get("entry", []) or []:
-            rec = _fhir_extract(entry)
-            if rec and rec["ods_code"]:
-                # Defensive postcode check: search may match prefix loosely.
-                if rec["postcode"].replace(" ", "").upper().startswith(district):
-                    out.append(rec)
-        # Find next page
-        next_url = None
-        for link in bundle.get("link", []) or []:
-            if link.get("relation") == "next":
-                next_url = link.get("url")
-                break
-        url = next_url
-    return out
-
-def fetch_london_gps_via_fhir(workers=12):
-    """Iterate every London postcode district and union the results.
-    Deduplicate by ODS code in case overlap occurs."""
-    print(f"Fetching London GPs via FHIR endpoint ({FHIR_BASE}/Organization)…")
-    districts = sorted(LONDON_POSTCODE_PREFIXES)
-    print(f"  searching {len(districts)} postcode districts with {workers} workers…")
-    all_records = {}
-    counts = {}
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(_fhir_search_postcode, d): d for d in districts}
-        done = 0
-        for fut in as_completed(futures):
-            d = futures[fut]
-            try:
-                recs = fut.result()
-            except Exception as e:
-                print(f"    {d}: error {e}")
-                recs = []
-            counts[d] = len(recs)
-            for r in recs:
-                # First-write-wins (any postcode district that matched is fine).
-                all_records.setdefault(r["ods_code"], r)
-            done += 1
-            if done % 20 == 0 or done == len(districts):
-                print(f"    {done}/{len(districts)} districts searched, "
-                      f"{len(all_records)} unique practices so far")
-    # Print district-level summary so we can see if TW/KT/etc. returned data.
-    print("  Per-district counts (non-zero only):")
-    for d, n in sorted(counts.items()):
-        if n:
-            flag = " <-- " if d.startswith(("TW", "KT", "BR", "HA", "UB", "RM", "EN", "IG", "CR", "SM", "DA")) else ""
-            print(f"    {d:5s} {n}{flag}")
-    return list(all_records.values())
-
-def fetch_london_gps_via_ord(workers=8):
-    """Top-level: list all active GPs nationally, filter to London by postcode,
-    then enrich with full address + phone in parallel."""
-    print(f"Listing active GP practices via ORD JSON API ({ORD_BASE}/organisations)…")
-    all_gps = list_active_gps_via_ord()
-    print(f"  ORD returned {len(all_gps)} active GP practices nationally")
-    london = [g for g in all_gps if is_london(g["postcode"])]
-    print(f"  {len(london)} are in London postcodes")
-
-    print(f"  fetching full details (address, phone) with {workers} workers…")
-    results = []
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(_fetch_ord_detail, dict(g)): g for g in london}
-        done = 0
-        for fut in as_completed(futures):
-            results.append(fut.result())
-            done += 1
-            if done % 100 == 0 or done == len(london):
-                print(f"    {done}/{len(london)} detail records fetched")
-    return results
-
-# --------------------------------------------------------------- CQC
-
-def cqc_get(path, params, key, retries=3):
-    url = f"{CQC_BASE}{path}?{urllib.parse.urlencode(params)}" if params else f"{CQC_BASE}{path}"
-    headers = {
-        "Ocp-Apim-Subscription-Key": key,
-        "Accept": "application/json",
-        "User-Agent": "londongp.directory/1.0 (rebuild-gps-json)",
-    }
-    for attempt in range(retries):
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=20) as r:
-                return json.loads(r.read())
-        except urllib.error.HTTPError as e:
-            if e.code in (429, 503) and attempt < retries - 1:
-                time.sleep(2 ** attempt)
-                continue
-            if e.code == 404:
-                return None
-            raise
-        except urllib.error.URLError:
-            if attempt < retries - 1:
-                time.sleep(2)
-                continue
-            raise
-
-def cqc_lookup_by_ods(ods, key):
-    """
-    Find the CQC location for a given ODS code. CQC tags providers and
-    locations with their ODS reference, so /locations?odsCode={code}
-    returns at most a handful of matches.
-    """
-    if not ods: return None
-    try:
-        data = cqc_get("/locations", {"odsCode": ods, "perPage": 5}, key)
-    except Exception:
-        return None
-    if not data: return None
-    locs = data.get("locations", [])
-    if not locs: return None
-    # Prefer a registered location over deregistered
-    active = [l for l in locs if not l.get("deregistrationDate")]
-    chosen = active[0] if active else locs[0]
-    return chosen.get("locationId")
-
-def cqc_get_location(loc_id, key):
-    return cqc_get(f"/locations/{loc_id}", {}, key)
-
-# --------------------------------------------------------------- main
+    return bool(m and m.group(1) in LONDON_PREFIXES)
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--key", default=os.environ.get("CQC_KEY"),
-        help="CQC subscription key (defaults to $CQC_KEY).")
-    parser.add_argument("--limit", type=int, default=0,
-        help="Stop after N GPs (for testing). 0 = no limit.")
-    parser.add_argument("--no-cqc", action="store_true",
-        help="Skip CQC enrichment (much faster; cqc_rating fields will be empty).")
-    parser.add_argument("--out", default=str(OUT_GPS),
-        help="Output path. Defaults to overwriting gps.json.")
-    args = parser.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("zipfile", help="Path to epraccur.zip you downloaded.")
+    ap.add_argument("--merge", help="Optional path to existing gps.json — "
+                                    "phone/CQC/GPPS fields will be preserved "
+                                    "by ODS code where the practice still exists.")
+    ap.add_argument("--out", default="gps.json", help="Output path (default: gps.json).")
+    args = ap.parse_args()
 
-    if not args.no_cqc and not args.key:
-        sys.exit("Need a CQC API key. Set $CQC_KEY or pass --key=..., or use --no-cqc to skip rating enrichment.")
+    zip_path = Path(args.zipfile)
+    if not zip_path.exists():
+        sys.exit(f"Can't find {zip_path}. Download from "
+                 "https://files.digital.nhs.uk/assets/ods/current/epraccur.zip")
 
-    # 1. Load existing gps.json (if any) so we can preserve GPPS data.
+    # Load existing gps.json to preserve GPPS scores etc.
     existing = {}
-    if EXISTING_GPS.exists():
+    if args.merge:
         try:
-            for d in json.loads(EXISTING_GPS.read_text()):
+            for d in json.loads(Path(args.merge).read_text()):
                 code = (d.get("ods_code") or "").upper()
                 if code: existing[code] = d
-            print(f"Loaded {len(existing)} existing records from gps.json (will preserve GPPS scores).")
+            print(f"Loaded {len(existing)} records from {args.merge} for merge.")
         except Exception as e:
-            print(f"  warning: couldn't read existing gps.json — {e}")
+            print(f"WARN: couldn't merge from {args.merge}: {e}")
 
-    # 2. Get the master London GP list. Try sources in order of reliability
-    #    from GitHub Actions:
-    #      a. ePraccur ZIP — fastest, one file. Often blocked (403) on
-    #         files.digital.nhs.uk from data-centre IPs.
-    #      b. FHIR STU3 endpoint — same one refresh_nhs_data.py uses
-    #         successfully. Search by postcode district + GP role.
-    #      c. ORD JSON endpoint — last resort; format/access varies.
+    # Parse ePraccur.
+    print(f"Reading {zip_path}…")
+    with zipfile.ZipFile(zip_path) as zf:
+        csv_name = next(n for n in zf.namelist() if n.lower().endswith(".csv"))
+        with zf.open(csv_name) as f:
+            text = f.read().decode("utf-8", errors="replace")
+
     london = []
-    try:
-        csv_text = download_epraccur()
-        london = parse_epraccur_london(csv_text)
-        print(f"Found {len(london)} active GP practices in London (ePraccur).")
-    except SystemExit as e:
-        print(f"ePraccur unavailable ({e}). Falling back to FHIR.")
-    except Exception as e:
-        print(f"ePraccur error ({e}). Falling back to FHIR.")
-
-    if not london:
-        try:
-            london = fetch_london_gps_via_fhir()
-            print(f"Found {len(london)} active GP practices in London (FHIR).")
-        except Exception as e:
-            print(f"FHIR error ({e}). Falling back to ORD.")
-            london = []
-
-    if not london:
-        try:
-            london = fetch_london_gps_via_ord()
-            print(f"Found {len(london)} active GP practices in London (ORD).")
-        except Exception as e:
-            print(f"ORD error ({e}).")
-            london = []
-
-    if not london:
-        sys.exit("All data sources failed — could not build a London GP list. "
-                 "Check NHS Digital service status and the workflow log above.")
-    if args.limit:
-        london = london[:args.limit]
-        print(f"  limited to first {len(london)} for testing")
-
-    # 3. Build the merged records.
-    print("\nBuilding records…")
-    out = []
-    cqc_hits = 0
-    for i, gp in enumerate(london, 1):
-        ods = gp["ods_code"]
+    total = 0
+    active = 0
+    for row in csv.reader(io.StringIO(text)):
+        total += 1
+        if len(row) < 13:
+            continue
+        rec = dict(zip(EPRACCUR_COLS, row + [""] * (len(EPRACCUR_COLS) - len(row))))
+        if rec.get("Status", "").strip().upper() != "A":
+            continue
+        active += 1
+        pc = rec.get("Postcode", "").strip().upper()
+        if not is_london(pc):
+            continue
+        ods = rec.get("Code", "").strip().upper()
         old = existing.get(ods, {})
 
-        # Address: prefer full lines from ePraccur, joined nicely
-        addr = ", ".join(filter(None, gp["address_lines"]))
-        addr = addr.title() if addr.isupper() else addr
+        addr_lines = [rec.get(f"AddressLine{i}", "").strip()
+                      for i in range(1, 6)]
+        addr = ", ".join(filter(None, addr_lines))
+        if addr.isupper():
+            addr = addr.title()
+        raw_name = rec.get("Name", "").strip()
+        name = raw_name.title() if raw_name.isupper() else raw_name
 
-        record = {
+        london.append({
             "ods_code":         ods,
-            "name":             gp["name"],
+            "name":             name,
             "address":          addr,
-            "postcode":         gp["postcode"],
-            "phone":            gp["phone"] or old.get("phone", ""),
-            # CQC fields filled in below if --no-cqc not set
+            "postcode":         pc,
+            "phone":            rec.get("ContactTelephoneNumber", "").strip()
+                                or old.get("phone", ""),
             "cqc_rating":       old.get("cqc_rating", ""),
             "cqc_url":          old.get("cqc_url", ""),
-            # GPPS fields preserved from old data — empty for new practices
             "gpps_overall_pct": old.get("gpps_overall_pct"),
             "gpps_contact_pct": old.get("gpps_contact_pct"),
             "gpps_pcn":         old.get("gpps_pcn", ""),
-        }
+        })
 
-        # 4. Enrich with CQC rating
-        if not args.no_cqc:
-            try:
-                loc_id = cqc_lookup_by_ods(ods, args.key)
-                if loc_id:
-                    detail = cqc_get_location(loc_id, args.key)
-                    if detail:
-                        rating = ((detail.get("currentRatings", {}) or {})
-                                  .get("overall", {}) or {}).get("rating", "")
-                        if rating:
-                            record["cqc_rating"] = rating
-                        record["cqc_url"] = f"https://www.cqc.org.uk/location/{loc_id}"
-                        cqc_hits += 1
-            except Exception as e:
-                if i % 50 == 0:
-                    print(f"  warn: CQC error for {ods}: {e}")
-            time.sleep(0.1)  # gentle on the API
+    if not london:
+        sys.exit("ABORT: no London GPs parsed — check the input zip is correct.")
 
-        out.append(record)
-        if i % 100 == 0 or i == len(london):
-            print(f"  {i}/{len(london)} processed, {cqc_hits} CQC matches")
+    Path(args.out).write_text(json.dumps(london, indent=2))
+    size_kb = Path(args.out).stat().st_size // 1024
+    print(f"\nRead {total} rows, {active} active practices nationally.")
+    print(f"Wrote {args.out}: {len(london)} London GPs, {size_kb} KB.")
 
-    # 5. Safety guard — refuse to overwrite an existing populated gps.json
-    #    with a substantially smaller list. (Prevents an API outage from
-    #    silently nuking the data.)
-    if existing and len(out) < len(existing) * 0.5:
-        sys.exit(
-            f"\nABORT: refusing to write — produced {len(out)} records but "
-            f"existing gps.json has {len(existing)}. Likely a partial fetch.\n"
-            "Check the data-source logs above. gps.json left unchanged."
-        )
+    # Coverage summary
+    by_area = Counter()
+    for r in london:
+        m = re.match(r"^([A-Z]+)", r["postcode"])
+        if m: by_area[m.group(1)] += 1
+    outer = {"BR","CR","DA","EN","HA","IG","KT","RM","SM","TW","UB"}
+    print("\nCoverage by postcode area:")
+    for area, n in sorted(by_area.items(), key=lambda x: -x[1]):
+        flag = "  <-- outer London" if area in outer else ""
+        print(f"  {area:4s} {n}{flag}")
 
-    # 6. Write.
-    Path(args.out).write_text(json.dumps(out, indent=2))
-    print(f"\nWrote {args.out} — {len(out)} practices, {os.path.getsize(args.out)//1024} KB.")
-
-    # 6. Summary by postcode prefix (rough borough proxy).
-    by_prefix = defaultdict(int)
-    for r in out:
-        by_prefix[postcode_district(r["postcode"])[:3]] += 1
-    print("\nBy postcode prefix (top 20):")
-    for prefix, count in sorted(by_prefix.items(), key=lambda x: -x[1])[:20]:
-        print(f"  {prefix:6s} {count}")
-
-    # 7. Sanity check — flag practices that exist in old gps.json but NOT in new.
-    if existing:
-        new_codes = {r["ods_code"] for r in out}
-        missing = set(existing.keys()) - new_codes
-        if missing:
-            print(f"\n⚠️  {len(missing)} practices were in old gps.json but missing from ePraccur "
-                  f"(could be closed/dormant since the file was scraped). Sample:")
-            for code in list(missing)[:10]:
-                print(f"    {code}: {existing[code].get('name', '')}")
+    if "TW" not in by_area:
+        print("\n⚠️  No TW practices found — that's the bug we set out to fix. "
+              "Check the input zip is the latest ePraccur.")
+    else:
+        print(f"\n✅ Twickenham/Richmond (TW): {by_area['TW']} practices.")
 
 if __name__ == "__main__":
     main()
