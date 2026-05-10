@@ -45,6 +45,7 @@ that joins on this foundation.
 """
 
 import json, os, re, sys, time, argparse, urllib.request, urllib.error, urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from collections import defaultdict
@@ -389,47 +390,46 @@ def main():
         text = " ".join(services_list).lower()
         return any(term in text for term in SERVICE_KEEP_TERMS)
 
-    # 3. Fetch detail for each candidate. CQC API supports ~5 requests/s.
+    # 3. Fetch detail for each candidate — concurrent for speed (~8x faster).
     out = []
-    diag_dumped = False
-    for i, loc_id in enumerate(candidates, 1):
+    fetched = 0
+    def _fetch_one(loc_id):
         try:
-            d = fetch_location_detail(loc_id, args.key)
+            return loc_id, fetch_location_detail(loc_id, args.key)
         except Exception as e:
-            print(f"  [{i}/{len(candidates)}] {loc_id}: skip ({e})")
-            continue
-        if i % 100 == 0:
-            print(f"  {i}/{len(candidates)} fetched, {len(out)} kept so far")
+            return loc_id, e
 
-        # First-time diagnostic if filter is dropping everything
-        if i == 200 and len(out) == 0 and not diag_dumped:
-            diag_dumped = True
-            print("DIAG: 0 kept after 200 — sample record keys + service types:")
-            print(f"  keys: {sorted(d.keys())[:30]}")
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futures = {ex.submit(_fetch_one, loc_id): loc_id for loc_id in candidates}
+        for fut in as_completed(futures):
+            fetched += 1
+            loc_id, d = fut.result()
+            if isinstance(d, Exception):
+                continue
+            if fetched % 200 == 0:
+                print(f"  {fetched}/{len(candidates)} fetched, {len(out)} kept so far")
+            if not d:
+                continue
+
+            ods = (d.get("odsCode") or "").upper().strip()
+            if ods and ods in nhs_ods_codes:
+                continue
+
+            pc = (d.get("postalCode") or "").strip()
+            if not is_london(pc):
+                continue
+
+            services = []
             for k in ("gacServiceTypes", "serviceTypes", "regulatedActivities"):
-                if k in d:
-                    print(f"  {k}: {d[k][:5] if isinstance(d[k], list) else d[k]}")
-
-        ods = (d.get("odsCode") or "").upper().strip()
-        if ods and ods in nhs_ods_codes:
-            continue
-
-        pc = (d.get("postalCode") or "").strip()
-        if not is_london(pc):
-            continue
-
-        # Try several possible field names for service types
-        services = []
-        for k in ("gacServiceTypes", "serviceTypes", "regulatedActivities"):
-            v = d.get(k)
-            if isinstance(v, list):
-                for item in v:
-                    if isinstance(item, dict):
-                        services.append(item.get("name", ""))
-                    elif isinstance(item, str):
-                        services.append(item)
-        if not matches_service(services):
-            continue
+                v = d.get(k)
+                if isinstance(v, list):
+                    for item in v:
+                        if isinstance(item, dict):
+                            services.append(item.get("name", ""))
+                        elif isinstance(item, str):
+                            services.append(item)
+            if not matches_service(services):
+                continue
 
         name = (d.get("name") or "").strip()
         addr_lines = [d.get("postalAddressLine1",""), d.get("postalAddressLine2","")]
@@ -445,7 +445,7 @@ def main():
                (d.get("geolocation") or {}).get("longitude"))
 
         out.append({
-            "id":     loc_id,                       # CQC location ID
+            "id":     loc_id,
             "n":      name,
             "a":      address,
             "p":      pc,
@@ -460,7 +460,6 @@ def main():
             "services":     services,
             "private":      True,
         })
-        time.sleep(0.15)
 
     print(f"\nKept {len(out)} private London clinics after all filters.")
 
