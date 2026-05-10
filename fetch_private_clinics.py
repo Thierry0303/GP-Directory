@@ -101,6 +101,7 @@ def classify_specialities(name, services):
 # London postcodes (mirror of the dict in refresh_nhs_data.py — keep them in
 # sync if you add new districts).
 LONDON_POSTCODE_PREFIXES = {
+    # Inner London (E, EC, N, NW, SE, SW, W, WC)
     "EC1A","EC1R","EC1V","EC2A","WC1B","WC1E","WC1N","WC1X","WC2A","WC2B","WC2H","WC2N",
     "E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","E11","E12","E13","E14","E15",
     "E16","E17","E18","E20",
@@ -114,6 +115,18 @@ LONDON_POSTCODE_PREFIXES = {
     "SW8","SW9","SW10","SW11","SW12","SW13","SW14","SW15","SW16","SW17","SW18",
     "SW19","SW20",
     "W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14",
+    # Outer London — Greater London
+    "BR1","BR2","BR3","BR4","BR5","BR6","BR7","BR8",                # Bromley
+    "CR0","CR2","CR3","CR4","CR5","CR6","CR7","CR8","CR9",          # Croydon
+    "DA1","DA5","DA6","DA7","DA8","DA14","DA15","DA16","DA17","DA18", # Bexley
+    "EN1","EN2","EN3","EN4","EN5","EN7","EN8","EN9",                # Enfield
+    "HA0","HA1","HA2","HA3","HA4","HA5","HA6","HA7","HA8","HA9",    # Harrow
+    "IG1","IG2","IG3","IG4","IG5","IG6","IG7","IG8","IG11",         # Redbridge / B&D
+    "KT1","KT2","KT3","KT4","KT5","KT6","KT7","KT8","KT9",          # Kingston
+    "RM1","RM2","RM3","RM4","RM5","RM6","RM7","RM8","RM9","RM10","RM11","RM12","RM13","RM14",  # Havering
+    "SM1","SM2","SM3","SM4","SM5","SM6",                            # Sutton
+    "TW1","TW2","TW3","TW4","TW5","TW6","TW7","TW8","TW9","TW10","TW11","TW12","TW13","TW14",  # Richmond / Hounslow
+    "UB1","UB2","UB3","UB4","UB5","UB6","UB7","UB8","UB9","UB10","UB11",  # Hillingdon / Ealing
 }
 
 BOROUGH_MAP = {
@@ -150,6 +163,33 @@ BOROUGH_MAP = {
     "W12":"Hammersmith & Fulham","W13":"Ealing","W14":"Hammersmith & Fulham",
     "WC1B":"Camden","WC1E":"Camden","WC1N":"Camden","WC1X":"Islington",
     "WC2A":"Camden","WC2B":"Westminster","WC2H":"Westminster","WC2N":"Westminster",
+    # Outer London
+    "BR1":"Bromley","BR2":"Bromley","BR3":"Bromley","BR4":"Bromley","BR5":"Bromley",
+    "BR6":"Bromley","BR7":"Bromley","BR8":"Bromley",
+    "CR0":"Croydon","CR2":"Croydon","CR3":"Croydon","CR4":"Merton","CR5":"Croydon",
+    "CR6":"Croydon","CR7":"Croydon","CR8":"Croydon","CR9":"Croydon",
+    "DA1":"Bexley","DA5":"Bexley","DA6":"Bexley","DA7":"Bexley","DA8":"Bexley",
+    "DA14":"Bexley","DA15":"Bexley","DA16":"Bexley","DA17":"Bexley","DA18":"Bexley",
+    "EN1":"Enfield","EN2":"Enfield","EN3":"Enfield","EN4":"Enfield","EN5":"Barnet",
+    "EN7":"Enfield","EN8":"Enfield","EN9":"Enfield",
+    "HA0":"Brent","HA1":"Harrow","HA2":"Harrow","HA3":"Harrow","HA4":"Hillingdon",
+    "HA5":"Harrow","HA6":"Hillingdon","HA7":"Harrow","HA8":"Barnet","HA9":"Brent",
+    "IG1":"Redbridge","IG2":"Redbridge","IG3":"Redbridge","IG4":"Redbridge",
+    "IG5":"Redbridge","IG6":"Redbridge","IG7":"Redbridge","IG8":"Redbridge",
+    "IG11":"Barking & Dagenham",
+    "KT1":"Kingston","KT2":"Kingston","KT3":"Kingston","KT4":"Kingston","KT5":"Kingston",
+    "KT6":"Kingston","KT7":"Kingston","KT8":"Richmond","KT9":"Kingston",
+    "RM1":"Havering","RM2":"Havering","RM3":"Havering","RM4":"Havering","RM5":"Havering",
+    "RM6":"Barking & Dagenham","RM7":"Havering","RM8":"Barking & Dagenham",
+    "RM9":"Barking & Dagenham","RM10":"Barking & Dagenham","RM11":"Havering",
+    "RM12":"Havering","RM13":"Havering","RM14":"Havering",
+    "SM1":"Sutton","SM2":"Sutton","SM3":"Sutton","SM4":"Merton","SM5":"Sutton","SM6":"Sutton",
+    "TW1":"Richmond","TW2":"Richmond","TW3":"Hounslow","TW4":"Hounslow","TW5":"Hounslow",
+    "TW6":"Hillingdon","TW7":"Hounslow","TW8":"Hounslow","TW9":"Richmond","TW10":"Richmond",
+    "TW11":"Richmond","TW12":"Richmond","TW13":"Hounslow","TW14":"Hounslow",
+    "UB1":"Ealing","UB2":"Ealing","UB3":"Hillingdon","UB4":"Hillingdon","UB5":"Ealing",
+    "UB6":"Ealing","UB7":"Hillingdon","UB8":"Hillingdon","UB9":"Hillingdon",
+    "UB10":"Hillingdon","UB11":"Hillingdon",
 }
 
 # ---------------------------------------------------------------- helpers
@@ -203,29 +243,34 @@ def cqc_get(path, params, key, retries=3):
 
 def fetch_london_locations(key):
     """
-    Walk the CQC /locations endpoint, paginating through all London
-    locations. Returns the list of summary records.
+    Walk the CQC /locations endpoint, paginating through ALL UK locations
+    and filtering to London by postcode prefix client-side.
 
-    The API supports a `postCode` filter but only by exact value, so we
-    instead query all locations and filter client-side. For London there
-    are roughly 12k–15k regulated locations across all sectors.
+    The CQC public API doesn't accept geographic region filters in the
+    location index endpoint, so we have to pull everything and filter
+    locally. ~50k locations total, takes 5–10 minutes.
     """
-    print("Fetching CQC locations index (this takes ~30–60s)…")
+    print("Fetching CQC locations index (this takes 5–10 minutes)…")
     page = 1
     per_page = 1000
-    all_locations = []
+    london_locations = []
+    total_seen = 0
     while True:
-        data = cqc_get("/locations", {"page": page, "perPage": per_page,
-                                       "regionType": "Region",
-                                       "regionLabel": "London"}, key)
+        data = cqc_get("/locations", {"page": page, "perPage": per_page}, key)
         items = data.get("locations", [])
-        all_locations.extend(items)
+        total_seen += len(items)
+        # Filter to London postcodes — locations summary include postalCode
+        london_items = [loc for loc in items
+                        if is_london(loc.get("postalCode", ""))]
+        london_locations.extend(london_items)
         total_pages = data.get("totalPages", 1)
-        print(f"  page {page}/{total_pages} — {len(items)} locations, {len(all_locations)} cumulative")
+        print(f"  page {page}/{total_pages} — {len(items)} fetched, "
+              f"{len(london_items)} London ({len(london_locations)} cumulative)")
         if page >= total_pages: break
         page += 1
-        time.sleep(0.2)  # gentle on the API
-    return all_locations
+        time.sleep(0.2)
+    print(f"Scanned {total_seen} UK locations, kept {len(london_locations)} London ones.")
+    return london_locations
 
 def fetch_location_detail(location_id, key):
     """Get full record for a single location (services, ratings, address)."""
