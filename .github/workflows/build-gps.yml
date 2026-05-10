@@ -1,0 +1,41 @@
+name: Build gps.json (OpenPrescribing + FHIR)
+
+# Manually-triggered. Builds a fresh gps.json by combining OpenPrescribing's
+# public mirror of the NHS GP list with the FHIR identifier-lookup endpoint
+# (the same one refresh_nhs_data.py uses successfully every week).
+#
+# This bypasses the files.digital.nhs.uk 403s entirely.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run build
+        run: python build_gps_via_openprescribing.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gps.json
+          if git diff --cached --quiet; then
+            echo "No changes to gps.json"
+          else
+            git commit -m "build: regenerate gps.json via OpenPrescribing + FHIR ($(date -u +%Y-%m-%d))"
+            git push
+          fi
