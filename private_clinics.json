@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "1-1573921512",
+    "n": "Prince Regent House",
+    "a": "293b Alnwick Road, London",
+    "p": "E16 3EZ",
+    "ph": "02074749870",
+    "web": "www.precious-homes.co.uk",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-1573921512",
+    "ar": "Newham",
+    "la": 51.51196,
+    "ln": 0.03883,
+    "specialities": [
+      "other"
+    ],
+    "services": [
+      "Residential homes",
+      "Accommodation for persons who require nursing or personal care"
+    ],
+    "private": true
+  }
+]
