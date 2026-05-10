@@ -98,6 +98,35 @@ def classify_specialities(name, services):
             found.append(tag)
     return found or ["other"]
 
+# Aggressive pre-filter for the summary list — drop locations whose name
+# clearly doesn't represent a medical doctor practice. Drops ~70% of London
+# CQC locations before we incur the per-record detail fetch.
+DROP_NAME_RE = re.compile(
+    r"\b(?:dental|dentist|orthodont|pharmacy|chemist|ambulance|"
+    r"nursing home|care home|residential home|extra care|"
+    r"hospice|veterinary|vet practice|funeral|optician|optometr|"
+    r"sexual health clinic|substance|drug rehab|"
+    r"hearing|audiology only|chiropract|osteopath|"
+    r"podiatr|reflexolog|reiki|colonic|tattoo|laser hair|"
+    r"slimming|weight loss clinic|fertility cryob|sperm bank)\b",
+    re.IGNORECASE,
+)
+
+# Positive keep patterns — most actual doctor practices match one of these.
+# We require a positive keep AND no drop hit before doing the detail fetch.
+KEEP_NAME_RE = re.compile(
+    r"\b(?:clinic|medical|practice|surgery|health centre|hospital|"
+    r"doctors?|gp|consult|specialist|cardio|derma|psychiatr|paediatr|"
+    r"orthop|gynaec|urolog|oncolog|fertility|imaging|diagnostic|"
+    r"endocrin|gastroenter|rheumatolog|neurolog|allerg|aestheti|cosmet)\b",
+    re.IGNORECASE,
+)
+
+def looks_like_medical_doctor(name):
+    if not name: return False
+    if DROP_NAME_RE.search(name): return False
+    return bool(KEEP_NAME_RE.search(name))
+
 # London postcodes (mirror of the dict in refresh_nhs_data.py — keep them in
 # sync if you add new districts).
 LONDON_POSTCODE_PREFIXES = {
@@ -261,7 +290,8 @@ def fetch_london_locations(key):
         total_seen += len(items)
         # Filter to London postcodes — locations summary include postalCode
         london_items = [loc for loc in items
-                        if is_london(loc.get("postalCode", ""))]
+                        if is_london(loc.get("postalCode", ""))
+                        and looks_like_medical_doctor(loc.get("name", ""))]
         london_locations.extend(london_items)
         total_pages = data.get("totalPages", 1)
         print(f"  page {page}/{total_pages} — {len(items)} fetched, "
@@ -318,10 +348,33 @@ def main():
 
     if args.limit:
         candidates = candidates[:args.limit]
+    # Hard cap — if name pre-filter hasn't trimmed enough, don't blow the budget
+    HARD_CAP = 5000
+    if len(candidates) > HARD_CAP:
+        print(f"WARNING: {len(candidates)} candidates after name filter — capping at {HARD_CAP}")
+        candidates = candidates[:HARD_CAP]
     print(f"{len(candidates)} active candidate locations — fetching details…")
+
+    # Service-type matching: case-insensitive substring containment against
+    # any of these terms. CQC's actual strings have non-obvious punctuation.
+    SERVICE_KEEP_TERMS = [
+        "doctors consultation",
+        "doctors treatment",
+        "specialist college",
+        "diagnostic",
+        "long term conditions",
+        "mobile doctor",
+        "rehabilitation",
+        "acute services",
+        "hospital services",
+    ]
+    def matches_service(services_list):
+        text = " ".join(services_list).lower()
+        return any(term in text for term in SERVICE_KEEP_TERMS)
 
     # 3. Fetch detail for each candidate. CQC API supports ~5 requests/s.
     out = []
+    diag_dumped = False
     for i, loc_id in enumerate(candidates, 1):
         try:
             d = fetch_location_detail(loc_id, args.key)
@@ -331,17 +384,34 @@ def main():
         if i % 100 == 0:
             print(f"  {i}/{len(candidates)} fetched, {len(out)} kept so far")
 
+        # First-time diagnostic if filter is dropping everything
+        if i == 200 and len(out) == 0 and not diag_dumped:
+            diag_dumped = True
+            print("DIAG: 0 kept after 200 — sample record keys + service types:")
+            print(f"  keys: {sorted(d.keys())[:30]}")
+            for k in ("gacServiceTypes", "serviceTypes", "regulatedActivities"):
+                if k in d:
+                    print(f"  {k}: {d[k][:5] if isinstance(d[k], list) else d[k]}")
+
         ods = (d.get("odsCode") or "").upper().strip()
         if ods and ods in nhs_ods_codes:
-            continue  # this is an NHS practice — handled by refresh_nhs_data.py
+            continue
 
         pc = (d.get("postalCode") or "").strip()
         if not is_london(pc):
             continue
 
-        services = [s.get("name", "") for s in d.get("gacServiceTypes", [])]
-        # Keep only locations whose service mix overlaps with our SERVICE_TYPES.
-        if not any(s in SERVICE_TYPES for s in services):
+        # Try several possible field names for service types
+        services = []
+        for k in ("gacServiceTypes", "serviceTypes", "regulatedActivities"):
+            v = d.get(k)
+            if isinstance(v, list):
+                for item in v:
+                    if isinstance(item, dict):
+                        services.append(item.get("name", ""))
+                    elif isinstance(item, str):
+                        services.append(item)
+        if not matches_service(services):
             continue
 
         name = (d.get("name") or "").strip()
