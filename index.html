@@ -105,22 +105,33 @@ a{text-decoration:none;color:inherit}
 .cqc-I{background:#FCEBEB;color:#A32D2D}
 .cqc-N{background:#f0f0ee;color:#777}
 .area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start}
-/* Borough nav (now a <details> for collapse-on-mobile) */
-.borough-nav{background:#fff;border-bottom:1px solid #e5e5e3}
-.borough-nav-summary{list-style:none;cursor:pointer;padding:11px 24px;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;display:flex;align-items:center;gap:10px;justify-content:flex-start;user-select:none}
-.borough-nav-summary::-webkit-details-marker{display:none}
-.borough-nav-summary::after{content:"\25B8";font-size:10px;color:#bbb;transition:transform .15s;font-weight:400;letter-spacing:0;margin-left:4px}
-.borough-nav[open] .borough-nav-summary::after{transform:rotate(90deg)}
-.borough-count{font-weight:500;color:#aaa;text-transform:none;letter-spacing:0;font-size:11px}
-.borough-nav-inner{max-width:1300px;margin:0 auto;padding:0 24px 12px;display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
-.borough-nav a{display:inline-block;padding:4px 10px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:11.5px;font-weight:600;transition:all .12s}
-.borough-nav a:hover{background:#003087;color:#fff}
+/* ===== Borough chip bar + bottom sheet ===== */
+.borough-bar{background:#fff;border-bottom:1px solid #e5e5e3;position:sticky;top:0;z-index:50}
+.borough-bar-inner{max-width:1300px;margin:0 auto;padding:9px 24px;display:flex;align-items:center;gap:6px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+.borough-bar-inner::-webkit-scrollbar{display:none}
+.borough-bar-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;flex-shrink:0;margin-right:4px}
+.borough-chip{display:inline-block;padding:6px 12px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:12.5px;font-weight:600;flex-shrink:0;transition:all .12s;border:1px solid transparent;text-decoration:none;white-space:nowrap}
+.borough-chip:hover,.borough-chip:focus{background:#003087;color:#fff}
+.borough-more{flex-shrink:0;padding:6px 13px;border-radius:99px;background:#003087;color:#fff;font-size:12.5px;font-weight:700;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;transition:opacity .12s;display:inline-flex;align-items:center;gap:4px}
+.borough-more:hover{opacity:.9}
+.borough-more:active{transform:translateY(1px)}
 
-/* Open by default on tablet+ — only collapsed on mobile */
-@media(min-width:601px){
-  .borough-nav{border-bottom:1px solid #e5e5e3}
-  .borough-nav[open] .borough-nav-summary{padding-bottom:6px}
-}
+/* Bottom sheet */
+.borough-sheet{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .2s ease}
+.borough-sheet[hidden]{display:none}
+.borough-sheet-overlay{position:absolute;inset:0;background:rgba(15,15,30,.45);cursor:pointer}
+.borough-sheet-panel{position:relative;background:#fff;width:100%;max-width:560px;border-radius:18px 18px 0 0;padding:6px 0 24px;max-height:85vh;display:flex;flex-direction:column;animation:slideUp .25s cubic-bezier(.2,.9,.3,1.1);box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+.borough-sheet-handle{width:42px;height:4px;background:#dcdce0;border-radius:99px;margin:8px auto 4px;cursor:pointer}
+.borough-sheet-hdr{display:flex;align-items:center;justify-content:space-between;padding:8px 22px 14px;border-bottom:1px solid #f0f0ee;flex-shrink:0}
+.borough-sheet-hdr h3{font-family:Georgia,serif;font-size:1.15rem;font-weight:700;color:#003087;margin:0}
+.borough-sheet-close{width:34px;height:34px;border-radius:99px;border:none;background:#f5f5f3;color:#555;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;font-family:inherit;padding:0}
+.borough-sheet-close:hover{background:#e8e8e6;color:#000}
+.borough-sheet-grid{padding:14px 22px 4px;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:7px 12px;-webkit-overflow-scrolling:touch}
+.borough-sheet-grid a{display:block;padding:10px 12px;border-radius:8px;background:#FDFAFA;color:#003087;font-size:14px;font-weight:600;text-decoration:none;border:1px solid #f0f0ee;transition:background .12s,border-color .12s}
+.borough-sheet-grid a:hover,.borough-sheet-grid a:focus{background:#EDF4FC;border-color:#B5D4F4}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+body.sheet-open{overflow:hidden}
 .area-tag{cursor:pointer;transition:background .12s,color .12s}
 .area-tag:hover{background:#003087;color:#fff}
 @media(max-width:580px){.borough-nav{padding-left:16px;padding-right:16px}}
@@ -187,14 +198,14 @@ footer a:hover{color:#fff}
   #q{padding:13px 12px 13px 38px;font-size:16px} /* 16px prevents iOS auto-zoom */
   .clr{padding:13px 14px;font-size:13px}
 
-  /* Borough nav — collapsed by default on mobile, expand to swipe row */
-  .borough-nav-summary{padding:11px 16px;font-size:11px}
-  .borough-count{display:none} /* save space on phone */
-  .borough-nav-inner{padding:4px 16px 12px;flex-wrap:nowrap;overflow-x:auto;
-    overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;gap:6px;
-    -webkit-overflow-scrolling:touch}
-  .borough-nav-inner::-webkit-scrollbar{display:none}
-  .borough-nav a{flex-shrink:0;padding:6px 12px;font-size:12px}
+  /* Borough chip bar — tighter padding on phone */
+  .borough-bar-inner{padding:8px 14px;gap:5px}
+  .borough-bar-label{display:none}  /* save space — chips are self-explanatory */
+  .borough-chip{padding:6px 11px;font-size:12px}
+  .borough-more{padding:6px 11px;font-size:12px}
+  .borough-sheet-panel{max-height:80vh}
+  .borough-sheet-grid{grid-template-columns:1fr 1fr;gap:6px 10px;padding:12px 18px 4px}
+  .borough-sheet-grid a{padding:11px 12px;font-size:13.5px}
 
   .layout{padding:14px 16px 32px;gap:10px}
 
@@ -284,12 +295,33 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
-<details class="borough-nav" id="boroughNav">
-  <summary class="borough-nav-summary">Browse by borough <span class="borough-count">486 practices across 32 boroughs</span></summary>
-  <div class="borough-nav-inner">
-    <a href="/practice/barnet/">Barnet</a> <a href="/practice/brent/">Brent</a> <a href="/practice/bromley/">Bromley</a> <a href="/practice/camden/">Camden</a> <a href="/practice/city-of-london/">City of London</a> <a href="/practice/croydon/">Croydon</a> <a href="/practice/ealing/">Ealing</a> <a href="/practice/enfield/">Enfield</a> <a href="/practice/greenwich/">Greenwich</a> <a href="/practice/hackney/">Hackney</a> <a href="/practice/hammersmith-and-fulham/">Hammersmith & Fulham</a> <a href="/practice/haringey/">Haringey</a> <a href="/practice/islington/">Islington</a> <a href="/practice/kensington-and-chelsea/">Kensington & Chelsea</a> <a href="/practice/lambeth/">Lambeth</a> <a href="/practice/lewisham/">Lewisham</a> <a href="/practice/merton/">Merton</a> <a href="/practice/newham/">Newham</a> <a href="/practice/redbridge/">Redbridge</a> <a href="/practice/richmond/">Richmond</a> <a href="/practice/southwark/">Southwark</a> <a href="/practice/tower-hamlets/">Tower Hamlets</a> <a href="/practice/waltham-forest/">Waltham Forest</a> <a href="/practice/wandsworth/">Wandsworth</a> <a href="/practice/westminster/">Westminster</a>
+<nav class="borough-bar" aria-label="Browse by London borough">
+  <div class="borough-bar-inner">
+    <span class="borough-bar-label">Borough:</span>
+    <a class="borough-chip" href="/practice/camden/">Camden</a>
+    <a class="borough-chip" href="/practice/westminster/">Westminster</a>
+    <a class="borough-chip" href="/practice/islington/">Islington</a>
+    <a class="borough-chip" href="/practice/lambeth/">Lambeth</a>
+    <a class="borough-chip" href="/practice/southwark/">Southwark</a>
+    <a class="borough-chip" href="/practice/hackney/">Hackney</a>
+    <button type="button" class="borough-more" id="boroughMoreBtn" aria-haspopup="dialog" aria-controls="boroughSheet">All 32 &rsaquo;</button>
   </div>
-</details>
+</nav>
+
+<!-- Bottom sheet: full list of boroughs -->
+<div class="borough-sheet" id="boroughSheet" role="dialog" aria-modal="true" aria-labelledby="boroughSheetTitle" hidden>
+  <div class="borough-sheet-overlay" data-close></div>
+  <div class="borough-sheet-panel">
+    <div class="borough-sheet-handle" data-close></div>
+    <div class="borough-sheet-hdr">
+      <h3 id="boroughSheetTitle">Browse by borough</h3>
+      <button type="button" class="borough-sheet-close" data-close aria-label="Close">&times;</button>
+    </div>
+    <div class="borough-sheet-grid">
+      <a href="/practice/barnet/">Barnet</a> <a href="/practice/brent/">Brent</a> <a href="/practice/bromley/">Bromley</a> <a href="/practice/camden/">Camden</a> <a href="/practice/city-of-london/">City of London</a> <a href="/practice/croydon/">Croydon</a> <a href="/practice/ealing/">Ealing</a> <a href="/practice/enfield/">Enfield</a> <a href="/practice/greenwich/">Greenwich</a> <a href="/practice/hackney/">Hackney</a> <a href="/practice/hammersmith-and-fulham/">Hammersmith & Fulham</a> <a href="/practice/haringey/">Haringey</a> <a href="/practice/islington/">Islington</a> <a href="/practice/kensington-and-chelsea/">Kensington & Chelsea</a> <a href="/practice/lambeth/">Lambeth</a> <a href="/practice/lewisham/">Lewisham</a> <a href="/practice/merton/">Merton</a> <a href="/practice/newham/">Newham</a> <a href="/practice/redbridge/">Redbridge</a> <a href="/practice/richmond/">Richmond</a> <a href="/practice/southwark/">Southwark</a> <a href="/practice/tower-hamlets/">Tower Hamlets</a> <a href="/practice/waltham-forest/">Waltham Forest</a> <a href="/practice/wandsworth/">Wandsworth</a> <a href="/practice/westminster/">Westminster</a>
+    </div>
+  </div>
+</div>
 
 <div class="layout">
   <aside class="sidebar">
@@ -505,24 +537,32 @@ document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 buildFilters();
 render();
 
-/* On phones, collapse filter panels by default and toggle on header tap.
-   Borough nav <details> is also closed by default on phones (open on tablet+). */
+/* Borough sheet open/close — works on every screen size */
 (function(){
-  const isPhone = window.matchMedia('(max-width:600px)').matches;
-  const boroughNav = document.getElementById('boroughNav');
-  if (boroughNav && !isPhone) boroughNav.open = true;
+  const sheet = document.getElementById('boroughSheet');
+  const openBtn = document.getElementById('boroughMoreBtn');
+  if (!sheet || !openBtn) return;
+  function open(){ sheet.hidden = false; document.body.classList.add('sheet-open'); }
+  function close(){ sheet.hidden = true; document.body.classList.remove('sheet-open'); }
+  openBtn.addEventListener('click', open);
+  sheet.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
+  // Close when a borough link inside the sheet is clicked (it'll navigate away anyway,
+  // but this prevents a flash if user middle-clicks etc.)
+  sheet.querySelectorAll('.borough-sheet-grid a').forEach(a => a.addEventListener('click', close));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) close(); });
+})();
 
-  if (isPhone) {
-    document.querySelectorAll('.panel').forEach(p => {
-      // skip the sort dropdown — it's small and useful as-is
-      if (p.querySelector('select')) return;
-      p.classList.add('collapsed');
-    });
-    document.querySelectorAll('.panel-hdr').forEach(h => {
-      if (!h.parentElement.querySelector('.opts')) return;
-      h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed'));
-    });
-  }
+/* On phones, collapse filter panels by default and toggle on header tap. */
+(function(){
+  if (!window.matchMedia('(max-width:600px)').matches) return;
+  document.querySelectorAll('.panel').forEach(p => {
+    if (p.querySelector('select')) return;  // keep Sort open — it's small
+    p.classList.add('collapsed');
+  });
+  document.querySelectorAll('.panel-hdr').forEach(h => {
+    if (!h.parentElement.querySelector('.opts')) return;
+    h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed'));
+  });
 })();
 </script>
 </body>
