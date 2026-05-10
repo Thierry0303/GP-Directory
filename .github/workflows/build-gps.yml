@@ -1,10 +1,8 @@
-name: Build gps.json (OpenPrescribing + FHIR)
+name: Build gps.json (CQC + FHIR)
 
-# Manually-triggered. Builds a fresh gps.json by combining OpenPrescribing's
-# public mirror of the NHS GP list with the FHIR identifier-lookup endpoint
-# (the same one refresh_nhs_data.py uses successfully every week).
-#
-# This bypasses the files.digital.nhs.uk 403s entirely.
+# Builds gps.json using ONLY the two endpoints proven to work from CI:
+# CQC pagination (used by fetch_private_clinics.py) and FHIR identifier
+# lookup (used by refresh_nhs_data.py). Manual trigger only.
 
 on:
   workflow_dispatch:
@@ -26,7 +24,9 @@ jobs:
           python-version: "3.11"
 
       - name: Run build
-        run: python build_gps_via_openprescribing.py
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python build_gps_final.py
 
       - name: Commit & push
         run: |
@@ -36,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to gps.json"
           else
-            git commit -m "build: regenerate gps.json via OpenPrescribing + FHIR ($(date -u +%Y-%m-%d))"
+            git commit -m "build: regenerate gps.json via CQC+FHIR ($(date -u +%Y-%m-%d))"
             git push
           fi
