@@ -373,21 +373,28 @@ def main():
         candidates = candidates[:HARD_CAP]
     print(f"{len(candidates)} active candidate locations — fetching details…")
 
-    # Service-type matching: case-insensitive substring containment against
-    # any of these terms. CQC's actual strings have non-obvious punctuation.
+    # Service-type filtering — two-stage:
+    #   1) DROP if any service marks this as accommodation / care home /
+    #      personal-care provider (those aren't doctor clinics even if the
+    #      location name looks generic).
+    #   2) KEEP if any service contains a doctor / clinical-treatment term.
+    #   3) Otherwise reject (conservative default).
+    SERVICE_DROP_TERMS = [
+        "residential home", "accommodation for persons", "personal care",
+        "nursing care", "care home", "domiciliary care",
+        "supported living", "shared lives",
+    ]
     SERVICE_KEEP_TERMS = [
-        "doctors consultation",
-        "doctors treatment",
-        "specialist college",
-        "diagnostic",
-        "long term conditions",
-        "mobile doctor",
-        "rehabilitation",
-        "acute services",
-        "hospital services",
+        "doctor", "treatment of disease", "consultation",
+        "specialist college", "diagnostic and screening",
+        "long term conditions", "mobile doctor", "rehabilitation",
+        "acute services", "hospital services for", "primary medical",
+        "surgical procedure", "family planning",
     ]
     def matches_service(services_list):
         text = " ".join(services_list).lower()
+        if any(term in text for term in SERVICE_DROP_TERMS):
+            return False
         return any(term in text for term in SERVICE_KEEP_TERMS)
 
     # 3. Fetch detail for each candidate — concurrent for speed (~8x faster).
