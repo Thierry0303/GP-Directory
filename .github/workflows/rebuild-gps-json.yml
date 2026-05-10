@@ -1,0 +1,25 @@
+name: Rebuild gps.json from ePraccur
+on:
+  workflow_dispatch:   # manual only — no schedule
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Rebuild gps.json
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python rebuild_gps_json.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add gps.json
+          git diff --staged --quiet || git commit -m "chore: rebuild gps.json from ePraccur $(date -u '+%Y-%m-%d')"
+          git push
