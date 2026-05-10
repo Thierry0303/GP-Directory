@@ -105,12 +105,22 @@ a{text-decoration:none;color:inherit}
 .cqc-I{background:#FCEBEB;color:#A32D2D}
 .cqc-N{background:#f0f0ee;color:#777}
 .area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start}
-/* Borough nav */
-.borough-nav{background:#fff;border-bottom:1px solid #e5e5e3;padding:11px 24px}
-.borough-nav-inner{max-width:1300px;margin:0 auto;display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
-.borough-nav-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;margin-right:8px;white-space:nowrap}
-.borough-nav a{display:inline-block;padding:3px 9px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:11.5px;font-weight:600;transition:all .12s}
+/* Borough nav (now a <details> for collapse-on-mobile) */
+.borough-nav{background:#fff;border-bottom:1px solid #e5e5e3}
+.borough-nav-summary{list-style:none;cursor:pointer;padding:11px 24px;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;display:flex;align-items:center;gap:10px;justify-content:flex-start;user-select:none}
+.borough-nav-summary::-webkit-details-marker{display:none}
+.borough-nav-summary::after{content:"\25B8";font-size:10px;color:#bbb;transition:transform .15s;font-weight:400;letter-spacing:0;margin-left:4px}
+.borough-nav[open] .borough-nav-summary::after{transform:rotate(90deg)}
+.borough-count{font-weight:500;color:#aaa;text-transform:none;letter-spacing:0;font-size:11px}
+.borough-nav-inner{max-width:1300px;margin:0 auto;padding:0 24px 12px;display:flex;flex-wrap:wrap;gap:5px;align-items:baseline}
+.borough-nav a{display:inline-block;padding:4px 10px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:11.5px;font-weight:600;transition:all .12s}
 .borough-nav a:hover{background:#003087;color:#fff}
+
+/* Open by default on tablet+ — only collapsed on mobile */
+@media(min-width:601px){
+  .borough-nav{border-bottom:1px solid #e5e5e3}
+  .borough-nav[open] .borough-nav-summary{padding-bottom:6px}
+}
 .area-tag{cursor:pointer;transition:background .12s,color .12s}
 .area-tag:hover{background:#003087;color:#fff}
 @media(max-width:580px){.borough-nav{padding-left:16px;padding-right:16px}}
@@ -148,18 +158,103 @@ footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:1
 footer a{color:rgba(255,255,255,.8)}
 footer a:hover{color:#fff}
 
-/* Responsive */
+/* ========== Responsive ========== */
+
+/* Tablet — collapse to single column main */
 @media(max-width:900px){
-  .layout{grid-template-columns:1fr}
+  .layout{grid-template-columns:1fr;gap:14px;padding-top:14px}
   .sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .panel,.nhs-panel{margin-bottom:0}
-  .hdr-stats{display:none}
+  .nhs-panel{grid-column:1/-1;margin-bottom:0}
+  .panel{margin-bottom:0}
+  .hdr-stats{gap:14px}
+  .hdr-stats strong{font-size:1.15rem}
+  .hdr-stats span{font-size:.6rem}
 }
-@media(max-width:580px){
-  .layout,.hdr,.search-zone{padding-left:16px;padding-right:16px}
-  .sidebar{grid-template-columns:1fr}
-  #grid{grid-template-columns:1fr}
+
+/* Phone */
+@media(max-width:600px){
+  .hdr{padding:0 14px;gap:8px}
+  .hdr-in{padding:9px 0;gap:8px}
+  .logo h1{font-size:1.15rem;line-height:1.05}
+  .logo p{display:none}  /* save vertical space — title alone is clear enough */
+  /* Show 2 most useful stats only, smaller */
+  .hdr-stats{gap:14px;flex:0 0 auto}
+  .hdr-stats div:nth-child(2),.hdr-stats div:nth-child(3){display:none}
+  .hdr-stats strong{font-size:1rem;font-weight:600}
+  .hdr-stats span{font-size:.55rem;letter-spacing:.03em}
+
+  .search-zone{padding:0 16px 12px}
+  #q{padding:13px 12px 13px 38px;font-size:16px} /* 16px prevents iOS auto-zoom */
+  .clr{padding:13px 14px;font-size:13px}
+
+  /* Borough nav — collapsed by default on mobile, expand to swipe row */
+  .borough-nav-summary{padding:11px 16px;font-size:11px}
+  .borough-count{display:none} /* save space on phone */
+  .borough-nav-inner{padding:4px 16px 12px;flex-wrap:nowrap;overflow-x:auto;
+    overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;gap:6px;
+    -webkit-overflow-scrolling:touch}
+  .borough-nav-inner::-webkit-scrollbar{display:none}
+  .borough-nav a{flex-shrink:0;padding:6px 12px;font-size:12px}
+
+  .layout{padding:14px 16px 32px;gap:10px}
+
+  /* Sidebar — single column, tighter */
+  .sidebar{grid-template-columns:1fr;gap:8px}
+  .nhs-panel{padding:10px 12px}
+  .nhs-panel-hdr{margin-bottom:3px}
+  .nhs-panel p{font-size:11px;margin-bottom:6px;line-height:1.4}
+  .nhs-tag{font-size:10px;padding:3px 8px}
+
+  /* Filter panels collapse to <details> on phone — saves vertical space */
+  .panel{border-radius:10px}
+  .panel-hdr{font-size:10px;padding:11px 14px 9px;cursor:pointer;
+    user-select:none;display:flex;align-items:center;justify-content:space-between}
+  .panel-hdr::after{content:"\25BE";font-size:11px;color:#bbb;
+    transition:transform .15s;font-weight:400;letter-spacing:0}
+  .panel.collapsed .panel-hdr::after{transform:rotate(-90deg)}
+  .panel.collapsed .opts,.panel.collapsed select{display:none}
+  .opts{max-height:240px}
+  .opts label{padding:8px 14px;font-size:14px} /* bigger tap target */
+  .opts input[type=checkbox]{width:16px;height:16px}
+  .panel select{padding:11px 14px;font-size:14px}
+
+  /* Card grid — single column with comfortable spacing */
+  #grid{grid-template-columns:1fr;gap:10px}
+  .card{padding:14px 14px}
+  .card-name{font-size:15px}
+  .card-addr{font-size:12px}
+
+  /* Stats row tighter on phone */
+  .metrics{gap:10px;margin-bottom:10px}
+  .m-val{font-size:12px}
+
+  /* Card footer — wrap nicely, bigger tap targets */
+  .card-foot{flex-wrap:wrap;gap:10px;padding-top:11px}
+  .card-phone{font-size:13px;padding:4px 0;min-height:32px}
+  .actions{gap:6px;width:100%}
+  .pill{padding:7px 11px;font-size:12px;min-height:32px;display:inline-flex;
+    align-items:center}
+
+  /* Results bar */
+  .results-bar p{font-size:12px}
+
+  /* Pagination — bigger tap targets, allow wrap */
+  .pager{margin-top:18px;gap:4px}
+  .pg{min-width:38px;height:38px;font-size:13px}
+
+  /* Footer */
+  footer{padding:14px 16px;font-size:11px;line-height:1.7}
 }
+
+/* Very small phones */
+@media(max-width:380px){
+  .logo h1{font-size:1.1rem}
+  .hdr-stats{display:none} /* phone too narrow — give logo room */
+  .pill{font-size:11px;padding:6px 9px}
+  .borough-nav-label{font-size:9px}
+}
+
+/* Make filter panels collapsed-by-default on phones via JS hook */
 </style>
 </head>
 <body>
@@ -189,12 +284,12 @@ footer a:hover{color:#fff}
   </div>
 </div>
 
-<nav class="borough-nav" aria-label="Browse by London borough">
+<details class="borough-nav" id="boroughNav">
+  <summary class="borough-nav-summary">Browse by borough <span class="borough-count">486 practices across 32 boroughs</span></summary>
   <div class="borough-nav-inner">
-    <span class="borough-nav-label">Browse by borough</span>
     <a href="/practice/barnet/">Barnet</a> <a href="/practice/brent/">Brent</a> <a href="/practice/bromley/">Bromley</a> <a href="/practice/camden/">Camden</a> <a href="/practice/city-of-london/">City of London</a> <a href="/practice/croydon/">Croydon</a> <a href="/practice/ealing/">Ealing</a> <a href="/practice/enfield/">Enfield</a> <a href="/practice/greenwich/">Greenwich</a> <a href="/practice/hackney/">Hackney</a> <a href="/practice/hammersmith-and-fulham/">Hammersmith & Fulham</a> <a href="/practice/haringey/">Haringey</a> <a href="/practice/islington/">Islington</a> <a href="/practice/kensington-and-chelsea/">Kensington & Chelsea</a> <a href="/practice/lambeth/">Lambeth</a> <a href="/practice/lewisham/">Lewisham</a> <a href="/practice/merton/">Merton</a> <a href="/practice/newham/">Newham</a> <a href="/practice/redbridge/">Redbridge</a> <a href="/practice/richmond/">Richmond</a> <a href="/practice/southwark/">Southwark</a> <a href="/practice/tower-hamlets/">Tower Hamlets</a> <a href="/practice/waltham-forest/">Waltham Forest</a> <a href="/practice/wandsworth/">Wandsworth</a> <a href="/practice/westminster/">Westminster</a>
   </div>
-</nav>
+</details>
 
 <div class="layout">
   <aside class="sidebar">
@@ -207,7 +302,7 @@ footer a:hover{color:#fff}
       <p>Phone numbers &amp; addresses sourced directly from the <strong>NHS ODS FHIR API</strong>, refreshed automatically every Monday.</p>
       <div class="nhs-tag">
         <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#007F3B" stroke-width="1.5"/><path d="M8 5v3.5l2 2" stroke="#007F3B" stroke-width="1.4" stroke-linecap="round"/></svg>
-        Updated: 9 May 2026
+        Updated: 10 May 2026
       </div>
     </div>
 
@@ -244,7 +339,7 @@ footer a:hover{color:#fff}
 </div>
 
 <footer>
-  Data: NHS ODS &middot; GP Patient Survey &middot; CQC &middot; 9 May 2026 &nbsp;&nbsp;
+  Data: NHS ODS &middot; GP Patient Survey &middot; CQC &middot; 10 May 2026 &nbsp;&nbsp;
   <a href="https://www.nhs.uk/service-search/find-a-gp/" target="_blank">NHS Find a GP</a> &nbsp;&middot;&nbsp;
   <a href="https://gp-registration.nhs.uk" target="_blank">Register with a GP</a> &nbsp;&middot;&nbsp;
   <a href="https://www.cqc.org.uk" target="_blank">CQC</a>
@@ -409,6 +504,26 @@ if (_urlQ) document.getElementById('q').value = _urlQ;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 buildFilters();
 render();
+
+/* On phones, collapse filter panels by default and toggle on header tap.
+   Borough nav <details> is also closed by default on phones (open on tablet+). */
+(function(){
+  const isPhone = window.matchMedia('(max-width:600px)').matches;
+  const boroughNav = document.getElementById('boroughNav');
+  if (boroughNav && !isPhone) boroughNav.open = true;
+
+  if (isPhone) {
+    document.querySelectorAll('.panel').forEach(p => {
+      // skip the sort dropdown — it's small and useful as-is
+      if (p.querySelector('select')) return;
+      p.classList.add('collapsed');
+    });
+    document.querySelectorAll('.panel-hdr').forEach(h => {
+      if (!h.parentElement.querySelector('.opts')) return;
+      h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed'));
+    });
+  }
+})();
 </script>
 </body>
 </html>
