@@ -38,8 +38,11 @@ _NON_GP_NAME = re.compile(
 )
 
 def _is_genuine_gp(d):
-    if d.get("cqc_rating") not in _VALID_CQC:
-        return False
+    # Source is now ePraccur (active operating GP practices only — Status='A'),
+    # so we trust the entry IS a real GP. We only reject if the name matches
+    # known non-public-registration patterns (special allocation schemes,
+    # walk-in centres, drug & alcohol services, etc.) that occasionally appear
+    # under GP ODS codes.
     name = (d.get("name") or "")
     if _NON_GP_NAME.search(name):
         return False
