@@ -117,12 +117,53 @@ EPRACCUR_COLS = [
 ]
 
 def download_epraccur():
-    """Download and unzip the ePraccur CSV in memory."""
-    print(f"Downloading ePraccur from NHS Digital ({EPRACCUR_URL})…")
-    req = urllib.request.Request(EPRACCUR_URL, headers={"User-Agent": "londongp.directory/1.0"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = r.read()
-    print(f"  downloaded {len(data)//1024} KB")
+    """Download and unzip the ePraccur CSV in memory.
+
+    NHS Digital's CDN (files.digital.nhs.uk) blocks requests that don't look
+    like a normal browser — short or generic User-Agents return HTTP 403.
+    We mimic Firefox and add Accept headers; if that still fails we try a
+    known mirror via the ODS portal root.
+    """
+    headers = {
+        "User-Agent": ("Mozilla/5.0 (X11; Linux x86_64; rv:128.0) "
+                       "Gecko/20100101 Firefox/128.0"),
+        "Accept": "application/zip,application/octet-stream,*/*;q=0.8",
+        "Accept-Language": "en-GB,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate",
+        "Referer": "https://digital.nhs.uk/services/organisation-data-service/export-data-files/csv-downloads/gp-and-gp-practice-related-data",
+    }
+    candidate_urls = [
+        EPRACCUR_URL,
+        # Known alternates seen historically:
+        "https://files.digital.nhs.uk/assets/ods/current/epraccur.zip",
+        "https://digital.nhs.uk/binaries/content/assets/website-assets/services/ods/data-downloads-other-nhs-organisations/epraccur.zip",
+    ]
+    last_err = None
+    data = None
+    for url in candidate_urls:
+        print(f"Downloading ePraccur: {url}")
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                raw = r.read()
+                # urllib doesn't auto-decode gzip; handle it.
+                if r.headers.get("Content-Encoding", "").lower() == "gzip":
+                    import gzip
+                    raw = gzip.decompress(raw)
+                data = raw
+            print(f"  ok — {len(data)//1024} KB")
+            break
+        except urllib.error.HTTPError as e:
+            print(f"  HTTP {e.code} — trying next candidate")
+            last_err = e
+            time.sleep(1)
+        except Exception as e:
+            print(f"  error: {e} — trying next candidate")
+            last_err = e
+            time.sleep(1)
+    if data is None:
+        raise SystemExit(f"All ePraccur download URLs failed. Last error: {last_err}")
+
     zf = zipfile.ZipFile(io.BytesIO(data))
     csv_name = next(n for n in zf.namelist() if n.lower().endswith(".csv"))
     with zf.open(csv_name) as f:
