@@ -123,9 +123,11 @@ KEEP_NAME_RE = re.compile(
 )
 
 def looks_like_medical_doctor(name):
-    if not name: return False
+    """Permissive: only reject obvious non-doctor names. Empty name passes
+    so we let the detail fetch decide (some summary records lack name)."""
+    if not name: return True
     if DROP_NAME_RE.search(name): return False
-    return bool(KEEP_NAME_RE.search(name))
+    return True
 
 # London postcodes (mirror of the dict in refresh_nhs_data.py — keep them in
 # sync if you add new districts).
@@ -284,14 +286,29 @@ def fetch_london_locations(key):
     per_page = 1000
     london_locations = []
     total_seen = 0
+    diag_dumped = False
     while True:
         data = cqc_get("/locations", {"page": page, "perPage": per_page}, key)
         items = data.get("locations", [])
+        # Diagnostic: show what fields summary records actually have on page 1
+        if not diag_dumped and items:
+            diag_dumped = True
+            print(f"DIAG: sample summary record keys: {sorted(items[0].keys())}")
+            print(f"DIAG: sample postcode='{items[0].get('postalCode') or items[0].get('postCode') or '?'}', "
+                  f"name='{items[0].get('name') or items[0].get('locationName') or '?'}'")
         total_seen += len(items)
         # Filter to London postcodes — locations summary include postalCode
-        london_items = [loc for loc in items
-                        if is_london(loc.get("postalCode", ""))
-                        and looks_like_medical_doctor(loc.get("name", ""))]
+        london_items = []
+        for loc in items:
+            pc = loc.get("postalCode") or loc.get("postCode") or ""
+            if not is_london(pc):
+                continue
+            # Try several candidate field names for the location name
+            name = (loc.get("name") or loc.get("locationName")
+                    or loc.get("organisationName") or "")
+            if not looks_like_medical_doctor(name):
+                continue
+            london_items.append(loc)
         london_locations.extend(london_items)
         total_pages = data.get("totalPages", 1)
         print(f"  page {page}/{total_pages} — {len(items)} fetched, "
