@@ -1,104 +1,5 @@
 [
   {
-    "ods_code": "A91071",
-    "name": "Woolwich Medical Centre",
-    "address": "GREEN HILL, WOOLWICH, LONDON",
-    "postcode": "SE18 4AB",
-    "phone": null,
-    "lat": 51.487551,
-    "lng": 0.057504
-  },
-  {
-    "ods_code": "A91087",
-    "name": "Baird Medical Centre",
-    "address": "1ST FLOOR, GASSIOT HOUSE, LAMBETH PALACE ROAD, LONDON",
-    "postcode": "SE1 7EH",
-    "phone": null,
-    "lat": 51.49796,
-    "lng": -0.11888
-  },
-  {
-    "ods_code": "A91138",
-    "name": "Hyde Park Medical Centre",
-    "address": "KNIGHTSBRIDGE, KENSINGTON, LONDON",
-    "postcode": "SW7 1SE",
-    "phone": null,
-    "lat": 51.502269,
-    "lng": -0.16324
-  },
-  {
-    "ods_code": "A91219",
-    "name": "London Central Medical Centre",
-    "address": "WELLINGTON, BIRDCAGE WALK, LONDON",
-    "postcode": "SW1E 6HQ",
-    "phone": null,
-    "lat": 51.499986,
-    "lng": -0.137642
-  },
-  {
-    "ods_code": "A99875",
-    "name": "Park Royal Centre - Bcss Inpatient Unit",
-    "address": "ACTON LANE, LONDON",
-    "postcode": "NW10 7NS",
-    "phone": null,
-    "lat": 51.530938,
-    "lng": -0.269138
-  },
-  {
-    "ods_code": "A99917",
-    "name": "Hazelwood",
-    "address": "MEMORIAL HOSPITAL, SHOOTERS HILL, LONDON",
-    "postcode": "SE18 3RG",
-    "phone": null,
-    "lat": 51.468576,
-    "lng": 0.064137
-  },
-  {
-    "ods_code": "A99918",
-    "name": "Greenwood",
-    "address": "MEMORIAL HOSPITAL, SHOOTERS HILL, LONDON",
-    "postcode": "SE18 3RG",
-    "phone": null,
-    "lat": 51.468576,
-    "lng": 0.064137
-  },
-  {
-    "ods_code": "A99938",
-    "name": "University College London Bowel Cancer Screening Centre",
-    "address": "235 EUSTON ROAD, LONDON",
-    "postcode": "NW1 2BU",
-    "phone": null,
-    "lat": 51.524893,
-    "lng": -0.136885
-  },
-  {
-    "ods_code": "A99941",
-    "name": "Kings Bowel Cancer Screening Centre",
-    "address": "DENMARK HILL, LONDON",
-    "postcode": "SE5 9RS",
-    "phone": null,
-    "lat": 51.468078,
-    "lng": -0.09389
-  },
-  {
-    "ods_code": "A99969",
-    "name": "South East London Bowel Cancer Screening Centre",
-    "address": "UNIVERSITY HOSPITAL LEWISHAM, LEWISHAM HIGH STREET, LONDON",
-    "postcode": "SE13 6LH",
-    "phone": null,
-    "lat": 51.453022,
-    "lng": -0.017917
-  },
-  {
-    "ods_code": "A99982",
-    "name": "St Georges Bowel Cancer Screening Centre",
-    "address": "ST. GEORGES HOSPITAL, BLACKSHAW ROAD, LONDON",
-    "postcode": "SW17 0QT",
-    "phone": null,
-    "lat": 51.426682,
-    "lng": -0.175694
-  },
-  {
     "ods_code": "E83003",
     "name": "Oakleigh Road Health Centre",
     "address": "280 OAKLEIGH ROAD NORTH, WHETSTONE, LONDON",
@@ -130,7 +31,7 @@
   },
   {
     "ods_code": "E83009",
-    "name": "Phgh Doctors",
+    "name": "PHGH Doctors",
     "address": "TEMPLE FORTUNE HEALTH CENTRE, 23 TEMPLE FORTUNE LANE, GOLDERS GREEN, LONDON",
     "postcode": "NW11 7TE",
     "phone": "020 82092400",
@@ -141,7 +42,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-567834277",
     "lat": 51.581104,
-    "lng": -0.197821
+    "lng": -0.197821,
+    "official_name": "Phgh Doctors"
   },
   {
     "ods_code": "E83010",
@@ -263,7 +165,7 @@
   },
   {
     "ods_code": "E83027",
-    "name": "The Practice At 188",
+    "name": "The Practice at 188",
     "address": "188 GOLDERS GREEN ROAD, GOLDERS GREEN, LONDON",
     "postcode": "NW11 9AY",
     "phone": "02082 986498",
@@ -274,7 +176,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-2464509211",
     "lat": 51.576425,
-    "lng": -0.204644
+    "lng": -0.204644,
+    "official_name": "The Practice At 188"
   },
   {
     "ods_code": "E83034",
@@ -353,7 +256,7 @@
   },
   {
     "ods_code": "E83600",
-    "name": "Drs Adler And Rosenberg",
+    "name": "Drs Adler and Rosenberg",
     "address": "682 FINCHLEY ROAD, GOLDERS GREEN, LONDON",
     "postcode": "NW11 7NP",
     "phone": "020 84559994",
@@ -364,7 +267,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-571497178",
     "lat": 51.575077,
-    "lng": -0.195938
+    "lng": -0.195938,
+    "official_name": "Drs Adler And Rosenberg"
   },
   {
     "ods_code": "E83621",
@@ -443,12 +347,13 @@
   },
   {
     "ods_code": "E83666",
-    "name": "Homeless Action In Barnet",
+    "name": "Homeless Action in Barnet",
     "address": "36B WOODHOUSE ROAD, NORTH FINCHLEY, LONDON",
     "postcode": "N12 0RG",
     "phone": "020 84468400",
     "lat": 51.612153,
-    "lng": -0.174449
+    "lng": -0.174449,
+    "official_name": "Homeless Action In Barnet"
   },
   {
     "ods_code": "E84006",
@@ -482,7 +387,7 @@
   },
   {
     "ods_code": "E84012",
-    "name": "Mapesbury Medical Group",
+    "name": "MAPESBURY MEDICAL GROUP",
     "address": "WINDMILL MEDICAL PRACTICE, 65 SHOOT UP HILL, LONDON",
     "postcode": "NW2 3PS",
     "phone": "020 84527646",
@@ -493,11 +398,12 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-6645185270",
     "lat": 51.551499,
-    "lng": -0.209448
+    "lng": -0.209448,
+    "official_name": "Mapesbury Medical Group"
   },
   {
     "ods_code": "E84013",
-    "name": "Church End Medical Centre",
+    "name": "CHURCH END MEDICAL CENTRE",
     "address": "66 MAYO ROAD, WILLESDEN, LONDON",
     "postcode": "NW10 9HP",
     "phone": "020 89306262",
@@ -508,7 +414,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-14471393215",
     "lat": 51.547572,
-    "lng": -0.253218
+    "lng": -0.253218,
+    "official_name": "Church End Medical Centre"
   },
   {
     "ods_code": "E84015",
@@ -660,7 +567,7 @@
   },
   {
     "ods_code": "E84074",
-    "name": "Freuchen Medical Centre",
+    "name": "FREUCHEN MEDICAL CENTRE",
     "address": "190 HIGH STREET, HARLESDEN, LONDON",
     "postcode": "NW10 4ST",
     "phone": "020 89655174",
@@ -671,7 +578,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-547475467",
     "lat": 51.534533,
-    "lng": -0.242975
+    "lng": -0.242975,
+    "official_name": "Freuchen Medical Centre"
   },
   {
     "ods_code": "E84076",
