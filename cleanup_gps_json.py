@@ -99,6 +99,44 @@ def is_individual_practitioner(name):
         return True
     return False
 
+# Drop records whose name clearly identifies them as something other than
+# an NHS GP practice — pharmacies, dentists, opticians, etc.
+_NON_NHS_GP_RE = re.compile(
+    r"\b(?:chemist|pharmacy|drug\s+store|"
+    r"dental|dentist|orthodontic|denture|"
+    r"optician|optometr|opto\s|eye\s+clinic|spectacle|"
+    r"audiology|hearing\s+(?:aid|test|centre)|"
+    r"chiropract|osteopath|physiotherap|podiatr|"
+    r"funeral|veterinary|"
+    r"cosmetic\s+(?:clinic|surgery)|laser\s+hair|"
+    r"slimming|weight\s+loss|"
+    r"fertility\s+clinic|ivf\s+clinic|"
+    r"sexual\s+health\s+clinic|"
+    r"hospital(?!\s*(?:road|street|lane|hill|gardens|way))|"  # buildings called "Hospital Road" etc. are ok
+    r"hospice|"
+    r"ambulance|"
+    r"care\s+home|residential\s+home|nursing\s+home|"
+    r"sleep\s+(?:disorders?\s+)?clinic|"
+    r"mole\s+clinic|aesthetic\s+clinic|"
+    r"tattoo|piercing"
+    r")\b",
+    re.IGNORECASE,
+)
+# Drop records that are clearly PRIVATE clinics (we'll surface these on a
+# separate Private side later; for now just remove them from the NHS list).
+_PRIVATE_INDICATOR_RE = re.compile(
+    r"\b(?:private|harley\s+street|"
+    r"bupa|nuffield|spire|hca|circle|king\s+edward|"
+    r"the\s+london\s+clinic|wellington|princess\s+grace)\b",
+    re.IGNORECASE,
+)
+
+def is_non_nhs_gp(name):
+    if not name: return False
+    if _NON_NHS_GP_RE.search(name): return True
+    if _PRIVATE_INDICATOR_RE.search(name): return True
+    return False
+
 def main():
     if not GPS_JSON.exists():
         sys.exit(f"{GPS_JSON} not found.")
@@ -114,7 +152,9 @@ def main():
     dropped_no_name = 0
     dropped_no_ods = 0
     dropped_individual = 0
-    dropped_examples = []
+    dropped_non_gp = 0
+    dropped_examples = {"no-name": [], "not-london": [], "individual": [],
+                        "non-gp": [], "no-pc": [], "no-ods": []}
 
     for r in data:
         ods = (r.get("ods_code") or "").strip().upper()
@@ -123,45 +163,52 @@ def main():
 
         if not ods:
             dropped_no_ods += 1
-            if len(dropped_examples) < 5:
-                dropped_examples.append(("no-ods", r))
+            if len(dropped_examples["no-ods"]) < 3:
+                dropped_examples["no-ods"].append(r)
             continue
         if not name:
             dropped_no_name += 1
-            if len(dropped_examples) < 5:
-                dropped_examples.append(("no-name", r))
+            if len(dropped_examples["no-name"]) < 3:
+                dropped_examples["no-name"].append(r)
             continue
         if not pc:
             dropped_no_pc += 1
-            if len(dropped_examples) < 5:
-                dropped_examples.append(("no-pc", r))
+            if len(dropped_examples["no-pc"]) < 3:
+                dropped_examples["no-pc"].append(r)
             continue
         if not is_london_strict(pc):
             dropped_not_london += 1
-            if len(dropped_examples) < 5:
-                dropped_examples.append(("not-london", r))
+            if len(dropped_examples["not-london"]) < 3:
+                dropped_examples["not-london"].append(r)
+            continue
+        if is_non_nhs_gp(name):
+            dropped_non_gp += 1
+            if len(dropped_examples["non-gp"]) < 5:
+                dropped_examples["non-gp"].append(r)
             continue
         if is_individual_practitioner(name):
             dropped_individual += 1
-            if len(dropped_examples) < 5:
-                dropped_examples.append(("individual", r))
+            if len(dropped_examples["individual"]) < 5:
+                dropped_examples["individual"].append(r)
             continue
         kept.append(r)
 
     total_dropped = len(data) - len(kept)
     print(f"\nKept:    {len(kept)}")
     print(f"Dropped: {total_dropped} total")
-    print(f"  no name:         {dropped_no_name}")
-    print(f"  not in London:   {dropped_not_london}")
-    print(f"  individual practitioner (Dr X): {dropped_individual}")
-    print(f"  no postcode:     {dropped_no_pc}")
-    print(f"  no ODS:          {dropped_no_ods}")
+    print(f"  no name:                          {dropped_no_name}")
+    print(f"  not in London:                    {dropped_not_london}")
+    print(f"  non-GP (pharmacy/dental/private): {dropped_non_gp}")
+    print(f"  individual practitioner (Dr X):   {dropped_individual}")
+    print(f"  no postcode:                      {dropped_no_pc}")
+    print(f"  no ODS:                           {dropped_no_ods}")
 
-    if dropped_examples:
-        print("\nExamples of dropped records:")
-        for reason, r in dropped_examples:
-            print(f"  [{reason:12s}] {r.get('ods_code','?'):8s} "
-                  f"{r.get('name','')[:30]:30s} {r.get('postcode','?')}")
+    for reason, examples in dropped_examples.items():
+        if examples:
+            print(f"\nExamples of '{reason}' drops:")
+            for r in examples:
+                print(f"  {r.get('ods_code','?'):8s} "
+                      f"{r.get('name','')[:40]:40s} {r.get('postcode','?')}")
 
     # Safety: refuse if we'd drop more than 50%, OR if the drops include
     # any category other than "no name" + "not London" (those are the known
