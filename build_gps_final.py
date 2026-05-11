@@ -105,7 +105,11 @@ DROP_NAME_RE = re.compile(
     r"slimming|weight loss clinic|tattoo|laser hair|laser eye|"
     r"\bivf\b|fertility|cryob|sperm bank|"
     r"prison|hostel|asylum|"
-    r"detoxification|substance misuse|drug treatment)\b",
+    r"detoxification|substance misuse|drug treatment|"
+    # Private indicators — exclude from the NHS-only build:
+    r"private|harley street|"
+    r"bupa|nuffield|spire|hca|circle|king edward|"
+    r"the london clinic|wellington|princess grace)\b",
     re.IGNORECASE,
 )
 GP_KEEP_RE = re.compile(
