@@ -79,6 +79,26 @@ def is_london_strict(pc):
     """Exact match against the whitelist. No regex fallbacks."""
     return postcode_district(pc) in LONDON_PREFIXES
 
+# Drop names that are clearly an individual practitioner rather than a
+# practice, e.g. "Dr Mojgan Fitzmaurice". A legitimate single-handed practice
+# would include "Surgery", "Practice", "Centre", "Clinic", "Health", etc.
+_INDIVIDUAL_PRACTITIONER_RE = re.compile(
+    r"^(?:dr|mr|mrs|ms|miss|prof)\.?\s",
+    re.IGNORECASE,
+)
+_PRACTICE_NOUN_RE = re.compile(
+    r"\b(?:surgery|practice|centre|center|clinic|"
+    r"medical|health|partnership|group|service)s?\b",
+    re.IGNORECASE,
+)
+def is_individual_practitioner(name):
+    """True if the name reads like a doctor's personal name with no
+    indication this is a registered practice."""
+    if not name: return False
+    if _INDIVIDUAL_PRACTITIONER_RE.match(name.strip()) and not _PRACTICE_NOUN_RE.search(name):
+        return True
+    return False
+
 def main():
     if not GPS_JSON.exists():
         sys.exit(f"{GPS_JSON} not found.")
@@ -93,6 +113,7 @@ def main():
     dropped_not_london = 0
     dropped_no_name = 0
     dropped_no_ods = 0
+    dropped_individual = 0
     dropped_examples = []
 
     for r in data:
@@ -120,6 +141,11 @@ def main():
             if len(dropped_examples) < 5:
                 dropped_examples.append(("not-london", r))
             continue
+        if is_individual_practitioner(name):
+            dropped_individual += 1
+            if len(dropped_examples) < 5:
+                dropped_examples.append(("individual", r))
+            continue
         kept.append(r)
 
     total_dropped = len(data) - len(kept)
@@ -127,6 +153,7 @@ def main():
     print(f"Dropped: {total_dropped} total")
     print(f"  no name:         {dropped_no_name}")
     print(f"  not in London:   {dropped_not_london}")
+    print(f"  individual practitioner (Dr X): {dropped_individual}")
     print(f"  no postcode:     {dropped_no_pc}")
     print(f"  no ODS:          {dropped_no_ods}")
 
