@@ -68,10 +68,10 @@ def postcode_district(pc):
     return pc[:-3] if len(pc) >= 5 else pc
 
 def is_london(pc):
-    d = postcode_district(pc)
-    if d in LONDON_PREFIXES: return True
-    m = re.match(r"^([A-Z]{1,2}\d)", d)
-    return bool(m and m.group(1) in LONDON_PREFIXES)
+    """Strict: postcode district must be in the whitelist. No regex fallback
+    — the fallback used to match DA12 → DA1, TW15 → TW1, etc., leaking
+    out-of-London postcodes through."""
+    return postcode_district(pc) in LONDON_PREFIXES
 
 def area_letters(pc):
     pc = (pc or "").strip().upper()
@@ -261,10 +261,19 @@ def build_records_from_details(candidates, key, workers=10):
                 continue
 
             # Build record
-            name_raw = d.get("locationName") or d.get("providerName") or ""
+            name_raw = (d.get("locationName") or d.get("providerName") or "").strip()
+            if not name_raw:
+                # Skip nameless records — they render as blank cards on the
+                # live site. Better to omit than to show a card with just an
+                # address.
+                continue
             name = name_raw.title() if name_raw.isupper() else name_raw
 
             pc = (d.get("postalCode") or "").strip().upper()
+            if not is_london(pc):
+                # Re-check at the detail stage in case the summary postcode
+                # differed (rare but possible).
+                continue
             addr_parts = [
                 d.get("postalAddressLine1") or "",
                 d.get("postalAddressLine2") or "",
