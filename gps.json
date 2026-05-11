@@ -598,7 +598,7 @@
   },
   {
     "ods_code": "E84078",
-    "name": "Kingsbury Health And Wellbeing",
+    "name": "Kingsbury Health and Wellbeing",
     "address": "245 STAG LANE, KINGSBURY, LONDON",
     "postcode": "NW9 0EF",
     "phone": "020 82040777",
@@ -609,7 +609,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-8679340008",
     "lat": 51.591736,
-    "lng": -0.265484
+    "lng": -0.265484,
+    "official_name": "Kingsbury Health And Wellbeing"
   },
   {
     "ods_code": "E84080",
@@ -703,7 +704,7 @@
   },
   {
     "ods_code": "E84674",
-    "name": "Chichele Road Surgery",
+    "name": "CHICHELE ROAD SURGERY",
     "address": "25 CHICHELE ROAD, CRICKLEWOOD, LONDON",
     "postcode": "NW2 3AN",
     "phone": "020 84524666",
@@ -714,7 +715,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-541883379",
     "lat": 51.55483,
-    "lng": -0.216242
+    "lng": -0.216242,
+    "official_name": "Chichele Road Surgery"
   },
   {
     "ods_code": "E84699",
@@ -943,7 +945,7 @@
   },
   {
     "ods_code": "E85074",
-    "name": "West Kensington Gp Surgery",
+    "name": "West Kensington GP Surgery",
     "address": "MILSON ROAD HEALTH CENTRE, 1-13 MILSON ROAD, LONDON",
     "postcode": "W14 0LJ",
     "phone": "020 76037563",
@@ -954,7 +956,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-12808294525",
     "lat": 51.49982,
-    "lng": -0.216648
+    "lng": -0.216648,
+    "official_name": "West Kensington Gp Surgery"
   },
   {
     "ods_code": "E85077",
@@ -1018,7 +1021,7 @@
   },
   {
     "ods_code": "E85124",
-    "name": "Gp At Hand",
+    "name": "GP at hand",
     "address": "139 LILLIE ROAD, FULHAM, LONDON",
     "postcode": "SW6 7SX",
     "phone": "0330 8082217",
@@ -1029,7 +1032,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-6129587714",
     "lat": 51.484798,
-    "lng": -0.203407
+    "lng": -0.203407,
+    "official_name": "Gp At Hand"
   },
   {
     "ods_code": "E85125",
@@ -1168,7 +1172,7 @@
   },
   {
     "ods_code": "E87004",
-    "name": "Health Partners At Violet Melchett",
+    "name": "Health Partners at Violet Melchett",
     "address": "30 FLOOD WALK, LONDON",
     "postcode": "SW3 5RR",
     "phone": "020 74602222",
@@ -1179,7 +1183,8 @@
     "cqc_rating": "Good",
     "cqc_url": "http://www.cqc.org.uk/location/1-572868905",
     "lat": 51.486806,
-    "lng": -0.166987
+    "lng": -0.166987,
+    "official_name": "Health Partners At Violet Melchett"
   },
   {
     "ods_code": "E87005",
@@ -1195,15 +1200,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-17920435330",
     "lat": 51.495005,
     "lng": -0.148535
-  },
-  {
-    "ods_code": "E87007",
-    "name": "Westbourne Grove Medical Centre",
-    "address": "241 WESTBOURNE GROVE, LONDON",
-    "postcode": "W11 2SE",
-    "phone": "020 72295800",
-    "lat": 51.514211,
-    "lng": -0.200362
   },
   {
     "ods_code": "E87011",
@@ -9450,123 +9446,6 @@
     "lng": -0.177844
   },
   {
-    "ods_code": "Y07866",
-    "name": "Barnet Pcn2 Eas Hub",
-    "address": "311 BALLARDS LANE, LONDON",
-    "postcode": "N12 8LY",
-    "phone": "07766 826994",
-    "lat": 51.612862,
-    "lng": -0.177844
-  },
-  {
-    "ods_code": "Y07878",
-    "name": "Cgl Camden Drug And Alcohol Service",
-    "address": "KINGS STUDIOS, 43-45 KINGS TERRACE, LONDON",
-    "postcode": "NW1 0JR",
-    "phone": "02074 852722",
-    "lat": 51.536376,
-    "lng": -0.139718
-  },
-  {
-    "ods_code": "Y07932",
-    "name": "Barnet Pcn1W Eas Hub",
-    "address": "311 BALLARDS LANE, LONDON",
-    "postcode": "N12 8LY",
-    "phone": "07766 826994",
-    "lat": 51.612862,
-    "lng": -0.177844
-  },
-  {
-    "ods_code": "Y07952",
-    "name": "South Fulham Pcn Hub",
-    "address": "5-7 PARSONS GREEN, LONDON",
-    "postcode": "SW6 4UL",
-    "phone": "07584 574437",
-    "lat": 51.47377,
-    "lng": -0.199131
-  },
-  {
-    "ods_code": "Y07957",
-    "name": "Problem Shared",
-    "address": "16 HIGH HOLBORN, LONDON",
-    "postcode": "WC1V 6BX",
-    "phone": "02038 352208",
-    "lat": 51.518503,
-    "lng": -0.112369
-  },
-  {
-    "ods_code": "Y07963",
-    "name": "Barnet Pcn1D Eas Hub",
-    "address": "311 BALLARDS LANE, LONDON",
-    "postcode": "N12 8LY",
-    "phone": "07766 826994",
-    "lat": 51.612862,
-    "lng": -0.177844
-  },
-  {
-    "ods_code": "Y07971",
-    "name": "Greenwich Ooh",
-    "address": "FERRYVIEW HEALTH CENTRE, 25-27 JOHN WILSON STREET, LONDON",
-    "postcode": "SE18 6PZ",
-    "phone": "02088 366846",
-    "lat": 51.49221,
-    "lng": 0.061546
-  },
-  {
-    "ods_code": "Y07973",
-    "name": "Barnet Pcn 6 Eas Hub",
-    "address": "311 BALLARDS LANE, LONDON",
-    "postcode": "N12 8LY",
-    "phone": "07766 826994",
-    "lat": 51.612862,
-    "lng": -0.177844
-  },
-  {
-    "ods_code": "Y08097",
-    "name": "Lambeth Community Diabetes Service",
-    "address": "ST THOMAS' HOSPITAL, 249 WESTMINSTER BRIDGE ROAD, LONDON",
-    "postcode": "SE1 7EH",
-    "phone": "02071 881915",
-    "lat": 51.49796,
-    "lng": -0.11888
-  },
-  {
-    "ods_code": "Y08108",
-    "name": "Haringey - Welbourne Pcn Hub",
-    "address": "107 PHILIP LANE, LONDON",
-    "postcode": "N15 4JR",
-    "phone": "02088 016640",
-    "lat": 51.589105,
-    "lng": -0.078681
-  },
-  {
-    "ods_code": "Y08245",
-    "name": "Kilburn Partnership Pcn Hub",
-    "address": "WILLIAM DUNBAR HOUSE, ALBERT ROAD, LONDON",
-    "postcode": "NW6 5DE",
-    "phone": "02037 958229",
-    "lat": 51.53329,
-    "lng": -0.203084
-  },
-  {
-    "ods_code": "Y08296",
-    "name": "Health Finder Pro Courts",
-    "address": "UNIT 316, VOX STUDIOS, 1-45 DURHAM STREET, LONDON",
-    "postcode": "SE11 5JH",
-    "phone": "02073 264268",
-    "lat": 51.485973,
-    "lng": -0.118365
-  },
-  {
-    "ods_code": "Y08354",
-    "name": "Limos",
-    "address": "UNIVERSITY HOSPITAL LEWISHAM, LEWISHAM HIGH STREET, LONDON",
-    "postcode": "SE13 6LH",
-    "phone": "02031 926468",
-    "lat": 51.453022,
-    "lng": -0.017917
-  },
-  {
     "ods_code": "Y08411",
     "name": "One Care Lewisham",
     "address": "THE JENNER DENTAL SUITE, 14 ST GERMANS ROAD, LONDON",
@@ -9574,321 +9453,6 @@
     "phone": "02039 294980",
     "lat": 51.442931,
     "lng": -0.040845
-  },
-  {
-    "ods_code": "Y08487",
-    "name": "Wf Gpfednet Enhanced Access Orient Hub",
-    "address": "1ST FLOOR, 75 OLIVER ROAD, LEYTON, LONDON",
-    "postcode": "E10 5LG",
-    "phone": "02085 193999",
-    "lat": 51.559896,
-    "lng": -0.013286
-  },
-  {
-    "ods_code": "Y08510",
-    "name": "Brompton Health Pcn Hub",
-    "address": "30 FLOOD WALK, LONDON",
-    "postcode": "SW3 5RR",
-    "phone": "07507 830564",
-    "lat": 51.486806,
-    "lng": -0.166987
-  },
-  {
-    "ods_code": "Y08512",
-    "name": "Pfse Community Colorectal Service-Wf",
-    "address": "PATIENT FIRST SE, 50C ROMFORD ROAD, LONDON",
-    "postcode": "E15 4BZ",
-    "phone": "02085 193606",
-    "lat": 51.542097,
-    "lng": 0.006388
-  },
-  {
-    "ods_code": "Y08521",
-    "name": "Pfse Tower Hamlets Dermatology Service",
-    "address": "PATIENT FIRST SE, 50C ROMFORD ROAD, LONDON",
-    "postcode": "E15 4BZ",
-    "phone": "02085 193606",
-    "lat": 51.542097,
-    "lng": 0.006388
-  },
-  {
-    "ods_code": "Y08528",
-    "name": "Health Inclusion Team",
-    "address": "GUYS HOSPITAL, GREAT MAZE POND, LONDON",
-    "postcode": "SE1 9RT",
-    "phone": "02030 494700",
-    "lat": 51.503331,
-    "lng": -0.086771
-  },
-  {
-    "ods_code": "Y08534",
-    "name": "Ropharm",
-    "address": "UNI1 1 OPUS STUDIOS, 212 PLAISTOW ROAD, LONDON",
-    "postcode": "E13 0AL",
-    "phone": "02084 711040",
-    "lat": 51.531355,
-    "lng": 0.018734
-  },
-  {
-    "ods_code": "Y08561",
-    "name": "Waterside Pcn Devon Livi Emis Hub",
-    "address": "FLOOR 12, CAPITAL TOWER, 91 WATERLOO ROAD, LONDON",
-    "postcode": "SE1 8RT",
-    "phone": "02038 703029",
-    "lat": 51.503543,
-    "lng": -0.110437
-  },
-  {
-    "ods_code": "Y08563",
-    "name": "Waterside Pcn Devon Livi Sys1 Hub",
-    "address": "FLOOR 12, CAPITAL TOWER, 91 WATERLOO ROAD, LONDON",
-    "postcode": "SE1 8RT",
-    "phone": "02038 703029",
-    "lat": 51.503543,
-    "lng": -0.110437
-  },
-  {
-    "ods_code": "Y08580",
-    "name": "Sound Pcn Devon Livi Sys1 Hub",
-    "address": "FLOOR 12, CAPITAL TOWER, 91 WATERLOO ROAD, LONDON",
-    "postcode": "SE1 8RT",
-    "phone": "02038 703029",
-    "lat": 51.503543,
-    "lng": -0.110437
-  },
-  {
-    "ods_code": "Y08740",
-    "name": "Pes@Optical Studio Pimlico, Nwl",
-    "address": "THE OPTICAL STUDIO, 4 WARWICK WAY, LONDON",
-    "postcode": "SW1V 1RU",
-    "phone": "02078 347296",
-    "lat": 51.492536,
-    "lng": -0.138508
-  },
-  {
-    "ods_code": "Y08765",
-    "name": "Problemshared",
-    "address": "16 HIGH HOLBORN, LONDON",
-    "postcode": "WC1V 6BX",
-    "phone": "02038 352208",
-    "lat": 51.518503,
-    "lng": -0.112369
-  },
-  {
-    "ods_code": "Y08772",
-    "name": "Marie Curie Ehc@H",
-    "address": "ROY SHAW HOUSE, 3-5 CRESSY ROAD, LONDON",
-    "postcode": "NW3 2ND",
-    "phone": "02033 702208",
-    "lat": 51.554048,
-    "lng": -0.1615
-  },
-  {
-    "ods_code": "Y08773",
-    "name": "Marie Curie Outpatients",
-    "address": "ROY SHAW HOUSE, 3-5 CRESSY ROAD, LONDON",
-    "postcode": "NW3 2ND",
-    "phone": "02033 702208",
-    "lat": 51.554048,
-    "lng": -0.1615
-  },
-  {
-    "ods_code": "Y08801",
-    "name": "Ils Community Matrons",
-    "address": "GUYS HOSPITAL, GREAT MAZE POND, LONDON",
-    "postcode": "SE1 9RT",
-    "phone": "02030 494020",
-    "lat": 51.503331,
-    "lng": -0.086771
-  },
-  {
-    "ods_code": "Y08819",
-    "name": "Pes@Eye Emporium, Nwl",
-    "address": "179 CRICKLEWOOD BROADWAY, CRICKLEWOOD, LONDON",
-    "postcode": "NW2 3HT",
-    "phone": "02084 522273",
-    "lat": 51.556846,
-    "lng": -0.215759
-  },
-  {
-    "ods_code": "Y08820",
-    "name": "Pes@Open Eye Opticians, Nwl",
-    "address": "64 HIGH ROAD, WILLESDEN, LONDON",
-    "postcode": "NW10 2PU",
-    "phone": "02088 302727",
-    "lat": 51.54732,
-    "lng": -0.228607
-  },
-  {
-    "ods_code": "Y08857",
-    "name": "Livi Systmone Southampton",
-    "address": "4TH FLOOR, NICON HOUSE, 21 WORSHIP STREET, LONDON",
-    "postcode": "EC2A 2DW",
-    "phone": "02038 703029",
-    "lat": 51.522324,
-    "lng": -0.085744
-  },
-  {
-    "ods_code": "Y08869",
-    "name": "Mse Icb Swms-Tier 3",
-    "address": "SCALE SPACE BUILDING, 58 WOOD LANE, LONDON",
-    "postcode": "W12 7RZ",
-    "phone": "02034 880769",
-    "lat": 51.513948,
-    "lng": -0.22261
-  },
-  {
-    "ods_code": "Y08870",
-    "name": "Mse Icb Swms-Bsop",
-    "address": "SCALE SPACE BUILDING, 58 WOOD LANE, LONDON",
-    "postcode": "W12 7RZ",
-    "phone": "02034 880769",
-    "lat": 51.513948,
-    "lng": -0.22261
-  },
-  {
-    "ods_code": "Y08876",
-    "name": "Bridge Clinic At Lambeth",
-    "address": "C/O AKERMAN MEDICAL PRACTICE, 60 PATMOS ROAD, LONDON",
-    "postcode": "SW9 6AF",
-    "phone": "02081 750145",
-    "lat": 51.475716,
-    "lng": -0.105178
-  },
-  {
-    "ods_code": "Y08881",
-    "name": "North Bexley - Icht",
-    "address": "LAKESIDE MEDICAL PRACTICE, YARNTON WAY, LONDON",
-    "postcode": "SE2 9LH",
-    "phone": "02081 760410",
-    "lat": 51.496519,
-    "lng": 0.122482
-  },
-  {
-    "ods_code": "Y08897",
-    "name": "Ncw London Mhtr",
-    "address": "GORDON HOSPITAL, BLOOMBURG STREET, LONDON",
-    "postcode": "SW1V 2RH",
-    "phone": "02033 158733",
-    "lat": 51.492339,
-    "lng": -0.135764
-  },
-  {
-    "ods_code": "Y08900",
-    "name": "Womens London Mhtr",
-    "address": "LPP COMMUNITY, 7 HOLYROOD STREET, LONDON",
-    "postcode": "SE1 2EL",
-    "phone": "07385 394431",
-    "lat": 51.503414,
-    "lng": -0.081984
-  },
-  {
-    "ods_code": "Y08911",
-    "name": "Ohl Weight Management Clinic",
-    "address": "OHL 3RD FLOOR, LAURENCE HOUSE, 1 CATFORD ROAD, LONDON",
-    "postcode": "SE6 4FN",
-    "phone": "02036 402113",
-    "lat": 51.44552,
-    "lng": -0.022587
-  },
-  {
-    "ods_code": "Y08929",
-    "name": "Problemshared Rtc Lscicb",
-    "address": "16 HIGH HOLBORN, LONDON",
-    "postcode": "WC1V 6BX",
-    "phone": "02038 352208",
-    "lat": 51.518503,
-    "lng": -0.112369
-  },
-  {
-    "ods_code": "Y08940",
-    "name": "Harley Mental Health Ltd",
-    "address": "124-128 CITY ROAD, LONDON",
-    "postcode": "EC1V 2NX",
-    "phone": "02034 883655",
-    "lat": 51.527304,
-    "lng": -0.088894
-  },
-  {
-    "ods_code": "Y08944",
-    "name": "Care Obesity Service",
-    "address": "C/O AKERMAN MED PRACTICE, 60 PATMOS ROAD, LONDON",
-    "postcode": "SW9 6AF",
-    "phone": "02081 750145",
-    "lat": 51.475716,
-    "lng": -0.105178
-  },
-  {
-    "ods_code": "Y08965",
-    "name": "Harley Mental Health Ltd",
-    "address": "124-128 CITY ROAD, LONDON",
-    "postcode": "EC1V 2NX",
-    "phone": "02034 883655",
-    "lat": 51.527304,
-    "lng": -0.088894
-  },
-  {
-    "ods_code": "Y08972",
-    "name": "Mse Icb Adhd Healthcare Central London",
-    "address": "CAPITAL HOUSE, 25 CHAPEL STREET, LONDON",
-    "postcode": "NW1 5DH",
-    "phone": "02075 358300",
-    "lat": 51.519634,
-    "lng": -0.168408
-  },
-  {
-    "ods_code": "Y08973",
-    "name": "Rass",
-    "address": "TESSA JOWELL HEALTH CENTRE, 72H EAST DULWICH GROVE, LONDON",
-    "postcode": "SE22 8EY",
-    "phone": "02081 947530",
-    "lat": 51.459235,
-    "lng": -0.080511
-  },
-  {
-    "ods_code": "Y08982",
-    "name": "Innovate Adhd Ltd K&M",
-    "address": "1 MARK SQUARE, LONDON",
-    "postcode": "EC2A 4EG",
-    "phone": "02080 582171",
-    "lat": 51.52439,
-    "lng": -0.08227
-  },
-  {
-    "ods_code": "Y09007",
-    "name": "Westminster Living Well Pcn Hub",
-    "address": "PIMLICO HEALTH, 46-50 LUPUS STREET, LONDON",
-    "postcode": "SW1V 3EB",
-    "phone": "02078 346969",
-    "lat": 51.48845,
-    "lng": -0.137752
-  },
-  {
-    "ods_code": "Y09015",
-    "name": "Adhd Rtc Mse Healthcare Central London",
-    "address": "HCL LTD, CAPITAL HOUSE, 25 CHAPEL STREET, LONDON",
-    "postcode": "NW1 5DH",
-    "phone": "02075 358300",
-    "lat": 51.519634,
-    "lng": -0.168408
-  },
-  {
-    "ods_code": "Y09032",
-    "name": "Dorset Icb Cwms",
-    "address": "SCALE SPACE BUILDING, 58 WOOD LANE, LONDON",
-    "postcode": "W12 7RZ",
-    "phone": "02034 880769",
-    "lat": 51.513948,
-    "lng": -0.22261
-  },
-  {
-    "ods_code": "Y09074",
-    "name": "Nwl Lcw Ooh",
-    "address": "LCW UNSCHEDULED CARE, ST. CHARLES HOSPITAL, EXMOOR STREET, LONDON",
-    "postcode": "W10 6DZ",
-    "phone": "03000 339898",
-    "lat": 51.522364,
-    "lng": -0.217194
   },
   {
     "ods_code": "E85013",
@@ -9928,7 +9492,7 @@
   },
   {
     "ods_code": "F82670",
-    "name": "Abbamoor Surgery",
+    "name": "AbbaMoor Surgery",
     "address": "Health Centre, Gooshays Drive, Romford",
     "postcode": "RM3 9SU",
     "phone": "01708957100",
@@ -9936,7 +9500,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Abbamoor Surgery"
   },
   {
     "ods_code": "F83033",
@@ -9988,7 +9553,7 @@
   },
   {
     "ods_code": "H84041",
-    "name": "The Vineyard Surgery",
+    "name": "Vineyard Surgery",
     "address": "35 The Vineyard, Richmond, Surrey",
     "postcode": "TW10 6PP",
     "phone": "02089480404",
@@ -9996,7 +9561,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "The Vineyard Surgery"
   },
   {
     "ods_code": "E87722",
@@ -10012,7 +9578,7 @@
   },
   {
     "ods_code": "H84062",
-    "name": "Surbiton Health Centre",
+    "name": "LANGLEY MEDICAL PRACTICE",
     "address": "Ewell Road, Surbiton, Surrey",
     "postcode": "KT6 6EZ",
     "phone": "02083909996",
@@ -10020,11 +9586,12 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Surbiton Health Centre"
   },
   {
     "ods_code": "E84601",
-    "name": "Kenton Bridge Medical Centre",
+    "name": "Kenton Bridge Medical Centre Dr Golden",
     "address": "155-175 Kenton Road, Harrow, Middlesex",
     "postcode": "HA3 0YX",
     "phone": "02089076013",
@@ -10032,7 +9599,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Kenton Bridge Medical Centre"
   },
   {
     "ods_code": "E84030",
@@ -10048,7 +9616,7 @@
   },
   {
     "ods_code": "F84039",
-    "name": "Goodmans Field Medical Practice",
+    "name": "Goodman&#x27;s Field Health Centre",
     "address": "Goodmans Field Health Centre, 11 Stable Walk, London",
     "postcode": "E1 8ZF",
     "phone": "02077022036",
@@ -10056,19 +9624,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V83226",
-    "name": "The Practice on the Green",
-    "address": "3c The Green, High Street, Feltham",
-    "postcode": "TW13 4AF",
-    "phone": "02088902899",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Goodmans Field Medical Practice"
   },
   {
     "ods_code": "E85716",
@@ -10120,7 +9677,7 @@
   },
   {
     "ods_code": "E85096",
-    "name": "The Medical Centre",
+    "name": "Medical Centre",
     "address": "3-5 Cecil Road, Hounslow",
     "postcode": "TW3 1NU",
     "phone": "02085722536",
@@ -10128,7 +9685,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "The Medical Centre"
   },
   {
     "ods_code": "F85025",
@@ -10144,7 +9702,7 @@
   },
   {
     "ods_code": "E84617",
-    "name": "Civic Medical Centre",
+    "name": "The Civic Medical Centre",
     "address": "18 Bethecar Road, Harrow",
     "postcode": "HA1 1SE",
     "phone": "02084279445",
@@ -10152,7 +9710,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Civic Medical Centre"
   },
   {
     "ods_code": "E85075",
@@ -10192,7 +9751,7 @@
   },
   {
     "ods_code": "E87741",
-    "name": "Woodfield Road Surgery",
+    "name": "Woodfield Road Medical Centre",
     "address": "The Medical Centre 7e, Woodfield Road, London",
     "postcode": "W9 3XZ",
     "phone": "",
@@ -10200,7 +9759,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Woodfield Road Surgery"
   },
   {
     "ods_code": "H83016",
@@ -10276,7 +9836,7 @@
   },
   {
     "ods_code": "G82028",
-    "name": "The Cedars Surgery",
+    "name": "Swanley Medical Practice",
     "address": "26 Swanley Centre, Swanley, Kent",
     "postcode": "BR8 7AH",
     "phone": "01322663111",
@@ -10284,7 +9844,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "The Cedars Surgery"
   },
   {
     "ods_code": "F82671",
@@ -10348,7 +9909,7 @@
   },
   {
     "ods_code": "F84087",
-    "name": "Harford Health Centre",
+    "name": "HARFORD HEALTH CENTRE",
     "address": "115 Harford Street, London",
     "postcode": "E1 4FG",
     "phone": "02077901059",
@@ -10356,7 +9917,8 @@
     "cqc_url": "",
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
-    "gpps_pcn": ""
+    "gpps_pcn": "",
+    "official_name": "Harford Health Centre"
   },
   {
     "ods_code": "Y00155",
