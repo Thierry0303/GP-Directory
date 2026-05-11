@@ -1,26 +1,25 @@
 #!/usr/bin/env python3
 """
-Build/expand gps.json using ONLY endpoints that are proven to work from
-GitHub Actions:
+Build/expand gps.json using ONLY the CQC public API.
 
-  - CQC public API at api.service.cqc.org.uk (your fetch_private_clinics.py
-    paginates this weekly with no problem).
-  - NHS FHIR identifier lookup at directory.spineservices.nhs.uk/STU3
-    (your refresh_nhs_data.py uses this thousands of times per run).
-
-Strategy
+Approach
 --------
-1. Paginate all UK CQC locations (~50k).
-2. Filter to London by postcode + GP-ish names.
-3. Fetch the CQC detail record for each candidate to extract `odsCode`
-   (the CQC summary endpoint does not include odsCode; detail does).
-4. For any odsCode not already in gps.json, look it up via FHIR to
-   get postcode/address/phone.
-5. Merge with existing gps.json (preserving CQC ratings + GPPS scores
-   for practices that were already in there).
-6. Refuse to write if the merged record count drops by more than 10%.
+The CQC API returns full location details — name, postcode, address, phone,
+ODS code, service types — in one call. So we don't need FHIR at all. Skip
+that step entirely.
 
-Runtime: ~2-5 minutes.
+  1. Paginate all UK CQC locations (proven endpoint, your fetch_private_clinics.py
+     uses this weekly).
+  2. Filter to London by postcode + clear GP-like names.
+  3. Fetch CQC detail for each candidate (extract ODS + address + phone + services).
+  4. Filter by service type — must include "Doctors consultation/treatment"
+     or "Diagnostic and screening procedures with medical doctors".
+  5. Validate ODS code format (NHS practice codes are 6 alphanumeric chars).
+  6. Build records from CQC data directly.
+  7. Merge with existing gps.json (preserves CQC ratings + GPPS scores by ODS).
+  8. Refuse to write if the merged count drops below 90% of existing.
+
+Runtime: ~5-8 minutes.
 """
 
 import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse
@@ -32,7 +31,6 @@ ROOT = Path(__file__).resolve().parent
 GPS_JSON = ROOT / "gps.json"
 
 CQC_BASE = "https://api.service.cqc.org.uk/public/v1"
-FHIR_BASE = "https://directory.spineservices.nhs.uk/STU3"
 
 LONDON_PREFIXES = {
     "EC1A","EC1R","EC1V","EC2A","WC1B","WC1E","WC1N","WC1X","WC2A","WC2B","WC2H","WC2N",
@@ -80,29 +78,68 @@ def area_letters(pc):
     m = re.match(r"^([A-Z]+)", pc)
     return m.group(1) if m else ""
 
-# Reject obvious non-GPs early to cut the detail-fetch workload.
+# Tight name filter for the SUMMARY stage — must look like a GP practice
+# name, not a dentist/pharmacy/hospital.
 DROP_NAME_RE = re.compile(
     r"\b(?:dental|dentist|orthodont|pharmacy|chemist|ambulance|"
     r"nursing home|care home|residential home|extra care|hospice|"
     r"veterinary|funeral|optician|optometr|"
+    r"hospital|maternity unit|"
     r"chiropract|osteopath|podiatr|reflexolog|"
-    r"hearing|audiology only|sexual health clinic|"
+    r"hearing|audiology|sexual health clinic|"
     r"slimming|weight loss clinic|tattoo|laser hair|laser eye|"
-    r"\bivf\b|fertility|cryob|sperm bank)\b",
+    r"\bivf\b|fertility|cryob|sperm bank|"
+    r"prison|hostel|asylum|"
+    r"detoxification|substance misuse|drug treatment)\b",
     re.IGNORECASE,
 )
 GP_KEEP_RE = re.compile(
-    r"\b(?:medical (?:centre|practice|group|services)|surgery|"
+    r"\b(?:medical (?:centre|practice|group|services|partners?)|"
+    r"surgery|surgeries|"
     r"health centre|gp\b|general practi|family practice|"
-    r"the practice|\bdrs?\b|doctors|partnership|"
+    r"the practice|\bdrs?\b|partnership|"
     r"primary care)\b",
     re.IGNORECASE,
 )
 
 def looks_like_gp_summary(name):
-    if not name: return True  # let detail decide
+    if not name: return False
     if DROP_NAME_RE.search(name): return False
-    return bool(GP_KEEP_RE.search(name)) or len(name) < 50  # short names often GPs
+    return bool(GP_KEEP_RE.search(name))
+
+# Service-type substrings that mean it's a GP (will check in CQC detail).
+GP_SERVICE_SUBSTRINGS = [
+    "doctors consultation service",
+    "doctors treatment service",
+    "diagnostic and screening procedures",
+    "family planning service",
+    "maternity and midwifery services",
+    "primary medical",
+]
+NON_GP_SERVICE_SUBSTRINGS = [
+    "residential",
+    "accommodation for persons",
+    "nursing care",
+    "care home",
+    "dental",
+    "hospital service",
+    "acute services",
+    "ambulance",
+]
+
+def is_gp_by_services(services):
+    blob = " ".join(s for s in services if s).lower()
+    if not blob:
+        return False
+    if any(t in blob for t in NON_GP_SERVICE_SUBSTRINGS):
+        return False
+    return any(t in blob for t in GP_SERVICE_SUBSTRINGS)
+
+ODS_PRACTICE_RE = re.compile(r"^[A-Z]\d{5}$")  # F83019, G81082, etc.
+
+def is_practice_ods(code):
+    """NHS GP practice codes are exactly 6 chars: a letter + 5 digits."""
+    return bool(ODS_PRACTICE_RE.match((code or "").strip().upper()))
 
 # ---------------------------------------------------------------- HTTP
 
@@ -111,7 +148,7 @@ def cqc_get(path, params, key, retries=3):
     headers = {
         "Ocp-Apim-Subscription-Key": key,
         "Accept": "application/json",
-        "User-Agent": "londongp.directory/1.0 (build-gps-final)",
+        "User-Agent": "londongp.directory/1.0 (build-gps-final-v2)",
     }
     for attempt in range(retries):
         try:
@@ -132,37 +169,6 @@ def cqc_get(path, params, key, retries=3):
             raise
     return None
 
-def fhir_lookup_by_ods(ods):
-    url = (f"{FHIR_BASE}/Organization"
-           f"?identifier=https%3A%2F%2Ffhir.nhs.uk%2FId%2Fods-organization-code%7C{ods}"
-           f"&_format=json")
-    try:
-        req = urllib.request.Request(url, headers={"Accept": "application/json"})
-        with urllib.request.urlopen(req, timeout=10) as r:
-            data = json.loads(r.read())
-    except Exception:
-        return None
-    entries = data.get("entry", [])
-    if not entries: return None
-    res = entries[0].get("resource", {}) or {}
-    if not res.get("active", True): return None
-    raw_name = res.get("name", "") or ""
-    name = raw_name.title() if raw_name.isupper() else raw_name
-    addrs = res.get("address", []) or []
-    addr = addrs[0] if addrs else {}
-    pc = (addr.get("postalCode") or "").strip().upper()
-    lines = addr.get("line", []) or []
-    city = addr.get("city", "") or ""
-    address = ", ".join(filter(None, lines + ([city] if city else [])))
-    address = address.title() if address.isupper() else address
-    phone = ""
-    for tc in (res.get("telecom") or []):
-        if tc.get("system") == "phone":
-            phone = tc.get("value", "") or ""
-            break
-    return {"ods_code": ods, "name": name, "address": address,
-            "postcode": pc, "phone": phone}
-
 # ---------------------------------------------------------------- discovery
 
 def discover_london_gp_candidates(key):
@@ -172,7 +178,6 @@ def discover_london_gp_candidates(key):
     per_page = 1000
     london_candidates = []
     total_seen = 0
-    diag_done = False
     while True:
         data = cqc_get("/locations", {"page": page, "perPage": per_page}, key)
         if not data:
@@ -180,46 +185,44 @@ def discover_london_gp_candidates(key):
         items = data.get("locations", []) or []
         if not items:
             break
-        if not diag_done:
-            diag_done = True
-            print(f"  DIAG sample fields: {sorted(items[0].keys())}")
         total_seen += len(items)
         for loc in items:
             if loc.get("deregistrationDate"):
                 continue
-            pc = loc.get("postalCode") or loc.get("postCode") or ""
+            pc = loc.get("postalCode") or ""
             if not is_london(pc):
                 continue
-            name = (loc.get("name") or loc.get("locationName") or "")
+            name = loc.get("locationName") or loc.get("name") or ""
             if not looks_like_gp_summary(name):
                 continue
             london_candidates.append(loc)
         total_pages = data.get("totalPages", 1)
-        if page % 5 == 0 or page >= total_pages:
+        if page % 10 == 0 or page >= total_pages:
             print(f"  page {page}/{total_pages} — seen {total_seen} UK, "
-                  f"{len(london_candidates)} London GP candidates")
+                  f"{len(london_candidates)} London GP-named candidates")
         if page >= total_pages:
             break
         page += 1
         time.sleep(0.15)
-    print(f"\n{len(london_candidates)} London CQC GP candidates "
+    print(f"\n{len(london_candidates)} London CQC GP-named candidates "
           f"(from {total_seen} UK locations).")
     return london_candidates
 
-def fetch_ods_codes_from_details(candidates, key, workers=10):
-    """For each London CQC candidate, fetch detail to extract odsCode."""
+def build_records_from_details(candidates, key, workers=10):
+    """For each candidate, fetch full detail and extract a GPS record."""
     print(f"\nFetching CQC detail for {len(candidates)} candidates "
           f"(parallel, {workers} workers)…")
-    out = {}  # ods -> { name, postcode } from CQC
-    failed = 0
+    records_by_ods = {}
+    rejected_no_ods = 0
+    rejected_bad_ods = 0
+    rejected_services = 0
+    sample_rejects = []
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {}
         for c in candidates:
-            loc_id = c.get("locationId") or c.get("locationID")
-            if not loc_id:
-                failed += 1
-                continue
+            loc_id = c.get("locationId")
+            if not loc_id: continue
             futures[pool.submit(cqc_get, f"/locations/{loc_id}", None, key)] = c
         for fut in as_completed(futures):
             c = futures[fut]
@@ -228,19 +231,69 @@ def fetch_ods_codes_from_details(candidates, key, workers=10):
                 d = fut.result()
             except Exception:
                 d = None
-                failed += 1
-            if d:
-                ods = (d.get("odsCode") or "").strip().upper()
-                if ods:
-                    out[ods] = {
-                        "name":     c.get("name") or c.get("locationName") or "",
-                        "postcode": c.get("postalCode") or c.get("postCode") or "",
-                    }
-            if done % 100 == 0 or done == len(futures):
-                print(f"  {done}/{len(futures)} CQC details fetched, "
-                      f"{len(out)} unique ODS codes so far")
-    print(f"\n{len(out)} unique ODS codes discovered via CQC.")
-    return out
+            if not d:
+                if done % 200 == 0:
+                    print(f"  {done}/{len(futures)} fetched — built {len(records_by_ods)} so far")
+                continue
+
+            ods = (d.get("odsCode") or "").strip().upper()
+            if not ods:
+                rejected_no_ods += 1
+                continue
+            if not is_practice_ods(ods):
+                rejected_bad_ods += 1
+                continue
+
+            # Service filter
+            services = []
+            for k in ("gacServiceTypes", "regulatedActivities", "specialisms"):
+                v = d.get(k)
+                if isinstance(v, list):
+                    for it in v:
+                        if isinstance(it, str):
+                            services.append(it)
+                        elif isinstance(it, dict):
+                            services.append(it.get("name") or it.get("description") or "")
+            if not is_gp_by_services(services):
+                rejected_services += 1
+                if len(sample_rejects) < 5:
+                    sample_rejects.append((d.get("locationName") or "", ods, services[:3]))
+                continue
+
+            # Build record
+            name_raw = d.get("locationName") or d.get("providerName") or ""
+            name = name_raw.title() if name_raw.isupper() else name_raw
+
+            pc = (d.get("postalCode") or "").strip().upper()
+            addr_parts = [
+                d.get("postalAddressLine1") or "",
+                d.get("postalAddressLine2") or "",
+                d.get("postalAddressTownCity") or "",
+                d.get("postalAddressCounty") or "",
+            ]
+            addr = ", ".join(p for p in addr_parts if p)
+            phone = (d.get("mainPhoneNumber") or "").strip()
+
+            records_by_ods[ods] = {
+                "ods_code":         ods,
+                "name":             name,
+                "address":          addr,
+                "postcode":         pc,
+                "phone":            phone,
+            }
+            if done % 200 == 0 or done == len(futures):
+                print(f"  {done}/{len(futures)} fetched — built {len(records_by_ods)} so far")
+
+    print(f"\nRejection summary:")
+    print(f"  no ODS code:         {rejected_no_ods}")
+    print(f"  ODS not practice format: {rejected_bad_ods}")
+    print(f"  failed service filter: {rejected_services}")
+    print(f"  → kept: {len(records_by_ods)} unique GP records")
+    if sample_rejects:
+        print("\nSample service-filter rejects (so you can tune if needed):")
+        for n, o, svc in sample_rejects:
+            print(f"  {o:8s} {n[:40]:40s}  services: {svc}")
+    return records_by_ods
 
 # ---------------------------------------------------------------- main
 
@@ -249,7 +302,7 @@ def main():
     if not key:
         sys.exit("CQC_KEY env var not set. Configure it as a GitHub secret.")
 
-    # Load existing gps.json so we preserve GPPS / CQC ratings.
+    # Load existing gps.json for merge.
     existing_by_ods = {}
     if GPS_JSON.exists():
         try:
@@ -261,67 +314,45 @@ def main():
                 print(f"Loaded {len(existing_by_ods)} records from existing gps.json.")
         except Exception as e:
             print(f"WARN: couldn't read existing gps.json — {e}")
-    if len(existing_by_ods) < 100:
-        print("WARN: existing gps.json has <100 records. Will still attempt build, "
-              "but safety guard may abort if results are tiny.")
 
-    # 1. Discover via CQC
+    # 1. Discover candidates via CQC summary pagination
     candidates = discover_london_gp_candidates(key)
-    cqc_codes = fetch_ods_codes_from_details(candidates, key)
+    # 2. Fetch detail and build records
+    cqc_records = build_records_from_details(candidates, key)
 
-    # 2. For ODS codes already in gps.json, keep the existing record.
-    #    For NEW ones, FHIR-lookup to get full record.
-    new_codes = set(cqc_codes.keys()) - set(existing_by_ods.keys())
-    print(f"\n{len(new_codes)} ODS codes are NEW (not in existing gps.json).")
-
-    new_records = []
-    if new_codes:
-        print(f"Fetching FHIR details for {len(new_codes)} new codes…")
-        fhir_failed = 0
-        with ThreadPoolExecutor(max_workers=20) as pool:
-            futures = {pool.submit(fhir_lookup_by_ods, ods): ods for ods in sorted(new_codes)}
-            done = 0
-            for fut in as_completed(futures):
-                ods = futures[fut]
-                done += 1
-                try:
-                    rec = fut.result()
-                except Exception:
-                    rec = None
-                if rec and is_london(rec.get("postcode", "")):
-                    new_records.append({
-                        "ods_code":         rec["ods_code"],
-                        "name":             rec["name"],
-                        "address":          rec["address"],
-                        "postcode":         rec["postcode"],
-                        "phone":            rec["phone"],
-                        "cqc_rating":       "",
-                        "cqc_url":          "",
-                        "gpps_overall_pct": None,
-                        "gpps_contact_pct": None,
-                        "gpps_pcn":         "",
-                    })
-                else:
-                    fhir_failed += 1
-                if done % 50 == 0 or done == len(new_codes):
-                    print(f"  {done}/{len(new_codes)} FHIR lookups done "
-                          f"({len(new_records)} ok, {fhir_failed} failed)")
-
-    # 3. Merge: keep all existing records, add the new ones.
-    merged = list(existing_by_ods.values()) + new_records
-    print(f"\nMerged: {len(existing_by_ods)} existing + {len(new_records)} new "
+    # 3. Merge: keep all existing + add any new ones. For codes that are in
+    #    both, prefer the existing (so we preserve CQC ratings and GPPS scores).
+    merged_by_ods = dict(existing_by_ods)  # copy
+    added = 0
+    for ods, new_rec in cqc_records.items():
+        if ods not in merged_by_ods:
+            merged_by_ods[ods] = {
+                "ods_code":         new_rec["ods_code"],
+                "name":             new_rec["name"],
+                "address":          new_rec["address"],
+                "postcode":         new_rec["postcode"],
+                "phone":            new_rec["phone"],
+                "cqc_rating":       "",
+                "cqc_url":          "",
+                "gpps_overall_pct": None,
+                "gpps_contact_pct": None,
+                "gpps_pcn":         "",
+            }
+            added += 1
+    merged = list(merged_by_ods.values())
+    print(f"\nMerged: {len(existing_by_ods)} existing + {added} new "
           f"= {len(merged)} total.")
 
-    # 4. Safety: refuse to write if we'd have fewer than 90% of existing.
+    # 4. Safety guard
     if existing_by_ods and len(merged) < len(existing_by_ods) * 0.9:
         sys.exit(f"ABORT: merged {len(merged)} < existing {len(existing_by_ods)} * 0.9.")
 
-    # 5. Write.
+    # 5. Write
     GPS_JSON.write_text(json.dumps(merged, indent=2))
     print(f"\nWrote gps.json — {len(merged)} practices, "
           f"{GPS_JSON.stat().st_size//1024} KB.")
 
-    # 6. Coverage summary.
+    # 6. Coverage summary
     by_area = Counter()
     for r in merged:
         by_area[area_letters(r.get("postcode", ""))] += 1
@@ -332,7 +363,7 @@ def main():
     if "TW" in by_area:
         print(f"\n✅ Twickenham/Richmond (TW): {by_area['TW']} practices.")
     else:
-        print("\n⚠️  No TW practices found — check the CQC detail step above.")
+        print("\n⚠️  No TW practices — check the rejection summary above.")
 
 if __name__ == "__main__":
     main()
