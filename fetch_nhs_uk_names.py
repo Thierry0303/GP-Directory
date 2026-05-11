@@ -99,9 +99,8 @@ def main():
 
     status_counts = Counter()
     sample_renames = []
-    renamed = 0
-    skipped = 0
-    failed = 0
+    sample_drops = []
+    record_status = {}  # index -> status
 
     with ThreadPoolExecutor(max_workers=20) as pool:
         futures = {pool.submit(fetch_nhs_uk_name, c): (i, c) for i, c in ods_codes}
@@ -114,6 +113,7 @@ def main():
             except Exception as e:
                 status, name = "exception", str(e)[:40]
             status_counts[status] += 1
+            record_status[i] = status
 
             if status == "ok" and name:
                 old = (data[i].get("name") or "").strip()
@@ -121,29 +121,59 @@ def main():
                     if "official_name" not in data[i]:
                         data[i]["official_name"] = old
                     data[i]["name"] = name
-                    renamed += 1
                     if len(sample_renames) < 20:
                         sample_renames.append((ods, old, name))
-            elif status in ("not-found", "placeholder"):
-                skipped += 1
-            else:
-                failed += 1
+            elif status == "not-found":
+                if len(sample_drops) < 20:
+                    sample_drops.append((ods, (data[i].get("name") or "")[:50],
+                                        (data[i].get("postcode") or "")))
 
             if done % 100 == 0 or done == len(ods_codes):
+                renamed_so_far = sum(1 for s in record_status.values() if s == "ok")
+                not_found = sum(1 for s in record_status.values() if s == "not-found")
                 print(f"  {done}/{len(ods_codes)} done — "
-                      f"renamed {renamed}, skipped {skipped}, failed {failed}")
+                      f"on NHS.uk: {renamed_so_far}, "
+                      f"not-found: {not_found}")
 
     print(f"\nStatus counts:")
     for s, n in status_counts.most_common():
         print(f"  {s:15s} {n}")
+
+    # Build the kept list: drop records that NHS.uk says don't exist.
+    # Records we couldn't reach (http-error, error, exception) stay — we
+    # don't know if they're real or not, so we don't risk dropping them
+    # on transient failures.
+    kept = []
+    dropped = 0
+    for i, rec in enumerate(data):
+        st = record_status.get(i)
+        if st == "not-found":
+            dropped += 1
+            continue
+        kept.append(rec)
+
+    print(f"\nKept:    {len(kept)}")
+    print(f"Dropped: {dropped} (NHS.uk returned 404 — not a registerable GP)")
 
     if sample_renames:
         print("\nSample renames:")
         for ods, old, new in sample_renames:
             print(f"  {ods:8s} {old[:35]:35s}  →  {new}")
 
-    GPS_JSON.write_text(json.dumps(data, indent=2))
-    print(f"\nWrote {GPS_JSON} — {renamed} records renamed.")
+    if sample_drops:
+        print("\nSample drops (NHS.uk has no page for these):")
+        for ods, name, pc in sample_drops:
+            print(f"  {ods:8s} {name:50s} {pc}")
+
+    # Safety: refuse to drop more than 25%.
+    if dropped > len(data) * 0.25:
+        sys.exit(f"\nABORT: would drop {dropped}/{len(data)} > 25%. "
+                 "Either NHS.uk is rate-limiting us (check 'http-error' "
+                 "status count above) or something else is wrong. "
+                 "gps.json left unchanged.")
+
+    GPS_JSON.write_text(json.dumps(kept, indent=2))
+    print(f"\nWrote {GPS_JSON} — {len(kept)} records.")
 
 if __name__ == "__main__":
     main()
