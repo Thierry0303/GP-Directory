@@ -99,6 +99,47 @@ def is_individual_practitioner(name):
         return True
     return False
 
+# A "Dr X - Y Centre" pattern usually means a specific doctor's listing
+# AT the centre Y. Y is usually also in the data as its own record. Drop
+# these to avoid duplicates.
+_DOCTOR_AT_CENTRE_RE = re.compile(
+    r"^(?:dr|mr|mrs|ms|prof)\.?\s.+\s[-–]\s",
+    re.IGNORECASE,
+)
+
+def has_gpps_data(record):
+    """Has NHS GP Patient Survey scores → definitely NHS-contracted."""
+    return bool(record.get("gpps_overall_pct") or record.get("gpps_contact_pct"))
+
+def is_unverified_dr_record(record):
+    """A "Dr X" or "Dr X Practice" record WITHOUT GPPS data is most
+    likely a private clinic or individual practitioner that leaked into
+    the NHS list. Real NHS single-handed practices (like 'Dr Dhital
+    Practice', 'Dr Me Silver's Practice') have GPPS scores.
+    """
+    name = (record.get("name") or "").strip()
+    if not name:
+        return False
+    if not _INDIVIDUAL_PRACTITIONER_RE.match(name):
+        return False
+    # Dr-prefixed: only keep if we have GPPS evidence it's NHS.
+    return not has_gpps_data(record)
+
+def is_doctor_at_centre_duplicate(record):
+    """Records named 'Dr X - Y Centre' usually duplicate the Y record."""
+    name = (record.get("name") or "").strip()
+    return bool(_DOCTOR_AT_CENTRE_RE.match(name)) and not has_gpps_data(record)
+
+# Address-based: Harley Street is the famous private medical district —
+# anything there is private, regardless of how it's named.
+_PRIVATE_ADDRESS_RE = re.compile(
+    r"\bharley\s+street\b|\bwimpole\s+street\b|\bdevonshire\s+place\b",
+    re.IGNORECASE,
+)
+def is_private_address(record):
+    addr = (record.get("address") or "")
+    return bool(_PRIVATE_ADDRESS_RE.search(addr)) and not has_gpps_data(record)
+
 # Drop records whose name clearly identifies them as something other than
 # an NHS GP practice — pharmacies, dentists, opticians, etc.
 _NON_NHS_GP_RE = re.compile(
@@ -153,8 +194,12 @@ def main():
     dropped_no_ods = 0
     dropped_individual = 0
     dropped_non_gp = 0
+    dropped_dr_no_gpps = 0
+    dropped_doctor_at_centre = 0
+    dropped_private_address = 0
     dropped_examples = {"no-name": [], "not-london": [], "individual": [],
-                        "non-gp": [], "no-pc": [], "no-ods": []}
+                        "non-gp": [], "dr-no-gpps": [], "doctor-at-centre": [],
+                        "private-address": [], "no-pc": [], "no-ods": []}
 
     for r in data:
         ods = (r.get("ods_code") or "").strip().upper()
@@ -191,17 +236,35 @@ def main():
             if len(dropped_examples["individual"]) < 5:
                 dropped_examples["individual"].append(r)
             continue
+        if is_private_address(r):
+            dropped_private_address += 1
+            if len(dropped_examples["private-address"]) < 5:
+                dropped_examples["private-address"].append(r)
+            continue
+        if is_doctor_at_centre_duplicate(r):
+            dropped_doctor_at_centre += 1
+            if len(dropped_examples["doctor-at-centre"]) < 5:
+                dropped_examples["doctor-at-centre"].append(r)
+            continue
+        if is_unverified_dr_record(r):
+            dropped_dr_no_gpps += 1
+            if len(dropped_examples["dr-no-gpps"]) < 5:
+                dropped_examples["dr-no-gpps"].append(r)
+            continue
         kept.append(r)
 
     total_dropped = len(data) - len(kept)
     print(f"\nKept:    {len(kept)}")
     print(f"Dropped: {total_dropped} total")
-    print(f"  no name:                          {dropped_no_name}")
-    print(f"  not in London:                    {dropped_not_london}")
-    print(f"  non-GP (pharmacy/dental/private): {dropped_non_gp}")
-    print(f"  individual practitioner (Dr X):   {dropped_individual}")
-    print(f"  no postcode:                      {dropped_no_pc}")
-    print(f"  no ODS:                           {dropped_no_ods}")
+    print(f"  no name:                              {dropped_no_name}")
+    print(f"  not in London:                        {dropped_not_london}")
+    print(f"  non-GP (pharmacy/dental/private):     {dropped_non_gp}")
+    print(f"  individual practitioner (Dr X only):  {dropped_individual}")
+    print(f"  private address (Harley St / Wimpole): {dropped_private_address}")
+    print(f"  duplicate (Dr X - Y Centre):          {dropped_doctor_at_centre}")
+    print(f"  unverified Dr (no GPPS score):        {dropped_dr_no_gpps}")
+    print(f"  no postcode:                          {dropped_no_pc}")
+    print(f"  no ODS:                               {dropped_no_ods}")
 
     for reason, examples in dropped_examples.items():
         if examples:
