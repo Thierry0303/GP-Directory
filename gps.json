@@ -18,15 +18,6 @@
     "lng": -0.11888
   },
   {
-    "ods_code": "A91137",
-    "name": "Wellington Medical Centre",
-    "address": "BIRDCAGE WALK, LONDON",
-    "postcode": "SW1E 6HQ",
-    "phone": null,
-    "lat": 51.499986,
-    "lng": -0.137642
-  },
-  {
     "ods_code": "A91138",
     "name": "Hyde Park Medical Centre",
     "address": "KNIGHTSBRIDGE, KENSINGTON, LONDON",
@@ -449,15 +440,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-541182889",
     "lat": 51.587321,
     "lng": -0.22337
-  },
-  {
-    "ods_code": "E83655",
-    "name": "North London Hospice",
-    "address": "47 WOODSIDE AVENUE, LONDON",
-    "postcode": "N12 8TT",
-    "phone": "020 83438841",
-    "lat": 51.622236,
-    "lng": -0.18043
   },
   {
     "ods_code": "E83666",
@@ -1616,19 +1598,6 @@
     "lng": -0.212891
   },
   {
-    "ods_code": "E87711",
-    "name": "Royal Hospital Chelsea",
-    "address": "ROYAL HOSPITAL ROAD, CHELSEA, LONDON",
-    "postcode": "SW3 4SR",
-    "phone": "020 78815267",
-    "gpps_overall_pct": 100.0,
-    "gpps_contact_pct": 100.0,
-    "gpps_responses": 95,
-    "gpps_pcn": "BROMPTON HEALTH PCN",
-    "lat": 51.487401,
-    "lng": -0.157313
-  },
-  {
     "ods_code": "E87720",
     "name": "Kensington Park Medical Centre",
     "address": "75 RUSSELL ROAD, LONDON",
@@ -1803,21 +1772,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-12089849295",
     "lat": 51.490652,
     "lng": -0.151333
-  },
-  {
-    "ods_code": "E87754",
-    "name": "Wellington Health Centre",
-    "address": "16 WELLINGTON ROAD, ST JOHNS WOOD, LONDON",
-    "postcode": "NW8 9SP",
-    "phone": "020 77223382",
-    "gpps_overall_pct": 88.2,
-    "gpps_contact_pct": 92.3,
-    "gpps_responses": 93,
-    "gpps_pcn": "ST JOHN'S WOOD & MAIDA VALE PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-534696568",
-    "lat": 51.532277,
-    "lng": -0.171259
   },
   {
     "ods_code": "E87755",
@@ -7026,15 +6980,6 @@
     "lng": -0.176595
   },
   {
-    "ods_code": "Y00936",
-    "name": "Community Hospice Bexley",
-    "address": "GREENWICH & BEXLEY COMM HOSPICE, 185 BOSTALL HILL, LONDON",
-    "postcode": "SE2 0GB",
-    "phone": "020 83122244",
-    "lat": 51.482685,
-    "lng": 0.118123
-  },
-  {
     "ods_code": "Y00952",
     "name": "Minor Injuries Tc",
     "address": "QUEEN MARYS UNIVERSITY HOSPITAL, ROEHAMPTON LANE, LONDON",
@@ -7147,15 +7092,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-12896720766",
     "lat": 51.593232,
     "lng": -0.036839
-  },
-  {
-    "ods_code": "Y02085",
-    "name": "St Christopher'S Hospice",
-    "address": "51-59 LAWRIE PARK ROAD, LONDON",
-    "postcode": "SE26 6DZ",
-    "phone": "020 87684500",
-    "lat": 51.421384,
-    "lng": -0.058667
   },
   {
     "ods_code": "Y02117",
@@ -7916,15 +7852,6 @@
     "lng": -0.105169
   },
   {
-    "ods_code": "Y04828",
-    "name": "Greenwich Community Hospice",
-    "address": "185 BOSTALL HILL, ABBEY WOOD, LONDON",
-    "postcode": "SE2 0GB",
-    "phone": "02083 122244",
-    "lat": 51.482685,
-    "lng": 0.118123
-  },
-  {
     "ods_code": "Y04831",
     "name": "H&F Ccgs Weekend Plus Service",
     "address": "WOS DR CANISIUS & HASAN, CRANSTON COURT,56 BLOEMFONTEIN RD, SHEPHERDS BUSH, LONDON",
@@ -8031,15 +7958,6 @@
     "phone": "0845 1555000",
     "lat": 51.524893,
     "lng": -0.136885
-  },
-  {
-    "ods_code": "Y05020",
-    "name": "Trinity Hospice",
-    "address": "30 CLAPHAM COMMON, NORTH SIDE, LONDON",
-    "postcode": "SW4 0RN",
-    "phone": "020 77871004",
-    "lat": 51.461911,
-    "lng": -0.146174
   },
   {
     "ods_code": "Y05024",
@@ -8730,37 +8648,6 @@
     "lng": -0.084536
   },
   {
-    "ods_code": "Y05921",
-    "name": "Circle Greenwich Msk",
-    "address": "ELTHAM COMMUNITY HOSPITAL, 30 PASSEY PLACE, ELTHAM, LONDON",
-    "postcode": "SE9 5DQ",
-    "phone": "020 38938382",
-    "lat": 51.449946,
-    "lng": 0.05374
-  },
-  {
-    "ods_code": "Y05986",
-    "name": "Chg The Black Heath Hospital",
-    "address": "40-42 LEE TERRACE, LONDON",
-    "postcode": "SE3 9UD",
-    "phone": "020 84631906",
-    "lat": 51.463474,
-    "lng": 0.006291
-  },
-  {
-    "ods_code": "Y06113",
-    "name": "Qhs Gp Care Home Service",
-    "address": "50 OLD JAMAICA ROAD, LONDON",
-    "postcode": "SE16 4BL",
-    "phone": "020 30497249",
-    "gpps_overall_pct": 74.6,
-    "gpps_contact_pct": 69.0,
-    "gpps_responses": 19,
-    "gpps_pcn": "NORTH SOUTHWARK PCN",
-    "lat": 51.496937,
-    "lng": -0.069232
-  },
-  {
     "ods_code": "Y06117",
     "name": "Community Dermatology Southwark Gstt",
     "address": "GUYS HOSPITAL, GREAT MAZE POND, LONDON",
@@ -9016,15 +8903,6 @@
     "lng": -0.199131
   },
   {
-    "ods_code": "Y07144",
-    "name": "King'S College Hospital Utc",
-    "address": "DENMARK HILL, LONDON",
-    "postcode": "SE5 9RS",
-    "phone": "02032 999000",
-    "lat": 51.468078,
-    "lng": -0.09389
-  },
-  {
     "ods_code": "Y07145",
     "name": "Livi Neas 111 Support Ooh",
     "address": "CAPITAL TOWER, 91 WATERLOO ROAD, LONDON",
@@ -9079,15 +8957,6 @@
     "lng": -0.231039
   },
   {
-    "ods_code": "Y07191",
-    "name": "Hospital At Home Swl - Clch",
-    "address": "TUDOR LODGE HEALTH CENTRE, 8C VICTORIA DRIVE, LONDON",
-    "postcode": "SW19 6AE",
-    "phone": "03333 002350",
-    "lat": 51.445999,
-    "lng": -0.219652
-  },
-  {
     "ods_code": "Y07216",
     "name": "Pes@Specsavers Wimbledon, Swl",
     "address": "SPECSAVERS WIMBLEDON, 38 THE BROADWAY, LONDON",
@@ -9104,15 +8973,6 @@
     "phone": "02077 221917",
     "lat": 51.536964,
     "lng": -0.183559
-  },
-  {
-    "ods_code": "Y07260",
-    "name": "Dmc - Grantham Hospital (Visiting Serv)",
-    "address": "60 CHADWICK ROAD, LONDON",
-    "postcode": "SE15 4PU",
-    "phone": "02076 351012",
-    "lat": 51.467864,
-    "lng": -0.074232
   },
   {
     "ods_code": "Y07273",
@@ -9185,15 +9045,6 @@
     "phone": "02087 766514",
     "lat": 51.41277,
     "lng": -0.06418
-  },
-  {
-    "ods_code": "Y07358",
-    "name": "London Ambulance Service App Prescribng",
-    "address": "220 WATERLOO ROAD, LONDON",
-    "postcode": "SE1 8SD",
-    "phone": "02077 832000",
-    "lat": 51.500175,
-    "lng": -0.109005
   },
   {
     "ods_code": "Y07370",
@@ -9763,15 +9614,6 @@
     "lng": -0.177844
   },
   {
-    "ods_code": "Y08022",
-    "name": "Barnet Hospital At Home",
-    "address": "FINCHLEY MEMORIAL HOSP, GRANVILLE ROAD, LONDON",
-    "postcode": "N12 0JE",
-    "phone": "07779 587598",
-    "lat": 51.60546,
-    "lng": -0.176595
-  },
-  {
     "ods_code": "Y08097",
     "name": "Lambeth Community Diabetes Service",
     "address": "ST THOMAS' HOSPITAL, 249 WESTMINSTER BRIDGE ROAD, LONDON",
@@ -9788,15 +9630,6 @@
     "phone": "02088 016640",
     "lat": 51.589105,
     "lng": -0.078681
-  },
-  {
-    "ods_code": "Y08192",
-    "name": "Springfield University Hospital",
-    "address": "SHAFTESBURY BUILDING, SPRINGFIELD UNIVERSITY HOSPITAL, 9 SPRINGFIELD DRIVE, LONDON",
-    "postcode": "SW17 0YF",
-    "phone": "02035 133302",
-    "lat": 51.437893,
-    "lng": -0.172039
   },
   {
     "ods_code": "Y08245",
@@ -9835,33 +9668,6 @@
     "lng": -0.040845
   },
   {
-    "ods_code": "Y08432",
-    "name": "Medica Pharmacy",
-    "address": "202 SOUTHWARK PARK ROAD, LONDON",
-    "postcode": "SE16 3RW",
-    "phone": "02072 377684",
-    "lat": 51.491965,
-    "lng": -0.063824
-  },
-  {
-    "ods_code": "Y08433",
-    "name": "Bonamy Pharmacy",
-    "address": "355 ROTHERHITHE NEW ROAD, BERMONDSEY, LONDON",
-    "postcode": "SE16 3HF",
-    "phone": "02077 402523",
-    "lat": 51.486458,
-    "lng": -0.062545
-  },
-  {
-    "ods_code": "Y08434",
-    "name": "Day Lewis Pharmacy",
-    "address": "151 PECKHAM HIGH STREET, PECKHAM, LONDON",
-    "postcode": "SE15 5SL",
-    "phone": "02076 397166",
-    "lat": 51.474157,
-    "lng": -0.06645
-  },
-  {
     "ods_code": "Y08487",
     "name": "Wf Gpfednet Enhanced Access Orient Hub",
     "address": "1ST FLOOR, 75 OLIVER ROAD, LEYTON, LONDON",
@@ -9889,15 +9695,6 @@
     "lng": 0.006388
   },
   {
-    "ods_code": "Y08514",
-    "name": "Chg Hendon Hospital",
-    "address": "HENDON HOSPITAL, 46-50 SUNNY GARDENS ROAD, LONDON",
-    "postcode": "NW4 1RP",
-    "phone": "02087 128843",
-    "lat": 51.593715,
-    "lng": -0.224578
-  },
-  {
     "ods_code": "Y08521",
     "name": "Pfse Tower Hamlets Dermatology Service",
     "address": "PATIENT FIRST SE, 50C ROMFORD ROAD, LONDON",
@@ -9905,15 +9702,6 @@
     "phone": "02085 193606",
     "lat": 51.542097,
     "lng": 0.006388
-  },
-  {
-    "ods_code": "Y08523",
-    "name": "Circle Health Group",
-    "address": "30 CANNON STREET, LONDON",
-    "postcode": "EC4M 6XH",
-    "phone": "02032 836600",
-    "lat": 51.51241,
-    "lng": -0.094865
   },
   {
     "ods_code": "Y08528",
@@ -9934,42 +9722,6 @@
     "lng": 0.018734
   },
   {
-    "ods_code": "Y08535",
-    "name": "Cubitt Town Pharmacy",
-    "address": "143 MANCHESTER ROAD, ISLE OF DOGS, LONDON",
-    "postcode": "E14 3DN",
-    "phone": "02079 871487",
-    "lat": 51.48871,
-    "lng": -0.008072
-  },
-  {
-    "ods_code": "Y08536",
-    "name": "Green Light Pharmacy",
-    "address": "172 STAMFORD HILL, LONDON",
-    "postcode": "N16 6QX",
-    "phone": "02088 006166",
-    "lat": 51.572435,
-    "lng": -0.072254
-  },
-  {
-    "ods_code": "Y08538",
-    "name": "Mattock Lane Chemist",
-    "address": "8 ST. JOHNS PARADE, MATTOCK LANE, EALING, LONDON",
-    "postcode": "W13 9LL",
-    "phone": "02085 679153",
-    "lat": 51.509592,
-    "lng": -0.316912
-  },
-  {
-    "ods_code": "Y08545",
-    "name": "Procare Pharmacy",
-    "address": "11 SHEAVESHILL PARADE, SHEAVESHILL AVENUE, LONDON",
-    "postcode": "NW9 6RS",
-    "phone": "02082 056951",
-    "lat": 51.588237,
-    "lng": -0.251455
-  },
-  {
     "ods_code": "Y08561",
     "name": "Waterside Pcn Devon Livi Emis Hub",
     "address": "FLOOR 12, CAPITAL TOWER, 91 WATERLOO ROAD, LONDON",
@@ -9988,24 +9740,6 @@
     "lng": -0.110437
   },
   {
-    "ods_code": "Y08574",
-    "name": "Nash Chemist",
-    "address": "817 COMMERCIAL ROAD, LONDON",
-    "postcode": "E14 7HG",
-    "phone": "02079 871398",
-    "lat": 51.512327,
-    "lng": -0.028904
-  },
-  {
-    "ods_code": "Y08575",
-    "name": "Lansbury Chemist",
-    "address": "85 CHRISP STREET, POPLAR, LONDON",
-    "postcode": "E14 6GG",
-    "phone": "02079 871875",
-    "lat": 51.514391,
-    "lng": -0.014777
-  },
-  {
     "ods_code": "Y08580",
     "name": "Sound Pcn Devon Livi Sys1 Hub",
     "address": "FLOOR 12, CAPITAL TOWER, 91 WATERLOO ROAD, LONDON",
@@ -10013,15 +9747,6 @@
     "phone": "02038 703029",
     "lat": 51.503543,
     "lng": -0.110437
-  },
-  {
-    "ods_code": "Y08582",
-    "name": "Beautychem Chemist",
-    "address": "11 GREAT CAMBRIDGE ROAD, TOTTENHAM, LONDON",
-    "postcode": "N17 7LH",
-    "phone": "02088 084015",
-    "lat": 51.605121,
-    "lng": -0.086453
   },
   {
     "ods_code": "Y08740",
@@ -10594,18 +10319,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "V82679",
-    "name": "Private Medical Centre - Ealing",
-    "address": "124 Uxbridge Road, London",
-    "postcode": "W13 8QS",
-    "phone": "",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E85045",
     "name": "Twickenham Park Medical Centre",
     "address": "192 Twickenham Road, Hanworth, Feltham",
@@ -10911,18 +10624,6 @@
     "address": "18 Hughenden Gardens, Northolt, Middlesex",
     "postcode": "UB5 6LD",
     "phone": "02088453434",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V07244",
-    "name": "Dr Ishtaq Mohammed - Queens Park Health Centre",
-    "address": "Dartstreet, Queens Park, London",
-    "postcode": "W10 4LD",
-    "phone": "02089609007",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12027,18 +11728,6 @@
     "address": "Evergreen Primary Care Centre, 1 Smythe Close, Edmonton, London",
     "postcode": "N9 0TW",
     "phone": "02088878355",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82678",
-    "name": "Dr KM Al-Kaisy Practice",
-    "address": "Urswick Medical Centre, Urswick Road, Dagenham, Essex",
-    "postcode": "RM9 6EA",
-    "phone": "02089844470",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -13582,18 +13271,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86004",
-    "name": "Dr Sahota's Practice (The Medical Centre)",
-    "address": "The Medical Centre, 6 The Green, West Drayton, Middlesex",
-    "postcode": "UB7 7PJ",
-    "phone": "01895442026",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G82006",
     "name": "Dartford East Health Centre",
     "address": "Pilgrims Way, Dartford, Kent",
@@ -13894,18 +13571,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86010",
-    "name": "Dr GS Chana's Practice",
-    "address": "20-22 High Street, Yiewsley, West Drayton, Middlesex",
-    "postcode": "UB7 7DP",
-    "phone": "01895435377",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "Y03082",
     "name": "Kings Park Surgery",
     "address": "Gubbins Lane, Harold Wood, Romford, Essex",
@@ -13983,18 +13648,6 @@
     "address": "165 Lanark Road, 3rd Floor Medical Centre, London",
     "postcode": "W9 1NZ",
     "phone": "07702138466",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86027",
-    "name": "Dr V Paramanathan's Practice",
-    "address": "Otterfield Medical Centre, 25 Otterfield Road, Yiewsley, West Drayton, Middlesex",
-    "postcode": "UB7 8PE",
-    "phone": "01895452540",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -14206,18 +13859,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86626",
-    "name": "Dr JI Solomon's Practice",
-    "address": "The Medical Centre, 69 Queens Walk, Ruislip, Middlesex",
-    "postcode": "HA4 0NT",
-    "phone": "02088422991",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H84060",
     "name": "Richmond Lock Surgery",
     "address": "300 St Margarets Road, Twickenham, Middlesex",
@@ -14271,18 +13912,6 @@
     "address": "61 Cleveland Road, Ilford, Essex",
     "postcode": "IG1 1EE",
     "phone": "02085147761",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86020",
-    "name": "Dr K Anantha-Reddy's Practice",
-    "address": "1-2 Yeading Court, Masefield Lane, Hayes, Middlesex",
-    "postcode": "UB4 9AJ",
-    "phone": "02088451515",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -14614,18 +14243,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86011",
-    "name": "Dr RP Aurora's Practice",
-    "address": "1 Oxford Drive, Eastcote, Ruislip, Middlesex",
-    "postcode": "HA4 9EY",
-    "phone": "02088663430",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H81656",
     "name": "Shadbolt Park House Surgery",
     "address": "Shadbolt Park, Salisbury Road, Worcester Park, Surrey",
@@ -14703,18 +14320,6 @@
     "address": "Merritt Medical Centre, Merritt Gardens, Chessington, Surrey",
     "postcode": "KT9 2GY",
     "phone": "02083976361",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85696",
-    "name": "Dr Singh's Surgery",
-    "address": "The Surgery, 65 Clifford Road, Hounslow, Middlesex",
-    "postcode": "TW4 7LR",
-    "phone": "02085775304",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -15010,18 +14615,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86619",
-    "name": "Dr KP Patel's Practice",
-    "address": "1 Wallasey Crescent, Ickenham, Uxbridge, Middlesex",
-    "postcode": "UB10 8SA",
-    "phone": "01895674156",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G84017",
     "name": "Addington Road Surgery",
     "address": "77 Addington Road, West Wickham, Kent",
@@ -15111,18 +14704,6 @@
     "address": "Lansdowne, Priory Road, Hampton, Middlesex",
     "postcode": "TW12 2PB",
     "phone": "02089795150",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82025",
-    "name": "Dr BK Jaiswal's Practice",
-    "address": "Julia Engwell Health Centre, Woodward Road, Dagenham, Essex",
-    "postcode": "RM9 4SR",
-    "phone": "02085925500",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -15634,18 +15215,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "H85693",
-    "name": "Circle GP Surgery",
-    "address": "Green Wrythe Lane, Carshalton",
-    "postcode": "SM5 1JF",
-    "phone": "02037706071",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H84623",
     "name": "Hampton Hill Medical Centre",
     "address": "94-102, High Street, Hampton Hill, Hampton",
@@ -15838,18 +15407,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "F84118",
-    "name": "Wellington Way Health Centre",
-    "address": "1a Wellington Way, London",
-    "postcode": "E3 4NE",
-    "phone": "02089803676",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "Y02575",
     "name": "Porters Avenue Doctors Surgery",
     "address": "234 Porters Avenue, Dagenham, Essex",
@@ -15951,18 +15508,6 @@
     "address": "4th Floor, Soho Centre for Health, 1 Frith Street, London",
     "postcode": "W1D 3HZ",
     "phone": "02074379360",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V82714",
-    "name": "Dr Larmoyer's Practice",
-    "address": "100 Harley Street, London",
-    "postcode": "W1G 7JA",
-    "phone": "",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
