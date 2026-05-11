@@ -1037,21 +1037,6 @@
     "lng": -0.235555
   },
   {
-    "ods_code": "E85048",
-    "name": "Dr Canisius & Dr Hasan, Parkview Cfh&W",
-    "address": "56 CRANSTON COURT, BLOEMFONTEIN ROAD, LONDON",
-    "postcode": "W12 7FG",
-    "phone": "020 37046055",
-    "gpps_overall_pct": 68.1,
-    "gpps_contact_pct": 69.3,
-    "gpps_responses": 126,
-    "gpps_pcn": "NORTH HAMMERSMITH & FULHAM PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-4445962348",
-    "lat": 51.510846,
-    "lng": -0.235197
-  },
-  {
     "ods_code": "E85055",
     "name": "The Bush Doctors",
     "address": "16-17 WEST 12 SHOPPING CENTRE, SHEPHERDS BUSH GREEN, LONDON",
@@ -1187,21 +1172,6 @@
     "lng": -0.191367
   },
   {
-    "ods_code": "E85624",
-    "name": "Dr Uppal & Partn, Parkview Ctr For H&W",
-    "address": "56 BLOEMFONTEIN ROAD, LONDON",
-    "postcode": "W12 7FG",
-    "phone": "020 37046040",
-    "gpps_overall_pct": 83.6,
-    "gpps_contact_pct": 70.4,
-    "gpps_responses": 100,
-    "gpps_pcn": "NORTH HAMMERSMITH & FULHAM PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-1363279061",
-    "lat": 51.510846,
-    "lng": -0.235197
-  },
-  {
     "ods_code": "E85649",
     "name": "Fulham Cross Medical Centre",
     "address": "322 LILLIE ROAD, FULHAM, LONDON",
@@ -1215,21 +1185,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-6744301662",
     "lat": 51.482775,
     "lng": -0.214044
-  },
-  {
-    "ods_code": "E85659",
-    "name": "Dr Rk Kukar, Parkview Ctr For H&W",
-    "address": "56 BLOEMFONTEIN ROAD, LONDON",
-    "postcode": "W12 7FG",
-    "phone": "020 37046038",
-    "gpps_overall_pct": 69.9,
-    "gpps_contact_pct": 63.8,
-    "gpps_responses": 114,
-    "gpps_pcn": "NORTH HAMMERSMITH & FULHAM PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-1465355437",
-    "lat": 51.510846,
-    "lng": -0.235197
   },
   {
     "ods_code": "E85685",
@@ -2509,21 +2464,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-3253845518",
     "lat": 51.55718,
     "lng": -0.136546
-  },
-  {
-    "ods_code": "F83678",
-    "name": "Dr Segarajasinghe",
-    "address": "FINSBURY HEALTH CENTRE, PINE STREET, LONDON",
-    "postcode": "EC1R 0LP",
-    "phone": "020 77135256",
-    "gpps_overall_pct": 91.6,
-    "gpps_contact_pct": 83.3,
-    "gpps_responses": 112,
-    "gpps_pcn": "SOUTH ISLINGTON PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-493866954",
-    "lat": 51.524866,
-    "lng": -0.108818
   },
   {
     "ods_code": "F83683",
@@ -5948,21 +5888,6 @@
     "lng": -0.091201
   },
   {
-    "ods_code": "G85708",
-    "name": "Dr Curran & Partners",
-    "address": "THE CLAPHAM MANOR HEALTH CENTRE, 86 CLAPHAM MANOR STREET, LONDON",
-    "postcode": "SW4 6EB",
-    "phone": "020 74116866",
-    "gpps_overall_pct": 81.8,
-    "gpps_contact_pct": 65.0,
-    "gpps_responses": 91,
-    "gpps_pcn": "CLAPHAM PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-582036744",
-    "lat": 51.465149,
-    "lng": -0.136008
-  },
-  {
     "ods_code": "G85711",
     "name": "Deptford Surgery",
     "address": "502-504 NEW CROSS ROAD, LONDON",
@@ -7716,21 +7641,6 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-6290706129",
     "lat": 51.579182,
     "lng": -0.241873
-  },
-  {
-    "ods_code": "Y03664",
-    "name": "Dr Azim & Partners",
-    "address": "67 ELLIOT ROAD, HENDON, LONDON",
-    "postcode": "NW4 3EB",
-    "phone": "020 84573950",
-    "gpps_overall_pct": 56.6,
-    "gpps_contact_pct": 45.1,
-    "gpps_responses": 108,
-    "gpps_pcn": "BARNET 5 PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-1326995798",
-    "lat": 51.579659,
-    "lng": -0.225704
   },
   {
     "ods_code": "Y03713",
@@ -10372,18 +10282,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E85041",
-    "name": "Dr S Bassi & Associates Ltd",
-    "address": "20 Church Road, London",
-    "postcode": "W7 1DR",
-    "phone": "02085675738",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E85006",
     "name": "Waterside Medical Centre",
     "address": "Tyler Road, Southall, Middlesex",
@@ -10504,18 +10402,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E84653",
-    "name": "Dr Muhammad Shahzad",
-    "address": "Edgware Community Hospital, Burnt Oak Broadway, Edgware, Middlesex",
-    "postcode": "HA8 0AD",
-    "phone": "",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E84030",
     "name": "Preston Hill Surgery",
     "address": "121 Preston Hill, Harrow",
@@ -10545,18 +10431,6 @@
     "address": "3c The Green, High Street, Feltham",
     "postcode": "TW13 4AF",
     "phone": "02088902899",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85066",
-    "name": "Dr John William Keen",
-    "address": "55 South Parade, London",
-    "postcode": "W4 5LH",
-    "phone": "02089943333",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -10641,18 +10515,6 @@
     "address": "18 Bethecar Road, Harrow",
     "postcode": "HA1 1SE",
     "phone": "02084279445",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "G83033",
-    "name": "Dr Davies & Partner",
-    "address": "55 Little Heath Road, Bexleyheath",
-    "postcode": "DA7 5HL",
-    "phone": "01322449327",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -11056,18 +10918,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "V00501",
-    "name": "Dr Parisa Akhavan-Tabib - Dartmouth Road",
-    "address": "59a Dartmouth Road, Forest Hill, London",
-    "postcode": "SE23 3HN",
-    "phone": "02082914956",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "V07244",
     "name": "Dr Ishtaq Mohammed - Queens Park Health Centre",
     "address": "Dartstreet, Queens Park, London",
@@ -11097,18 +10947,6 @@
     "address": "149 High Street, Waltham Cross, Hertfordshire",
     "postcode": "EN8 7AP",
     "phone": "01992636363",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V04109",
-    "name": "Dr Marc Hughes - Strand on the Green",
-    "address": "60 Thames Road, Strand On The Green, Chiswick, London",
-    "postcode": "W4 3RE",
-    "phone": "02089950298",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -11200,35 +11038,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "V05877",
-    "name": "Dr Michael Bass - Golders Green Road",
-    "address": "103a Golders Green Road, London",
-    "postcode": "NW11 8EN",
-    "phone": "02084582311",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H81045",
     "name": "Caterham Valley Medical Practice",
     "address": "Eothen House, Eothen Close, Caterham, Surrey",
     "postcode": "CR3 6JU",
     "phone": "01883347811",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V02335",
-    "name": "Dr Rupa Patel - New Malden",
-    "address": "328 Kingston Road, New Malden, Surrey",
-    "postcode": "KT3 3RX",
-    "phone": "02085464706",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -11392,35 +11206,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "V82816",
-    "name": "Dr Graham Aird",
-    "address": "52 Sanderstead Hill, Sanderstead, South Croydon, Surrey",
-    "postcode": "CR2 0HA",
-    "phone": "02086572302",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "F83056",
     "name": "Mitchison Road Surgery",
     "address": "2 Mitchison Road, London",
     "postcode": "N1 3NG",
     "phone": "02072266016",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V81953",
-    "name": "Dr Priya Gupta",
-    "address": "328 Baring Road, Grove Park, London",
-    "postcode": "SE12 0DU",
-    "phone": "",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -11529,18 +11319,6 @@
     "address": "3 Mackintosh Street, Bromley, Kent",
     "postcode": "BR2 9GT",
     "phone": "",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V04576",
-    "name": "Dr Amish Jessa",
-    "address": "1 Batman Close, South Africa Road, White City, London",
-    "postcode": "W12 7NU",
-    "phone": "02087499547",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -11872,18 +11650,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "V04190",
-    "name": "Dr Asma Khan",
-    "address": "105 Stroud Green Road, London",
-    "postcode": "N4 3PX",
-    "phone": "",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E87006",
     "name": "Little Venice Medical Centre",
     "address": "2 Crompton Street, London",
@@ -12040,35 +11806,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "G84041",
-    "name": "Dr Felix Balaratnam",
-    "address": "1 Gillmans Road, Orpington, Kent",
-    "postcode": "BR5 4LA",
-    "phone": "01689822022",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G83052",
     "name": "Belvedere Medical Centre",
     "address": "15 Albert Road, Belvedere, Kent",
     "postcode": "DA17 5LQ",
     "phone": "01322446700",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E87705",
-    "name": "Dr Andrew Rose",
-    "address": "5 Sloane Avenue, London",
-    "postcode": "SW3 3JD",
-    "phone": "02075813187",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12100,71 +11842,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "F85039",
-    "name": "Dr Tuljaram Patalay",
-    "address": "Evergreen Primary Care Centre, 1 Smythe Close, Edmonton, London",
-    "postcode": "N9 0TW",
-    "phone": "02088878329",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F86702",
-    "name": "Dr Winston Solomon",
-    "address": "38 Bathurst Road, Ilford, Essex",
-    "postcode": "IG1 4LA",
-    "phone": "02085541371",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E84663",
     "name": "Kenton Bridge Medical Centre",
     "address": "155-175 Kenton Road, Harrow, Middlesex",
     "postcode": "HA3 0YX",
     "phone": "02089076989",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82610",
-    "name": "Dr Nagendra Kumar Gupta",
-    "address": "206 Mawney Road, Romford, Essex",
-    "postcode": "RM7 8BU",
-    "phone": "01708739379",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E84658",
-    "name": "Dr Kaushikkumar Karia",
-    "address": "1-3 Long Elmes, Harrow, Middlesex",
-    "postcode": "HA3 5LE",
-    "phone": "02084279623",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "Y01280",
-    "name": "Dr Yousef Rashid",
-    "address": "Gascoigne Road, Barking, Essex",
-    "postcode": "IG11 7RS",
-    "phone": "08444772544",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12232,59 +11914,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86024",
-    "name": "Dr Mahendra Mashru",
-    "address": "19 King Edward's Road, Ruislip, Middlesex",
-    "postcode": "HA4 7AE",
-    "phone": "01895632021",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H83021",
-    "name": "Dr Nabila Khan",
-    "address": "Cavendish House, 515 London Road, Thornton Heath, Surrey",
-    "postcode": "CR7 6AR",
-    "phone": "02086842161",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E85103",
     "name": "Lady Margaret Road Medical Centre",
     "address": "57 Lady Margaret Road, Southall, Middlesex",
     "postcode": "UB1 2PH",
     "phone": "02085745186",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F85061",
-    "name": "Dr Telesilla Gueret Wardle",
-    "address": "Christchurch Hall Surgery, 20 Edison Road, London",
-    "postcode": "N8 8AE",
-    "phone": "02083402877",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85677",
-    "name": "Dr Muhammad Akbar Khan",
-    "address": "156 Horn Lane, Acton, London, Middlesex",
-    "postcode": "W3 6PH",
-    "phone": "02089924722",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12316,191 +11950,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E85683",
-    "name": "Dr Mumuksh Patel",
-    "address": "1 Glebe Street, Chiswick, London",
-    "postcode": "W4 2BD",
-    "phone": "02087474800",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F86034",
-    "name": "Dr Khalid Patel",
-    "address": "595 Green Lane, Goodmayes, Ilford, Essex",
-    "postcode": "IG3 9RN",
-    "phone": "08443878590",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82630",
-    "name": "Dr Selvaratnam Kulendran",
-    "address": "13-15 Chase Cross Road, Collier Row, Romford, Essex",
-    "postcode": "RM5 3PJ",
-    "phone": "01708749918",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "V04004",
-    "name": "Dr Chirag Shah - Eastcote Lane",
-    "address": "3 Eastcote Lane, Harrow, Middlesex",
-    "postcode": "HA2 8BW",
-    "phone": "02084221857",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H83011",
-    "name": "Dr Rotimi Bakare",
-    "address": "518 London Road, Thornton Heath, Surrey",
-    "postcode": "CR7 7HQ",
-    "phone": "02086654757",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "Y00918",
-    "name": "Dr Harjit Singh",
-    "address": "4 Granville Road, Ilford, Essex",
-    "postcode": "IG1 4JY",
-    "phone": "02082700400",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82663",
-    "name": "Dr Colin Marks",
-    "address": "107 Brentwood Road, Romford, Essex",
-    "postcode": "RM1 2SB",
-    "phone": "01708740244",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82648",
-    "name": "Dr Amar Kaw",
-    "address": "135 Straight Road, Harold Hill, Romford, Essex",
-    "postcode": "RM3 7JJ",
-    "phone": "01708372021",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E85091",
     "name": "Brunswick Surgery",
     "address": "75 Brunswick Road, London",
     "postcode": "W5 1AQ",
     "phone": "02088105545",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F86085",
-    "name": "Dr Avinash Suri",
-    "address": "34 New North Road, Hainault, Ilford, Essex",
-    "postcode": "IG6 2XG",
-    "phone": "02085013431",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E87010",
-    "name": "Dr Hugh Wright",
-    "address": "40 Biddulph Mansions, 210 Elgin Avenue, London",
-    "postcode": "W9 1HT",
-    "phone": "02072866464",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86629",
-    "name": "Dr Muhammad Misbah-Ur-Rehman Siddiqui",
-    "address": "21 Walnut Way, Ruislip, Middlesex",
-    "postcode": "HA4 6TA",
-    "phone": "02088454400",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H83052",
-    "name": "Dr Thusitha Gooneratne",
-    "address": "1b Bramley Avenue, Coulsdon, Surrey",
-    "postcode": "CR5 2DR",
-    "phone": "02086600193",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E84635",
-    "name": "Dr Madhukar C Patel",
-    "address": "260-262 Harrow Road, Wembley, Middlesex",
-    "postcode": "HA9 6QL",
-    "phone": "02089020055",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85061",
-    "name": "Dr Naz Asghar",
-    "address": "70a Norwood Road, Southall, Middlesex",
-    "postcode": "UB2 4EY",
-    "phone": "02085741822",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85699",
-    "name": "Dr Indervir Dhandee",
-    "address": "4 Cleeve Court, Grove Village, Bedfont, Feltham, Middlesex",
-    "postcode": "TW14 8SN",
-    "phone": "02087516281",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12544,59 +11998,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "F84619",
-    "name": "Dr Rajiv Goel",
-    "address": "Theydon Road Health Centre, 14 Urban Hive, Theydon Road, London",
-    "postcode": "E5 9BQ",
-    "phone": "02088061928",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "G84629",
-    "name": "Dr Atul Arora",
-    "address": "Sundridge Medical Practice, 84 London Lane, Bromley, Kent",
-    "postcode": "BR1 4HE",
-    "phone": "02084668844",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H83033",
-    "name": "Dr Umadevi Parameswaran",
-    "address": "416 Lower Addiscombe Road, Addiscombe, Croydon, Surrey",
-    "postcode": "CR0 7AG",
-    "phone": "02037146868",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E82079",
     "name": "Cromwell Medical Centre",
     "address": "11 Cromwell Avenue, Cheshunt, Waltham Cross, Hertfordshire",
     "postcode": "EN7 5DL",
     "phone": "01992624732",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85053",
-    "name": "Dr Govindasamy Balachandran",
-    "address": "45 Doncaster Drive, Northolt, Middlesex",
-    "postcode": "UB5 4AT",
-    "phone": "02088648133",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12616,119 +12022,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E85743",
-    "name": "Dr Ashraf Botros",
-    "address": "276 Lady Margaret Road, Southall, Middlesex",
-    "postcode": "UB1 2RX",
-    "phone": "02085782421",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "Y02696",
     "name": "Medicare Medical Services LLP",
     "address": "Evergreen Primary Care Centre, 1 Smythe Close, Edmonton, London",
     "postcode": "N9 0TW",
     "phone": "02088878355",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86632",
-    "name": "Dr Ajay Birly",
-    "address": "149 Long Lane, Hillingdon, Uxbridge, Middlesex",
-    "postcode": "UB10 9JN",
-    "phone": "01895237474",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82045",
-    "name": "Dr Rana Chowdhury",
-    "address": "Oak Lodge, 6 Oak Road, Harold Wood, Romford, Essex",
-    "postcode": "RM3 0PT",
-    "phone": "01708342139",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86620",
-    "name": "Dr Sashi Shashikanth",
-    "address": "20 Pield Heath Road, Uxbridge, Middlesex",
-    "postcode": "UB8 3NG",
-    "phone": "01895233881",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85713",
-    "name": "Dr Parvinder Garcha",
-    "address": "77 Lampton Road, Hounslow, Middlesex",
-    "postcode": "TW3 4JX",
-    "phone": "02085721497",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E87052",
-    "name": "Dr Gulzar Ahmed",
-    "address": "1 Crompton Street, London",
-    "postcode": "W2 1ND",
-    "phone": "02077237789",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85721",
-    "name": "Dr Suganthamala Radhakrishnan",
-    "address": "21 St Georges Avenue, Southall, Middlesex",
-    "postcode": "UB1 1PZ",
-    "phone": "02088138122",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85750",
-    "name": "Dr Parmod Luthra",
-    "address": "Thornbury Road Centre for Health, Thornbury Road, Isleworth, Middlesex",
-    "postcode": "TW7 4HQ",
-    "phone": "02086301058",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H84630",
-    "name": "Dr Vishwambhar Sinha",
-    "address": "Crane Park Surgery , Whitton Corner  Health & Social Care Centre, Percy Road, Whitton, Twickenham, Middlesex",
-    "postcode": "TW2 6JL",
-    "phone": "02034585300",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12748,71 +12046,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E87009",
-    "name": "Dr Jedth Phornnarit",
-    "address": "Pickering House, Hallfield Estate, London",
-    "postcode": "W2 6HF",
-    "phone": "02076162900",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E84005",
     "name": "Kings Road Medical Centre",
     "address": "204 Kings Road, Harrow, Middlesex",
     "postcode": "HA2 9JJ",
     "phone": "02084221667",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F86624",
-    "name": "Dr Philip Soares",
-    "address": "The Heathcote Primary Care Centre Heathcote Avenue, Clayhall, Ilford, Essex",
-    "postcode": "IG5 0QS",
-    "phone": "02085506362",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H84639",
-    "name": "Dr Mojgan Fitzmaurice",
-    "address": "14 High Park Road, Richmond, Surrey",
-    "postcode": "TW9 4BH",
-    "phone": "02084878292",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85108",
-    "name": "Dr Surakshan Claude Seimon",
-    "address": "3 Mandeville Road, Northolt, Middlesex",
-    "postcode": "UB5 5HB",
-    "phone": "02088453275",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82005",
-    "name": "Dr Goyal & Associates",
-    "address": "The Health Centre, Church Elm Lane, Dagenham, Essex",
-    "postcode": "RM10 9RR",
-    "phone": "02084653000",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -12969,18 +12207,6 @@
     "address": "1 Crosslands Avenue, Southall, Middlesex",
     "postcode": "UB2 5QY",
     "phone": "02085741906",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F85029",
-    "name": "Dr Iqbal and Partners",
-    "address": "Abernethy House, 70 Silver Street, Enfield, Middlesex",
-    "postcode": "EN1 3EB",
-    "phone": "02083704940",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -13336,18 +12562,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "F81184",
-    "name": "Dr. D. Colvin & Dr. O. B. Isinkaye",
-    "address": "The Surgery, 37 Ongar Road, Abridge, Romford, Essex",
-    "postcode": "RM4 1UH",
-    "phone": "01992812961",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "F85625",
     "name": "Bincote Surgery",
     "address": "11 Bincote Road, Enfield, Middlesex",
@@ -13444,18 +12658,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "H85095",
-    "name": "Dr Seyan & Partners",
-    "address": "Robin Hood Lane Health Centre, Robin Hood Lane, Sutton, Surrey",
-    "postcode": "SM1 2RJ",
-    "phone": "02030111890",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H83039",
     "name": "Stovell House Surgery",
     "address": "188 Lower Addiscombe Road, Addiscombe, Croydon, Surrey",
@@ -13473,18 +12675,6 @@
     "address": "The Surgery, 20 Eastmead Avenue, Greenford, Middlesex",
     "postcode": "UB6 9RB",
     "phone": "02085781244",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "Y01090",
-    "name": "Dr Satnam Sodhi",
-    "address": "Wembley Centre for Health and Care, 116 Chaplin Road, Wembley, Middlesex",
-    "postcode": "HA0 4UZ",
-    "phone": "02081030110",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -13564,18 +12754,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "G83630",
-    "name": "Dr S Bhadra & Dr A Padiyar Partners",
-    "address": "Erith Health Centre, 50 Pier Road, Erith, Kent",
-    "postcode": "DA8 1RQ",
-    "phone": "01322330283",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H81128",
     "name": "Vine Medical Centre",
     "address": "69 Pemberton Road, East Molesey, Surrey",
@@ -13624,18 +12802,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86015",
-    "name": "Dr Rackham & Partners",
-    "address": "George Street, Uxbridge, Middlesex",
-    "postcode": "UB8 1UB",
-    "phone": "01895231925",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H84010",
     "name": "Canbury Medical Centre",
     "address": "1 Elm Road, Kingston Upon Thames, Surrey",
@@ -13660,35 +12826,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E86012",
-    "name": "Dr Shapiro & Partners",
-    "address": "The Medical Centre, 2a Wood Lane, Ruislip, Middlesex",
-    "postcode": "HA4 6ER",
-    "phone": "01895632677",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E82123",
     "name": "Warden Lodge Medical Practice",
     "address": "Glen Luce,, Turners Hill,, Waltham Cross, Hertfordshire",
     "postcode": "EN8 8NW",
     "phone": "01992622324",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F82014",
-    "name": "Dr B. Saheecha and Dr N. Saheecha",
-    "address": "The Health Centre, Gooshays Drive, Harold Hill,, Romford, Essex",
-    "postcode": "RM3 9SU",
-    "phone": "01708343991",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -14032,18 +13174,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "F84735",
-    "name": "Dr Ajith Azad, Dr Sajith Azad and Dr NM Mohamed Faiz",
-    "address": "Boleyn Medical Centre 1st floor, 152 Barking Road, East Ham, London",
-    "postcode": "E6 3BD",
-    "phone": "02084758550",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "F82021",
     "name": "The New Medical Centre",
     "address": "264 Brentwood Road, Romford, Essex",
@@ -14320,30 +13450,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "F82661",
-    "name": "Dr Teotia and partners",
-    "address": "Green Lane Surgery, 872 Green Lane, Dagenham, Romford, Essex",
-    "postcode": "RM8 1BX",
-    "phone": "02085997151",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H84050",
-    "name": "Dr P Kumar & Partners",
-    "address": "Merritt Medical Centre, Merritt Gardens, Chessington, Surrey",
-    "postcode": "KT9 2GY",
-    "phone": "02087391977",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G84007",
     "name": "Poverest Medical Centre",
     "address": "42 Poverest Road, St Mary Cray, Orpington, Kent",
@@ -14421,18 +13527,6 @@
     "address": "Thames House, 180-194 High Street, Teddington, Middlesex",
     "postcode": "TW11 8HU",
     "phone": "02086144930",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F84717",
-    "name": "Dr James Lawrie",
-    "address": "Royal Docks Medical Centre, 21 East Ham Manor Way, Beckton, London",
-    "postcode": "E6 5NA",
-    "phone": "02075114466",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -14908,18 +14002,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E84008",
-    "name": "Dr Rozewicz & Partners",
-    "address": "255-255a Eastcote Lane, Harrow, Middlesex",
-    "postcode": "HA2 8RS",
-    "phone": "02088643466",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G84027",
     "name": "Elm House Surgery",
     "address": "Beckenham Beacon, 379 Croydon Road, Beckenham, Kent",
@@ -15040,18 +14122,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E84044",
-    "name": "Dr Anjum Zaidi and Partners",
-    "address": "36 Northwick Park Road, Harrow, Middlesex",
-    "postcode": "HA1 2NU",
-    "phone": "02085151300",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G84033",
     "name": "Pickhurst Surgery",
     "address": "56 Pickhurst Lane, Hayes, Bromley, Kent",
@@ -15141,18 +14211,6 @@
     "address": "The Medical Centre, 69 Queens Walk, Ruislip, Middlesex",
     "postcode": "HA4 0NT",
     "phone": "02088422991",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86014",
-    "name": "Dr Ritu Prasad",
-    "address": "The Cedars Medical Centre, 118 Elliott Avenue, Ruislip, Middlesex",
-    "postcode": "HA4 9LZ",
-    "phone": "02084299595",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -15328,18 +14386,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "G83009",
-    "name": "Dr WA Cotter +  Dr JCJM Bohmer -Laubis",
-    "address": "174 Bellegrove Road, Welling, Kent",
-    "postcode": "DA16 3RE",
-    "phone": "02088561770",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H83044",
     "name": "East Croydon Medical Centre",
     "address": "59 Addiscombe Road, Croydon, Surrey",
@@ -15388,35 +14434,11 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "H83019",
-    "name": "Dr C Wilcock & Partners",
-    "address": "49 Friends Road, Croydon, Surrey",
-    "postcode": "CR0 1ED",
-    "phone": "02086880532",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "F82016",
     "name": "Central Park Surgery",
     "address": "Harold Hill Health Centre, Gooshays Drive, Harold Hill, Romford, Essex",
     "postcode": "RM3 9SU",
     "phone": "01708331802",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85121",
-    "name": "Dr G Singh and Partners",
-    "address": "1-3 Woodlands Road, Southall, Middlesex",
-    "postcode": "UB1 1EQ",
-    "phone": "02085741246",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -15489,30 +14511,6 @@
     "address": "Park Road Surgery, Walpole Court, 1a Park Road, Wallington, Surrey",
     "postcode": "SM6 8AW",
     "phone": "02086474485",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F84660",
-    "name": "Dr Chandrakant Patel",
-    "address": "Dr CM Patel's Surgery, 2 Jephson Road, London",
-    "postcode": "E7 8LZ",
-    "phone": "02084706429",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H85053",
-    "name": "Dr Hafeez and Partner",
-    "address": "Sutton Medical Practice, 181 Carshalton Road, Sutton, Surrey",
-    "postcode": "SM1 4NG",
-    "phone": "02086611505",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -15681,18 +14679,6 @@
     "address": "75-79 Miles Road, Mitcham, Surrey",
     "postcode": "CR4 3DA",
     "phone": "02086480822",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "F86087",
-    "name": "Dr A K & S Shah",
-    "address": "4 Eastwood Road, Goodmayes, Ilford, Essex",
-    "postcode": "IG3 8XB",
-    "phone": "02085901169",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -15880,18 +14866,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E85734",
-    "name": "Dr Kumaran & Partners",
-    "address": "Queens Park Medical Practice,  Feltham Centre For Health,, The Centre, Feltham, Middlesex",
-    "postcode": "TW13 4GU",
-    "phone": "02086301505",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "H85030",
     "name": "The Old Court House Surgery",
     "address": "Old Court House Surgery, 4 Throwley Way, Sutton, Surrey",
@@ -16048,18 +15022,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "H83053",
-    "name": "Dr A T Fernandes and Partners",
-    "address": "Parchmore Medical Centre, 97 Parchmore Road, Thornton Heath, Surrey",
-    "postcode": "CR7 8LY",
-    "phone": "02082514200",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G84017",
     "name": "Addington Road Surgery",
     "address": "77 Addington Road, West Wickham, Kent",
@@ -16084,18 +15046,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "G85716",
-    "name": "Dr H Tattersfield & Mr M Lenzi",
-    "address": "Oakview Family Practice, 190 Shroffold Road, Downham, Bromley, Kent",
-    "postcode": "BR1 5NJ",
-    "phone": "02086956677",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "G83057",
     "name": "Woodlands Primary Care",
     "address": "146 Halfway Street, Sidcup, Kent",
@@ -16113,18 +15063,6 @@
     "address": "41 Broomwood Road, St Pauls Cray, Orpington, Kent",
     "postcode": "BR5 2JP",
     "phone": "01689832454",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85122",
-    "name": "Dr Evans & Partners",
-    "address": "Florence Road Surgery, 26 Florence Road, Ealing, London",
-    "postcode": "W5 3TX",
-    "phone": "02085672111",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -16336,30 +15274,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "E87008",
-    "name": "Dr Creme and Partners",
-    "address": "Paddington Green Health Centre, 4 Princess Louise Close, London",
-    "postcode": "W2 1LQ",
-    "phone": "02078871600",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "H85063",
-    "name": "Dr Scott & Partners",
-    "address": "The GP Centre, 322 Malden Road, North Cheam, Sutton, Surrey",
-    "postcode": "SM3 8EP",
-    "phone": "02086440224",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E85107",
     "name": "The Mill Hill Surgery",
     "address": "111 Avenue Road, Acton, London",
@@ -16389,18 +15303,6 @@
     "address": "Northwood Health Centre, Neal Close, Acre Way, Northwood, Middlesex",
     "postcode": "HA6 1TQ",
     "phone": "01923820844",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E85628",
-    "name": "Dr Reynolds, Dr Waters, Dr Arfeen & Dr Varma",
-    "address": "106 Elthorne Park Road, Hanwell, London",
-    "postcode": "W7 2JJ",
-    "phone": "02085670447",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
@@ -16492,18 +15394,6 @@
     "gpps_pcn": ""
   },
   {
-    "ods_code": "Y00090",
-    "name": "Dr Samraa El Obaidi and Dr Maheen Shahid",
-    "address": "40 Cameron Road, Seven Kings, Ilford, Essex",
-    "postcode": "IG3 8LF",
-    "phone": "08444773582",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
     "ods_code": "E85033",
     "name": "Hammersmith Surgery",
     "address": "1 Hammersmith Bridge Road, Hammersmith, London",
@@ -16569,18 +15459,6 @@
     "address": "253 Acton Lane, London",
     "postcode": "W4 5DG",
     "phone": "02089955706",
-    "cqc_rating": "",
-    "cqc_url": "",
-    "gpps_overall_pct": null,
-    "gpps_contact_pct": null,
-    "gpps_pcn": ""
-  },
-  {
-    "ods_code": "E86005",
-    "name": "Dr S Johal & Partner",
-    "address": "32 Parkway, Hillingdon, Uxbridge, Middlesex",
-    "postcode": "UB10 9JX",
-    "phone": "01895237411",
     "cqc_rating": "",
     "cqc_url": "",
     "gpps_overall_pct": null,
