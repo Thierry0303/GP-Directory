@@ -49,8 +49,43 @@ def fix_lowercase_midwords(s):
             out.append(p)
     return " ".join(out)
 
+# Short acronyms / abbreviations that should stay uppercase.
+ACRONYMS_KEEP_UPPER = {
+    "GP", "NHS", "PHGH", "PCN", "ICS", "ICB", "OOH", "CCG",
+    "UK", "EC", "WC", "NW", "SE", "SW", "NE", "II", "III", "IV", "VI", "VII",
+    "A&E", "GUM", "STI", "HIV", "IBS", "OCD", "ADHD", "PTSD",
+    "DRS", "PMS", "GMS",
+}
+
+def titlecase_word(w):
+    """Title-case one word, preserving known acronyms."""
+    if not w: return w
+    bare = re.sub(r"[^A-Za-z]", "", w)
+    if bare.upper() in ACRONYMS_KEEP_UPPER:
+        return w.upper()
+    return w[:1].upper() + w[1:].lower()
+
+def title_case_if_upper(s):
+    """If a string is entirely uppercase (like 'CHURCH END MEDICAL CENTRE'),
+    title-case it word-by-word. Mixed-case strings are left alone."""
+    if not s: return s
+    # Count letters; if any are lowercase, assume the name is already cased.
+    has_lower = any(c.islower() for c in s)
+    if has_lower:
+        return s
+    parts = s.split()
+    return " ".join(titlecase_word(p) for p in parts)
+
+def decode_html_entities(s):
+    """Decode &#x27; → ', &amp; → &, &nbsp; → space, etc."""
+    if not s or "&" not in s: return s
+    import html
+    return html.unescape(s)
+
 def smart_title(s):
     if not s: return s
+    s = decode_html_entities(s)
+    s = title_case_if_upper(s)
     s = fix_apostrophes(s)
     s = fix_mc(s)
     s = fix_lowercase_midwords(s)
