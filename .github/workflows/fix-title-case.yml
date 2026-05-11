@@ -1,0 +1,38 @@
+name: Fix title-case in names
+
+# Fixes Python .title() artefacts in practice names — Silver'S → Silver's,
+# Mcdonalds → McDonalds, etc. One-shot cleanup.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run fix
+        run: python fix_title_case.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gps.json
+          if git diff --cached --quiet; then
+            echo "No changes to gps.json"
+          else
+            git commit -m "fix: clean up title-case in practice names ($(date -u +%Y-%m-%d))"
+            git push
+          fi
