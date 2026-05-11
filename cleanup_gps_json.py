@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+"""
+One-off cleanup pass on gps.json:
+
+  - Removes records whose postcode is NOT strictly inside the London
+    postcode-prefix whitelist. (The previous is_london() had a regex
+    fallback that matched DA12 → DA1, TW15 → TW1, etc., leaking Kent /
+    Surrey / Hertfordshire practices into the list.)
+
+  - Removes records with no name (empty practice name renders blank
+    cards on the live site).
+
+  - Removes records with no ODS code (defensive — shouldn't happen).
+
+Prints what it kept / dropped, then writes the cleaned file back.
+Refuses to write if it would remove more than 30% of records.
+"""
+
+import json, re, sys
+from pathlib import Path
+from collections import Counter
+
+ROOT = Path(__file__).resolve().parent
+GPS_JSON = ROOT / "gps.json"
+
+# STRICT London postcode districts (exact match, no regex fallback).
+LONDON_PREFIXES = {
+    "EC1A","EC1R","EC1V","EC2A","WC1B","WC1E","WC1N","WC1X","WC2A","WC2B","WC2H","WC2N",
+    "E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","E11","E12","E13","E14","E15",
+    "E16","E17","E18","E20",
+    "N1","N4","N5","N6","N7","N8","N9","N10","N11","N12","N13","N14","N15","N16",
+    "N17","N18","N19","N20","N21","N22",
+    "NW1","NW2","NW3","NW4","NW5","NW6","NW7","NW8","NW9","NW10","NW11",
+    "SE1","SE2","SE3","SE4","SE5","SE6","SE7","SE8","SE9","SE10","SE11","SE12",
+    "SE13","SE14","SE15","SE16","SE17","SE18","SE19","SE20","SE21","SE22","SE23",
+    "SE24","SE25","SE26","SE27","SE28",
+    "SW1A","SW1E","SW1P","SW1V","SW1W","SW1X","SW2","SW3","SW4","SW5","SW6","SW7",
+    "SW8","SW9","SW10","SW11","SW12","SW13","SW14","SW15","SW16","SW17","SW18",
+    "SW19","SW20",
+    "W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14",
+    "BR1","BR2","BR3","BR4","BR5","BR6","BR7","BR8",
+    "CR0","CR2","CR3","CR4","CR5","CR6","CR7","CR8","CR9",
+    "DA1","DA5","DA6","DA7","DA8","DA14","DA15","DA16","DA17","DA18",
+    "EN1","EN2","EN3","EN4","EN5","EN7","EN8","EN9",
+    "HA0","HA1","HA2","HA3","HA4","HA5","HA6","HA7","HA8","HA9",
+    "IG1","IG2","IG3","IG4","IG5","IG6","IG7","IG8","IG11",
+    "KT1","KT2","KT3","KT4","KT5","KT6","KT7","KT8","KT9",
+    "RM1","RM2","RM3","RM4","RM5","RM6","RM7","RM8","RM9","RM10","RM11","RM12","RM13","RM14",
+    "SM1","SM2","SM3","SM4","SM5","SM6",
+    "TW1","TW2","TW3","TW4","TW5","TW6","TW7","TW8","TW9","TW10","TW11","TW12","TW13","TW14",
+    "UB1","UB2","UB3","UB4","UB5","UB6","UB7","UB8","UB9","UB10","UB11",
+}
+
+def postcode_district(pc):
+    if not pc: return ""
+    pc = pc.strip().upper()
+    if " " in pc: return pc.split()[0]
+    pc = pc.replace(" ", "")
+    # UK outward code is always last 3 chars off.
+    return pc[:-3] if len(pc) >= 5 else pc
+
+def is_london_strict(pc):
+    """Exact match against the whitelist. No regex fallbacks."""
+    return postcode_district(pc) in LONDON_PREFIXES
+
+def main():
+    if not GPS_JSON.exists():
+        sys.exit(f"{GPS_JSON} not found.")
+
+    data = json.loads(GPS_JSON.read_text())
+    if not isinstance(data, list):
+        sys.exit("gps.json is not a JSON array.")
+    print(f"Loaded {len(data)} records.")
+
+    kept = []
+    dropped_no_pc = 0
+    dropped_not_london = 0
+    dropped_no_name = 0
+    dropped_no_ods = 0
+    dropped_examples = []
+
+    for r in data:
+        ods = (r.get("ods_code") or "").strip().upper()
+        name = (r.get("name") or "").strip()
+        pc = (r.get("postcode") or "").strip().upper()
+
+        if not ods:
+            dropped_no_ods += 1
+            if len(dropped_examples) < 5:
+                dropped_examples.append(("no-ods", r))
+            continue
+        if not name:
+            dropped_no_name += 1
+            if len(dropped_examples) < 5:
+                dropped_examples.append(("no-name", r))
+            continue
+        if not pc:
+            dropped_no_pc += 1
+            if len(dropped_examples) < 5:
+                dropped_examples.append(("no-pc", r))
+            continue
+        if not is_london_strict(pc):
+            dropped_not_london += 1
+            if len(dropped_examples) < 5:
+                dropped_examples.append(("not-london", r))
+            continue
+        kept.append(r)
+
+    total_dropped = len(data) - len(kept)
+    print(f"\nKept:    {len(kept)}")
+    print(f"Dropped: {total_dropped} total")
+    print(f"  no name:         {dropped_no_name}")
+    print(f"  not in London:   {dropped_not_london}")
+    print(f"  no postcode:     {dropped_no_pc}")
+    print(f"  no ODS:          {dropped_no_ods}")
+
+    if dropped_examples:
+        print("\nExamples of dropped records:")
+        for reason, r in dropped_examples:
+            print(f"  [{reason:12s}] {r.get('ods_code','?'):8s} "
+                  f"{r.get('name','')[:30]:30s} {r.get('postcode','?')}")
+
+    # Safety: refuse if we'd drop more than 30%.
+    if total_dropped > len(data) * 0.3:
+        sys.exit(f"\nABORT: dropping {total_dropped}/{len(data)} > 30%. "
+                 "Investigate before writing.")
+
+    GPS_JSON.write_text(json.dumps(kept, indent=2))
+    print(f"\nWrote gps.json — {len(kept)} practices.")
+
+    # Coverage summary
+    by_area = Counter()
+    for r in kept:
+        m = re.match(r"^([A-Z]+)", (r.get("postcode") or "").strip().upper())
+        if m: by_area[m.group(1)] += 1
+    print("\nFinal coverage by postcode area:")
+    for a, n in sorted(by_area.items(), key=lambda x: -x[1]):
+        print(f"  {a:4s} {n}")
+
+if __name__ == "__main__":
+    main()
