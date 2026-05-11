@@ -1,0 +1,43 @@
+name: Fetch NHS Service Search names
+
+# Uses the NHS Directory of Healthcare Services API to replace doctor-name
+# contract names with the official NHS name for each practice.
+#
+# Requires GitHub secret: NHS_SERVICE_SEARCH_KEY (your subscription key from
+# https://digital.nhs.uk/developer/api-catalogue).
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run fetcher
+        env:
+          NHS_SERVICE_SEARCH_KEY: ${{ secrets.NHS_SERVICE_SEARCH_KEY }}
+        run: python fetch_nhs_service_search.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gps.json
+          if git diff --cached --quiet; then
+            echo "No changes to gps.json"
+          else
+            git commit -m "rename: official names from NHS Service Search API ($(date -u +%Y-%m-%d))"
+            git push
+          fi
