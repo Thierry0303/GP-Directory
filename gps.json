@@ -17042,5 +17042,65 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": ""
+  },
+  {
+    "ods_code": "E87066",
+    "name": "Fitzrovia Medical Centre",
+    "address": "31 Fitzroy Square, London",
+    "postcode": "W1T 6EU",
+    "phone": "02073875798",
+    "cqc_rating": "",
+    "cqc_url": "",
+    "gpps_overall_pct": null,
+    "gpps_contact_pct": null,
+    "gpps_pcn": ""
+  },
+  {
+    "ods_code": "E87648",
+    "name": "The Mayfair Medical Centre",
+    "address": "3-5 Weighhouse Street, London",
+    "postcode": "W1K 5LS",
+    "phone": "02074931647",
+    "cqc_rating": "",
+    "cqc_url": "",
+    "gpps_overall_pct": null,
+    "gpps_contact_pct": null,
+    "gpps_pcn": ""
+  },
+  {
+    "ods_code": "E87772",
+    "name": "Great Chapel Street Medical Centre",
+    "address": "4th Floor, Soho Centre for Health, 1 Frith Street, London",
+    "postcode": "W1D 3HZ",
+    "phone": "02074379360",
+    "cqc_rating": "",
+    "cqc_url": "",
+    "gpps_overall_pct": null,
+    "gpps_contact_pct": null,
+    "gpps_pcn": ""
+  },
+  {
+    "ods_code": "V82714",
+    "name": "Dr Larmoyer's Practice",
+    "address": "100 Harley Street, London",
+    "postcode": "W1G 7JA",
+    "phone": "",
+    "cqc_rating": "",
+    "cqc_url": "",
+    "gpps_overall_pct": null,
+    "gpps_contact_pct": null,
+    "gpps_pcn": ""
+  },
+  {
+    "ods_code": "E87070",
+    "name": "Crawford Street Surgery",
+    "address": "95-97 Crawford Street, London",
+    "postcode": "W1H 2HJ",
+    "phone": "02077236324",
+    "cqc_rating": "",
+    "cqc_url": "",
+    "gpps_overall_pct": null,
+    "gpps_contact_pct": null,
+    "gpps_pcn": ""
   }
 ]
