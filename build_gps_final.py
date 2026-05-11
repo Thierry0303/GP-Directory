@@ -260,12 +260,13 @@ def build_records_from_details(candidates, key, workers=10):
                     sample_rejects.append((d.get("locationName") or "", ods, services[:3]))
                 continue
 
-            # Build record
-            name_raw = (d.get("locationName") or d.get("providerName") or "").strip()
+            # Build record. CQC's detail endpoint uses `name` (the summary
+            # endpoint used `locationName`). Try both, plus providerName.
+            name_raw = (d.get("name") or d.get("locationName")
+                        or d.get("providerName") or "").strip()
             if not name_raw:
                 # Skip nameless records — they render as blank cards on the
-                # live site. Better to omit than to show a card with just an
-                # address.
+                # live site.
                 continue
             name = name_raw.title() if name_raw.isupper() else name_raw
 
