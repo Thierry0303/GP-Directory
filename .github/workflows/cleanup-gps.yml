@@ -1,0 +1,39 @@
+name: Cleanup gps.json
+
+# One-off cleanup: removes records with empty names or non-London postcodes
+# from gps.json. Run this once, then run "Weekly NHS Data Refresh" to
+# rebuild merged.json and the site.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run cleanup
+        run: python cleanup_gps_json.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gps.json
+          if git diff --cached --quiet; then
+            echo "No changes to gps.json"
+          else
+            git commit -m "cleanup: drop non-London + empty-name records ($(date -u +%Y-%m-%d))"
+            git push
+          fi
