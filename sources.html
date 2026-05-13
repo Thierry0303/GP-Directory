@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data sources — London GP Directory</title>
+<meta name="description" content="Every dataset that powers London GP Directory, with direct links to the source, the licence under which we use it, and how often we refresh.">
+<link rel="canonical" href="https://londongp.directory/sources.html">
+<meta name="theme-color" content="#005EB8">
+<style>
+  :root{--ink:#0b2545;--ink-2:#1e3a5f;--nhs:#005EB8;--muted:#5b6b85;--line:#e3e8ef;--bg:#fff;--bg-2:#f6f8fb;--radius:10px}
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6}
+  a{color:var(--nhs);text-decoration:none}a:hover{text-decoration:underline}
+  header.site{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:50}
+  header.site .inner{max-width:880px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+  header.site a.brand{color:var(--ink);font-weight:700}
+  header.site nav a{margin-left:18px;color:var(--ink-2);font-size:14px}
+  main{max-width:880px;margin:0 auto;padding:32px 20px 80px}
+  .crumbs{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .crumbs a{color:var(--muted)}
+  h1{font-size:32px;letter-spacing:-0.02em;margin:0 0 8px}
+  .lede{color:var(--ink-2);font-size:18px;margin:0 0 24px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+  th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);font-weight:600}
+  .badge{display:inline-block;background:var(--bg-2);border:1px solid var(--line);padding:2px 8px;border-radius:999px;font-size:12px;color:var(--ink-2)}
+  footer{border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}
+  footer .inner{max-width:880px;margin:0 auto;display:flex;gap:24px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="/">London GP Directory</a>
+    <nav>
+      <a href="/">Search</a>
+      <a href="/gps/">Boroughs</a>
+      <a href="/methodology.html">Methodology</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="crumbs"><a href="/">Home</a> &rsaquo; Sources</div>
+
+  <h1>Data sources</h1>
+  <p class="lede">Every dataset that powers this directory, with direct links to the source, the licence, and how often we refresh.</p>
+
+  <table>
+    <thead>
+      <tr><th>Dataset</th><th>Source</th><th>Refresh</th><th>Licence</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Practice register (ODS code, name, address, postcode, phone)</td>
+        <td><a href="https://digital.nhs.uk/services/organisation-data-service">NHS Digital — Organisation Data Service</a></td>
+        <td>Weekly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>Accepting new patients flag</td>
+        <td>NHS Digital ODS / nhs.uk practice profile</td>
+        <td>Weekly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>Primary Care Network membership</td>
+        <td><a href="https://www.england.nhs.uk/primary-care/primary-care-networks/">NHS England — PCN data</a></td>
+        <td>Quarterly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>GP Patient Survey scores</td>
+        <td><a href="https://gp-patient.co.uk/">GP Patient Survey (Ipsos for NHS England)</a></td>
+        <td>Annual</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>List size (registered patients)</td>
+        <td><a href="https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice">NHS Digital — Patients Registered at a GP Practice</a></td>
+        <td>Monthly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>Workforce (WTE GPs and nurses)</td>
+        <td><a href="https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services">NHS Digital — General and Personal Medical Services</a></td>
+        <td>Quarterly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>CQC inspection ratings</td>
+        <td><a href="https://api.service.cqc.org.uk/public/v1/">Care Quality Commission public API</a></td>
+        <td>Monthly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+      <tr>
+        <td>Postcode to coordinate / LSOA</td>
+        <td><a href="https://www.ons.gov.uk/methodology/geography/geographicalproducts/postcodeproducts">ONS Postcode Directory</a></td>
+        <td>Quarterly</td>
+        <td><span class="badge">OGL v3.0</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>All NHS and government data on this site is reused under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.</p>
+
+  <p>If a source has changed, please email <a href="mailto:hello@londongp.directory">hello@londongp.directory</a>.</p>
+</main>
+<footer>
+  <div class="inner">
+    <div>&copy; London GP Directory. Independent. Free to use. Not affiliated with the NHS.</div>
+    <div><a href="/about.html">About</a> &middot; <a href="/methodology.html">Methodology</a> &middot; <a href="/sources.html">Sources</a></div>
+  </div>
+</footer>
+</body>
+</html>

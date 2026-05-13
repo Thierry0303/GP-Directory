@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — London GP Directory</title>
+<meta name="description" content="How London GP Directory collects, processes, and presents every metric. Every source, every refresh cadence, every limitation declared.">
+<link rel="canonical" href="https://londongp.directory/methodology.html">
+<meta name="theme-color" content="#005EB8">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"TechArticle",
+  "headline":"London GP Directory Methodology",
+  "description":"How we calculate every metric on the London GP Directory.",
+  "datePublished":"2026-05-01","dateModified":"2026-05-13",
+  "author":{"@type":"Organization","name":"London GP Directory"},
+  "publisher":{"@type":"Organization","name":"London GP Directory"}
+}
+</script>
+<style>
+  :root{--ink:#0b2545;--ink-2:#1e3a5f;--nhs:#005EB8;--muted:#5b6b85;--line:#e3e8ef;--bg:#fff;--bg-2:#f6f8fb;--radius:10px}
+  *{box-sizing:border-box}html,body{margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6}
+  a{color:var(--nhs);text-decoration:none}a:hover{text-decoration:underline}
+  header.site{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:50}
+  header.site .inner{max-width:780px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+  header.site a.brand{color:var(--ink);font-weight:700}
+  header.site nav a{margin-left:18px;color:var(--ink-2);font-size:14px}
+  main{max-width:780px;margin:0 auto;padding:32px 20px 80px}
+  .crumbs{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .crumbs a{color:var(--muted)}
+  h1{font-size:32px;line-height:1.2;margin:0 0 8px;letter-spacing:-0.02em}
+  .lede{color:var(--ink-2);font-size:18px;margin:0 0 24px}
+  h2{font-size:22px;margin:32px 0 10px;letter-spacing:-0.01em;border-top:1px solid var(--line);padding-top:24px}
+  h2:first-of-type{border-top:0;padding-top:0}
+  h3{font-size:16px;margin:18px 0 6px;color:var(--ink)}
+  ul li{margin-bottom:8px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);font-weight:600}
+  .callout{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;font-size:15px}
+  code{background:var(--bg-2);padding:2px 6px;border-radius:4px;font-size:90%}
+  footer{border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}
+  footer .inner{max-width:780px;margin:0 auto;display:flex;gap:24px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="/">London GP Directory</a>
+    <nav>
+      <a href="/">Search</a>
+      <a href="/gps/">Boroughs</a>
+      <a href="/sources.html">Sources</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="crumbs"><a href="/">Home</a> &rsaquo; Methodology</div>
+
+  <h1>Methodology</h1>
+  <p class="lede">How we collect, calculate and present every piece of information on this site. Every metric has a source, a refresh cadence, and a declared limitation.</p>
+
+  <div class="callout">
+    <strong>One sentence summary:</strong> we ingest open NHS data on a published cadence, link every practice by its ODS code, recompute every metric from the source, and rebuild the static site from the result. Nothing on this site is hand-entered. Every page tells you when the data was last refreshed.
+  </div>
+
+  <h2>Refresh cadence</h2>
+  <p>Two automated pipelines:</p>
+  <ul>
+    <li><strong>Weekly refresh</strong> (every Monday 06:00 UTC): NHS Digital ODS data and the "accepting new patients" flag. Catches practice closures, mergers and the most-searched live attribute on the site.</li>
+    <li><strong>Monthly full rebuild</strong> (15th of every month, 08:00 UTC): adds GP Patient Survey, NHS Digital workforce, CQC ratings and list sizes. Recomputes every derived metric and rebuilds all practice, borough and PCN pages.</li>
+  </ul>
+  <p>The full run log for every refresh is public on our <a href="https://github.com/Thierry0303/GP-Directory/actions">GitHub Actions history</a>. If a source is temporarily unavailable, the previous month's values are retained with a clear "data last verified" stamp on the page.</p>
+
+  <h2>Practice identifiers</h2>
+  <p>Every practice is identified by its NHS Digital ODS code (e.g. <code>E85001</code>). This is the canonical identifier used across all UK primary care datasets. We never deduplicate or merge ODS codes. When a practice merges or closes, the ODS record reflects that, and we update accordingly.</p>
+
+  <h2>Per-metric methodology</h2>
+
+  <h3>"Accepting new patients" flag</h3>
+  <table>
+    <tr><th>Source</th><td>NHS Digital ODS / nhs.uk practice profile</td></tr>
+    <tr><th>What we publish</th><td>Whether the practice was accepting new patients at the last refresh, with a date stamp.</td></tr>
+    <tr><th>Refresh</th><td>Weekly.</td></tr>
+    <tr><th>Limitations</th><td>This is the status published by NHS Digital. Practice managers update it directly. There can be a lag between a real-world change and the publication. Always confirm with the practice before travelling to register.</td></tr>
+  </table>
+
+  <h3>GP Patient Survey scores</h3>
+  <table>
+    <tr><th>Source</th><td><a href="https://gp-patient.co.uk/" rel="nofollow">GP Patient Survey (Ipsos for NHS England)</a></td></tr>
+    <tr><th>What we publish</th><td>Four headline percentages: overall experience, ease of getting through on the phone, satisfaction with the appointment offered, and continuity of care. Each is the most recent published value for the practice, with the London average shown alongside.</td></tr>
+    <tr><th>Refresh</th><td>Annual (typically July).</td></tr>
+    <tr><th>Limitations</th><td>The GP Patient Survey is conducted on a sample of registered patients. Small practices may have wide confidence intervals. We do not publish the confidence interval on every page to keep the display readable — but every score is verifiable at the source.</td></tr>
+  </table>
+
+  <h3>CQC rating</h3>
+  <table>
+    <tr><th>Source</th><td><a href="https://api.service.cqc.org.uk/public/v1/" rel="nofollow">CQC public API</a></td></tr>
+    <tr><th>What we publish</th><td>The most recent overall CQC rating (Outstanding, Good, Requires improvement, Inadequate) and the date of the inspection that produced it.</td></tr>
+    <tr><th>Refresh</th><td>Monthly.</td></tr>
+    <tr><th>Limitations</th><td>CQC ratings are inspection-based and reflect a moment in time. A practice rated Good in 2019 has not been re-inspected since 2019 in many cases. We display the inspection date prominently so readers can interpret the rating in context.</td></tr>
+  </table>
+
+  <h3>Workforce — GPs per 1,000 patients</h3>
+  <table>
+    <tr><th>Source</th><td><a href="https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services" rel="nofollow">NHS Digital — General and Personal Medical Services</a></td></tr>
+    <tr><th>What we publish</th><td>Whole-time-equivalent fully-qualified GPs per 1,000 registered patients.</td></tr>
+    <tr><th>Refresh</th><td>Quarterly.</td></tr>
+    <tr><th>Limitations</th><td>This excludes locums and trainees. The denominator is the practice's registered list, not the population it serves day-to-day. Direct comparison between practices should be done with care.</td></tr>
+  </table>
+
+  <h3>List size (registered patients)</h3>
+  <table>
+    <tr><th>Source</th><td><a href="https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice" rel="nofollow">NHS Digital — Patients Registered at a GP Practice</a></td></tr>
+    <tr><th>What we publish</th><td>The most recent number of registered patients on the practice list.</td></tr>
+    <tr><th>Refresh</th><td>Monthly.</td></tr>
+    <tr><th>Limitations</th><td>Registered list size is not the same as patients seen each year. Some patients are registered but no longer use the practice.</td></tr>
+  </table>
+
+  <h3>PCN membership</h3>
+  <table>
+    <tr><th>Source</th><td>NHS Digital ODS PCN reference data.</td></tr>
+    <tr><th>What we publish</th><td>Each practice's PCN at the time of the most recent refresh.</td></tr>
+    <tr><th>Refresh</th><td>Quarterly.</td></tr>
+    <tr><th>Limitations</th><td>PCN membership can change. We show the current membership.</td></tr>
+  </table>
+
+  <h3>Languages spoken / accessibility</h3>
+  <table>
+    <tr><th>Source</th><td>NHS Digital practice profile data, where published.</td></tr>
+    <tr><th>What we publish</th><td>Languages explicitly declared by the practice, and wheelchair accessibility status.</td></tr>
+    <tr><th>Refresh</th><td>Weekly.</td></tr>
+    <tr><th>Limitations</th><td>This is self-declared data and not consistently completed across practices. Where a field is blank in the source, we display "—" rather than infer.</td></tr>
+  </table>
+
+  <h2>Ordering on hub pages</h2>
+  <p>Where we present a list of "top" or "accepting" practices on a borough or PCN hub, the ordering is:</p>
+  <ol>
+    <li>Practices marked as accepting new patients, listed first.</li>
+    <li>Within each group, sorted by latest GP Patient Survey overall experience score, descending.</li>
+    <li>Tie-broken by alphabetical order.</li>
+  </ol>
+  <p>The full ordering logic is visible in the <a href="https://github.com/Thierry0303/GP-Directory/blob/main/scripts/build_gp_borough_hubs.py">open-source build script</a>.</p>
+
+  <h2>What we deliberately don't do</h2>
+  <ul>
+    <li><strong>We do not republish patient reviews from third-party platforms.</strong> Reviews of NHS services are sensitive both legally and ethically. If we add reviews in future, they will be on our own structured form, identity-gated, pre-moderated, and with right of reply.</li>
+    <li><strong>We do not show medical content.</strong> This is a directory, not a clinical tool.</li>
+    <li><strong>We do not infer or smooth missing data.</strong> Where a source is blank, we display "—".</li>
+  </ul>
+
+  <h2>Corrections</h2>
+  <p>If anything on the site is inaccurate, please tell us. Email <a href="mailto:corrections@londongp.directory">corrections@londongp.directory</a> with the URL of the page and the issue. We aim to verify and respond within 5 working days. Every correction we make is logged in our <a href="/corrections.html">public corrections log</a>.</p>
+
+  <h2>Version history</h2>
+  <p>This methodology is versioned. Significant changes are recorded with date and rationale in our <a href="https://github.com/Thierry0303/GP-Directory/commits/main/methodology.html">GitHub history</a>.</p>
+</main>
+<footer>
+  <div class="inner">
+    <div>&copy; London GP Directory. Independent. Free to use. Not affiliated with the NHS.</div>
+    <div><a href="/about.html">About</a> &middot; <a href="/methodology.html">Methodology</a> &middot; <a href="/sources.html">Sources</a></div>
+  </div>
+</footer>
+</body>
+</html>
