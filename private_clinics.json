@@ -1,21 +1,22 @@
 [
   {
-    "id": "1-157394612",
-    "n": "Genova Diagnostics Europe",
-    "a": "Parkgate House, 356 West Barnes Lane, New Malden",
-    "p": "KT3 6NB",
-    "ph": "02083367750",
-    "web": "www.gdx.uk.net",
-    "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/1-157394612",
-    "ar": "Kingston",
-    "la": 51.3943,
-    "ln": -0.23864,
+    "id": "1-15737538125",
+    "n": "Rear of 15 Queens Way",
+    "a": "Rear Of 15, Queensway, Enfield",
+    "p": "EN3 4SA",
+    "ph": "02031967199",
+    "web": "",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-15737538125",
+    "ar": "Enfield",
+    "la": 51.64742,
+    "ln": -0.04892,
     "specialities": [
       "other"
     ],
     "services": [
-      "Diagnosis/screening"
+      "Homecare agencies",
+      "Personal care"
     ],
     "private": true
   }
