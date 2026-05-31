@@ -5,14 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>London GP Directory — Find &amp; Compare NHS GP Practices in London</title>
 <meta name="description" content="Free directory of every NHS GP practice in London. Compare __PRACTICE_COUNT__ practices by patient survey, CQC rating and contact details. Updated weekly from NHS ODS.">
-<meta name="keywords" content="London GP, NHS GP practice, find a GP London, GP directory, GP surgery London, CQC rating, NHS practice search">
+<meta name="keywords" content="London GP, NHS GP practice, find a GP London, GP directory, GP surgery London, CQC rating, NHS practice search, private GP London, private clinic London">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#003087">
 <meta name="author" content="London GP Directory">
 <link rel="canonical" href="https://londongp.directory/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23003087'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='42' font-weight='700' fill='white'%3EGP%3C/text%3E%3C/svg%3E">
-
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="London GP Directory">
 <meta property="og:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
@@ -22,26 +20,20 @@
 <meta property="og:image" content="https://londongp.directory/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
 <meta name="twitter:description" content="Free directory of every NHS GP practice in London. Patient scores, CQC ratings, contact details.">
 <meta name="twitter:image" content="https://londongp.directory/og-image.png">
-
-<!-- JSON-LD: WebSite + Sitelinks Searchbox -->
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","url":"https://londongp.directory/","name":"London GP Directory","description":"Find & compare every NHS GP practice in London by patient score, CQC rating and contact details.","inLanguage":"en-GB","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://londongp.directory/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"London GP Directory","url":"https://londongp.directory/","description":"An independent directory of NHS GP practices across London, sourced from the NHS Organisation Data Service (ODS), GP Patient Survey and CQC.","areaServed":{"@type":"AdministrativeArea","name":"London"}}
+{"@context":"https://schema.org","@type":"Organization","name":"London GP Directory","url":"https://londongp.directory/","description":"An independent directory of NHS GP practices and private healthcare clinics across London, sourced from the NHS Organisation Data Service (ODS), GP Patient Survey and CQC.","areaServed":{"@type":"AdministrativeArea","name":"London"}}
 </script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
 a{text-decoration:none;color:inherit}
-
-/* Header */
 .hdr{background:#003087;color:#fff;border-bottom:4px solid #0072CE;padding:0 24px}
 .hdr-in{max-width:1300px;margin:0 auto;padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .logo h1{font-family:Georgia,serif;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
@@ -51,8 +43,6 @@ a{text-decoration:none;color:inherit}
 .hdr-stats div{text-align:center}
 .hdr-stats strong{display:block;font-size:1.4rem;font-weight:300;letter-spacing:-0.03em;line-height:1}
 .hdr-stats span{font-size:.68rem;opacity:.6;text-transform:uppercase;letter-spacing:.04em}
-
-/* Search */
 .search-zone{background:#003087;padding:0 24px 16px}
 .search-inner{max-width:1300px;margin:0 auto;display:flex;gap:8px}
 .s-wrap{position:relative;flex:1}
@@ -62,10 +52,23 @@ a{text-decoration:none;color:inherit}
 #q:focus{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.16)}
 .clr{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.2);color:#fff;padding:11px 15px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;display:none}
 
-/* Layout */
-.layout{max-width:1300px;margin:0 auto;padding:20px 24px 48px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
+/* ===== NHS / Private toggle ===== */
+.type-zone{background:#fff;border-bottom:1px solid #e5e5e3}
+.type-inner{max-width:1300px;margin:0 auto;padding:14px 24px}
+.type-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.type-tab{padding:8px 16px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#555;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+.type-tab:hover:not(.active){border-color:#003087;color:#003087}
+.type-tab.active{background:#003087;color:#fff;border-color:#003087}
+.type-tab-count{font-size:11px;font-weight:500;opacity:.7;padding:1px 6px;border-radius:99px;background:rgba(255,255,255,.15)}
+.type-tab:not(.active) .type-tab-count{background:#f0f0ee;color:#888}
+.specialty-zone{margin-top:10px;display:none}
+.specialty-zone.active{display:flex;flex-wrap:wrap;gap:5px}
+.specialty-chip{padding:5px 11px;border-radius:99px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#666;transition:all .12s;text-transform:capitalize}
+.specialty-chip:hover:not(.active){border-color:#0072CE;color:#0072CE}
+.specialty-chip.active{background:#0072CE;color:#fff;border-color:#0072CE}
+.specialty-chip-count{font-size:10px;opacity:.7;margin-left:3px}
 
-/* Sidebar */
+.layout{max-width:1300px;margin:0 auto;padding:20px 24px 48px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
 .sidebar{position:sticky;top:20px}
 .panel{background:#fff;border:1px solid #ddd;border-radius:12px;overflow:hidden;margin-bottom:12px}
 .panel-hdr{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#999;padding:10px 14px 7px;border-bottom:1px solid #f0f0ee}
@@ -75,25 +78,15 @@ a{text-decoration:none;color:inherit}
 .opts label:hover{background:#f8f8f6}
 .opts input[type=checkbox]{accent-color:#003087;width:13px;height:13px;flex-shrink:0}
 .badge{margin-left:auto;font-size:10px;color:#999;background:#f0f0ee;padding:1px 6px;border-radius:99px}
-
-/* NHS data panel */
 .nhs-panel{background:#EDF4FC;border:1px solid #B5D4F4;border-radius:12px;padding:13px 14px;margin-bottom:12px}
 .nhs-panel-hdr{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#003087;margin-bottom:5px}
 .nhs-panel p{font-size:11px;color:#5a7da8;line-height:1.5;margin-bottom:8px}
 .nhs-panel p strong{color:#003087;font-weight:600}
 .nhs-tag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;color:#007F3B;font-weight:500;background:#D8EFE3;padding:4px 9px;border-radius:99px}
-.msg-ok{background:#D8EFE3;color:#007F3B}
-.msg-err{background:#FCEBEB;color:#A32D2D}
-
-/* Results bar */
 .results-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px}
 .results-bar p{font-size:13px;color:#888}
 .results-bar strong{color:#222;font-weight:500}
-
-/* Grid */
 #grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
-
-/* Card */
 .card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s;position:relative}
 .card:hover{border-color:#0072CE;box-shadow:0 3px 14px rgba(0,48,135,.08)}
 .card-name{font-family:Georgia,serif;font-size:14px;font-weight:700;line-height:1.3;color:#003087;flex:1}
@@ -104,8 +97,14 @@ a{text-decoration:none;color:inherit}
 .cqc-R{background:#FAEEDA;color:#BA7517}
 .cqc-I{background:#FCEBEB;color:#A32D2D}
 .cqc-N{background:#f0f0ee;color:#777}
-.area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start}
-/* ===== Borough chip bar + bottom sheet ===== */
+.card-badges{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:7px}
+.type-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}
+.type-badge.t-nhs{background:#EDF4FC;color:#003087}
+.type-badge.t-priv{background:#FAE7F3;color:#A02670}
+.spec-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize;font-weight:500}
+.area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start;cursor:pointer;transition:background .12s,color .12s}
+.area-tag:hover{background:#003087;color:#fff}
+
 .borough-bar{background:#fff;border-bottom:1px solid #e5e5e3;position:sticky;top:0;z-index:50}
 .borough-bar-inner{max-width:1300px;margin:0 auto;padding:9px 24px;display:flex;align-items:center;gap:6px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch}
 .borough-bar-inner::-webkit-scrollbar{display:none}
@@ -115,8 +114,6 @@ a{text-decoration:none;color:inherit}
 .borough-more{flex-shrink:0;padding:6px 13px;border-radius:99px;background:#003087;color:#fff;font-size:12.5px;font-weight:700;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;transition:opacity .12s;display:inline-flex;align-items:center;gap:4px}
 .borough-more:hover{opacity:.9}
 .borough-more:active{transform:translateY(1px)}
-
-/* Bottom sheet */
 .borough-sheet{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .2s ease}
 .borough-sheet[hidden]{display:none}
 .borough-sheet-overlay{position:absolute;inset:0;background:rgba(15,15,30,.45);cursor:pointer}
@@ -132,9 +129,7 @@ a{text-decoration:none;color:inherit}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
 body.sheet-open{overflow:hidden}
-.area-tag{cursor:pointer;transition:background .12s,color .12s}
-.area-tag:hover{background:#003087;color:#fff}
-@media(max-width:580px){.borough-nav{padding-left:16px;padding-right:16px}}
+
 .card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
 .metrics{display:flex;gap:12px;margin-bottom:12px}
 .metric{flex:1}
@@ -152,26 +147,19 @@ body.sheet-open{overflow:hidden}
 .pill-reg{background:#003087;color:#fff}
 .pill-cqc{background:#D8EFE3;color:#007F3B}
 .pill-ods{background:#EDF4FC;color:#0072CE}
+.pill-web{background:#FAE7F3;color:#A02670}
 .card-pcn{font-size:10px;color:#bbb;text-align:right;margin-top:5px}
 .empty{grid-column:1/-1;text-align:center;padding:4rem 2rem;color:#888}
 .empty h3{font-family:Georgia,serif;font-size:1.1rem;color:#555;margin-bottom:5px}
-
-/* Pagination */
 .pager{margin-top:24px;display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap}
 .pg{min-width:34px;height:34px;border:1px solid #ddd;background:#fff;border-radius:6px;font-family:inherit;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 9px;color:#555;transition:all .1s}
 .pg:hover:not(:disabled){border-color:#003087;color:#003087}
 .pg.on{background:#003087;color:#fff;border-color:#003087}
 .pg:disabled{opacity:.3;cursor:not-allowed}
-
-/* Spinner */
-/* Footer */
 footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:16px 24px;font-size:11.5px}
 footer a{color:rgba(255,255,255,.8)}
 footer a:hover{color:#fff}
 
-/* ========== Responsive ========== */
-
-/* Tablet — collapse to single column main */
 @media(max-width:900px){
   .layout{grid-template-columns:1fr;gap:14px;padding-top:14px}
   .sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -181,100 +169,73 @@ footer a:hover{color:#fff}
   .hdr-stats strong{font-size:1.15rem}
   .hdr-stats span{font-size:.6rem}
 }
-
-/* Phone */
 @media(max-width:600px){
   .hdr{padding:0 14px;gap:8px}
   .hdr-in{padding:9px 0;gap:8px}
   .logo h1{font-size:1.15rem;line-height:1.05}
-  .logo p{display:none}  /* save vertical space — title alone is clear enough */
-  /* Show 2 most useful stats only, smaller */
+  .logo p{display:none}
   .hdr-stats{gap:14px;flex:0 0 auto}
   .hdr-stats div:nth-child(2),.hdr-stats div:nth-child(3){display:none}
   .hdr-stats strong{font-size:1rem;font-weight:600}
   .hdr-stats span{font-size:.55rem;letter-spacing:.03em}
-
   .search-zone{padding:0 16px 12px}
-  #q{padding:13px 12px 13px 38px;font-size:16px} /* 16px prevents iOS auto-zoom */
+  #q{padding:13px 12px 13px 38px;font-size:16px}
   .clr{padding:13px 14px;font-size:13px}
-
-  /* Borough chip bar — tighter padding on phone */
+  .type-inner{padding:10px 14px}
+  .type-tabs{gap:5px}
+  .type-tab{padding:8px 13px;font-size:13px}
+  .specialty-zone.active{margin-top:8px}
+  .specialty-chip{padding:5px 10px;font-size:11.5px}
   .borough-bar-inner{padding:8px 14px;gap:5px}
-  .borough-bar-label{display:none}  /* save space — chips are self-explanatory */
+  .borough-bar-label{display:none}
   .borough-chip{padding:6px 11px;font-size:12px}
   .borough-more{padding:6px 11px;font-size:12px}
   .borough-sheet-panel{max-height:80vh}
   .borough-sheet-grid{grid-template-columns:1fr 1fr;gap:6px 10px;padding:12px 18px 4px}
   .borough-sheet-grid a{padding:11px 12px;font-size:13.5px}
-
   .layout{padding:14px 16px 32px;gap:10px}
-
-  /* Sidebar — single column, tighter */
   .sidebar{grid-template-columns:1fr;gap:8px}
   .nhs-panel{padding:10px 12px}
   .nhs-panel-hdr{margin-bottom:3px}
   .nhs-panel p{font-size:11px;margin-bottom:6px;line-height:1.4}
   .nhs-tag{font-size:10px;padding:3px 8px}
-
-  /* Filter panels collapse to <details> on phone — saves vertical space */
   .panel{border-radius:10px}
-  .panel-hdr{font-size:10px;padding:11px 14px 9px;cursor:pointer;
-    user-select:none;display:flex;align-items:center;justify-content:space-between}
-  .panel-hdr::after{content:"\25BE";font-size:11px;color:#bbb;
-    transition:transform .15s;font-weight:400;letter-spacing:0}
+  .panel-hdr{font-size:10px;padding:11px 14px 9px;cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between}
+  .panel-hdr::after{content:"\25BE";font-size:11px;color:#bbb;transition:transform .15s;font-weight:400;letter-spacing:0}
   .panel.collapsed .panel-hdr::after{transform:rotate(-90deg)}
   .panel.collapsed .opts,.panel.collapsed select{display:none}
   .opts{max-height:240px}
-  .opts label{padding:8px 14px;font-size:14px} /* bigger tap target */
+  .opts label{padding:8px 14px;font-size:14px}
   .opts input[type=checkbox]{width:16px;height:16px}
   .panel select{padding:11px 14px;font-size:14px}
-
-  /* Card grid — single column with comfortable spacing */
   #grid{grid-template-columns:1fr;gap:10px}
   .card{padding:14px 14px}
   .card-name{font-size:15px}
   .card-addr{font-size:12px}
-
-  /* Stats row tighter on phone */
   .metrics{gap:10px;margin-bottom:10px}
   .m-val{font-size:12px}
-
-  /* Card footer — wrap nicely, bigger tap targets */
   .card-foot{flex-wrap:wrap;gap:10px;padding-top:11px}
   .card-phone{font-size:13px;padding:4px 0;min-height:32px}
   .actions{gap:6px;width:100%}
-  .pill{padding:7px 11px;font-size:12px;min-height:32px;display:inline-flex;
-    align-items:center}
-
-  /* Results bar */
+  .pill{padding:7px 11px;font-size:12px;min-height:32px;display:inline-flex;align-items:center}
   .results-bar p{font-size:12px}
-
-  /* Pagination — bigger tap targets, allow wrap */
   .pager{margin-top:18px;gap:4px}
   .pg{min-width:38px;height:38px;font-size:13px}
-
-  /* Footer */
   footer{padding:14px 16px;font-size:11px;line-height:1.7}
 }
-
-/* Very small phones */
 @media(max-width:380px){
   .logo h1{font-size:1.1rem}
-  .hdr-stats{display:none} /* phone too narrow — give logo room */
+  .hdr-stats{display:none}
   .pill{font-size:11px;padding:6px 9px}
-  .borough-nav-label{font-size:9px}
 }
-
-/* Make filter panels collapsed-by-default on phones via JS hook */
 </style>
 </head>
 <body>
-
 <header class="hdr">
   <div class="hdr-in">
     <div class="logo">
       <h1>London GP <em>Directory</em></h1>
-      <p>Find &amp; compare NHS GP practices across London</p>
+      <p>Find &amp; compare NHS GP practices &amp; private clinics across London</p>
     </div>
     <div class="hdr-stats">
       <div><strong>__PRACTICE_COUNT__</strong><span>practices</span></div>
@@ -284,7 +245,6 @@ footer a:hover{color:#fff}
     </div>
   </div>
 </header>
-
 <div class="search-zone">
   <div class="search-inner">
     <div class="s-wrap">
@@ -294,7 +254,22 @@ footer a:hover{color:#fff}
     <button class="clr" id="clrBtn" onclick="clearSearch()">Clear</button>
   </div>
 </div>
-
+<div class="type-zone">
+  <div class="type-inner">
+    <div class="type-tabs" role="tablist" aria-label="NHS or private">
+      <button class="type-tab active" data-type="NHS" role="tab" aria-selected="true">
+        NHS practices <span class="type-tab-count" id="cntNHS">0</span>
+      </button>
+      <button class="type-tab" data-type="Private" role="tab" aria-selected="false">
+        Private clinics <span class="type-tab-count" id="cntPriv">0</span>
+      </button>
+      <button class="type-tab" data-type="All" role="tab" aria-selected="false">
+        All <span class="type-tab-count" id="cntAll">0</span>
+      </button>
+    </div>
+    <div class="specialty-zone" id="specialtyZone" role="tablist" aria-label="Filter by specialty"></div>
+  </div>
+</div>
 <nav class="borough-bar" aria-label="Browse by London borough">
   <div class="borough-bar-inner">
     <span class="borough-bar-label">Borough:</span>
@@ -307,8 +282,6 @@ footer a:hover{color:#fff}
     <button type="button" class="borough-more" id="boroughMoreBtn" aria-haspopup="dialog" aria-controls="boroughSheet">All 32 &rsaquo;</button>
   </div>
 </nav>
-
-<!-- Bottom sheet: full list of boroughs -->
 <div class="borough-sheet" id="boroughSheet" role="dialog" aria-modal="true" aria-labelledby="boroughSheetTitle" hidden>
   <div class="borough-sheet-overlay" data-close></div>
   <div class="borough-sheet-panel">
@@ -322,22 +295,19 @@ footer a:hover{color:#fff}
     </div>
   </div>
 </div>
-
 <div class="layout">
   <aside class="sidebar">
-
     <div class="nhs-panel">
       <div class="nhs-panel-hdr">
         <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M1 8a7 7 0 107-7" stroke="#003087" stroke-width="1.6" stroke-linecap="round"/><path d="M1 3v5h5" stroke="#003087" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         NHS data
       </div>
-      <p>Phone numbers &amp; addresses sourced directly from the <strong>NHS ODS FHIR API</strong>, refreshed automatically every Monday.</p>
+      <p>NHS practice phone numbers &amp; addresses sourced from the <strong>NHS ODS FHIR API</strong>. Private clinics from <strong>CQC</strong>. Refreshed weekly.</p>
       <div class="nhs-tag">
         <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#007F3B" stroke-width="1.5"/><path d="M8 5v3.5l2 2" stroke="#007F3B" stroke-width="1.4" stroke-linecap="round"/></svg>
         Updated: __UPDATED_DATE__
       </div>
     </div>
-
     <div class="panel">
       <div class="panel-hdr">Sort by</div>
       <select id="sortSel" onchange="render()">
@@ -348,19 +318,15 @@ footer a:hover{color:#fff}
         <option value="area">Area (A&#x2013;Z)</option>
       </select>
     </div>
-
     <div class="panel">
       <div class="panel-hdr">CQC rating</div>
       <div class="opts" id="cqcOpts"></div>
     </div>
-
     <div class="panel">
       <div class="panel-hdr">Borough</div>
       <div class="opts" id="areaOpts"></div>
     </div>
-
   </aside>
-
   <main>
     <div class="results-bar">
       <p id="resCt">Loading&#x2026;</p>
@@ -369,37 +335,80 @@ footer a:hover{color:#fff}
     <div class="pager" id="pager"></div>
   </main>
 </div>
-
 <footer>
   Data: NHS ODS &middot; GP Patient Survey &middot; CQC &middot; __UPDATED_DATE__ &nbsp;&nbsp;
   <a href="https://www.nhs.uk/service-search/find-a-gp/" target="_blank">NHS Find a GP</a> &nbsp;&middot;&nbsp;
   <a href="https://gp-registration.nhs.uk" target="_blank">Register with a GP</a> &nbsp;&middot;&nbsp;
-  <a href="https://www.cqc.org.uk" target="_blank">CQC</a><br><a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/methodology.html">Methodology</a> &nbsp;&middot;&nbsp; <a href="/sources.html">Sources</a><br><a href="/guides/how-to-register-with-a-london-gp/">How to register with a London GP</a> &nbsp;&middot;&nbsp; <a href="/guides/how-to-switch-gp-in-london/">How to switch GP</a>
+  <a href="https://www.cqc.org.uk" target="_blank">CQC</a><br>
+  <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/methodology.html">Methodology</a> &nbsp;&middot;&nbsp; <a href="/sources.html">Sources</a><br>
+  <a href="/guides/how-to-register-with-a-london-gp/">How to register with a London GP</a> &nbsp;&middot;&nbsp; <a href="/guides/how-to-switch-gp-in-london/">How to switch GP</a>
 </footer>
-
 <script>
 const DATA = __DATA_PLACEHOLDER__;
-
 const slugify = s => (s||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
-
 const PAGE = 24;
 let page = 1;
 let filtered = [];
+let selType = 'NHS';
+let selSpec = 'all';
 const selCQC = new Set();
 const selArea = new Set();
 
-/* ── CQC helpers ── */
 function cqcClass(r){
-  if(!r) return 'cq-N';
-  if(r==='Outstanding') return 'cq-O';
-  if(r==='Good') return 'cq-G';
-  if(r.startsWith('Requires')) return 'cq-R';
-  if(r==='Inadequate') return 'cq-I';
-  return 'cq-N';
+  if(!r) return 'cqc-N';
+  if(r==='Outstanding') return 'cqc-O';
+  if(r==='Good') return 'cqc-G';
+  if(r.startsWith('Requires')) return 'cqc-R';
+  if(r==='Inadequate') return 'cqc-I';
+  return 'cqc-N';
 }
 function cqcLabel(r){ return r||'Not rated'; }
 
-/* ── Build sidebar filters ── */
+function updateTypeCounts(){
+  const n = DATA.filter(d => (d.type||'NHS')==='NHS').length;
+  const p = DATA.filter(d => d.type==='Private').length;
+  document.getElementById('cntNHS').textContent = n;
+  document.getElementById('cntPriv').textContent = p;
+  document.getElementById('cntAll').textContent = n+p;
+}
+function buildSpecialtyChips(){
+  const zone = document.getElementById('specialtyZone');
+  if(selType !== 'Private'){
+    zone.classList.remove('active');
+    zone.innerHTML = '';
+    return;
+  }
+  const counts = {};
+  DATA.filter(d => d.type==='Private').forEach(d => {
+    (d.specs||[]).forEach(s => { counts[s] = (counts[s]||0)+1; });
+  });
+  const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const total = DATA.filter(d => d.type==='Private').length;
+  zone.innerHTML = `<button class="specialty-chip ${selSpec==='all'?'active':''}" data-spec="all">All <span class="specialty-chip-count">${total}</span></button>`
+    + sorted.map(([sp,n])=>
+      `<button class="specialty-chip ${selSpec===sp?'active':''}" data-spec="${sp}">${sp} <span class="specialty-chip-count">${n}</span></button>`
+    ).join('');
+  zone.classList.add('active');
+  zone.querySelectorAll('.specialty-chip').forEach(c =>
+    c.addEventListener('click', () => selectSpec(c.dataset.spec)));
+}
+function selectType(type){
+  selType = type;
+  selSpec = 'all';
+  document.querySelectorAll('.type-tab').forEach(t => {
+    const on = t.dataset.type === type;
+    t.classList.toggle('active', on);
+    t.setAttribute('aria-selected', on?'true':'false');
+  });
+  buildSpecialtyChips();
+  page = 1; render();
+}
+function selectSpec(spec){
+  selSpec = spec;
+  buildSpecialtyChips();
+  page = 1; render();
+}
+
 function buildFilters(){
   const cqcC={}, areaC={};
   DATA.forEach(d=>{
@@ -409,43 +418,44 @@ function buildFilters(){
   const cqcOrder=['Outstanding','Good','Requires improvement','Inadequate',''];
   document.getElementById('cqcOpts').innerHTML = cqcOrder
     .filter(k=>cqcC[k])
-    .map(k=>`<label><input type="checkbox" onchange="toggle('cqc','${k.replace(/'/g,"\'")}')">
+    .map(k=>`<label><input type="checkbox" onchange="toggle('cqc','${k.replace(/'/g,"\\'")}')">
       ${k||'Not rated'}<span class="badge">${cqcC[k]}</span></label>`).join('');
   document.getElementById('areaOpts').innerHTML = Object.entries(areaC)
     .sort((a,b)=>a[0].localeCompare(b[0]))
-    .map(([ar,c])=>`<label><input type="checkbox" onchange="toggle('area','${ar.replace(/'/g,"\'")}')">
+    .map(([ar,c])=>`<label><input type="checkbox" onchange="toggle('area','${ar.replace(/'/g,"\\'")}')">
       ${ar}<span class="badge">${c}</span></label>`).join('');
 }
-
 function toggle(type,val){
   const s = type==='cqc'?selCQC:selArea;
   s.has(val)?s.delete(val):s.add(val);
   page=1; render();
 }
 
-/* ── Render ── */
 function clearSearch(){
   document.getElementById('q').value='';
   document.getElementById('clrBtn').style.display='none';
   page=1; render();
 }
-
 function render(){
   const q = document.getElementById('q').value.trim().toLowerCase();
   const sort = document.getElementById('sortSel').value;
   document.getElementById('clrBtn').style.display = q?'block':'none';
-
   filtered = DATA.filter(d=>{
+    const recType = d.type || 'NHS';
+    if(selType !== 'All' && recType !== selType) return false;
+    if(selType === 'Private' && selSpec !== 'all'){
+      if(!(d.specs||[]).includes(selSpec)) return false;
+    }
     const ms = !q || d.n.toLowerCase().includes(q)
       || (d.p||'').toLowerCase().includes(q)
       || (d.a||'').toLowerCase().includes(q)
       || (d.ar||'').toLowerCase().includes(q)
-      || (d.pcn||'').toLowerCase().includes(q);
+      || (d.pcn||'').toLowerCase().includes(q)
+      || (d.specs||[]).some(s => s.toLowerCase().includes(q));
     const mc = selCQC.size===0 || selCQC.has(d.cqc||'');
     const ma = selArea.size===0 || selArea.has(d.ar||'');
     return ms && mc && ma;
   });
-
   filtered.sort((a,b)=>{
     if(sort==='name') return a.n.localeCompare(b.n);
     if(sort==='score_d') return (b.s||0)-(a.s||0);
@@ -454,24 +464,23 @@ function render(){
     if(sort==='area') return (a.ar||'').localeCompare(b.ar||'');
     return 0;
   });
-
   const tot = filtered.length;
   const pages = Math.max(1,Math.ceil(tot/PAGE));
   if(page>pages) page=Math.max(1,pages);
   const slice = filtered.slice((page-1)*PAGE, page*PAGE);
-
+  const typeLabel = selType==='All' ? 'practices &amp; clinics'
+    : selType==='Private' ? 'private clinics' : 'NHS practices';
   document.getElementById('resCt').innerHTML =
-    `Showing <strong>${slice.length}</strong> of <strong>${tot}</strong> practices`
-    ;
-
+    `Showing <strong>${slice.length}</strong> of <strong>${tot}</strong> ${typeLabel}`;
   const grid = document.getElementById('grid');
   if(!slice.length){
     grid.innerHTML='<div class="empty"><h3>No practices found</h3><p>Try a different search or clear some filters.</p></div>';
     document.getElementById('pager').innerHTML='';
     return;
   }
-
   grid.innerHTML = slice.map(d=>{
+    const recType = d.type || 'NHS';
+    const isPriv = recType === 'Private';
     const cc = cqcClass(d.cqc);
     const sBar = d.s?`<div class="m-bar" style="width:${d.s}%;background:#0072CE"></div>`:'';
     const cBar = d.c?`<div class="m-bar" style="width:${d.c}%;background:#0F6E56"></div>`:'';
@@ -481,32 +490,41 @@ function render(){
       <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M2 2.5a1 1 0 011-1h2a1 1 0 011 1l.5 2.5a1 1 0 01-.5 1L5 7c.98 1.96 2.54 3.52 4.5 4.5l1-1a1 1 0 011-.5l2.5.5a1 1 0 011 1V13a1 1 0 01-1 1h-1C6 14 2 9 2 4V2.5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
       ${d.ph}</a>`:'<span></span>';
     const cqcBtn = d.cu?`<a class="pill pill-cqc" href="${d.cu}" target="_blank">CQC</a>`:'';
+    const actionBtns = isPriv ? `
+      ${d.web?`<a class="pill pill-web" href="${d.web}" target="_blank">Website &#x2192;</a>`:''}
+      ${cqcBtn}`
+      : `<a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>
+         ${cqcBtn}
+         <a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>`;
+    const typeBadge = isPriv
+      ? `<span class="type-badge t-priv">Private</span>`
+      : `<span class="type-badge t-nhs">NHS</span>`;
+    const specBadges = isPriv && d.specs
+      ? d.specs.slice(0,2).map(s => `<span class="spec-badge">${s}</span>`).join('')
+      : '';
+    const metricsBlock = isPriv ? '' : `
+      <div class="metrics">
+        <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div>
+        <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div>
+      </div>`;
     return `<div class="card">
       <div class="card-top">
         <div class="card-name">${d.n}</div>
         <span class="cqc ${cc}">${cqcLabel(d.cqc)}</span>
       </div>
+      <div class="card-badges">${typeBadge}${specBadges}</div>
       ${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}
       <div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>
-      <div class="metrics">
-        <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div>
-        <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div>
-      </div>
+      ${metricsBlock}
       <div class="card-foot">
         ${phone}
-        <div class="actions">
-          <a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>
-          ${cqcBtn}
-          <a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>
-        </div>
+        <div class="actions">${actionBtns}</div>
       </div>
       ${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}
     </div>`;
   }).join('');
-
   renderPager(pages);
 }
-
 function renderPager(pages){
   if(pages<=1){ document.getElementById('pager').innerHTML=''; return; }
   const nums=[];
@@ -522,7 +540,6 @@ function renderPager(pages){
     ).join('')
     + `<button class="pg" onclick="go(${page+1})" ${page===pages?'disabled':''}>&#x203A;</button>`;
 }
-
 function go(n){
   const pages=Math.ceil(filtered.length/PAGE);
   if(n<1||n>pages)return;
@@ -530,14 +547,18 @@ function go(n){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-/* ── Boot ── */
 const _urlQ = new URLSearchParams(location.search).get('q');
 if (_urlQ) document.getElementById('q').value = _urlQ;
+const _urlType = new URLSearchParams(location.search).get('type');
+if (_urlType && ['NHS','Private','All'].includes(_urlType)) selType = _urlType;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
+document.querySelectorAll('.type-tab').forEach(t =>
+  t.addEventListener('click', () => selectType(t.dataset.type)));
+updateTypeCounts();
 buildFilters();
+buildSpecialtyChips();
 render();
 
-/* Borough sheet open/close — works on every screen size */
 (function(){
   const sheet = document.getElementById('boroughSheet');
   const openBtn = document.getElementById('boroughMoreBtn');
@@ -546,17 +567,13 @@ render();
   function close(){ sheet.hidden = true; document.body.classList.remove('sheet-open'); }
   openBtn.addEventListener('click', open);
   sheet.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
-  // Close when a borough link inside the sheet is clicked (it'll navigate away anyway,
-  // but this prevents a flash if user middle-clicks etc.)
   sheet.querySelectorAll('.borough-sheet-grid a').forEach(a => a.addEventListener('click', close));
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) close(); });
 })();
-
-/* On phones, collapse filter panels by default and toggle on header tap. */
 (function(){
   if (!window.matchMedia('(max-width:600px)').matches) return;
   document.querySelectorAll('.panel').forEach(p => {
-    if (p.querySelector('select')) return;  // keep Sort open — it's small
+    if (p.querySelector('select')) return;
     p.classList.add('collapsed');
   });
   document.querySelectorAll('.panel-hdr').forEach(h => {
