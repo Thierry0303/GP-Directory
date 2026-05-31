@@ -266,8 +266,12 @@ def build_records(candidates, key, nhs_ods, workers=10):
                 continue
 
             # ─ Gate 2: exclude NHS Trusts and other public providers
+            #         (check both providerName AND location name — CQC
+            #          stores this inconsistently)
             provider_name = d.get("providerName") or ""
-            if NHS_PUBLIC_PROVIDER_RE.search(provider_name):
+            location_name_raw = d.get("name") or d.get("locationName") or ""
+            if (NHS_PUBLIC_PROVIDER_RE.search(provider_name)
+                or NHS_PUBLIC_PROVIDER_RE.search(location_name_raw)):
                 rejected_public_provider += 1
                 continue
 
@@ -286,11 +290,17 @@ def build_records(candidates, key, nhs_ods, workers=10):
             if not name_raw: continue
             name = name_raw.title() if name_raw.isupper() else name_raw
 
-            # ─ Gate 4: PRIVATE signal — either name says "private/clinic/
-            #          Harley/etc" OR service type says "Independent/Private"
+            # ─ Gate 4: PRIVATE signal OR a specific specialty.
+            #   A legit private clinic should have AT LEAST one of:
+            #     - name says "private/clinic/Harley/etc"
+            #     - service type contains "Independent/Private"
+            #     - classified to a specific specialty (drops the giant
+            #       "general" bucket which was mostly NHS/community noise)
+            specialties = classify_specialty(name, blob)
             has_private_name    = bool(PRIVATE_NAME_RE.search(name))
             has_independent_svc = bool(INDEPENDENT_SERVICE_RE.search(blob))
-            if not (has_private_name or has_independent_svc):
+            has_specific_spec   = specialties != ["general"]
+            if not (has_private_name or has_independent_svc or has_specific_spec):
                 rejected_not_private += 1
                 continue
 
