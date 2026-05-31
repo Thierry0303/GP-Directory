@@ -1,0 +1,42 @@
+name: Full refresh (NHS + Private + Merge)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests pandas numpy pyyaml
+      - name: Fetch private clinics
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python fetch_private_clinics.py
+      - name: NHS refresh
+        run: python refresh_nhs_data.py
+      - name: Merge private + rebuild index.html
+        run: python merge_into_dataset.py
+      - name: Build borough pages
+        run: python build_borough_pages.py
+      - name: Build practice pages
+        run: python build_practice_pages.py
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Full refresh: NHS + Private merged ($(date -u +%Y-%m-%d))"
+            git push
+          fi
