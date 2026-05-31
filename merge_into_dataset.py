@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """
-Merge gps.json (NHS) + private_clinics.json (Private) into a single
-combined dataset that the index.template.html expects.
+Merge gps.json (NHS) + private_clinics.json (Private) into merged.json,
+then regenerate index.html from index.template.html.
 
-Run AFTER refresh_nhs_data.py has produced merged.json.
+Runs AFTER refresh_nhs_data.py.
 """
 
-import json, sys
+import json, re, sys
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-MERGED_JSON = ROOT / "merged.json"
-PRIVATE_JSON = ROOT / "private_clinics.json"
+MERGED_JSON   = ROOT / "merged.json"
+PRIVATE_JSON  = ROOT / "private_clinics.json"
+TEMPLATE_HTML = ROOT / "index.template.html"
+INDEX_HTML    = ROOT / "index.html"
 
 BOROUGH_MAP = {
     "E10":"Waltham Forest","E11":"Redbridge","E12":"Newham","E13":"Newham",
@@ -97,6 +100,10 @@ def postcode_district(pc):
 def borough_for(pc):
     return BOROUGH_MAP.get(postcode_district(pc), "")
 
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+", "-",
+                  (s or "").lower().replace("&", "and")).strip("-")
+
 def main():
     if not MERGED_JSON.exists():
         sys.exit(f"{MERGED_JSON} not found. Run refresh_nhs_data.py first.")
@@ -108,37 +115,54 @@ def main():
     for r in merged:
         r.setdefault("type", "NHS")
 
-    if not PRIVATE_JSON.exists():
-        print(f"No {PRIVATE_JSON} — skipping private merge.")
-        MERGED_JSON.write_text(json.dumps(merged, indent=2))
-        return
-
-    private = json.loads(PRIVATE_JSON.read_text())
-    if not isinstance(private, list):
-        sys.exit("private_clinics.json is not a JSON array.")
-    print(f"Loaded {len(private)} private records.")
-
     converted = []
-    for r in private:
-        pc = (r.get("postcode") or "").strip().upper()
-        converted.append({
-            "n":     r.get("name", ""),
-            "a":     r.get("address", ""),
-            "p":     pc,
-            "ph":    r.get("phone", ""),
-            "cqc":   r.get("cqc_rating", ""),
-            "cu":    r.get("cqc_url", ""),
-            "ar":    borough_for(pc),
-            "o":     r.get("ods_code", "") or r.get("cqc_id", ""),
-            "type":  "Private",
-            "specs": r.get("specialties", []),
-            "web":   r.get("website", ""),
-        })
+    if PRIVATE_JSON.exists():
+        private = json.loads(PRIVATE_JSON.read_text())
+        if isinstance(private, list):
+            print(f"Loaded {len(private)} private records.")
+            for r in private:
+                pc = (r.get("postcode") or "").strip().upper()
+                converted.append({
+                    "n":     r.get("name", ""),
+                    "a":     r.get("address", ""),
+                    "p":     pc,
+                    "ph":    r.get("phone", ""),
+                    "cqc":   r.get("cqc_rating", ""),
+                    "cu":    r.get("cqc_url", ""),
+                    "ar":    borough_for(pc),
+                    "o":     r.get("ods_code", "") or r.get("cqc_id", ""),
+                    "type":  "Private",
+                    "specs": r.get("specialties", []),
+                    "web":   r.get("website", ""),
+                })
 
     combined = merged + converted
     MERGED_JSON.write_text(json.dumps(combined, indent=2))
     print(f"Wrote merged.json — {len(combined)} total "
           f"({len(merged)} NHS + {len(converted)} Private).")
+
+    # ─── Regenerate index.html ───────────────────────────────────────
+    if not TEMPLATE_HTML.exists():
+        print(f"WARN: {TEMPLATE_HTML} not found — skipping index.html rebuild.")
+        return
+
+    boroughs = sorted(set(BOROUGH_MAP.values()))
+    borough_nav = "\n      ".join(
+        f'<a href="/practice/{slugify(b)}/">{b}</a>'
+        for b in boroughs
+    )
+
+    today = datetime.now().strftime("%-d %B %Y") \
+            if hasattr(datetime, "strftime") else datetime.now().strftime("%d %B %Y")
+
+    template = TEMPLATE_HTML.read_text()
+    html = (template
+            .replace("__DATA_PLACEHOLDER__", json.dumps(combined))
+            .replace("__PRACTICE_COUNT__",   str(len(combined)))
+            .replace("__BOROUGH_NAV__",      borough_nav)
+            .replace("__UPDATED_DATE__",     today))
+    INDEX_HTML.write_text(html)
+    print(f"Wrote index.html — {INDEX_HTML.stat().st_size//1024} KB")
 
 if __name__ == "__main__":
     main()
