@@ -1,0 +1,41 @@
+name: Find London GP gaps
+
+# Auto-discovers NHS GP practices missing from gps.json by paginating CQC
+# and cross-referencing with what we have. For each gap, FHIR-enriches and
+# appends to gps.json. Works for ALL London boroughs in one pass.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run gap finder
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python find_london_gp_gaps.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gps.json
+          if git diff --cached --quiet; then
+            echo "No changes to gps.json"
+          else
+            git commit -m "add: discover-and-fill London GP gaps via CQC ($(date -u +%Y-%m-%d))"
+            git push
+          fi
