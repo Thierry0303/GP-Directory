@@ -99,6 +99,41 @@ HARD_DROP_NAME_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Provider-name patterns that indicate this is an NHS Trust / public body
+# rather than a private clinic. Even if the location offers doctor-led
+# services, it's not "private healthcare" in the consumer sense.
+NHS_PUBLIC_PROVIDER_RE = re.compile(
+    r"\b(?:nhs\s+(?:trust|foundation\s+trust|england|"
+    r"integrated\s+care\s+board|integrated\s+care\s+system)|"
+    r"\bicb\b|\bccg\b|\bnhs\b|"
+    r"local\s+authority|borough\s+council|county\s+council|"
+    r"community\s+health\s+services|"
+    r"university\s+college\s+(?:london|hospital)|"
+    r"\bnhs\s+foundation\b)",
+    re.IGNORECASE,
+)
+
+# Name patterns that signal "this is genuinely a private clinic".
+# We require AT LEAST one of these unless the service-type strongly
+# indicates Independent provision.
+PRIVATE_NAME_RE = re.compile(
+    r"\b(?:private|harley\s+street|wimpole\s+street|devonshire\s+place|"
+    r"the\s+\w+\s+clinic|specialist|consultant|"
+    r"bupa|nuffield|spire|hca|circle|king\s+edward|"
+    r"the\s+london\s+clinic|wellington|princess\s+grace|"
+    r"cromwell|portland|royal\s+marsden\s+private|"
+    r"\bclinic\b)",
+    re.IGNORECASE,
+)
+
+# Service-type substrings that ALONE prove the location is private,
+# even if name doesn't explicitly say "private".
+INDEPENDENT_SERVICE_RE = re.compile(
+    r"\b(?:independent|private)\s+(?:doctors?|hospital|ambulance|"
+    r"consultation|treatment|clinic|service)",
+    re.IGNORECASE,
+)
+
 SPECIALTY_PATTERNS = [
     ("cardiology",       r"\b(?:cardio|heart\s+(?:clinic|centre))\b"),
     ("dermatology",      r"\b(?:derma|skin\s+(?:clinic|centre))\b"),
@@ -204,6 +239,9 @@ def build_records(candidates, key, nhs_ods, workers=10):
     rejected_nhs = 0
     rejected_services = 0
     rejected_not_clinic = 0
+    rejected_public_provider = 0
+    rejected_not_private = 0
+    rejected_no_specialty = 0
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {}
@@ -221,11 +259,19 @@ def build_records(candidates, key, nhs_ods, workers=10):
             if not d:
                 continue
 
+            # ─ Gate 1: exclude NHS GPs already in gps.json
             ods = (d.get("odsCode") or "").strip().upper()
             if ods and ods in nhs_ods:
                 rejected_nhs += 1
                 continue
 
+            # ─ Gate 2: exclude NHS Trusts and other public providers
+            provider_name = d.get("providerName") or ""
+            if NHS_PUBLIC_PROVIDER_RE.search(provider_name):
+                rejected_public_provider += 1
+                continue
+
+            # ─ Gate 3: must have doctor-led services
             blob = services_blob(d)
             if any(t in blob for t in NOT_CLINIC_SERVICES):
                 if not any(t in blob for t in PRIVATE_DOCTOR_SERVICES):
@@ -239,6 +285,14 @@ def build_records(candidates, key, nhs_ods, workers=10):
                         or d.get("providerName") or "").strip()
             if not name_raw: continue
             name = name_raw.title() if name_raw.isupper() else name_raw
+
+            # ─ Gate 4: PRIVATE signal — either name says "private/clinic/
+            #          Harley/etc" OR service type says "Independent/Private"
+            has_private_name    = bool(PRIVATE_NAME_RE.search(name))
+            has_independent_svc = bool(INDEPENDENT_SERVICE_RE.search(blob))
+            if not (has_private_name or has_independent_svc):
+                rejected_not_private += 1
+                continue
 
             pc = (d.get("postalCode") or "").strip().upper()
             if not is_london(pc): continue
@@ -254,6 +308,21 @@ def build_records(candidates, key, nhs_ods, workers=10):
             website = (d.get("website") or "").strip()
 
             specialties = classify_specialty(name, blob)
+
+            # ─ Gate 5: drop generic "general"-only records — these are the
+            #         catch-all that adds noise (1634 last run). A real
+            #         private clinic should have at least one specific
+            #         specialty OR be explicitly named as "private GP".
+            if specialties == ["general"]:
+                # One last chance: if name explicitly says private GP / family
+                # doctor / private medical centre, keep as "private gp".
+                if re.search(r"\b(?:private\s+(?:gp|medical|doctor|family)|"
+                             r"family\s+doctor|private\s+medical\s+centre)\b",
+                             name, re.IGNORECASE):
+                    specialties = ["private gp"]
+                else:
+                    rejected_no_specialty += 1
+                    continue
 
             rating = ((d.get("currentRatings", {}) or {})
                       .get("overall", {}) or {}).get("rating", "")
@@ -279,8 +348,11 @@ def build_records(candidates, key, nhs_ods, workers=10):
 
     print(f"\nRejection summary:")
     print(f"  NHS (in gps.json):              {rejected_nhs}")
+    print(f"  NHS Trust / public provider:    {rejected_public_provider}")
     print(f"  services not doctor-led:        {rejected_services}")
     print(f"  not a clinic (residential etc): {rejected_not_clinic}")
+    print(f"  no private signal (name/svc):   {rejected_not_private}")
+    print(f"  no specialty match (generic):   {rejected_no_specialty}")
     print(f"  KEPT:                           {len(records)}\n")
     return records
 
