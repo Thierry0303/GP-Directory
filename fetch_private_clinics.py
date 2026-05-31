@@ -1,54 +1,21 @@
 #!/usr/bin/env python3
 """
-Fetch London private healthcare clinics + consultants from the CQC public API.
+Build private_clinics.json — London private healthcare clinics from CQC.
 
-This is the foundation for the private side of londongp.directory. It builds
-the equivalent of gps.json but for non-NHS providers — private GPs, specialist
-clinics, and the consultant-led clinics that bridge into the wider "private
-doctor directory" you want to build later.
-
-Output: private_clinics.json — array of records with the same shape as
-gps.json's downstream merged.json so the existing template + borough +
-practice page generators can render them with minimal changes.
-
-Data source
------------
-CQC publishes a public REST API at https://api.cqc.org.uk/public/v1 that
-contains every regulated healthcare location in England, free of charge.
-You need a free Subscription Key (1-minute signup):
-
-    https://www.cqc.org.uk/about-us/transparency/using-cqc-data
-
-Once you have the key, set it in the environment before running:
-
-    export CQC_KEY=xxxxxxxxxxxx
-    python3 fetch_private_clinics.py
-
-Or pass --key=... on the command line. The script will refuse to run
-without one.
-
-What it filters for
--------------------
-A "private clinic" for our purposes is a CQC-registered location that:
-  1. Has a London postcode (postcode prefix in our existing PC dict).
-  2. Provides primary care or consultant-led services
-     ("Doctors Consultation Service Independent",
-      "Doctors Treatment Service",
-      "Hospital Services for People with Mental Health Needs",
-      etc. — see SERVICE_TYPES below).
-  3. Is NOT already in gps.json (i.e. doesn't have an NHS GMS contract).
-     This is how we separate "private" from "NHS".
-  4. Is currently registered (not deregistered).
-
-Layering on consultant-level data (PHIN, GMC) is a separate later step
-that joins on this foundation.
+Approach
+--------
+1. Paginate all UK CQC locations (proven working from CI).
+2. Filter to London postcodes.
+3. Filter to "doctor-led private healthcare" by service type.
+4. Exclude anything whose ODS code is already in gps.json (those are NHS).
+5. Classify each clinic by specialty from name + service types.
+6. Output private_clinics.json with type="Private" and specialty list on each.
 """
 
-import json, os, re, sys, time, argparse, urllib.request, urllib.error, urllib.parse
+import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
 from pathlib import Path
-from collections import defaultdict
+from collections import Counter
 
 ROOT = Path(__file__).resolve().parent
 GPS_JSON = ROOT / "gps.json"
@@ -56,440 +23,298 @@ OUT_JSON = ROOT / "private_clinics.json"
 
 CQC_BASE = "https://api.service.cqc.org.uk/public/v1"
 
-# Service types we care about (primary care + consultant-led private services).
-# CQC has ~30 service-type strings; these are the ones relevant to a doctor
-# directory. Edit if you want to broaden (e.g. add diagnostic services).
-SERVICE_TYPES = {
-    "Doctors consultation service - Independent",
-    "Doctors treatment service",
-    "Hospital services for people with mental health needs",
-    "Acute services with overnight beds",
-    "Acute services without overnight beds / listed acute services with or without overnight beds",
-    "Diagnostic and screening service",
-    "Diagnostic and/or screening services",
-    "Specialist college service",
-    "Long term conditions services",
-    "Mobile doctors service",
-    "Rehabilitation services",
-}
-
-# Post-filter speciality classification by name pattern. Useful for the
-# borough/specialty pages we'll build later.
-SPECIALITY_PATTERNS = [
-    ("cardiology",      r"\b(cardio|heart)\b"),
-    ("dermatology",     r"\b(derma|skin clinic)\b"),
-    ("paediatrics",     r"\b(paediatric|child(?:ren)?'s clinic)\b"),
-    ("orthopaedics",    r"\b(orthop|joint|spine|bone)\b"),
-    ("ophthalmology",   r"\b(ophthalm|eye clinic|vision)\b"),
-    ("ent",             r"\b(ent\b|ear,? nose|otolaryng)\b"),
-    ("gynaecology",     r"\b(gynaec|women's health|fertility)\b"),
-    ("psychiatry",      r"\b(psychiatr|mental health|psycholog)\b"),
-    ("dentistry",       r"\bdent(?:al|ist)\b"),
-    ("cosmetic",        r"\b(cosmet|aesthet|plastic surger)\b"),
-    ("urology",         r"\burolog\b"),
-    ("oncology",        r"\b(oncolog|cancer)\b"),
-    ("gastroenterology",r"\bgastroenterolog\b"),
-    ("private gp",      r"\b(general practi|private gp|gp service)\b"),
-]
-def classify_specialities(name, services):
-    blob = (name or "") + " " + " ".join(services)
-    found = []
-    for tag, rx in SPECIALITY_PATTERNS:
-        if re.search(rx, blob, re.IGNORECASE):
-            found.append(tag)
-    return found or ["other"]
-
-# Aggressive pre-filter for the summary list — drop locations whose name
-# clearly doesn't represent a medical doctor practice. Drops ~70% of London
-# CQC locations before we incur the per-record detail fetch.
-DROP_NAME_RE = re.compile(
-    r"\b(?:dental|dentist|orthodont|pharmacy|chemist|ambulance|"
-    r"nursing home|care home|residential home|extra care|"
-    r"hospice|veterinary|vet practice|funeral|optician|optometr|"
-    r"sexual health clinic|substance|drug rehab|"
-    r"hearing|audiology only|chiropract|osteopath|"
-    r"podiatr|reflexolog|reiki|colonic|tattoo|laser hair|"
-    r"slimming|weight loss clinic|fertility cryob|sperm bank)\b",
-    re.IGNORECASE,
-)
-
-# Positive keep patterns — most actual doctor practices match one of these.
-# We require a positive keep AND no drop hit before doing the detail fetch.
-KEEP_NAME_RE = re.compile(
-    r"\b(?:clinic|medical|practice|surgery|health centre|hospital|"
-    r"doctors?|gp|consult|specialist|cardio|derma|psychiatr|paediatr|"
-    r"orthop|gynaec|urolog|oncolog|fertility|imaging|diagnostic|"
-    r"endocrin|gastroenter|rheumatolog|neurolog|allerg|aestheti|cosmet)\b",
-    re.IGNORECASE,
-)
-
-def looks_like_medical_doctor(name):
-    """Permissive: only reject obvious non-doctor names. Empty name passes
-    so we let the detail fetch decide (some summary records lack name)."""
-    if not name: return True
-    if DROP_NAME_RE.search(name): return False
-    return True
-
-# London postcodes (mirror of the dict in refresh_nhs_data.py — keep them in
-# sync if you add new districts).
-LONDON_POSTCODE_PREFIXES = {
-    # Inner London (E, EC, N, NW, SE, SW, W, WC)
-    "EC1A","EC1R","EC1V","EC2A","WC1B","WC1E","WC1N","WC1X","WC2A","WC2B","WC2H","WC2N",
-    "E1","E2","E3","E4","E5","E6","E7","E8","E9","E10","E11","E12","E13","E14","E15",
+LONDON_PREFIXES = {
+    "EC1A","EC1M","EC1N","EC1P","EC1R","EC1V","EC1Y",
+    "EC2A","EC2M","EC2N","EC2P","EC2R","EC2V","EC2Y",
+    "EC3A","EC3M","EC3N","EC3P","EC3R","EC3V",
+    "EC4A","EC4M","EC4N","EC4P","EC4R","EC4V","EC4Y",
+    "WC1A","WC1B","WC1E","WC1H","WC1N","WC1R","WC1V","WC1X",
+    "WC2A","WC2B","WC2E","WC2H","WC2N","WC2R",
+    "E1","E1W","E2","E3","E4","E5","E6","E7","E8","E9","E10","E11","E12","E13","E14","E15",
     "E16","E17","E18","E20",
-    "N1","N4","N5","N6","N7","N8","N9","N10","N11","N12","N13","N14","N15","N16",
+    "N1","N1C","N1P","N4","N5","N6","N7","N8","N9","N10","N11","N12","N13","N14","N15","N16",
     "N17","N18","N19","N20","N21","N22",
-    "NW1","NW2","NW3","NW4","NW5","NW6","NW7","NW8","NW9","NW10","NW11",
-    "SE1","SE2","SE3","SE4","SE5","SE6","SE7","SE8","SE9","SE10","SE11","SE12",
+    "NW1","NW1W","NW2","NW3","NW4","NW5","NW6","NW7","NW8","NW9","NW10","NW11","NW26",
+    "SE1","SE1P","SE2","SE3","SE4","SE5","SE6","SE7","SE8","SE9","SE10","SE11","SE12",
     "SE13","SE14","SE15","SE16","SE17","SE18","SE19","SE20","SE21","SE22","SE23",
     "SE24","SE25","SE26","SE27","SE28",
-    "SW1A","SW1E","SW1P","SW1V","SW1W","SW1X","SW2","SW3","SW4","SW5","SW6","SW7",
-    "SW8","SW9","SW10","SW11","SW12","SW13","SW14","SW15","SW16","SW17","SW18",
-    "SW19","SW20",
-    "W1","W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14",
-    # Outer London — Greater London
-    "BR1","BR2","BR3","BR4","BR5","BR6","BR7","BR8",                # Bromley
-    "CR0","CR2","CR3","CR4","CR5","CR6","CR7","CR8","CR9",          # Croydon
-    "DA1","DA5","DA6","DA7","DA8","DA14","DA15","DA16","DA17","DA18", # Bexley
-    "EN1","EN2","EN3","EN4","EN5","EN7","EN8","EN9",                # Enfield
-    "HA0","HA1","HA2","HA3","HA4","HA5","HA6","HA7","HA8","HA9",    # Harrow
-    "IG1","IG2","IG3","IG4","IG5","IG6","IG7","IG8","IG11",         # Redbridge / B&D
-    "KT1","KT2","KT3","KT4","KT5","KT6","KT7","KT8","KT9",          # Kingston
-    "RM1","RM2","RM3","RM4","RM5","RM6","RM7","RM8","RM9","RM10","RM11","RM12","RM13","RM14",  # Havering
-    "SM1","SM2","SM3","SM4","SM5","SM6",                            # Sutton
-    "TW1","TW2","TW3","TW4","TW5","TW6","TW7","TW8","TW9","TW10","TW11","TW12","TW13","TW14",  # Richmond / Hounslow
-    "UB1","UB2","UB3","UB4","UB5","UB6","UB7","UB8","UB9","UB10","UB11",  # Hillingdon / Ealing
+    "SW1A","SW1E","SW1H","SW1P","SW1V","SW1W","SW1X","SW1Y",
+    "SW2","SW3","SW4","SW5","SW6","SW7","SW8","SW9","SW10","SW11","SW12","SW13","SW14",
+    "SW15","SW16","SW17","SW18","SW19","SW20",
+    "W1","W1A","W1B","W1C","W1D","W1F","W1G","W1H","W1J","W1K","W1S","W1T","W1U","W1W",
+    "W2","W3","W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14",
+    "BR1","BR2","BR3","BR4","BR5","BR6","BR7","BR8",
+    "CR0","CR2","CR3","CR4","CR5","CR6","CR7","CR8","CR9",
+    "DA1","DA5","DA6","DA7","DA8","DA14","DA15","DA16","DA17","DA18",
+    "EN1","EN2","EN3","EN4","EN5","EN7","EN8","EN9",
+    "HA0","HA1","HA2","HA3","HA4","HA5","HA6","HA7","HA8","HA9",
+    "IG1","IG2","IG3","IG4","IG5","IG6","IG7","IG8","IG11",
+    "KT1","KT2","KT3","KT4","KT5","KT6","KT7","KT8","KT9",
+    "RM1","RM2","RM3","RM4","RM5","RM6","RM7","RM8","RM9","RM10","RM11","RM12","RM13","RM14",
+    "SM1","SM2","SM3","SM4","SM5","SM6",
+    "TW1","TW2","TW3","TW4","TW5","TW6","TW7","TW8","TW9","TW10","TW11","TW12","TW13","TW14",
+    "UB1","UB2","UB3","UB4","UB5","UB6","UB7","UB8","UB9","UB10","UB11",
 }
-
-BOROUGH_MAP = {
-    # Same mapping as refresh_nhs_data.py — kept locally so this script is
-    # self-contained. If you ever centralise this, import from a shared module.
-    "E10":"Waltham Forest","E11":"Redbridge","E12":"Newham","E13":"Newham",
-    "E14":"Tower Hamlets","E15":"Newham","E16":"Newham","E17":"Waltham Forest",
-    "E18":"Redbridge","E20":"Newham",
-    "EC1A":"City of London","EC1R":"Islington","EC1V":"Islington",
-    "N10":"Haringey","N11":"Barnet","N12":"Barnet","N13":"Enfield",
-    "N14":"Enfield","N15":"Haringey","N16":"Hackney","N17":"Haringey",
-    "N18":"Enfield","N19":"Islington","N20":"Barnet","N21":"Enfield","N22":"Haringey",
-    "NW1":"Camden","NW2":"Brent","NW3":"Camden","NW4":"Barnet","NW5":"Camden",
-    "NW6":"Brent","NW7":"Barnet","NW8":"Westminster","NW9":"Brent",
-    "NW10":"Brent","NW11":"Barnet",
-    "SE1":"Southwark","SE2":"Greenwich","SE3":"Greenwich","SE4":"Lewisham",
-    "SE5":"Southwark","SE6":"Lewisham","SE7":"Greenwich","SE8":"Lewisham",
-    "SE9":"Greenwich","SE10":"Greenwich","SE11":"Lambeth","SE12":"Lewisham",
-    "SE13":"Lewisham","SE14":"Lewisham","SE15":"Southwark","SE16":"Southwark",
-    "SE17":"Southwark","SE18":"Greenwich","SE19":"Bromley","SE20":"Bromley",
-    "SE21":"Southwark","SE22":"Southwark","SE23":"Lewisham","SE24":"Lambeth",
-    "SE25":"Croydon","SE26":"Lewisham","SE27":"Lambeth","SE28":"Greenwich",
-    "SW1A":"Westminster","SW1E":"Westminster","SW1P":"Westminster","SW1V":"Westminster",
-    "SW1W":"Westminster","SW1X":"Westminster",
-    "SW2":"Lambeth","SW3":"Kensington & Chelsea","SW4":"Lambeth",
-    "SW5":"Kensington & Chelsea","SW6":"Hammersmith & Fulham",
-    "SW7":"Kensington & Chelsea","SW8":"Lambeth","SW9":"Lambeth",
-    "SW10":"Kensington & Chelsea","SW11":"Wandsworth","SW12":"Wandsworth",
-    "SW13":"Richmond","SW14":"Richmond","SW15":"Wandsworth","SW16":"Lambeth",
-    "SW17":"Wandsworth","SW18":"Wandsworth","SW19":"Merton","SW20":"Merton",
-    "W1":"Westminster","W2":"Westminster","W3":"Ealing","W4":"Hounslow",
-    "W5":"Ealing","W6":"Hammersmith & Fulham","W7":"Ealing","W8":"Kensington & Chelsea",
-    "W9":"Westminster","W10":"Kensington & Chelsea","W11":"Kensington & Chelsea",
-    "W12":"Hammersmith & Fulham","W13":"Ealing","W14":"Hammersmith & Fulham",
-    "WC1B":"Camden","WC1E":"Camden","WC1N":"Camden","WC1X":"Islington",
-    "WC2A":"Camden","WC2B":"Westminster","WC2H":"Westminster","WC2N":"Westminster",
-    # Outer London
-    "BR1":"Bromley","BR2":"Bromley","BR3":"Bromley","BR4":"Bromley","BR5":"Bromley",
-    "BR6":"Bromley","BR7":"Bromley","BR8":"Bromley",
-    "CR0":"Croydon","CR2":"Croydon","CR3":"Croydon","CR4":"Merton","CR5":"Croydon",
-    "CR6":"Croydon","CR7":"Croydon","CR8":"Croydon","CR9":"Croydon",
-    "DA1":"Bexley","DA5":"Bexley","DA6":"Bexley","DA7":"Bexley","DA8":"Bexley",
-    "DA14":"Bexley","DA15":"Bexley","DA16":"Bexley","DA17":"Bexley","DA18":"Bexley",
-    "EN1":"Enfield","EN2":"Enfield","EN3":"Enfield","EN4":"Enfield","EN5":"Barnet",
-    "EN7":"Enfield","EN8":"Enfield","EN9":"Enfield",
-    "HA0":"Brent","HA1":"Harrow","HA2":"Harrow","HA3":"Harrow","HA4":"Hillingdon",
-    "HA5":"Harrow","HA6":"Hillingdon","HA7":"Harrow","HA8":"Barnet","HA9":"Brent",
-    "IG1":"Redbridge","IG2":"Redbridge","IG3":"Redbridge","IG4":"Redbridge",
-    "IG5":"Redbridge","IG6":"Redbridge","IG7":"Redbridge","IG8":"Redbridge",
-    "IG11":"Barking & Dagenham",
-    "KT1":"Kingston","KT2":"Kingston","KT3":"Kingston","KT4":"Kingston","KT5":"Kingston",
-    "KT6":"Kingston","KT7":"Kingston","KT8":"Richmond","KT9":"Kingston",
-    "RM1":"Havering","RM2":"Havering","RM3":"Havering","RM4":"Havering","RM5":"Havering",
-    "RM6":"Barking & Dagenham","RM7":"Havering","RM8":"Barking & Dagenham",
-    "RM9":"Barking & Dagenham","RM10":"Barking & Dagenham","RM11":"Havering",
-    "RM12":"Havering","RM13":"Havering","RM14":"Havering",
-    "SM1":"Sutton","SM2":"Sutton","SM3":"Sutton","SM4":"Merton","SM5":"Sutton","SM6":"Sutton",
-    "TW1":"Richmond","TW2":"Richmond","TW3":"Hounslow","TW4":"Hounslow","TW5":"Hounslow",
-    "TW6":"Hillingdon","TW7":"Hounslow","TW8":"Hounslow","TW9":"Richmond","TW10":"Richmond",
-    "TW11":"Richmond","TW12":"Richmond","TW13":"Hounslow","TW14":"Hounslow",
-    "UB1":"Ealing","UB2":"Ealing","UB3":"Hillingdon","UB4":"Hillingdon","UB5":"Ealing",
-    "UB6":"Ealing","UB7":"Hillingdon","UB8":"Hillingdon","UB9":"Hillingdon",
-    "UB10":"Hillingdon","UB11":"Hillingdon",
-}
-
-# ---------------------------------------------------------------- helpers
 
 def postcode_district(pc):
-    if not pc: return ""
-    pc = pc.strip().upper()
+    pc = (pc or "").strip().upper()
     if " " in pc: return pc.split()[0]
-    pc = pc.replace(" ", "")
     return pc[:-3] if len(pc) >= 5 else pc
 
-def borough_for_postcode(pc):
-    d = postcode_district(pc)
-    if d in BOROUGH_MAP: return BOROUGH_MAP[d]
-    m = re.match(r"^([A-Z]{1,2}\d)", d)
-    return BOROUGH_MAP.get(m.group(1), "") if m else ""
-
 def is_london(pc):
-    d = postcode_district(pc)
-    if d in LONDON_POSTCODE_PREFIXES: return True
-    m = re.match(r"^([A-Z]{1,2}\d)", d)
-    return bool(m and m.group(1) in LONDON_POSTCODE_PREFIXES)
+    return postcode_district(pc) in LONDON_PREFIXES
 
-# ---------------------------------------------------------------- CQC
+# Substrings in CQC service-type strings that mean "doctor-led service".
+PRIVATE_DOCTOR_SERVICES = [
+    "doctors consultation service",
+    "doctors treatment service",
+    "diagnostic and screening procedures",
+    "hospital services for people with mental",
+    "long term conditions services",
+    "mobile doctors service",
+    "rehabilitation services",
+    "primary medical services",
+    "family planning",
+    "termination of pregnancy",
+]
+
+NOT_CLINIC_SERVICES = [
+    "residential",
+    "accommodation for persons",
+    "nursing care",
+    "care home",
+    "personal care",
+    "supported living",
+    "domiciliary",
+    "ambulance",
+]
+
+HARD_DROP_NAME_RE = re.compile(
+    r"\b(?:dental(?!\s*and\s*medical)|dentist|orthodont|pharmacy|chemist|"
+    r"nursing home|care home|residential home|extra care|hospice|"
+    r"veterinary|funeral|optician|optometr|"
+    r"chiropract|osteopath|reflexolog|"
+    r"audiology only|tattoo|piercing|"
+    r"detoxification|substance misuse|drug treatment)\b",
+    re.IGNORECASE,
+)
+
+SPECIALTY_PATTERNS = [
+    ("cardiology",       r"\b(?:cardio|heart\s+(?:clinic|centre))\b"),
+    ("dermatology",      r"\b(?:derma|skin\s+(?:clinic|centre))\b"),
+    ("paediatrics",      r"\b(?:paediatric|child(?:ren)?'?s?\s+(?:clinic|hospital))\b"),
+    ("orthopaedics",     r"\b(?:orthop|joint\s+clinic|spine\s+clinic|bone\s+clinic)\b"),
+    ("ophthalmology",    r"\b(?:ophthalm|eye\s+(?:clinic|hospital)|vision)\b"),
+    ("ent",              r"\b(?:ent\b|ear,?\s*nose|otolaryng)\b"),
+    ("gynaecology",      r"\b(?:gynaec|women'?s\s+health|fertility|obstetric)\b"),
+    ("psychiatry",       r"\b(?:psychiatr|mental\s+health|psycholog|wellbeing\s+clinic)\b"),
+    ("cosmetic",         r"\b(?:cosmet|aesthet|plastic\s+surger|botox|filler)\b"),
+    ("urology",          r"\burolog|men'?s\s+health\b"),
+    ("oncology",         r"\b(?:oncolog|cancer\s+(?:clinic|centre))\b"),
+    ("gastroenterology", r"\b(?:gastroenter|endoscopy)\b"),
+    ("endocrinology",    r"\b(?:endocrin|diabetes\s+clinic|thyroid)\b"),
+    ("rheumatology",     r"\b(?:rheumatolog|arthritis)\b"),
+    ("neurology",        r"\b(?:neurolog|brain\s+clinic)\b"),
+    ("private gp",       r"\b(?:general\s+practi|gp\s+(?:clinic|service|surgery)|private\s+gp|family\s+(?:doctor|practice))\b"),
+    ("diagnostics",      r"\b(?:diagnos|imaging|\bmri\b|\bct\s+scan\b|radiolog|ultrasound)\b"),
+    ("travel",           r"\btravel\s+(?:clinic|health|medicine)\b"),
+    ("sexual health",    r"\b(?:sexual\s+health|sti\s+(?:clinic|test))\b"),
+    ("physiotherapy",    r"\b(?:physiother|sports\s+(?:medicine|clinic))\b"),
+    ("hospital",         r"\b(?:private\s+hospital|the\s+\w+\s+hospital)\b"),
+]
+
+def classify_specialty(name, services_blob):
+    blob = f"{name} {services_blob}".lower()
+    found = []
+    for tag, pat in SPECIALTY_PATTERNS:
+        if re.search(pat, blob, re.IGNORECASE):
+            found.append(tag)
+    return found or ["general"]
+
+# ---------------------------------------------------------------- HTTP
 
 def cqc_get(path, params, key, retries=3):
-    """Fetch JSON from the CQC API with exponential backoff."""
-    url = f"{CQC_BASE}{path}?{urllib.parse.urlencode(params)}"
+    url = f"{CQC_BASE}{path}?{urllib.parse.urlencode(params)}" if params else f"{CQC_BASE}{path}"
     headers = {
         "Ocp-Apim-Subscription-Key": key,
         "Accept": "application/json",
-        "User-Agent": "londongp.directory/1.0 (private-clinics fetcher)",
+        "User-Agent": "londongp.directory/1.0 (private-clinics)",
     }
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=20) as r:
+            with urllib.request.urlopen(req, timeout=30) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             if e.code in (429, 503) and attempt < retries - 1:
-                wait = 2 ** attempt
-                print(f"  CQC {e.code} — retrying in {wait}s")
-                time.sleep(wait)
-                continue
+                time.sleep(2 ** attempt); continue
+            if e.code == 404: return None
             raise
-        except urllib.error.URLError as e:
+        except urllib.error.URLError:
             if attempt < retries - 1:
-                time.sleep(2)
-                continue
+                time.sleep(2); continue
             raise
+    return None
 
-def fetch_london_locations(key):
-    """
-    Walk the CQC /locations endpoint, paginating through ALL UK locations
-    and filtering to London by postcode prefix client-side.
+# ---------------------------------------------------------------- discovery
 
-    The CQC public API doesn't accept geographic region filters in the
-    location index endpoint, so we have to pull everything and filter
-    locally. ~50k locations total, takes 5–10 minutes.
-    """
-    print("Fetching CQC locations index (this takes 5–10 minutes)…")
+def paginate_london(key):
+    print("Paginating CQC /locations (1-2 min)…")
     page = 1
     per_page = 1000
-    london_locations = []
-    total_seen = 0
-    diag_dumped = False
+    candidates = []
+    total = 0
     while True:
         data = cqc_get("/locations", {"page": page, "perPage": per_page}, key)
-        items = data.get("locations", [])
-        # Diagnostic: show what fields summary records actually have on page 1
-        if not diag_dumped and items:
-            diag_dumped = True
-            print(f"DIAG: sample summary record keys: {sorted(items[0].keys())}")
-            print(f"DIAG: sample postcode='{items[0].get('postalCode') or items[0].get('postCode') or '?'}', "
-                  f"name='{items[0].get('name') or items[0].get('locationName') or '?'}'")
-        total_seen += len(items)
-        # Filter to London postcodes — locations summary include postalCode
-        london_items = []
+        if not data: break
+        items = data.get("locations", []) or []
+        if not items: break
+        total += len(items)
         for loc in items:
-            pc = loc.get("postalCode") or loc.get("postCode") or ""
-            if not is_london(pc):
-                continue
-            # Try several candidate field names for the location name
-            name = (loc.get("name") or loc.get("locationName")
-                    or loc.get("organisationName") or "")
-            if not looks_like_medical_doctor(name):
-                continue
-            london_items.append(loc)
-        london_locations.extend(london_items)
+            if loc.get("deregistrationDate"): continue
+            pc = loc.get("postalCode") or ""
+            if not is_london(pc): continue
+            name = loc.get("locationName") or loc.get("name") or ""
+            if HARD_DROP_NAME_RE.search(name): continue
+            candidates.append(loc)
         total_pages = data.get("totalPages", 1)
-        print(f"  page {page}/{total_pages} — {len(items)} fetched, "
-              f"{len(london_items)} London ({len(london_locations)} cumulative)")
+        if page % 10 == 0 or page >= total_pages:
+            print(f"  page {page}/{total_pages} — London candidates: {len(candidates)}")
         if page >= total_pages: break
         page += 1
-        time.sleep(0.2)
-    print(f"Scanned {total_seen} UK locations, kept {len(london_locations)} London ones.")
-    return london_locations
+        time.sleep(0.15)
+    print(f"\n{len(candidates)} London candidates after summary filter.\n")
+    return candidates
 
-def fetch_location_detail(location_id, key):
-    """Get full record for a single location (services, ratings, address)."""
-    return cqc_get(f"/locations/{location_id}", {}, key)
+def services_blob(detail):
+    parts = []
+    for k in ("gacServiceTypes", "regulatedActivities", "specialisms"):
+        v = detail.get(k)
+        if isinstance(v, list):
+            for it in v:
+                if isinstance(it, str):
+                    parts.append(it)
+                elif isinstance(it, dict):
+                    parts.append(it.get("name") or it.get("description") or "")
+    return " | ".join(parts).lower()
+
+def build_records(candidates, key, nhs_ods, workers=10):
+    print(f"Fetching CQC detail for {len(candidates)} candidates ({workers} workers)…")
+    records = []
+    rejected_nhs = 0
+    rejected_services = 0
+    rejected_not_clinic = 0
+    done = 0
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {}
+        for c in candidates:
+            loc_id = c.get("locationId")
+            if not loc_id: continue
+            futures[pool.submit(cqc_get, f"/locations/{loc_id}", None, key)] = c
+        for fut in as_completed(futures):
+            c = futures[fut]
+            done += 1
+            try:
+                d = fut.result()
+            except Exception:
+                d = None
+            if not d:
+                continue
+
+            ods = (d.get("odsCode") or "").strip().upper()
+            if ods and ods in nhs_ods:
+                rejected_nhs += 1
+                continue
+
+            blob = services_blob(d)
+            if any(t in blob for t in NOT_CLINIC_SERVICES):
+                if not any(t in blob for t in PRIVATE_DOCTOR_SERVICES):
+                    rejected_not_clinic += 1
+                    continue
+            if not any(t in blob for t in PRIVATE_DOCTOR_SERVICES):
+                rejected_services += 1
+                continue
+
+            name_raw = (d.get("name") or d.get("locationName")
+                        or d.get("providerName") or "").strip()
+            if not name_raw: continue
+            name = name_raw.title() if name_raw.isupper() else name_raw
+
+            pc = (d.get("postalCode") or "").strip().upper()
+            if not is_london(pc): continue
+
+            addr_parts = [
+                d.get("postalAddressLine1") or "",
+                d.get("postalAddressLine2") or "",
+                d.get("postalAddressTownCity") or "",
+                d.get("postalAddressCounty") or "",
+            ]
+            addr = ", ".join(p for p in addr_parts if p)
+            phone = (d.get("mainPhoneNumber") or "").strip()
+            website = (d.get("website") or "").strip()
+
+            specialties = classify_specialty(name, blob)
+
+            rating = ((d.get("currentRatings", {}) or {})
+                      .get("overall", {}) or {}).get("rating", "")
+            loc_id = d.get("locationId", "")
+            cqc_url = f"https://www.cqc.org.uk/location/{loc_id}" if loc_id else ""
+
+            records.append({
+                "ods_code":    ods,
+                "cqc_id":      loc_id,
+                "name":        name,
+                "address":     addr,
+                "postcode":    pc,
+                "phone":       phone,
+                "website":     website,
+                "type":        "Private",
+                "specialties": specialties,
+                "cqc_rating":  rating,
+                "cqc_url":     cqc_url,
+            })
+
+            if done % 200 == 0 or done == len(futures):
+                print(f"  {done}/{len(futures)} — kept {len(records)} so far")
+
+    print(f"\nRejection summary:")
+    print(f"  NHS (in gps.json):              {rejected_nhs}")
+    print(f"  services not doctor-led:        {rejected_services}")
+    print(f"  not a clinic (residential etc): {rejected_not_clinic}")
+    print(f"  KEPT:                           {len(records)}\n")
+    return records
 
 # ---------------------------------------------------------------- main
 
 def main():
-    parser = argparse.ArgumentParser(description="Fetch London private clinics from CQC")
-    parser.add_argument("--key", default=os.environ.get("CQC_KEY"),
-        help="CQC API subscription key. Defaults to $CQC_KEY env var.")
-    parser.add_argument("--limit", type=int, default=0,
-        help="Stop after N detailed lookups (for testing). 0 = no limit.")
-    args = parser.parse_args()
+    key = os.environ.get("CQC_KEY")
+    if not key:
+        sys.exit("Need CQC_KEY env var.")
 
-    if not args.key:
-        sys.exit("Need a CQC API key. Set $CQC_KEY or pass --key=...\n"
-                 "Register free at https://www.cqc.org.uk/about-us/transparency/using-cqc-data")
-
-    # Load existing NHS GP ODS codes so we can exclude them.
-    nhs_ods_codes = set()
+    nhs_ods = set()
     if GPS_JSON.exists():
         try:
-            for d in json.loads(GPS_JSON.read_text()):
-                code = d.get("ods_code") or d.get("o")
-                if code: nhs_ods_codes.add(code.upper())
+            for r in json.loads(GPS_JSON.read_text()):
+                code = (r.get("ods_code") or "").upper()
+                if code: nhs_ods.add(code)
         except Exception as e:
-            print(f"  warning: couldn't parse gps.json — {e}")
-    print(f"Excluding {len(nhs_ods_codes)} NHS GP ODS codes already in gps.json.")
+            print(f"WARN: couldn't parse gps.json — {e}")
+    print(f"Will exclude {len(nhs_ods)} NHS GP ODS codes.\n")
 
-    # 1. Pull all London CQC locations (summary records).
-    summary = fetch_london_locations(args.key)
-    print(f"\n{len(summary)} CQC locations in London.")
+    candidates = paginate_london(key)
+    records = build_records(candidates, key, nhs_ods)
 
-    # 2. Filter summary records to candidates worth looking up in detail.
-    #    We only want primary-care / consultant-led / specialist private
-    #    healthcare. Drop care homes, dental-only, ambulance services, etc.
-    candidates = []
-    for loc in summary:
-        loc_id = loc.get("locationId") or loc.get("locationID")
-        if not loc_id: continue
-        # CQC marks deregistered locations explicitly.
-        if loc.get("deregistrationDate"): continue
-        candidates.append(loc_id)
+    by_specialty = Counter()
+    for r in records:
+        for s in r["specialties"]:
+            by_specialty[s] += 1
+    print("Records by specialty:")
+    for sp, n in by_specialty.most_common():
+        print(f"  {sp:20s} {n}")
 
-    if args.limit:
-        candidates = candidates[:args.limit]
-    # Hard cap — if name pre-filter hasn't trimmed enough, don't blow the budget
-    HARD_CAP = 5000
-    if len(candidates) > HARD_CAP:
-        print(f"WARNING: {len(candidates)} candidates after name filter — capping at {HARD_CAP}")
-        candidates = candidates[:HARD_CAP]
-    print(f"{len(candidates)} active candidate locations — fetching details…")
-
-    # Service-type filtering — two-stage:
-    #   1) DROP if any service marks this as accommodation / care home /
-    #      personal-care provider (those aren't doctor clinics even if the
-    #      location name looks generic).
-    #   2) KEEP if any service contains a doctor / clinical-treatment term.
-    #   3) Otherwise reject (conservative default).
-    SERVICE_DROP_TERMS = [
-        "residential home", "accommodation for persons", "personal care",
-        "nursing care", "care home", "domiciliary care",
-        "supported living", "shared lives",
-    ]
-    SERVICE_KEEP_TERMS = [
-        "doctor", "treatment of disease", "consultation",
-        "specialist college", "diagnostic and screening",
-        "long term conditions", "mobile doctor", "rehabilitation",
-        "acute services", "hospital services for", "primary medical",
-        "surgical procedure", "family planning",
-    ]
-    def matches_service(services_list):
-        text = " ".join(services_list).lower()
-        if any(term in text for term in SERVICE_DROP_TERMS):
-            return False
-        return any(term in text for term in SERVICE_KEEP_TERMS)
-
-    # 3. Fetch detail for each candidate — concurrent for speed (~8x faster).
-    out = []
-    fetched = 0
-    def _fetch_one(loc_id):
-        try:
-            return loc_id, fetch_location_detail(loc_id, args.key)
-        except Exception as e:
-            return loc_id, e
-
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        futures = {ex.submit(_fetch_one, loc_id): loc_id for loc_id in candidates}
-        for fut in as_completed(futures):
-            fetched += 1
-            loc_id, d = fut.result()
-            if isinstance(d, Exception):
-                continue
-            if fetched % 200 == 0:
-                print(f"  {fetched}/{len(candidates)} fetched, {len(out)} kept so far")
-            if not d:
-                continue
-
-            ods = (d.get("odsCode") or "").upper().strip()
-            if ods and ods in nhs_ods_codes:
-                continue
-
-            pc = (d.get("postalCode") or "").strip()
-            if not is_london(pc):
-                continue
-
-            services = []
-            for k in ("gacServiceTypes", "serviceTypes", "regulatedActivities"):
-                v = d.get(k)
-                if isinstance(v, list):
-                    for item in v:
-                        if isinstance(item, dict):
-                            services.append(item.get("name", ""))
-                        elif isinstance(item, str):
-                            services.append(item)
-            if not matches_service(services):
-                continue
-
-        name = (d.get("name") or "").strip()
-        addr_lines = [d.get("postalAddressLine1",""), d.get("postalAddressLine2","")]
-        city = d.get("postalAddressTownCity", "London")
-        address = ", ".join(filter(None, addr_lines + [city]))
-        phone = (d.get("mainPhoneNumber") or "").strip()
-        website = (d.get("website") or "").strip()
-        rating = ((d.get("currentRatings", {}) or {}).get("overall", {}) or {}).get("rating", "")
-        cqc_url = f"https://www.cqc.org.uk/location/{loc_id}"
-        lat = (d.get("onspdLatitude") or
-               (d.get("geolocation") or {}).get("latitude"))
-        lng = (d.get("onspdLongitude") or
-               (d.get("geolocation") or {}).get("longitude"))
-
-        out.append({
-            "id":     loc_id,
-            "n":      name,
-            "a":      address,
-            "p":      pc,
-            "ph":     phone,
-            "web":    website,
-            "cqc":    rating,
-            "cu":     cqc_url,
-            "ar":     borough_for_postcode(pc),
-            "la":     round(float(lat), 5) if lat else None,
-            "ln":     round(float(lng), 5) if lng else None,
-            "specialities": classify_specialities(name, services),
-            "services":     services,
-            "private":      True,
-        })
-
-    print(f"\nKept {len(out)} private London clinics after all filters.")
-
-    # 4. Sort and write.
-    out.sort(key=lambda r: (r.get("ar", ""), r.get("n", "").lower()))
-    OUT_JSON.write_text(json.dumps(out, indent=2))
-    print(f"Wrote {OUT_JSON.name} ({OUT_JSON.stat().st_size//1024} KB)")
-
-    # 5. Quick summary by speciality.
-    spec_counts = defaultdict(int)
-    for r in out:
-        for s in r["specialities"]: spec_counts[s] += 1
-    print("\nBy speciality:")
-    for s, c in sorted(spec_counts.items(), key=lambda x: -x[1]):
-        print(f"  {s:20s} {c}")
-
-    # 6. Quick summary by borough.
-    borough_counts = defaultdict(int)
-    for r in out:
-        borough_counts[r.get("ar") or "(unknown)"] += 1
-    print("\nBy borough:")
-    for b, c in sorted(borough_counts.items(), key=lambda x: -x[1]):
-        print(f"  {b:25s} {c}")
+    OUT_JSON.write_text(json.dumps(records, indent=2))
+    print(f"\nWrote {OUT_JSON} — {len(records)} private clinics, "
+          f"{OUT_JSON.stat().st_size//1024} KB.")
 
 if __name__ == "__main__":
     main()
