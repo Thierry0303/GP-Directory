@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report a correction — London GP Directory</title>
+<meta name="description" content="Spot a wrong address, phone number or missing practice on London GP Directory? Tell us and we'll fix it on the next weekly refresh.">
+<link rel="canonical" href="https://londongp.directory/corrections.html">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#003087">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:16px;line-height:1.6}
+a{color:#003087;text-decoration:none}
+a:hover{text-decoration:underline}
+.hdr{background:#003087;color:#fff;padding:28px 24px;border-bottom:4px solid #0072CE}
+.hdr-in{max-width:780px;margin:0 auto}
+.crumbs{font-size:12px;opacity:.7;margin-bottom:10px}
+.crumbs a{color:#B5D4F4}
+.hdr h1{font-family:Georgia,serif;font-size:1.8rem;font-weight:700;line-height:1.15;margin-bottom:8px}
+.hdr h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
+.hdr p{opacity:.85;max-width:640px}
+.wrap{max-width:780px;margin:0 auto;padding:32px 24px}
+.wrap section{background:#fff;border:1px solid #e5e5e3;border-radius:12px;padding:24px 26px;margin-bottom:18px}
+.wrap h2{font-family:Georgia,serif;color:#003087;font-size:1.2rem;margin-bottom:10px}
+.wrap p{margin-bottom:14px;color:#333}
+.wrap ul{margin:8px 0 14px 22px;color:#333}
+.wrap li{margin-bottom:6px}
+.email-box{background:#EDF4FC;border:1px solid #B5D4F4;border-radius:10px;padding:14px 18px;font-size:15px;display:flex;align-items:center;gap:10px;margin-top:6px}
+.email-box a{font-weight:600}
+.tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 9px;border-radius:99px;background:#EDF4FC;color:#003087;margin-right:6px}
+footer{background:#003087;color:rgba(255,255,255,.55);text-align:center;padding:18px 24px;font-size:12px}
+footer a{color:rgba(255,255,255,.85)}
+@media(max-width:600px){
+  .hdr{padding:20px 16px}
+  .hdr h1{font-size:1.4rem}
+  .wrap{padding:20px 16px}
+  .wrap section{padding:18px 18px}
+}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <div class="crumbs"><a href="/">Home</a> &rsaquo; <strong>Report a correction</strong></div>
+    <h1>Report a <em>correction</em></h1>
+    <p>Spotted a wrong phone number, a missing practice, a closed surgery still listed, or a borough that's not quite right? Let us know and we'll fix it on the next weekly refresh.</p>
+  </div>
+</header>
+<main class="wrap">
+
+  <section>
+    <h2>The fastest way: email us</h2>
+    <p>Drop a short email describing what's wrong and where you saw it. Include a link to the page if you can.</p>
+    <div class="email-box">
+      <span>📧</span>
+      <a href="mailto:corrections@londongp.directory?subject=London%20GP%20Directory%20correction">corrections@londongp.directory</a>
+    </div>
+    <p style="margin-top:14px;font-size:14px;color:#666;">We read every email — usually within a day.</p>
+  </section>
+
+  <section>
+    <h2>What to tell us</h2>
+    <p>Whichever of these you've got is helpful:</p>
+    <ul>
+      <li><span class="tag">Practice</span> Practice name + postcode (so we can find the right record).</li>
+      <li><span class="tag">What's wrong</span> One or two sentences — wrong phone, wrong address, missing practice, listed under wrong borough, etc.</li>
+      <li><span class="tag">Source</span> A link to the practice's NHS.uk page or CQC profile if you have it. We rely on those for the canonical answer.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where our data comes from</h2>
+    <p>NHS practice phone numbers and addresses are pulled directly from the <strong>NHS ODS FHIR API</strong> (the same source NHS.uk uses). Private clinic data is pulled from the <strong>CQC public API</strong>. Both are refreshed every Monday, so corrections you send before then will land on the next refresh automatically.</p>
+    <p>If a practice has recently moved or changed phone number and you can't see the update yet, please give it a week — NHS ODS sometimes lags behind real-life changes. If it's still wrong after that, email us and we'll investigate.</p>
+  </section>
+
+  <section>
+    <h2>For practice managers</h2>
+    <p>If you manage an NHS GP practice and want to update your details, the canonical place to do it is the <a href="https://digital.nhs.uk/services/organisation-data-service" target="_blank">NHS Organisation Data Service</a>. Once it's updated there, it'll flow through to our site (and to NHS.uk) on the next refresh.</p>
+    <p>For private clinics, updates flow from the <a href="https://www.cqc.org.uk" target="_blank">CQC register</a>. If your CQC details are correct but we've classified you wrongly (e.g. wrong specialty or wrong borough), email us and we'll patch it manually.</p>
+  </section>
+
+  <section>
+    <h2>Removing a practice</h2>
+    <p>If your practice has closed, merged with another, or no longer accepts new patients, please email us so we can either remove the listing or flag it correctly.</p>
+  </section>
+
+</main>
+<footer>
+  London GP Directory &middot; Data: NHS ODS FHIR API + CQC public API &middot;
+  <a href="/">All London</a> &middot;
+  <a href="/about.html">About</a> &middot;
+  <a href="/methodology.html">Methodology</a> &middot;
+  <a href="/sources.html">Sources</a>
+</footer>
+</body>
+</html>
