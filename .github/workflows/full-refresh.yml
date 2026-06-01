@@ -29,6 +29,8 @@ jobs:
         run: python build_borough_pages.py
       - name: Build practice pages
         run: python build_practice_pages.py
+      - name: Build specialty hub pages
+        run: python build_specialty_pages.py
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
