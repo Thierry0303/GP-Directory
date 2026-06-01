@@ -1,403 +1,379 @@
 #!/usr/bin/env python3
 """
-Build one borough hub page per London borough for londongp.directory.
+Build per-borough hub pages at /practice/{borough-slug}/index.html.
 
-Drop this in the repo root next to refresh_nhs_data.py and run:
+Each page now mirrors the homepage:
+  - NHS / Private / All segmented tabs with live counts (borough-scoped).
+  - Specialty chips when Private is active.
+  - Same card rendering as homepage (NHS or Private with appropriate badges).
+  - SEO-tuned title/description/JSON-LD CollectionPage for the borough.
 
-    python3 build_borough_pages.py
-
-It uses the SAME merged dataset that refresh_nhs_data.py produces, so you
-should run this AFTER refresh_nhs_data.py (or wire it into the same
-GitHub Action). The script will:
-
-  1. Load gps.json (base data) and re-fetch live ODS data the same way
-     refresh_nhs_data.py does, OR re-use a `merged.json` cache if present.
-  2. Group practices by borough.
-  3. Write `practice/{borough-slug}/index.html` for each of the 32+
-     London boroughs.
-  4. Update sitemap.xml with the new borough URLs.
-
-Each borough page is a static, server-rendered HTML page with proper
-title/description/canonical/OG/JSON-LD — so it's directly indexable by
-Google and ranks for queries like "camden GP", "lambeth GP",
-"southwark GP practice".
-
-Why this matters
-----------------
-The site currently has ONE indexed URL (the homepage). GSC shows it at
-position 10 with ~5.9% CTR — high CTR but no scale. Per-borough pages
-multiply the surface area roughly 32x without changing the data model.
-Per-practice pages (a separate generator) take it further to ~530.
+Reads merged.json (combined NHS + Private dataset produced by
+merge_into_dataset.py).
 """
 
-import json, re, sys, html, os
+import json, re, sys
+from collections import Counter, defaultdict
+from datetime import datetime
 from pathlib import Path
-from datetime import datetime, timezone
-from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parent
-GPS_JSON = ROOT / "gps.json"
-MERGED_JSON = ROOT / "merged.json"   # optional cache; produced below if missing
+MERGED_JSON = ROOT / "merged.json"
 OUT_DIR = ROOT / "practice"
-SITEMAP_XML = ROOT / "sitemap.xml"
+SITEMAP = ROOT / "sitemap.xml"
 
-SITE_URL = "https://londongp.directory"
-SITE_NAME = "London GP Directory"
+BASE_URL = "https://londongp.directory"
 
-# ---- Borough mapping (mirrors refresh_nhs_data.py BOROUGH_MAP) ----
-# Falls back to recomputing from postcode if a record's `ar` field is empty.
-BOROUGH_MAP = {
-    "E10":"Waltham Forest","E11":"Redbridge","E12":"Newham","E13":"Newham",
-    "E14":"Tower Hamlets","E15":"Newham","E16":"Newham","E17":"Waltham Forest",
-    "E18":"Redbridge","E20":"Newham",
-    "EC1A":"City of London","EC1R":"Islington","EC1V":"Islington",
-    "N10":"Haringey","N11":"Barnet","N12":"Barnet","N13":"Enfield",
-    "N14":"Enfield","N15":"Haringey","N16":"Hackney","N17":"Haringey",
-    "N18":"Enfield","N19":"Islington","N20":"Barnet","N21":"Enfield","N22":"Haringey",
-    "NW1":"Camden","NW2":"Brent","NW3":"Camden","NW4":"Barnet","NW5":"Camden",
-    "NW6":"Brent","NW7":"Barnet","NW8":"Westminster","NW9":"Brent",
-    "NW10":"Brent","NW11":"Barnet",
-    "SE1":"Southwark","SE2":"Greenwich","SE3":"Greenwich","SE4":"Lewisham",
-    "SE5":"Southwark","SE6":"Lewisham","SE7":"Greenwich","SE8":"Lewisham",
-    "SE9":"Greenwich","SE10":"Greenwich","SE11":"Lambeth","SE12":"Lewisham",
-    "SE13":"Lewisham","SE14":"Lewisham","SE15":"Southwark","SE16":"Southwark",
-    "SE17":"Southwark","SE18":"Greenwich","SE19":"Bromley","SE20":"Bromley",
-    "SE21":"Southwark","SE22":"Southwark","SE23":"Lewisham","SE24":"Lambeth",
-    "SE25":"Croydon","SE26":"Lewisham","SE27":"Lambeth","SE28":"Greenwich",
-    "SW1P":"Westminster","SW1V":"Westminster","SW1W":"Westminster","SW1X":"Westminster",
-    "SW2":"Lambeth","SW3":"Kensington & Chelsea","SW4":"Lambeth",
-    "SW5":"Kensington & Chelsea","SW6":"Hammersmith & Fulham",
-    "SW7":"Kensington & Chelsea","SW8":"Lambeth","SW9":"Lambeth",
-    "SW10":"Kensington & Chelsea","SW11":"Wandsworth","SW12":"Wandsworth",
-    "SW13":"Richmond","SW14":"Richmond","SW15":"Wandsworth","SW16":"Lambeth",
-    "SW17":"Wandsworth","SW18":"Wandsworth","SW19":"Merton","SW20":"Merton",
-    "W10":"Kensington & Chelsea","W11":"Kensington & Chelsea",
-    "W12":"Hammersmith & Fulham","W13":"Ealing","W14":"Hammersmith & Fulham",
-    "WC1B":"Camden","WC1E":"Camden","WC1N":"Camden","WC1X":"Islington",
-    "WC2A":"Camden","WC2B":"Westminster","WC2H":"Westminster","WC2N":"Westminster",
-}
-
-def slug(s):
-    s = (s or "").lower()
-    s = re.sub(r"&", "and", s)
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return s or "unknown"
-
-def get_district(pc):
-    if not pc: return ""
-    pc = pc.strip().upper()
-    if " " in pc:
-        return pc.split()[0]
-    pc = pc.replace(" ", "")
-    return pc[:-3] if len(pc) >= 5 else pc
-
-def borough_for(record):
-    """Use record.ar if present; else fall back to postcode lookup."""
-    ar = record.get("ar")
-    if ar:
-        return ar
-    d = get_district(record.get("p", ""))
-    if d in BOROUGH_MAP:
-        return BOROUGH_MAP[d]
-    m = re.match(r"^([A-Z]{1,2}\d)", d)
-    return BOROUGH_MAP.get(m.group(1), "") if m else ""
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower().replace("&", "and")).strip("-")
 
 def cqc_class(r):
-    return {
-        "Outstanding": "cqc-outstanding",
-        "Good": "cqc-good",
-        "Requires improvement": "cqc-ri",
-        "Inadequate": "cqc-inadequate",
-    }.get(r, "cqc-none")
+    if not r: return "cqc-N"
+    if r == "Outstanding": return "cqc-O"
+    if r == "Good":        return "cqc-G"
+    if r.startswith("Requires"): return "cqc-R"
+    if r == "Inadequate":  return "cqc-I"
+    return "cqc-N"
 
-# ---- HTML --------------------------------------------------------------
+def render_card(d):
+    rec_type = d.get("type") or "NHS"
+    is_priv = rec_type == "Private"
+    cc = cqc_class(d.get("cqc"))
+    cqc_label = d.get("cqc") or "Not rated"
+    name = d.get("n", "")
+    addr = d.get("a", "")
+    pc = d.get("p", "")
+    ph = d.get("ph", "")
+    o = d.get("o", "")
+    ar = d.get("ar", "")
+    specs = d.get("specs", []) or []
+    web = d.get("web", "")
 
-CSS = """
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.55}
-a{text-decoration:none;color:inherit}
-.hdr{background:#003087;color:#fff;border-bottom:4px solid #0072CE;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.hdr-logo{font-family:Georgia,serif;font-size:1.3rem;font-weight:700}
-.hdr-logo em{color:#B5D4F4;font-style:italic;font-weight:400}
-.hdr nav{display:flex;gap:14px;font-size:.9rem;opacity:.85}
-.crumbs{padding:12px 24px;font-size:.85rem;color:#888;background:#fff;border-bottom:1px solid #e5e5e3}
-.crumbs a{color:#003087;font-weight:500}
-.hero{background:#003087;color:#fff;padding:40px 24px 32px}
-.hero-inner{max-width:1200px;margin:0 auto}
-.eyebrow{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#B5D4F4;font-weight:600;margin-bottom:10px}
-h1{font-family:Georgia,serif;font-size:clamp(2rem,4.5vw,3rem);font-weight:700;line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px}
-h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
-.hero-sub{color:rgba(255,255,255,.78);max-width:600px;margin-bottom:24px}
-.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
-.hero-stat-num{font-size:1.8rem;font-weight:300;color:#fff;line-height:1;letter-spacing:-0.03em}
-.hero-stat-label{font-size:.7rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
-main{max-width:1200px;margin:0 auto;padding:32px 24px 56px}
-.intro{font-size:.95rem;color:#555;max-width:720px;margin-bottom:28px}
-h2{font-family:Georgia,serif;font-size:1.4rem;font-weight:700;color:#003087;margin:28px 0 14px}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
-.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s}
-.card:hover{border-color:#0072CE;box-shadow:0 3px 14px rgba(0,48,135,.08)}
-.card-name{font-family:Georgia,serif;font-weight:700;font-size:14px;line-height:1.3;color:#003087;margin-bottom:6px}
-.card-meta{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
-.card-cqc{display:inline-block;font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:99px;margin-bottom:8px;align-self:flex-start;text-transform:uppercase;letter-spacing:.04em}
-.cqc-outstanding{background:#E1F5EE;color:#0F6E56}
-.cqc-good{background:#D8EFE3;color:#007F3B}
-.cqc-ri{background:#FAEEDA;color:#BA7517}
-.cqc-inadequate{background:#FCEBEB;color:#A32D2D}
-.cqc-none{background:#f0f0ee;color:#777}
-.card-stats{display:flex;gap:14px;margin-top:auto;padding-top:10px;border-top:1px solid #f0f0ee;font-size:11px;color:#888}
-.card-stat strong{display:block;font-size:13px;color:#222;font-weight:600}
-.card-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
-.pill{font-size:10.5px;padding:3px 8px;border-radius:6px;font-weight:600;background:#EDF4FC;color:#0072CE}
-.empty{color:#888;padding:24px 0}
-footer{background:#003087;color:rgba(255,255,255,.55);padding:18px 24px;text-align:center;font-size:.78rem}
-footer a{color:rgba(255,255,255,.85)}
-@media(max-width:600px){.hero{padding:28px 16px 24px}main{padding:22px 16px 40px}.hdr,.crumbs,footer{padding-left:16px;padding-right:16px}}
-"""
+    type_badge = (f'<span class="type-badge t-priv">Private</span>'
+                  if is_priv else
+                  f'<span class="type-badge t-nhs">NHS</span>')
+    spec_badges = ""
+    if is_priv and specs:
+        spec_badges = "".join(
+            f'<span class="spec-badge">{s}</span>' for s in specs[:2]
+        )
 
-def render_card(p):
-    name = html.escape(str(p.get("n", "Unnamed practice")))
-    addr = html.escape(", ".join(b for b in (p.get("a", ""), p.get("p", "")) if b))
-    pcn  = html.escape(str(p.get("pcn", "")))
-    cqc  = p.get("cqc") or ""
-    s    = p.get("s")
-    c    = p.get("c")
-    ph   = p.get("ph", "")
-    ods  = p.get("o", "")
+    metrics = ""
+    if not is_priv:
+        s = d.get("s")
+        c = d.get("c")
+        s_bar = f'<div class="m-bar" style="width:{s}%;background:#0072CE"></div>' if s else ""
+        c_bar = f'<div class="m-bar" style="width:{c}%;background:#0F6E56"></div>' if c else ""
+        s_val = f'<div class="m-val">{s:.1f}%</div>' if s else '<div class="m-na">—</div>'
+        c_val = f'<div class="m-val">{c:.1f}%</div>' if c else '<div class="m-na">—</div>'
+        metrics = f"""<div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">{s_bar}</div>{s_val}</div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">{c_bar}</div>{c_val}</div>
+        </div>"""
 
-    cqc_html = f'<span class="card-cqc {cqc_class(cqc)}">{html.escape(cqc)}</span>' if cqc else ''
-    stats = []
-    if s: stats.append(f'<div class="card-stat">Patient<strong>{round(s,1)}%</strong></div>')
-    if c: stats.append(f'<div class="card-stat">Contact<strong>{round(c,1)}%</strong></div>')
-    stats_html = f'<div class="card-stats">{"".join(stats)}</div>' if stats else ''
+    phone_html = (f'<a class="card-phone" href="tel:{ph.replace(" ","")}">📞 {ph}</a>'
+                  if ph else "<span></span>")
+    cqc_btn = (f'<a class="pill pill-cqc" href="{d.get("cu","")}" target="_blank">CQC</a>'
+               if d.get("cu") else "")
+    if is_priv:
+        web_btn = f'<a class="pill pill-web" href="{web}" target="_blank">Website →</a>' if web else ""
+        actions = f"{web_btn}{cqc_btn}"
+    else:
+        actions = (
+            f'<a class="pill pill-reg" href="https://gp-registration.nhs.uk/{o}" target="_blank">Register →</a>'
+            f'{cqc_btn}'
+            f'<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X{o}" target="_blank">NHS</a>'
+        )
 
-    actions = []
-    if ods:
-        actions.append(f'<a class="pill" href="https://www.nhs.uk/services/gp-surgery/-/X{ods}" target="_blank" rel="noopener">NHS profile</a>')
-        actions.append(f'<a class="pill" href="https://gp-registration.nhs.uk/{ods}" target="_blank" rel="noopener">Register</a>')
-    if ph:
-        actions.append(f'<a class="pill" href="tel:{ph.replace(" ", "")}">Call</a>')
-    actions_html = f'<div class="card-actions">{"".join(actions)}</div>' if actions else ''
+    return f"""<div class="card" data-type="{rec_type}" data-specs="{','.join(specs)}">
+      <div class="card-top">
+        <div class="card-name">{name}</div>
+        <span class="cqc {cc}">{cqc_label}</span>
+      </div>
+      <div class="card-badges">{type_badge}{spec_badges}</div>
+      <div class="card-addr">{addr}{', ' + pc if pc else ''}</div>
+      {metrics}
+      <div class="card-foot">
+        {phone_html}
+        <div class="actions">{actions}</div>
+      </div>
+    </div>"""
 
-    return f'''<div class="card">
-  <div class="card-name">{name}</div>
-  {cqc_html}
-  <div class="card-meta">{addr}{(" &middot; " + pcn) if pcn else ""}</div>
-  {stats_html}
-  {actions_html}
-</div>'''
+def render_borough_page(borough, records, all_boroughs, today):
+    slug = slugify(borough)
+    nhs = [r for r in records if (r.get("type") or "NHS") == "NHS"]
+    priv = [r for r in records if r.get("type") == "Private"]
 
-def render_page(borough, practices):
-    n = len(practices)
-    cqc_count = defaultdict(int)
-    for p in practices:
-        cqc_count[p.get("cqc") or "Not rated"] += 1
-    outstanding = cqc_count.get("Outstanding", 0)
-    good = cqc_count.get("Good", 0)
-    avg_score = round(sum(p["s"] for p in practices if p.get("s"))
-                      / max(1, sum(1 for p in practices if p.get("s"))), 1) if any(p.get("s") for p in practices) else None
+    # Specialty counts (for Private chips)
+    spec_counts = Counter()
+    for r in priv:
+        for s in (r.get("specs") or []):
+            spec_counts[s] += 1
 
-    cqc_order = {"Outstanding": 0, "Good": 1, "Requires improvement": 2, "Inadequate": 3}
-    practices_sorted = sorted(
-        practices,
-        key=lambda p: (cqc_order.get(p.get("cqc"), 9), -(p.get("s") or 0), str(p.get("n","")).lower())
+    cards_html = "\n".join(render_card(r) for r in sorted(records, key=lambda x: x.get("n", "")))
+
+    chips_html = (
+        f'<button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">{len(priv)}</span></button>'
+        + "".join(
+            f'<button class="specialty-chip" data-spec="{sp}">{sp} <span class="specialty-chip-count">{n}</span></button>'
+            for sp, n in spec_counts.most_common()
+        )
     )
 
-    title = f"GP Practices in {borough} — Compare {n} NHS GPs by Patient Score"
-    desc  = (f"Free directory of all {n} NHS GP practices in {borough}, London. "
-             f"{outstanding + good} rated Good or Outstanding by CQC. Compare patient survey scores, "
-             f"contact ease and CQC ratings. Updated weekly from NHS ODS.")
-    canonical = f"{SITE_URL}/practice/{slug(borough)}/"
+    # Other borough nav
+    other_boroughs = sorted(b for b in all_boroughs if b != borough)
+    borough_links = " ".join(
+        f'<a href="/practice/{slugify(b)}/">{b}</a>' for b in other_boroughs[:8]
+    )
 
-    items = [{
-        "@type": "ListItem",
-        "position": i,
-        "url": f"https://www.nhs.uk/services/gp-surgery/-/X{p.get('o','')}",
-        "name": str(p.get("n", ""))
-    } for i, p in enumerate(practices_sorted, 1)]
+    avg_nhs_score = (sum(r.get("s") or 0 for r in nhs if r.get("s")) /
+                     max(1, sum(1 for r in nhs if r.get("s"))))
 
-    json_ld_collection = {
+    # Stats for the hero section
+    good_or_outstanding = sum(
+        1 for r in records
+        if (r.get("cqc") or "") in ("Good", "Outstanding")
+    )
+
+    json_ld = json.dumps({
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": title,
-        "url": canonical,
-        "description": desc,
-        "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/"},
-        "mainEntity": {
-            "@type": "ItemList",
-            "numberOfItems": n,
-            "itemListElement": items[:200]
-        }
-    }
-    json_ld_breadcrumb = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": SITE_NAME, "item": SITE_URL + "/"},
-            {"@type": "ListItem", "position": 2, "name": borough, "item": canonical}
-        ]
-    }
+        "name": f"NHS GP Practices & Private Clinics in {borough}",
+        "url": f"{BASE_URL}/practice/{slug}/",
+        "description": (f"Complete directory of NHS GP practices and private "
+                        f"healthcare clinics in {borough}, London — compare "
+                        f"by CQC rating, patient satisfaction and specialty."),
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "London GP Directory",
+            "url": BASE_URL,
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL},
+                {"@type": "ListItem", "position": 2, "name": "Boroughs",
+                 "item": f"{BASE_URL}/practice/"},
+                {"@type": "ListItem", "position": 3, "name": borough,
+                 "item": f"{BASE_URL}/practice/{slug}/"},
+            ],
+        },
+    }, separators=(",", ":"))
 
-    cards = "\n".join(render_card(p) for p in practices_sorted) or '<p class="empty">No practices found in this borough.</p>'
-    avg_html = f'<div><div class="hero-stat-num">{avg_score}%</div><div class="hero-stat-label">Avg patient score</div></div>' if avg_score else ''
-
-    return f"""<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#003087">
-<link rel="canonical" href="{canonical}">
-
+<title>GP Practices &amp; Private Clinics in {borough} — London GP Directory</title>
+<meta name="description" content="Compare {len(nhs)} NHS GP practices and {len(priv)} private clinics in {borough}, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<link rel="canonical" href="{BASE_URL}/practice/{slug}/">
+<meta property="og:title" content="GP Practices &amp; Private Clinics in {borough} — London GP Directory">
+<meta property="og:description" content="Compare {len(nhs)} NHS GPs and {len(priv)} private clinics in {borough}.">
+<meta property="og:url" content="{BASE_URL}/practice/{slug}/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{SITE_NAME}">
-<meta property="og:title" content="{html.escape(title)}">
-<meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:url" content="{canonical}">
-<meta property="og:locale" content="en_GB">
-<meta property="og:image" content="{SITE_URL}/og-image.png">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{html.escape(title)}">
-<meta name="twitter:description" content="{html.escape(desc)}">
-<meta name="twitter:image" content="{SITE_URL}/og-image.png">
-
-<script type="application/ld+json">{json.dumps(json_ld_collection, separators=(",",":"))}</script>
-<script type="application/ld+json">{json.dumps(json_ld_breadcrumb, separators=(",",":"))}</script>
-
-<style>{CSS}</style>
+<meta name="theme-color" content="#003087">
+<script type="application/ld+json">{json_ld}</script>
+<style>
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}}
+a{{text-decoration:none;color:inherit}}
+.hdr{{background:#003087;color:#fff;padding:24px;border-bottom:4px solid #0072CE}}
+.hdr-in{{max-width:1300px;margin:0 auto}}
+.crumbs{{font-size:12px;opacity:.65;margin-bottom:10px}}
+.crumbs a{{color:#B5D4F4}}
+.hdr h1{{font-family:Georgia,serif;font-size:1.7rem;font-weight:700;line-height:1.15;margin-bottom:8px}}
+.hdr h1 em{{color:#B5D4F4;font-style:italic;font-weight:400}}
+.hdr-sub{{font-size:.9rem;opacity:.8;max-width:680px;margin-bottom:14px;line-height:1.45}}
+.stats{{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px}}
+.stat strong{{display:block;font-size:1.4rem;font-weight:300}}
+.stat span{{font-size:.7rem;opacity:.6;text-transform:uppercase;letter-spacing:.05em}}
+.type-zone{{background:#fff;border-bottom:1px solid #e5e5e3;padding:14px 24px}}
+.type-inner{{max-width:1300px;margin:0 auto}}
+.type-tabs{{display:flex;gap:6px;flex-wrap:wrap}}
+.type-tab{{padding:8px 16px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#555;transition:all .15s}}
+.type-tab.active{{background:#003087;color:#fff;border-color:#003087}}
+.type-tab-count{{font-size:11px;opacity:.7;margin-left:4px}}
+.specialty-zone{{margin-top:10px;display:none;flex-wrap:wrap;gap:5px}}
+.specialty-zone.active{{display:flex}}
+.specialty-chip{{padding:5px 11px;border-radius:99px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:12px;color:#666;text-transform:capitalize}}
+.specialty-chip.active{{background:#0072CE;color:#fff;border-color:#0072CE}}
+.specialty-chip-count{{font-size:10px;opacity:.7;margin-left:3px}}
+.wrap{{max-width:1300px;margin:0 auto;padding:24px}}
+.results-bar{{font-size:13px;color:#888;margin-bottom:14px}}
+.results-bar strong{{color:#222}}
+#grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}}
+.card{{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column}}
+.card-top{{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px}}
+.card-name{{font-family:Georgia,serif;font-size:14px;font-weight:700;color:#003087;flex:1;line-height:1.3}}
+.cqc{{flex-shrink:0;font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}}
+.cqc-O{{background:#E1F5EE;color:#0F6E56}}.cqc-G{{background:#D8EFE3;color:#007F3B}}
+.cqc-R{{background:#FAEEDA;color:#BA7517}}.cqc-I{{background:#FCEBEB;color:#A32D2D}}.cqc-N{{background:#f0f0ee;color:#777}}
+.card-badges{{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:7px}}
+.type-badge{{font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}}
+.type-badge.t-nhs{{background:#EDF4FC;color:#003087}}
+.type-badge.t-priv{{background:#FAE7F3;color:#A02670}}
+.spec-badge{{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize}}
+.card-addr{{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}}
+.metrics{{display:flex;gap:12px;margin-bottom:12px}}
+.metric{{flex:1}}
+.m-lbl{{font-size:9px;text-transform:uppercase;color:#aaa;margin-bottom:2px}}
+.m-track{{height:3px;background:#eee;border-radius:99px;overflow:hidden;margin-bottom:2px}}
+.m-bar{{height:100%;border-radius:99px}}
+.m-val{{font-size:11.5px;font-weight:600;color:#444}}
+.m-na{{font-size:11.5px;color:#ccc}}
+.card-foot{{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0ee;padding-top:10px;gap:8px;margin-top:auto}}
+.card-phone{{font-size:11.5px;color:#444;font-weight:500}}
+.actions{{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}}
+.pill{{font-size:10.5px;padding:4px 9px;border-radius:6px;font-weight:600;white-space:nowrap}}
+.pill-reg{{background:#003087;color:#fff}}.pill-cqc{{background:#D8EFE3;color:#007F3B}}
+.pill-ods{{background:#EDF4FC;color:#0072CE}}.pill-web{{background:#FAE7F3;color:#A02670}}
+.bottom-nav{{background:#fff;border-top:1px solid #e5e5e3;padding:18px 24px;margin-top:32px}}
+.bottom-nav-inner{{max-width:1300px;margin:0 auto;text-align:center;font-size:13px;color:#888}}
+.bottom-nav a{{color:#003087;font-weight:600;margin:0 6px}}
+.bottom-nav a:hover{{text-decoration:underline}}
+.empty{{text-align:center;padding:4rem 2rem;color:#888}}
+footer{{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:14px 24px;font-size:11.5px}}
+footer a{{color:rgba(255,255,255,.8)}}
+@media(max-width:600px){{
+  .hdr{{padding:18px 16px}}
+  .hdr h1{{font-size:1.3rem}}
+  .stats{{gap:14px}}
+  .type-zone{{padding:12px 16px}}
+  .wrap{{padding:16px}}
+  #grid{{grid-template-columns:1fr}}
+}}
+</style>
 </head>
 <body>
-
 <header class="hdr">
-  <a class="hdr-logo" href="/">London GP <em>Directory</em></a>
-  <nav><a href="/">Home</a></nav>
-</header>
-
-<div class="crumbs">
-  <a href="/">{SITE_NAME}</a> &rsaquo; {html.escape(borough)}
-</div>
-
-<section class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">London Borough</div>
-    <h1>NHS GP Practices in <em>{html.escape(borough)}</em></h1>
-    <p class="hero-sub">Compare every NHS GP practice in {html.escape(borough)} by patient survey score, contact ease and CQC rating. Phone numbers and addresses come straight from the NHS ODS register and are refreshed weekly.</p>
-    <div class="hero-stats">
-      <div><div class="hero-stat-num">{n}</div><div class="hero-stat-label">Practices</div></div>
-      <div><div class="hero-stat-num">{outstanding + good}</div><div class="hero-stat-label">Good or Outstanding</div></div>
-      {avg_html}
+  <div class="hdr-in">
+    <div class="crumbs"><a href="/">Home</a> ⟩ Boroughs ⟩ <strong>{borough}</strong></div>
+    <h1>NHS GP Practices &amp; Private Clinics in <em>{borough}</em></h1>
+    <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in {borough} — by CQC rating, patient survey, contact details and specialty.</p>
+    <div class="stats">
+      <div class="stat"><strong>{len(nhs)}</strong><span>NHS practices</span></div>
+      <div class="stat"><strong>{len(priv)}</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>{good_or_outstanding}</strong><span>Good or Outstanding</span></div>
+      <div class="stat"><strong>{avg_nhs_score:.1f}%</strong><span>Avg NHS patient score</span></div>
     </div>
   </div>
-</section>
-
-<main>
-  <p class="intro">All {n} NHS GP practices in {html.escape(borough)}, sorted by CQC rating then patient satisfaction. Tap any card to register, call or view the official NHS profile.</p>
-
-  <h2>All practices in {html.escape(borough)}</h2>
-  <div class="card-grid">
-    {cards}
+</header>
+<div class="type-zone">
+  <div class="type-inner">
+    <div class="type-tabs" id="typeTabs">
+      <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">{len(nhs)}</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">{len(priv)}</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">{len(records)}</span></button>
+    </div>
+    <div class="specialty-zone" id="specialtyZone">{chips_html}</div>
   </div>
+</div>
+<main class="wrap">
+  <div class="results-bar" id="resCt">Showing <strong>{len(nhs)}</strong> NHS practices in {borough}</div>
+  <div id="grid">{cards_html}</div>
 </main>
-
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">Other boroughs: {borough_links} <a href="/">All London ›</a></div>
+</nav>
 <footer>
-  Data: NHS ODS &middot; GP Patient Survey &middot; CQC &middot; updated {datetime.now(timezone.utc).strftime("%-d %B %Y")}<br>
-  <a href="/">{SITE_NAME}</a>
+  London GP Directory · Data refreshed {today} · <a href="/">All London</a> · <a href="/about.html">About</a> · <a href="/methodology.html">Methodology</a> · <a href="/sources.html">Sources</a>
 </footer>
+<script>
+const tabs = document.querySelectorAll('.type-tab');
+const chipsZone = document.getElementById('specialtyZone');
+const grid = document.getElementById('grid');
+const resCt = document.getElementById('resCt');
+const BOROUGH = {json.dumps(borough)};
+const TOTAL_NHS = {len(nhs)};
+const TOTAL_PRIV = {len(priv)};
+let selType = 'NHS';
+let selSpec = 'all';
 
+function applyFilters() {{
+  let shown = 0;
+  document.querySelectorAll('#grid .card').forEach(card => {{
+    const t = card.dataset.type;
+    const specs = (card.dataset.specs || '').split(',').filter(Boolean);
+    const typeOk = selType === 'All' || t === selType;
+    const specOk = selType !== 'Private' || selSpec === 'all' || specs.includes(selSpec);
+    if (typeOk && specOk) {{ card.style.display = ''; shown++; }}
+    else card.style.display = 'none';
+  }});
+  const totalForType = selType === 'NHS' ? TOTAL_NHS
+                     : selType === 'Private' ? TOTAL_PRIV
+                     : TOTAL_NHS + TOTAL_PRIV;
+  const label = selType === 'NHS' ? 'NHS practices'
+              : selType === 'Private' ? 'private clinics'
+              : 'practices &amp; clinics';
+  resCt.innerHTML = `Showing <strong>${{shown}}</strong> of <strong>${{totalForType}}</strong> ${{label}} in ${{BOROUGH}}`;
+}}
+
+tabs.forEach(tab => tab.addEventListener('click', () => {{
+  selType = tab.dataset.type;
+  selSpec = 'all';
+  tabs.forEach(t => t.classList.toggle('active', t === tab));
+  chipsZone.classList.toggle('active', selType === 'Private');
+  chipsZone.querySelectorAll('.specialty-chip').forEach(c =>
+    c.classList.toggle('active', c.dataset.spec === 'all')
+  );
+  applyFilters();
+}}));
+
+chipsZone.querySelectorAll('.specialty-chip').forEach(chip => chip.addEventListener('click', () => {{
+  selSpec = chip.dataset.spec;
+  chipsZone.querySelectorAll('.specialty-chip').forEach(c => c.classList.toggle('active', c === chip));
+  applyFilters();
+}}));
+
+applyFilters();
+</script>
 </body>
-</html>
-"""
+</html>"""
+    return slug, html
 
-# ---- data load ---------------------------------------------------------
-
-def load_practices():
-    """
-    Prefer merged.json (produced by refresh_nhs_data.py if you cache it).
-    Otherwise fall back to gps.json — note this won't have live phone/address,
-    so prefer running this script as part of the same pipeline.
-    """
-    if MERGED_JSON.exists():
-        print(f"Using {MERGED_JSON.name}")
-        return json.loads(MERGED_JSON.read_text())
-
-    if not GPS_JSON.exists():
-        sys.exit("Neither merged.json nor gps.json found in repo root.")
-
-    raw = json.loads(GPS_JSON.read_text())
-    print(f"Using {GPS_JSON.name} ({len(raw)} records)")
-    # Best-effort mapping of base fields → merged keys used by templates
-    out = []
-    for r in raw:
-        out.append({
-            "o":   r.get("ods_code") or r.get("o"),
-            "n":   r.get("name") or r.get("n"),
-            "a":   r.get("address") or r.get("a", ""),
-            "p":   r.get("postcode") or r.get("p", ""),
-            "ph":  r.get("phone") or r.get("ph", ""),
-            "s":   r.get("gpps_overall_pct") or r.get("s"),
-            "c":   r.get("gpps_contact_pct") or r.get("c"),
-            "pcn": (r.get("gpps_pcn") or r.get("pcn") or "").replace(" PCN","").replace(" Pcn","").strip(),
-            "cqc": r.get("cqc_rating") or r.get("cqc") or "",
-            "cu":  r.get("cqc_url") or r.get("cu") or "",
-            "ar":  r.get("ar") or "",
-        })
-    return out
-
-# ---- sitemap -----------------------------------------------------------
-
-def update_sitemap(borough_urls):
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    homepage_entry = (
-        f'<url><loc>{SITE_URL}/</loc><lastmod>{today}</lastmod>'
-        f'<changefreq>weekly</changefreq><priority>1.0</priority></url>'
-    )
-    borough_entries = "\n  ".join(
-        f'<url><loc>{u}</loc><lastmod>{today}</lastmod>'
-        f'<changefreq>weekly</changefreq><priority>0.8</priority></url>'
-        for u in borough_urls
-    )
-    xml = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f'  {homepage_entry}\n'
-        f'  {borough_entries}\n'
-        '</urlset>\n'
-    )
-    SITEMAP_XML.write_text(xml)
-    print(f"Wrote {SITEMAP_XML.name}: 1 homepage + {len(borough_urls)} borough URLs.")
-
-# ---- main --------------------------------------------------------------
+def build_sitemap_entry(slug, today):
+    return (f'  <url><loc>{BASE_URL}/practice/{slug}/</loc>'
+            f'<lastmod>{today}</lastmod><changefreq>weekly</changefreq>'
+            f'<priority>0.8</priority></url>')
 
 def main():
-    practices = load_practices()
+    if not MERGED_JSON.exists():
+        sys.exit(f"{MERGED_JSON} not found. Run refresh_nhs_data.py + merge_into_dataset.py first.")
+    data = json.loads(MERGED_JSON.read_text())
+    if not isinstance(data, list):
+        sys.exit("merged.json is not a JSON array.")
+
+    today = datetime.now().strftime("%Y-%m-%d")
     by_borough = defaultdict(list)
-    skipped = 0
-    for p in practices:
-        b = borough_for(p)
-        if not b:
-            skipped += 1
-            continue
-        by_borough[b].append(p)
+    for r in data:
+        ar = r.get("ar")
+        if ar: by_borough[ar].append(r)
 
-    print(f"{len(practices)} practices, {len(by_borough)} boroughs, {skipped} skipped (no borough)")
+    all_boroughs = sorted(by_borough.keys())
+    print(f"Building {len(all_boroughs)} borough pages…")
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    written = []
-    for borough, ps in sorted(by_borough.items()):
-        out = OUT_DIR / slug(borough) / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(render_page(borough, ps))
-        written.append((borough, len(ps), out.relative_to(ROOT)))
+    OUT_DIR.mkdir(exist_ok=True)
+    sitemap_entries = [
+        f'  <url><loc>{BASE_URL}/</loc><lastmod>{today}</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>'
+    ]
 
-    for borough, count, path in written:
-        print(f"  wrote {path}  ({count} practices)")
+    for borough, records in sorted(by_borough.items()):
+        slug, html = render_borough_page(borough, records, all_boroughs, today)
+        borough_dir = OUT_DIR / slug
+        borough_dir.mkdir(exist_ok=True)
+        (borough_dir / "index.html").write_text(html, encoding="utf-8")
+        nhs_count = sum(1 for r in records if (r.get("type") or "NHS") == "NHS")
+        priv_count = sum(1 for r in records if r.get("type") == "Private")
+        print(f"  /practice/{slug}/ — {len(records)} total ({nhs_count} NHS + {priv_count} Private)")
+        sitemap_entries.append(build_sitemap_entry(slug, today))
 
-    update_sitemap([f"{SITE_URL}/practice/{slug(b)}/" for b, _, _ in written])
-    print(f"\nDone. {len(written)} borough pages.")
+    sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    sitemap_xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap_xml += "\n".join(sitemap_entries)
+    sitemap_xml += "\n</urlset>\n"
+    SITEMAP.write_text(sitemap_xml, encoding="utf-8")
+    print(f"\nWrote sitemap.xml — {len(sitemap_entries)} URLs.")
 
 if __name__ == "__main__":
     main()
