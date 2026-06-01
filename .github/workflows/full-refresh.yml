@@ -9,7 +9,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -30,6 +30,11 @@ jobs:
 
       - name: Merge private + rebuild index.html
         run: python merge_into_dataset.py
+
+      - name: Backfill missing CQC ratings
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python enrich_cqc_ratings.py
 
       - name: Fix borough assignments via ONS postcode data
         run: python fix_boroughs.py
