@@ -12,25 +12,37 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install requests pandas numpy pyyaml
+
       - name: Fetch private clinics
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python fetch_private_clinics.py
+
       - name: NHS refresh
         run: python refresh_nhs_data.py
+
       - name: Merge private + rebuild index.html
         run: python merge_into_dataset.py
+
+      - name: Fix borough assignments via ONS postcode data
+        run: python fix_boroughs.py
+
       - name: Build borough pages
         run: python build_borough_pages.py
+
       - name: Build practice pages
         run: python build_practice_pages.py
+
       - name: Build specialty hub pages
         run: python build_specialty_pages.py
+
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
