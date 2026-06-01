@@ -12,22 +12,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10194284742"
-  },
-  {
-    "ods_code": "VNKM4",
-    "cqc_id": "1-10205173491",
-    "name": "Holybourne Hospital",
-    "address": "Holybourne Avenue, London",
-    "postcode": "SW15 4JL",
-    "phone": "02087806155",
-    "website": "www.activecaregroup.co.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10205173491"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10194284742",
+    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -42,7 +28,24 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10204873504"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10204873504",
+    "ar": "Lewisham"
+  },
+  {
+    "ods_code": "VNKM4",
+    "cqc_id": "1-10205173491",
+    "name": "Holybourne Hospital",
+    "address": "Holybourne Avenue, London",
+    "postcode": "SW15 4JL",
+    "phone": "02087806155",
+    "website": "www.activecaregroup.co.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10205173491",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "V233168",
@@ -57,22 +60,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10484688628"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "1-10598418663",
-    "name": "The GP Surgery Wimbledon",
-    "address": "21-23, Wimbledon Hill Road, London",
-    "postcode": "SW19 7NE",
-    "phone": "02037725440",
-    "website": "www.thegpsurgery.co.uk",
-    "type": "Private",
-    "specialties": [
-      "private gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10598418663"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10484688628",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "",
@@ -87,22 +76,24 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10593622870"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10593622870",
+    "ar": "Southwark"
   },
   {
     "ods_code": "",
-    "cqc_id": "1-106025394",
-    "name": "Pure Sports Medicine Limited (Kensington)",
-    "address": "Point West, 116 Cromwell Road, Kensington, London",
-    "postcode": "SW7 4XR",
-    "phone": "08447700800",
-    "website": "www.puresportsmed.com",
+    "cqc_id": "1-10598418663",
+    "name": "The GP Surgery Wimbledon",
+    "address": "21-23, Wimbledon Hill Road, London",
+    "postcode": "SW19 7NE",
+    "phone": "02037725440",
+    "website": "www.thegpsurgery.co.uk",
     "type": "Private",
     "specialties": [
-      "physiotherapy"
+      "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-106025394"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10598418663",
+    "ar": "Merton"
   },
   {
     "ods_code": "",
@@ -117,7 +108,24 @@
       "physiotherapy"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-106025374"
+    "cqc_url": "https://www.cqc.org.uk/location/1-106025374",
+    "ar": "City of London"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "1-106025394",
+    "name": "Pure Sports Medicine Limited (Kensington)",
+    "address": "Point West, 116 Cromwell Road, Kensington, London",
+    "postcode": "SW7 4XR",
+    "phone": "08447700800",
+    "website": "www.puresportsmed.com",
+    "type": "Private",
+    "specialties": [
+      "physiotherapy"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-106025394",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -132,7 +140,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1067442671"
+    "cqc_url": "https://www.cqc.org.uk/location/1-1067442671",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -147,7 +156,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10748240392"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10748240392",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -162,7 +172,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10752457342"
+    "cqc_url": "https://www.cqc.org.uk/location/1-10752457342",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "ods_code": "",
@@ -177,7 +188,8 @@
       "gynaecology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-109580499"
+    "cqc_url": "https://www.cqc.org.uk/location/1-109580499",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -192,7 +204,8 @@
       "orthopaedics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-110951204"
+    "cqc_url": "https://www.cqc.org.uk/location/1-110951204",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -207,7 +220,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-11176072964"
+    "cqc_url": "https://www.cqc.org.uk/location/1-11176072964",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -222,7 +236,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-114653473"
+    "cqc_url": "https://www.cqc.org.uk/location/1-114653473",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -237,7 +252,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-11518646476"
+    "cqc_url": "https://www.cqc.org.uk/location/1-11518646476",
+    "ar": "Harrow"
   },
   {
     "ods_code": "",
@@ -252,7 +268,8 @@
       "gynaecology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-11890329004"
+    "cqc_url": "https://www.cqc.org.uk/location/1-11890329004",
+    "ar": "Ealing"
   },
   {
     "ods_code": "",
@@ -267,7 +284,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-119021900"
+    "cqc_url": "https://www.cqc.org.uk/location/1-119021900",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -282,7 +300,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-12539188017"
+    "cqc_url": "https://www.cqc.org.uk/location/1-12539188017",
+    "ar": "Harrow"
   },
   {
     "ods_code": "",
@@ -297,22 +316,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-126736267"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "1-126955711",
-    "name": "HCA Healthcare UK The Wellington Hospital",
-    "address": "Wellington Place, St John's Wood, London",
-    "postcode": "NW8 9LE",
-    "phone": "02074835148",
-    "website": "www.thewellingtonhospital.com",
-    "type": "Private",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-126955711"
+    "cqc_url": "https://www.cqc.org.uk/location/1-126736267",
+    "ar": "Lewisham"
   },
   {
     "ods_code": "",
@@ -327,7 +332,24 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1269410105"
+    "cqc_url": "https://www.cqc.org.uk/location/1-1269410105",
+    "ar": "Brent"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "1-126955711",
+    "name": "HCA Healthcare UK The Wellington Hospital",
+    "address": "Wellington Place, St John's Wood, London",
+    "postcode": "NW8 9LE",
+    "phone": "02074835148",
+    "website": "www.thewellingtonhospital.com",
+    "type": "Private",
+    "specialties": [
+      "hospital"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955711",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -342,7 +364,8 @@
       "hospital"
     ],
     "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/1-126955884"
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955884",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -357,22 +380,8 @@
       "hospital"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-126955917"
-  },
-  {
-    "ods_code": "NT406",
-    "cqc_id": "1-128758547",
-    "name": "The Blackheath Hospital",
-    "address": "40-42 Lee Terrace, Blackheath, London",
-    "postcode": "SE3 9UD",
-    "phone": "02083187722",
-    "website": "www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital",
-    "type": "Private",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-128758547"
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955917",
+    "ar": "Westminster"
   },
   {
     "ods_code": "NT451",
@@ -387,7 +396,24 @@
       "hospital"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-128758601"
+    "cqc_url": "https://www.cqc.org.uk/location/1-128758601",
+    "ar": "Enfield"
+  },
+  {
+    "ods_code": "NT406",
+    "cqc_id": "1-128758547",
+    "name": "The Blackheath Hospital",
+    "address": "40-42 Lee Terrace, Blackheath, London",
+    "postcode": "SE3 9UD",
+    "phone": "02083187722",
+    "website": "www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital",
+    "type": "Private",
+    "specialties": [
+      "hospital"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-128758547",
+    "ar": "Lewisham"
   },
   {
     "ods_code": "NT437",
@@ -402,7 +428,8 @@
       "hospital"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-128767290"
+    "cqc_url": "https://www.cqc.org.uk/location/1-128767290",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -432,7 +459,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-129389380"
+    "cqc_url": "https://www.cqc.org.uk/location/1-129389380",
+    "ar": "Enfield"
   },
   {
     "ods_code": "V82679",
@@ -447,7 +475,8 @@
       "private gp"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1334844769"
+    "cqc_url": "https://www.cqc.org.uk/location/1-1334844769",
+    "ar": "Ealing"
   },
   {
     "ods_code": "",
@@ -462,7 +491,8 @@
       "travel"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-13440598962"
+    "cqc_url": "https://www.cqc.org.uk/location/1-13440598962",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -477,7 +507,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1353988292"
+    "cqc_url": "https://www.cqc.org.uk/location/1-1353988292",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -492,7 +523,8 @@
       "hospital"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-13740482832"
+    "cqc_url": "https://www.cqc.org.uk/location/1-13740482832",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -507,7 +539,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-137492121"
+    "cqc_url": "https://www.cqc.org.uk/location/1-137492121",
+    "ar": "Hounslow"
   },
   {
     "ods_code": "",
@@ -522,7 +555,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-137492204"
+    "cqc_url": "https://www.cqc.org.uk/location/1-137492204",
+    "ar": "Enfield"
   },
   {
     "ods_code": "",
@@ -537,7 +571,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-137505508"
+    "cqc_url": "https://www.cqc.org.uk/location/1-137505508",
+    "ar": "Bexley"
   },
   {
     "ods_code": "VLWYG",
@@ -552,7 +587,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-138446395"
+    "cqc_url": "https://www.cqc.org.uk/location/1-138446395",
+    "ar": "Sutton"
   },
   {
     "ods_code": "",
@@ -567,7 +603,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-139149784"
+    "cqc_url": "https://www.cqc.org.uk/location/1-139149784",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "",
@@ -582,7 +619,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-13932164067"
+    "cqc_url": "https://www.cqc.org.uk/location/1-13932164067",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -597,7 +635,8 @@
       "cardiology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-14251737509"
+    "cqc_url": "https://www.cqc.org.uk/location/1-14251737509",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -612,7 +651,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1428685967"
+    "cqc_url": "https://www.cqc.org.uk/location/1-1428685967",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -627,7 +667,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-14962412443"
+    "cqc_url": "https://www.cqc.org.uk/location/1-14962412443",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -642,7 +683,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15202515992"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15202515992",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -657,7 +699,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15302623023"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15302623023",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -672,7 +715,8 @@
       "private gp"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15324196896"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15324196896",
+    "ar": "Kingston"
   },
   {
     "ods_code": "",
@@ -687,7 +731,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-153773414"
+    "cqc_url": "https://www.cqc.org.uk/location/1-153773414",
+    "ar": "Kingston"
   },
   {
     "ods_code": "",
@@ -702,7 +747,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-153773350"
+    "cqc_url": "https://www.cqc.org.uk/location/1-153773350",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -717,7 +763,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15397658417"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15397658417",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -732,7 +779,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15524232526"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15524232526",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -747,7 +795,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1574766517"
+    "cqc_url": "https://www.cqc.org.uk/location/1-1574766517",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -762,7 +811,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15929100323"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15929100323",
+    "ar": "Kingston"
   },
   {
     "ods_code": "",
@@ -777,7 +827,8 @@
       "dermatology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15976668685"
+    "cqc_url": "https://www.cqc.org.uk/location/1-15976668685",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -792,7 +843,8 @@
       "physiotherapy"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-159792139"
+    "cqc_url": "https://www.cqc.org.uk/location/1-159792139",
+    "ar": "Merton"
   },
   {
     "ods_code": "",
@@ -807,7 +859,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-16473306598"
+    "cqc_url": "https://www.cqc.org.uk/location/1-16473306598",
+    "ar": "Bromley"
   },
   {
     "ods_code": "VLK8W",
@@ -822,7 +875,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-167331245"
+    "cqc_url": "https://www.cqc.org.uk/location/1-167331245",
+    "ar": "Croydon"
   },
   {
     "ods_code": "",
@@ -837,7 +891,8 @@
       "cardiology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-17197128785"
+    "cqc_url": "https://www.cqc.org.uk/location/1-17197128785",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -852,7 +907,8 @@
       "ent"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-18175063421"
+    "cqc_url": "https://www.cqc.org.uk/location/1-18175063421",
+    "ar": "Haringey"
   },
   {
     "ods_code": "",
@@ -867,7 +923,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-18216383434"
+    "cqc_url": "https://www.cqc.org.uk/location/1-18216383434",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -882,7 +939,8 @@
       "cardiology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-18281338465"
+    "cqc_url": "https://www.cqc.org.uk/location/1-18281338465",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -897,7 +955,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-19541584030"
+    "cqc_url": "https://www.cqc.org.uk/location/1-19541584030",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -912,7 +971,8 @@
       "oncology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-197177428"
+    "cqc_url": "https://www.cqc.org.uk/location/1-197177428",
+    "ar": "Merton"
   },
   {
     "ods_code": "",
@@ -927,7 +987,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-197800907"
+    "cqc_url": "https://www.cqc.org.uk/location/1-197800907",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -942,7 +1003,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-19805074736"
+    "cqc_url": "https://www.cqc.org.uk/location/1-19805074736",
+    "ar": "Croydon"
   },
   {
     "ods_code": "",
@@ -957,7 +1019,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-19877862965"
+    "cqc_url": "https://www.cqc.org.uk/location/1-19877862965",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -972,7 +1035,8 @@
       "physiotherapy"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-19888331975"
+    "cqc_url": "https://www.cqc.org.uk/location/1-19888331975",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "",
@@ -987,7 +1051,8 @@
       "private gp"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-20123034521"
+    "cqc_url": "https://www.cqc.org.uk/location/1-20123034521",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -1002,7 +1067,8 @@
       "travel"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-20394176499"
+    "cqc_url": "https://www.cqc.org.uk/location/1-20394176499",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1017,7 +1083,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-20632992139"
+    "cqc_url": "https://www.cqc.org.uk/location/1-20632992139",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1047,7 +1114,8 @@
       "dermatology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21604627067"
+    "cqc_url": "https://www.cqc.org.uk/location/1-21604627067",
+    "ar": "Southwark"
   },
   {
     "ods_code": "",
@@ -1062,7 +1130,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-216303573"
+    "cqc_url": "https://www.cqc.org.uk/location/1-216303573",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "",
@@ -1077,7 +1146,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21670181843"
+    "cqc_url": "https://www.cqc.org.uk/location/1-21670181843",
+    "ar": "Kingston"
   },
   {
     "ods_code": "",
@@ -1092,7 +1162,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21751315415"
+    "cqc_url": "https://www.cqc.org.uk/location/1-21751315415",
+    "ar": "Croydon"
   },
   {
     "ods_code": "",
@@ -1107,7 +1178,8 @@
       "ent"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2182464814"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2182464814",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1122,7 +1194,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2185777628"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2185777628",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1137,7 +1210,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-220318378"
+    "cqc_url": "https://www.cqc.org.uk/location/1-220318378",
+    "ar": "Merton"
   },
   {
     "ods_code": "V80040",
@@ -1152,7 +1226,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-224247905"
+    "cqc_url": "https://www.cqc.org.uk/location/1-224247905",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1167,7 +1242,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-224248193"
+    "cqc_url": "https://www.cqc.org.uk/location/1-224248193",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "V01942",
@@ -1182,7 +1258,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-224320175"
+    "cqc_url": "https://www.cqc.org.uk/location/1-224320175",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -1197,7 +1274,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-224387415"
+    "cqc_url": "https://www.cqc.org.uk/location/1-224387415",
+    "ar": "Kingston"
   },
   {
     "ods_code": "",
@@ -1212,7 +1290,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2283828271"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2283828271",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1227,7 +1306,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2285225832"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2285225832",
+    "ar": "Richmond"
   },
   {
     "ods_code": "",
@@ -1242,7 +1322,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-23112522374"
+    "cqc_url": "https://www.cqc.org.uk/location/1-23112522374",
+    "ar": "Southwark"
   },
   {
     "ods_code": "",
@@ -1257,22 +1338,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2311760426"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "1-233070238",
-    "name": "Beckenham Beacon",
-    "address": "379 Croydon Road, Beckenham, Kent",
-    "postcode": "BR3 3QL",
-    "phone": "01689866740",
-    "website": "www.bromleyhealthcare.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-233070238"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2311760426",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -1287,7 +1354,24 @@
       "paediatrics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-23297613035"
+    "cqc_url": "https://www.cqc.org.uk/location/1-23297613035",
+    "ar": "Westminster"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "1-233070238",
+    "name": "Beckenham Beacon",
+    "address": "379 Croydon Road, Beckenham, Kent",
+    "postcode": "BR3 3QL",
+    "phone": "01689866740",
+    "website": "www.bromleyhealthcare.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-233070238",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -1302,7 +1386,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-234368798"
+    "cqc_url": "https://www.cqc.org.uk/location/1-234368798",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -1317,7 +1402,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-24981251571"
+    "cqc_url": "https://www.cqc.org.uk/location/1-24981251571",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -1332,7 +1418,8 @@
       "travel"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2517715266"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2517715266",
+    "ar": "Redbridge"
   },
   {
     "ods_code": "",
@@ -1347,7 +1434,8 @@
       "hospital"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-25236409705"
+    "cqc_url": "https://www.cqc.org.uk/location/1-25236409705",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "ods_code": "",
@@ -1362,7 +1450,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-25249799388"
+    "cqc_url": "https://www.cqc.org.uk/location/1-25249799388",
+    "ar": "Brent"
   },
   {
     "ods_code": "",
@@ -1377,7 +1466,8 @@
       "private gp"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-25718850550"
+    "cqc_url": "https://www.cqc.org.uk/location/1-25718850550",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "ods_code": "",
@@ -1392,7 +1482,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-25867318132"
+    "cqc_url": "https://www.cqc.org.uk/location/1-25867318132",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1407,7 +1498,8 @@
       "paediatrics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-26112388497"
+    "cqc_url": "https://www.cqc.org.uk/location/1-26112388497",
+    "ar": "Sutton"
   },
   {
     "ods_code": "",
@@ -1422,7 +1514,8 @@
       "gynaecology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-26941055525"
+    "cqc_url": "https://www.cqc.org.uk/location/1-26941055525",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1437,7 +1530,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2698412388"
+    "cqc_url": "https://www.cqc.org.uk/location/1-2698412388",
+    "ar": "Brent"
   },
   {
     "ods_code": "",
@@ -1482,7 +1576,8 @@
       "physiotherapy"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-321528300"
+    "cqc_url": "https://www.cqc.org.uk/location/1-321528300",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -1497,7 +1592,8 @@
       "private gp"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-339410966"
+    "cqc_url": "https://www.cqc.org.uk/location/1-339410966",
+    "ar": "Southwark"
   },
   {
     "ods_code": "",
@@ -1512,7 +1608,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-341756874"
+    "cqc_url": "https://www.cqc.org.uk/location/1-341756874",
+    "ar": "Enfield"
   },
   {
     "ods_code": "",
@@ -1527,7 +1624,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-348994841"
+    "cqc_url": "https://www.cqc.org.uk/location/1-348994841",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1542,7 +1640,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3649654540"
+    "cqc_url": "https://www.cqc.org.uk/location/1-3649654540",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -1557,7 +1656,8 @@
       "cardiology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3667274464"
+    "cqc_url": "https://www.cqc.org.uk/location/1-3667274464",
+    "ar": "Hounslow"
   },
   {
     "ods_code": "",
@@ -1572,7 +1672,8 @@
       "ent"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-377082542"
+    "cqc_url": "https://www.cqc.org.uk/location/1-377082542",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1587,7 +1688,8 @@
       "diagnostics"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3806562283"
+    "cqc_url": "https://www.cqc.org.uk/location/1-3806562283",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -1617,7 +1719,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4017111373"
+    "cqc_url": "https://www.cqc.org.uk/location/1-4017111373",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1632,7 +1735,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4123625543"
+    "cqc_url": "https://www.cqc.org.uk/location/1-4123625543",
+    "ar": "Sutton"
   },
   {
     "ods_code": "",
@@ -1647,7 +1751,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-441183786"
+    "cqc_url": "https://www.cqc.org.uk/location/1-441183786",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1662,7 +1767,8 @@
       "physiotherapy"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4754062270"
+    "cqc_url": "https://www.cqc.org.uk/location/1-4754062270",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -1677,7 +1783,8 @@
       "physiotherapy"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4971733550"
+    "cqc_url": "https://www.cqc.org.uk/location/1-4971733550",
+    "ar": "Islington"
   },
   {
     "ods_code": "",
@@ -1692,7 +1799,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5353496345"
+    "cqc_url": "https://www.cqc.org.uk/location/1-5353496345",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1707,7 +1815,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5417789935"
+    "cqc_url": "https://www.cqc.org.uk/location/1-5417789935",
+    "ar": "Merton"
   },
   {
     "ods_code": "",
@@ -1722,7 +1831,8 @@
       "travel"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-548922671"
+    "cqc_url": "https://www.cqc.org.uk/location/1-548922671",
+    "ar": "Lambeth"
   },
   {
     "ods_code": "",
@@ -1737,7 +1847,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/1-551713790"
+    "cqc_url": "https://www.cqc.org.uk/location/1-551713790",
+    "ar": "Lambeth"
   },
   {
     "ods_code": "",
@@ -1752,7 +1863,8 @@
       "physiotherapy"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5587600558"
+    "cqc_url": "https://www.cqc.org.uk/location/1-5587600558",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -1767,7 +1879,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-605523597"
+    "cqc_url": "https://www.cqc.org.uk/location/1-605523597",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1782,7 +1895,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6205446187"
+    "cqc_url": "https://www.cqc.org.uk/location/1-6205446187",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1797,7 +1911,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6239731696"
+    "cqc_url": "https://www.cqc.org.uk/location/1-6239731696",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1812,7 +1927,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7059618059"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7059618059",
+    "ar": "Croydon"
   },
   {
     "ods_code": "",
@@ -1827,7 +1943,8 @@
       "gastroenterology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7124003259"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7124003259",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1842,7 +1959,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7151035650"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7151035650",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1857,7 +1975,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7370179937"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7370179937",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1872,7 +1991,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7371313883"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7371313883",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -1888,7 +2008,8 @@
       "diagnostics"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-748318476"
+    "cqc_url": "https://www.cqc.org.uk/location/1-748318476",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -1904,7 +2025,8 @@
       "gastroenterology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7775939428"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7775939428",
+    "ar": "Bromley"
   },
   {
     "ods_code": "H85693",
@@ -1919,7 +2041,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7852314395"
+    "cqc_url": "https://www.cqc.org.uk/location/1-7852314395",
+    "ar": "Sutton"
   },
   {
     "ods_code": "",
@@ -1934,7 +2057,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8490478232"
+    "cqc_url": "https://www.cqc.org.uk/location/1-8490478232",
+    "ar": "Lambeth"
   },
   {
     "ods_code": "",
@@ -1949,7 +2073,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8928811666"
+    "cqc_url": "https://www.cqc.org.uk/location/1-8928811666",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -1964,7 +2089,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9018083701"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9018083701",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -1979,7 +2105,8 @@
       "private gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9146725245"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9146725245",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -1994,7 +2121,8 @@
       "cardiology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-927196774"
+    "cqc_url": "https://www.cqc.org.uk/location/1-927196774",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -2009,7 +2137,8 @@
       "dermatology"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9293998788"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9293998788",
+    "ar": "Richmond"
   },
   {
     "ods_code": "",
@@ -2024,7 +2153,8 @@
       "cardiology"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9558221950"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9558221950",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -2039,7 +2169,8 @@
       "ent"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9645365332"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9645365332",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -2055,7 +2186,8 @@
       "urology"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9773698624"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9773698624",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -2070,7 +2202,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9849553595"
+    "cqc_url": "https://www.cqc.org.uk/location/1-9849553595",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -2085,7 +2218,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/R1H13"
+    "cqc_url": "https://www.cqc.org.uk/location/R1H13",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -2100,7 +2234,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/R1H12"
+    "cqc_url": "https://www.cqc.org.uk/location/R1H12",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -2115,52 +2250,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/R1HM0"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "R1HNH",
-    "name": "Newham University Hospital",
-    "address": "Glen Road, Plaistow, London",
-    "postcode": "E13 8SL",
-    "phone": "02074764000",
-    "website": "www.bartshealth.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/R1HNH"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "R1HKH",
-    "name": "Whipps Cross University Hospital",
-    "address": "Whipps Cross Road, Leytonstone, London",
-    "postcode": "E11 1NR",
-    "phone": "02085395522",
-    "website": "www.whippsx.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1HKH"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "R1K02",
-    "name": "Central Middlesex Hospital",
-    "address": "Acton Lane, Park Royal, London",
-    "postcode": "NW10 7NS",
-    "phone": "02089655733",
-    "website": "www.lnwh.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1K02"
+    "cqc_url": "https://www.cqc.org.uk/location/R1HM0",
+    "ar": "City of London"
   },
   {
     "ods_code": "",
@@ -2175,7 +2266,40 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1K01"
+    "cqc_url": "https://www.cqc.org.uk/location/R1K01",
+    "ar": "Brent"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "R1HNH",
+    "name": "Newham University Hospital",
+    "address": "Glen Road, Plaistow, London",
+    "postcode": "E13 8SL",
+    "phone": "02074764000",
+    "website": "www.bartshealth.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/R1HNH",
+    "ar": "Newham"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "R1K02",
+    "name": "Central Middlesex Hospital",
+    "address": "Acton Lane, Park Royal, London",
+    "postcode": "NW10 7NS",
+    "phone": "02089655733",
+    "website": "www.lnwh.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/R1K02",
+    "ar": "Brent"
   },
   {
     "ods_code": "",
@@ -2190,7 +2314,24 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1K04"
+    "cqc_url": "https://www.cqc.org.uk/location/R1K04",
+    "ar": "Ealing"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "R1HKH",
+    "name": "Whipps Cross University Hospital",
+    "address": "Whipps Cross Road, Leytonstone, London",
+    "postcode": "E11 1NR",
+    "phone": "02085395522",
+    "website": "www.whippsx.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/R1HKH",
+    "ar": "Waltham Forest"
   },
   {
     "ods_code": "",
@@ -2205,22 +2346,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL01"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RAL26",
-    "name": "Barnet General Hospital",
-    "address": "Wellhouse Lane, Barnet, Hertfordshire",
-    "postcode": "EN5 3DJ",
-    "phone": "02082164000",
-    "website": "www.bcf.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL26"
+    "cqc_url": "https://www.cqc.org.uk/location/RAL01",
+    "ar": "Camden"
   },
   {
     "ods_code": "RAL27",
@@ -2235,37 +2362,24 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL001"
+    "cqc_url": "https://www.cqc.org.uk/location/RAL001",
+    "ar": "Enfield"
   },
   {
     "ods_code": "",
-    "cqc_id": "RALRA",
-    "name": "Edgware Community Hospital",
-    "address": "Burnt Oak Broadway, Edgware, Middlesex",
-    "postcode": "HA8 0AD",
-    "phone": "02089522381",
-    "website": "www.barnet.nhs.uk",
+    "cqc_id": "RAL26",
+    "name": "Barnet General Hospital",
+    "address": "Wellhouse Lane, Barnet, Hertfordshire",
+    "postcode": "EN5 3DJ",
+    "phone": "02082164000",
+    "website": "www.bcf.nhs.uk",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
-    "cqc_rating": "Insufficient evidence to rate",
-    "cqc_url": "https://www.cqc.org.uk/location/RALRA"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RAN01",
-    "name": "The Royal National Orthopaedic Hospital (Stanmore)",
-    "address": "Royal National Orthopaedic Hospital, Brockley Hill, Stanmore, Middlesex",
-    "postcode": "HA7 4LP",
-    "phone": "02089542300",
-    "website": "www.rnoh.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RAN01"
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RAL26",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -2280,7 +2394,56 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RALC7"
+    "cqc_url": "https://www.cqc.org.uk/location/RALC7",
+    "ar": "Enfield"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RALRA",
+    "name": "Edgware Community Hospital",
+    "address": "Burnt Oak Broadway, Edgware, Middlesex",
+    "postcode": "HA8 0AD",
+    "phone": "02089522381",
+    "website": "www.barnet.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Insufficient evidence to rate",
+    "cqc_url": "https://www.cqc.org.uk/location/RALRA",
+    "ar": "Barnet"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RAN01",
+    "name": "The Royal National Orthopaedic Hospital (Stanmore)",
+    "address": "Royal National Orthopaedic Hospital, Brockley Hill, Stanmore, Middlesex",
+    "postcode": "HA7 4LP",
+    "phone": "02089542300",
+    "website": "www.rnoh.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RAN01",
+    "ar": "Harrow"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RATGA",
+    "name": "Sunflowers Court",
+    "address": "157 Barley Lane, Ilford, Essex",
+    "postcode": "IG3 8XJ",
+    "phone": "08446001200",
+    "website": "www.nelft.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RATGA",
+    "ar": "Redbridge"
   },
   {
     "ods_code": "",
@@ -2295,7 +2458,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAS02"
+    "cqc_url": "https://www.cqc.org.uk/location/RAS02",
+    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -2311,22 +2475,8 @@
       "hospital"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAS01"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RATGA",
-    "name": "Sunflowers Court",
-    "address": "157 Barley Lane, Ilford, Essex",
-    "postcode": "IG3 8XJ",
-    "phone": "08446001200",
-    "website": "www.nelft.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RATGA"
+    "cqc_url": "https://www.cqc.org.uk/location/RAS01",
+    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -2341,22 +2491,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RATRK"
-  },
-  {
-    "ods_code": "VNAAV",
-    "cqc_id": "RATX8",
-    "name": "Trust Head Office, CEME",
-    "address": "C E M E, Marsh Way, Rainham, Essex",
-    "postcode": "RM13 8GQ",
-    "phone": "03005551200",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RATX8"
+    "cqc_url": "https://www.cqc.org.uk/location/RATRK",
+    "ar": "Redbridge"
   },
   {
     "ods_code": "",
@@ -2371,7 +2507,24 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RATWD"
+    "cqc_url": "https://www.cqc.org.uk/location/RATWD",
+    "ar": "Waltham Forest"
+  },
+  {
+    "ods_code": "VNAAV",
+    "cqc_id": "RATX8",
+    "name": "Trust Head Office, CEME",
+    "address": "C E M E, Marsh Way, Rainham, Essex",
+    "postcode": "RM13 8GQ",
+    "phone": "03005551200",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RATX8",
+    "ar": "Havering"
   },
   {
     "ods_code": "",
@@ -2386,7 +2539,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RAX01"
+    "cqc_url": "https://www.cqc.org.uk/location/RAX01",
+    "ar": "Kingston"
   },
   {
     "ods_code": "",
@@ -2401,7 +2555,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RF4DG"
+    "cqc_url": "https://www.cqc.org.uk/location/RF4DG",
+    "ar": "Redbridge"
   },
   {
     "ods_code": "",
@@ -2416,7 +2571,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RF4QH"
+    "cqc_url": "https://www.cqc.org.uk/location/RF4QH",
+    "ar": "Havering"
   },
   {
     "ods_code": "",
@@ -2431,22 +2587,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ122"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RJ182",
-    "name": "Royal Brompton Hospital",
-    "address": "Sydney Street, Fulham, London",
-    "postcode": "SW3 6NP",
-    "phone": "02073528121",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ182"
+    "cqc_url": "https://www.cqc.org.uk/location/RJ122",
+    "ar": "Lambeth"
   },
   {
     "ods_code": "",
@@ -2461,7 +2603,24 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ181"
+    "cqc_url": "https://www.cqc.org.uk/location/RJ181",
+    "ar": "Hillingdon"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RJ182",
+    "name": "Royal Brompton Hospital",
+    "address": "Sydney Street, Fulham, London",
+    "postcode": "SW3 6NP",
+    "phone": "02073528121",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RJ182",
+    "ar": "Kensington & Chelsea"
   },
   {
     "ods_code": "",
@@ -2476,7 +2635,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ224"
+    "cqc_url": "https://www.cqc.org.uk/location/RJ224",
+    "ar": "Lewisham"
   },
   {
     "ods_code": "",
@@ -2491,7 +2651,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ231"
+    "cqc_url": "https://www.cqc.org.uk/location/RJ231",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2506,22 +2667,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ611"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RJZ70",
-    "name": "Orpington Hospital",
-    "address": "Sevenoaks Road, Orpington, Kent",
-    "postcode": "BR6 9JU",
-    "phone": "02032999000",
-    "website": "www.kch.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ70"
+    "cqc_url": "https://www.cqc.org.uk/location/RJ611",
+    "ar": "Croydon"
   },
   {
     "ods_code": "",
@@ -2536,7 +2683,24 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ701"
+    "cqc_url": "https://www.cqc.org.uk/location/RJ701",
+    "ar": "Wandsworth"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RJZ70",
+    "name": "Orpington Hospital",
+    "address": "Sevenoaks Road, Orpington, Kent",
+    "postcode": "BR6 9JU",
+    "phone": "02032999000",
+    "website": "www.kch.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ70",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -2551,7 +2715,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ30"
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ30",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -2566,7 +2731,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ01"
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ01",
+    "ar": "Lambeth"
   },
   {
     "ods_code": "",
@@ -2582,7 +2748,8 @@
       "hospital"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RKEQ4"
+    "cqc_url": "https://www.cqc.org.uk/location/RKEQ4",
+    "ar": "Islington"
   },
   {
     "ods_code": "",
@@ -2597,7 +2764,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RKL4D"
+    "cqc_url": "https://www.cqc.org.uk/location/RKL4D",
+    "ar": "Ealing"
   },
   {
     "ods_code": "",
@@ -2612,7 +2780,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RKL53"
+    "cqc_url": "https://www.cqc.org.uk/location/RKL53",
+    "ar": "Ealing"
   },
   {
     "ods_code": "",
@@ -2642,7 +2811,8 @@
       "ophthalmology"
     ],
     "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/RP601"
+    "cqc_url": "https://www.cqc.org.uk/location/RP601",
+    "ar": "Islington"
   },
   {
     "ods_code": "",
@@ -2657,7 +2827,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RP401"
+    "cqc_url": "https://www.cqc.org.uk/location/RP401",
+    "ar": "Camden"
   },
   {
     "ods_code": "RPG1A",
@@ -2672,7 +2843,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPG1A"
+    "cqc_url": "https://www.cqc.org.uk/location/RPG1A",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2687,22 +2859,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGAD"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RPGAE",
-    "name": "Oxleas House",
-    "address": "Queen Elizabeth Hospital, Stadium Road, Woolwich, London",
-    "postcode": "SE18 4QH",
-    "phone": "02088368543",
-    "website": "www.oxleas.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGAE"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGAD",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -2717,7 +2875,24 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGAH"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGAH",
+    "ar": "Bexley"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RPGAE",
+    "name": "Oxleas House",
+    "address": "Queen Elizabeth Hospital, Stadium Road, Woolwich, London",
+    "postcode": "SE18 4QH",
+    "phone": "02088368543",
+    "website": "www.oxleas.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RPGAE",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2732,7 +2907,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGAP"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGAP",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2747,7 +2923,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGAR"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGAR",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2762,7 +2939,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGEP"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGEP",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2777,7 +2955,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGEQ"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGEQ",
+    "ar": "Greenwich"
   },
   {
     "ods_code": "",
@@ -2792,7 +2971,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGX1"
+    "cqc_url": "https://www.cqc.org.uk/location/RPGX1",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "",
@@ -2807,22 +2987,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RQM91"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RQXM1",
-    "name": "Homerton University Hospital",
-    "address": "Trust Offices, Homerton Row, Hackney, London",
-    "postcode": "E9 6SR",
-    "phone": "02085105555",
-    "website": "www.homerton.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/RQXM1"
+    "cqc_url": "https://www.cqc.org.uk/location/RQM91",
+    "ar": "Hounslow"
   },
   {
     "ods_code": "",
@@ -2837,7 +3003,24 @@
       "psychiatry"
     ],
     "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/RQM01"
+    "cqc_url": "https://www.cqc.org.uk/location/RQM01",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RQXM1",
+    "name": "Homerton University Hospital",
+    "address": "Trust Offices, Homerton Row, Hackney, London",
+    "postcode": "E9 6SR",
+    "phone": "02085105555",
+    "website": "www.homerton.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Outstanding",
+    "cqc_url": "https://www.cqc.org.uk/location/RQXM1",
+    "ar": "Hackney"
   },
   {
     "ods_code": "",
@@ -2852,7 +3035,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/RQY08"
+    "cqc_url": "https://www.cqc.org.uk/location/RQY08",
+    "ar": "Kingston"
   },
   {
     "ods_code": "RQYNB",
@@ -2867,7 +3051,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RQYNB"
+    "cqc_url": "https://www.cqc.org.uk/location/RQYNB",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "RQYND",
@@ -2882,7 +3067,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RQYND"
+    "cqc_url": "https://www.cqc.org.uk/location/RQYND",
+    "ar": "Wandsworth"
   },
   {
     "ods_code": "",
@@ -2897,7 +3083,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRV02"
+    "cqc_url": "https://www.cqc.org.uk/location/RRV02",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -2912,7 +3099,24 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRV34"
+    "cqc_url": "https://www.cqc.org.uk/location/RRV34",
+    "ar": "Camden"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RRV60",
+    "name": "The Royal London Hospital for Integrated Medicine",
+    "address": "60 Great Ormond Street, London",
+    "postcode": "WC1N 3HR",
+    "phone": "02034477633",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RRV60",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -2928,22 +3132,8 @@
       "hospital"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RRVNQ"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RRV60",
-    "name": "The Royal London Hospital for Integrated Medicine",
-    "address": "60 Great Ormond Street, London",
-    "postcode": "WC1N 3HR",
-    "phone": "02034477633",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRV60"
+    "cqc_url": "https://www.cqc.org.uk/location/RRVNQ",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -2958,7 +3148,72 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV312"
+    "cqc_url": "https://www.cqc.org.uk/location/RV312",
+    "ar": "Brent"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV320",
+    "name": "St Charles Mental Health Centre",
+    "address": "Exmoor Street, North Kensington, London",
+    "postcode": "W10 6DZ",
+    "phone": "02082067003",
+    "website": "www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV320",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV329",
+    "name": "3 Beatrice Place",
+    "address": "Marloes Road, London",
+    "postcode": "W8 5LW",
+    "phone": "02088466045",
+    "website": "www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV329",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV332",
+    "name": "South Kensington and Chelsea Mental Health Centre",
+    "address": "1 Nightingale Place, London",
+    "postcode": "SW10 9NG",
+    "phone": "02033156048",
+    "website": "www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV332",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV355",
+    "name": "Roxbourne Complex",
+    "address": "39-41 Rayners Lane, Harrow, Middlesex",
+    "postcode": "HA2 0UE",
+    "phone": "02084238200",
+    "website": "www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RV355",
+    "ar": "Harrow"
   },
   {
     "ods_code": "",
@@ -2974,97 +3229,8 @@
       "hospital"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV346"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV357",
-    "name": "Rosedale Court",
-    "address": "75-79 Greenford Road, Harrow, Middlesex",
-    "postcode": "HA1 3QF",
-    "phone": "02088642925",
-    "website": "www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV357"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV329",
-    "name": "3 Beatrice Place",
-    "address": "Marloes Road, London",
-    "postcode": "W8 5LW",
-    "phone": "02088466045",
-    "website": "www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV329"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV332",
-    "name": "South Kensington and Chelsea Mental Health Centre",
-    "address": "1 Nightingale Place, London",
-    "postcode": "SW10 9NG",
-    "phone": "02033156048",
-    "website": "www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV332"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV396",
-    "name": "7a Woodfield Road",
-    "address": "Centre Building, 7A Woodfield Road, London",
-    "postcode": "W9 2NW",
-    "phone": "02072669500",
-    "website": "www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV396"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV320",
-    "name": "St Charles Mental Health Centre",
-    "address": "Exmoor Street, North Kensington, London",
-    "postcode": "W10 6DZ",
-    "phone": "02082067003",
-    "website": "www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV320"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV355",
-    "name": "Roxbourne Complex",
-    "address": "39-41 Rayners Lane, Harrow, Middlesex",
-    "postcode": "HA2 0UE",
-    "phone": "02084238200",
-    "website": "www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RV355"
+    "cqc_url": "https://www.cqc.org.uk/location/RV346",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -3079,7 +3245,24 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV383"
+    "cqc_url": "https://www.cqc.org.uk/location/RV383",
+    "ar": "Brent"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV357",
+    "name": "Rosedale Court",
+    "address": "75-79 Greenford Road, Harrow, Middlesex",
+    "postcode": "HA1 3QF",
+    "phone": "02088642925",
+    "website": "www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV357",
+    "ar": "Harrow"
   },
   {
     "ods_code": "",
@@ -3094,22 +3277,24 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RV3AN"
+    "cqc_url": "https://www.cqc.org.uk/location/RV3AN",
+    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
-    "cqc_id": "RV3E5",
-    "name": "Kingswood Centre",
-    "address": "Honeypot Lane, Kingsbury, London",
-    "postcode": "NW9 9QY",
-    "phone": "02082380900",
+    "cqc_id": "RV396",
+    "name": "7a Woodfield Road",
+    "address": "Centre Building, 7A Woodfield Road, London",
+    "postcode": "W9 2NW",
+    "phone": "02072669500",
     "website": "www.cnwl.nhs.uk",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV3E5"
+    "cqc_url": "https://www.cqc.org.uk/location/RV396",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -3124,7 +3309,24 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV3CX"
+    "cqc_url": "https://www.cqc.org.uk/location/RV3CX",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV3E5",
+    "name": "Kingswood Centre",
+    "address": "Honeypot Lane, Kingsbury, London",
+    "postcode": "NW9 9QY",
+    "phone": "02082380900",
+    "website": "www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV3E5",
+    "ar": "Brent"
   },
   {
     "ods_code": "",
@@ -3139,7 +3341,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/RV3X2"
+    "cqc_url": "https://www.cqc.org.uk/location/RV3X2",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -3154,7 +3357,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/RV504"
+    "cqc_url": "https://www.cqc.org.uk/location/RV504",
+    "ar": "Southwark"
   },
   {
     "ods_code": "",
@@ -3170,22 +3374,8 @@
       "psychiatry"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RVR05"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RWK46",
-    "name": "Adult Mental Health Services - Newham Directorate",
-    "address": "Coburn Unit, Newham Centre for Mental Health, Cherry Tree Way, Glen Road, Plaistow, London",
-    "postcode": "E13 8SP",
-    "phone": "02076554000",
-    "website": "www.eastlondon.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RWK46"
+    "cqc_url": "https://www.cqc.org.uk/location/RVR05",
+    "ar": "Sutton"
   },
   {
     "ods_code": "",
@@ -3201,22 +3391,8 @@
       "oncology"
     ],
     "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RWH04"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RWK61",
-    "name": "Adult Mental Health Services - Tower Hamlets Directorate",
-    "address": "Tower Hamlets Centre for Mental Health, Bancroft Road, Mile End, London",
-    "postcode": "E1 4DG",
-    "phone": "02076554000",
-    "website": "www.eastlondon.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RWK61"
+    "cqc_url": "https://www.cqc.org.uk/location/RWH04",
+    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -3231,7 +3407,40 @@
       "psychiatry"
     ],
     "cqc_rating": "Inspected but not rated",
-    "cqc_url": "https://www.cqc.org.uk/location/RWK60"
+    "cqc_url": "https://www.cqc.org.uk/location/RWK60",
+    "ar": "Hackney"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RWK46",
+    "name": "Adult Mental Health Services - Newham Directorate",
+    "address": "Coburn Unit, Newham Centre for Mental Health, Cherry Tree Way, Glen Road, Plaistow, London",
+    "postcode": "E13 8SP",
+    "phone": "02076554000",
+    "website": "www.eastlondon.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RWK46",
+    "ar": "Newham"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RWK61",
+    "name": "Adult Mental Health Services - Tower Hamlets Directorate",
+    "address": "Tower Hamlets Centre for Mental Health, Bancroft Road, Mile End, London",
+    "postcode": "E1 4DG",
+    "phone": "02076554000",
+    "website": "www.eastlondon.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RWK61",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -3246,7 +3455,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RWK62"
+    "cqc_url": "https://www.cqc.org.uk/location/RWK62",
+    "ar": "Hackney"
   },
   {
     "ods_code": "",
@@ -3261,7 +3471,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWKGY"
+    "cqc_url": "https://www.cqc.org.uk/location/RWKGY",
+    "ar": "Tower Hamlets"
   },
   {
     "ods_code": "",
@@ -3276,7 +3487,72 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWKW3"
+    "cqc_url": "https://www.cqc.org.uk/location/RWKW3",
+    "ar": "Tower Hamlets"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RYJ04",
+    "name": "Queen Charlottes and Chelsea Hospital",
+    "address": "Du Cane Road, London",
+    "postcode": "W12 0AE",
+    "phone": "02033113311",
+    "website": "www.imperial.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Outstanding",
+    "cqc_url": "https://www.cqc.org.uk/location/RYJ04",
+    "ar": "Hammersmith & Fulham"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RYJ01",
+    "name": "St Mary's Hospital",
+    "address": "The Bays, South Wharf Road, St Mary's Hospital, London",
+    "postcode": "W2 1NY",
+    "phone": "02033113311",
+    "website": "www.imperial.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RYJ01",
+    "ar": "Westminster"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RYJ03",
+    "name": "Hammersmith Hospitals",
+    "address": "Du Cane Road, London",
+    "postcode": "W12 0AE",
+    "phone": "02033113311",
+    "website": "www.imperial.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RYJ03",
+    "ar": "Hammersmith & Fulham"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RYJ02",
+    "name": "Charing Cross Hospital",
+    "address": "Fulham Palace Road, Hammersmith, London",
+    "postcode": "W6 8RF",
+    "phone": "02033113311",
+    "website": "www.imperial.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RYJ02",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "ods_code": "",
@@ -3292,67 +3568,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RYJ07"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RYJ01",
-    "name": "St Mary's Hospital",
-    "address": "The Bays, South Wharf Road, St Mary's Hospital, London",
-    "postcode": "W2 1NY",
-    "phone": "02033113311",
-    "website": "www.imperial.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RYJ01"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RYJ04",
-    "name": "Queen Charlottes and Chelsea Hospital",
-    "address": "Du Cane Road, London",
-    "postcode": "W12 0AE",
-    "phone": "02033113311",
-    "website": "www.imperial.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/RYJ04"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RYJ03",
-    "name": "Hammersmith Hospitals",
-    "address": "Du Cane Road, London",
-    "postcode": "W12 0AE",
-    "phone": "02033113311",
-    "website": "www.imperial.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RYJ03"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RYJ02",
-    "name": "Charing Cross Hospital",
-    "address": "Fulham Palace Road, Hammersmith, London",
-    "postcode": "W6 8RF",
-    "phone": "02033113311",
-    "website": "www.imperial.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RYJ02"
+    "cqc_url": "https://www.cqc.org.uk/location/RYJ07",
+    "ar": "Westminster"
   },
   {
     "ods_code": "",
@@ -3367,7 +3584,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RYXY1"
+    "cqc_url": "https://www.cqc.org.uk/location/RYXY1",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -3382,7 +3600,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RYXY9"
+    "cqc_url": "https://www.cqc.org.uk/location/RYXY9",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -3397,7 +3616,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RYXZ2"
+    "cqc_url": "https://www.cqc.org.uk/location/RYXZ2",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -3412,52 +3632,8 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RYXZ1"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "TAF007",
-    "name": "Trust Headquarters",
-    "address": "St. Pancras Hospital, 4 St. Pancras Way, London",
-    "postcode": "NW1 0PE",
-    "phone": "02033173500",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF007"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "TAF002",
-    "name": "Barnet General Hospital",
-    "address": "Wellhouse Lane, Barnet, Hertfordshire",
-    "postcode": "EN5 3DJ",
-    "phone": "02087023000",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF002"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "TAF003",
-    "name": "Edgware Community Hospital",
-    "address": "Burnt Oak Broadway, Edgware, Middlesex",
-    "postcode": "HA8 0AD",
-    "phone": "02087023000",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF003"
+    "cqc_url": "https://www.cqc.org.uk/location/RYXZ1",
+    "ar": "Barnet"
   },
   {
     "ods_code": "",
@@ -3472,22 +3648,56 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF001"
+    "cqc_url": "https://www.cqc.org.uk/location/TAF001",
+    "ar": "Enfield"
   },
   {
     "ods_code": "",
-    "cqc_id": "TAF01",
-    "name": "St Pancras Hospital",
-    "address": "4 St Pancras Way, London",
-    "postcode": "NW1 0PE",
-    "phone": "02033173500",
-    "website": "www.candi.nhs.uk",
+    "cqc_id": "TAF003",
+    "name": "Edgware Community Hospital",
+    "address": "Burnt Oak Broadway, Edgware, Middlesex",
+    "postcode": "HA8 0AD",
+    "phone": "02087023000",
+    "website": "",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF01"
+    "cqc_url": "https://www.cqc.org.uk/location/TAF003",
+    "ar": "Barnet"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "TAF002",
+    "name": "Barnet General Hospital",
+    "address": "Wellhouse Lane, Barnet, Hertfordshire",
+    "postcode": "EN5 3DJ",
+    "phone": "02087023000",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/TAF002",
+    "ar": "Barnet"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "TAF007",
+    "name": "Trust Headquarters",
+    "address": "St. Pancras Hospital, 4 St. Pancras Way, London",
+    "postcode": "NW1 0PE",
+    "phone": "02033173500",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/TAF007",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -3502,7 +3712,24 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF006"
+    "cqc_url": "https://www.cqc.org.uk/location/TAF006",
+    "ar": "Haringey"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "TAF01",
+    "name": "St Pancras Hospital",
+    "address": "4 St Pancras Way, London",
+    "postcode": "NW1 0PE",
+    "phone": "02033173500",
+    "website": "www.candi.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/TAF01",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -3517,6 +3744,7 @@
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF72"
+    "cqc_url": "https://www.cqc.org.uk/location/TAF72",
+    "ar": "Camden"
   }
 ]
