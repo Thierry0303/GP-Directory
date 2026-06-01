@@ -9,7 +9,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -31,14 +31,16 @@ jobs:
       - name: Merge private + rebuild index.html
         run: python merge_into_dataset.py
 
-      # NEW: Fix practice names from CQC (before rating enrichment)
-      - name: Enrich practice names from CQC API
-        run: python fetch_cqc_practice_names.py
+      - name: Normalize website URLs (add https://)
+        run: python normalize_urls.py
 
-      - name: Backfill missing CQC ratings
+      - name: Backfill missing CQC ratings (paginate-based)
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python enrich_cqc_ratings.py
+
+      - name: Drop non-GMS NHS records (broken Register links)
+        run: python drop_non_gms.py
 
       - name: Fix borough assignments via ONS postcode data
         run: python fix_boroughs.py
