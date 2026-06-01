@@ -31,6 +31,10 @@ jobs:
       - name: Merge private + rebuild index.html
         run: python merge_into_dataset.py
 
+      # NEW: Fix practice names from CQC (before rating enrichment)
+      - name: Enrich practice names from CQC API
+        run: python fetch_cqc_practice_names.py
+
       - name: Backfill missing CQC ratings
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
