@@ -34,6 +34,9 @@ jobs:
       - name: Normalize website URLs (add https://)
         run: python normalize_urls.py
 
+      - name: Strip non-GP NHS records
+        run: python clean_nhs_records.py
+
       - name: Backfill missing CQC ratings (paginate-based)
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
