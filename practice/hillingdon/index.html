@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GP Practices &amp; Private Clinics in Hillingdon — London GP Directory</title>
-<meta name="description" content="Compare 25 NHS GP practices and 6 private clinics in Hillingdon, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<meta name="description" content="Compare 25 NHS GP practices and 7 private clinics in Hillingdon, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
 <link rel="canonical" href="https://londongp.directory/practice/hillingdon/">
 <meta property="og:title" content="GP Practices &amp; Private Clinics in Hillingdon — London GP Directory">
-<meta property="og:description" content="Compare 25 NHS GPs and 6 private clinics in Hillingdon.">
+<meta property="og:description" content="Compare 25 NHS GPs and 7 private clinics in Hillingdon.">
 <meta property="og:url" content="https://londongp.directory/practice/hillingdon/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#003087">
@@ -91,7 +91,7 @@ footer a{color:rgba(255,255,255,.8)}
     <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in Hillingdon — by CQC rating, patient survey, contact details and specialty.</p>
     <div class="stats">
       <div class="stat"><strong>25</strong><span>NHS practices</span></div>
-      <div class="stat"><strong>6</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>7</strong><span>Private clinics</span></div>
       <div class="stat"><strong>17</strong><span>Good or Outstanding</span></div>
       <div class="stat"><strong>0.0%</strong><span>Avg NHS patient score</span></div>
     </div>
@@ -101,10 +101,10 @@ footer a{color:rgba(255,255,255,.8)}
   <div class="type-inner">
     <div class="type-tabs" id="typeTabs">
       <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">25</span></button>
-      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">6</span></button>
-      <button class="type-tab" data-type="All">All <span class="type-tab-count">31</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">7</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">32</span></button>
     </div>
-    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">6</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">5</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="hospital">hospital <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="oncology">oncology <span class="specialty-chip-count">1</span></button></div>
+    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">7</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">6</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="hospital">hospital <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="oncology">oncology <span class="specialty-chip-count">1</span></button></div>
   </div>
 </div>
 <main class="wrap">
@@ -293,6 +293,19 @@ footer a{color:rgba(255,255,255,.8)}
       <div class="card-foot">
         <a class="card-phone" href="tel:01895279939">📞 01895279939</a>
         <div class="actions"><a class="pill pill-web" href="https://www.cnwl.nhs.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/RV3AN" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Hillside Dentalcare</div>
+        <span class="cqc cqc-N">Inspected but not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">27 Field End Road, Pinner, Middlesex, HA5 2QQ</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088667278">📞 02088667278</a>
+        <div class="actions"><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-188084803" target="_blank">CQC</a></div>
       </div>
     </div>
 <div class="card" data-type="NHS" data-specs="">
@@ -601,7 +614,7 @@ const grid = document.getElementById('grid');
 const resCt = document.getElementById('resCt');
 const BOROUGH = "Hillingdon";
 const TOTAL_NHS = 25;
-const TOTAL_PRIV = 6;
+const TOTAL_PRIV = 7;
 let selType = 'NHS';
 let selSpec = 'all';
 

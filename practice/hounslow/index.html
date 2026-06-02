@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GP Practices &amp; Private Clinics in Hounslow — London GP Directory</title>
-<meta name="description" content="Compare 27 NHS GP practices and 3 private clinics in Hounslow, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<meta name="description" content="Compare 27 NHS GP practices and 4 private clinics in Hounslow, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
 <link rel="canonical" href="https://londongp.directory/practice/hounslow/">
 <meta property="og:title" content="GP Practices &amp; Private Clinics in Hounslow — London GP Directory">
-<meta property="og:description" content="Compare 27 NHS GPs and 3 private clinics in Hounslow.">
+<meta property="og:description" content="Compare 27 NHS GPs and 4 private clinics in Hounslow.">
 <meta property="og:url" content="https://londongp.directory/practice/hounslow/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#003087">
@@ -91,8 +91,8 @@ footer a{color:rgba(255,255,255,.8)}
     <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in Hounslow — by CQC rating, patient survey, contact details and specialty.</p>
     <div class="stats">
       <div class="stat"><strong>27</strong><span>NHS practices</span></div>
-      <div class="stat"><strong>3</strong><span>Private clinics</span></div>
-      <div class="stat"><strong>23</strong><span>Good or Outstanding</span></div>
+      <div class="stat"><strong>4</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>24</strong><span>Good or Outstanding</span></div>
       <div class="stat"><strong>0.0%</strong><span>Avg NHS patient score</span></div>
     </div>
   </div>
@@ -101,10 +101,10 @@ footer a{color:rgba(255,255,255,.8)}
   <div class="type-inner">
     <div class="type-tabs" id="typeTabs">
       <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">27</span></button>
-      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">3</span></button>
-      <button class="type-tab" data-type="All">All <span class="type-tab-count">30</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">4</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">31</span></button>
     </div>
-    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">3</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="cardiology">cardiology <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">1</span></button></div>
+    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">4</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">2</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="cardiology">cardiology <span class="specialty-chip-count">1</span></button></div>
   </div>
 </div>
 <main class="wrap">
@@ -315,6 +315,19 @@ footer a{color:rgba(255,255,255,.8)}
       <div class="card-foot">
         <a class="card-phone" href="tel:02089490644">📞 02089490644</a>
         <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/E85746" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-503800891" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XE85746" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">HMC Health Hounslow</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">92 Bath Road, Hounslow, Middlesex, TW3 3LN</div>
+      
+      <div class="card-foot">
+        <span></span>
+        <div class="actions"><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-6308609348" target="_blank">CQC</a></div>
       </div>
     </div>
 <div class="card" data-type="NHS" data-specs="">
@@ -594,7 +607,7 @@ const grid = document.getElementById('grid');
 const resCt = document.getElementById('resCt');
 const BOROUGH = "Hounslow";
 const TOTAL_NHS = 27;
-const TOTAL_PRIV = 3;
+const TOTAL_PRIV = 4;
 let selType = 'NHS';
 let selSpec = 'all';
 

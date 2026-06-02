@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GP Practices &amp; Private Clinics in Sutton — London GP Directory</title>
-<meta name="description" content="Compare 16 NHS GP practices and 5 private clinics in Sutton, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<meta name="description" content="Compare 16 NHS GP practices and 6 private clinics in Sutton, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
 <link rel="canonical" href="https://londongp.directory/practice/sutton/">
 <meta property="og:title" content="GP Practices &amp; Private Clinics in Sutton — London GP Directory">
-<meta property="og:description" content="Compare 16 NHS GPs and 5 private clinics in Sutton.">
+<meta property="og:description" content="Compare 16 NHS GPs and 6 private clinics in Sutton.">
 <meta property="og:url" content="https://londongp.directory/practice/sutton/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#003087">
@@ -91,7 +91,7 @@ footer a{color:rgba(255,255,255,.8)}
     <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in Sutton — by CQC rating, patient survey, contact details and specialty.</p>
     <div class="stats">
       <div class="stat"><strong>16</strong><span>NHS practices</span></div>
-      <div class="stat"><strong>5</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>6</strong><span>Private clinics</span></div>
       <div class="stat"><strong>15</strong><span>Good or Outstanding</span></div>
       <div class="stat"><strong>0.0%</strong><span>Avg NHS patient score</span></div>
     </div>
@@ -101,10 +101,10 @@ footer a{color:rgba(255,255,255,.8)}
   <div class="type-inner">
     <div class="type-tabs" id="typeTabs">
       <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">16</span></button>
-      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">5</span></button>
-      <button class="type-tab" data-type="All">All <span class="type-tab-count">21</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">6</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">22</span></button>
     </div>
-    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">5</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">2</span></button><button class="specialty-chip" data-spec="paediatrics">paediatrics <span class="specialty-chip-count">2</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="private gp">private gp <span class="specialty-chip-count">1</span></button></div>
+    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">6</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">3</span></button><button class="specialty-chip" data-spec="paediatrics">paediatrics <span class="specialty-chip-count">2</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="private gp">private gp <span class="specialty-chip-count">1</span></button></div>
   </div>
 </div>
 <main class="wrap">
@@ -123,6 +123,19 @@ footer a{color:rgba(255,255,255,.8)}
       <div class="card-foot">
         <a class="card-phone" href="tel:02086476608">📞 02086476608</a>
         <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H85662" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-485285503" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH85662" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Beechwood Smile Centre</div>
+        <span class="cqc cqc-N">Inspected but not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">109 Banstead Road, Carshalton Beeches, Carshalton, Surrey, SM5 3NP</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02086421842">📞 02086421842</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.beechwooddentalcare.co.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-303141709" target="_blank">CQC</a></div>
       </div>
     </div>
 <div class="card" data-type="NHS" data-specs="">
@@ -444,7 +457,7 @@ const grid = document.getElementById('grid');
 const resCt = document.getElementById('resCt');
 const BOROUGH = "Sutton";
 const TOTAL_NHS = 16;
-const TOTAL_PRIV = 5;
+const TOTAL_PRIV = 6;
 let selType = 'NHS';
 let selSpec = 'all';
 

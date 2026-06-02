@@ -16127,21 +16127,6 @@
     "web": "https://www.privateultrasoundscan.org"
   },
   {
-    "n": "Blackheath Brain Injury Rehabilitation Centre",
-    "a": "80 - 82 Blackheath Hill, London",
-    "p": "SE10 8AD",
-    "ph": "02086924007",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-10204873504",
-    "ar": "Lewisham",
-    "o": "1-10204873504",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.activecaregroup.co.uk"
-  },
-  {
     "n": "Holybourne Hospital",
     "a": "Holybourne Avenue, London",
     "p": "SW15 4JL",
@@ -16157,6 +16142,21 @@
     "web": "https://www.activecaregroup.co.uk"
   },
   {
+    "n": "Blackheath Brain Injury Rehabilitation Centre",
+    "a": "80 - 82 Blackheath Hill, London",
+    "p": "SE10 8AD",
+    "ph": "02086924007",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-10204873504",
+    "ar": "Lewisham",
+    "o": "1-10204873504",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.activecaregroup.co.uk"
+  },
+  {
     "n": "HMP Wandsworth",
     "a": "Heathfield Road, London",
     "p": "SW18 3HU",
@@ -16165,6 +16165,21 @@
     "cu": "https://www.cqc.org.uk/location/1-10484688628",
     "ar": "Wandsworth",
     "o": "V233168",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
+    "n": "HMP Brixton",
+    "a": "Brixton, Jebb Avenue, London",
+    "p": "SW2 5XF",
+    "ph": "07957878031",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-10488652685",
+    "ar": "",
+    "o": "V09988",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -16247,21 +16262,6 @@
     "web": "https://www.centreforsight.com"
   },
   {
-    "n": "The Hale Clinic",
-    "a": "4 Harley Street, London",
-    "p": "W1G 9PB",
-    "ph": "02076310156",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-10748240392",
-    "ar": "Westminster",
-    "o": "1-10748240392",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": ""
-  },
-  {
     "n": "IPDiagnostics Ltd",
     "a": "559a, Kings Road, London",
     "p": "SW6 2EB",
@@ -16275,6 +16275,21 @@
       "psychiatry"
     ],
     "web": "https://www.ipdiagnostics.co.uk"
+  },
+  {
+    "n": "The Hale Clinic",
+    "a": "4 Harley Street, London",
+    "p": "W1G 9PB",
+    "ph": "02076310156",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-10748240392",
+    "ar": "Westminster",
+    "o": "1-10748240392",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
   },
   {
     "n": "The Fertility & Gynaecology Academy",
@@ -16412,21 +16427,6 @@
     "web": "https://www.elysiumhealthcare.co.uk"
   },
   {
-    "n": "HCA Healthcare UK The Wellington Hospital",
-    "a": "Wellington Place, St John's Wood, London",
-    "p": "NW8 9LE",
-    "ph": "02074835148",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-126955711",
-    "ar": "Westminster",
-    "o": "1-126955711",
-    "type": "Private",
-    "specs": [
-      "hospital"
-    ],
-    "web": "https://www.thewellingtonhospital.com"
-  },
-  {
     "n": "Ultrasound Scanning Services Ltd",
     "a": "452 Church Lane, London",
     "p": "NW9 8UA",
@@ -16442,19 +16442,19 @@
     "web": "https://www.ultrasoundservices.co.uk"
   },
   {
-    "n": "HCA Healthcare UK The Portland Hospital",
-    "a": "205-209, 214 and 234 Great Portland Street, London",
-    "p": "W1W 5AH",
-    "ph": "02075804400",
+    "n": "HCA Healthcare UK The Wellington Hospital",
+    "a": "Wellington Place, St John's Wood, London",
+    "p": "NW8 9LE",
+    "ph": "02074835148",
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-126955917",
+    "cu": "https://www.cqc.org.uk/location/1-126955711",
     "ar": "Westminster",
-    "o": "1-126955917",
+    "o": "1-126955711",
     "type": "Private",
     "specs": [
       "hospital"
     ],
-    "web": "https://www.theportlandhospital.com"
+    "web": "https://www.thewellingtonhospital.com"
   },
   {
     "n": "HCA Healthcare UK The Lister Hospital",
@@ -16472,19 +16472,19 @@
     "web": "https://www.thelisterhospital.com"
   },
   {
-    "n": "The Blackheath Hospital",
-    "a": "40-42 Lee Terrace, Blackheath, London",
-    "p": "SE3 9UD",
-    "ph": "02083187722",
+    "n": "HCA Healthcare UK The Portland Hospital",
+    "a": "205-209, 214 and 234 Great Portland Street, London",
+    "p": "W1W 5AH",
+    "ph": "02075804400",
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-128758547",
-    "ar": "Lewisham",
-    "o": "NT406",
+    "cu": "https://www.cqc.org.uk/location/1-126955917",
+    "ar": "Westminster",
+    "o": "1-126955917",
     "type": "Private",
     "specs": [
       "hospital"
     ],
-    "web": "https://www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital"
+    "web": "https://www.theportlandhospital.com"
   },
   {
     "n": "The Cavell Hospital",
@@ -16500,6 +16500,21 @@
       "hospital"
     ],
     "web": "https://www.circlehealthgroup.co.uk/hospitals/the-cavell-hospital"
+  },
+  {
+    "n": "The Blackheath Hospital",
+    "a": "40-42 Lee Terrace, Blackheath, London",
+    "p": "SE3 9UD",
+    "ph": "02083187722",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-128758547",
+    "ar": "Lewisham",
+    "o": "NT406",
+    "type": "Private",
+    "specs": [
+      "hospital"
+    ],
+    "web": "https://www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital"
   },
   {
     "n": "The Sloane Hospital",
@@ -16862,6 +16877,21 @@
     "web": "https://www.cavendishimaging.com"
   },
   {
+    "n": "St Paul's Cray Health Clinic",
+    "a": "Mickleham Road, Orpington",
+    "p": "BR5 2RJ",
+    "ph": "02083026322",
+    "cqc": "No published rating",
+    "cu": "https://www.cqc.org.uk/location/1-15857637922",
+    "ar": "Bromley",
+    "o": "V08448",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
     "n": "Hanover House",
     "a": "Hanover House, 76 Coombe Road, Kingston Upon Thames",
     "p": "KT2 7AZ",
@@ -16997,6 +17027,21 @@
     "web": ""
   },
   {
+    "n": "Hillside Dentalcare",
+    "a": "27 Field End Road, Pinner, Middlesex",
+    "p": "HA5 2QQ",
+    "ph": "02088667278",
+    "cqc": "Inspected but not rated",
+    "cu": "https://www.cqc.org.uk/location/1-188084803",
+    "ar": "Hillingdon",
+    "o": "V01513",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
     "n": "London Private Ultrasound",
     "a": "The London Welbeck Hospital, 27 Welbeck Street, London",
     "p": "W1G 8EN",
@@ -17027,6 +17072,21 @@
     "web": "https://www.cancercentrelondon.co.uk"
   },
   {
+    "n": "SW Smiles",
+    "a": "53-55 Queenstown Road, Battersea, London",
+    "p": "SW8 3RG",
+    "ph": "02076223973",
+    "cqc": "Inspected but not rated",
+    "cu": "https://www.cqc.org.uk/location/1-197800629",
+    "ar": "Wandsworth",
+    "o": "V02071",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.swsmiles.co.uk"
+  },
+  {
     "n": "NW Smiles",
     "a": "18 Melcombe Street, London",
     "p": "NW1 6AH",
@@ -17055,6 +17115,21 @@
       "diagnostics"
     ],
     "web": ""
+  },
+  {
+    "n": "Confidental Care",
+    "a": "207 Southborough Lane, Bickley, Bromley, Kent",
+    "p": "BR2 8AR",
+    "ph": "02082893388",
+    "cqc": "Inspected but not rated",
+    "cu": "https://www.cqc.org.uk/location/1-198177201",
+    "ar": "Bromley",
+    "o": "V06523",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.confidentalcare.co.uk"
   },
   {
     "n": "Eye Clinic London Ltd",
@@ -17252,14 +17327,14 @@
     "web": "https://www.ayub-endo.com"
   },
   {
-    "n": "Gareth Roberts - 69 Pont Street",
-    "a": "69 Pont Street, London",
-    "p": "SW1X 0BH",
-    "ph": "",
+    "n": "Patrick Mcanerney",
+    "a": "Muswell Hill, London",
+    "p": "N10 1ET",
+    "ph": "02088838959",
     "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-224248193",
-    "ar": "Kensington & Chelsea",
-    "o": "1-224248193",
+    "cu": "https://www.cqc.org.uk/location/1-220480682",
+    "ar": "Barnet",
+    "o": "V83406",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -17280,6 +17355,21 @@
       "psychiatry"
     ],
     "web": "https://www.sensu.co.uk"
+  },
+  {
+    "n": "Gareth Roberts - 69 Pont Street",
+    "a": "69 Pont Street, London",
+    "p": "SW1X 0BH",
+    "ph": "",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-224248193",
+    "ar": "Kensington & Chelsea",
+    "o": "1-224248193",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
   },
   {
     "n": "Mr Philip Chai Kee Wee",
@@ -17312,21 +17402,6 @@
     "web": "https://www.Jivadental.co.uk"
   },
   {
-    "n": "Infinity Eye Clinic Limited",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "08008803300",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2283828271",
-    "ar": "Westminster",
-    "o": "1-2283828271",
-    "type": "Private",
-    "specs": [
-      "ophthalmology"
-    ],
-    "web": "https://www.infinityeyeclinic.com"
-  },
-  {
     "n": "Orchard Clinic",
     "a": "89 St Margarets Road, Twickenham, Middlesex",
     "p": "TW1 2LJ",
@@ -17340,6 +17415,21 @@
       "psychiatry"
     ],
     "web": "https://www.orchard-clinic.co.uk"
+  },
+  {
+    "n": "Infinity Eye Clinic Limited",
+    "a": "10 Harley Street, London",
+    "p": "W1G 9PF",
+    "ph": "08008803300",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-2283828271",
+    "ar": "Westminster",
+    "o": "1-2283828271",
+    "type": "Private",
+    "specs": [
+      "ophthalmology"
+    ],
+    "web": "https://www.infinityeyeclinic.com"
   },
   {
     "n": "Smart MRI LTD (Located inside Tessa Jowell Health Centre)",
@@ -17372,21 +17462,6 @@
     "web": "https://www.mildmay.org"
   },
   {
-    "n": "Beckenham Beacon",
-    "a": "379 Croydon Road, Beckenham, Kent",
-    "p": "BR3 3QL",
-    "ph": "01689866740",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-233070238",
-    "ar": "Bromley",
-    "o": "1-233070238",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.bromleyhealthcare.nhs.uk"
-  },
-  {
     "n": "Mayfair Childrens Clinic Ltd",
     "a": "15 Chesterfield Street, London",
     "p": "W1J 5JN",
@@ -17400,6 +17475,21 @@
       "paediatrics"
     ],
     "web": ""
+  },
+  {
+    "n": "Beckenham Beacon",
+    "a": "379 Croydon Road, Beckenham, Kent",
+    "p": "BR3 3QL",
+    "ph": "01689866740",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-233070238",
+    "ar": "Bromley",
+    "o": "1-233070238",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.bromleyhealthcare.nhs.uk"
   },
   {
     "n": "Sloane Medical Practice",
@@ -17567,6 +17657,21 @@
     "web": "https://www.uryflow-urologyservices.com"
   },
   {
+    "n": "Beechwood Smile Centre",
+    "a": "109 Banstead Road, Carshalton Beeches, Carshalton, Surrey",
+    "p": "SM5 3NP",
+    "ph": "02086421842",
+    "cqc": "Inspected but not rated",
+    "cu": "https://www.cqc.org.uk/location/1-303141709",
+    "ar": "Sutton",
+    "o": "V04515",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.beechwooddentalcare.co.uk"
+  },
+  {
     "n": "Herts & Essex Fertility Centre",
     "a": "Bishops' College, Churchgate, Cheshunt, Hertfordshire",
     "p": "EN8 9XP",
@@ -17597,21 +17702,6 @@
     "web": ""
   },
   {
-    "n": "Dr Sandeep Bolia Private Medical Services",
-    "a": "203m Camberwell Grove, London",
-    "p": "SE5 8JU",
-    "ph": "",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-339410966",
-    "ar": "Southwark",
-    "o": "1-339410966",
-    "type": "Private",
-    "specs": [
-      "private gp"
-    ],
-    "web": "https://www.drbolia.com"
-  },
-  {
     "n": "Dr Ali Erdinch Havutcu T/A Green Lanes Clinic",
     "a": "551a Green Lanes, Palmers Green, London",
     "p": "N13 4DR",
@@ -17625,6 +17715,21 @@
       "psychiatry"
     ],
     "web": ""
+  },
+  {
+    "n": "Dr Sandeep Bolia Private Medical Services",
+    "a": "203m Camberwell Grove, London",
+    "p": "SE5 8JU",
+    "ph": "",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-339410966",
+    "ar": "Southwark",
+    "o": "1-339410966",
+    "type": "Private",
+    "specs": [
+      "private gp"
+    ],
+    "web": "https://www.drbolia.com"
   },
   {
     "n": "Ultrasound Diagnostic Services",
@@ -17912,6 +18017,21 @@
     "web": "https://www.harleytherapy.co.uk/todd-mitchell.htm"
   },
   {
+    "n": "HMC Health Hounslow",
+    "a": "92 Bath Road, Hounslow, Middlesex",
+    "p": "TW3 3LN",
+    "ph": "",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-6308609348",
+    "ar": "Hounslow",
+    "o": "Y02671",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
     "n": "Ultrasound Direct London",
     "a": "2 Wellesley Court Road, Croydon, Surrey",
     "p": "CR0 1LE",
@@ -18124,6 +18244,21 @@
     "web": "https://www.thamesskin.co.uk"
   },
   {
+    "n": "Alm\u00e1s - Dentistry & Aesthetics",
+    "a": "38 Chichele Road, London",
+    "p": "NW2 3DD",
+    "ph": "02084521895",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-948991093",
+    "ar": "Brent",
+    "o": "V04507",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
     "n": "One Heart Clinic",
     "a": "68 Harley Street, London",
     "p": "W1G 7HE",
@@ -18320,6 +18455,21 @@
     "web": ""
   },
   {
+    "n": "Barnet General Hospital",
+    "a": "Wellhouse Lane, Barnet, Hertfordshire",
+    "p": "EN5 3DJ",
+    "ph": "02082164000",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/RAL26",
+    "ar": "Barnet",
+    "o": "RAL26",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.bcf.nhs.uk"
+  },
+  {
     "n": "The Royal Free Hospital",
     "a": "Pond Street, Pond Street, London",
     "p": "NW3 2QG",
@@ -18335,19 +18485,19 @@
     "web": "https://www.royalfree.nhs.uk"
   },
   {
-    "n": "Barnet General Hospital",
-    "a": "Wellhouse Lane, Barnet, Hertfordshire",
-    "p": "EN5 3DJ",
-    "ph": "02082164000",
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RAL26",
-    "ar": "Barnet",
-    "o": "RAL26",
+    "n": "Chase Farm Hospital",
+    "a": "The Ridgeway, Enfield, Middlesex",
+    "p": "EN2 8JL",
+    "ph": "08451114000",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/RALC7",
+    "ar": "Enfield",
+    "o": "RALC7",
     "type": "Private",
     "specs": [
       "psychiatry"
     ],
-    "web": "https://www.bcf.nhs.uk"
+    "web": ""
   },
   {
     "n": "Edgware Community Hospital",
@@ -18380,19 +18530,19 @@
     "web": "https://www.rnoh.nhs.uk"
   },
   {
-    "n": "Chase Farm Hospital",
-    "a": "The Ridgeway, Enfield, Middlesex",
-    "p": "EN2 8JL",
-    "ph": "08451114000",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RALC7",
-    "ar": "Enfield",
-    "o": "RALC7",
+    "n": "Sunflowers Court",
+    "a": "157 Barley Lane, Ilford, Essex",
+    "p": "IG3 8XJ",
+    "ph": "08446001200",
+    "cqc": "No published rating",
+    "cu": "https://www.cqc.org.uk/location/RATGA",
+    "ar": "Redbridge",
+    "o": "RATGA",
     "type": "Private",
     "specs": [
       "psychiatry"
     ],
-    "web": ""
+    "web": "https://www.nelft.nhs.uk"
   },
   {
     "n": "Mount Vernon Hospital",
@@ -18424,21 +18574,6 @@
       "hospital"
     ],
     "web": "https://www.thh.nhs.uk"
-  },
-  {
-    "n": "Sunflowers Court",
-    "a": "157 Barley Lane, Ilford, Essex",
-    "p": "IG3 8XJ",
-    "ph": "08446001200",
-    "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/RATGA",
-    "ar": "Redbridge",
-    "o": "RATGA",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.nelft.nhs.uk"
   },
   {
     "n": "Brookside",
@@ -18621,21 +18756,6 @@
     "web": "https://www.croydonhealthservices.nhs.uk"
   },
   {
-    "n": "St George's Hospital (Tooting)",
-    "a": "Blackshaw Road, Tooting, London",
-    "p": "SW17 0QT",
-    "ph": "02086721255",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RJ701",
-    "ar": "Wandsworth",
-    "o": "RJ701",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.stgeorges.nhs.uk"
-  },
-  {
     "n": "Orpington Hospital",
     "a": "Sevenoaks Road, Orpington, Kent",
     "p": "BR6 9JU",
@@ -18664,6 +18784,21 @@
       "psychiatry"
     ],
     "web": "https://www.kch.nhs.uk"
+  },
+  {
+    "n": "St George's Hospital (Tooting)",
+    "a": "Blackshaw Road, Tooting, London",
+    "p": "SW17 0QT",
+    "ph": "02086721255",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/RJ701",
+    "ar": "Wandsworth",
+    "o": "RJ701",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.stgeorges.nhs.uk"
   },
   {
     "n": "King's College Hospital",
@@ -18772,6 +18907,21 @@
     "web": "https://www.gosh.nhs.uk"
   },
   {
+    "n": "HMP YOI Isis",
+    "a": "Belmarsh Way, London",
+    "p": "SE28 0FD",
+    "ph": "02033564252",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/RPG1A",
+    "ar": "Greenwich",
+    "o": "RPG1A",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
     "n": "Green Parks House",
     "a": "Farnborough Common, Orpington, Kent",
     "p": "BR6 8ND",
@@ -18802,21 +18952,6 @@
     "web": "https://www.oxleas.nhs.uk"
   },
   {
-    "n": "HMP YOI Isis",
-    "a": "Belmarsh Way, London",
-    "p": "SE28 0FD",
-    "ph": "02033564252",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RPG1A",
-    "ar": "Greenwich",
-    "o": "RPG1A",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": ""
-  },
-  {
     "n": "Woodlands Unit",
     "a": "Queen Mary's Hospital, Frognal Avenue, Sidcup, Kent",
     "p": "DA14 6LT",
@@ -18840,21 +18975,6 @@
     "cu": "https://www.cqc.org.uk/location/RPGAP",
     "ar": "Greenwich",
     "o": "RPGAP",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.oxleas.nhs.uk"
-  },
-  {
-    "n": "Greenwood",
-    "a": "Memorial Hospital, Shooters Hill Road, Woolwich, London",
-    "p": "SE18 3RZ",
-    "ph": "01322297166",
-    "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/RPGEP",
-    "ar": "Greenwich",
-    "o": "RPGEP",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -18892,6 +19012,21 @@
     "web": "https://www.oxleas.nhs.uk"
   },
   {
+    "n": "Greenwood",
+    "a": "Memorial Hospital, Shooters Hill Road, Woolwich, London",
+    "p": "SE18 3RZ",
+    "ph": "01322297166",
+    "cqc": "No published rating",
+    "cu": "https://www.cqc.org.uk/location/RPGEP",
+    "ar": "Greenwich",
+    "o": "RPGEP",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.oxleas.nhs.uk"
+  },
+  {
     "n": "HMP Wandsworth",
     "a": "PO Box 757, Heathfield Road, London",
     "p": "SW18 3HU",
@@ -18922,21 +19057,6 @@
     "web": "https://www.west-middlesex-hospital.nhs.uk"
   },
   {
-    "n": "Homerton University Hospital",
-    "a": "Trust Offices, Homerton Row, Hackney, London",
-    "p": "E9 6SR",
-    "ph": "02085105555",
-    "cqc": "Outstanding",
-    "cu": "https://www.cqc.org.uk/location/RQXM1",
-    "ar": "Hackney",
-    "o": "RQXM1",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.homerton.nhs.uk"
-  },
-  {
     "n": "Chelsea and Westminster Hospital",
     "a": "369 Fulham Road, London",
     "p": "SW10 9NH",
@@ -18950,6 +19070,21 @@
       "psychiatry"
     ],
     "web": "https://www.chelwest.nhs.uk"
+  },
+  {
+    "n": "Homerton University Hospital",
+    "a": "Trust Offices, Homerton Row, Hackney, London",
+    "p": "E9 6SR",
+    "ph": "02085105555",
+    "cqc": "Outstanding",
+    "cu": "https://www.cqc.org.uk/location/RQXM1",
+    "ar": "Hackney",
+    "o": "RQXM1",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.homerton.nhs.uk"
   },
   {
     "n": "Tolworth Hospital",
@@ -19012,21 +19147,6 @@
     "web": "https://www.uclh.org"
   },
   {
-    "n": "The Royal London Hospital for Integrated Medicine",
-    "a": "60 Great Ormond Street, London",
-    "p": "WC1N 3HR",
-    "ph": "02034477633",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RRV60",
-    "ar": "Camden",
-    "o": "RRV60",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": ""
-  },
-  {
     "n": "Brandon Centre",
     "a": "26 Prince of Wales Road, London",
     "p": "NW5 3LG",
@@ -19040,6 +19160,21 @@
       "psychiatry"
     ],
     "web": "https://www.uclh.adolescentserviceatbrandon@nhs.net"
+  },
+  {
+    "n": "The Royal London Hospital for Integrated Medicine",
+    "a": "60 Great Ormond Street, London",
+    "p": "WC1N 3HR",
+    "ph": "02034477633",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/RRV60",
+    "ar": "Camden",
+    "o": "RRV60",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
   },
   {
     "n": "The National Hospital for Neurology and Neurosurgery",
@@ -19058,22 +19193,6 @@
     "web": "https://www.uclh.org"
   },
   {
-    "n": "The Gordon Hospital",
-    "a": "Bloomburg Street, London",
-    "p": "SW1V 2RH",
-    "ph": "02033152139",
-    "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/RV346",
-    "ar": "Westminster",
-    "o": "RV346",
-    "type": "Private",
-    "specs": [
-      "psychiatry",
-      "hospital"
-    ],
-    "web": "https://www.cnwl.nhs.uk"
-  },
-  {
     "n": "Park Royal Centre for Mental Health",
     "a": "Central Way (off Acton Lane), London",
     "p": "NW10 7NS",
@@ -19082,36 +19201,6 @@
     "cu": "https://www.cqc.org.uk/location/RV312",
     "ar": "Brent",
     "o": "RV312",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.cnwl.nhs.uk"
-  },
-  {
-    "n": "Rosedale Court",
-    "a": "75-79 Greenford Road, Harrow, Middlesex",
-    "p": "HA1 3QF",
-    "ph": "02088642925",
-    "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/RV357",
-    "ar": "Harrow",
-    "o": "RV357",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.cnwl.nhs.uk"
-  },
-  {
-    "n": "3 Beatrice Place",
-    "a": "Marloes Road, London",
-    "p": "W8 5LW",
-    "ph": "02088466045",
-    "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/RV329",
-    "ar": "Kensington & Chelsea",
-    "o": "RV329",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19134,14 +19223,14 @@
     "web": "https://www.cnwl.nhs.uk"
   },
   {
-    "n": "7a Woodfield Road",
-    "a": "Centre Building, 7A Woodfield Road, London",
-    "p": "W9 2NW",
-    "ph": "02072669500",
+    "n": "3 Beatrice Place",
+    "a": "Marloes Road, London",
+    "p": "W8 5LW",
+    "ph": "02088466045",
     "cqc": "No published rating",
-    "cu": "https://www.cqc.org.uk/location/RV396",
-    "ar": "Westminster",
-    "o": "RV396",
+    "cu": "https://www.cqc.org.uk/location/RV329",
+    "ar": "Kensington & Chelsea",
+    "o": "RV329",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19164,14 +19253,30 @@
     "web": "https://www.cnwl.nhs.uk"
   },
   {
-    "n": "Roxbourne Complex",
-    "a": "39-41 Rayners Lane, Harrow, Middlesex",
-    "p": "HA2 0UE",
-    "ph": "02084238200",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RV355",
+    "n": "The Gordon Hospital",
+    "a": "Bloomburg Street, London",
+    "p": "SW1V 2RH",
+    "ph": "02033152139",
+    "cqc": "No published rating",
+    "cu": "https://www.cqc.org.uk/location/RV346",
+    "ar": "Westminster",
+    "o": "RV346",
+    "type": "Private",
+    "specs": [
+      "psychiatry",
+      "hospital"
+    ],
+    "web": "https://www.cnwl.nhs.uk"
+  },
+  {
+    "n": "Rosedale Court",
+    "a": "75-79 Greenford Road, Harrow, Middlesex",
+    "p": "HA1 3QF",
+    "ph": "02088642925",
+    "cqc": "No published rating",
+    "cu": "https://www.cqc.org.uk/location/RV357",
     "ar": "Harrow",
-    "o": "RV355",
+    "o": "RV357",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19187,6 +19292,36 @@
     "cu": "https://www.cqc.org.uk/location/RV383",
     "ar": "Brent",
     "o": "RV383",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.cnwl.nhs.uk"
+  },
+  {
+    "n": "Roxbourne Complex",
+    "a": "39-41 Rayners Lane, Harrow, Middlesex",
+    "p": "HA2 0UE",
+    "ph": "02084238200",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/RV355",
+    "ar": "Harrow",
+    "o": "RV355",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.cnwl.nhs.uk"
+  },
+  {
+    "n": "7a Woodfield Road",
+    "a": "Centre Building, 7A Woodfield Road, London",
+    "p": "W9 2NW",
+    "ph": "02072669500",
+    "cqc": "No published rating",
+    "cu": "https://www.cqc.org.uk/location/RV396",
+    "ar": "Westminster",
+    "o": "RV396",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19224,21 +19359,6 @@
     "web": "https://www.cnwl.nhs.uk"
   },
   {
-    "n": "Trust Headquarters, 350 Euston Road",
-    "a": "350 Euston Road, Regent's Place, London",
-    "p": "NW1 3AX",
-    "ph": "02032145700",
-    "cqc": "Inspected but not rated",
-    "cu": "https://www.cqc.org.uk/location/RV3X2",
-    "ar": "Camden",
-    "o": "RV3X2",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.cnwl.nhs.uk"
-  },
-  {
     "n": "Collingham Child & Family Centre",
     "a": "1a Beatrice Place, Marloes Road, London",
     "p": "W8 5LW",
@@ -19247,6 +19367,21 @@
     "cu": "https://www.cqc.org.uk/location/RV3CX",
     "ar": "Kensington & Chelsea",
     "o": "RV3CX",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.cnwl.nhs.uk"
+  },
+  {
+    "n": "Trust Headquarters, 350 Euston Road",
+    "a": "350 Euston Road, Regent's Place, London",
+    "p": "NW1 3AX",
+    "ph": "02032145700",
+    "cqc": "Inspected but not rated",
+    "cu": "https://www.cqc.org.uk/location/RV3X2",
+    "ar": "Camden",
+    "o": "RV3X2",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19316,21 +19451,6 @@
     "web": "https://www.enherts-tr.nhs.uk"
   },
   {
-    "n": "Forensic Services Directorate",
-    "a": "John Howard Centre, 12 Kenworthy Road, Hackney, London",
-    "p": "E9 5TD",
-    "ph": "02076554000",
-    "cqc": "Inspected but not rated",
-    "cu": "https://www.cqc.org.uk/location/RWK60",
-    "ar": "Hackney",
-    "o": "RWK60",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.eastlondon.nhs.uk"
-  },
-  {
     "n": "Adult Mental Health Services - Tower Hamlets Directorate",
     "a": "Tower Hamlets Centre for Mental Health, Bancroft Road, Mile End, London",
     "p": "E1 4DG",
@@ -19361,19 +19481,19 @@
     "web": "https://www.eastlondon.nhs.uk"
   },
   {
-    "n": "Trust Headquarters",
-    "a": "9 Alie Street, Aldgate, London",
-    "p": "E1 8DE",
+    "n": "Forensic Services Directorate",
+    "a": "John Howard Centre, 12 Kenworthy Road, Hackney, London",
+    "p": "E9 5TD",
     "ph": "02076554000",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RWKGY",
-    "ar": "Tower Hamlets",
-    "o": "RWKGY",
+    "cqc": "Inspected but not rated",
+    "cu": "https://www.cqc.org.uk/location/RWK60",
+    "ar": "Hackney",
+    "o": "RWK60",
     "type": "Private",
     "specs": [
       "psychiatry"
     ],
-    "web": ""
+    "web": "https://www.eastlondon.nhs.uk"
   },
   {
     "n": "Children's Services",
@@ -19384,6 +19504,21 @@
     "cu": "https://www.cqc.org.uk/location/RWKW3",
     "ar": "Tower Hamlets",
     "o": "RWKW3",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
+  },
+  {
+    "n": "Trust Headquarters",
+    "a": "9 Alie Street, Aldgate, London",
+    "p": "E1 8DE",
+    "ph": "02076554000",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/RWKGY",
+    "ar": "Tower Hamlets",
+    "o": "RWKGY",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19406,21 +19541,6 @@
     "web": "https://www.imperial.nhs.uk"
   },
   {
-    "n": "Hammersmith Hospitals",
-    "a": "Du Cane Road, London",
-    "p": "W12 0AE",
-    "ph": "02033113311",
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RYJ03",
-    "ar": "Hammersmith & Fulham",
-    "o": "RYJ03",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": "https://www.imperial.nhs.uk"
-  },
-  {
     "n": "Queen Charlottes and Chelsea Hospital",
     "a": "Du Cane Road, London",
     "p": "W12 0AE",
@@ -19429,6 +19549,21 @@
     "cu": "https://www.cqc.org.uk/location/RYJ04",
     "ar": "Hammersmith & Fulham",
     "o": "RYJ04",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": "https://www.imperial.nhs.uk"
+  },
+  {
+    "n": "Hammersmith Hospitals",
+    "a": "Du Cane Road, London",
+    "p": "W12 0AE",
+    "ph": "02033113311",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/RYJ03",
+    "ar": "Hammersmith & Fulham",
+    "o": "RYJ03",
     "type": "Private",
     "specs": [
       "psychiatry"
@@ -19557,21 +19692,6 @@
     "web": ""
   },
   {
-    "n": "Trust Headquarters",
-    "a": "St. Pancras Hospital, 4 St. Pancras Way, London",
-    "p": "NW1 0PE",
-    "ph": "02033173500",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/TAF007",
-    "ar": "Camden",
-    "o": "TAF007",
-    "type": "Private",
-    "specs": [
-      "psychiatry"
-    ],
-    "web": ""
-  },
-  {
     "n": "Edgware Community Hospital",
     "a": "Burnt Oak Broadway, Edgware, Middlesex",
     "p": "HA8 0AD",
@@ -19630,5 +19750,20 @@
       "psychiatry"
     ],
     "web": "https://www.candi.nhs.uk"
+  },
+  {
+    "n": "Trust Headquarters",
+    "a": "St. Pancras Hospital, 4 St. Pancras Way, London",
+    "p": "NW1 0PE",
+    "ph": "02033173500",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/TAF007",
+    "ar": "Camden",
+    "o": "TAF007",
+    "type": "Private",
+    "specs": [
+      "psychiatry"
+    ],
+    "web": ""
   }
 ]

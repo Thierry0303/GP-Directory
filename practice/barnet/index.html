@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GP Practices &amp; Private Clinics in Barnet — London GP Directory</title>
-<meta name="description" content="Compare 34 NHS GP practices and 11 private clinics in Barnet, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<meta name="description" content="Compare 34 NHS GP practices and 12 private clinics in Barnet, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
 <link rel="canonical" href="https://londongp.directory/practice/barnet/">
 <meta property="og:title" content="GP Practices &amp; Private Clinics in Barnet — London GP Directory">
-<meta property="og:description" content="Compare 34 NHS GPs and 11 private clinics in Barnet.">
+<meta property="og:description" content="Compare 34 NHS GPs and 12 private clinics in Barnet.">
 <meta property="og:url" content="https://londongp.directory/practice/barnet/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#003087">
@@ -91,7 +91,7 @@ footer a{color:rgba(255,255,255,.8)}
     <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in Barnet — by CQC rating, patient survey, contact details and specialty.</p>
     <div class="stats">
       <div class="stat"><strong>34</strong><span>NHS practices</span></div>
-      <div class="stat"><strong>11</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>12</strong><span>Private clinics</span></div>
       <div class="stat"><strong>31</strong><span>Good or Outstanding</span></div>
       <div class="stat"><strong>70.8%</strong><span>Avg NHS patient score</span></div>
     </div>
@@ -101,10 +101,10 @@ footer a{color:rgba(255,255,255,.8)}
   <div class="type-inner">
     <div class="type-tabs" id="typeTabs">
       <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">34</span></button>
-      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">11</span></button>
-      <button class="type-tab" data-type="All">All <span class="type-tab-count">45</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">12</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">46</span></button>
     </div>
-    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">11</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">9</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="private gp">private gp <span class="specialty-chip-count">1</span></button></div>
+    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">12</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">10</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="private gp">private gp <span class="specialty-chip-count">1</span></button></div>
   </div>
 </div>
 <main class="wrap">
@@ -556,6 +556,19 @@ footer a{color:rgba(255,255,255,.8)}
         <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/E83028" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-537739312" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XE83028" target="_blank">NHS</a></div>
       </div>
     </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Patrick Mcanerney</div>
+        <span class="cqc cqc-N">Not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">Muswell Hill, London, N10 1ET</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088838959">📞 02088838959</a>
+        <div class="actions"><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-220480682" target="_blank">CQC</a></div>
+      </div>
+    </div>
 <div class="card" data-type="NHS" data-specs="">
       <div class="card-top">
         <div class="card-name">Pennine Drive Practice</div>
@@ -810,7 +823,7 @@ const grid = document.getElementById('grid');
 const resCt = document.getElementById('resCt');
 const BOROUGH = "Barnet";
 const TOTAL_NHS = 34;
-const TOTAL_PRIV = 11;
+const TOTAL_PRIV = 12;
 let selType = 'NHS';
 let selSpec = 'all';
 
