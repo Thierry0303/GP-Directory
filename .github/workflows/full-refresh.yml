@@ -28,21 +28,21 @@ jobs:
       - name: NHS refresh
         run: python refresh_nhs_data.py
 
+      - name: Strip non-GP NHS records
+        run: python clean_nhs_records.py
+
       - name: Merge private + rebuild index.html
         run: python merge_into_dataset.py
 
       - name: Normalize website URLs (add https://)
         run: python normalize_urls.py
 
-      - name: Strip non-GP NHS records
-        run: python clean_nhs_records.py
-
-      - name: Backfill missing CQC ratings (paginate-based)
+      - name: Backfill missing CQC ratings (paginate + detail)
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python enrich_cqc_ratings.py
 
-      - name: Drop non-GMS NHS records (broken Register links)
+      - name: Drop non-GMS NHS records (no CQC after enrichment)
         run: python drop_non_gms.py
 
       - name: Fix borough assignments via ONS postcode data
