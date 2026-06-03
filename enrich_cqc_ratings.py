@@ -172,13 +172,40 @@ def paginate_london_candidates(key):
     print(f"\n{len(candidates)} London candidates worth a detail fetch.\n")
     return candidates
 
+def extract_rating(d):
+    """Try several rating paths. CQC's API stores the same rating in
+    different places depending on the location's inspection history."""
+    # 1. Primary: currentRatings.overall.rating
+    cur = ((d.get("currentRatings", {}) or {})
+           .get("overall", {}) or {}).get("rating", "")
+    if cur: return cur
+
+    # 2. Fallback: lastInspection / latestInspection blocks (used by
+    #    locations whose rating is recent and currentRatings is still
+    #    being populated)
+    for k in ("lastInspection", "latestInspection"):
+        last = d.get(k, {}) or {}
+        if isinstance(last, dict):
+            r = (last.get("overall", {}) or {}).get("rating", "") \
+                or last.get("rating", "")
+            if r: return r
+
+    # 3. Fallback: historicRatings[0].overall.rating
+    historic = d.get("historicRatings", []) or []
+    if isinstance(historic, list):
+        for h in historic:
+            r = ((h.get("overall", {}) or {}).get("rating", ""))
+            if r: return r
+
+    # 4. Last resort: top-level overallRating
+    return d.get("overallRating", "") or ""
+
 def fetch_detail_for_rating(loc_id, key):
     """Return (odsCode, rating) for one location, or ('', '')."""
     d = cqc_get(f"/locations/{loc_id}", None, key)
     if not d: return ("", "")
     ods = (d.get("odsCode") or "").strip().upper()
-    rating = ((d.get("currentRatings", {}) or {})
-              .get("overall", {}) or {}).get("rating", "")
+    rating = extract_rating(d)
     return (ods, rating)
 
 def build_ods_to_rating_map(candidates, key, wanted_ods, workers=15):
