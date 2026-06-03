@@ -368,22 +368,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "1-126955917",
-    "name": "HCA Healthcare UK The Portland Hospital",
-    "address": "205-209, 214 and 234 Great Portland Street, London",
-    "postcode": "W1W 5AH",
-    "phone": "02075804400",
-    "website": "https://www.theportlandhospital.com",
-    "type": "Private",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-126955917",
-    "ar": "Westminster"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "1-126955884",
     "name": "HCA Healthcare UK The Lister Hospital",
     "address": "Chelsea Bridge Road, London",
@@ -399,20 +383,20 @@
     "ar": "Westminster"
   },
   {
-    "ods_code": "NT406",
-    "cqc_id": "1-128758547",
-    "name": "The Blackheath Hospital",
-    "address": "40-42 Lee Terrace, Blackheath, London",
-    "postcode": "SE3 9UD",
-    "phone": "02083187722",
-    "website": "https://www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital",
+    "ods_code": "",
+    "cqc_id": "1-126955917",
+    "name": "HCA Healthcare UK The Portland Hospital",
+    "address": "205-209, 214 and 234 Great Portland Street, London",
+    "postcode": "W1W 5AH",
+    "phone": "02075804400",
+    "website": "https://www.theportlandhospital.com",
     "type": "Private",
     "specialties": [
       "hospital"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-128758547",
-    "ar": "Lewisham"
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955917",
+    "ar": "Westminster"
   },
   {
     "ods_code": "NT451",
@@ -429,6 +413,22 @@
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128758601",
     "ar": "Enfield"
+  },
+  {
+    "ods_code": "NT406",
+    "cqc_id": "1-128758547",
+    "name": "The Blackheath Hospital",
+    "address": "40-42 Lee Terrace, Blackheath, London",
+    "postcode": "SE3 9UD",
+    "phone": "02083187722",
+    "website": "https://www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital",
+    "type": "Private",
+    "specialties": [
+      "hospital"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-128758547",
+    "ar": "Lewisham"
   },
   {
     "ods_code": "NT437",
@@ -1692,22 +1692,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "1-339410966",
-    "name": "Dr Sandeep Bolia Private Medical Services",
-    "address": "203m Camberwell Grove, London",
-    "postcode": "SE5 8JU",
-    "phone": "",
-    "website": "https://www.drbolia.com",
-    "type": "Private",
-    "specialties": [
-      "private gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-339410966",
-    "ar": "Southwark"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "1-341756874",
     "name": "Dr Ali Erdinch Havutcu T/A Green Lanes Clinic",
     "address": "551a Green Lanes, Palmers Green, London",
@@ -1721,6 +1705,22 @@
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-341756874",
     "ar": "Enfield"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "1-339410966",
+    "name": "Dr Sandeep Bolia Private Medical Services",
+    "address": "203m Camberwell Grove, London",
+    "postcode": "SE5 8JU",
+    "phone": "",
+    "website": "https://www.drbolia.com",
+    "type": "Private",
+    "specialties": [
+      "private gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-339410966",
+    "ar": "Southwark"
   },
   {
     "ods_code": "",
@@ -2446,22 +2446,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "R1K01",
-    "name": "Northwick Park Hospital",
-    "address": "Watford Road, Harrow, Middlesex",
-    "postcode": "HA1 3UJ",
-    "phone": "02088643232",
-    "website": "https://www.lnwh.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1K01",
-    "ar": "Brent"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "R1K04",
     "name": "Ealing Hospital",
     "address": "Uxbridge Road, Southall, Middlesex",
@@ -2478,19 +2462,19 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RAL01",
-    "name": "The Royal Free Hospital",
-    "address": "Pond Street, Pond Street, London",
-    "postcode": "NW3 2QG",
-    "phone": "02037582000",
-    "website": "https://www.royalfree.nhs.uk",
+    "cqc_id": "R1K01",
+    "name": "Northwick Park Hospital",
+    "address": "Watford Road, Harrow, Middlesex",
+    "postcode": "HA1 3UJ",
+    "phone": "02088643232",
+    "website": "https://www.lnwh.nhs.uk",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL01",
-    "ar": "Camden"
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/R1K01",
+    "ar": "Brent"
   },
   {
     "ods_code": "RAL27",
@@ -2523,6 +2507,22 @@
     "cqc_rating": "Requires improvement",
     "cqc_url": "https://www.cqc.org.uk/location/RAL26",
     "ar": "Barnet"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RAL01",
+    "name": "The Royal Free Hospital",
+    "address": "Pond Street, Pond Street, London",
+    "postcode": "NW3 2QG",
+    "phone": "02037582000",
+    "website": "https://www.royalfree.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RAL01",
+    "ar": "Camden"
   },
   {
     "ods_code": "",
@@ -2606,22 +2606,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RATRK",
-    "name": "Brookside",
-    "address": "107a Barley Lane, Goodmayes, Ilford, Essex",
-    "postcode": "IG3 8XQ",
-    "phone": "08446001200",
-    "website": "https://www.nelft.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RATRK",
-    "ar": "Redbridge"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "RAS01",
     "name": "The Hillingdon Hospital",
     "address": "Pield Heath Road, Uxbridge, Middlesex",
@@ -2636,6 +2620,22 @@
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/RAS01",
     "ar": "Hillingdon"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RATRK",
+    "name": "Brookside",
+    "address": "107a Barley Lane, Goodmayes, Ilford, Essex",
+    "postcode": "IG3 8XQ",
+    "phone": "08446001200",
+    "website": "https://www.nelft.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RATRK",
+    "ar": "Redbridge"
   },
   {
     "ods_code": "",
@@ -2719,22 +2719,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RJ122",
-    "name": "St Thomas' Hospital",
-    "address": "Westminster Bridge Road, London",
-    "postcode": "SE1 7EH",
-    "phone": "02071887188",
-    "website": "https://www.guysandstthomas.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ122",
-    "ar": "Lambeth"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "RJ181",
     "name": "Harefield Hospital",
     "address": "Hill End Road, Harefield, Uxbridge",
@@ -2767,6 +2751,22 @@
   },
   {
     "ods_code": "",
+    "cqc_id": "RJ122",
+    "name": "St Thomas' Hospital",
+    "address": "Westminster Bridge Road, London",
+    "postcode": "SE1 7EH",
+    "phone": "02071887188",
+    "website": "https://www.guysandstthomas.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RJ122",
+    "ar": "Lambeth"
+  },
+  {
+    "ods_code": "",
     "cqc_id": "RJ224",
     "name": "University Hospital Lewisham",
     "address": "Lewisham High Street, Lewisham, London",
@@ -2793,7 +2793,7 @@
     "specialties": [
       "psychiatry"
     ],
-    "cqc_rating": "Requires improvement",
+    "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/RJ231",
     "ar": "Greenwich"
   },
@@ -2831,22 +2831,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RJZ30",
-    "name": "Princess Royal University Hospital",
-    "address": "Farnborough Common, Orpington, Kent",
-    "postcode": "BR6 8ND",
-    "phone": "02032999000",
-    "website": "https://www.kch.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ30",
-    "ar": "Bromley"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "RJ701",
     "name": "St George's Hospital (Tooting)",
     "address": "Blackshaw Road, Tooting, London",
@@ -2863,10 +2847,10 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RJZ01",
-    "name": "King's College Hospital",
-    "address": "Denmark Hill, London",
-    "postcode": "SE5 9RS",
+    "cqc_id": "RJZ30",
+    "name": "Princess Royal University Hospital",
+    "address": "Farnborough Common, Orpington, Kent",
+    "postcode": "BR6 8ND",
     "phone": "02032999000",
     "website": "https://www.kch.nhs.uk",
     "type": "Private",
@@ -2874,8 +2858,8 @@
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ01",
-    "ar": "Lambeth"
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ30",
+    "ar": "Bromley"
   },
   {
     "ods_code": "",
@@ -2893,6 +2877,22 @@
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/RKEQ4",
     "ar": "Islington"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RJZ01",
+    "name": "King's College Hospital",
+    "address": "Denmark Hill, London",
+    "postcode": "SE5 9RS",
+    "phone": "02032999000",
+    "website": "https://www.kch.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ01",
+    "ar": "Lambeth"
   },
   {
     "ods_code": "",
@@ -2974,22 +2974,6 @@
     "ar": "Camden"
   },
   {
-    "ods_code": "RPG1A",
-    "cqc_id": "RPG1A",
-    "name": "HMP YOI Isis",
-    "address": "Belmarsh Way, London",
-    "postcode": "SE28 0FD",
-    "phone": "02033564252",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPG1A",
-    "ar": "Greenwich"
-  },
-  {
     "ods_code": "",
     "cqc_id": "RPGAE",
     "name": "Oxleas House",
@@ -3003,6 +2987,22 @@
     ],
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/RPGAE",
+    "ar": "Greenwich"
+  },
+  {
+    "ods_code": "RPG1A",
+    "cqc_id": "RPG1A",
+    "name": "HMP YOI Isis",
+    "address": "Belmarsh Way, London",
+    "postcode": "SE28 0FD",
+    "phone": "02033564252",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RPG1A",
     "ar": "Greenwich"
   },
   {
@@ -3182,22 +3182,6 @@
     "ar": "Kingston"
   },
   {
-    "ods_code": "RQYND",
-    "cqc_id": "RQYND",
-    "name": "Springfield University Hospital",
-    "address": "Springfield University Hospital, 15 Springfield Drive, London",
-    "postcode": "SW17 0YF",
-    "phone": "",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RQYND",
-    "ar": "Wandsworth"
-  },
-  {
     "ods_code": "RQYNB",
     "cqc_id": "RQYNB",
     "name": "Trust Headquarters",
@@ -3211,6 +3195,22 @@
     ],
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/RQYNB",
+    "ar": "Wandsworth"
+  },
+  {
+    "ods_code": "RQYND",
+    "cqc_id": "RQYND",
+    "name": "Springfield University Hospital",
+    "address": "Springfield University Hospital, 15 Springfield Drive, London",
+    "postcode": "SW17 0YF",
+    "phone": "",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RQYND",
     "ar": "Wandsworth"
   },
   {
@@ -3231,22 +3231,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RRV34",
-    "name": "Brandon Centre",
-    "address": "26 Prince of Wales Road, London",
-    "postcode": "NW5 3LG",
-    "phone": "02034477633",
-    "website": "https://www.uclh.adolescentserviceatbrandon@nhs.net",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRV34",
-    "ar": "Camden"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "RRV60",
     "name": "The Royal London Hospital for Integrated Medicine",
     "address": "60 Great Ormond Street, London",
@@ -3259,6 +3243,22 @@
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/RRV60",
+    "ar": "Camden"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RRV34",
+    "name": "Brandon Centre",
+    "address": "26 Prince of Wales Road, London",
+    "postcode": "NW5 3LG",
+    "phone": "02034477633",
+    "website": "https://www.uclh.adolescentserviceatbrandon@nhs.net",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RRV34",
     "ar": "Camden"
   },
   {
@@ -3280,22 +3280,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RV320",
-    "name": "St Charles Mental Health Centre",
-    "address": "Exmoor Street, North Kensington, London",
-    "postcode": "W10 6DZ",
-    "phone": "02082067003",
-    "website": "https://www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV320",
-    "ar": "Kensington & Chelsea"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "RV312",
     "name": "Park Royal Centre for Mental Health",
     "address": "Central Way (off Acton Lane), London",
@@ -3312,18 +3296,18 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RV329",
-    "name": "3 Beatrice Place",
-    "address": "Marloes Road, London",
-    "postcode": "W8 5LW",
-    "phone": "02088466045",
+    "cqc_id": "RV320",
+    "name": "St Charles Mental Health Centre",
+    "address": "Exmoor Street, North Kensington, London",
+    "postcode": "W10 6DZ",
+    "phone": "02082067003",
     "website": "https://www.cnwl.nhs.uk",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
     "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV329",
+    "cqc_url": "https://www.cqc.org.uk/location/RV320",
     "ar": "Kensington & Chelsea"
   },
   {
@@ -3340,6 +3324,22 @@
     ],
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/RV332",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "RV329",
+    "name": "3 Beatrice Place",
+    "address": "Marloes Road, London",
+    "postcode": "W8 5LW",
+    "phone": "02088466045",
+    "website": "https://www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV329",
     "ar": "Kensington & Chelsea"
   },
   {
@@ -3361,18 +3361,18 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RV357",
-    "name": "Rosedale Court",
-    "address": "75-79 Greenford Road, Harrow, Middlesex",
-    "postcode": "HA1 3QF",
-    "phone": "02088642925",
+    "cqc_id": "RV355",
+    "name": "Roxbourne Complex",
+    "address": "39-41 Rayners Lane, Harrow, Middlesex",
+    "postcode": "HA2 0UE",
+    "phone": "02084238200",
     "website": "https://www.cnwl.nhs.uk",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/RV357",
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/RV355",
     "ar": "Harrow"
   },
   {
@@ -3393,6 +3393,22 @@
   },
   {
     "ods_code": "",
+    "cqc_id": "RV357",
+    "name": "Rosedale Court",
+    "address": "75-79 Greenford Road, Harrow, Middlesex",
+    "postcode": "HA1 3QF",
+    "phone": "02088642925",
+    "website": "https://www.cnwl.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/RV357",
+    "ar": "Harrow"
+  },
+  {
+    "ods_code": "",
     "cqc_id": "RV396",
     "name": "7a Woodfield Road",
     "address": "Centre Building, 7A Woodfield Road, London",
@@ -3409,19 +3425,19 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "RV355",
-    "name": "Roxbourne Complex",
-    "address": "39-41 Rayners Lane, Harrow, Middlesex",
-    "postcode": "HA2 0UE",
-    "phone": "02084238200",
+    "cqc_id": "RV3AN",
+    "name": "Hillingdon Hospital Mental Health Site",
+    "address": "Pield Heath Road, Uxbridge, Middlesex",
+    "postcode": "UB8 3NN",
+    "phone": "01895279939",
     "website": "https://www.cnwl.nhs.uk",
     "type": "Private",
     "specialties": [
       "psychiatry"
     ],
     "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RV355",
-    "ar": "Harrow"
+    "cqc_url": "https://www.cqc.org.uk/location/RV3AN",
+    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -3438,22 +3454,6 @@
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/RV3CX",
     "ar": "Kensington & Chelsea"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RV3AN",
-    "name": "Hillingdon Hospital Mental Health Site",
-    "address": "Pield Heath Road, Uxbridge, Middlesex",
-    "postcode": "UB8 3NN",
-    "phone": "01895279939",
-    "website": "https://www.cnwl.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RV3AN",
-    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -3538,6 +3538,23 @@
   },
   {
     "ods_code": "",
+    "cqc_id": "RWH04",
+    "name": "Mount Vernon Cancer Centre",
+    "address": "Rickmansworth Road, Northwood, Middlesex",
+    "postcode": "HA6 2RN",
+    "phone": "01438314333",
+    "website": "https://www.enherts-tr.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry",
+      "oncology"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RWH04",
+    "ar": "Hillingdon"
+  },
+  {
+    "ods_code": "",
     "cqc_id": "RWK60",
     "name": "Forensic Services Directorate",
     "address": "John Howard Centre, 12 Kenworthy Road, Hackney, London",
@@ -3567,23 +3584,6 @@
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/RWK61",
     "ar": "Tower Hamlets"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RWH04",
-    "name": "Mount Vernon Cancer Centre",
-    "address": "Rickmansworth Road, Northwood, Middlesex",
-    "postcode": "HA6 2RN",
-    "phone": "01438314333",
-    "website": "https://www.enherts-tr.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry",
-      "oncology"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RWH04",
-    "ar": "Hillingdon"
   },
   {
     "ods_code": "",
@@ -3667,6 +3667,22 @@
   },
   {
     "ods_code": "",
+    "cqc_id": "RYJ03",
+    "name": "Hammersmith Hospitals",
+    "address": "Du Cane Road, London",
+    "postcode": "W12 0AE",
+    "phone": "02033113311",
+    "website": "https://www.imperial.nhs.uk",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RYJ03",
+    "ar": "Hammersmith & Fulham"
+  },
+  {
+    "ods_code": "",
     "cqc_id": "RYJ07",
     "name": "Western Eye Hospital",
     "address": "Marylebone Road, London",
@@ -3681,22 +3697,6 @@
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/RYJ07",
     "ar": "Westminster"
-  },
-  {
-    "ods_code": "",
-    "cqc_id": "RYJ03",
-    "name": "Hammersmith Hospitals",
-    "address": "Du Cane Road, London",
-    "postcode": "W12 0AE",
-    "phone": "02033113311",
-    "website": "https://www.imperial.nhs.uk",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RYJ03",
-    "ar": "Hammersmith & Fulham"
   },
   {
     "ods_code": "",
@@ -3780,22 +3780,6 @@
   },
   {
     "ods_code": "",
-    "cqc_id": "TAF001",
-    "name": "Chase Farm Hospital",
-    "address": "The Ridgeway, Enfield, Middlesex",
-    "postcode": "EN2 8JL",
-    "phone": "02087023000",
-    "website": "",
-    "type": "Private",
-    "specialties": [
-      "psychiatry"
-    ],
-    "cqc_rating": "No published rating",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF001",
-    "ar": "Enfield"
-  },
-  {
-    "ods_code": "",
     "cqc_id": "TAF002",
     "name": "Barnet General Hospital",
     "address": "Wellhouse Lane, Barnet, Hertfordshire",
@@ -3825,6 +3809,22 @@
     "cqc_rating": "No published rating",
     "cqc_url": "https://www.cqc.org.uk/location/TAF003",
     "ar": "Barnet"
+  },
+  {
+    "ods_code": "",
+    "cqc_id": "TAF001",
+    "name": "Chase Farm Hospital",
+    "address": "The Ridgeway, Enfield, Middlesex",
+    "postcode": "EN2 8JL",
+    "phone": "02087023000",
+    "website": "",
+    "type": "Private",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "No published rating",
+    "cqc_url": "https://www.cqc.org.uk/location/TAF001",
+    "ar": "Enfield"
   },
   {
     "ods_code": "",
