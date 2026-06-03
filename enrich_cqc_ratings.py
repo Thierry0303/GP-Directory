@@ -188,17 +188,46 @@ def clean_rating(s):
     return ""
 
 def extract_rating(d):
-    """Try several rating paths. CQC's API stores the same rating in
-    different places depending on the location's inspection history.
-    Only returns a value if it's one of the four real CQC ratings."""
-    # 1. Primary: currentRatings.overall.rating
+    """Pick the best rating, preferring CQC's NEW 2024+ assessment
+    framework (assessment[].ratings.asgRatings[]) over the legacy
+    inspection framework (currentRatings.overall.rating).
+
+    Why this order: CQC migrated to "assessments" in 2024. For practices
+    that have been assessed under the new framework, the legacy
+    currentRatings.overall block is EMPTY, while currentRatings.serviceRatings
+    still holds the *previous* (now superseded) rating. So reading from
+    currentRatings first would either return nothing or return a stale
+    rating. The authoritative current rating lives in
+    assessment[].ratings.asgRatings[] where assessmentPlanStatus == "Active".
+    """
+    # 1. NEW FRAMEWORK: assessment[].ratings.asgRatings[]
+    #    Pick the most recent Active asgRating.
+    assessments = d.get("assessment", []) or []
+    best_new = None  # (date, rating)
+    if isinstance(assessments, list):
+        for a in assessments:
+            if not isinstance(a, dict): continue
+            asg = (((a.get("ratings", {}) or {})
+                    .get("asgRatings", [])) or [])
+            for entry in asg:
+                if not isinstance(entry, dict): continue
+                if entry.get("assessmentPlanStatus") != "Active":
+                    continue
+                r = clean_rating(entry.get("rating", ""))
+                if not r: continue
+                date = entry.get("assessmentDate") or ""
+                if best_new is None or date > best_new[0]:
+                    best_new = (date, r)
+    if best_new:
+        return best_new[1]
+
+    # 2. LEGACY: currentRatings.overall.rating
     cur = ((d.get("currentRatings", {}) or {})
            .get("overall", {}) or {}).get("rating", "")
     r = clean_rating(cur)
     if r: return r
 
-    # 2. Fallback: lastInspection / latestInspection (recent ratings
-    #    sometimes land here before currentRatings is updated)
+    # 3. LEGACY: lastInspection / latestInspection
     for k in ("lastInspection", "latestInspection"):
         last = d.get(k, {}) or {}
         if isinstance(last, dict):
@@ -207,7 +236,7 @@ def extract_rating(d):
             r = clean_rating(cand)
             if r: return r
 
-    # 3. Fallback: historicRatings[0].overall.rating
+    # 4. LEGACY: historicRatings[0].overall.rating
     historic = d.get("historicRatings", []) or []
     if isinstance(historic, list):
         for h in historic:
@@ -215,7 +244,7 @@ def extract_rating(d):
             r = clean_rating(cand)
             if r: return r
 
-    # 4. Last resort: top-level overallRating
+    # 5. Last resort: top-level overallRating
     r = clean_rating(d.get("overallRating", ""))
     return r or ""
 
