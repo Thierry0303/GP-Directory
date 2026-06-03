@@ -318,48 +318,69 @@ NAME_RECORD_FIELDS = ["name", "n"]
 def get_name(rec): return get_first(rec, NAME_RECORD_FIELDS) or ""
 
 def enrich_file(path, ods_map, name_map):
+    """Re-rate EVERY record with an ODS code (not just empty ones).
+    Otherwise a stale rating (e.g. from a previous run that read the
+    wrong field) is never refreshed. Safety: if CQC doesn't return a
+    rating, we leave the existing one in place rather than blanking it."""
     if not path.exists(): return Counter()
     data = json.loads(path.read_text())
     if not isinstance(data, list): return Counter()
 
-    needs = [i for i, r in enumerate(data)
-             if not get_rating(r) and get_ods(r)]
-    print(f"\n  {path.name}: {len(data)} records, {len(needs)} needing rating")
+    needs = [i for i, r in enumerate(data) if get_ods(r)]
+    print(f"\n  {path.name}: {len(data)} records, {len(needs)} eligible "
+          "for re-rating")
     if not needs:
         return Counter()
 
     status = Counter()
     name_hits = 0
+    changed = 0
+    unchanged = 0
     for i in needs:
         rec = data[i]
+        existing = get_rating(rec)
         ods = get_ods(rec)
         entry = ods_map.get(ods)
-        match_source = "ods"
 
         # Fallback: try matching by normalized name
         if not entry:
             norm = normalize_name(get_name(rec))
             if norm and norm in name_map:
                 entry = name_map[norm]
-                match_source = "name"
                 name_hits += 1
 
         if entry:
             rating, loc_id = entry
             url = f"https://www.cqc.org.uk/location/{loc_id}" if loc_id else ""
             if rating:
-                set_rating(rec, rating, url)
+                # Have a fresh CQC rating — apply it (this is what fixes
+                # records that had stale ratings from a previous run)
+                if rating != existing:
+                    set_rating(rec, rating, url)
+                    changed += 1
+                else:
+                    unchanged += 1
                 status[rating] += 1
-            elif url:
+            elif not existing and url:
+                # No rating in CQC, no existing rating — record the URL
                 set_rating(rec, "", url)
                 status["(unrated)"] += 1
+            else:
+                # No rating in CQC but we already have one — KEEP IT.
+                # Don't blank out a real rating just because CQC's
+                # detail response was empty this run.
+                status["(kept existing)"] += 1
         else:
-            status["(no-cqc-record)"] += 1
+            if not existing:
+                status["(no-cqc-record)"] += 1
+            else:
+                status["(kept existing)"] += 1
 
     path.write_text(json.dumps(data, indent=2))
-    print(f"\n  {path.name} — rating distribution for newly-enriched records:")
+    print(f"\n  {path.name} — final rating distribution:")
     for r, n in status.most_common():
         print(f"    {r:25s} {n}")
+    print(f"  Changed: {changed}  Unchanged: {unchanged}")
     if name_hits:
         print(f"  ({name_hits} records resolved via name-fallback after "
               "ODS mismatch)")
@@ -370,19 +391,21 @@ def main():
     if not key:
         sys.exit("Need CQC_KEY env var.")
 
-    # Collect every ODS code that needs a rating across both files
+    # Collect EVERY ODS code across both files (not just empty-rating).
+    # We always re-rate everything so stale ratings from previous runs
+    # get refreshed against the latest CQC data.
     wanted = set()
     for path in [GPS_JSON, MERGED_JSON]:
         if not path.exists(): continue
         for r in json.loads(path.read_text()):
-            if not get_rating(r):
-                ods = get_ods(r)
-                if ods: wanted.add(ods)
+            ods = get_ods(r)
+            if ods: wanted.add(ods)
 
     if not wanted:
-        print("Nothing to do — every record already has a rating.")
+        print("Nothing to do — no records have an ODS code.")
         return
-    print(f"Need ratings for {len(wanted)} unique ODS codes.\n")
+    print(f"Will look up ratings for {len(wanted)} unique ODS codes "
+          "(re-rating ALL records so stale entries get refreshed).\n")
 
     candidates = paginate_london_candidates(key)
     ods_map, name_map = build_ods_to_rating_map(candidates, key, wanted)
