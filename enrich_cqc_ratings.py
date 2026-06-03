@@ -172,49 +172,89 @@ def paginate_london_candidates(key):
     print(f"\n{len(candidates)} London candidates worth a detail fetch.\n")
     return candidates
 
+# The ONLY four values CQC issues as actual ratings. Status strings like
+# "Inspected but not rated", "No published rating", "Not yet inspected" are
+# NOT ratings — they're metadata flags that should be treated as empty.
+VALID_RATINGS = {"Outstanding", "Good", "Requires improvement", "Inadequate"}
+
+def clean_rating(s):
+    """Return the string only if it's an actual CQC rating; else empty."""
+    if not s: return ""
+    s = s.strip()
+    # CQC sometimes uses lowercase or different capitalisation
+    for valid in VALID_RATINGS:
+        if s.lower() == valid.lower():
+            return valid
+    return ""
+
 def extract_rating(d):
     """Try several rating paths. CQC's API stores the same rating in
-    different places depending on the location's inspection history."""
+    different places depending on the location's inspection history.
+    Only returns a value if it's one of the four real CQC ratings."""
     # 1. Primary: currentRatings.overall.rating
     cur = ((d.get("currentRatings", {}) or {})
            .get("overall", {}) or {}).get("rating", "")
-    if cur: return cur
+    r = clean_rating(cur)
+    if r: return r
 
-    # 2. Fallback: lastInspection / latestInspection blocks (used by
-    #    locations whose rating is recent and currentRatings is still
-    #    being populated)
+    # 2. Fallback: lastInspection / latestInspection (recent ratings
+    #    sometimes land here before currentRatings is updated)
     for k in ("lastInspection", "latestInspection"):
         last = d.get(k, {}) or {}
         if isinstance(last, dict):
-            r = (last.get("overall", {}) or {}).get("rating", "") \
+            cand = (last.get("overall", {}) or {}).get("rating", "") \
                 or last.get("rating", "")
+            r = clean_rating(cand)
             if r: return r
 
     # 3. Fallback: historicRatings[0].overall.rating
     historic = d.get("historicRatings", []) or []
     if isinstance(historic, list):
         for h in historic:
-            r = ((h.get("overall", {}) or {}).get("rating", ""))
+            cand = ((h.get("overall", {}) or {}).get("rating", ""))
+            r = clean_rating(cand)
             if r: return r
 
     # 4. Last resort: top-level overallRating
-    return d.get("overallRating", "") or ""
+    r = clean_rating(d.get("overallRating", ""))
+    return r or ""
+
+# Normalize a practice name so "Bridgestock Surgery" and "Bridgestock Road
+# Surgery" both compare to the same core token set. Used as a fallback
+# when the odsCode doesn't match (CQC's odsCode for a location can lag
+# behind NHS Digital's).
+NAME_STOP_RE = re.compile(
+    r"\b(?:the|surgery|surgeries|practice|practices|medical|centre|center|"
+    r"health|healthcare|clinic|partnership|gp|drs?|family|community|hub|"
+    r"primary|care|nhs|ltd|limited|services?)\b",
+    re.IGNORECASE,
+)
+def normalize_name(s):
+    s = (s or "").lower()
+    s = re.sub(r"[^a-z0-9\s]", " ", s)
+    s = NAME_STOP_RE.sub(" ", s)
+    return " ".join(s.split())
 
 def fetch_detail_for_rating(loc_id, key):
-    """Return (odsCode, rating) for one location, or ('', '')."""
+    """Return (odsCode, locationName, rating) for one location."""
     d = cqc_get(f"/locations/{loc_id}", None, key)
-    if not d: return ("", "")
+    if not d: return ("", "", "")
     ods = (d.get("odsCode") or "").strip().upper()
+    name = d.get("locationName") or d.get("name") or ""
     rating = extract_rating(d)
-    return (ods, rating)
+    return (ods, name, rating)
 
 def build_ods_to_rating_map(candidates, key, wanted_ods, workers=15):
-    """Pass 2: fetch detail for every London candidate in parallel,
-    return {odsCode: (rating, loc_id)} for those whose ODS is in
-    wanted_ods. Stops early once every wanted code has been resolved."""
+    """Pass 2: fetch detail for every London candidate in parallel.
+    Returns two indices:
+      ods_map  = {odsCode: (rating, loc_id)} for codes in wanted_ods
+      name_map = {normalized_name: (rating, loc_id)} — ALL London locations,
+                 used as fallback when ODS doesn't match.
+    """
     print(f"Fetching CQC detail for {len(candidates)} candidates "
           f"({workers} workers)…")
-    out = {}
+    ods_map = {}
+    name_map = {}
     done = 0
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {pool.submit(fetch_detail_for_rating, lid, key): lid
@@ -224,50 +264,65 @@ def build_ods_to_rating_map(candidates, key, wanted_ods, workers=15):
                 lid = futures[fut]
                 done += 1
                 try:
-                    ods, rating = fut.result()
+                    ods, name, rating = fut.result()
                 except Exception:
-                    ods, rating = ("", "")
-                if ods and ods in wanted_ods and ods not in out:
-                    out[ods] = (rating, lid)
+                    ods, name, rating = ("", "", "")
+                # ODS-based index — only for wanted codes
+                if ods and ods in wanted_ods and ods not in ods_map:
+                    ods_map[ods] = (rating, lid)
+                # Name-based index — for ALL locations with a rating.
+                # Skip if normalized name is too short to be unique.
+                norm = normalize_name(name)
+                if rating and len(norm) >= 4 and norm not in name_map:
+                    name_map[norm] = (rating, lid)
                 if done % 250 == 0 or done == len(candidates):
-                    found = len(out)
                     print(f"  {done}/{len(candidates)} — "
-                          f"{found}/{len(wanted_ods)} target codes resolved")
-                # Early-exit when we've found everything we need
-                if len(out) >= len(wanted_ods):
-                    print(f"  All {len(wanted_ods)} target codes resolved — "
-                          "stopping early.")
-                    # Cancel remaining futures (best-effort)
-                    for f in futures: f.cancel()
-                    break
+                          f"{len(ods_map)}/{len(wanted_ods)} ODS resolved, "
+                          f"{len(name_map)} names indexed")
         except KeyboardInterrupt:
             print("\nInterrupted.")
-    return out
+    return ods_map, name_map
 
 # ---------------------------------------------------------------- main
 
-def enrich_file(path, ods_to_rating):
+NAME_RECORD_FIELDS = ["name", "n"]
+def get_name(rec): return get_first(rec, NAME_RECORD_FIELDS) or ""
+
+def enrich_file(path, ods_map, name_map):
     if not path.exists(): return Counter()
     data = json.loads(path.read_text())
     if not isinstance(data, list): return Counter()
 
-    needs = [(i, get_ods(r)) for i, r in enumerate(data)
+    needs = [i for i, r in enumerate(data)
              if not get_rating(r) and get_ods(r)]
     print(f"\n  {path.name}: {len(data)} records, {len(needs)} needing rating")
     if not needs:
         return Counter()
 
     status = Counter()
-    for i, ods in needs:
-        entry = ods_to_rating.get(ods)
+    name_hits = 0
+    for i in needs:
+        rec = data[i]
+        ods = get_ods(rec)
+        entry = ods_map.get(ods)
+        match_source = "ods"
+
+        # Fallback: try matching by normalized name
+        if not entry:
+            norm = normalize_name(get_name(rec))
+            if norm and norm in name_map:
+                entry = name_map[norm]
+                match_source = "name"
+                name_hits += 1
+
         if entry:
             rating, loc_id = entry
             url = f"https://www.cqc.org.uk/location/{loc_id}" if loc_id else ""
             if rating:
-                set_rating(data[i], rating, url)
+                set_rating(rec, rating, url)
                 status[rating] += 1
             elif url:
-                set_rating(data[i], "", url)
+                set_rating(rec, "", url)
                 status["(unrated)"] += 1
         else:
             status["(no-cqc-record)"] += 1
@@ -276,6 +331,9 @@ def enrich_file(path, ods_to_rating):
     print(f"\n  {path.name} — rating distribution for newly-enriched records:")
     for r, n in status.most_common():
         print(f"    {r:25s} {n}")
+    if name_hits:
+        print(f"  ({name_hits} records resolved via name-fallback after "
+              "ODS mismatch)")
     return status
 
 def main():
@@ -298,17 +356,19 @@ def main():
     print(f"Need ratings for {len(wanted)} unique ODS codes.\n")
 
     candidates = paginate_london_candidates(key)
-    ods_to_rating = build_ods_to_rating_map(candidates, key, wanted)
+    ods_map, name_map = build_ods_to_rating_map(candidates, key, wanted)
 
-    print(f"\nResolved {len(ods_to_rating)}/{len(wanted)} ODS codes "
-          f"({100*len(ods_to_rating)/max(1,len(wanted)):.1f}%).")
-    missing = wanted - set(ods_to_rating)
+    print(f"\nResolved {len(ods_map)}/{len(wanted)} ODS codes "
+          f"({100*len(ods_map)/max(1,len(wanted)):.1f}%) via ODS match.")
+    print(f"Built name index covering {len(name_map)} London CQC locations "
+          "(used as fallback when ODS doesn't match).")
+    missing = wanted - set(ods_map)
     if missing:
-        print(f"({len(missing)} ODS codes have no CQC London location — "
-              "likely non-GMS records that drop_non_gms.py will remove.)\n")
+        print(f"({len(missing)} ODS codes had no ODS match — name-fallback "
+              "will catch some; rest get dropped by drop_non_gms.py.)\n")
 
     for path in [GPS_JSON, MERGED_JSON]:
-        enrich_file(path, ods_to_rating)
+        enrich_file(path, ods_map, name_map)
 
 if __name__ == "__main__":
     main()
