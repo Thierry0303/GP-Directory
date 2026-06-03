@@ -57,6 +57,9 @@ jobs:
       - name: Build specialty hub pages
         run: python build_specialty_pages.py
 
+      - name: Build borough index page
+        run: python build_borough_index.py
+
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
