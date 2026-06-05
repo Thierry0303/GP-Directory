@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GP Practices &amp; Private Clinics in Richmond upon Thames — London GP Directory</title>
+<meta name="description" content="Compare 24 NHS GP practices and 2 private clinics in Richmond upon Thames, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<link rel="canonical" href="https://londongp.directory/practice/richmond-upon-thames/">
+<meta property="og:title" content="GP Practices &amp; Private Clinics in Richmond upon Thames — London GP Directory">
+<meta property="og:description" content="Compare 24 NHS GPs and 2 private clinics in Richmond upon Thames.">
+<meta property="og:url" content="https://londongp.directory/practice/richmond-upon-thames/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#003087">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"NHS GP Practices & Private Clinics in Richmond upon Thames","url":"https://londongp.directory/practice/richmond-upon-thames/","description":"Complete directory of NHS GP practices and private healthcare clinics in Richmond upon Thames, London \u2014 compare by CQC rating, patient satisfaction and specialty.","isPartOf":{"@type":"WebSite","name":"London GP Directory","url":"https://londongp.directory"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://londongp.directory"},{"@type":"ListItem","position":2,"name":"Boroughs","item":"https://londongp.directory/practice/"},{"@type":"ListItem","position":3,"name":"Richmond upon Thames","item":"https://londongp.directory/practice/richmond-upon-thames/"}]}}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.hdr{background:#003087;color:#fff;padding:24px;border-bottom:4px solid #0072CE}
+.hdr-in{max-width:1300px;margin:0 auto}
+.crumbs{font-size:12px;opacity:.65;margin-bottom:10px}
+.crumbs a{color:#B5D4F4}
+.hdr h1{font-family:Georgia,serif;font-size:1.7rem;font-weight:700;line-height:1.15;margin-bottom:8px}
+.hdr h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
+.hdr-sub{font-size:.9rem;opacity:.8;max-width:680px;margin-bottom:14px;line-height:1.45}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px}
+.stat strong{display:block;font-size:1.4rem;font-weight:300}
+.stat span{font-size:.7rem;opacity:.6;text-transform:uppercase;letter-spacing:.05em}
+.type-zone{background:#fff;border-bottom:1px solid #e5e5e3;padding:14px 24px}
+.type-inner{max-width:1300px;margin:0 auto}
+.type-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.type-tab{padding:8px 16px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#555;transition:all .15s}
+.type-tab.active{background:#003087;color:#fff;border-color:#003087}
+.type-tab-count{font-size:11px;opacity:.7;margin-left:4px}
+.specialty-zone{margin-top:10px;display:none;flex-wrap:wrap;gap:5px}
+.specialty-zone.active{display:flex}
+.specialty-chip{padding:5px 11px;border-radius:99px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:12px;color:#666;text-transform:capitalize}
+.specialty-chip.active{background:#0072CE;color:#fff;border-color:#0072CE}
+.specialty-chip-count{font-size:10px;opacity:.7;margin-left:3px}
+.wrap{max-width:1300px;margin:0 auto;padding:24px}
+.results-bar{font-size:13px;color:#888;margin-bottom:14px}
+.results-bar strong{color:#222}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px}
+.card-name{font-family:Georgia,serif;font-size:14px;font-weight:700;color:#003087;flex:1;line-height:1.3}
+.cqc{flex-shrink:0;font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.cqc-O{background:#E1F5EE;color:#0F6E56}.cqc-G{background:#D8EFE3;color:#007F3B}
+.cqc-R{background:#FAEEDA;color:#BA7517}.cqc-I{background:#FCEBEB;color:#A32D2D}.cqc-N{background:#f0f0ee;color:#777}
+.card-badges{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:7px}
+.type-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}
+.type-badge.t-nhs{background:#EDF4FC;color:#003087}
+.type-badge.t-priv{background:#FAE7F3;color:#A02670}
+.spec-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize}
+.card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
+.metrics{display:flex;gap:12px;margin-bottom:12px}
+.metric{flex:1}
+.m-lbl{font-size:9px;text-transform:uppercase;color:#aaa;margin-bottom:2px}
+.m-track{height:3px;background:#eee;border-radius:99px;overflow:hidden;margin-bottom:2px}
+.m-bar{height:100%;border-radius:99px}
+.m-val{font-size:11.5px;font-weight:600;color:#444}
+.m-na{font-size:11.5px;color:#ccc}
+.card-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0ee;padding-top:10px;gap:8px;margin-top:auto}
+.card-phone{font-size:11.5px;color:#444;font-weight:500}
+.actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.pill{font-size:10.5px;padding:4px 9px;border-radius:6px;font-weight:600;white-space:nowrap}
+.pill-reg{background:#003087;color:#fff}.pill-cqc{background:#D8EFE3;color:#007F3B}
+.pill-ods{background:#EDF4FC;color:#0072CE}.pill-web{background:#FAE7F3;color:#A02670}
+.bottom-nav{background:#fff;border-top:1px solid #e5e5e3;padding:18px 24px;margin-top:32px}
+.bottom-nav-inner{max-width:1300px;margin:0 auto;text-align:center;font-size:13px;color:#888}
+.bottom-nav a{color:#003087;font-weight:600;margin:0 6px}
+.bottom-nav a:hover{text-decoration:underline}
+.empty{text-align:center;padding:4rem 2rem;color:#888}
+footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:14px 24px;font-size:11.5px}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:600px){
+  .hdr{padding:18px 16px}
+  .hdr h1{font-size:1.3rem}
+  .stats{gap:14px}
+  .type-zone{padding:12px 16px}
+  .wrap{padding:16px}
+  #grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <div class="crumbs"><a href="/">Home</a> ⟩ Boroughs ⟩ <strong>Richmond upon Thames</strong></div>
+    <h1>NHS GP Practices &amp; Private Clinics in <em>Richmond upon Thames</em></h1>
+    <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in Richmond upon Thames — by CQC rating, patient survey, contact details and specialty.</p>
+    <div class="stats">
+      <div class="stat"><strong>24</strong><span>NHS practices</span></div>
+      <div class="stat"><strong>2</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>23</strong><span>Good or Outstanding</span></div>
+      <div class="stat"><strong>86.8%</strong><span>Avg NHS patient score</span></div>
+    </div>
+  </div>
+</header>
+<div class="type-zone">
+  <div class="type-inner">
+    <div class="type-tabs" id="typeTabs">
+      <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">24</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">2</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">26</span></button>
+    </div>
+    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">2</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="dermatology">dermatology <span class="specialty-chip-count">1</span></button></div>
+  </div>
+</div>
+<main class="wrap">
+  <div class="results-bar" id="resCt">Showing <strong>24</strong> NHS practices in Richmond upon Thames</div>
+  <div id="grid"><div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Broad Lane Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">71 Broad Lane, Hampton, Middlesex, TW12 3AX</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089795406">📞 02089795406</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84018" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-2680281273" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84018" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Cross Deep Surgery</div>
+        <span class="cqc cqc-N">Not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">4 Cross Deep, Twickenham, Middlesex, TW1 4QP</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088928124">📞 02088928124</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84039" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-2605814925" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84039" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Essex House Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Station Road, Barnes, London, SW13 0LW</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"><div class="m-bar" style="width:89.9%;background:#0072CE"></div></div><div class="m-val">89.9%</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"><div class="m-bar" style="width:90.1%;background:#0F6E56"></div></div><div class="m-val">90.1%</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088761033">📞 020 88761033</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84023" target="_blank">Register →</a><a class="pill pill-cqc" href="http://www.cqc.org.uk/location/1-564537461" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84023" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Glebe Road Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">1 Glebe Road, Barnes, London, SW13 0DR</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"><div class="m-bar" style="width:79.8%;background:#0072CE"></div></div><div class="m-val">79.8%</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"><div class="m-bar" style="width:72.7%;background:#0F6E56"></div></div><div class="m-val">72.7%</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02087481065">📞 020 87481065</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/Y01206" target="_blank">Register →</a><a class="pill pill-cqc" href="http://www.cqc.org.uk/location/1-572554545" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XY01206" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Hampton Hill Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">94-102, High Street, Hampton Hill, Hampton, TW12 1NY</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089770043">📞 02089770043</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84623" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-4919025890" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84623" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Hampton Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Lansdowne, Priory Road, Hampton, Middlesex, TW12 2PB</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089795150">📞 02089795150</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84040" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-582124351" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84040" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Jubilee Surgery - Boohan</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">First Floor, Whitton Corner Health and Social Care Centre, Percy Road, Twickenham, Middlesex, TW2 6JL</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02034585400">📞 02034585400</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84031" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-542792684" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84031" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Orchard Clinic</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">89 St Margarets Road, Twickenham, Middlesex, TW1 2LJ</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02031983100">📞 02031983100</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.orchard-clinic.co.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-2285225832" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Park Road Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">37 Park Road, Teddington, Middlesex, TW11 0AU</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089775481">📞 02089775481</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84002" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-558041794" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84002" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Richmond Lock Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">300 St Margarets Road, Twickenham, Middlesex, TW1 1PS</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088922543">📞 02088922543</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84060" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-558318450" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84060" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Richmond Medical Group</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Sheen Lane Health Centre, 70 Sheen Lane, London, SW14 8LP</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"><div class="m-bar" style="width:94.9%;background:#0072CE"></div></div><div class="m-val">94.9%</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"><div class="m-bar" style="width:91.7%;background:#0F6E56"></div></div><div class="m-val">91.7%</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088763901">📞 020 88763901</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84006" target="_blank">Register →</a><a class="pill pill-cqc" href="http://www.cqc.org.uk/location/1-550023681" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84006" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Seymour House Surgery - Hudson</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">154 Sheen Road, Richmond, Surrey, TW9 1UU</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089402802">📞 02089402802</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84017" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-546161870" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84017" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Sheen Lane Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Sheen Lane Health Centre, 70 Sheen Lane, London, SW14 8LP</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"><div class="m-bar" style="width:82.4%;background:#0072CE"></div></div><div class="m-val">82.4%</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"><div class="m-bar" style="width:81.3%;background:#0F6E56"></div></div><div class="m-val">81.3%</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088764086">📞 020 88764086</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84055" target="_blank">Register →</a><a class="pill pill-cqc" href="http://www.cqc.org.uk/location/1-572906794" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84055" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">St Margaret's Medical Practice</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">St Margarets Medical Practice, 237 St Margarets Road, Twickenham, TW1 1NE</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088921986">📞 02088921986</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/E85007" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-559846073" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XE85007" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Staines Road Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">323-325 Staines Road, Twickenham, TW2 5AU</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088942722">📞 02088942722</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84057" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-19680726655" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84057" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="dermatology">
+      <div class="card-top">
+        <div class="card-name">Thames Skin Clinic</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">dermatology</span></div>
+      <div class="card-addr">1-3 Baylis Mews, Twickenham, TW1 3HQ</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02081503400">📞 02081503400</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.thamesskin.co.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-9293998788" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Thameside Medical Practice - Childs & Partners</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Thames House, 180-194 High Street, Teddington, Middlesex, TW11 8HU</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02086144930">📞 02086144930</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84059" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-549102823" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84059" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The Acorn Group Practice - Jackson</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">29-35 Holly Road, Twickenham, Middlesex, TW1 4EA</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088924519">📞 02088924519</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84007" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-572531131" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84007" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The Green Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">1b The Green, Twickenham, Middlesex, TW2 5TU</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088946870">📞 02088946870</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84044" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-553246300" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84044" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The Paradise Road Practice</div>
+        <span class="cqc cqc-N">Not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">37 Paradise Road, Richmond, Surrey, TW9 1SA</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089402423">📞 02089402423</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84014" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-494192598" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84014" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The Parkshot Medical Practice</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">18 Parkshot, Richmond, Surrey, TW9 2RG</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089484217">📞 02089484217</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84005" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-1773983843" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84005" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The York Medical Practice</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">St Johns Health Centre, Oak Lane, Twickenham, Middlesex, TW1 3PA</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02087440220">📞 02087440220</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84012" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-625826067" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84012" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Twickenham Park Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">192 Twickenham Road, Hanworth, Feltham, TW13 6HD</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02084817989">📞 02084817989</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/E85045" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-13421182732" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XE85045" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Twickenham Park Surgery - Johal</div>
+        <span class="cqc cqc-N">Not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">17 Rosslyn Road, Twickenham, Middlesex, TW1 2AR</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088921991">📞 02088921991</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84048" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-2605815102" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84048" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Vineyard Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">35 The Vineyard, Richmond, Surrey, TW10 6PP</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089480404">📞 02089480404</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84041" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-1121185423" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84041" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Woodlawn Medical Centre - Kudra</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">19 Powder Mill Lane, Twickenham, Middlesex, TW2 6EE</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02088944242">📞 02088944242</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84625" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-569455063" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84625" target="_blank">NHS</a></div>
+      </div>
+    </div></div>
+</main>
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">Other boroughs: <a href="/practice/barking-and-dagenham/">Barking & Dagenham</a> <a href="/practice/barnet/">Barnet</a> <a href="/practice/bexley/">Bexley</a> <a href="/practice/brent/">Brent</a> <a href="/practice/bromley/">Bromley</a> <a href="/practice/camden/">Camden</a> <a href="/practice/city-of-london/">City of London</a> <a href="/practice/croydon/">Croydon</a> <a href="/">All London ›</a></div>
+</nav>
+<footer>
+  London GP Directory · Data refreshed 2026-06-05 · <a href="/">All London</a> · <a href="/about.html">About</a> · <a href="/methodology.html">Methodology</a> · <a href="/sources.html">Sources</a>
+</footer>
+<script>
+const tabs = document.querySelectorAll('.type-tab');
+const chipsZone = document.getElementById('specialtyZone');
+const grid = document.getElementById('grid');
+const resCt = document.getElementById('resCt');
+const BOROUGH = "Richmond upon Thames";
+const TOTAL_NHS = 24;
+const TOTAL_PRIV = 2;
+let selType = 'NHS';
+let selSpec = 'all';
+
+function applyFilters() {
+  let shown = 0;
+  document.querySelectorAll('#grid .card').forEach(card => {
+    const t = card.dataset.type;
+    const specs = (card.dataset.specs || '').split(',').filter(Boolean);
+    const typeOk = selType === 'All' || t === selType;
+    const specOk = selType !== 'Private' || selSpec === 'all' || specs.includes(selSpec);
+    if (typeOk && specOk) { card.style.display = ''; shown++; }
+    else card.style.display = 'none';
+  });
+  const totalForType = selType === 'NHS' ? TOTAL_NHS
+                     : selType === 'Private' ? TOTAL_PRIV
+                     : TOTAL_NHS + TOTAL_PRIV;
+  const label = selType === 'NHS' ? 'NHS practices'
+              : selType === 'Private' ? 'private clinics'
+              : 'practices &amp; clinics';
+  resCt.innerHTML = `Showing <strong>${shown}</strong> of <strong>${totalForType}</strong> ${label} in ${BOROUGH}`;
+}
+
+tabs.forEach(tab => tab.addEventListener('click', () => {
+  selType = tab.dataset.type;
+  selSpec = 'all';
+  tabs.forEach(t => t.classList.toggle('active', t === tab));
+  chipsZone.classList.toggle('active', selType === 'Private');
+  chipsZone.querySelectorAll('.specialty-chip').forEach(c =>
+    c.classList.toggle('active', c.dataset.spec === 'all')
+  );
+  applyFilters();
+}));
+
+chipsZone.querySelectorAll('.specialty-chip').forEach(chip => chip.addEventListener('click', () => {
+  selSpec = chip.dataset.spec;
+  chipsZone.querySelectorAll('.specialty-chip').forEach(c => c.classList.toggle('active', c === chip));
+  applyFilters();
+}));
+
+applyFilters();
+</script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GP Practices &amp; Private Clinics in Kingston upon Thames — London GP Directory</title>
+<meta name="description" content="Compare 16 NHS GP practices and 7 private clinics in Kingston upon Thames, London. Patient satisfaction, CQC ratings, specialties &amp; contact details.">
+<link rel="canonical" href="https://londongp.directory/practice/kingston-upon-thames/">
+<meta property="og:title" content="GP Practices &amp; Private Clinics in Kingston upon Thames — London GP Directory">
+<meta property="og:description" content="Compare 16 NHS GPs and 7 private clinics in Kingston upon Thames.">
+<meta property="og:url" content="https://londongp.directory/practice/kingston-upon-thames/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#003087">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"NHS GP Practices & Private Clinics in Kingston upon Thames","url":"https://londongp.directory/practice/kingston-upon-thames/","description":"Complete directory of NHS GP practices and private healthcare clinics in Kingston upon Thames, London \u2014 compare by CQC rating, patient satisfaction and specialty.","isPartOf":{"@type":"WebSite","name":"London GP Directory","url":"https://londongp.directory"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://londongp.directory"},{"@type":"ListItem","position":2,"name":"Boroughs","item":"https://londongp.directory/practice/"},{"@type":"ListItem","position":3,"name":"Kingston upon Thames","item":"https://londongp.directory/practice/kingston-upon-thames/"}]}}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.hdr{background:#003087;color:#fff;padding:24px;border-bottom:4px solid #0072CE}
+.hdr-in{max-width:1300px;margin:0 auto}
+.crumbs{font-size:12px;opacity:.65;margin-bottom:10px}
+.crumbs a{color:#B5D4F4}
+.hdr h1{font-family:Georgia,serif;font-size:1.7rem;font-weight:700;line-height:1.15;margin-bottom:8px}
+.hdr h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
+.hdr-sub{font-size:.9rem;opacity:.8;max-width:680px;margin-bottom:14px;line-height:1.45}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px}
+.stat strong{display:block;font-size:1.4rem;font-weight:300}
+.stat span{font-size:.7rem;opacity:.6;text-transform:uppercase;letter-spacing:.05em}
+.type-zone{background:#fff;border-bottom:1px solid #e5e5e3;padding:14px 24px}
+.type-inner{max-width:1300px;margin:0 auto}
+.type-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.type-tab{padding:8px 16px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#555;transition:all .15s}
+.type-tab.active{background:#003087;color:#fff;border-color:#003087}
+.type-tab-count{font-size:11px;opacity:.7;margin-left:4px}
+.specialty-zone{margin-top:10px;display:none;flex-wrap:wrap;gap:5px}
+.specialty-zone.active{display:flex}
+.specialty-chip{padding:5px 11px;border-radius:99px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:12px;color:#666;text-transform:capitalize}
+.specialty-chip.active{background:#0072CE;color:#fff;border-color:#0072CE}
+.specialty-chip-count{font-size:10px;opacity:.7;margin-left:3px}
+.wrap{max-width:1300px;margin:0 auto;padding:24px}
+.results-bar{font-size:13px;color:#888;margin-bottom:14px}
+.results-bar strong{color:#222}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px}
+.card-name{font-family:Georgia,serif;font-size:14px;font-weight:700;color:#003087;flex:1;line-height:1.3}
+.cqc{flex-shrink:0;font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.cqc-O{background:#E1F5EE;color:#0F6E56}.cqc-G{background:#D8EFE3;color:#007F3B}
+.cqc-R{background:#FAEEDA;color:#BA7517}.cqc-I{background:#FCEBEB;color:#A32D2D}.cqc-N{background:#f0f0ee;color:#777}
+.card-badges{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:7px}
+.type-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:99px;text-transform:uppercase;letter-spacing:.04em}
+.type-badge.t-nhs{background:#EDF4FC;color:#003087}
+.type-badge.t-priv{background:#FAE7F3;color:#A02670}
+.spec-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize}
+.card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
+.metrics{display:flex;gap:12px;margin-bottom:12px}
+.metric{flex:1}
+.m-lbl{font-size:9px;text-transform:uppercase;color:#aaa;margin-bottom:2px}
+.m-track{height:3px;background:#eee;border-radius:99px;overflow:hidden;margin-bottom:2px}
+.m-bar{height:100%;border-radius:99px}
+.m-val{font-size:11.5px;font-weight:600;color:#444}
+.m-na{font-size:11.5px;color:#ccc}
+.card-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0ee;padding-top:10px;gap:8px;margin-top:auto}
+.card-phone{font-size:11.5px;color:#444;font-weight:500}
+.actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.pill{font-size:10.5px;padding:4px 9px;border-radius:6px;font-weight:600;white-space:nowrap}
+.pill-reg{background:#003087;color:#fff}.pill-cqc{background:#D8EFE3;color:#007F3B}
+.pill-ods{background:#EDF4FC;color:#0072CE}.pill-web{background:#FAE7F3;color:#A02670}
+.bottom-nav{background:#fff;border-top:1px solid #e5e5e3;padding:18px 24px;margin-top:32px}
+.bottom-nav-inner{max-width:1300px;margin:0 auto;text-align:center;font-size:13px;color:#888}
+.bottom-nav a{color:#003087;font-weight:600;margin:0 6px}
+.bottom-nav a:hover{text-decoration:underline}
+.empty{text-align:center;padding:4rem 2rem;color:#888}
+footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:14px 24px;font-size:11.5px}
+footer a{color:rgba(255,255,255,.8)}
+@media(max-width:600px){
+  .hdr{padding:18px 16px}
+  .hdr h1{font-size:1.3rem}
+  .stats{gap:14px}
+  .type-zone{padding:12px 16px}
+  .wrap{padding:16px}
+  #grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="hdr-in">
+    <div class="crumbs"><a href="/">Home</a> ⟩ Boroughs ⟩ <strong>Kingston upon Thames</strong></div>
+    <h1>NHS GP Practices &amp; Private Clinics in <em>Kingston upon Thames</em></h1>
+    <p class="hdr-sub">Compare every NHS GP practice and private healthcare clinic in Kingston upon Thames — by CQC rating, patient survey, contact details and specialty.</p>
+    <div class="stats">
+      <div class="stat"><strong>16</strong><span>NHS practices</span></div>
+      <div class="stat"><strong>7</strong><span>Private clinics</span></div>
+      <div class="stat"><strong>19</strong><span>Good or Outstanding</span></div>
+      <div class="stat"><strong>0.0%</strong><span>Avg NHS patient score</span></div>
+    </div>
+  </div>
+</header>
+<div class="type-zone">
+  <div class="type-inner">
+    <div class="type-tabs" id="typeTabs">
+      <button class="type-tab active" data-type="NHS">NHS practices <span class="type-tab-count">16</span></button>
+      <button class="type-tab" data-type="Private">Private clinics <span class="type-tab-count">7</span></button>
+      <button class="type-tab" data-type="All">All <span class="type-tab-count">23</span></button>
+    </div>
+    <div class="specialty-zone" id="specialtyZone"><button class="specialty-chip active" data-spec="all">All <span class="specialty-chip-count">7</span></button><button class="specialty-chip" data-spec="psychiatry">psychiatry <span class="specialty-chip-count">4</span></button><button class="specialty-chip" data-spec="private gp">private gp <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="diagnostics">diagnostics <span class="specialty-chip-count">1</span></button><button class="specialty-chip" data-spec="ophthalmology">ophthalmology <span class="specialty-chip-count">1</span></button></div>
+  </div>
+</div>
+<main class="wrap">
+  <div class="results-bar" id="resCt">Showing <strong>16</strong> NHS practices in Kingston upon Thames</div>
+  <div id="grid"><div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Berrylands Surgery, Surbiton Health Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Ewell Road, Surbiton, Surrey, KT6 6EZ</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083996362">📞 02083996362</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84053" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-2192691575" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84053" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Canbury Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">1 Elm Road, Kingston Upon Thames, Surrey, KT2 6HR</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02085474270">📞 02085474270</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84010" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-543870924" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84010" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Churchill Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Clifton Road, Kingston Upon Thames, Surrey, KT2 6PG</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02037272230">📞 02037272230</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84027" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-584680858" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84027" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Claremont Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">2a Glenbuck Road, Surbiton, Surrey, KT6 6BS</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083993516">📞 02083993516</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84619" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-547244115" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84619" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Fairhill Medical Practice</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">81 Kingston Hill, Kingston Upon Thames, Surrey, KT2 7PX</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02085461407">📞 02085461407</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84020" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-550173004" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84020" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Hanover House</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">Hanover House, 76 Coombe Road, Kingston Upon Thames, KT2 7AZ</div>
+      
+      <div class="card-foot">
+        <span></span>
+        <div class="actions"><a class="pill pill-web" href="https://www.seldoc.co.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-2897199278" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Holmwood Corner Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">134 Malden Road, New Malden, Surrey, KT3 6DR</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089420066">📞 02089420066</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84042" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-548988724" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84042" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Hook Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Merritt Medical Centre, Merritt Gardens, Chessington, Surrey, KT9 2GY</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083976361">📞 02083976361</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84025" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-569312512" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84025" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="diagnostics">
+      <div class="card-top">
+        <div class="card-name">InHealth MRI - Kingston Hospital</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">diagnostics</span></div>
+      <div class="card-addr">Galsworthy Road, Kingston Upon Thames, Surrey, KT2 7QB</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02084391038">📞 02084391038</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.inhealthgroup.com" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-153773414" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Jivadental</div>
+        <span class="cqc cqc-N">Inspected but not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">80a, Eden Street, Kingston Upon Thames, KT1 1DJ</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02085460011">📞 02085460011</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.Jivadental.co.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-224387415" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Kingston Health Centre</div>
+        <span class="cqc cqc-O">Outstanding</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">10 Skerne Road, Kingston Upon Thames, Surrey, KT2 5AD</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02085494747">📞 02085494747</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84061" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-545606146" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84061" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Kingston Hospital</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">Galsworthy Road, Kingston Upon Thames, Surrey, KT2 7QB</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089342814">📞 02089342814</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.kingstonhospital.nhs.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/RAX01" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Langley Medical Practice</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Ewell Road, Surbiton, Surrey, KT6 6EZ</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083909996">📞 02083909996</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84062" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-1126352622" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84062" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Manor Drive Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Manor Drive Health Centre, 3 The Manor Drive, Worcester Park, Surrey, KT4 7LG</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083299920">📞 02083299920</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84635" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-542120737" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84635" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Red Lion Road Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">1a Red Lion Road, Tolworth, Surbiton, Surrey, KT6 7QG</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083991779">📞 02083991779</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84054" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-514268665" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84054" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Roselawn Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">149 Malden Road, New Malden, Surrey, KT3 6AA</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02089490555">📞 02089490555</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84051" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-572190129" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84051" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="ophthalmology">
+      <div class="card-top">
+        <div class="card-name">Seon Vision</div>
+        <span class="cqc cqc-N">Not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">ophthalmology</span></div>
+      <div class="card-addr">140 London Road, Kingston Upon Thames, KT2 6QL</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02082871820">📞 02082871820</a>
+        <div class="actions"><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-21670181843" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">St Albans Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">212 Richmond Road, Kingston Upon Thames, Surrey, KT2 5HF</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02085460400">📞 02085460400</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84033" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-569980268" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84033" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">Sunray Surgery</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">97 Warren Drive South, Tolworth, Surbiton, Surrey, KT5 9QD</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083304056">📞 02083304056</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84618" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-15640538095" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84618" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The Groves Medical Centre</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">171 Clarence Avenue, New Malden, Surrey, KT3 3TX</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083366565">📞 02083366565</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84016" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-552497644" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84016" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="NHS" data-specs="">
+      <div class="card-top">
+        <div class="card-name">The Orchard Practice</div>
+        <span class="cqc cqc-G">Good</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-nhs">NHS</span></div>
+      <div class="card-addr">Orchard Gardens, Chessington, Surrey, KT9 1AG</div>
+      <div class="metrics">
+          <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track"></div><div class="m-na">—</div></div>
+          <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track"></div><div class="m-na">—</div></div>
+        </div>
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083979494">📞 02083979494</a>
+        <div class="actions"><a class="pill pill-reg" href="https://gp-registration.nhs.uk/H84034" target="_blank">Register →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-584681094" target="_blank">CQC</a><a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/XH84034" target="_blank">NHS</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="private gp">
+      <div class="card-top">
+        <div class="card-name">The Private GP Group</div>
+        <span class="cqc cqc-N">Not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">private gp</span></div>
+      <div class="card-addr">171 Clarence Avenue, New Malden, Surrey, KT3 3TX</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02083366550">📞 02083366550</a>
+        <div class="actions"><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/1-15324196896" target="_blank">CQC</a></div>
+      </div>
+    </div>
+<div class="card" data-type="Private" data-specs="psychiatry">
+      <div class="card-top">
+        <div class="card-name">Tolworth Hospital</div>
+        <span class="cqc cqc-N">Inspected but not rated</span>
+      </div>
+      <div class="card-badges"><span class="type-badge t-priv">Private</span><span class="spec-badge">psychiatry</span></div>
+      <div class="card-addr">Red Lion Road, Surbiton, Surrey, KT6 7QU</div>
+      
+      <div class="card-foot">
+        <a class="card-phone" href="tel:02086820102">📞 02086820102</a>
+        <div class="actions"><a class="pill pill-web" href="https://www.swlstg-tr.nhs.uk" target="_blank">Website →</a><a class="pill pill-cqc" href="https://www.cqc.org.uk/location/RQY08" target="_blank">CQC</a></div>
+      </div>
+    </div></div>
+</main>
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">Other boroughs: <a href="/practice/barking-and-dagenham/">Barking & Dagenham</a> <a href="/practice/barnet/">Barnet</a> <a href="/practice/bexley/">Bexley</a> <a href="/practice/brent/">Brent</a> <a href="/practice/bromley/">Bromley</a> <a href="/practice/camden/">Camden</a> <a href="/practice/city-of-london/">City of London</a> <a href="/practice/croydon/">Croydon</a> <a href="/">All London ›</a></div>
+</nav>
+<footer>
+  London GP Directory · Data refreshed 2026-06-05 · <a href="/">All London</a> · <a href="/about.html">About</a> · <a href="/methodology.html">Methodology</a> · <a href="/sources.html">Sources</a>
+</footer>
+<script>
+const tabs = document.querySelectorAll('.type-tab');
+const chipsZone = document.getElementById('specialtyZone');
+const grid = document.getElementById('grid');
+const resCt = document.getElementById('resCt');
+const BOROUGH = "Kingston upon Thames";
+const TOTAL_NHS = 16;
+const TOTAL_PRIV = 7;
+let selType = 'NHS';
+let selSpec = 'all';
+
+function applyFilters() {
+  let shown = 0;
+  document.querySelectorAll('#grid .card').forEach(card => {
+    const t = card.dataset.type;
+    const specs = (card.dataset.specs || '').split(',').filter(Boolean);
+    const typeOk = selType === 'All' || t === selType;
+    const specOk = selType !== 'Private' || selSpec === 'all' || specs.includes(selSpec);
+    if (typeOk && specOk) { card.style.display = ''; shown++; }
+    else card.style.display = 'none';
+  });
+  const totalForType = selType === 'NHS' ? TOTAL_NHS
+                     : selType === 'Private' ? TOTAL_PRIV
+                     : TOTAL_NHS + TOTAL_PRIV;
+  const label = selType === 'NHS' ? 'NHS practices'
+              : selType === 'Private' ? 'private clinics'
+              : 'practices &amp; clinics';
+  resCt.innerHTML = `Showing <strong>${shown}</strong> of <strong>${totalForType}</strong> ${label} in ${BOROUGH}`;
+}
+
+tabs.forEach(tab => tab.addEventListener('click', () => {
+  selType = tab.dataset.type;
+  selSpec = 'all';
+  tabs.forEach(t => t.classList.toggle('active', t === tab));
+  chipsZone.classList.toggle('active', selType === 'Private');
+  chipsZone.querySelectorAll('.specialty-chip').forEach(c =>
+    c.classList.toggle('active', c.dataset.spec === 'all')
+  );
+  applyFilters();
+}));
+
+chipsZone.querySelectorAll('.specialty-chip').forEach(chip => chip.addEventListener('click', () => {
+  selSpec = chip.dataset.spec;
+  chipsZone.querySelectorAll('.specialty-chip').forEach(c => c.classList.toggle('active', c === chip));
+  applyFilters();
+}));
+
+applyFilters();
+</script>
+</body>
+</html>

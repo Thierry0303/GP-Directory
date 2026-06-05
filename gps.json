@@ -1508,8 +1508,8 @@
     "gpps_contact_pct": 88.2,
     "gpps_responses": 129,
     "gpps_pcn": "ST JOHN'S WOOD & MAIDA VALE PCN",
-    "cqc_rating": "Good",
-    "cqc_url": "http://www.cqc.org.uk/location/1-547469382",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/1-547469382",
     "lat": 51.533475,
     "lng": -0.175436,
     "ar": "Westminster"
@@ -6336,7 +6336,7 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-550023681",
     "lat": 51.465767,
     "lng": -0.267847,
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H84023",
@@ -6352,7 +6352,7 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-564537461",
     "lat": 51.472542,
     "lng": -0.247446,
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H84055",
@@ -6368,7 +6368,7 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-572906794",
     "lat": 51.465767,
     "lng": -0.267847,
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H85001",
@@ -7260,7 +7260,7 @@
     "cqc_url": "http://www.cqc.org.uk/location/1-572554545",
     "lat": 51.473609,
     "lng": -0.242481,
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "Y01839",
@@ -7682,7 +7682,7 @@
     "gpps_contact_pct": null,
     "gpps_pcn": "",
     "official_name": "The Vineyard Surgery",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "E87722",
@@ -7709,7 +7709,7 @@
     "gpps_contact_pct": null,
     "gpps_pcn": "",
     "official_name": "Surbiton Health Centre",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "E84601",
@@ -7935,7 +7935,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "F82604",
@@ -8105,7 +8105,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "F86082",
@@ -8196,7 +8196,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H85103",
@@ -8339,7 +8339,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H81045",
@@ -8533,7 +8533,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "E86610",
@@ -8766,7 +8766,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "F82634",
@@ -9285,7 +9285,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "E82079",
@@ -9865,7 +9865,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "E85718",
@@ -10060,7 +10060,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "G84607",
@@ -10150,7 +10150,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "G84010",
@@ -10447,7 +10447,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "F84016",
@@ -10538,7 +10538,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "F82021",
@@ -10564,7 +10564,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "E84068",
@@ -10876,7 +10876,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "H83022",
@@ -10928,7 +10928,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "E85064",
@@ -11082,7 +11082,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "F86692",
@@ -11147,7 +11147,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "E84018",
@@ -11367,7 +11367,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "H85021",
@@ -11482,7 +11482,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H84048",
@@ -11495,7 +11495,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "E83053",
@@ -11599,7 +11599,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "E83012",
@@ -11625,7 +11625,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "G84015",
@@ -11703,7 +11703,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "G83010",
@@ -12115,7 +12115,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "H84625",
@@ -12128,7 +12128,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H83023",
@@ -12205,7 +12205,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "E86009",
@@ -12411,7 +12411,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "H83031",
@@ -12528,7 +12528,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H83608",
@@ -12606,7 +12606,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "F82001",
@@ -12853,7 +12853,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "F82040",
@@ -13074,7 +13074,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "E85020",
@@ -14359,7 +14359,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H84014",
@@ -14372,7 +14372,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Richmond"
+    "ar": "Richmond upon Thames"
   },
   {
     "ods_code": "H84034",
@@ -14385,7 +14385,7 @@
     "gpps_overall_pct": null,
     "gpps_contact_pct": null,
     "gpps_pcn": "",
-    "ar": "Kingston"
+    "ar": "Kingston upon Thames"
   },
   {
     "ods_code": "H85031",
