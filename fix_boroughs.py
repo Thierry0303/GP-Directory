@@ -57,8 +57,8 @@ NAME_NORMALISE = {
     "Kensington and Chelsea":     "Kensington & Chelsea",
     "Hammersmith and Fulham":     "Hammersmith & Fulham",
     "Barking and Dagenham":       "Barking & Dagenham",
-    "Richmond upon Thames":       "Richmond",
-    "Kingston upon Thames":       "Kingston",
+    "Richmond upon Thames":       "Richmond upon Thames",
+    "Kingston upon Thames":       "Kingston upon Thames",
     "City of London":             "City of London",
     "Westminster":                "Westminster",
 }
