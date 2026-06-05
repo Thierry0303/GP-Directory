@@ -130,7 +130,7 @@ python3 -m http.server 8000
 
 - All practices listed equally. No paid placement.
 - Data is from official NHS sources only. We do not republish patient reviews from third-party platforms.
-- Right of reply: practice managers can request corrections at `corrections@londongp.directory`. We respond within 5 working days.
+- Right of reply: practice managers can request corrections at `ThierrySW11@gmail.com`. We respond within 5 working days.
 - All changes are logged in our public corrections log.
 - We do not display any third-party advertising.
 
