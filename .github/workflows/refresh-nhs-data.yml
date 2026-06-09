@@ -14,13 +14,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
-      - name: Fetch NHS ODS data and rebuild index.html
+      - name: Fetch NHS ODS data
         run: python refresh_nhs_data.py
       
       - name: Build borough hub pages
@@ -34,7 +36,7 @@ jobs:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python fetch_private_clinics.py
       
-      - name: Scan CQC for healthcare providers (London-wide)
+      - name: Scan CQC for healthcare providers
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python cqc_scanner_fixed_v2.py
@@ -45,10 +47,14 @@ jobs:
       - name: Build healthcare provider pages
         run: python build_healthcare_pages_fixed_v2.py
       
-      - name: Commit refreshed pages
+      - name: Pull latest changes before commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html practice/ provider/ sitemap.xml merged.json private_clinics.json dentists.json clinics.json hospitals.json specialties_breakdown.json cqc_london_providers.json
+          git pull --rebase origin main || git rebase --abort
+      
+      - name: Commit and push changes
+        run: |
+          git add index.html practice/ provider/ sitemap.xml merged.json private_clinics.json dentists.json clinics.json hospitals.json specialties_breakdown.json
           git diff --staged --quiet || git commit -m "chore: refresh NHS ODS + CQC healthcare data $(date -u '+%Y-%m-%d')"
-          git push
+          git push origin main
