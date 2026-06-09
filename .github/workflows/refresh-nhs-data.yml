@@ -1,35 +1,54 @@
 name: Weekly NHS Data Refresh
+
 on:
   schedule:
     - cron: '0 6 * * 1'
   workflow_dispatch:
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     permissions:
       contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      
       - name: Fetch NHS ODS data and rebuild index.html
         run: python refresh_nhs_data.py
+      
       - name: Build borough hub pages
         run: python build_borough_pages.py
+      
       - name: Build per-practice pages
         run: python build_practice_pages.py
+      
       - name: Fetch private clinics from CQC
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python fetch_private_clinics.py
+      
+      - name: Scan CQC for healthcare providers (London-wide)
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python cqc_scanner_fixed_v2.py
+      
+      - name: Process CQC data into categories
+        run: python process_cqc_data_v2.py
+      
+      - name: Build healthcare provider pages
+        run: python build_healthcare_pages_fixed_v2.py
+      
       - name: Commit refreshed pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html practice/ sitemap.xml merged.json private_clinics.json
-          git diff --staged --quiet || git commit -m "chore: refresh NHS ODS data $(date -u '+%Y-%m-%d')"
+          git add index.html practice/ provider/ sitemap.xml merged.json private_clinics.json dentists.json clinics.json hospitals.json specialties_breakdown.json cqc_london_providers.json
+          git diff --staged --quiet || git commit -m "chore: refresh NHS ODS + CQC healthcare data $(date -u '+%Y-%m-%d')"
           git push
