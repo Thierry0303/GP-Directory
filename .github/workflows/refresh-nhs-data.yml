@@ -48,7 +48,7 @@ jobs:
         run: python process_cqc_data_v2.py
       
       - name: Build healthcare provider pages
-        run: python build_healthcare_pages_fixed_v2.py
+        run: python build_healthcare_pages_v2.py
       
       - name: Pull latest changes before commit
         run: |
