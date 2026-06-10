@@ -42,7 +42,7 @@ jobs:
       - name: Scan CQC for healthcare providers
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
-        run: python cqc_scanner_optimized.py
+        run: python cqc_scanner_fixed_v2.py
       
       - name: Process CQC data into categories
         run: python process_cqc_data_v2.py
