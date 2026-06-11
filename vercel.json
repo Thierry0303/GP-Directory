@@ -9,6 +9,22 @@
       "destination": "/robots.txt"
     },
     {
+      "source": "/provider/:path*",
+      "destination": "/provider/:path*"
+    },
+    {
+      "source": "/practice/:path*",
+      "destination": "/practice/:path*"
+    },
+    {
+      "source": "/private/:path*",
+      "destination": "/private/:path*"
+    },
+    {
+      "source": "/boroughs/:path*",
+      "destination": "/boroughs/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
