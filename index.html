@@ -89,7 +89,6 @@ select{padding:5px 8px;border:1.5px solid #ddd;border-radius:6px;font-size:.82re
 .area-chip{padding:3px 10px;border-radius:12px;border:1.5px solid rgba(255,255,255,.3);background:transparent;cursor:pointer;font-size:.72rem;color:rgba(255,255,255,.75);font-weight:500;transition:all .15s}
 .area-chip.active{background:rgba(255,255,255,.2);color:#fff;border-color:rgba(255,255,255,.6)}
 .area-chip:hover{background:rgba(255,255,255,.1);color:#fff}
-.area-chip.area-more{border-style:dashed;opacity:.8;font-style:italic}
 
 /* ── RESULTS BAR ── */
 .results-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:.82rem;color:#888}
@@ -468,48 +467,16 @@ function selectCat(cat) {
 
 // ── FILTERS ──
 function buildAreaChips() {
-  const TOP_AREAS = [
-    'Camden', 'Islington', 'Hackney', 'Tower Hamlets', 'Southwark',
-    'Lambeth', 'Westminster', 'Kensington & Chelsea', 'Wandsworth', 'Greenwich'
-  ];
-  const allAreas = [...new Set(DATA.map(d => d.ar).filter(Boolean))].sort();
-  const otherAreas = allAreas.filter(a => !TOP_AREAS.includes(a));
-
+  const areas = [...new Set(DATA.map(d => d.ar).filter(Boolean))].sort();
   const wrap = document.getElementById('areaChips');
-
-  function renderChips(showAll) {
-    const visibleOthers = showAll ? otherAreas : [];
-    wrap.innerHTML =
-      '<button class="area-chip active" onclick="setArea(\'\')">All boroughs</button>' +
-      TOP_AREAS.filter(a => allAreas.includes(a)).map(a =>
-        `<button class="area-chip" onclick="setArea('${a}')">${a}</button>`
-      ).join('') +
-      visibleOthers.map(a =>
-        `<button class="area-chip" onclick="setArea('${a}')">${a}</button>`
-      ).join('') +
-      (!showAll
-        ? `<button class="area-chip area-more" onclick="expandAreas()">+ ${otherAreas.length} more…</button>`
-        : `<button class="area-chip area-more" onclick="collapseAreas()">Show less</button>`
-      );
-    // Re-highlight active
-    document.querySelectorAll('.area-chip').forEach(b => {
-      const t = b.textContent === 'All boroughs' ? '' : b.textContent;
-      if (!b.classList.contains('area-more')) {
-        b.classList.toggle('active', t === currentArea);
-      }
-    });
-  }
-
-  window.expandAreas = () => renderChips(true);
-  window.collapseAreas = () => renderChips(false);
-
-  renderChips(false);
+  wrap.innerHTML = '<button class="area-chip active" onclick="setArea(\'\')">All boroughs</button>' +
+    areas.map(a => `<button class="area-chip" onclick="setArea('${a}')">${a}</button>`).join('');
 }
 
 function setArea(area) {
   currentArea = area;
   currentPage = 1;
-  document.querySelectorAll('.area-chip:not(.area-more)').forEach(b => {
+  document.querySelectorAll('.area-chip').forEach(b => {
     const t = b.textContent === 'All boroughs' ? '' : b.textContent;
     b.classList.toggle('active', t === area);
   });
