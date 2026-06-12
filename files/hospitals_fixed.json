@@ -1,0 +1,862 @@
+[
+  {
+    "id": "1-10204873504",
+    "name": "Blackheath Brain Injury Rehabilitation Centre",
+    "postcode": "SE10 8AD",
+    "address": "80 - 82 Blackheath Hill, London",
+    "borough": "Greenwich",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10204873504",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-10205173491",
+    "name": "Holybourne Hospital",
+    "postcode": "SW15 4JL",
+    "address": "Holybourne Avenue, London",
+    "borough": "Wandsworth",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10205173491",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-10650031112",
+    "name": "Pinhoe View",
+    "postcode": "EX1 3PZ",
+    "address": "College Way, Exeter",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10650031112",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-108646848",
+    "name": "Jasmine Court Independent Hospital",
+    "postcode": "EN9 3JY",
+    "address": "c/o Paternoster House Care Centre, Waltham Abbey",
+    "borough": "Enfield",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-108646848",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-109980250",
+    "name": "Nightingale Hospital",
+    "postcode": "NW1 6SH",
+    "address": "11-19 Lisson Grove, London",
+    "borough": "Camden",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-109980250",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-113084566",
+    "name": "The Farndon Unit",
+    "postcode": "NG24 4SW",
+    "address": "Farndon Road, Newark",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-113084566",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-114202293",
+    "name": "The London Welbeck Hospital",
+    "postcode": "W1G 8EN",
+    "address": "27 Welbeck Street, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-114202293",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-114202635",
+    "name": "King Edward VII's Hospital",
+    "postcode": "W1G 6AA",
+    "address": "5-10 Beaumont Street, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-114202635",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-114617347",
+    "name": "The London Clinic",
+    "postcode": "W1G 6BW",
+    "address": "20 Devonshire Place, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-114617347",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-115480780",
+    "name": "Hospital of St John & St Elizabeth",
+    "postcode": "NW8 9NH",
+    "address": "60 Grove End Road, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-115480780",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-115574477",
+    "name": "Nuffield Health Exeter Hospital",
+    "postcode": "EX2 4UG",
+    "address": "Wonford Road, Exeter",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-115574477",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-115574618",
+    "name": "Nuffield Health Newcastle-upon-Tyne Hospital",
+    "postcode": "NE2 1JP",
+    "address": "Clayton Road, Newcastle Upon Tyne",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-115574618",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-115574857",
+    "name": "Nuffield Health Wolverhampton Hospital",
+    "postcode": "WV6 8LE",
+    "address": "Wood Road, Wolverhampton",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-115574857",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-116950764",
+    "name": "St Matthews Hospital",
+    "postcode": "NN2 7HF",
+    "address": "21-23 St Matthews Parade, Northampton",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-116950764",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-121538260",
+    "name": "St Andrews Healthcare Northampton",
+    "postcode": "NN1 5DG",
+    "address": "Billing Road, Northampton",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-121538260",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-12465800404",
+    "name": "The Woodmill",
+    "postcode": "EX15 1EA",
+    "address": "Exeter Road, Cullompton",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12465800404",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-1265559130",
+    "name": "Avesbury House",
+    "postcode": "N18 1PQ",
+    "address": "85 Tanners End Lane, London",
+    "borough": "Enfield",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-1265559130",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-126736267",
+    "name": "Bromley Road Hospital",
+    "postcode": "SE6 2UR",
+    "address": "84-86 Bromley Road / 82 Canadian Avenue, London",
+    "borough": "Lewisham",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126736267",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-126955711",
+    "name": "HCA Healthcare UK The Wellington Hospital",
+    "postcode": "NW8 9LE",
+    "address": "Wellington Place, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955711",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-126955732",
+    "name": "HCA Healthcare UK The Princess Grace Hospital",
+    "postcode": "W1U 5NY",
+    "address": "42-52 Nottingham Place, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955732",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-126955771",
+    "name": "HCA Healthcare UK The Harley Street Clinic",
+    "postcode": "W1G 8BJ",
+    "address": "35 Weymouth Street, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955771",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-126955884",
+    "name": "HCA Healthcare UK The Lister Hospital",
+    "postcode": "SW1W 8RH",
+    "address": "Chelsea Bridge Road, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955884",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-126955902",
+    "name": "HCA Healthcare UK London Bridge Hospital",
+    "postcode": "SE1 2PR",
+    "address": "27 Tooley Street, London",
+    "borough": "Southwark",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955902",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-126955917",
+    "name": "HCA Healthcare UK The Portland Hospital",
+    "postcode": "W1W 5AH",
+    "address": "205-209, 214 and 234 Great Portland Street, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-126955917",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-12696028155",
+    "name": "Star Clinic",
+    "postcode": "WA14 2YQ",
+    "address": "4-5 Hope Square, Altrincham",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12696028155",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-127132097",
+    "name": "The Priory Hospital Altrincham",
+    "postcode": "WA15 0NU",
+    "address": "Rappax Road, Altrincham",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-127132097",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-127132229",
+    "name": "The Priory Hospital North London",
+    "postcode": "N14 6RA",
+    "address": "Grovelands House, London",
+    "borough": "Enfield",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-127132229",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-127132249",
+    "name": "Priory Horizon House",
+    "postcode": "NG3 5GS",
+    "address": "Ransom Road, Nottingham",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-127132249",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-127132286",
+    "name": "The Priory Hospital Roehampton",
+    "postcode": "SW15 5JJ",
+    "address": "Priory Lane, London",
+    "borough": "Wandsworth",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-127132286",
+    "status": "Registered",
+    "services": [
+      "Long-term conditions",
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-12816317745",
+    "name": "Cleveland Clinic London Hospital",
+    "postcode": "SW1X 7HY",
+    "address": "33 Grosvenor Place, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12816317745",
+    "status": "Registered",
+    "services": [
+      "Hospital",
+      "Doctors/Gps"
+    ]
+  },
+  {
+    "id": "1-128733213",
+    "name": "Woodland Hospital",
+    "postcode": "NN16 8XF",
+    "address": "Rothwell  Road, Kettering",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-128733213",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-128758601",
+    "name": "The Cavell Hospital",
+    "postcode": "EN2 7PR",
+    "address": "Cavell Drive, Enfield",
+    "borough": "Enfield",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-128758601",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-128766906",
+    "name": "The Kings Oak Hospital",
+    "postcode": "EN2 8SD",
+    "address": "Chase Farm (North Side), London",
+    "borough": "Enfield",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-128766906",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-12924818809",
+    "name": "Parkside Hospital",
+    "postcode": "SW19 5NX",
+    "address": "53 Parkside, London",
+    "borough": "Merton",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12924818809",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-12924818962",
+    "name": "Highgate Hospital",
+    "postcode": "N6 4DJ",
+    "address": "17 View Road, London",
+    "borough": "Haringey",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12924818962",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-129371088",
+    "name": "Priory Hospital East Midlands",
+    "postcode": "NG15 0AR",
+    "address": "Mansfield Road, Nottingham",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129371088",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-129389144",
+    "name": "Priory Hospital Arnold",
+    "postcode": "NG5 8PT",
+    "address": "Ramsdale Park, Nottingham",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129389144",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-129389234",
+    "name": "Lombard House",
+    "postcode": "NR17 1JY",
+    "address": "Anchor Corner, Attleborough",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129389234",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-129389380",
+    "name": "Priory Hospital Enfield",
+    "postcode": "N9 9DY",
+    "address": "15 Church Street, London",
+    "borough": "Enfield",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129389380",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-129508000",
+    "name": "Weymouth Hospital",
+    "postcode": "W1G 6NP",
+    "address": "42-46 Weymouth Street, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129508000",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-129770755",
+    "name": "Ashwood Court Supportive Pathways",
+    "postcode": "WA3 2RB",
+    "address": "Woodford Avenue, Warrington",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129770755",
+    "status": "Registered",
+    "services": [
+      "Nursing homes",
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-129798115",
+    "name": "Spire Bushey Hospital",
+    "postcode": "WD23 1RD",
+    "address": "Bushey Hospital, Bushey",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129798115",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-129798153",
+    "name": "Spire Cheshire Hospital",
+    "postcode": "WA4 4LU",
+    "address": "Fir Tree Close, Warrington",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129798153",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-129798322",
+    "name": "Spire Norwich Hospital",
+    "postcode": "NR4 7TD",
+    "address": "Old Watton Road, Norwich",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129798322",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-129798393",
+    "name": "Spire South Bank Hospital",
+    "postcode": "WR5 3YB",
+    "address": "139 Bath Road, Worcester",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129798393",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-129798468",
+    "name": "Spire Washington Hospital",
+    "postcode": "NE38 9JZ",
+    "address": "Picktree Lane, Washington",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-129798468",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-130440888",
+    "name": "Cromwell Hospital",
+    "postcode": "SW5 0TU",
+    "address": "Cromwell Road, London",
+    "borough": "Kensington & Chelsea",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-130440888",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-130471820",
+    "name": "Cygnet Hospital Beckton",
+    "postcode": "E6 6ZB",
+    "address": "23 Tunnan Leys, London",
+    "borough": "Newham",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-130471820",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-130486688",
+    "name": "Cygnet Hospital Blackheath",
+    "postcode": "SE10 8AD",
+    "address": "80-82 Blackheath Hill, London",
+    "borough": "Greenwich",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-130486688",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-130486723",
+    "name": "Cygnet Hospital Ealing",
+    "postcode": "W5 2HT",
+    "address": "22 Corfton Road, London",
+    "borough": "Ealing",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-130486723",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-130486872",
+    "name": "Cygnet Lodge Lewisham",
+    "postcode": "SE13 6QZ",
+    "address": "44 Lewisham Park, London",
+    "borough": "Lewisham",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-130486872",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-13053163420",
+    "name": "DaVita (UK) Ltd - HMP Thameside",
+    "postcode": "SE28 0FJ",
+    "address": "Griffin Manor Way, London",
+    "borough": "Greenwich",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-13053163420",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-133291660",
+    "name": "Cygnet Sedgley House and Cygnet Sedgley Lodge",
+    "postcode": "WV14 9RT",
+    "address": "Woodcross Street, Bilston",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-133291660",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-133291872",
+    "name": "Cygnet Sherwood House and Cygnet Hospital Sherwood",
+    "postcode": "NG21 0HR",
+    "address": "Rufford Colliery Lane, Mansfield",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-133291872",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-13496828786",
+    "name": "Park Lodge",
+    "postcode": "WV1 4AH",
+    "address": "26 Park Avenue, Wolverhampton",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-13496828786",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-13740482832",
+    "name": "The Fitzrovia Hospital",
+    "postcode": "W1T 6AH",
+    "address": "13-14, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-13740482832",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-1382018165",
+    "name": "St Anthony's Hospital",
+    "postcode": "SM3 9DW",
+    "address": "London Road, Sutton",
+    "borough": "Sutton",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-1382018165",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-139149784",
+    "name": "Battersea Bridge House",
+    "postcode": "SW11 3TG",
+    "address": "1 Randal Close, London",
+    "borough": "Wandsworth",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-139149784",
+    "status": "Registered",
+    "services": [
+      "Long-term conditions",
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-1426416203",
+    "name": "Newmarket House",
+    "postcode": "NR4 6SY",
+    "address": "153 Newmarket Road, Norwich",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-1426416203",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-145103749",
+    "name": "Fir Trees Independent Hospital",
+    "postcode": "WN3 4TE",
+    "address": "Fir tree Street, Wigan",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-145103749",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-145103918",
+    "name": "Lea Court",
+    "postcode": "WA5 0EZ",
+    "address": "30 Hawleys Lane, Warrington",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-145103918",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-14822574673",
+    "name": "Barnet Lane Clinic",
+    "postcode": "WD6 3QU",
+    "address": "Barnet Lane Clinic, Cornerstone House, Borehamwood",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-14822574673",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity"
+    ]
+  },
+  {
+    "id": "1-1512006286",
+    "name": "Woodthorpe Hospital",
+    "postcode": "NG5 3FZ",
+    "address": "748 Mansfield Road, Nottingham",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-1512006286",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  },
+  {
+    "id": "1-169587897",
+    "name": "Cygnet Manor",
+    "postcode": "NG20 8BA",
+    "address": "Central Drive, Mansfield",
+    "borough": null,
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-169587897",
+    "status": "Registered",
+    "services": [
+      "Hospitals - Mental health/capacity",
+      "Rehabilitation (illness/injury)"
+    ]
+  },
+  {
+    "id": "1-17429112856",
+    "name": "The Private Clinic - Fitzroy Square",
+    "postcode": "W1T 5HF",
+    "address": "Adam House, London",
+    "borough": "Westminster",
+    "type": "hospital",
+    "cqc_url": "https://www.cqc.org.uk/location/1-17429112856",
+    "status": "Registered",
+    "services": [
+      "Hospital"
+    ]
+  }
+]

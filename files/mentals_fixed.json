@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1-10330299332",
+    "name": "Haringey Alcohol Service",
+    "postcode": "N15 6HR",
+    "address": "590 Seven Sisters Road, London",
+    "borough": "Haringey",
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10330299332",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-10559211016",
+    "name": "CHART Kirklees",
+    "postcode": "WF13 1LY",
+    "address": "3 Wellington Street, Dewsbury",
+    "borough": null,
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10559211016",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-11137679364",
+    "name": "Turning Point Drug and Alcohol Wellbeing Service - City of Westminster and RBKC",
+    "postcode": "W1D 6QR",
+    "address": "32a, London",
+    "borough": "Westminster",
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-11137679364",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-11137679392",
+    "name": "Turning Point Drug and Alcohol Wellbeing Service - Hammersmith and Fulham",
+    "postcode": "W12 7LL",
+    "address": "370-376, London",
+    "borough": "Hammersmith & Fulham",
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-11137679392",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-13226879275",
+    "name": "Cranstoun Inspire",
+    "postcode": "SM2 5JG",
+    "address": "Orion House, Sutton",
+    "borough": "Sutton",
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-13226879275",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-13266143151",
+    "name": "Nottingham Recovery Network",
+    "postcode": "NG1 6BB",
+    "address": "Gate House, Nottingham",
+    "borough": null,
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-13266143151",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-14517602505",
+    "name": "Ciconia Recovery London (Harley Street)",
+    "postcode": "W1G 9PF",
+    "address": "10 Harley Street, London",
+    "borough": "Westminster",
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-14517602505",
+    "status": "Registered",
+    "services": [
+      "Community services - Mental Health",
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-14689708269",
+    "name": "Southwark Adult Substance Misuse Service",
+    "postcode": "SE5 0EE",
+    "address": "146-150, London",
+    "borough": "Southwark",
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-14689708269",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-15554192435",
+    "name": "Living Well Social Care Services Ltd",
+    "postcode": "NG7 7NQ",
+    "address": "Unit 1, Nottingham",
+    "borough": null,
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-15554192435",
+    "status": "Registered",
+    "services": [
+      "Homecare agencies",
+      "Community services - Learning disabilities",
+      "Community services - Mental Health",
+      "Supported living",
+      "Community services - Substance abuse"
+    ]
+  },
+  {
+    "id": "1-15632860349",
+    "name": "Together Devon - Exeter Hub",
+    "postcode": "EX1 2NJ",
+    "address": "Magdalene House, Exeter",
+    "borough": null,
+    "type": "mental",
+    "cqc_url": "https://www.cqc.org.uk/location/1-15632860349",
+    "status": "Registered",
+    "services": [
+      "Community services - Substance abuse"
+    ]
+  }
+]
