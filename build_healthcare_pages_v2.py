@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Healthcare Provider Pages - FIXED for Windows encoding + None names"""
+"""Build Healthcare Provider Pages - Shows postcode/service type when name missing"""
 
 import json
 import os
@@ -19,21 +19,28 @@ CATEGORIES = {
     'hospital': {'title': 'Hospitals', 'slug': 'hospitals', 'emoji': '🏨'},
 }
 
-def load_category_data(category):
-    """Load category JSON file."""
-    filename = f"{category}s.json"
+def load_cqc_raw_data(filename='cqc_london_providers.json'):
+    """Load the raw CQC data instead of categorized data"""
     try:
         with open(filename, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
+        print(f"Error: {filename} not found")
         return []
 
-def slug(text):
-    """Convert to URL-safe slug."""
-    return text.lower().replace(' ', '-').replace('&', 'and').replace("'", '')
+def extract_postcode_district(postcode):
+    """Extract outward code for borough mapping"""
+    if not postcode:
+        return ""
+    pc = postcode.strip().upper().replace(" ", "")
+    # Extract first 2-3 characters
+    import re
+    m = re.match(r'^([A-Z]{1,2}\d{1,2}[A-Z]?).*', pc)
+    return m.group(1) if m else ""
 
-def get_borough(postcode_district):
-    """Get borough from postcode."""
+def get_borough(postcode):
+    """Get borough from postcode"""
+    postcode_district = extract_postcode_district(postcode)
     if not postcode_district:
         return "Unknown"
     for prefix, borough in BOROUGH_MAP.items():
@@ -41,8 +48,54 @@ def get_borough(postcode_district):
             return borough
     return "Unknown"
 
+def extract_service_type(provider):
+    """Get primary service type from provider"""
+    service_types = provider.get('gacServiceTypes', []) or []
+    if service_types and isinstance(service_types, list) and len(service_types) > 0:
+        return service_types[0].get('name', 'Service Provider')
+    return 'Service Provider'
+
+def is_dentist(provider):
+    """Check if provider is a dentist based on service types"""
+    service_types = provider.get('gacServiceTypes', []) or []
+    service_names = " ".join([s.get('name', '').lower() for s in service_types if isinstance(service_types, list)])
+    return 'dentist' in service_names or 'dental' in service_names
+
+def is_clinic(provider):
+    """Check if provider is a clinic"""
+    service_types = provider.get('gacServiceTypes', []) or []
+    service_names = " ".join([s.get('name', '').lower() for s in service_types if isinstance(service_types, list)])
+    return 'clinic' in service_names or 'diagnostic' in service_names
+
+def is_hospital(provider):
+    """Check if provider is a hospital"""
+    service_types = provider.get('gacServiceTypes', []) or []
+    service_names = " ".join([s.get('name', '').lower() for s in service_types if isinstance(service_types, list)])
+    return 'hospital' in service_names or 'acute' in service_names
+
+def get_provider_display_name(provider):
+    """Generate a display name using available data"""
+    name = provider.get('locationName')
+    
+    if name and name.strip():
+        return name.strip()
+    
+    # Fallback: Use postcode + service type
+    postcode = provider.get('postalCode', 'Unknown')
+    service = extract_service_type(provider)
+    loc_id = provider.get('locationId', '')
+    
+    # Extract provider ID from locationId (format: "1-10000367985" -> "10000367985")
+    provider_id = loc_id.split('-')[-1] if '-' in loc_id else loc_id
+    
+    return f"{service} ({postcode})"
+
 def build_category_pages(category, providers):
-    """Build index and borough pages for a category."""
+    """Build index and borough pages for a category"""
+    
+    if not providers:
+        print(f"  ⚠️  No providers for {category}")
+        return
     
     cat_info = CATEGORIES[category]
     base_dir = f"provider/{cat_info['slug']}"
@@ -53,7 +106,7 @@ def build_category_pages(category, providers):
     all_boroughs = set()
     
     for provider in providers:
-        borough = get_borough(provider.get('postcode_district', ''))
+        borough = get_borough(provider.get('postalCode', ''))
         by_borough[borough].append(provider)
         all_boroughs.add(borough)
     
@@ -89,7 +142,8 @@ def build_category_pages(category, providers):
         if borough == "Unknown":
             continue
         count = len(by_borough[borough])
-        borough_slug = slug(borough)
+        # Convert borough name to slug
+        borough_slug = borough.lower().replace(' ', '-').replace('&', 'and')
         index_html += f"""            <a href="{borough_slug}/" class="borough-card">
                 <div class="borough-name">{borough}</div>
                 <div class="provider-count">{count} providers</div>
@@ -105,7 +159,7 @@ def build_category_pages(category, providers):
     with open(f"{base_dir}/index.html", 'w', encoding='utf-8') as f:
         f.write(index_html)
     
-    print(f"  OK {category} index: {base_dir}/index.html")
+    print(f"  ✅ {category} index: {base_dir}/index.html")
     
     # Borough pages
     borough_count = 0
@@ -114,12 +168,13 @@ def build_category_pages(category, providers):
             continue
             
         providers_list = by_borough[borough]
-        borough_slug = slug(borough)
+        # Convert borough name to slug
+        borough_slug = borough.lower().replace(' ', '-').replace('&', 'and')
         borough_dir = f"{base_dir}/{borough_slug}"
         os.makedirs(borough_dir, exist_ok=True)
         
-        # FIX: Handle None names in sorting
-        providers_list = sorted(providers_list, key=lambda p: (p.get('name') or 'Unnamed').lower())
+        # Sort by display name
+        providers_list = sorted(providers_list, key=lambda p: get_provider_display_name(p).lower())
         
         borough_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -135,9 +190,9 @@ def build_category_pages(category, providers):
         .subtitle {{ color: #666; margin-bottom: 30px; }}
         .provider-list {{ display: grid; gap: 12px; }}
         .provider-card {{ background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #0066cc; }}
-        .provider-name {{ font-size: 16px; font-weight: 600; margin-bottom: 4px; }}
-        .provider-spec {{ color: #666; font-size: 13px; margin-bottom: 6px; }}
-        .provider-address {{ color: #999; font-size: 12px; }}
+        .provider-name {{ font-size: 16px; font-weight: 600; margin-bottom: 8px; }}
+        .provider-detail {{ color: #666; font-size: 13px; margin-bottom: 4px; }}
+        .provider-id {{ color: #999; font-size: 12px; font-family: monospace; margin-top: 8px; padding-top: 8px; border-top: 1px solid #eee; }}
     </style>
 </head>
 <body>
@@ -149,17 +204,20 @@ def build_category_pages(category, providers):
 """
         
         for provider in providers_list:
-            name = provider.get('name') or 'Unnamed Provider'
-            spec = provider.get('specialty') or ''
-            address = provider.get('address') or ''
+            display_name = get_provider_display_name(provider)
+            postcode = provider.get('postalCode', '')
+            service = extract_service_type(provider)
+            loc_id = provider.get('locationId', '')
+            status = provider.get('registrationStatus', '')
             
-            spec_html = f'<div class="provider-spec">{spec}</div>' if spec else ''
-            addr_html = f'<div class="provider-address">{address}</div>' if address else ''
+            status_note = f"<div class='provider-detail'><strong>Status:</strong> {status}</div>" if status and status != 'Active' else ""
             
             borough_html += f"""            <div class="provider-card">
-                <div class="provider-name">{name}</div>
-                {spec_html}
-                {addr_html}
+                <div class="provider-name">{display_name}</div>
+                <div class="provider-detail"><strong>Type:</strong> {service}</div>
+                <div class="provider-detail"><strong>Postcode:</strong> {postcode}</div>
+                {status_note}
+                <div class="provider-id">ID: {loc_id}</div>
             </div>
 """
         
@@ -174,33 +232,47 @@ def build_category_pages(category, providers):
         
         borough_count += 1
     
-    print(f"     Generated {borough_count} borough pages")
+    print(f"     ✅ Generated {borough_count} borough pages")
 
 def main():
     print("\n" + "=" * 70)
-    print("Building Healthcare Provider Pages")
+    print("Building Healthcare Provider Pages (Updated)")
     print("=" * 70 + "\n")
+    
+    # Load raw CQC data
+    providers = load_cqc_raw_data()
+    if not providers:
+        print("❌ No CQC data found. Run CQC scanner first.")
+        return 1
+    
+    print(f"Loaded {len(providers)} CQC provider records\n")
     
     os.makedirs("provider", exist_ok=True)
     
+    # Categorize and build pages
     for category in CATEGORIES.keys():
         print(f"Processing {CATEGORIES[category]['title']}...")
-        providers = load_category_data(category)
         
-        if not providers:
-            print(f"  No data found")
-            continue
+        # Filter providers by category
+        if category == 'dentist':
+            category_providers = [p for p in providers if is_dentist(p)]
+        elif category == 'clinic':
+            category_providers = [p for p in providers if is_clinic(p)]
+        elif category == 'hospital':
+            category_providers = [p for p in providers if is_hospital(p)]
+        else:
+            category_providers = []
         
-        build_category_pages(category, providers)
+        build_category_pages(category, category_providers)
     
     print("\n" + "=" * 70)
-    print("SUCCESS! All pages generated!")
+    print("✅ SUCCESS! All pages generated!")
     print("=" * 70)
     print("\nGenerated:")
-    print("  provider/dentists/ (all borough pages)")
-    print("  provider/clinics/ (all borough pages)")
-    print("  provider/hospitals/ (all borough pages)")
-    print("\nReady to commit and deploy to GitHub!")
+    print("  provider/dentists/ (by borough)")
+    print("  provider/clinics/ (by borough)")
+    print("  provider/hospitals/ (by borough)")
+    print("\nPages now show: Service Type, Postcode, Provider ID, Registration Status")
 
 if __name__ == '__main__':
     main()
