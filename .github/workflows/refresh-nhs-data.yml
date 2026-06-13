@@ -6,7 +6,7 @@ on:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 480
+    timeout-minutes: 600
     permissions:
       contents: write
     steps:
