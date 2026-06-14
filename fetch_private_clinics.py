@@ -1,18 +1,9 @@
 #!/usr/bin/env python3
 """
-fetch_private_clinics.py  —  v3 (broadened, stricter quality)
+fetch_private_clinics.py  —  v4 (Fixed Filters & Optimized)
 ==============================================================
 Pulls ALL independently-operated, doctor-led, currently-registered
 CQC locations in London.
-
-Key changes vs previous version:
-- Pulls organisationType=IndependentProvider only (excludes NHS Trusts, social care)
-- Requires registrationStatus=Registered (no deregistered noise)
-- Hard-excludes NHS hospitals, prisons, trust HQs by name pattern
-- Hard-excludes non-clinical service types (ambulances, homecare, residential)
-- Broad specialty classifier: 25 specialties instead of 15
-- Keeps "cosmetic" and "sexual health" which were previously missed
-- Outputs private_clinics.json with same schema as before
 """
 
 import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse
@@ -70,34 +61,26 @@ def is_london(pc):
     return postcode_district(pc) in LONDON_PREFIXES
 
 # ── Hard DROP by name ────────────────────────────────────────────────────────
-# NHS hospitals, prisons, trust admin, social care admin
 DROP_NAME_RE = re.compile(
     r"\b(?:"
-    # NHS hospitals and trusts
     r"nhs\s+(?:trust|foundation|england)|"
     r"\bnhs\b.*\b(?:trust|foundation)\b|"
-    r"university\s+hospital|"
+    r"university\s+nhs\s+hospital|"
     r"general\s+hospital|"
-    r"(?:royal|st\.?\s+\w+)'?s?\s+hospital\b|"
     r"\bhmp\b|prison|young\s+offender|"
-    # Admin / non-clinical
     r"trust\s+h(?:ead)?q|trust\s+headquarters|"
     r"cqc\s+registration|"
-    # Pure dental (separate section)
     r"\bdent(?:ist|al|istry)\b(?!\s+and\s+(?:medical|aesthetics?\s+clinic))|"
     r"\borthodont|"
-    # Pure social care
     r"care\s+home|nursing\s+home|residential\s+home|"
     r"supported\s+living|extra\s+care\s+housing|"
     r"domiciliary|homecare\b|"
-    # Veterinary / other
     r"veterinary|funeral|crematorium|"
     r"pharmacy\b|dispensing\b|chemist\b"
     r")\b",
     re.IGNORECASE,
 )
 
-# Hard DROP by service type
 DROP_SERVICE_RE = re.compile(
     r"\b(?:ambulance|residential\s+home|nursing\s+home|"
     r"care\s+home|homecare|supported\s+living|"
@@ -105,7 +88,6 @@ DROP_SERVICE_RE = re.compile(
     re.IGNORECASE,
 )
 
-# Must have at least one of these service types to be kept
 KEEP_SERVICE_RE = re.compile(
     r"\b(?:"
     r"doctors?\s+(?:consultation|treatment|service)|"
@@ -118,6 +100,7 @@ KEEP_SERVICE_RE = re.compile(
     r"family\s+planning|"
     r"termination\s+of\s+pregnancy|"
     r"hospital\s+services|"
+    r"acute\s+hospital|"
     r"urgent\s+care|"
     r"mental\s+health|"
     r"long\s+term\s+conditions"
@@ -125,7 +108,7 @@ KEEP_SERVICE_RE = re.compile(
     re.IGNORECASE,
 )
 
-# ── Specialty classifier — 25 categories ────────────────────────────────────
+# ── Specialty classifier — 24 Clean Categories ──────────────────────────────
 SPECIALTY_PATTERNS = [
     ("private gp",       r"\b(?:general\s+pract|gp\s+(?:clinic|service|surgery|centre)|private\s+gp|family\s+(?:doctor|practice|medicine)|primary\s+care\s+clinic)\b"),
     ("psychiatry",       r"\b(?:psychiatr|mental\s+health|psycholog|psychother|wellbeing\s+clinic|talking\s+therap|adhd|autism|neurodevelopment|eating\s+disorder|addiction\s+treatment)\b"),
@@ -151,83 +134,62 @@ SPECIALTY_PATTERNS = [
     ("pain management",  r"\b(?:pain\s+(?:clinic|management|specialist|centre)|chronic\s+pain|pain\s+relief\s+clinic)\b"),
     ("respiratory",      r"\b(?:respirat|pulmonol|lung\s+(?:clinic|specialist)|asthma\s+clinic|copd\b|sleep\s+(?:clinic|apnoea))\b"),
     ("hospital",         r"\b(?:private\s+hospital|independent\s+hospital|nuffield\s+health|spire\s+hospital|bupa\s+hospital|hca\b|circle\s+health|the\s+\w+\s+hospital\s+(?:london|private))\b"),
-    ("sexual health",    r"\b(?:sexual\s+health|sti\b|genitourin|hiv\s+clinic|prep\b|contraception)\b"),
 ]
-
-# Deduplicate patterns list
-seen = set()
-SPECIALTY_PATTERNS = [p for p in SPECIALTY_PATTERNS if not (p[0] in seen or seen.add(p[0]))]
 
 def classify_specialty(name, services_blob):
     blob = f"{name} {services_blob}".lower()
     found = [tag for tag, pat in SPECIALTY_PATTERNS if re.search(pat, blob, re.IGNORECASE)]
     return found if found else ["general medicine"]
 
-# ── Borough from postcode ────────────────────────────────────────────────────
+# ── Borough mapping dictionary ──────────────────────────────────────────────
 BOROUGH_MAP = {
-    'E1':'Tower Hamlets','E2':'Tower Hamlets','E3':'Tower Hamlets',
-    'E4':'Waltham Forest','E5':'Hackney','E6':'Newham','E7':'Newham',
-    'E8':'Hackney','E9':'Hackney','E10':'Waltham Forest',
-    'E11':'Waltham Forest','E12':'Newham','E13':'Newham',
-    'E14':'Tower Hamlets','E15':'Newham','E16':'Newham',
-    'E17':'Waltham Forest','E18':'Redbridge','E20':'Newham',
-    'EC1':'Islington','EC2':'City of London','EC3':'City of London','EC4':'City of London',
-    'N1':'Islington','N2':'Barnet','N3':'Barnet','N4':'Haringey',
-    'N5':'Islington','N6':'Haringey','N7':'Islington','N8':'Haringey',
-    'N9':'Enfield','N10':'Haringey','N11':'Barnet','N12':'Barnet',
-    'N13':'Enfield','N14':'Enfield','N15':'Haringey','N16':'Hackney',
-    'N17':'Haringey','N18':'Enfield','N19':'Islington','N20':'Barnet',
-    'N21':'Enfield','N22':'Haringey',
-    'NW1':'Camden','NW2':'Brent','NW3':'Camden','NW4':'Barnet',
-    'NW5':'Camden','NW6':'Brent','NW7':'Barnet','NW8':'Westminster',
-    'NW9':'Brent','NW10':'Brent','NW11':'Barnet',
-    'SE1':'Southwark','SE2':'Greenwich','SE3':'Greenwich','SE4':'Lewisham',
-    'SE5':'Southwark','SE6':'Lewisham','SE7':'Greenwich','SE8':'Lewisham',
-    'SE9':'Greenwich','SE10':'Greenwich','SE11':'Lambeth','SE12':'Lewisham',
-    'SE13':'Lewisham','SE14':'Lewisham','SE15':'Southwark','SE16':'Southwark',
-    'SE17':'Southwark','SE18':'Greenwich','SE19':'Bromley','SE20':'Bromley',
-    'SE21':'Southwark','SE22':'Southwark','SE23':'Lewisham','SE24':'Lambeth',
-    'SE25':'Croydon','SE26':'Lewisham','SE27':'Lambeth','SE28':'Greenwich',
-    'SW1':'Westminster','SW2':'Lambeth','SW3':'Kensington & Chelsea',
-    'SW4':'Lambeth','SW5':'Kensington & Chelsea','SW6':'Hammersmith & Fulham',
-    'SW7':'Kensington & Chelsea','SW8':'Lambeth','SW9':'Lambeth',
-    'SW10':'Kensington & Chelsea','SW11':'Wandsworth','SW12':'Wandsworth',
-    'SW13':'Richmond','SW14':'Richmond','SW15':'Wandsworth','SW16':'Lambeth',
-    'SW17':'Wandsworth','SW18':'Wandsworth','SW19':'Merton','SW20':'Merton',
-    'W1':'Westminster','W2':'Westminster','W3':'Ealing','W4':'Hounslow',
-    'W5':'Ealing','W6':'Hammersmith & Fulham','W7':'Ealing',
+    'E1':'Tower Hamlets','E2':'Tower Hamlets','E3':'Tower Hamlets','E4':'Waltham Forest',
+    'E5':'Hackney','E6':'Newham','E7':'Newham','E8':'Hackney','E9':'Hackney',
+    'E10':'Waltham Forest','E11':'Waltham Forest','E12':'Newham','E13':'Newham',
+    'E14':'Tower Hamlets','E15':'Newham','E16':'Newham','E17':'Waltham Forest',
+    'E18':'Redbridge','E20':'Newham','EC1':'Islington','EC2':'City of London',
+    'EC3':'City of London','EC4':'City of London','N1':'Islington','N2':'Barnet',
+    'N3':'Barnet','N4':'Haringey','N5':'Islington','N6':'Haringey','N7':'Islington',
+    'N8':'Haringey','N9':'Enfield','N10':'Haringey','N11':'Barnet','N12':'Barnet',
+    'N13':'Enfield','N14':'Enfield','N15':'Haringey','N16':'Hackney','N17':'Haringey',
+    'N18':'Enfield','N19':'Islington','N20':'Barnet','N21':'Enfield','N22':'Haringey',
+    'NW1':'Camden','NW2':'Brent','NW3':'Camden','NW4':'Barnet','NW5':'Camden',
+    'NW6':'Brent','NW7':'Barnet','NW8':'Westminster','NW9':'Brent','NW10':'Brent',
+    'NW11':'Barnet','SE1':'Southwark','SE2':'Greenwich','SE3':'Greenwich','SE4':'Lewisham',
+    'SE5':'Southwark','SE6':'Lewisham','SE7':'Greenwich','SE8':'Lewisham','SE9':'Greenwich',
+    'SE10':'Greenwich','SE11':'Lambeth','SE12':'Lewisham','SE13':'Lewisham','SE14':'Lewisham',
+    'SE15':'Southwark','SE16':'Southwark','SE17':'Southwark','SE18':'Greenwich','SE19':'Bromley',
+    'SE20':'Bromley','SE21':'Southwark','SE22':'Southwark','SE23':'Lewisham','SE24':'Lambeth',
+    'SE25':'Croydon','SE26':'Lewisham','SE27':'Lambeth','SE28':'Greenwich','SW1':'Westminster',
+    'SW2':'Lambeth','SW3':'Kensington & Chelsea','SW4':'Lambeth','SW5':'Kensington & Chelsea',
+    'SW6':'Hammersmith & Fulham','SW7':'Kensington & Chelsea','SW8':'Lambeth','SW9':'Lambeth',
+    'SW10':'Kensington & Chelsea','SW11':'Wandsworth','SW12':'Wandsworth','SW13':'Richmond',
+    'SW14':'Richmond','SW15':'Wandsworth','SW16':'Lambeth','SW17':'Wandsworth','SW18':'Wandsworth',
+    'SW19':'Merton','SW20':'Merton','W1':'Westminster','W2':'Westminster','W3':'Ealing',
+    'W4':'Hounslow','W5':'Ealing','W6':'Hammersmith & Fulham','W7':'Ealing',
     'W8':'Kensington & Chelsea','W9':'Westminster','W10':'Kensington & Chelsea',
-    'W11':'Kensington & Chelsea','W12':'Hammersmith & Fulham',
-    'W13':'Ealing','W14':'Hammersmith & Fulham',
-    'WC1':'Camden','WC2':'Westminster',
-    'BR1':'Bromley','BR2':'Bromley','BR3':'Bromley','BR4':'Bromley',
-    'BR5':'Bromley','BR6':'Bromley','BR7':'Bromley',
-    'CR0':'Croydon','CR2':'Croydon','CR4':'Merton','CR5':'Croydon',
-    'CR7':'Croydon','CR8':'Croydon',
-    'DA1':'Bexley','DA5':'Bexley','DA6':'Bexley','DA7':'Bexley',
-    'DA8':'Bexley','DA14':'Bexley','DA15':'Bexley','DA16':'Bexley','DA17':'Bexley',
-    'EN1':'Enfield','EN2':'Enfield','EN3':'Enfield','EN4':'Barnet',
-    'EN5':'Barnet','EN8':'Enfield','EN9':'Enfield',
-    'HA0':'Brent','HA1':'Harrow','HA2':'Harrow','HA3':'Harrow',
-    'HA4':'Hillingdon','HA5':'Harrow','HA6':'Hillingdon',
-    'HA7':'Harrow','HA8':'Barnet','HA9':'Brent',
-    'IG1':'Redbridge','IG2':'Redbridge','IG3':'Redbridge','IG4':'Redbridge',
-    'IG5':'Redbridge','IG6':'Redbridge','IG7':'Redbridge','IG8':'Redbridge',
-    'IG11':'Barking & Dagenham',
-    'KT1':'Kingston','KT2':'Kingston','KT3':'Kingston','KT4':'Kingston',
-    'KT5':'Kingston','KT6':'Kingston','KT7':'Kingston','KT8':'Richmond','KT9':'Kingston',
-    'RM1':'Havering','RM2':'Havering','RM3':'Havering','RM5':'Havering',
-    'RM6':'Barking & Dagenham','RM7':'Havering','RM8':'Barking & Dagenham',
-    'RM9':'Barking & Dagenham','RM10':'Barking & Dagenham',
-    'RM11':'Havering','RM12':'Havering','RM13':'Havering','RM14':'Havering',
-    'SM1':'Sutton','SM2':'Sutton','SM3':'Sutton','SM4':'Merton',
-    'SM5':'Sutton','SM6':'Sutton',
-    'TW1':'Richmond','TW2':'Richmond','TW3':'Hounslow','TW4':'Hounslow',
-    'TW5':'Hounslow','TW6':'Hounslow','TW7':'Hounslow','TW8':'Hounslow',
-    'TW9':'Richmond','TW10':'Richmond','TW11':'Richmond','TW12':'Richmond',
-    'TW13':'Hounslow','TW14':'Hounslow',
-    'UB1':'Ealing','UB2':'Ealing','UB3':'Hillingdon','UB4':'Hillingdon',
-    'UB5':'Ealing','UB6':'Ealing','UB7':'Hillingdon','UB8':'Hillingdon',
+    'W11':'Kensington & Chelsea','W12':'Hammersmith & Fulham','W13':'Ealing',
+    'W14':'Hammersmith & Fulham','WC1':'Camden','WC2':'Westminster','BR1':'Bromley',
+    'BR2':'Bromley','BR3':'Bromley','BR4':'Bromley','BR5':'Bromley','BR6':'Bromley',
+    'BR7':'Bromley','CR0':'Croydon','CR2':'Croydon','CR4':'Merton','CR5':'Croydon',
+    'CR7':'Croydon','CR8':'Croydon','DA1':'Bexley','DA5':'Bexley','DA6':'Bexley',
+    'DA7':'Bexley','DA8':'Bexley','DA14':'Bexley','DA15':'Bexley','DA16':'Bexley',
+    'DA17':'Bexley','EN1':'Enfield','EN2':'Enfield','EN3':'Enfield','EN4':'Barnet',
+    'EN5':'Barnet','EN8':'Enfield','EN9':'Enfield','HA0':'Brent','HA1':'Harrow',
+    'HA2':'Harrow','HA3':'Harrow','HA4':'Hillingdon','HA5':'Harrow','HA6':'Hillingdon',
+    'HA7':'Harrow','HA8':'Barnet','HA9':'Brent','IG1':'Redbridge','IG2':'Redbridge',
+    'IG3':'Redbridge','IG4':'Redbridge','IG5':'Redbridge','IG6':'Redbridge','IG7':'Redbridge',
+    'IG8':'Redbridge','IG11':'Barking & Dagenham','KT1':'Kingston','KT2':'Kingston',
+    'KT3':'Kingston','KT4':'Kingston','KT5':'Kingston','KT6':'Kingston','KT7':'Kingston',
+    'KT8':'Richmond','KT9':'Kingston','RM1':'Havering','RM2':'Havering','RM3':'Havering',
+    'RM5':'Havering','RM6':'Barking & Dagenham','RM7':'Havering','RM8':'Barking & Dagenham',
+    'RM9':'Barking & Dagenham','RM10':'Barking & Dagenham','RM11':'Havering','RM12':'Havering',
+    'RM13':'Havering','RM14':'Havering','SM1':'Sutton','SM2':'Sutton','SM3':'Sutton',
+    'SM4':'Merton','SM5':'Sutton','SM6':'Sutton','TW1':'Richmond','TW2':'Richmond',
+    'TW3':'Hounslow','TW4':'Hounslow','TW5':'Hounslow','TW6':'Hounslow','TW7':'Hounslow',
+    'TW8':'Hounslow','TW9':'Richmond','TW10':'Richmond','TW11':'Richmond','TW12':'Richmond',
+    'TW13':'Hounslow','TW14':'Hounslow','UB1':'Ealing','UB2':'Ealing','UB3':'Hillingdon',
+    'UB4':'Hillingdon','UB5':'Ealing','UB6':'Ealing','UB7':'Hillingdon','UB8':'Hillingdon',
     'UB9':'Hillingdon','UB10':'Hillingdon',
 }
 
@@ -247,7 +209,7 @@ def cqc_get(path, params, key, retries=3):
     headers = {
         "Ocp-Apim-Subscription-Key": key,
         "Accept": "application/json",
-        "User-Agent": "londongp.directory/3.0",
+        "User-Agent": "londongp.directory/4.0",
     }
     for attempt in range(retries):
         try:
@@ -277,36 +239,45 @@ def services_blob(detail):
 
 # ── Pagination ───────────────────────────────────────────────────────────────
 def paginate_london(key):
-    print("Paginating CQC /locations …")
+    print("Paginating CQC /locations (Independent Providers only) …")
     candidates = []
     page = 1
-    per_page = 1000
+    per_page = 100  # Sticking to valid CQC API max limit
+    
     while True:
-        data = cqc_get("/locations", {"page": page, "perPage": per_page}, key)
+        # Offloading the massive structural filtering straight to the CQC engine
+        params = {
+            "page": page, 
+            "perPage": per_page, 
+            "partnerCode": "IndependentProvider"
+        }
+        data = cqc_get("/locations", params, key)
         if not data: break
         items = data.get("locations", []) or []
         if not items: break
+        
         for loc in items:
-            # Only active, London, independent
             if loc.get("deregistrationDate"): continue
-            if loc.get("registrationStatus") != "Registered": continue
             pc = loc.get("postalCode") or ""
             if not is_london(pc): continue
+            
             name = loc.get("locationName") or loc.get("name") or ""
             if DROP_NAME_RE.search(name): continue
             candidates.append(loc)
+            
         total_pages = data.get("totalPages", 1)
-        if page % 10 == 0:
-            print(f"  page {page}/{total_pages} — candidates: {len(candidates)}")
+        if page % 20 == 0:
+            print(f"  page {page}/{total_pages} — current candidates: {len(candidates)}")
         if page >= total_pages: break
         page += 1
-        time.sleep(0.15)
-    print(f"\n{len(candidates)} London independent candidates found.\n")
+        time.sleep(0.1)
+        
+    print(f"\nFound {len(candidates)} targeted London independent provider candidates.\n")
     return candidates
 
 # ── Detail fetch + filter ────────────────────────────────────────────────────
 def build_records(candidates, key, nhs_ods, workers=12):
-    print(f"Fetching detail for {len(candidates)} candidates …")
+    print(f"Fetching structural details for {len(candidates)} targets …")
     records = []
     rejected = Counter()
     done = 0
@@ -327,13 +298,16 @@ def build_records(candidates, key, nhs_ods, workers=12):
                 rejected["no_detail"] += 1
                 continue
 
-            # Gate 1: not already an NHS GP
+            # Check registration status downstream to protect against API state delays
+            if d.get("registrationStatus") != "Registered":
+                rejected["deregistered"] += 1
+                continue
+
             ods = (d.get("odsCode") or "").strip().upper()
             if ods and ods in nhs_ods:
                 rejected["nhs_gp"] += 1
                 continue
 
-            # Gate 2: must be independent (not NHS Trust, not Social Care Org)
             provider_type = (d.get("providerType") or "").lower()
             org_type = (d.get("organisationType") or "").lower()
             if "nhs" in provider_type or "nhs" in org_type:
@@ -343,9 +317,7 @@ def build_records(candidates, key, nhs_ods, workers=12):
                 rejected["social_care"] += 1
                 continue
 
-            # Gate 3: name check (second pass on full name from detail)
-            name_raw = (d.get("name") or d.get("locationName") or
-                        d.get("providerName") or "").strip()
+            name_raw = (d.get("name") or d.get("locationName") or d.get("providerName") or "").strip()
             if not name_raw:
                 rejected["no_name"] += 1
                 continue
@@ -353,7 +325,6 @@ def build_records(candidates, key, nhs_ods, workers=12):
                 rejected["bad_name"] += 1
                 continue
 
-            # Gate 4: service type must include doctor-led services
             blob = services_blob(d)
             if DROP_SERVICE_RE.search(blob) and not KEEP_SERVICE_RE.search(blob):
                 rejected["social_service"] += 1
@@ -376,40 +347,34 @@ def build_records(candidates, key, nhs_ods, workers=12):
                 d.get("postalAddressTownCity") or "",
             ]
             address = ", ".join(p for p in addr_parts if p)
-            phone   = (d.get("mainPhoneNumber") or "").strip()
-            website = (d.get("website") or "").strip()
-            loc_id  = d.get("locationId", "")
-            rating  = ((d.get("currentRatings") or {})
-                       .get("overall") or {}).get("rating", "")
-
+            
             records.append({
                 "ods_code":    ods,
-                "cqc_id":      loc_id,
+                "cqc_id":      d.get("locationId", ""),
                 "name":        name,
                 "address":     address,
                 "postcode":    pc,
                 "borough":     borough_from_postcode(pc),
-                "phone":       phone,
-                "website":     website,
+                "phone":       (d.get("mainPhoneNumber") or "").strip(),
+                "website":     (d.get("website") or "").strip(),
                 "type":        "Private",
                 "specialties": specialties,
-                "cqc_rating":  rating,
-                "cqc_url":     f"https://www.cqc.org.uk/location/{loc_id}" if loc_id else "",
+                "cqc_rating":  ((d.get("currentRatings") or {}).get("overall") or {}).get("rating", ""),
+                "cqc_url":     f"https://www.cqc.org.uk/location/{d.get('locationId', '')}",
             })
 
-            if done % 500 == 0 or done == len(futures):
-                print(f"  {done}/{len(futures)} processed — kept {len(records)}")
+            if done % 200 == 0 or done == len(futures):
+                print(f"  {done}/{len(futures)} processed — built {len(records)} records")
 
-    print(f"\nRejection summary: {dict(rejected)}")
+    print(f"\nFilter drop counts: {dict(rejected)}")
     return records
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 def main():
     key = os.environ.get("CQC_KEY")
     if not key:
-        sys.exit("Need CQC_KEY env var.")
+        sys.exit("Error: CQC_KEY environment variable missing.")
 
-    # Load NHS GP ODS codes to exclude
     nhs_ods = set()
     if GPS_JSON.exists():
         try:
@@ -417,24 +382,25 @@ def main():
                 code = (r.get("ods_code") or r.get("o") or "").upper()
                 if code: nhs_ods.add(code)
         except Exception as e:
-            print(f"WARN: couldn't load gps.json — {e}")
-    print(f"Excluding {len(nhs_ods)} NHS GP ODS codes.\n")
+            print(f"WARN: could not pull standard gps.json metadata — {e}")
+            
+    print(f"Loaded {len(nhs_ods)} NHS GP exclusions.\n")
 
     candidates = paginate_london(key)
     records    = build_records(candidates, key, nhs_ods)
 
-    # Summary
+    # Summary Generation
     by_spec = Counter()
     for r in records:
         for s in r["specialties"]:
             by_spec[s] += 1
-    print("\nRecords by specialty:")
+            
+    print("\nCategorized Metrics:")
     for sp, n in by_spec.most_common():
         print(f"  {sp:<25} {n}")
 
     OUT_JSON.write_text(json.dumps(records, indent=2, ensure_ascii=False))
-    print(f"\nWrote {OUT_JSON} — {len(records)} private providers, "
-          f"{OUT_JSON.stat().st_size // 1024} KB")
+    print(f"\nSaved clean directory to {OUT_JSON} ({len(records)} locations, {OUT_JSON.stat().st_size // 1024} KB)")
 
 if __name__ == "__main__":
     main()
