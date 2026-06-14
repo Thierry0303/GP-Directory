@@ -1,168 +1,228 @@
 #!/usr/bin/env python3
 """
-Merge gps.json (NHS) + private_clinics.json (Private) into merged.json,
-then regenerate index.html from index.template.html.
+merge_into_dataset.py
+Merges private_clinics.json into index.html DATA array.
 
-Runs AFTER refresh_nhs_data.py.
+Run from repo root after fetch_private_clinics.py has run:
+    python3 merge_into_dataset.py
+
+What it does:
+  1. Reads private_clinics.json (output of fetch_private_clinics.py)
+  2. Reads index.html
+  3. Finds the const DATA = [...] block
+  4. Parses it, removes any stale Private records
+  5. Appends normalised Private records matching the NHS field schema
+  6. Rewrites index.html with the merged DATA
+  7. Updates the "Private clinics N" count span in the type-tab button
 """
 
 import json, re, sys
-from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-MERGED_JSON   = ROOT / "merged.json"
-PRIVATE_JSON  = ROOT / "private_clinics.json"
-TEMPLATE_HTML = ROOT / "index.template.html"
-INDEX_HTML    = ROOT / "index.html"
+PRIVATE_JSON = ROOT / "private_clinics.json"
+INDEX_HTML   = ROOT / "index.html"
 
+# Borough lookup from postcode district (same map used in build_provider_pages.py)
 BOROUGH_MAP = {
-    "E10":"Waltham Forest","E11":"Redbridge","E12":"Newham","E13":"Newham",
-    "E14":"Tower Hamlets","E15":"Newham","E16":"Newham","E17":"Waltham Forest",
-    "E18":"Redbridge","E20":"Newham","E1":"Tower Hamlets","E2":"Tower Hamlets",
-    "E3":"Tower Hamlets","E4":"Waltham Forest","E5":"Hackney","E6":"Newham",
-    "E7":"Newham","E8":"Hackney","E9":"Hackney",
-    "EC1A":"City of London","EC1M":"Islington","EC1N":"Camden","EC1R":"Islington",
-    "EC1V":"Islington","EC1Y":"Islington","EC2A":"Hackney","EC2M":"City of London",
-    "EC2N":"City of London","EC2R":"City of London","EC2V":"City of London",
-    "EC2Y":"City of London","EC3A":"City of London","EC3M":"City of London",
-    "EC3N":"City of London","EC3R":"City of London","EC3V":"City of London",
-    "EC4A":"City of London","EC4M":"City of London","EC4N":"City of London",
-    "EC4R":"City of London","EC4V":"City of London","EC4Y":"City of London",
-    "N10":"Haringey","N11":"Barnet","N12":"Barnet","N13":"Enfield",
-    "N14":"Enfield","N15":"Haringey","N16":"Hackney","N17":"Haringey",
-    "N18":"Enfield","N19":"Islington","N20":"Barnet","N21":"Enfield","N22":"Haringey",
-    "N1":"Islington","N4":"Hackney","N5":"Islington","N6":"Haringey",
-    "N7":"Islington","N8":"Haringey","N9":"Enfield",
-    "NW1":"Camden","NW2":"Brent","NW3":"Camden","NW4":"Barnet","NW5":"Camden",
-    "NW6":"Brent","NW7":"Barnet","NW8":"Westminster","NW9":"Brent",
-    "NW10":"Brent","NW11":"Barnet",
-    "SE1":"Southwark","SE2":"Greenwich","SE3":"Greenwich","SE4":"Lewisham",
-    "SE5":"Southwark","SE6":"Lewisham","SE7":"Greenwich","SE8":"Lewisham",
-    "SE9":"Greenwich","SE10":"Greenwich","SE11":"Lambeth","SE12":"Lewisham",
-    "SE13":"Lewisham","SE14":"Lewisham","SE15":"Southwark","SE16":"Southwark",
-    "SE17":"Southwark","SE18":"Greenwich","SE19":"Bromley","SE20":"Bromley",
-    "SE21":"Southwark","SE22":"Southwark","SE23":"Lewisham","SE24":"Lambeth",
-    "SE25":"Croydon","SE26":"Lewisham","SE27":"Lambeth","SE28":"Greenwich",
-    "SW1A":"Westminster","SW1E":"Westminster","SW1H":"Westminster","SW1P":"Westminster",
-    "SW1V":"Westminster","SW1W":"Westminster","SW1X":"Westminster","SW1Y":"Westminster",
-    "SW2":"Lambeth","SW3":"Kensington & Chelsea","SW4":"Lambeth",
-    "SW5":"Kensington & Chelsea","SW6":"Hammersmith & Fulham",
-    "SW7":"Kensington & Chelsea","SW8":"Lambeth","SW9":"Lambeth",
-    "SW10":"Kensington & Chelsea","SW11":"Wandsworth","SW12":"Wandsworth",
-    "SW13":"Richmond","SW14":"Richmond","SW15":"Wandsworth","SW16":"Lambeth",
-    "SW17":"Wandsworth","SW18":"Wandsworth","SW19":"Merton","SW20":"Merton",
-    "W1":"Westminster","W1A":"Westminster","W1B":"Westminster","W1C":"Westminster",
-    "W1D":"Westminster","W1F":"Westminster","W1G":"Westminster","W1H":"Westminster",
-    "W1J":"Westminster","W1K":"Westminster","W1S":"Westminster","W1T":"Westminster",
-    "W1U":"Westminster","W1W":"Westminster",
-    "W2":"Westminster","W3":"Ealing","W4":"Hounslow","W5":"Ealing",
-    "W6":"Hammersmith & Fulham","W7":"Ealing","W8":"Kensington & Chelsea",
-    "W9":"Westminster","W10":"Kensington & Chelsea","W11":"Kensington & Chelsea",
-    "W12":"Hammersmith & Fulham","W13":"Ealing","W14":"Hammersmith & Fulham",
-    "WC1A":"Camden","WC1B":"Camden","WC1E":"Camden","WC1H":"Camden",
-    "WC1N":"Camden","WC1R":"Camden","WC1V":"Camden","WC1X":"Islington",
-    "WC2A":"Camden","WC2B":"Westminster","WC2E":"Westminster","WC2H":"Westminster",
-    "WC2N":"Westminster","WC2R":"Westminster",
-    "BR1":"Bromley","BR2":"Bromley","BR3":"Bromley","BR4":"Bromley","BR5":"Bromley",
-    "BR6":"Bromley","BR7":"Bromley","BR8":"Bromley",
-    "CR0":"Croydon","CR2":"Croydon","CR3":"Croydon","CR4":"Merton","CR5":"Croydon",
-    "CR6":"Croydon","CR7":"Croydon","CR8":"Croydon","CR9":"Croydon",
-    "DA1":"Bexley","DA5":"Bexley","DA6":"Bexley","DA7":"Bexley","DA8":"Bexley",
-    "DA14":"Bexley","DA15":"Bexley","DA16":"Bexley","DA17":"Bexley","DA18":"Bexley",
-    "EN1":"Enfield","EN2":"Enfield","EN3":"Enfield","EN4":"Enfield","EN5":"Barnet",
-    "EN7":"Enfield","EN8":"Enfield","EN9":"Enfield",
-    "HA0":"Brent","HA1":"Harrow","HA2":"Harrow","HA3":"Harrow","HA4":"Hillingdon",
-    "HA5":"Harrow","HA6":"Hillingdon","HA7":"Harrow","HA8":"Barnet","HA9":"Brent",
-    "IG1":"Redbridge","IG2":"Redbridge","IG3":"Redbridge","IG4":"Redbridge",
-    "IG5":"Redbridge","IG6":"Redbridge","IG7":"Redbridge","IG8":"Redbridge",
-    "IG11":"Barking & Dagenham",
-    "KT1":"Kingston","KT2":"Kingston","KT3":"Kingston","KT4":"Kingston","KT5":"Kingston",
-    "KT6":"Kingston","KT7":"Kingston","KT8":"Richmond","KT9":"Kingston",
-    "RM1":"Havering","RM2":"Havering","RM3":"Havering","RM4":"Havering","RM5":"Havering",
-    "RM6":"Barking & Dagenham","RM7":"Havering","RM8":"Barking & Dagenham",
-    "RM9":"Barking & Dagenham","RM10":"Barking & Dagenham","RM11":"Havering",
-    "RM12":"Havering","RM13":"Havering","RM14":"Havering",
-    "SM1":"Sutton","SM2":"Sutton","SM3":"Sutton","SM4":"Merton","SM5":"Sutton","SM6":"Sutton",
-    "TW1":"Richmond","TW2":"Richmond","TW3":"Hounslow","TW4":"Hounslow","TW5":"Hounslow",
-    "TW6":"Hillingdon","TW7":"Hounslow","TW8":"Hounslow","TW9":"Richmond","TW10":"Richmond",
-    "TW11":"Richmond","TW12":"Richmond","TW13":"Hounslow","TW14":"Hounslow",
-    "UB1":"Ealing","UB2":"Ealing","UB3":"Hillingdon","UB4":"Hillingdon","UB5":"Ealing",
-    "UB6":"Ealing","UB7":"Hillingdon","UB8":"Hillingdon","UB9":"Hillingdon",
-    "UB10":"Hillingdon","UB11":"Hillingdon",
+    'E1':'Tower Hamlets','E2':'Tower Hamlets','E3':'Tower Hamlets',
+    'E4':'Waltham Forest','E5':'Hackney','E6':'Newham','E7':'Newham',
+    'E8':'Hackney','E9':'Hackney','E10':'Waltham Forest',
+    'E11':'Waltham Forest','E12':'Newham','E13':'Newham',
+    'E14':'Tower Hamlets','E15':'Newham','E16':'Newham',
+    'E17':'Waltham Forest','E18':'Redbridge','E20':'Newham',
+    'EC1':'Islington','EC2':'City of London','EC3':'City of London','EC4':'City of London',
+    'N1':'Islington','N2':'Barnet','N3':'Barnet','N4':'Haringey',
+    'N5':'Islington','N6':'Haringey','N7':'Islington','N8':'Haringey',
+    'N9':'Enfield','N10':'Haringey','N11':'Barnet','N12':'Barnet',
+    'N13':'Enfield','N14':'Enfield','N15':'Haringey','N16':'Hackney',
+    'N17':'Haringey','N18':'Enfield','N19':'Islington','N20':'Barnet',
+    'N21':'Enfield','N22':'Haringey',
+    'NW1':'Camden','NW2':'Brent','NW3':'Camden','NW4':'Barnet',
+    'NW5':'Camden','NW6':'Brent','NW7':'Barnet','NW8':'Westminster',
+    'NW9':'Brent','NW10':'Brent','NW11':'Barnet',
+    'SE1':'Southwark','SE2':'Greenwich','SE3':'Greenwich','SE4':'Lewisham',
+    'SE5':'Southwark','SE6':'Lewisham','SE7':'Greenwich','SE8':'Lewisham',
+    'SE9':'Greenwich','SE10':'Greenwich','SE11':'Lambeth','SE12':'Lewisham',
+    'SE13':'Lewisham','SE14':'Lewisham','SE15':'Southwark','SE16':'Southwark',
+    'SE17':'Southwark','SE18':'Greenwich','SE19':'Bromley','SE20':'Bromley',
+    'SE21':'Southwark','SE22':'Southwark','SE23':'Lewisham','SE24':'Lambeth',
+    'SE25':'Croydon','SE26':'Lewisham','SE27':'Lambeth','SE28':'Greenwich',
+    'SW1':'Westminster','SW2':'Lambeth','SW3':'Kensington & Chelsea',
+    'SW4':'Lambeth','SW5':'Kensington & Chelsea','SW6':'Hammersmith & Fulham',
+    'SW7':'Kensington & Chelsea','SW8':'Lambeth','SW9':'Lambeth',
+    'SW10':'Kensington & Chelsea','SW11':'Wandsworth','SW12':'Wandsworth',
+    'SW13':'Richmond','SW14':'Richmond','SW15':'Wandsworth','SW16':'Lambeth',
+    'SW17':'Wandsworth','SW18':'Wandsworth','SW19':'Merton','SW20':'Merton',
+    'W1':'Westminster','W2':'Westminster','W3':'Ealing','W4':'Hounslow',
+    'W5':'Ealing','W6':'Hammersmith & Fulham','W7':'Ealing',
+    'W8':'Kensington & Chelsea','W9':'Westminster','W10':'Kensington & Chelsea',
+    'W11':'Kensington & Chelsea','W12':'Hammersmith & Fulham',
+    'W13':'Ealing','W14':'Hammersmith & Fulham',
+    'WC1':'Camden','WC2':'Westminster',
+    'BR1':'Bromley','BR2':'Bromley','BR3':'Bromley','BR4':'Bromley',
+    'BR5':'Bromley','BR6':'Bromley','BR7':'Bromley',
+    'CR0':'Croydon','CR2':'Croydon','CR4':'Merton','CR5':'Croydon',
+    'CR7':'Croydon','CR8':'Croydon',
+    'DA1':'Bexley','DA5':'Bexley','DA6':'Bexley','DA7':'Bexley',
+    'DA8':'Bexley','DA14':'Bexley','DA15':'Bexley','DA16':'Bexley','DA17':'Bexley',
+    'EN1':'Enfield','EN2':'Enfield','EN3':'Enfield','EN4':'Barnet',
+    'EN5':'Barnet','EN8':'Enfield','EN9':'Enfield',
+    'HA0':'Brent','HA1':'Harrow','HA2':'Harrow','HA3':'Harrow',
+    'HA4':'Hillingdon','HA5':'Harrow','HA6':'Hillingdon',
+    'HA7':'Harrow','HA8':'Barnet','HA9':'Brent',
+    'IG1':'Redbridge','IG2':'Redbridge','IG3':'Redbridge','IG4':'Redbridge',
+    'IG5':'Redbridge','IG6':'Redbridge','IG7':'Redbridge','IG8':'Redbridge',
+    'IG11':'Barking & Dagenham',
+    'KT1':'Kingston','KT2':'Kingston','KT3':'Kingston','KT4':'Kingston',
+    'KT5':'Kingston','KT6':'Kingston','KT7':'Kingston','KT8':'Richmond','KT9':'Kingston',
+    'RM1':'Havering','RM2':'Havering','RM3':'Havering','RM5':'Havering',
+    'RM6':'Barking & Dagenham','RM7':'Havering','RM8':'Barking & Dagenham',
+    'RM9':'Barking & Dagenham','RM10':'Barking & Dagenham',
+    'RM11':'Havering','RM12':'Havering','RM13':'Havering','RM14':'Havering',
+    'SM1':'Sutton','SM2':'Sutton','SM3':'Sutton','SM4':'Merton',
+    'SM5':'Sutton','SM6':'Sutton',
+    'TW1':'Richmond','TW2':'Richmond','TW3':'Hounslow','TW4':'Hounslow',
+    'TW5':'Hounslow','TW6':'Hounslow','TW7':'Hounslow','TW8':'Hounslow',
+    'TW9':'Richmond','TW10':'Richmond','TW11':'Richmond','TW12':'Richmond',
+    'TW13':'Hounslow','TW14':'Hounslow',
+    'UB1':'Ealing','UB2':'Ealing','UB3':'Hillingdon','UB4':'Hillingdon',
+    'UB5':'Ealing','UB6':'Ealing','UB7':'Hillingdon','UB8':'Hillingdon',
+    'UB9':'Hillingdon','UB10':'Hillingdon',
 }
 
-def postcode_district(pc):
-    pc = (pc or "").strip().upper()
-    if " " in pc: return pc.split()[0]
-    return pc[:-3] if len(pc) >= 5 else pc
+def borough_from_postcode(pc):
+    if not pc: return ""
+    pc = pc.strip().upper()
+    district = pc.split()[0] if ' ' in pc else re.match(r'([A-Z]+\d+[A-Z]?)', pc)
+    if hasattr(district, 'group'):
+        district = district.group(1)
+    if district in BOROUGH_MAP:
+        return BOROUGH_MAP[district]
+    # try shorter prefix e.g. SW1A -> SW1
+    m = re.match(r'([A-Z]+\d+)', district or '')
+    if m:
+        return BOROUGH_MAP.get(m.group(1), "")
+    return ""
 
-def borough_for(pc):
-    return BOROUGH_MAP.get(postcode_district(pc), "")
-
-def slugify(s):
-    return re.sub(r"[^a-z0-9]+", "-",
-                  (s or "").lower().replace("&", "and")).strip("-")
+def normalise_private(r):
+    """Convert private_clinics.json record to index.html DATA schema."""
+    pc = (r.get("postcode") or "").strip()
+    # Build address same way NHS records do: street, postcode
+    addr = r.get("address") or ""
+    borough = borough_from_postcode(pc)
+    specialties = r.get("specialties") or []
+    spec_str = ", ".join(specialties)
+    # Map cqc_rating to the short form used by NHS records
+    cqc_rating = r.get("cqc_rating") or ""
+    return {
+        "o":    r.get("cqc_id") or r.get("ods_code") or "",
+        "n":    r.get("name") or "",
+        "a":    addr,
+        "p":    pc,
+        "ph":   r.get("phone") or "",
+        "s":    None,                    # no patient satisfaction score for private
+        "c":    None,                    # no contact ease score
+        "pcn":  spec_str,                # reuse pcn field for specialty display
+        "cqc":  cqc_rating,
+        "cu":   r.get("cqc_url") or "",
+        "ar":   borough,
+        "la":   None,
+        "ln":   None,
+        "type": "Private",              # KEY field — this is what JS filters on
+        "web":  r.get("website") or "",
+    }
 
 def main():
-    if not MERGED_JSON.exists():
-        sys.exit(f"{MERGED_JSON} not found. Run refresh_nhs_data.py first.")
-    merged = json.loads(MERGED_JSON.read_text())
-    if not isinstance(merged, list):
-        sys.exit("merged.json is not a JSON array.")
-    print(f"Loaded {len(merged)} NHS records from merged.json.")
+    # ── 1. Load private clinics ──────────────────────────────────────────
+    if not PRIVATE_JSON.exists():
+        sys.exit(f"ERROR: {PRIVATE_JSON} not found. Run fetch_private_clinics.py first.")
 
-    for r in merged:
-        r.setdefault("type", "NHS")
+    private_records = json.loads(PRIVATE_JSON.read_text())
+    print(f"Loaded {len(private_records)} private records from {PRIVATE_JSON.name}")
 
-    converted = []
-    if PRIVATE_JSON.exists():
-        private = json.loads(PRIVATE_JSON.read_text())
-        if isinstance(private, list):
-            print(f"Loaded {len(private)} private records.")
-            for r in private:
-                pc = (r.get("postcode") or "").strip().upper()
-                converted.append({
-                    "n":     r.get("name", ""),
-                    "a":     r.get("address", ""),
-                    "p":     pc,
-                    "ph":    r.get("phone", ""),
-                    "cqc":   r.get("cqc_rating", ""),
-                    "cu":    r.get("cqc_url", ""),
-                    "ar":    borough_for(pc),
-                    "o":     r.get("ods_code", "") or r.get("cqc_id", ""),
-                    "type":  "Private",
-                    "specs": r.get("specialties", []),
-                    "web":   r.get("website", ""),
-                })
+    # ── 2. Load index.html ───────────────────────────────────────────────
+    if not INDEX_HTML.exists():
+        sys.exit(f"ERROR: {INDEX_HTML} not found.")
 
-    combined = merged + converted
-    MERGED_JSON.write_text(json.dumps(combined, indent=2))
-    print(f"Wrote merged.json — {len(combined)} total "
-          f"({len(merged)} NHS + {len(converted)} Private).")
+    html = INDEX_HTML.read_text(encoding="utf-8")
 
-    # ─── Regenerate index.html ───────────────────────────────────────
-    if not TEMPLATE_HTML.exists():
-        print(f"WARN: {TEMPLATE_HTML} not found — skipping index.html rebuild.")
-        return
+    # ── 3. Find the DATA array in the HTML ──────────────────────────────
+    data_start_marker = "const DATA = "
+    data_start = html.find(data_start_marker)
+    if data_start == -1:
+        sys.exit("ERROR: Could not find 'const DATA = ' in index.html")
 
-    boroughs = sorted(set(BOROUGH_MAP.values()))
-    borough_nav = "\n      ".join(
-        f'<a href="/practice/{slugify(b)}/">{b}</a>'
-        for b in boroughs
+    # Find the matching closing ]; for the array
+    arr_start = data_start + len(data_start_marker)
+    # Walk forward to find the balanced closing ];
+    depth = 0
+    i = arr_start
+    while i < len(html):
+        if html[i] == '[':
+            depth += 1
+        elif html[i] == ']':
+            depth -= 1
+            if depth == 0:
+                arr_end = i + 1  # include the ]
+                break
+        i += 1
+    else:
+        sys.exit("ERROR: Could not find end of DATA array in index.html")
+
+    existing_json = html[arr_start:arr_end]
+
+    # ── 4. Parse existing DATA, strip old Private records ───────────────
+    try:
+        existing = json.loads(existing_json)
+    except json.JSONDecodeError as e:
+        sys.exit(f"ERROR: Could not parse DATA array: {e}")
+
+    nhs_records = [r for r in existing if r.get("type") != "Private"]
+    print(f"  NHS records: {len(nhs_records)}")
+    print(f"  Old Private records removed: {len(existing) - len(nhs_records)}")
+
+    # ── 5. Normalise and merge private records ───────────────────────────
+    new_private = [normalise_private(r) for r in private_records]
+    # Remove any with missing name or borough
+    new_private = [r for r in new_private if r["n"] and r["ar"]]
+    print(f"  New Private records to merge: {len(new_private)}")
+
+    merged = nhs_records + new_private
+    print(f"  Total merged records: {len(merged)}")
+
+    # ── 6. Serialise merged array ────────────────────────────────────────
+    new_json = json.dumps(merged, separators=(',', ':'), ensure_ascii=False)
+
+    # ── 7. Rebuild HTML with new DATA ───────────────────────────────────
+    new_html = (
+        html[:data_start]
+        + data_start_marker
+        + new_json
+        + html[arr_end:]
     )
 
-    today = datetime.now().strftime("%-d %B %Y") \
-            if hasattr(datetime, "strftime") else datetime.now().strftime("%d %B %Y")
+    # ── 8. Update the "Private clinics N" count in the button ───────────
+    # Pattern: id="cntPriv">0</span>  →  id="cntPriv">N</span>
+    new_html = re.sub(
+        r'(id="cntPriv">)\d+(</span>)',
+        rf'\g<1>{len(new_private)}\g<2>',
+        new_html
+    )
+    # Also update "All N" count
+    new_html = re.sub(
+        r'(id="cntAll">)\d+(</span>)',
+        rf'\g<1>{len(merged)}\g<2>',
+        new_html
+    )
 
-    template = TEMPLATE_HTML.read_text()
-    html = (template
-            .replace("__DATA_PLACEHOLDER__", json.dumps(combined))
-            .replace("__PRACTICE_COUNT__",   str(len(combined)))
-            .replace("__BOROUGH_NAV__",      borough_nav)
-            .replace("__UPDATED_DATE__",     today))
-    INDEX_HTML.write_text(html)
-    print(f"Wrote index.html — {INDEX_HTML.stat().st_size//1024} KB")
+    # ── 9. Write back ────────────────────────────────────────────────────
+    INDEX_HTML.write_text(new_html, encoding="utf-8")
+    print(f"\n✅ index.html updated:")
+    print(f"   NHS:     {len(nhs_records)}")
+    print(f"   Private: {len(new_private)}")
+    print(f"   Total:   {len(merged)}")
+    print(f"\nCommit index.html and push to deploy.")
 
 if __name__ == "__main__":
     main()
