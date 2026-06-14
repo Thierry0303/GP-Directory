@@ -38,6 +38,9 @@ jobs:
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python fetch_private_clinics.py
+
+      - name: Merge private clinics into index.html
+        run: python merge_into_dataset.py
       
       - name: Scan CQC for healthcare providers
         env:
