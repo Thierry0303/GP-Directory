@@ -1,167 +1,173 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Methodology — London GP Directory</title>
-<meta name="description" content="How London GP Directory collects, processes, and presents every metric. Every source, every refresh cadence, every limitation declared.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Methodology — How London GP Directory is built</title>
+<meta name="description" content="How London GP Directory collects, classifies and displays NHS GP practices and private clinics. Data sources, refresh cadence, and quality controls explained.">
 <link rel="canonical" href="https://londongp.directory/methodology.html">
-<meta name="theme-color" content="#005EB8">
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"TechArticle",
-  "headline":"London GP Directory Methodology",
-  "description":"How we calculate every metric on the London GP Directory.",
-  "datePublished":"2026-05-01","dateModified":"2026-05-13",
-  "author":{"@type":"Organization","name":"London GP Directory"},
-  "publisher":{"@type":"Organization","name":"London GP Directory"}
-}
-</script>
+<meta name="theme-color" content="#003087">
 <style>
-  :root{--ink:#0b2545;--ink-2:#1e3a5f;--nhs:#005EB8;--muted:#5b6b85;--line:#e3e8ef;--bg:#fff;--bg-2:#f6f8fb;--radius:10px}
-  *{box-sizing:border-box}html,body{margin:0;padding:0}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6}
-  a{color:var(--nhs);text-decoration:none}a:hover{text-decoration:underline}
-  header.site{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:50}
-  header.site .inner{max-width:780px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
-  header.site a.brand{color:var(--ink);font-weight:700}
-  header.site nav a{margin-left:18px;color:var(--ink-2);font-size:14px}
-  main{max-width:780px;margin:0 auto;padding:32px 20px 80px}
-  .crumbs{font-size:13px;color:var(--muted);margin-bottom:14px}
-  .crumbs a{color:var(--muted)}
-  h1{font-size:32px;line-height:1.2;margin:0 0 8px;letter-spacing:-0.02em}
-  .lede{color:var(--ink-2);font-size:18px;margin:0 0 24px}
-  h2{font-size:22px;margin:32px 0 10px;letter-spacing:-0.01em;border-top:1px solid var(--line);padding-top:24px}
-  h2:first-of-type{border-top:0;padding-top:0}
-  h3{font-size:16px;margin:18px 0 6px;color:var(--ink)}
-  ul li{margin-bottom:8px}
-  table{width:100%;border-collapse:collapse;font-size:14px;margin:14px 0}
-  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font-size:12px;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);font-weight:600}
-  .callout{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin:18px 0;font-size:15px}
-  code{background:var(--bg-2);padding:2px 6px;border-radius:4px;font-size:90%}
-  footer{border-top:1px solid var(--line);padding:28px 20px;color:var(--muted);font-size:13px}
-  footer .inner{max-width:780px;margin:0 auto;display:flex;gap:24px;flex-wrap:wrap}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#1a1a1a;font-size:16px;line-height:1.65}
+a{color:#003087;text-decoration:none}
+a:hover{text-decoration:underline}
+.hdr{background:#003087;color:#fff;padding:0}
+.hdr-top{padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.hdr-in{max-width:880px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:1.3rem}
+.brand em{color:#B5D4F4;font-style:italic;font-weight:400}
+.main-nav{background:rgba(0,0,0,.18);border-bottom:4px solid #0072CE}
+.main-nav-in{max-width:880px;margin:0 auto;padding:10px 24px;display:flex;gap:24px;flex-wrap:wrap;font-size:.88rem}
+.main-nav a{color:rgba(255,255,255,.78);font-weight:500}
+.main-nav a:hover,.main-nav a.active{color:#fff}
+.main-nav a.active{border-bottom:2px solid #B5D4F4}
+.wrap{max-width:780px;margin:0 auto;padding:36px 24px 60px}
+.crumbs{font-size:13px;color:#666;margin-bottom:14px}
+.crumbs a{color:#003087}
+h1{font-family:Georgia,serif;color:#003087;font-size:2rem;margin-bottom:10px;line-height:1.15;font-weight:700}
+.lede{color:#444;margin-bottom:30px;font-size:1.08rem;border-left:3px solid #0072CE;padding-left:16px}
+h2{font-family:Georgia,serif;color:#003087;font-size:1.4rem;margin:32px 0 12px;font-weight:700}
+h3{color:#003087;font-size:1.05rem;margin:18px 0 8px;font-weight:600}
+p{margin-bottom:14px;color:#222}
+ul,ol{margin:8px 0 18px 22px;color:#222}
+li{margin-bottom:6px}
+code{background:#f0f0ee;padding:2px 6px;border-radius:4px;font-family:Consolas,monospace;font-size:.92em}
+.box{background:#EDF4FC;border:1px solid #B5D4F4;border-radius:10px;padding:16px 20px;margin:18px 0}
+.box strong{color:#003087}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid #e5e5e3}
+th{background:#f5f5f3;color:#003087;font-weight:600}
+footer{background:#003087;color:rgba(255,255,255,.65);text-align:center;padding:22px 24px;font-size:13px;margin-top:40px}
+footer a{color:rgba(255,255,255,.9);margin:0 6px}
 </style>
 </head>
 <body>
-<header class="site">
-  <div class="inner">
-    <a class="brand" href="/">London GP Directory</a>
-    <nav>
+<header class="hdr">
+  <div class="hdr-top">
+    <div class="hdr-in">
+      <div class="brand"><a href="/">London GP <em>Directory</em></a></div>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="main-nav-in">
       <a href="/">Search</a>
       <a href="/boroughs/">Boroughs</a>
+      <a href="/nhs-services/">NHS Services</a>
+      <a href="/private/">Private Clinics</a>
+      <a href="/methodology.html" class="active">Methodology</a>
       <a href="/sources.html">Sources</a>
-      <a href="/about.html">About</a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
-<main>
-  <div class="crumbs"><a href="/">Home</a> &rsaquo; Methodology</div>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> &rsaquo; Methodology</div>
 
-  <h1>Methodology</h1>
-  <p class="lede">How we collect, calculate and present every piece of information on this site. Every metric has a source, a refresh cadence, and a declared limitation.</p>
+<h1>Methodology</h1>
+<p class="lede">London GP Directory is an independent, automated directory that pulls open data from the NHS, CQC and ONS, classifies it, and presents it in one searchable place. This page explains exactly how that pipeline works.</p>
 
-  <div class="callout">
-    <strong>One sentence summary:</strong> we ingest open NHS data on a published cadence, link every practice by its ODS code, recompute every metric from the source, and rebuild the static site from the result. Nothing on this site is hand-entered. Every page tells you when the data was last refreshed.
-  </div>
+<h2>What we list</h2>
+<p>Every record falls into one of three categories:</p>
+<ul>
+  <li><strong>NHS GP practices</strong> &mdash; primary-care surgeries that hold a GMS (General Medical Services) contract with the NHS. These are the practices Londoners register with as their GP.</li>
+  <li><strong>Private clinics</strong> &mdash; CQC-registered independent healthcare providers in London. Includes private GPs, consultants, diagnostic centres, private hospitals, aesthetic medicine, urgent care and others.</li>
+  <li><strong>NHS services beyond GP practices</strong> &mdash; NHS hospitals, mental health services, urgent care centres, community services, diagnostic centres and the London Ambulance Service. Listed at <code>/nhs-services/</code>.</li>
+</ul>
 
-  <h2>Refresh cadence</h2>
-  <p>Two automated pipelines:</p>
-  <ul>
-    <li><strong>Weekly refresh</strong> (every Monday 06:00 UTC): NHS Digital ODS data and the "accepting new patients" flag. Catches practice closures, mergers and the most-searched live attribute on the site.</li>
-    <li><strong>Monthly full rebuild</strong> (15th of every month, 08:00 UTC): adds GP Patient Survey, NHS Digital workforce, CQC ratings and list sizes. Recomputes every derived metric and rebuilds all practice, borough and PCN pages.</li>
-  </ul>
-  <p>The full run log for every refresh is public on our <a href="https://github.com/Thierry0303/GP-Directory/actions">GitHub Actions history</a>. If a source is temporarily unavailable, the previous month's values are retained with a clear "data last verified" stamp on the page.</p>
+<h2>Data sources</h2>
+<table>
+<thead><tr><th>What we use it for</th><th>Source</th><th>Refresh</th></tr></thead>
+<tbody>
+<tr><td>NHS GP practice names, addresses, phone numbers</td><td>NHS Organisation Data Service (ODS) FHIR API</td><td>Weekly</td></tr>
+<tr><td>NHS GP patient satisfaction and contact-ease scores</td><td>GP Patient Survey (NHS England)</td><td>Annually</td></tr>
+<tr><td>Private clinic listings, CQC ratings, all services</td><td>CQC Public API (Care Quality Commission)</td><td>Weekly (incremental)</td></tr>
+<tr><td>Borough-to-postcode mapping</td><td>ONS Postcode Directory via postcodes.io</td><td>On every refresh</td></tr>
+</tbody>
+</table>
 
-  <h2>Practice identifiers</h2>
-  <p>Every practice is identified by its NHS Digital ODS code (e.g. <code>E85001</code>). This is the canonical identifier used across all UK primary care datasets. We never deduplicate or merge ODS codes. When a practice merges or closes, the ODS record reflects that, and we update accordingly.</p>
+<h2>How the pipeline works</h2>
 
-  <h2>Per-metric methodology</h2>
+<h3>1. NHS GP discovery</h3>
+<p>For each working day, we query the NHS ODS FHIR endpoint to retrieve every active London GP practice. Each record carries a 6-character ODS code (e.g. <code>E87066</code>) which is the canonical NHS identifier. We strip out anything that isn't a real GMS-contracted GP practice: dental practitioners (V-prefix codes), walk-in centres, homeless services, urgent treatment centres and so on.</p>
 
-  <h3>"Accepting new patients" flag</h3>
-  <table>
-    <tr><th>Source</th><td>NHS Digital ODS / nhs.uk practice profile</td></tr>
-    <tr><th>What we publish</th><td>Whether the practice was accepting new patients at the last refresh, with a date stamp.</td></tr>
-    <tr><th>Refresh</th><td>Weekly.</td></tr>
-    <tr><th>Limitations</th><td>This is the status published by NHS Digital. Practice managers update it directly. There can be a lag between a real-world change and the publication. Always confirm with the practice before travelling to register.</td></tr>
-  </table>
+<h3>2. CQC London cache</h3>
+<p>We maintain a local cache of every active CQC-registered location in London &mdash; roughly 15,000 records covering hospitals, clinics, GP practices, care homes, diagnostic centres, ambulances and more. The cache stores only the fields we use (name, address, postcode, service types, specialisms, current rating, local authority) which keeps it small (~1.5 MB gzipped).</p>
+<p>Each weekly refresh updates only locations that have changed, rather than re-fetching everything &mdash; so the cache stays fresh in 5&ndash;10 minutes per run.</p>
 
-  <h3>GP Patient Survey scores</h3>
-  <table>
-    <tr><th>Source</th><td><a href="https://gp-patient.co.uk/" rel="nofollow">GP Patient Survey (Ipsos for NHS England)</a></td></tr>
-    <tr><th>What we publish</th><td>Four headline percentages: overall experience, ease of getting through on the phone, satisfaction with the appointment offered, and continuity of care. Each is the most recent published value for the practice, with the London average shown alongside.</td></tr>
-    <tr><th>Refresh</th><td>Annual (typically July).</td></tr>
-    <tr><th>Limitations</th><td>The GP Patient Survey is conducted on a sample of registered patients. Small practices may have wide confidence intervals. We do not publish the confidence interval on every page to keep the display readable — but every score is verifiable at the source.</td></tr>
-  </table>
+<h3>3. Private clinic classification</h3>
+<p>From the cache, we extract every CQC location that:</p>
+<ul>
+  <li>Has a medical service type (<code>Doctors/Gps</code>, <code>Mobile doctors</code>, <code>Clinic</code>, <code>Hospital</code>, <code>Diagnosis/screening</code>, etc.)</li>
+  <li>Is NOT an NHS GP practice (no valid GMS ODS code)</li>
+  <li>Is NOT operated by an NHS Trust</li>
+  <li>Is NOT a dental practice, care home, pharmacy, or other category we don't list</li>
+</ul>
+<p>We then classify each clinic by clinical specialty using a combination of CQC's <code>gacServiceTypes</code> field and name-pattern matching across 28 specialty categories (cardiology, dermatology, gynaecology, etc.).</p>
+<p>Duplicates &mdash; multiple consultants registered at the same address with the same name &mdash; are merged into a single card, keeping the best-rated record.</p>
 
-  <h3>CQC rating</h3>
-  <table>
-    <tr><th>Source</th><td><a href="https://api.service.cqc.org.uk/public/v1/" rel="nofollow">CQC public API</a></td></tr>
-    <tr><th>What we publish</th><td>The most recent overall CQC rating (Outstanding, Good, Requires improvement, Inadequate) and the date of the inspection that produced it.</td></tr>
-    <tr><th>Refresh</th><td>Monthly.</td></tr>
-    <tr><th>Limitations</th><td>CQC ratings are inspection-based and reflect a moment in time. A practice rated Good in 2019 has not been re-inspected since 2019 in many cases. We display the inspection date prominently so readers can interpret the rating in context.</td></tr>
-  </table>
+<h3>4. CQC rating extraction</h3>
+<p>CQC migrated to a new "assessment" framework in 2024. Our pipeline reads ratings from the new framework first (<code>assessment[].ratings.asgRatings[]</code> with <code>assessmentPlanStatus = Active</code>) and falls back to the legacy <code>currentRatings.overall.rating</code> field for practices that haven't been re-assessed yet. This means we display the most recent rating CQC has actually issued, not stale figures from years ago.</p>
 
-  <h3>Workforce — GPs per 1,000 patients</h3>
-  <table>
-    <tr><th>Source</th><td><a href="https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services" rel="nofollow">NHS Digital — General and Personal Medical Services</a></td></tr>
-    <tr><th>What we publish</th><td>Whole-time-equivalent fully-qualified GPs per 1,000 registered patients.</td></tr>
-    <tr><th>Refresh</th><td>Quarterly.</td></tr>
-    <tr><th>Limitations</th><td>This excludes locums and trainees. The denominator is the practice's registered list, not the population it serves day-to-day. Direct comparison between practices should be done with care.</td></tr>
-  </table>
+<h3>5. Borough assignment</h3>
+<p>Each record's London borough is determined by querying the ONS Postcode Directory via postcodes.io. We don't use hand-coded postcode &rarr; borough maps; we use the authoritative ONS data. This means boroughs like Hammersmith &amp; Fulham, Kingston upon Thames and Richmond upon Thames get their correct ONS-recognised names regardless of how the source data spelled them.</p>
 
-  <h3>List size (registered patients)</h3>
-  <table>
-    <tr><th>Source</th><td><a href="https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice" rel="nofollow">NHS Digital — Patients Registered at a GP Practice</a></td></tr>
-    <tr><th>What we publish</th><td>The most recent number of registered patients on the practice list.</td></tr>
-    <tr><th>Refresh</th><td>Monthly.</td></tr>
-    <tr><th>Limitations</th><td>Registered list size is not the same as patients seen each year. Some patients are registered but no longer use the practice.</td></tr>
-  </table>
+<h3>6. Page generation</h3>
+<p>Once the data is clean, our build scripts generate static HTML pages:</p>
+<ul>
+  <li>The home page with all ~5,000 practices and clinics, filterable by NHS/private, borough, specialty and CQC rating.</li>
+  <li>Per-borough pages at <code>/practice/{borough}/</code>.</li>
+  <li>Per-specialty pages at <code>/private/{specialty}/</code>.</li>
+  <li>NHS services hub at <code>/nhs-services/</code>.</li>
+  <li>Borough index at <code>/boroughs/</code>.</li>
+</ul>
+<p>The whole site is static HTML served via Vercel &mdash; no database, no server-side rendering, no tracking. Pages load fast.</p>
 
-  <h3>PCN membership</h3>
-  <table>
-    <tr><th>Source</th><td>NHS Digital ODS PCN reference data.</td></tr>
-    <tr><th>What we publish</th><td>Each practice's PCN at the time of the most recent refresh.</td></tr>
-    <tr><th>Refresh</th><td>Quarterly.</td></tr>
-    <tr><th>Limitations</th><td>PCN membership can change. We show the current membership.</td></tr>
-  </table>
+<h2>Quality controls</h2>
 
-  <h3>Languages spoken / accessibility</h3>
-  <table>
-    <tr><th>Source</th><td>NHS Digital practice profile data, where published.</td></tr>
-    <tr><th>What we publish</th><td>Languages explicitly declared by the practice, and wheelchair accessibility status.</td></tr>
-    <tr><th>Refresh</th><td>Weekly.</td></tr>
-    <tr><th>Limitations</th><td>This is self-declared data and not consistently completed across practices. Where a field is blank in the source, we display "—" rather than infer.</td></tr>
-  </table>
+<h3>Excluded categories</h3>
+<p>We explicitly drop the following CQC service types from our listings:</p>
+<ul>
+  <li>Homecare agencies, residential homes, nursing homes, supported living, hospices</li>
+  <li>Dental practitioners (V-prefix ODS codes)</li>
+  <li>Prison healthcare, ambulance stations (other than as a separate NHS Ambulance section)</li>
+  <li>Substance abuse community services and rehabilitation</li>
+  <li>Veterinary, funeral, tattoo and piercing services</li>
+</ul>
 
-  <h2>Ordering on hub pages</h2>
-  <p>Where we present a list of "top" or "accepting" practices on a borough or PCN hub, the ordering is:</p>
-  <ol>
-    <li>Practices marked as accepting new patients, listed first.</li>
-    <li>Within each group, sorted by latest GP Patient Survey overall experience score, descending.</li>
-    <li>Tie-broken by alphabetical order.</li>
-  </ol>
-  <p>The full ordering logic is visible in the <a href="https://github.com/Thierry0303/GP-Directory/blob/main/scripts/build_gp_borough_hubs.py">open-source build script</a>.</p>
+<h3>Validation</h3>
+<p>Every record passes through:</p>
+<ul>
+  <li>ODS code format check (NHS GPs must have a valid letter+5-digits code)</li>
+  <li>Postcode-based London filter (we drop anything outside Greater London)</li>
+  <li>Name-pattern checks (exclude obvious non-medical names)</li>
+  <li>URL normalisation (prepend <code>https://</code> to bare domains so all website buttons work)</li>
+  <li>Deduplication by name + postcode</li>
+</ul>
 
-  <h2>What we deliberately don't do</h2>
-  <ul>
-    <li><strong>We do not republish patient reviews from third-party platforms.</strong> Reviews of NHS services are sensitive both legally and ethically. If we add reviews in future, they will be on our own structured form, identity-gated, pre-moderated, and with right of reply.</li>
-    <li><strong>We do not show medical content.</strong> This is a directory, not a clinical tool.</li>
-    <li><strong>We do not infer or smooth missing data.</strong> Where a source is blank, we display "—".</li>
-  </ul>
+<h2>Limitations</h2>
+<div class="box">
+<p><strong>What we don't have.</strong> CQC tracks <em>locations</em>, not individual doctors. So our private listings show clinics and consulting addresses, not the names of individual consultants working there. For a per-consultant register, see the <a href="https://www.gmc-uk.org/registration-and-licensing/the-medical-register" target="_blank">GMC Specialist Register</a> or the <a href="https://www.phin.org.uk/" target="_blank">Private Healthcare Information Network (PHIN)</a>.</p>
+</div>
+<p>Common gaps:</p>
+<ul>
+  <li><strong>Naming.</strong> CQC lets providers register under any name they like &mdash; many private practices register using just their street address ("10 Harley Street", "1 &amp; 3 Beatrice Place"). When the data is uninformative, the card shows what's in the official register.</li>
+  <li><strong>Multiple consultants at one address.</strong> Harley Street and similar medical districts have many independent consultants sharing buildings. CQC sometimes lists them all separately, sometimes as one entity. We deduplicate by name+postcode but cannot disambiguate where CQC itself doesn't.</li>
+  <li><strong>NHS specialty services coverage.</strong> CQC's API doesn't reliably mark NHS-vs-private at the location level; we identify NHS services by name/provider patterns. Our current NHS Services count is a conservative lower bound. We plan to widen this over time.</li>
+  <li><strong>New CQC framework lag.</strong> Some practices were inspected under the old framework and haven't been re-assessed under the new one yet. We display whichever rating CQC has most recently issued.</li>
+</ul>
 
-  <h2>Corrections</h2>
-  <p>If anything on the site is inaccurate, please tell us. Email <a href="mailto:ThierrySW11@Gmail.Com">ThierrySW11@Gmail.Com</a> with the URL of the page and the issue. We aim to verify and respond within 5 working days. Every correction we make is logged in our <a href="/corrections.html">public corrections log</a>.</p>
+<h2>How to report a correction</h2>
+<p>See <a href="/corrections.html">Corrections</a> &mdash; we maintain a manual override list for cases where CQC or NHS data is wrong or out of date.</p>
 
-  <h2>Version history</h2>
-  <p>This methodology is versioned. Significant changes are recorded with date and rationale in our <a href="https://github.com/Thierry0303/GP-Directory/commits/main/methodology.html">GitHub history</a>.</p>
+<h2>Open source</h2>
+<p>Every script that builds this site is published on <a href="https://github.com/Thierry0303/GP-Directory" target="_blank">GitHub</a>. Issues, pull requests and data corrections welcome.</p>
+
 </main>
 <footer>
-  <div class="inner">
-    <div>&copy; London GP Directory. Independent. Free to use. Not affiliated with the NHS.</div>
-    <div><a href="/about.html">About</a> &middot; <a href="/methodology.html">Methodology</a> &middot; <a href="/sources.html">Sources</a></div>
-  </div>
+  London GP Directory &middot; Built with NHS ODS, CQC, GP Patient Survey and ONS data &middot;
+  <a href="/">Home</a> &middot;
+  <a href="/sources.html">Sources</a> &middot;
+  <a href="/corrections.html">Corrections</a>
 </footer>
 </body>
 </html>
