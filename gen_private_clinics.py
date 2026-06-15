@@ -242,6 +242,25 @@ def to_merge_shape(rec, specs):
         "providerName":   rec.get("providerName", ""),
     }
 
+
+def deduplicate(records):
+    """When multiple records share (name, postcode), keep the best-rated one.
+    CQC sometimes registers many consultants at the same shared address with
+    identical name strings — showing 14 identical 'Harley Street' cards is
+    bad UX."""
+    RATING_SCORE = {"Outstanding": 4, "Good": 3, "Requires improvement": 2,
+                    "Inadequate": 1, "": 0}
+    best = {}
+    for r in records:
+        key = (r["name"].strip().lower(), r["postcode"].strip().upper())
+        if not key[0] or not key[1]:
+            continue
+        score = (RATING_SCORE.get(r.get("cqc_rating", ""), 0),
+                 len(r.get("specialties", [])))
+        if key not in best or score > best[key][0]:
+            best[key] = (score, r)
+    return [v[1] for v in best.values()]
+
 def main():
     if not CACHE.exists():
         print(f"ERROR: {CACHE} not found.")
@@ -260,6 +279,9 @@ def main():
         for s in specs: by_specialty[s] += 1
         by_borough[rec.get("localAuthority", "(unknown)")] += 1
 
+    before = len(output)
+    output = deduplicate(output)
+    print(f"Deduplicated: {before:,} -> {len(output):,} ({before-len(output)} duplicates removed)")
     OUT.write_text(json.dumps(output, indent=2))
     print(f"\nWrote {len(output):,} private clinics to {OUT.name}")
     print(f"\nBy specialty:")
