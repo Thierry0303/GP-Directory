@@ -22,10 +22,13 @@ jobs:
         run: python clean_nhs_records.py
 
       # ---- 2. CQC cache (incremental update) ----
-      - name: Update CQC London cache (only new records)
+      - name: Update CQC London cache (incremental, fast)
         env:
-          CQC_KEY: ${{ secrets.CQC_KEY }}
+             CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python build_cqc_london_cache.py
+
+      - name: Generate private clinics from cache
+        run: python gen_private_clinics.py
 
       # ---- 3. Generate JSONs from cache ----
       - name: Generate NHS GPs from cache
