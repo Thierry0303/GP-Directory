@@ -5,6 +5,7 @@ with live NHS + private clinic counts. Each row links to /practice/{slug}/.
 
 Slug convention: lowercase, "&" dropped, spaces → "-".
   "Barking & Dagenham"      -> "barking-dagenham"
+  "Hammersmith & Fulham"      -> "hammersmith-fulham"
   "Kensington & Chelsea"    -> "kensington-chelsea"
   "Richmond upon Thames"    -> "richmond-upon-thames"
 
