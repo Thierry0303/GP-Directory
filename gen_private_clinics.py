@@ -105,25 +105,81 @@ def classify_specialties(rec):
 
     return sorted(specs)
 
-def is_private(rec):
-    """A real private medical clinic vs. NHS / non-medical / GP."""
-    if not rec.get("isIndependent"): return False
+# NHS GP practice ODS code: single letter (A-H, J-N, P, W, Y) + 5 digits.
+# V = dental, so excluded. This is the standard NHS Digital convention.
+NHS_GP_ODS_RE = re.compile(r"^[A-HJ-NPSW-Y]\d{5}$")
 
+# Service types CQC actually uses (short names — not the schema's full names!)
+MEDICAL_SERVICE_TYPES = {
+    "Doctors/Gps",                # GP practices + private GPs (5k+)
+    "Mobile doctors",             # always private (no NHS mobile GPs)
+    "Diagnosis/screening",        # diagnostic centres
+    "Clinic",                     # general clinics
+    "Hospital",                   # private hospitals + some NHS
+    "Hospitals - Mental health/capacity",
+    "Urgent care centres",
+    "Phone/online advice",        # telemedicine
+    "Long-term conditions",
+    "Rehabilitation (illness/injury)",
+    "Hyperbaric chamber services",
+    "Hospice",
+    "Home hospice care",
+}
+
+# Exclude these even though they appear in the cache — not what we list
+EXCLUDE_SERVICE_TYPES = {
+    "Homecare agencies",
+    "Residential homes",
+    "Nursing homes",
+    "Supported living",
+    "Supported housing",
+    "Shared lives",
+    "Dentist",
+    "Prison healthcare",
+    "Ambulances",
+    "Blood and transplant service",
+    "Specialist college service",
+    "Community services - Substance abuse",
+    "Rehabilitation (substance abuse)",
+}
+
+def is_nhs_gp(rec):
+    """A real NHS GMS GP practice."""
     gac = rec.get("gacServiceTypes", [])
-    # Must have an Independent doctors / hospital service
-    has_private_service = any(
-        ("Independent" in s) and any(t in s for t in [
-            "Doctors", "Hospital", "Treatment", "Diagnostic", "Consultation"
-        ])
-        for s in gac
-    )
-    if not has_private_service: return False
+    if "Doctors/Gps" not in gac: return False
+    ods = (rec.get("odsCode") or "").upper()
+    return bool(NHS_GP_ODS_RE.match(ods))
 
+def is_private(rec):
+    """A private medical clinic / consultant / hospital — NOT an NHS GP."""
+    gac = rec.get("gacServiceTypes", [])
+
+    # Drop excluded service types first
+    if any(g in EXCLUDE_SERVICE_TYPES for g in gac):
+        return False
+
+    # Must have at least one medical service type
+    if not any(g in MEDICAL_SERVICE_TYPES for g in gac):
+        return False
+
+    # Exclude NHS GP practices (those go via gen_nhs_gps.py / refresh_nhs_data.py)
+    if is_nhs_gp(rec): return False
+
+    # Exclude obvious NHS hospitals: provider name contains NHS/Trust/Foundation
+    prov = (rec.get("providerName") or "").lower()
+    if any(t in prov for t in ["nhs trust", "nhs foundation", " trust"]):
+        return False
+
+    # Exclude names that scream NHS even without provider info
     nm = rec["name"].lower()
-    # Exclude things we don't want even though they're independent
-    if any(bad in nm for bad in [
-        "veterinary", "vet ", "funeral", "tattoo", "piercing"
+    if any(t in nm for t in [
+        " nhs trust", "nhs foundation", "community nhs", "urgent treatment centre",
+        "walk-in centre", "walk in centre",
     ]):
+        return False
+
+    # Exclude any non-medical leftovers
+    if any(bad in nm for bad in ["veterinary", "funeral", "tattoo", "piercing"]):
         return False
 
     return True
