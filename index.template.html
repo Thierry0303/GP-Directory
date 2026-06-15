@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>London GP Directory — Find &amp; Compare NHS GP Practices in London</title>
 <meta name="description" content="Free directory of every NHS GP practice in London. Compare __PRACTICE_COUNT__ practices by patient survey, CQC rating and contact details. Updated weekly from NHS ODS.">
-<meta name="keywords" content="London GP, NHS GP practice, find a GP London, GP directory, GP surgery London, CQC rating, NHS practice search, private GP London, private clinic London">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#003087">
-<meta name="author" content="London GP Directory">
 <link rel="canonical" href="https://londongp.directory/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23003087'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='42' font-weight='700' fill='white'%3EGP%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
@@ -18,24 +16,13 @@
 <meta property="og:url" content="https://londongp.directory/">
 <meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://londongp.directory/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
-<meta name="twitter:description" content="Free directory of every NHS GP practice in London. Patient scores, CQC ratings, contact details.">
-<meta name="twitter:image" content="https://londongp.directory/og-image.png">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","url":"https://londongp.directory/","name":"London GP Directory","description":"Find & compare every NHS GP practice in London by patient score, CQC rating and contact details.","inLanguage":"en-GB","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://londongp.directory/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"London GP Directory","url":"https://londongp.directory/","description":"An independent directory of NHS GP practices and private healthcare clinics across London, sourced from the NHS Organisation Data Service (ODS), GP Patient Survey and CQC.","areaServed":{"@type":"AdministrativeArea","name":"London"}}
-</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
 a{text-decoration:none;color:inherit}
-.hdr{background:#003087;color:#fff;border-bottom:4px solid #0072CE;padding:0 24px}
-.hdr-in{max-width:1300px;margin:0 auto;padding:14px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hdr{background:#003087;color:#fff;padding:0}
+.hdr-top{padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.hdr-in{max-width:1300px;margin:0 auto;padding:0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .logo h1{font-family:Georgia,serif;font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;line-height:1.1}
 .logo h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
 .logo p{font-size:.72rem;opacity:.65;margin-top:3px;letter-spacing:.05em;text-transform:uppercase}
@@ -43,7 +30,12 @@ a{text-decoration:none;color:inherit}
 .hdr-stats div{text-align:center}
 .hdr-stats strong{display:block;font-size:1.4rem;font-weight:300;letter-spacing:-0.03em;line-height:1}
 .hdr-stats span{font-size:.68rem;opacity:.6;text-transform:uppercase;letter-spacing:.04em}
-.search-zone{background:#003087;padding:0 24px 16px}
+.main-nav{background:rgba(0,0,0,.18);border-bottom:4px solid #0072CE}
+.main-nav-in{max-width:1300px;margin:0 auto;padding:10px 24px;display:flex;gap:24px;flex-wrap:wrap;font-size:.88rem;align-items:center}
+.main-nav a{color:rgba(255,255,255,.78);font-weight:500;transition:color .12s;padding:4px 0}
+.main-nav a:hover,.main-nav a.active{color:#fff}
+.main-nav a.active{border-bottom:2px solid #B5D4F4}
+.search-zone{background:#003087;padding:14px 24px 16px}
 .search-inner{max-width:1300px;margin:0 auto;display:flex;gap:8px}
 .s-wrap{position:relative;flex:1}
 .s-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.45;pointer-events:none}
@@ -51,8 +43,6 @@ a{text-decoration:none;color:inherit}
 #q::placeholder{color:rgba(255,255,255,.45)}
 #q:focus{border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.16)}
 .clr{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.2);color:#fff;padding:11px 15px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;display:none}
-
-/* ===== NHS / Private toggle ===== */
 .type-zone{background:#fff;border-bottom:1px solid #e5e5e3}
 .type-inner{max-width:1300px;margin:0 auto;padding:14px 24px}
 .type-tabs{display:flex;gap:6px;flex-wrap:wrap}
@@ -67,12 +57,11 @@ a{text-decoration:none;color:inherit}
 .specialty-chip:hover:not(.active){border-color:#0072CE;color:#0072CE}
 .specialty-chip.active{background:#0072CE;color:#fff;border-color:#0072CE}
 .specialty-chip-count{font-size:10px;opacity:.7;margin-left:3px}
-
 .layout{max-width:1300px;margin:0 auto;padding:20px 24px 48px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
 .sidebar{position:sticky;top:20px}
 .panel{background:#fff;border:1px solid #ddd;border-radius:12px;overflow:hidden;margin-bottom:12px}
 .panel-hdr{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#999;padding:10px 14px 7px;border-bottom:1px solid #f0f0ee}
-.panel select{width:100%;padding:9px 14px;border:none;font-family:inherit;font-size:13px;color:#444;background:#fff;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 5 5-5' stroke='%23888' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px}
+.panel select{width:100%;padding:9px 14px;border:none;font-family:inherit;font-size:13px;color:#444;background:#fff;cursor:pointer;appearance:none}
 .opts{padding:5px 0;max-height:220px;overflow-y:auto}
 .opts label{display:flex;align-items:center;gap:9px;padding:5px 14px;cursor:pointer;font-size:13px}
 .opts label:hover{background:#f8f8f6}
@@ -81,13 +70,12 @@ a{text-decoration:none;color:inherit}
 .nhs-panel{background:#EDF4FC;border:1px solid #B5D4F4;border-radius:12px;padding:13px 14px;margin-bottom:12px}
 .nhs-panel-hdr{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#003087;margin-bottom:5px}
 .nhs-panel p{font-size:11px;color:#5a7da8;line-height:1.5;margin-bottom:8px}
-.nhs-panel p strong{color:#003087;font-weight:600}
 .nhs-tag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;color:#007F3B;font-weight:500;background:#D8EFE3;padding:4px 9px;border-radius:99px}
 .results-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px}
 .results-bar p{font-size:13px;color:#888}
 .results-bar strong{color:#222;font-weight:500}
 #grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}
-.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s;position:relative}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s}
 .card:hover{border-color:#0072CE;box-shadow:0 3px 14px rgba(0,48,135,.08)}
 .card-name{font-family:Georgia,serif;font-size:14px;font-weight:700;line-height:1.3;color:#003087;flex:1}
 .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px}
@@ -102,34 +90,16 @@ a{text-decoration:none;color:inherit}
 .type-badge.t-nhs{background:#EDF4FC;color:#003087}
 .type-badge.t-priv{background:#FAE7F3;color:#A02670}
 .spec-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize;font-weight:500}
-.area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start;cursor:pointer;transition:background .12s,color .12s}
+.area-tag{display:inline-block;font-size:10px;color:#003087;background:#EDF4FC;padding:1px 8px;border-radius:99px;margin-bottom:7px;font-weight:500;align-self:flex-start;cursor:pointer}
 .area-tag:hover{background:#003087;color:#fff}
-
-.borough-bar{background:#fff;border-bottom:1px solid #e5e5e3;position:sticky;top:0;z-index:50}
-.borough-bar-inner{max-width:1300px;margin:0 auto;padding:9px 24px;display:flex;align-items:center;gap:6px;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+.borough-bar{background:#fff;border-bottom:1px solid #e5e5e3}
+.borough-bar-inner{max-width:1300px;margin:0 auto;padding:9px 24px;display:flex;align-items:center;gap:6px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
 .borough-bar-inner::-webkit-scrollbar{display:none}
 .borough-bar-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#888;font-weight:700;flex-shrink:0;margin-right:4px}
-.borough-chip{display:inline-block;padding:6px 12px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:12.5px;font-weight:600;flex-shrink:0;transition:all .12s;border:1px solid transparent;text-decoration:none;white-space:nowrap}
-.borough-chip:hover,.borough-chip:focus{background:#003087;color:#fff}
-.borough-more{flex-shrink:0;padding:6px 13px;border-radius:99px;background:#003087;color:#fff;font-size:12.5px;font-weight:700;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;transition:opacity .12s;display:inline-flex;align-items:center;gap:4px}
+.borough-chip{display:inline-block;padding:6px 12px;border-radius:99px;background:#EDF4FC;color:#0072CE;font-size:12.5px;font-weight:600;flex-shrink:0;border:1px solid transparent;white-space:nowrap}
+.borough-chip:hover{background:#003087;color:#fff}
+.borough-more{flex-shrink:0;padding:6px 13px;border-radius:99px;background:#003087;color:#fff;font-size:12.5px;font-weight:700;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
 .borough-more:hover{opacity:.9}
-.borough-more:active{transform:translateY(1px)}
-.borough-sheet{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .2s ease}
-.borough-sheet[hidden]{display:none}
-.borough-sheet-overlay{position:absolute;inset:0;background:rgba(15,15,30,.45);cursor:pointer}
-.borough-sheet-panel{position:relative;background:#fff;width:100%;max-width:560px;border-radius:18px 18px 0 0;padding:6px 0 24px;max-height:85vh;display:flex;flex-direction:column;animation:slideUp .25s cubic-bezier(.2,.9,.3,1.1);box-shadow:0 -8px 30px rgba(0,0,0,.25)}
-.borough-sheet-handle{width:42px;height:4px;background:#dcdce0;border-radius:99px;margin:8px auto 4px;cursor:pointer}
-.borough-sheet-hdr{display:flex;align-items:center;justify-content:space-between;padding:8px 22px 14px;border-bottom:1px solid #f0f0ee;flex-shrink:0}
-.borough-sheet-hdr h3{font-family:Georgia,serif;font-size:1.15rem;font-weight:700;color:#003087;margin:0}
-.borough-sheet-close{width:34px;height:34px;border-radius:99px;border:none;background:#f5f5f3;color:#555;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;font-family:inherit;padding:0}
-.borough-sheet-close:hover{background:#e8e8e6;color:#000}
-.borough-sheet-grid{padding:14px 22px 4px;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:7px 12px;-webkit-overflow-scrolling:touch}
-.borough-sheet-grid a{display:block;padding:10px 12px;border-radius:8px;background:#FDFAFA;color:#003087;font-size:14px;font-weight:600;text-decoration:none;border:1px solid #f0f0ee;transition:background .12s,border-color .12s}
-.borough-sheet-grid a:hover,.borough-sheet-grid a:focus{background:#EDF4FC;border-color:#B5D4F4}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
-body.sheet-open{overflow:hidden}
-
 .card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
 .metrics{display:flex;gap:12px;margin-bottom:12px}
 .metric{flex:1}
@@ -140,110 +110,68 @@ body.sheet-open{overflow:hidden}
 .m-na{font-size:11.5px;color:#ccc}
 .card-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0ee;padding-top:10px;gap:8px;margin-top:auto}
 .card-phone{font-size:11.5px;color:#444;font-weight:500;display:flex;align-items:center;gap:4px}
-.card-phone:hover{color:#003087}
 .actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
-.pill{font-size:10.5px;padding:4px 9px;border-radius:6px;font-weight:600;white-space:nowrap;transition:opacity .15s}
-.pill:hover{opacity:.8}
+.pill{font-size:10.5px;padding:4px 9px;border-radius:6px;font-weight:600;white-space:nowrap}
 .pill-reg{background:#003087;color:#fff}
 .pill-cqc{background:#D8EFE3;color:#007F3B}
 .pill-ods{background:#EDF4FC;color:#0072CE}
 .pill-web{background:#FAE7F3;color:#A02670}
 .card-pcn{font-size:10px;color:#bbb;text-align:right;margin-top:5px}
 .empty{grid-column:1/-1;text-align:center;padding:4rem 2rem;color:#888}
-.empty h3{font-family:Georgia,serif;font-size:1.1rem;color:#555;margin-bottom:5px}
 .pager{margin-top:24px;display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap}
-.pg{min-width:34px;height:34px;border:1px solid #ddd;background:#fff;border-radius:6px;font-family:inherit;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 9px;color:#555;transition:all .1s}
+.pg{min-width:34px;height:34px;border:1px solid #ddd;background:#fff;border-radius:6px;font-family:inherit;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 9px;color:#555}
 .pg:hover:not(:disabled){border-color:#003087;color:#003087}
 .pg.on{background:#003087;color:#fff;border-color:#003087}
 .pg:disabled{opacity:.3;cursor:not-allowed}
 footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:16px 24px;font-size:11.5px}
 footer a{color:rgba(255,255,255,.8)}
-footer a:hover{color:#fff}
-
 @media(max-width:900px){
-  .layout{grid-template-columns:1fr;gap:14px;padding-top:14px}
+  .layout{grid-template-columns:1fr;gap:14px}
   .sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .nhs-panel{grid-column:1/-1;margin-bottom:0}
-  .panel{margin-bottom:0}
-  .hdr-stats{gap:14px}
-  .hdr-stats strong{font-size:1.15rem}
-  .hdr-stats span{font-size:.6rem}
+  .nhs-panel{grid-column:1/-1}
 }
 @media(max-width:600px){
-  .hdr{padding:0 14px;gap:8px}
-  .hdr-in{padding:9px 0;gap:8px}
-  .logo h1{font-size:1.15rem;line-height:1.05}
+  .hdr-top{padding:10px 16px}
+  .logo h1{font-size:1.15rem}
   .logo p{display:none}
-  .hdr-stats{gap:14px;flex:0 0 auto}
-  .hdr-stats div:nth-child(2),.hdr-stats div:nth-child(3){display:none}
-  .hdr-stats strong{font-size:1rem;font-weight:600}
-  .hdr-stats span{font-size:.55rem;letter-spacing:.03em}
+  .hdr-stats{gap:14px}
+  .hdr-stats strong{font-size:1rem}
+  .main-nav-in{padding:8px 16px;gap:16px;font-size:.82rem}
   .search-zone{padding:0 16px 12px}
   #q{padding:13px 12px 13px 38px;font-size:16px}
-  .clr{padding:13px 14px;font-size:13px}
-  .type-inner{padding:10px 14px}
-  .type-tabs{gap:5px}
-  .type-tab{padding:8px 13px;font-size:13px}
-  .specialty-zone.active{margin-top:8px}
-  .specialty-chip{padding:5px 10px;font-size:11.5px}
-  .borough-bar-inner{padding:8px 14px;gap:5px}
-  .borough-bar-label{display:none}
-  .borough-chip{padding:6px 11px;font-size:12px}
-  .borough-more{padding:6px 11px;font-size:12px}
-  .borough-sheet-panel{max-height:80vh}
-  .borough-sheet-grid{grid-template-columns:1fr 1fr;gap:6px 10px;padding:12px 18px 4px}
-  .borough-sheet-grid a{padding:11px 12px;font-size:13.5px}
-  .layout{padding:14px 16px 32px;gap:10px}
-  .sidebar{grid-template-columns:1fr;gap:8px}
-  .nhs-panel{padding:10px 12px}
-  .nhs-panel-hdr{margin-bottom:3px}
-  .nhs-panel p{font-size:11px;margin-bottom:6px;line-height:1.4}
-  .nhs-tag{font-size:10px;padding:3px 8px}
-  .panel{border-radius:10px}
-  .panel-hdr{font-size:10px;padding:11px 14px 9px;cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between}
-  .panel-hdr::after{content:"\25BE";font-size:11px;color:#bbb;transition:transform .15s;font-weight:400;letter-spacing:0}
-  .panel.collapsed .panel-hdr::after{transform:rotate(-90deg)}
-  .panel.collapsed .opts,.panel.collapsed select{display:none}
-  .opts{max-height:240px}
-  .opts label{padding:8px 14px;font-size:14px}
-  .opts input[type=checkbox]{width:16px;height:16px}
-  .panel select{padding:11px 14px;font-size:14px}
-  #grid{grid-template-columns:1fr;gap:10px}
-  .card{padding:14px 14px}
-  .card-name{font-size:15px}
-  .card-addr{font-size:12px}
-  .metrics{gap:10px;margin-bottom:10px}
-  .m-val{font-size:12px}
-  .card-foot{flex-wrap:wrap;gap:10px;padding-top:11px}
-  .card-phone{font-size:13px;padding:4px 0;min-height:32px}
-  .actions{gap:6px;width:100%}
-  .pill{padding:7px 11px;font-size:12px;min-height:32px;display:inline-flex;align-items:center}
-  .results-bar p{font-size:12px}
-  .pager{margin-top:18px;gap:4px}
-  .pg{min-width:38px;height:38px;font-size:13px}
-  footer{padding:14px 16px;font-size:11px;line-height:1.7}
-}
-@media(max-width:380px){
-  .logo h1{font-size:1.1rem}
-  .hdr-stats{display:none}
-  .pill{font-size:11px;padding:6px 9px}
+  .borough-bar-inner{padding:8px 14px}
+  .layout{padding:14px 16px 32px}
+  .sidebar{grid-template-columns:1fr}
+  #grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 <header class="hdr">
-  <div class="hdr-in">
-    <div class="logo">
-      <h1>London GP <em>Directory</em></h1>
-      <p>Find &amp; compare NHS GP practices &amp; private clinics across London</p>
-    </div>
-    <div class="hdr-stats">
-      <div><strong>__PRACTICE_COUNT__</strong><span>practices</span></div>
-      <div><strong>101</strong><span>areas</span></div>
-      <div><strong>121</strong><span>PCNs</span></div>
-      <div><strong id="avgScore">76</strong><span>avg score %</span></div>
+  <div class="hdr-top">
+    <div class="hdr-in">
+      <div class="logo">
+        <h1>London GP <em>Directory</em></h1>
+        <p>Find &amp; compare NHS GP practices &amp; private clinics across London</p>
+      </div>
+      <div class="hdr-stats">
+        <div><strong>__PRACTICE_COUNT__</strong><span>practices</span></div>
+        <div><strong>101</strong><span>areas</span></div>
+        <div><strong>121</strong><span>PCNs</span></div>
+        <div><strong id="avgScore">76</strong><span>avg score %</span></div>
+      </div>
     </div>
   </div>
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="main-nav-in">
+      <a href="/" class="active">Search</a>
+      <a href="/boroughs/">Boroughs</a>
+      <a href="/nhs-services/">NHS Services</a>
+      <a href="/private/">Private Clinics</a>
+      <a href="/methodology.html">Methodology</a>
+      <a href="/sources.html">Sources</a>
+    </div>
+  </nav>
 </header>
 <div class="search-zone">
   <div class="search-inner">
@@ -279,34 +207,15 @@ footer a:hover{color:#fff}
     <a class="borough-chip" href="/practice/lambeth/">Lambeth</a>
     <a class="borough-chip" href="/practice/southwark/">Southwark</a>
     <a class="borough-chip" href="/practice/hackney/">Hackney</a>
-    <button type="button" class="borough-more" id="boroughMoreBtn" aria-haspopup="dialog" aria-controls="boroughSheet">All 32 &rsaquo;</button>
+    <a class="borough-more" href="/boroughs/">All 32 &rsaquo;</a>
   </div>
 </nav>
-<div class="borough-sheet" id="boroughSheet" role="dialog" aria-modal="true" aria-labelledby="boroughSheetTitle" hidden>
-  <div class="borough-sheet-overlay" data-close></div>
-  <div class="borough-sheet-panel">
-    <div class="borough-sheet-handle" data-close></div>
-    <div class="borough-sheet-hdr">
-      <h3 id="boroughSheetTitle">Browse by borough</h3>
-      <button type="button" class="borough-sheet-close" data-close aria-label="Close">&times;</button>
-    </div>
-    <div class="borough-sheet-grid">
-      __BOROUGH_NAV__
-    </div>
-  </div>
-</div>
 <div class="layout">
   <aside class="sidebar">
     <div class="nhs-panel">
-      <div class="nhs-panel-hdr">
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M1 8a7 7 0 107-7" stroke="#003087" stroke-width="1.6" stroke-linecap="round"/><path d="M1 3v5h5" stroke="#003087" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        NHS data
-      </div>
+      <div class="nhs-panel-hdr">NHS data</div>
       <p>NHS practice phone numbers &amp; addresses sourced from the <strong>NHS ODS FHIR API</strong>. Private clinics from <strong>CQC</strong>. Refreshed weekly.</p>
-      <div class="nhs-tag">
-        <svg width="10" height="10" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#007F3B" stroke-width="1.5"/><path d="M8 5v3.5l2 2" stroke="#007F3B" stroke-width="1.4" stroke-linecap="round"/></svg>
-        Updated: __UPDATED_DATE__
-      </div>
+      <div class="nhs-tag">Updated: __UPDATED_DATE__</div>
     </div>
     <div class="panel">
       <div class="panel-hdr">Sort by</div>
@@ -318,52 +227,31 @@ footer a:hover{color:#fff}
         <option value="area">Area (A&#x2013;Z)</option>
       </select>
     </div>
-    <div class="panel">
-      <div class="panel-hdr">CQC rating</div>
-      <div class="opts" id="cqcOpts"></div>
-    </div>
-    <div class="panel">
-      <div class="panel-hdr">Borough</div>
-      <div class="opts" id="areaOpts"></div>
-    </div>
+    <div class="panel"><div class="panel-hdr">CQC rating</div><div class="opts" id="cqcOpts"></div></div>
+    <div class="panel"><div class="panel-hdr">Borough</div><div class="opts" id="areaOpts"></div></div>
   </aside>
   <main>
-    <div class="results-bar">
-      <p id="resCt">Loading&#x2026;</p>
-    </div>
+    <div class="results-bar"><p id="resCt">Loading&#x2026;</p></div>
     <div id="grid"></div>
     <div class="pager" id="pager"></div>
   </main>
 </div>
 <footer>
-  Data: NHS ODS &middot; GP Patient Survey &middot; CQC &middot; __UPDATED_DATE__ &nbsp;&nbsp;
-  <a href="https://www.nhs.uk/service-search/find-a-gp/" target="_blank">NHS Find a GP</a> &nbsp;&middot;&nbsp;
-  <a href="https://gp-registration.nhs.uk" target="_blank">Register with a GP</a> &nbsp;&middot;&nbsp;
-  <a href="https://www.cqc.org.uk" target="_blank">CQC</a><br>
-  <a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/methodology.html">Methodology</a> &nbsp;&middot;&nbsp; <a href="/sources.html">Sources</a><br>
-  <a href="/guides/how-to-register-with-a-london-gp/">How to register with a London GP</a> &nbsp;&middot;&nbsp; <a href="/guides/how-to-switch-gp-in-london/">How to switch GP</a>
+  Data: NHS ODS &middot; GP Patient Survey &middot; CQC &middot; __UPDATED_DATE__ &nbsp;&middot;&nbsp;
+  <a href="/about.html">About</a> &middot;
+  <a href="/methodology.html">Methodology</a> &middot;
+  <a href="/sources.html">Sources</a> &middot;
+  <a href="/boroughs/">Boroughs</a> &middot;
+  <a href="/nhs-services/">NHS Services</a>
 </footer>
 <script>
 const DATA = __DATA_PLACEHOLDER__;
 const slugify = s => (s||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 const PAGE = 24;
-let page = 1;
-let filtered = [];
-let selType = 'NHS';
-let selSpec = 'all';
-const selCQC = new Set();
-const selArea = new Set();
-
-function cqcClass(r){
-  if(!r) return 'cqc-N';
-  if(r==='Outstanding') return 'cqc-O';
-  if(r==='Good') return 'cqc-G';
-  if(r.startsWith('Requires')) return 'cqc-R';
-  if(r==='Inadequate') return 'cqc-I';
-  return 'cqc-N';
-}
+let page = 1, filtered = [], selType = 'NHS', selSpec = 'all';
+const selCQC = new Set(), selArea = new Set();
+function cqcClass(r){ if(!r)return'cqc-N';if(r==='Outstanding')return'cqc-O';if(r==='Good')return'cqc-G';if(r.startsWith('Requires'))return'cqc-R';if(r==='Inadequate')return'cqc-I';return'cqc-N'; }
 function cqcLabel(r){ return r||'Not rated'; }
-
 function updateTypeCounts(){
   const n = DATA.filter(d => (d.type||'NHS')==='NHS').length;
   const p = DATA.filter(d => d.type==='Private').length;
@@ -373,69 +261,30 @@ function updateTypeCounts(){
 }
 function buildSpecialtyChips(){
   const zone = document.getElementById('specialtyZone');
-  if(selType !== 'Private'){
-    zone.classList.remove('active');
-    zone.innerHTML = '';
-    return;
-  }
+  if(selType !== 'Private'){ zone.classList.remove('active'); zone.innerHTML=''; return; }
   const counts = {};
-  DATA.filter(d => d.type==='Private').forEach(d => {
-    (d.specs||[]).forEach(s => { counts[s] = (counts[s]||0)+1; });
-  });
+  DATA.filter(d => d.type==='Private').forEach(d => (d.specs||[]).forEach(s => counts[s] = (counts[s]||0)+1));
   const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
   const total = DATA.filter(d => d.type==='Private').length;
   zone.innerHTML = `<button class="specialty-chip ${selSpec==='all'?'active':''}" data-spec="all">All <span class="specialty-chip-count">${total}</span></button>`
-    + sorted.map(([sp,n])=>
-      `<button class="specialty-chip ${selSpec===sp?'active':''}" data-spec="${sp}">${sp} <span class="specialty-chip-count">${n}</span></button>`
-    ).join('');
+    + sorted.map(([sp,n])=>`<button class="specialty-chip ${selSpec===sp?'active':''}" data-spec="${sp}">${sp} <span class="specialty-chip-count">${n}</span></button>`).join('');
   zone.classList.add('active');
-  zone.querySelectorAll('.specialty-chip').forEach(c =>
-    c.addEventListener('click', () => selectSpec(c.dataset.spec)));
+  zone.querySelectorAll('.specialty-chip').forEach(c => c.addEventListener('click', () => selectSpec(c.dataset.spec)));
 }
 function selectType(type){
-  selType = type;
-  selSpec = 'all';
-  document.querySelectorAll('.type-tab').forEach(t => {
-    const on = t.dataset.type === type;
-    t.classList.toggle('active', on);
-    t.setAttribute('aria-selected', on?'true':'false');
-  });
-  buildSpecialtyChips();
-  page = 1; render();
+  selType = type; selSpec = 'all';
+  document.querySelectorAll('.type-tab').forEach(t => { const on = t.dataset.type === type; t.classList.toggle('active', on); t.setAttribute('aria-selected', on?'true':'false'); });
+  buildSpecialtyChips(); page = 1; render();
 }
-function selectSpec(spec){
-  selSpec = spec;
-  buildSpecialtyChips();
-  page = 1; render();
-}
-
+function selectSpec(spec){ selSpec = spec; buildSpecialtyChips(); page=1; render(); }
 function buildFilters(){
   const cqcC={}, areaC={};
-  DATA.forEach(d=>{
-    const k=d.cqc||''; cqcC[k]=(cqcC[k]||0)+1;
-    if(d.ar) areaC[d.ar]=(areaC[d.ar]||0)+1;
-  });
-  const cqcOrder=['Outstanding','Good','Requires improvement','Inadequate',''];
-  document.getElementById('cqcOpts').innerHTML = cqcOrder
-    .filter(k=>cqcC[k])
-    .map(k=>`<label><input type="checkbox" onchange="toggle('cqc','${k.replace(/'/g,"\\'")}')">
-      ${k||'Not rated'}<span class="badge">${cqcC[k]}</span></label>`).join('');
-  document.getElementById('areaOpts').innerHTML = Object.entries(areaC)
-    .sort((a,b)=>a[0].localeCompare(b[0]))
-    .map(([ar,c])=>`<label><input type="checkbox" onchange="toggle('area','${ar.replace(/'/g,"\\'")}')">
-      ${ar}<span class="badge">${c}</span></label>`).join('');
+  DATA.forEach(d=>{ const k=d.cqc||''; cqcC[k]=(cqcC[k]||0)+1; if(d.ar) areaC[d.ar]=(areaC[d.ar]||0)+1; });
+  document.getElementById('cqcOpts').innerHTML = ['Outstanding','Good','Requires improvement','Inadequate',''].filter(k=>cqcC[k]).map(k=>`<label><input type="checkbox" onchange="toggle('cqc','${k}')">${k||'Not rated'}<span class="badge">${cqcC[k]}</span></label>`).join('');
+  document.getElementById('areaOpts').innerHTML = Object.entries(areaC).sort((a,b)=>a[0].localeCompare(b[0])).map(([ar,c])=>`<label><input type="checkbox" onchange="toggle('area','${ar}')">${ar}<span class="badge">${c}</span></label>`).join('');
 }
-function toggle(type,val){
-  const s = type==='cqc'?selCQC:selArea;
-  s.has(val)?s.delete(val):s.add(val);
-  page=1; render();
-}
-
-function clearSearch(){
-  document.getElementById('q').value='';
-  document.getElementById('clrBtn').style.display='none';
-  page=1; render();
-}
+function toggle(type,val){ const s = type==='cqc'?selCQC:selArea; s.has(val)?s.delete(val):s.add(val); page=1; render(); }
+function clearSearch(){ document.getElementById('q').value=''; document.getElementById('clrBtn').style.display='none'; page=1; render(); }
 function render(){
   const q = document.getElementById('q').value.trim().toLowerCase();
   const sort = document.getElementById('sortSel').value;
@@ -443,41 +292,21 @@ function render(){
   filtered = DATA.filter(d=>{
     const recType = d.type || 'NHS';
     if(selType !== 'All' && recType !== selType) return false;
-    if(selType === 'Private' && selSpec !== 'all'){
-      if(!(d.specs||[]).includes(selSpec)) return false;
-    }
-    const ms = !q || d.n.toLowerCase().includes(q)
-      || (d.p||'').toLowerCase().includes(q)
-      || (d.a||'').toLowerCase().includes(q)
-      || (d.ar||'').toLowerCase().includes(q)
-      || (d.pcn||'').toLowerCase().includes(q)
-      || (d.specs||[]).some(s => s.toLowerCase().includes(q));
+    if(selType === 'Private' && selSpec !== 'all' && !(d.specs||[]).includes(selSpec)) return false;
+    const ms = !q || d.n.toLowerCase().includes(q) || (d.p||'').toLowerCase().includes(q) || (d.a||'').toLowerCase().includes(q) || (d.ar||'').toLowerCase().includes(q) || (d.pcn||'').toLowerCase().includes(q) || (d.specs||[]).some(s => s.toLowerCase().includes(q));
     const mc = selCQC.size===0 || selCQC.has(d.cqc||'');
     const ma = selArea.size===0 || selArea.has(d.ar||'');
     return ms && mc && ma;
   });
-  filtered.sort((a,b)=>{
-    if(sort==='name') return a.n.localeCompare(b.n);
-    if(sort==='score_d') return (b.s||0)-(a.s||0);
-    if(sort==='score_a'){ if(!a.s&&!b.s)return 0; if(!a.s)return 1; if(!b.s)return -1; return a.s-b.s; }
-    if(sort==='contact_d') return (b.c||0)-(a.c||0);
-    if(sort==='area') return (a.ar||'').localeCompare(b.ar||'');
-    return 0;
-  });
+  filtered.sort((a,b)=>{ if(sort==='name') return a.n.localeCompare(b.n); if(sort==='score_d') return (b.s||0)-(a.s||0); if(sort==='score_a'){ if(!a.s&&!b.s)return 0; if(!a.s)return 1; if(!b.s)return -1; return a.s-b.s; } if(sort==='contact_d') return (b.c||0)-(a.c||0); if(sort==='area') return (a.ar||'').localeCompare(b.ar||''); return 0; });
   const tot = filtered.length;
   const pages = Math.max(1,Math.ceil(tot/PAGE));
   if(page>pages) page=Math.max(1,pages);
   const slice = filtered.slice((page-1)*PAGE, page*PAGE);
-  const typeLabel = selType==='All' ? 'practices &amp; clinics'
-    : selType==='Private' ? 'private clinics' : 'NHS practices';
-  document.getElementById('resCt').innerHTML =
-    `Showing <strong>${slice.length}</strong> of <strong>${tot}</strong> ${typeLabel}`;
+  const typeLabel = selType==='All' ? 'practices &amp; clinics' : selType==='Private' ? 'private clinics' : 'NHS practices';
+  document.getElementById('resCt').innerHTML = `Showing <strong>${slice.length}</strong> of <strong>${tot}</strong> ${typeLabel}`;
   const grid = document.getElementById('grid');
-  if(!slice.length){
-    grid.innerHTML='<div class="empty"><h3>No practices found</h3><p>Try a different search or clear some filters.</p></div>';
-    document.getElementById('pager').innerHTML='';
-    return;
-  }
+  if(!slice.length){ grid.innerHTML='<div class="empty"><h3>No practices found</h3></div>'; document.getElementById('pager').innerHTML=''; return; }
   grid.innerHTML = slice.map(d=>{
     const recType = d.type || 'NHS';
     const isPriv = recType === 'Private';
@@ -486,101 +315,31 @@ function render(){
     const cBar = d.c?`<div class="m-bar" style="width:${d.c}%;background:#0F6E56"></div>`:'';
     const sVal = d.s?`<div class="m-val">${d.s.toFixed(1)}%</div>`:`<div class="m-na">&#x2014;</div>`;
     const cVal = d.c?`<div class="m-val">${d.c.toFixed(1)}%</div>`:`<div class="m-na">&#x2014;</div>`;
-    const phone = d.ph?`<a class="card-phone" href="tel:${d.ph.replace(/\s/g,'')}">
-      <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><path d="M2 2.5a1 1 0 011-1h2a1 1 0 011 1l.5 2.5a1 1 0 01-.5 1L5 7c.98 1.96 2.54 3.52 4.5 4.5l1-1a1 1 0 011-.5l2.5.5a1 1 0 011 1V13a1 1 0 01-1 1h-1C6 14 2 9 2 4V2.5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-      ${d.ph}</a>`:'<span></span>';
+    const phone = d.ph?`<a class="card-phone" href="tel:${d.ph.replace(/\s/g,'')}">${d.ph}</a>`:'<span></span>';
     const cqcBtn = d.cu?`<a class="pill pill-cqc" href="${d.cu}" target="_blank">CQC</a>`:'';
-    const actionBtns = isPriv ? `
-      ${d.web?`<a class="pill pill-web" href="${d.web}" target="_blank">Website &#x2192;</a>`:''}
-      ${cqcBtn}`
-      : `<a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>
-         ${cqcBtn}
-         <a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>`;
-    const typeBadge = isPriv
-      ? `<span class="type-badge t-priv">Private</span>`
-      : `<span class="type-badge t-nhs">NHS</span>`;
-    const specBadges = isPriv && d.specs
-      ? d.specs.slice(0,2).map(s => `<span class="spec-badge">${s}</span>`).join('')
-      : '';
-    const metricsBlock = isPriv ? '' : `
-      <div class="metrics">
-        <div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div>
-        <div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div>
-      </div>`;
-    return `<div class="card">
-      <div class="card-top">
-        <div class="card-name">${d.n}</div>
-        <span class="cqc ${cc}">${cqcLabel(d.cqc)}</span>
-      </div>
-      <div class="card-badges">${typeBadge}${specBadges}</div>
-      ${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}
-      <div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>
-      ${metricsBlock}
-      <div class="card-foot">
-        ${phone}
-        <div class="actions">${actionBtns}</div>
-      </div>
-      ${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}
-    </div>`;
+    const actionBtns = isPriv ? `${d.web?`<a class="pill pill-web" href="${d.web}" target="_blank">Website &#x2192;</a>`:''}${cqcBtn}` : `<a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>${cqcBtn}<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>`;
+    const typeBadge = isPriv ? `<span class="type-badge t-priv">Private</span>` : `<span class="type-badge t-nhs">NHS</span>`;
+    const specBadges = isPriv && d.specs ? d.specs.slice(0,2).map(s => `<span class="spec-badge">${s}</span>`).join('') : '';
+    const metricsBlock = isPriv ? '' : `<div class="metrics"><div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div><div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div></div>`;
+    return `<div class="card"><div class="card-top"><div class="card-name">${d.n}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
   }).join('');
   renderPager(pages);
 }
 function renderPager(pages){
   if(pages<=1){ document.getElementById('pager').innerHTML=''; return; }
   const nums=[];
-  for(let i=1;i<=pages;i++){
-    if(i===1||i===pages||(i>=page-2&&i<=page+2)) nums.push(i);
-    else if(nums[nums.length-1]!=='...') nums.push('...');
-  }
-  document.getElementById('pager').innerHTML =
-    `<button class="pg" onclick="go(${page-1})" ${page===1?'disabled':''}>&#x2039;</button>`
-    + nums.map(n=>n==='...'
-      ?`<span style="padding:0 4px;color:#bbb">&#x2026;</span>`
-      :`<button class="pg${n===page?' on':''}" onclick="go(${n})">${n}</button>`
-    ).join('')
-    + `<button class="pg" onclick="go(${page+1})" ${page===pages?'disabled':''}>&#x203A;</button>`;
+  for(let i=1;i<=pages;i++){ if(i===1||i===pages||(i>=page-2&&i<=page+2)) nums.push(i); else if(nums[nums.length-1]!=='...') nums.push('...'); }
+  document.getElementById('pager').innerHTML = `<button class="pg" onclick="go(${page-1})" ${page===1?'disabled':''}>&#x2039;</button>` + nums.map(n=>n==='...'?`<span style="padding:0 4px;color:#bbb">&#x2026;</span>`:`<button class="pg${n===page?' on':''}" onclick="go(${n})">${n}</button>`).join('') + `<button class="pg" onclick="go(${page+1})" ${page===pages?'disabled':''}>&#x203A;</button>`;
 }
-function go(n){
-  const pages=Math.ceil(filtered.length/PAGE);
-  if(n<1||n>pages)return;
-  page=n; render();
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-const _urlQ = new URLSearchParams(location.search).get('q');
-if (_urlQ) document.getElementById('q').value = _urlQ;
+function go(n){ const pages=Math.ceil(filtered.length/PAGE); if(n<1||n>pages)return; page=n; render(); window.scrollTo({top:0,behavior:'smooth'}); }
 const _urlType = new URLSearchParams(location.search).get('type');
 if (_urlType && ['NHS','Private','All'].includes(_urlType)) selType = _urlType;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
-document.querySelectorAll('.type-tab').forEach(t =>
-  t.addEventListener('click', () => selectType(t.dataset.type)));
+document.querySelectorAll('.type-tab').forEach(t => t.addEventListener('click', () => selectType(t.dataset.type)));
 updateTypeCounts();
 buildFilters();
 buildSpecialtyChips();
 render();
-
-(function(){
-  const sheet = document.getElementById('boroughSheet');
-  const openBtn = document.getElementById('boroughMoreBtn');
-  if (!sheet || !openBtn) return;
-  function open(){ sheet.hidden = false; document.body.classList.add('sheet-open'); }
-  function close(){ sheet.hidden = true; document.body.classList.remove('sheet-open'); }
-  openBtn.addEventListener('click', open);
-  sheet.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
-  sheet.querySelectorAll('.borough-sheet-grid a').forEach(a => a.addEventListener('click', close));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) close(); });
-})();
-(function(){
-  if (!window.matchMedia('(max-width:600px)').matches) return;
-  document.querySelectorAll('.panel').forEach(p => {
-    if (p.querySelector('select')) return;
-    p.classList.add('collapsed');
-  });
-  document.querySelectorAll('.panel-hdr').forEach(h => {
-    if (!h.parentElement.querySelector('.opts')) return;
-    h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed'));
-  });
-})();
 </script>
 </body>
 </html>
