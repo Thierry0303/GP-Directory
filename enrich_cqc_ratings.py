@@ -1,4 +1,3 @@
-@'
 #!/usr/bin/env python3
 """Survey CQC London with rate-limit-safe parallelism + summary pre-filter."""
 import csv, json, os, re, ssl, sys, time
