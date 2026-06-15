@@ -114,6 +114,7 @@ def normalise_private(r):
         "s":    None,
         "c":    None,
         "pcn":  spec_str,
+        "specs": specialties,   # <-- array form, used by JS for filter chips
         "cqc":  cqc_rating,
         "cu":   r.get("cqc_url") or "",
         "ar":   borough,
