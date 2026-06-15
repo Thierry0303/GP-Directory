@@ -128,26 +128,62 @@ def is_private(rec):
 
     return True
 
+def to_merge_shape(rec, specs):
+    """Map cache record into the EXACT shape that merge_into_dataset.py
+    expects (snake_case fields it reads in normalise_private())."""
+    # Build a single-line address: line1, line2, town
+    parts = [p for p in [
+        rec.get("address1") or "",
+        rec.get("address2") or "",
+        rec.get("town") or "",
+    ] if p]
+    address = ", ".join(parts)
+
+    return {
+        # CQC location ID becomes the unique key (used as "o" in DATA)
+        "cqc_id":     rec.get("locationId", ""),
+        "ods_code":   rec.get("odsCode", ""),
+        "name":       rec.get("name", ""),
+        "address":    address,
+        "postcode":   rec.get("postcode", ""),
+        "phone":      rec.get("phone", ""),
+        "website":    rec.get("website", ""),
+        "specialties": specs,
+        "cqc_rating": rec.get("currentRating", ""),
+        "cqc_url":    rec.get("cqcUrl", ""),
+        # Keep some extras that merge_into_dataset.py ignores but useful
+        # for future-proofing borough/specialty pages:
+        "localAuthority": rec.get("localAuthority", ""),
+        "lat":            rec.get("lat"),
+        "lon":            rec.get("lon"),
+        "providerName":   rec.get("providerName", ""),
+    }
+
 def main():
+    if not CACHE.exists():
+        print(f"ERROR: {CACHE} not found.")
+        print("Run build_cqc_london_cache.py first to populate the cache.")
+        return
+
     with gzip.open(CACHE, "rt") as f:
         cache = json.load(f)
     print(f"Loaded {len(cache):,} cached locations")
 
-    private = []
+    output = []
     by_specialty = Counter()
     by_borough = Counter()
 
     for rec in cache.values():
         if not is_private(rec): continue
         specs = classify_specialties(rec)
-        enriched = dict(rec)
-        enriched["specialties"] = specs
-        private.append(enriched)
+        merge_rec = to_merge_shape(rec, specs)
+        output.append(merge_rec)
         for s in specs: by_specialty[s] += 1
         by_borough[rec.get("localAuthority", "(unknown)")] += 1
 
-    OUT.write_text(json.dumps(private, indent=2))
-    print(f"\nWrote {len(private):,} private clinics to {OUT.name}")
+    OUT.write_text(json.dumps(output, indent=2))
+    print(f"\nWrote {len(output):,} private clinics to {OUT.name}")
+    print(f"  (in merge_into_dataset.py-compatible shape)")
 
     print(f"\nBy specialty:")
     for s, n in by_specialty.most_common():
