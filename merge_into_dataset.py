@@ -1,29 +1,23 @@
 #!/usr/bin/env python3
 """
 merge_into_dataset.py
-Merges private_clinics.json into index.html DATA array.
+Merges private_clinics.json into index.html DATA array AND writes merged.json
+that downstream page builders read.
 
-Run from repo root after fetch_private_clinics.py has run:
-    python3 merge_into_dataset.py
-
-What it does:
-  1. Reads private_clinics.json (output of fetch_private_clinics.py)
-  2. Reads index.html
-  3. Finds the const DATA = [...] block
-  4. Parses it, removes any stale Private records
-  5. Appends normalised Private records matching the NHS field schema
-  6. Rewrites index.html with the merged DATA
-  7. Updates the "Private clinics N" count span in the type-tab button
+Pipeline order:
+    refresh_nhs_data.py     -> gps.json + NHS data into index.html DATA
+    gen_private_clinics.py  -> private_clinics.json (from CQC cache)
+    merge_into_dataset.py   -> updates index.html DATA + writes merged.json
+    build_*_pages.py        -> read merged.json
 """
-
 import json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 PRIVATE_JSON = ROOT / "private_clinics.json"
 INDEX_HTML   = ROOT / "index.html"
+MERGED_JSON  = ROOT / "merged.json"   # <-- downstream builders read this
 
-# Borough lookup from postcode district (same map used in build_provider_pages.py)
 BOROUGH_MAP = {
     'E1':'Tower Hamlets','E2':'Tower Hamlets','E3':'Tower Hamlets',
     'E4':'Waltham Forest','E5':'Hackney','E6':'Newham','E7':'Newham',
@@ -99,21 +93,17 @@ def borough_from_postcode(pc):
         district = district.group(1)
     if district in BOROUGH_MAP:
         return BOROUGH_MAP[district]
-    # try shorter prefix e.g. SW1A -> SW1
     m = re.match(r'([A-Z]+\d+)', district or '')
     if m:
         return BOROUGH_MAP.get(m.group(1), "")
     return ""
 
 def normalise_private(r):
-    """Convert private_clinics.json record to index.html DATA schema."""
     pc = (r.get("postcode") or "").strip()
-    # Build address same way NHS records do: street, postcode
     addr = r.get("address") or ""
     borough = borough_from_postcode(pc)
     specialties = r.get("specialties") or []
     spec_str = ", ".join(specialties)
-    # Map cqc_rating to the short form used by NHS records
     cqc_rating = r.get("cqc_rating") or ""
     return {
         "o":    r.get("cqc_id") or r.get("ods_code") or "",
@@ -121,41 +111,33 @@ def normalise_private(r):
         "a":    addr,
         "p":    pc,
         "ph":   r.get("phone") or "",
-        "s":    None,                    # no patient satisfaction score for private
-        "c":    None,                    # no contact ease score
-        "pcn":  spec_str,                # reuse pcn field for specialty display
+        "s":    None,
+        "c":    None,
+        "pcn":  spec_str,
         "cqc":  cqc_rating,
         "cu":   r.get("cqc_url") or "",
         "ar":   borough,
         "la":   None,
         "ln":   None,
-        "type": "Private",              # KEY field — this is what JS filters on
+        "type": "Private",
         "web":  r.get("website") or "",
     }
 
 def main():
-    # ── 1. Load private clinics ──────────────────────────────────────────
     if not PRIVATE_JSON.exists():
-        sys.exit(f"ERROR: {PRIVATE_JSON} not found. Run fetch_private_clinics.py first.")
-
+        sys.exit(f"ERROR: {PRIVATE_JSON} not found. Run gen_private_clinics.py first.")
     private_records = json.loads(PRIVATE_JSON.read_text())
     print(f"Loaded {len(private_records)} private records from {PRIVATE_JSON.name}")
 
-    # ── 2. Load index.html ───────────────────────────────────────────────
     if not INDEX_HTML.exists():
         sys.exit(f"ERROR: {INDEX_HTML} not found.")
-
     html = INDEX_HTML.read_text(encoding="utf-8")
 
-    # ── 3. Find the DATA array in the HTML ──────────────────────────────
     data_start_marker = "const DATA = "
     data_start = html.find(data_start_marker)
     if data_start == -1:
         sys.exit("ERROR: Could not find 'const DATA = ' in index.html")
-
-    # Find the matching closing ]; for the array
     arr_start = data_start + len(data_start_marker)
-    # Walk forward to find the balanced closing ];
     depth = 0
     i = arr_start
     while i < len(html):
@@ -164,65 +146,68 @@ def main():
         elif html[i] == ']':
             depth -= 1
             if depth == 0:
-                arr_end = i + 1  # include the ]
+                arr_end = i + 1
                 break
         i += 1
     else:
         sys.exit("ERROR: Could not find end of DATA array in index.html")
-
     existing_json = html[arr_start:arr_end]
 
-    # ── 4. Parse existing DATA, strip old Private records ───────────────
     try:
         existing = json.loads(existing_json)
     except json.JSONDecodeError as e:
         sys.exit(f"ERROR: Could not parse DATA array: {e}")
-
     nhs_records = [r for r in existing if r.get("type") != "Private"]
+    # Ensure every NHS record explicitly has type="NHS" — page builders
+    # may filter strictly and reject records with no type field.
+    for r in nhs_records:
+        if not r.get("type"):
+            r["type"] = "NHS"
     print(f"  NHS records: {len(nhs_records)}")
     print(f"  Old Private records removed: {len(existing) - len(nhs_records)}")
 
-    # ── 5. Normalise and merge private records ───────────────────────────
     new_private = [normalise_private(r) for r in private_records]
-    # Remove any with missing name or borough
+    dropped = len(new_private) - len([r for r in new_private if r["n"] and r["ar"]])
     new_private = [r for r in new_private if r["n"] and r["ar"]]
+    if dropped:
+        print(f"  Dropped {dropped} private records (empty name or non-London "
+              "postcode — fix_boroughs.py won't recover these)")
     print(f"  New Private records to merge: {len(new_private)}")
 
     merged = nhs_records + new_private
     print(f"  Total merged records: {len(merged)}")
 
-    # ── 6. Serialise merged array ────────────────────────────────────────
-    new_json = json.dumps(merged, separators=(',', ':'), ensure_ascii=False)
-
-    # ── 7. Rebuild HTML with new DATA ───────────────────────────────────
+    new_json_compact = json.dumps(merged, separators=(',', ':'), ensure_ascii=False)
     new_html = (
         html[:data_start]
         + data_start_marker
-        + new_json
+        + new_json_compact
         + html[arr_end:]
     )
-
-    # ── 8. Update the "Private clinics N" count in the button ───────────
-    # Pattern: id="cntPriv">0</span>  →  id="cntPriv">N</span>
     new_html = re.sub(
         r'(id="cntPriv">)\d+(</span>)',
         rf'\g<1>{len(new_private)}\g<2>',
         new_html
     )
-    # Also update "All N" count
     new_html = re.sub(
         r'(id="cntAll">)\d+(</span>)',
         rf'\g<1>{len(merged)}\g<2>',
         new_html
     )
-
-    # ── 9. Write back ────────────────────────────────────────────────────
     INDEX_HTML.write_text(new_html, encoding="utf-8")
-    print(f"\n✅ index.html updated:")
+
+    # NEW: write merged.json — downstream page builders read this
+    MERGED_JSON.write_text(
+        json.dumps(merged, indent=2, ensure_ascii=False),
+        encoding="utf-8"
+    )
+
+    print(f"\n✅ Wrote {INDEX_HTML.name} and {MERGED_JSON.name}")
     print(f"   NHS:     {len(nhs_records)}")
     print(f"   Private: {len(new_private)}")
     print(f"   Total:   {len(merged)}")
-    print(f"\nCommit index.html and push to deploy.")
+    print(f"\nDownstream builders (build_borough_pages.py, build_specialty_pages.py, "
+          "build_practice_pages.py) now read merged.json with both NHS and Private.")
 
 if __name__ == "__main__":
     main()
