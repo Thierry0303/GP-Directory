@@ -1,10 +1,24 @@
 #!/usr/bin/env python3
 """
-Generate nhs_specialties.json — NHS hospitals, walk-in centres, urgent care,
-and specialty clinics from cqc_london_cache.
+Generate nhs_specialties.json from cqc_london_cache.
 
-These are NHS services that aren't GP practices but ARE part of the local
-healthcare landscape.
+Classifies NHS-affiliated CQC locations (NOT GP practices — those go through
+refresh_nhs_data.py and gen_private_clinics.py) into useful categories:
+
+  - nhs-hospital           NHS general hospitals
+  - nhs-mental-health      NHS mental health hospitals + clinics
+  - nhs-urgent-care        Walk-in / urgent treatment centres
+  - nhs-diagnostic         NHS imaging / diagnostic centres
+  - nhs-community          District nursing, community health, school nursing
+  - nhs-ambulance          London Ambulance Service stations
+  - nhs-hospice            NHS-funded hospices
+
+Classification by:
+  - gacServiceTypes (short names: "Hospital", "Urgent care centres", etc)
+  - providerName / name containing NHS / Trust / Foundation
+  - Excludes anything Independent (handled by gen_private_clinics.py)
+
+Runs in seconds — no API calls.
 """
 import gzip, json, re
 from pathlib import Path
@@ -14,47 +28,139 @@ ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "cqc_london_cache.json.gz"
 OUT = ROOT / "nhs_specialties.json"
 
-# Categories
-NHS_HOSPITAL_RE = re.compile(r"\b(?:hospital|trust)\b", re.IGNORECASE)
-WALK_IN_RE = re.compile(r"\b(?:walk-?in|urgent\s+care|minor\s+injuries|out\s+of\s+hours)\b", re.IGNORECASE)
-MENTAL_HEALTH_RE = re.compile(r"\b(?:mental\s+health|psychiatr|psycholog|cmht|imhts|crisis\s+team)\b", re.IGNORECASE)
-COMMUNITY_RE = re.compile(r"\b(?:community\s+(?:health|medical|mental)|district\s+nurs)\b", re.IGNORECASE)
-DIAGNOSTIC_RE = re.compile(r"\b(?:diagnostic|imaging|radiology|x-ray|mri|ultrasound)\b", re.IGNORECASE)
+# ODS code pattern for NHS GP practices — we EXCLUDE these (they're in gps.json)
+NHS_GP_ODS_RE = re.compile(r"^[A-HJ-NPSW-Y]\d{5}$")
 
-def categorise(rec):
-    if rec.get("isIndependent"): return None  # excluded
-    nm = rec["name"].lower()
-    if NHS_HOSPITAL_RE.search(nm): return "nhs-hospital"
-    if WALK_IN_RE.search(nm): return "nhs-urgent-care"
-    if MENTAL_HEALTH_RE.search(nm): return "nhs-mental-health"
-    if DIAGNOSTIC_RE.search(nm): return "nhs-diagnostic"
-    if COMMUNITY_RE.search(nm): return "nhs-community"
-    # NHS GP practices excluded — gen_nhs_gps.py handles those
-    if any(s.startswith("Doctors consultation service") and "Independent" not in s
-           for s in rec.get("gacServiceTypes", [])):
-        return None
-    return None
+DOMAINY_RE = re.compile(r"^[a-z0-9][\w\-.]*\.[a-z]{2,}", re.IGNORECASE)
+
+def normalize_url(u):
+    if not u: return ""
+    u = u.strip()
+    low = u.lower()
+    if low.startswith(("mailto:", "tel:", "fax:")): return ""
+    if low.startswith(("http://", "https://")): return u
+    if DOMAINY_RE.match(u): return "https://" + u
+    return ""
+
+def is_nhs(rec):
+    """Decide if this location is NHS-affiliated."""
+    prov = (rec.get("providerName") or "").lower()
+    name = (rec.get("name") or "").lower()
+    nhs_markers = [
+        "nhs trust", "nhs foundation", "nhs england", "nhs london",
+        " nhs ", " trust ", " icb ", "ccg ",
+    ]
+    for blob in (prov, name):
+        for m in nhs_markers:
+            if m in f" {blob} ":
+                return True
+    return False
+
+def is_nhs_gp_practice(rec):
+    """Already covered by gps.json — exclude from this generator."""
+    gac = rec.get("gacServiceTypes", [])
+    if "Doctors/Gps" not in gac: return False
+    ods = (rec.get("odsCode") or "").upper()
+    return bool(NHS_GP_ODS_RE.match(ods))
+
+def classify(rec):
+    """Return category key or None to skip."""
+    if is_nhs_gp_practice(rec): return None  # covered elsewhere
+    if not is_nhs(rec): return None           # private — covered elsewhere
+
+    gac = rec.get("gacServiceTypes", [])
+    name_l = rec["name"].lower()
+
+    # Most specific first
+    if "Hospitals - Mental health/capacity" in gac \
+       or any(m in name_l for m in ["mental health", "psychiatr", "cmht", "crisis team"]):
+        return "nhs-mental-health"
+    if "Urgent care centres" in gac \
+       or any(m in name_l for m in ["urgent treatment", "walk-in centre", "walk in centre",
+                                     "minor injuries", "uti centre"]):
+        return "nhs-urgent-care"
+    if "Diagnosis/screening" in gac:
+        return "nhs-diagnostic"
+    if "Ambulances" in gac:
+        return "nhs-ambulance"
+    if "Hospice" in gac or "Home hospice care" in gac:
+        return "nhs-hospice"
+    if "Hospital" in gac:
+        return "nhs-hospital"
+    # Community services covers many sub-types
+    if any(g.startswith("Community services") for g in gac):
+        return "nhs-community"
+    return None  # don't list
+
+def slim(rec, category):
+    parts = [p for p in [rec.get("address1") or "", rec.get("address2") or "",
+                          rec.get("town") or ""] if p]
+    return {
+        "cqc_id":         rec.get("locationId", ""),
+        "name":           rec["name"],
+        "address":        ", ".join(parts),
+        "postcode":       rec.get("postcode", ""),
+        "phone":          rec.get("phone", ""),
+        "website":        normalize_url(rec.get("website", "")),
+        "category":       category,
+        "cqc_rating":     rec.get("currentRating", ""),
+        "cqc_url":        rec.get("cqcUrl", ""),
+        "localAuthority": rec.get("localAuthority", ""),
+        "providerName":   rec.get("providerName", ""),
+        "lat":            rec.get("lat"),
+        "lon":            rec.get("lon"),
+    }
+
+CATEGORIES = {
+    "nhs-hospital":      {"label": "NHS Hospitals",        "order": 1},
+    "nhs-mental-health": {"label": "NHS Mental Health",    "order": 2},
+    "nhs-urgent-care":   {"label": "NHS Urgent Care",      "order": 3},
+    "nhs-diagnostic":    {"label": "NHS Diagnostic Centres","order": 4},
+    "nhs-community":     {"label": "NHS Community Services","order": 5},
+    "nhs-ambulance":     {"label": "NHS Ambulance Service", "order": 6},
+    "nhs-hospice":       {"label": "NHS Hospices",         "order": 7},
+}
 
 def main():
+    if not CACHE.exists():
+        print(f"ERROR: {CACHE} not found.")
+        return
     with gzip.open(CACHE, "rt") as f:
         cache = json.load(f)
     print(f"Loaded {len(cache):,} cached locations")
 
-    items = []
+    output = []
     by_cat = Counter()
+    by_borough = Counter()
     for rec in cache.values():
-        cat = categorise(rec)
+        cat = classify(rec)
         if not cat: continue
-        enriched = dict(rec)
-        enriched["category"] = cat
-        items.append(enriched)
+        output.append(slim(rec, cat))
         by_cat[cat] += 1
+        by_borough[rec.get("localAuthority", "(unknown)")] += 1
 
-    OUT.write_text(json.dumps(items, indent=2))
-    print(f"\nWrote {len(items):,} NHS specialty services to {OUT.name}")
+    # Deduplicate by (name, postcode)
+    RATING_SCORE = {"Outstanding": 4, "Good": 3, "Requires improvement": 2,
+                    "Inadequate": 1, "": 0}
+    best = {}
+    for r in output:
+        k = (r["name"].lower().strip(), r["postcode"].strip().upper())
+        if not k[0] or not k[1]: continue
+        s = RATING_SCORE.get(r.get("cqc_rating", ""), 0)
+        if k not in best or s > best[k][0]:
+            best[k] = (s, r)
+    output = [v[1] for v in best.values()]
+
+    OUT.write_text(json.dumps(output, indent=2))
+    print(f"\nWrote {len(output):,} NHS specialty services to {OUT.name}")
+
     print(f"\nBy category:")
-    for c, n in by_cat.most_common():
-        print(f"  {c:25s} {n:4d}")
+    for c, info in sorted(CATEGORIES.items(), key=lambda x: x[1]["order"]):
+        print(f"  {info['label']:30s} {by_cat[c]:4d}")
+
+    print(f"\nBy borough (top 10):")
+    for b, n in by_borough.most_common(10):
+        print(f"  {b:30s} {n:4d}")
 
 if __name__ == "__main__":
     main()
