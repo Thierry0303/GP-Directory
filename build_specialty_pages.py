@@ -2,7 +2,7 @@
 """
 build_specialists_pages.py — UPDATED for new pipeline
 
-Builds /specialists/{specialty}/index.html pages from:
+Builds /private/{specialty}/index.html pages from:
   - private_clinics.json (from gen_private_clinics.py) — uses NEW specialty keys
   - gps.json (NHS GPs)
 
@@ -20,7 +20,7 @@ from collections import defaultdict
 ROOT          = Path(__file__).resolve().parent
 PRIVATE_JSON  = ROOT / "private_clinics.json"
 GPS_JSON      = ROOT / "gps.json"
-OUT_DIR       = ROOT / "specialists"
+OUT_DIR       = ROOT / "private"
 
 # Specialty metadata. Keys MUST match what gen_private_clinics.py outputs.
 SPECIALTY_META = {
@@ -59,7 +59,7 @@ NHS_INCLUDE_SPECS = {"private-gp"}
 
 NAV = """<nav class="site-nav">
   <a href="/">🏠 Home</a>
-  <a href="/specialists/" class="active">🔬 All Specialties</a>
+  <a href="/private/" class="active">🔬 All Specialties</a>
   <a href="/private/">💊 Private Clinics</a>
   <a href="/boroughs/">📍 Boroughs</a>
 </nav>"""
@@ -241,7 +241,7 @@ def build_specialty_page(spec, meta, private_records, nhs_records):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{label} in London — NHS &amp; Private | London GP Directory</title>
 <meta name="description" content="{desc}">
-<link rel="canonical" href="https://londongp.directory/specialists/{spec}/">
+<link rel="canonical" href="https://londongp.directory/private/{spec}/">
 {CSS}
 </head>
 <body>
@@ -256,7 +256,7 @@ def build_specialty_page(spec, meta, private_records, nhs_records):
   </div>
 </div>
 <div class="content">
-  <a class="back" href="/specialists/">← All specialties</a>
+  <a class="back" href="/private/">← All specialties</a>
   <div class="filter-bar">
     <span class="filter-label">Borough:</span>{borough_chips}
     <div class="type-switch">
@@ -286,7 +286,7 @@ def build_hub_page(specialty_counts):
         emoji  = meta.get('emoji','🩺')
         label  = meta.get('label', spec.replace('-', ' ').title())
         n_priv, n_nhs = specialty_counts[spec]
-        cards += f"""<a class="spec-card" href="/specialists/{spec}/">
+        cards += f"""<a class="spec-card" href="/private/{spec}/">
   <div class="spec-emoji">{emoji}</div>
   <h2>{label}</h2>
   <p class="spec-count">
@@ -302,7 +302,7 @@ def build_hub_page(specialty_counts):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>London Healthcare Specialists — NHS &amp; Private by Specialty</title>
 <meta name="description" content="Browse NHS and private healthcare specialists in London by specialty. Find consultants, clinics and hospitals across all 32 boroughs.">
-<link rel="canonical" href="https://londongp.directory/specialists/">
+<link rel="canonical" href="https://londongp.directory/private/">
 {CSS}
 </head>
 <body>
@@ -364,7 +364,7 @@ def main():
         keep = set(specialty_counts.keys()) | {""}  # "" = index.html itself
         for child in OUT_DIR.iterdir():
             if child.is_dir() and child.name not in keep:
-                print(f"  Removing stale folder: /specialists/{child.name}/")
+                print(f"  Removing stale folder: /private/{child.name}/")
                 shutil.rmtree(child)
 
     # Build hub
@@ -383,7 +383,7 @@ def main():
         spec_dir.mkdir(parents=True, exist_ok=True)
         page = build_specialty_page(spec, meta, priv_recs, nhs_recs)
         (spec_dir / "index.html").write_text(page, encoding="utf-8")
-        print(f"  ✓ /specialists/{spec}/: {n_priv} private, {len(nhs_recs)} NHS")
+        print(f"  ✓ /private/{spec}/: {n_priv} private, {len(nhs_recs)} NHS")
 
     print(f"\n✅ Built {len(specialty_counts)} specialty pages in {OUT_DIR}/")
 
