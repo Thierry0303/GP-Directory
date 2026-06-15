@@ -7,7 +7,6 @@ Slug convention: lowercase, "&" dropped, spaces → "-".
   "Barking & Dagenham"      -> "barking-dagenham"
   "Kensington & Chelsea"    -> "kensington-chelsea"
   "Richmond upon Thames"    -> "richmond-upon-thames"
-  "Kingston upon Thames"    -> "kingston-upon-thames"
 
 If build_borough_pages.py uses a different slug, change SLUG_STYLE below.
 """
@@ -51,8 +50,12 @@ def slug(name):
     return s
 
 def normalize(name):
-    """Match borough names from data even if they have minor variations."""
-    return name.lower().replace(" & ", " and ").replace("  ", " ").strip()
+    """Match borough names from data even if they have minor variations.
+    Kingston/Richmond often appear as short form in the data; we strip 
+    " upon thames" so canonical full name matches both forms."""
+    s = name.lower().replace(" & ", " and ").replace("  ", " ").strip()
+    s = s.replace(" upon thames", "")
+    return s
 
 def main():
     if not MERGED_JSON.exists():
