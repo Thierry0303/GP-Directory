@@ -1,6 +1,8 @@
-name: Full refresh (NHS + Private + Merge)
+name: Full refresh (NHS + Private + NHS Services)
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * *"   # daily 5am UTC
 permissions:
   contents: write
 jobs:
@@ -15,35 +17,30 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas numpy pyyaml
 
-      # ---- 1. NHS GP data ----
-      - name: NHS refresh (ODS FHIR)
+      # ---- 1. NHS GP data (canonical via FHIR) ----
+      - name: NHS refresh
         run: python refresh_nhs_data.py
       - name: Strip non-GP NHS records
         run: python clean_nhs_records.py
 
-      # ---- 2. CQC cache (incremental update) ----
-      - name: Update CQC London cache (incremental, fast)
+      # ---- 2. CQC cache (incremental — only fetches NEW location IDs) ----
+      - name: Update CQC London cache
         env:
-             CQC_KEY: ${{ secrets.CQC_KEY }}
+          CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python build_cqc_london_cache.py
 
-      - name: Generate private clinics from cache
-        run: python gen_private_clinics.py
-
       # ---- 3. Generate JSONs from cache ----
-      - name: Generate NHS GPs from cache
-        run: python gen_nhs_gps.py
       - name: Generate private clinics by specialty
         run: python gen_private_clinics.py
       - name: Generate NHS specialty services
         run: python gen_nhs_specialties.py
 
       # ---- 4. Merge + clean ----
-      - name: Merge NHS + private + rebuild index.html
+      - name: Merge into index.html + write merged.json
         run: python merge_into_dataset.py
       - name: Normalize website URLs
         run: python normalize_urls.py
-      - name: Backfill missing CQC ratings (uses cache too)
+      - name: Backfill missing CQC ratings
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python enrich_cqc_ratings.py
@@ -57,10 +54,12 @@ jobs:
         run: python build_borough_pages.py
       - name: Build practice pages
         run: python build_practice_pages.py
-      - name: Build specialty hub pages
+      - name: Build specialty hub pages (private)
         run: python build_specialty_pages.py
       - name: Build borough index page
         run: python build_borough_index.py
+      - name: Build NHS services pages
+        run: python build_nhs_services_pages.py
 
       # ---- 6. Commit ----
       - name: Commit & push
@@ -70,12 +69,12 @@ jobs:
           git add -A
           if git diff --cached --quiet; then
             echo "No changes."
-          else
-            git commit -m "Full refresh ($(date -u +%Y-%m-%d))"
-            for i in {1..3}; do
-              git pull --rebase origin main
-              if git push origin main; then exit 0; fi
-              sleep 5
-            done
-            exit 1
+            exit 0
           fi
+          git commit -m "Full refresh ($(date -u +%Y-%m-%d))"
+          for i in {1..3}; do
+            git pull --rebase origin main
+            if git push origin main; then exit 0; fi
+            sleep 5
+          done
+          exit 1
