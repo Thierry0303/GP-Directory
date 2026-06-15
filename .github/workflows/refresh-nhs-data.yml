@@ -43,7 +43,7 @@ jobs:
         run: python merge_into_dataset.py
 
       - name: Build specialist pages (NHS + Private by specialty)
-        run: python build_specialists_pages.py
+        run: python build_specialty_pages.py
 
       - name: Scan CQC for healthcare providers
         env:
