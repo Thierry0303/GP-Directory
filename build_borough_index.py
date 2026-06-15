@@ -5,7 +5,6 @@ with live NHS + private clinic counts. Each row links to /practice/{slug}/.
 
 Slug convention: lowercase, "&" dropped, spaces → "-".
   "Barking & Dagenham"      -> "barking-dagenham"
-  "Hammersmith & Fulham"      -> "hammersmith-fulham"
   "Kensington & Chelsea"    -> "kensington-chelsea"
   "Richmond upon Thames"    -> "richmond-upon-thames"
 
@@ -34,9 +33,19 @@ BOROUGHS = [
 ]
 
 def slug(name):
+    """Match the slugs that build_borough_pages.py actually produces:
+       'Kingston upon Thames'   -> 'kingston'
+       'Richmond upon Thames'   -> 'richmond'
+       'Barking & Dagenham'     -> 'barking-and-dagenham'
+       'Kensington & Chelsea'   -> 'kensington-and-chelsea'
+       'Hammersmith & Fulham'   -> 'hammersmith-and-fulham'
+       'City of London'         -> 'city-of-london'
+       'Tower Hamlets'          -> 'tower-hamlets'
+    """
     s = name.lower()
-    s = s.replace(" & ", " ")          # drop ampersand
-    s = re.sub(r"[^a-z0-9\s-]", "", s) # strip punctuation
+    s = s.replace(" upon thames", "")  # Kingston/Richmond drop the suffix
+    s = s.replace(" & ", " and ")       # & becomes "and"
+    s = re.sub(r"[^a-z0-9\s-]", "", s)  # strip remaining punctuation
     s = re.sub(r"\s+", "-", s).strip("-")
     return s
 
