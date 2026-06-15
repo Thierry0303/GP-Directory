@@ -37,14 +37,17 @@ This should run AFTER fetch_private_clinics.py + refresh_nhs_data.py,
 and BEFORE merge_into_dataset.py / build_borough_pages.py.
 """
 
-import json, sys, time, urllib.request, urllib.error, urllib.parse
+import json, re, sys, time, urllib.request, urllib.error, urllib.parse
 from collections import Counter
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 GPS_JSON      = ROOT / "gps.json"
 PRIVATE_JSON  = ROOT / "private_clinics.json"
 MERGED_JSON   = ROOT / "merged.json"
+TEMPLATE_HTML = ROOT / "index.template.html"
+INDEX_HTML    = ROOT / "index.html"
 
 POSTCODES_API = "https://api.postcodes.io/postcodes"
 BATCH_SIZE    = 100
@@ -57,8 +60,8 @@ NAME_NORMALISE = {
     "Kensington and Chelsea":     "Kensington & Chelsea",
     "Hammersmith and Fulham":     "Hammersmith & Fulham",
     "Barking and Dagenham":       "Barking & Dagenham",
-    "Richmond upon Thames":       "Richmond upon Thames",
-    "Kingston upon Thames":       "Kingston upon Thames",
+    "Richmond upon Thames":       "Richmond",
+    "Kingston upon Thames":       "Kingston",
     "City of London":             "City of London",
     "Westminster":                "Westminster",
 }
@@ -246,9 +249,43 @@ def main():
         if p.name == "merged.json":
             print_delta(p.name, before, after)
 
+    # Regenerate index.html from the template using the corrected merged.json
+    # so the homepage shows the right borough counts on each card.
+    if MERGED_JSON.exists() and TEMPLATE_HTML.exists():
+        regenerate_index_html()
+
     print("\nDone. Re-run the page builders (build_borough_pages.py, "
           "build_specialty_pages.py) to regenerate the site with correct "
           "borough assignments.")
+
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower().replace("&", "and")).strip("-")
+
+def regenerate_index_html():
+    """Re-inject merged.json into index.template.html so the homepage
+    reflects the corrected borough assignments."""
+    combined = json.loads(MERGED_JSON.read_text())
+    template = TEMPLATE_HTML.read_text()
+
+    boroughs = sorted({(r.get("ar") or "") for r in combined if r.get("ar")})
+    borough_nav = "\n      ".join(
+        f'<a href="/practice/{slugify(b)}/">{b}</a>'
+        for b in boroughs
+    )
+
+    try:
+        today = datetime.now().strftime("%-d %B %Y")
+    except ValueError:
+        today = datetime.now().strftime("%d %B %Y")
+
+    html = (template
+            .replace("__DATA_PLACEHOLDER__", json.dumps(combined))
+            .replace("__PRACTICE_COUNT__",   str(len(combined)))
+            .replace("__BOROUGH_NAV__",      borough_nav)
+            .replace("__UPDATED_DATE__",     today))
+    INDEX_HTML.write_text(html)
+    print(f"\nRegenerated index.html — {INDEX_HTML.stat().st_size//1024} KB "
+          f"({len(combined)} records, {len(boroughs)} boroughs)")
 
 if __name__ == "__main__":
     main()
