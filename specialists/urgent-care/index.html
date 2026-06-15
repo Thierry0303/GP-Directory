@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Urgent Care in London — NHS &amp; Private | London GP Directory</title>
+<meta name="description" content="Walk-in and urgent care centres in London for same-day treatment of non-emergency injuries and illnesses.">
+<link rel="canonical" href="https://londongp.directory/specialists/urgent-care/">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.site-nav{background:#003087;padding:10px 24px;display:flex;gap:20px;flex-wrap:wrap}
+.site-nav a{color:rgba(255,255,255,.8);font-size:.85rem}
+.site-nav a:hover,.site-nav a.active{color:#fff}
+.page-header{background:linear-gradient(135deg,#003087 0%,#0047bb 100%);color:#fff;padding:40px 24px}
+.page-header h1{font-size:2rem;font-weight:700;margin-bottom:8px}
+.page-header p{opacity:.8;max-width:700px;line-height:1.6}
+.stats{display:flex;gap:32px;margin-top:20px;flex-wrap:wrap}
+.stat strong{display:block;font-size:1.6rem;font-weight:300}
+.stat span{font-size:.75rem;opacity:.7;text-transform:uppercase;letter-spacing:.05em}
+.content{max-width:1100px;margin:0 auto;padding:24px}
+.filter-bar{background:#fff;border-radius:10px;padding:14px 16px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filter-label{font-size:.8rem;color:#888;margin-right:4px}
+.filter-chip{padding:4px 12px;border-radius:16px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-size:.78rem;font-weight:500;color:#555;transition:all .15s}
+.filter-chip.active{background:#003087;color:#fff;border-color:#003087}
+.type-switch{display:flex;gap:6px;margin-left:auto}
+.type-btn{padding:5px 14px;border-radius:20px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-size:.82rem;font-weight:500;color:#555;transition:all .15s}
+.type-btn.active{background:#003087;color:#fff;border-color:#003087}
+.section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
+.section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
+.card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.tag{padding:2px 8px;border-radius:8px;font-size:.68rem;font-weight:600}
+.tag.private{background:#f0fdf4;color:#166534}
+.tag.nhs{background:#e8f0fe;color:#1a56db}
+.tag.borough{background:#fff7ed;color:#9a3412}
+.tag.spec{background:#f5f3ff;color:#5521b5;font-weight:400}
+.cqc-badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.65rem;font-weight:700}
+.cqc-O{background:#d1fae5;color:#065f46}
+.cqc-G{background:#dcfce7;color:#166534}
+.cqc-RI{background:#fef3c7;color:#92400e}
+.cqc-I{background:#fee2e2;color:#991b1b}
+.cqc-{background:#f3f4f6;color:#6b7280}
+.card-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center}
+.btn{padding:4px 12px;border-radius:6px;font-size:.75rem;font-weight:600;text-decoration:none}
+.btn-cqc{background:#003087;color:#fff}
+.btn-web{background:#0072CE;color:#fff}
+.btn-nhs{background:#005EB8;color:#fff}
+.btn-phone{color:#003087;font-size:.78rem}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:20px}
+.spec-card{background:#fff;border-radius:12px;padding:20px;border:1px solid #e8e8e8;display:block;transition:box-shadow .15s;color:inherit}
+.spec-card:hover{box-shadow:0 4px 16px rgba(0,48,135,.12);border-color:#c7d7f4}
+.spec-emoji{font-size:2rem;margin-bottom:8px}
+.spec-card h2{font-size:1rem;font-weight:700;color:#003087;margin-bottom:4px}
+.spec-card p{font-size:.8rem;color:#666}
+.spec-count{font-size:.75rem;color:#888;margin-top:6px}
+.spec-count strong{color:#003087}
+.back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-top:1px solid #e8e8e8;margin-top:40px}
+.hidden{display:none!important}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.stats{gap:16px}}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a href="/">🏠 Home</a>
+  <a href="/specialists/" class="active">🔬 All Specialties</a>
+  <a href="/private/">💊 Private Clinics</a>
+  <a href="/boroughs/">📍 Boroughs</a>
+</nav>
+<div class="page-header">
+  <h1>🚑 Urgent Care in London</h1>
+  <p>Walk-in and urgent care centres in London for same-day treatment of non-emergency injuries and illnesses.</p>
+  <div class="stats">
+    <div class="stat"><strong id="countPriv">70 private</strong><span>Private providers</span></div>
+    
+    <div class="stat"><strong>28</strong><span>Boroughs</span></div>
+  </div>
+</div>
+<div class="content">
+  <a class="back" href="/specialists/">← All specialties</a>
+  <div class="filter-bar">
+    <span class="filter-label">Borough:</span><button class="filter-chip active" data-borough="">All London</button><button class="filter-chip" data-borough="Barking and Dagenham">Barking and Dagenham</button><button class="filter-chip" data-borough="Barnet">Barnet</button><button class="filter-chip" data-borough="Bexley">Bexley</button><button class="filter-chip" data-borough="Brent">Brent</button><button class="filter-chip" data-borough="Bromley">Bromley</button><button class="filter-chip" data-borough="Camden">Camden</button><button class="filter-chip" data-borough="Croydon">Croydon</button><button class="filter-chip" data-borough="Ealing">Ealing</button><button class="filter-chip" data-borough="Enfield">Enfield</button><button class="filter-chip" data-borough="Greenwich">Greenwich</button><button class="filter-chip" data-borough="Hackney">Hackney</button><button class="filter-chip" data-borough="Hammersmith and Fulham">Hammersmith and Fulham</button><button class="filter-chip" data-borough="Harrow">Harrow</button><button class="filter-chip" data-borough="Havering">Havering</button><button class="filter-chip" data-borough="Hertfordshire">Hertfordshire</button><button class="filter-chip" data-borough="Hillingdon">Hillingdon</button><button class="filter-chip" data-borough="Kensington and Chelsea">Kensington and Chelsea</button><button class="filter-chip" data-borough="Kingston upon Thames">Kingston upon Thames</button><button class="filter-chip" data-borough="Lambeth">Lambeth</button><button class="filter-chip" data-borough="Merton">Merton</button><button class="filter-chip" data-borough="Newham">Newham</button><button class="filter-chip" data-borough="Redbridge">Redbridge</button><button class="filter-chip" data-borough="Richmond upon Thames">Richmond upon Thames</button><button class="filter-chip" data-borough="Southwark">Southwark</button><button class="filter-chip" data-borough="Sutton">Sutton</button><button class="filter-chip" data-borough="Tower Hamlets">Tower Hamlets</button><button class="filter-chip" data-borough="Waltham Forest">Waltham Forest</button><button class="filter-chip" data-borough="Westminster">Westminster</button>
+    <div class="type-switch">
+      <button class="type-btn active" data-type="all">All</button>
+      <button class="type-btn" data-type="private">Private</button>
+      
+    </div>
+  </div>
+  <div class="section-title">💊 Private Urgent Care <span class="count">70</span></div>
+  <div class="cards"><div class="card" data-borough="Lambeth" data-type="private">
+  <div class="card-name">Abermed London</div>
+  <div class="card-addr">41 York Road, London, SE1 7NJ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Lambeth</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02032682400</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-466335944" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.abermed.com" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Bromley" data-type="private">
+  <div class="card-name">Beckenham Beacon Urgent Care Centre</div>
+  <div class="card-addr">379 Croydon Road, Beckenham, BR3 3QL</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bromley</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 01689863000</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1796471081" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Bromley" data-type="private">
+  <div class="card-name">Beckenham Beacons UTC</div>
+  <div class="card-addr">379-397 Croydon Road, Beckenham, BR3 3QL</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bromley</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 016189866037</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-23847916141" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Brent" data-type="private">
+  <div class="card-name">Brent GP Access Centre</div>
+  <div class="card-addr">116 Chaplin Road, Wembley, HA0 4UZ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Brent</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 07887786419</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3168508395" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Barking and Dagenham" data-type="private">
+  <div class="card-name">Broad Street NHS Centre</div>
+  <div class="card-addr">Morland Road, Dagenham, RM10 9HU</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Barking and Dagenham</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02085964400</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-125734464" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.careuk.com" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Tower Hamlets" data-type="private">
+  <div class="card-name">c/o Aberfeldy Practice</div>
+  <div class="card-addr">2A Ettrick Street, London, E14 0PU</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Tower Hamlets</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02075155622</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2069860213" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Hertfordshire" data-type="private">
+  <div class="card-name">Cheshunt Minor Injuries Unit</div>
+  <div class="card-addr">King Arthur Court, Cheshunt, Waltham Cross, EN8 8XN</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hertfordshire</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 01992780417</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2039077983" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Westminster" data-type="private">
+  <div class="card-name">Citydoc Medical Ltd West End</div>
+  <div class="card-addr">42 Wimpole Street, London, W1G 8YF</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Westminster</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02079356260</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-365591383" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.citydoc.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Merton" data-type="private">
+  <div class="card-name">Create Health Clinic - St George's House</div>
+  <div class="card-addr">3-6 Pepys Road, West Wimbledon, London, SW20 8NJ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Merton</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02089479600</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-138206451" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.createhealth.org" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">Croydon GP Collaborative Services</div>
+  <div class="card-addr">Croydon University Hospital, 530 London Road, Thornton Heath, CR7 7YE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02037275375</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3624534048" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cgpc.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Ealing" data-type="private">
+  <div class="card-name">Ealing Hospital Accident & Emergency Department</div>
+  <div class="card-addr">Uxbridge Road, Southall, UB1 3HU</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Ealing</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-269528153" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.careuk.com" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Ealing" data-type="private">
+  <div class="card-name">Ealing Urgent Care Centre</div>
+  <div class="card-addr">Ealing Hospital, Uxbridge Road, Southall, UB1 3HW</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Ealing</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02089675000</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2492265355" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Barnet" data-type="private">
+  <div class="card-name">Ellern Mede Ridgeway</div>
+  <div class="card-addr">Holcombe Hill, The Ridgeway, London, NW7 4HX</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Barnet</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02032097900</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-230086551" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ellernmede.org" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Westminster" data-type="private">
+  <div class="card-name">Emergency Doctors</div>
+  <div class="card-addr">The Penthouse, 89 Piccadilly, London, W1J 7NE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Westminster</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 07507773114</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27297207781" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.streamwave.ai" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Bexley" data-type="private">
+  <div class="card-name">Erith Urgent Care Centre</div>
+  <div class="card-addr">Park Crescent, Erith, DA8 3EE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bexley</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 01322356116</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24671083689" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Enfield" data-type="private">
+  <div class="card-name">Evergreen Primary Care Centre</div>
+  <div class="card-addr">1 Smythe Close, London, N9 0TW</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Enfield</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02088878354</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2222023161" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.enfieldhealth.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Barnet" data-type="private">
+  <div class="card-name">Finchley Memorial Hospital</div>
+  <div class="card-addr">Granville Road, North Finchley, London, N12 0JE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Barnet</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02083497500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5A910" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.barnet.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Westminster" data-type="private">
+  <div class="card-name">Freedomhealth Limited</div>
+  <div class="card-addr">60 Harley Street, London, W1G 7HA</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Westminster</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02076371600</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-117581868" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.freedomhealth.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Hammersmith and Fulham" data-type="private">
+  <div class="card-name">Fulham Centre for Health</div>
+  <div class="card-addr">Charing Cross Hospital, Fulham Palace Road, London, W6 8RF</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hammersmith and Fulham</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5LAX1" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">Gants Hill Medical Centre</div>
+  <div class="card-addr">63 Ethelbert Gardens, Ilford, IG2 6UP</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039813500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14423536594" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.healthbridgedirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">Glebelands Practice</div>
+  <div class="card-addr">2 Glebelands Avenue, London, E18 2AB</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039813500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14423536183" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.healthbridgedirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">GP Hub Central Croydon</div>
+  <div class="card-addr">Croydon University Hospital, 530 London Road, Thornton Heath, CR7 7YE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02082561046</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22956076977" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">GP Hub Central Croydon</div>
+  <div class="card-addr">East Croydon Medical Centre, 59 Addiscombe Road, Croydon, CR0 6SD</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084013238</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3991263240" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">GP Hub Parkway</div>
+  <div class="card-addr">Parkway Health Centre, New Addington, Croydon, CR0 0JA</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084013238</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3990875084" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Lambeth" data-type="private">
+  <div class="card-name">Gracefield Gardens Health and Social Care Centre</div>
+  <div class="card-addr">2-8 Gracefield Gardens, London, SW16 2ST</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Lambeth</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-706260097" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Greenwich" data-type="private">
+  <div class="card-name">Greenwich Health UTC</div>
+  <div class="card-addr">Queen Elizabeth Hospital, Stadium Road, London, SE18 4QH</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Greenwich</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02083195440</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-15525651304" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Hammersmith and Fulham" data-type="private">
+  <div class="card-name">Hammersmith Centre for Health</div>
+  <div class="card-addr">Hammersmith Hospital, 150 Du Cane Road, Hammersmith, London, W12 0HS</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hammersmith and Fulham</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5LAX2" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Hillingdon" data-type="private">
+  <div class="card-name">Harmoni - Hillingdon UCC</div>
+  <div class="card-addr">Hillingdon Hospital Foundation Trust, Pield Heath Road,, Uxbridge, UB8 3NN</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hillingdon</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02034021300</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-347527878" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Hackney" data-type="private">
+  <div class="card-name">Homerton Hospital</div>
+  <div class="card-addr">Homerton Row, London, E9 6SR</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hackney</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02085105555</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1102701781" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">Ilford Medical Centre</div>
+  <div class="card-addr">61 Cleveland Road, Ilford, IG1 1EE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039813500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14423831150" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.healthbridgedirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Southwark" data-type="private">
+  <div class="card-name">Improving Health Limited Extended Primary Care</div>
+  <div class="card-addr">72h, East Dulwich Grove, London, SE22 8EY</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Southwark</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02081947570</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8930113630" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ihlsouthwark.co.uk/" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">King George's EUCC</div>
+  <div class="card-addr">Barley Lane, Goodmayes, Ilford, IG3 8YB</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02089708426</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-351993193" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Lambeth" data-type="private">
+  <div class="card-name">Kings College Hospital UTC</div>
+  <div class="card-addr">Kings College Hospital, Denmark Hill, London, SE5 9RS</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Lambeth</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02038663330</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22160805872" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Westminster" data-type="private">
+  <div class="card-name">Maida Vale Urgent Care 365</div>
+  <div class="card-addr">2, 3 & 4 Elgin Avenue, London, W9 3QR</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Westminster</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02089699999</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14622158186" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Camden" data-type="private">
+  <div class="card-name">Marie Stopes International Central London Centre</div>
+  <div class="card-addr">108 Whitfield Street, London, W1T 5BE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Camden</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 08453008090</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130902757" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.mariestopes.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">Medisev Clinic</div>
+  <div class="card-addr">214 Lower Addiscombe Road, Croydon, CR0 7AB</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02080994173</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-463139295" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Lambeth" data-type="private">
+  <div class="card-name">MSI Reproductive Choices District Treatment Centre - South London</div>
+  <div class="card-addr">1a Raleigh Gardens, Brixton Hill, Brixton, London, SW2 1AB</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Lambeth</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 08453008090</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130902888" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.mariestopes.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Camden" data-type="private">
+  <div class="card-name">MSI Reproductive Choices Local Treatment Centre - Central London</div>
+  <div class="card-addr">108 Whitfield Street, London, W1T 5BE</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Camden</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 07584344807</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13924408313" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.msichoices.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Harrow" data-type="private">
+  <div class="card-name">NHS Harrow</div>
+  <div class="card-addr">59-65 Lowlands Road, Harrow, HA1 3AW</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Harrow</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084226644</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5K6X1" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.harrowpct.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Brent" data-type="private">
+  <div class="card-name">Northwick Park Hospital Urgent Care Centre</div>
+  <div class="card-addr">Northwick Park Hospital, Watford Road, Harrow, HA1 3UJ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Brent</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02088693445</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-726062768" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">Oak Tree Medical Centre</div>
+  <div class="card-addr">273-275 Green Lane, Ilford, IG3 9TJ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039813500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14423831189" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.healthbridgedirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">Palms Medical Centre</div>
+  <div class="card-addr">97-101 Netley Road, Ilford, IG2 7NW</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039813500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14423831090" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.healthbridgedirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">Parkway Minor Injuries Unit</div>
+  <div class="card-addr">Parkway, New Addington, Croydon, CR0 0JA</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1451485216" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Kingston upon Thames" data-type="private">
+  <div class="card-name">Patient Care 24 (Kingston Hospital A & E)</div>
+  <div class="card-addr">Galsworthy Road, Kingston Upon Thames, KT2 7QB</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Kingston upon Thames</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084013645</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-388348995" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.patientcare24.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Sutton" data-type="private">
+  <div class="card-name">Patient Care 24 (St Hellier Hospital)</div>
+  <div class="card-addr">Powell/Davis Unit, St Helier Hospital, Wrythe Lane, Carlshalton, SM5 1AA</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Sutton</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084013645</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-388348978" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.patientcare24.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Hackney" data-type="private">
+  <div class="card-name">Primary and Urgent Care Centre</div>
+  <div class="card-addr">Homerton University Hospital, Homerton Row, Hackney, London, E9 6SR</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hackney</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02076835063</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5C318" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.chpct.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">Purley GP Hub</div>
+  <div class="card-addr">Purley War Memorial Hospital, 856 Brighton Road, Purley, CR8 2YL</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084013238</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3701308019" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Greenwich" data-type="private">
+  <div class="card-name">Queen Elizabeth Hospital Urgent Care Centre</div>
+  <div class="card-addr">Queen Elizabeth Hospital, Stadium Road, London, SE18 4QH</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Greenwich</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02088366000</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2214107009" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Bexley" data-type="private">
+  <div class="card-name">Queen Mary's Hospital Urgent Care Centre</div>
+  <div class="card-addr">Frognal Avenue, Sidcup, DA14 6LT</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bexley</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039107204</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24671083527" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">Rainbow Centre</div>
+  <div class="card-addr">141 Brigstock Road, Thornton Heath, CR7 7JN</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02082519280</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5K9X4" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.croydon.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Hackney" data-type="private">
+  <div class="card-name">Refuah Medical Centre</div>
+  <div class="card-addr">91-93, Stamford Hill, London, N16 5TP</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hackney</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02088809999</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18573754235" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.refuahmedical.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Richmond upon Thames" data-type="private">
+  <div class="card-name">Richmond GP Out of Hours Service Primary Care Centre</div>
+  <div class="card-addr">Teddington Memorial Hospital Outpatients Department, Hampton Road, Teddington, TW11 0JL</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Richmond upon Thames</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 01344392674</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1744858407" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ebpcooh.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Camden" data-type="private">
+  <div class="card-name">Royal Free Hospital Urgent Care Centre</div>
+  <div class="card-addr">Royal Free Hospital, Pond Street, London, NW3 2QG</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Camden</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-409990132" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Redbridge" data-type="private">
+  <div class="card-name">Seven Kings Health Centre</div>
+  <div class="card-addr">1 Salisbury Road, Ilford, IG3 8BG</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Redbridge</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02039813500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14423830820" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.healthbridgedirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Havering" data-type="private">
+  <div class="card-name">Spring Farm</div>
+  <div class="card-addr">382 Upminster Road North, Rainham, RM13 9RZ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Havering</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 01708553120</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-4375792713" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Kensington and Chelsea" data-type="private">
+  <div class="card-name">St Charles Urgent Care Centre</div>
+  <div class="card-addr">St Charles Centre for Health & Wellbeing, Exmoor Street, London, W10 6DZ</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Kensington and Chelsea</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5LAX6" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Sutton" data-type="private">
+  <div class="card-name">Sutton Out-of-Hours GP Service by SELDOC-Urgent Care Centre - St Heliers Hospital</div>
+  <div class="card-addr">Urgent Care Centre, St Heliers Hospital, Wrythe Lane, Carshalton, SM5 1AA</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Sutton</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1068164654" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Harrow" data-type="private">
+  <div class="card-name">The Bridge Clinic</div>
+  <div class="card-addr">Medicals Direct Clinics Limited, 7-9 The Bridge, Wealdstone, Harrow, HA3 5AB</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Harrow</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084276509</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-117552453" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.doctorsdirect.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Hillingdon" data-type="private">
+  <div class="card-name">The Confederation, Hillingdon CIC</div>
+  <div class="card-addr">Link 1A Civic Centre, High Street, Uxbridge, UB8 1UW</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hillingdon</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 01895547386</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13081050435" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.theconfederationhillingdon.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Hillingdon" data-type="private">
+  <div class="card-name">The Confederation, Hillingdon CIC</div>
+  <div class="card-addr">Pembroke Centre, 90 Pembroke Road, Ruislip, HA4 8NX</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Hillingdon</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27055136165" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Harrow" data-type="private">
+  <div class="card-name">The Ridgeway Surgery</div>
+  <div class="card-addr">275 Alexandra Avenue, Harrow, HA2 9DX</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Harrow</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02084272470</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-547298082" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ridgeway-surgery.co.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Havering" data-type="private">
+  <div class="card-name">UCC Queens Hospital</div>
+  <div class="card-addr">Rom Valley Way, Romford, RM7 0AG</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Havering</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3029243290" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Camden" data-type="private">
+  <div class="card-name">University College Hospital Urgent Care Centre</div>
+  <div class="card-addr">235 Euston Road, London, NW1 2BU</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Camden</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-409990329" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Newham" data-type="private">
+  <div class="card-name">Urgent Care Centre</div>
+  <div class="card-addr">Newham University NHS Trust, Glen Road, London, E13 8SA</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Newham</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02070596751</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5C502" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.newham.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Bexley" data-type="private">
+  <div class="card-name">Urgent Care Centre</div>
+  <div class="card-addr">Queen Mary's Hospital, Frognal Avenue, Sidcup, DA14 6LT</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bexley</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/RPGFC" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.oxleas.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Bexley" data-type="private">
+  <div class="card-name">Urgent Care Centre - Queen Mary's Hospital</div>
+  <div class="card-addr">Queen Mary's Hospital, Frognal Avenue, Sidcup, DA14 6LT</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bexley</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-355263579" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ic24.org.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Bexley" data-type="private">
+  <div class="card-name">Urgent Care Centre Queen Mary Hospital</div>
+  <div class="card-addr">Frognal Avenue, Sidcup, DA14 6LT</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Bexley</span><span class="tag spec">urgent-care</span><span class="cqc-badge cqc-G">Good</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02083022678</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1490932808" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Croydon" data-type="private">
+  <div class="card-name">Valley Park Surgery</div>
+  <div class="card-addr">Franklin Way, Croydon, CR0 4YD</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Croydon</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02082519470</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/5K914" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.croydon.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div>
+<div class="card" data-borough="Waltham Forest" data-type="private">
+  <div class="card-name">Whipps Cross EUCC</div>
+  <div class="card-addr">Whipps Cross Road, Leytonstone, London, E11 1NR</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Waltham Forest</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 02085399164</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-351993176" target="_blank" rel="noopener">CQC</a></div>
+</div>
+<div class="card" data-borough="Waltham Forest" data-type="private">
+  <div class="card-name">Whipps Cross Urgent Care Centre</div>
+  <div class="card-addr">Whipps Cross Hospital, Whipps Cross Road, London, E11 1NR</div>
+  <div class="card-tags">
+    <span class="tag private">Private</span>
+    <span class="tag borough">Waltham Forest</span><span class="tag spec">urgent-care</span>
+  </div>
+  <div class="card-actions"><span class="btn-phone">📞 03001230808</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/R1LZ4" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.eput.nhs.uk" target="_blank" rel="noopener">Website</a></div>
+</div></div>
+  
+</div>
+<footer>
+  Data: CQC · NHS ODS · GP Patient Survey · London GP Directory<br>
+  <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/methodology.html">Methodology</a>
+</footer>
+
+<script>
+(function(){
+  var cards = Array.from(document.querySelectorAll('.card'));
+  var activeBorough = '';
+  var activeType = 'all';
+  function applyFilters(){
+    cards.forEach(function(c){
+      var bOk = !activeBorough || c.dataset.borough === activeBorough;
+      var tOk = activeType === 'all' || c.dataset.type === activeType;
+      c.classList.toggle('hidden', !(bOk && tOk));
+    });
+    var vis = cards.filter(c => !c.classList.contains('hidden'));
+    var privVis = vis.filter(c => c.dataset.type === 'private').length;
+    var nhsVis  = vis.filter(c => c.dataset.type === 'nhs').length;
+    var p = document.getElementById('countPriv'); if (p) p.textContent = privVis + ' private';
+    var n = document.getElementById('countNhs'); if (n) n.textContent  = nhsVis + ' NHS';
+  }
+  document.querySelectorAll('.filter-chip').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.filter-chip').forEach(b=>b.classList.remove('active'));
+      activeBorough = btn.dataset.borough;
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+  document.querySelectorAll('.type-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.type-btn').forEach(b=>b.classList.remove('active'));
+      activeType = btn.dataset.type;
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

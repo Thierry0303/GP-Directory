@@ -113,18 +113,18 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "1-1002333348",
+    "cqc_id": "1-288474903",
     "ods_code": "",
     "name": "10 Harley Street",
     "address": "10 Harley Street, London",
     "postcode": "W1G 9PF",
-    "phone": "02074678301",
-    "website": "https://www.doctor4u.co.uk",
+    "phone": "07956925272",
+    "website": "https://www.homehealthservice.co.uk/harley-street-clinic/",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1002333348",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-288474903",
     "localAuthority": "Westminster",
     "lat": 51.517391,
     "lon": -0.146009,
@@ -284,18 +284,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-10121947715",
+    "cqc_id": "1-10748240392",
     "ods_code": "",
     "name": "The Hale Clinic",
-    "address": "4, Harley Street, London",
+    "address": "4 Harley Street, London",
     "postcode": "W1G 9PB",
     "phone": "02076310156",
-    "website": "https://www.haleclinic.com/contact",
+    "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10121947715",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10748240392",
     "localAuthority": "Westminster",
     "lat": 51.517183,
     "lon": -0.145931,
@@ -1612,25 +1612,6 @@
     "ar": "Harrow"
   },
   {
-    "cqc_id": "1-10748240392",
-    "ods_code": "",
-    "name": "The Hale Clinic",
-    "address": "4 Harley Street, London",
-    "postcode": "W1G 9PB",
-    "phone": "02076310156",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-10748240392",
-    "localAuthority": "Westminster",
-    "lat": 51.517183,
-    "lon": -0.145931,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-10754733110",
     "ods_code": "",
     "name": "Rejuv Lab London",
@@ -2485,18 +2466,18 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "1-110166146",
+    "cqc_id": "1-12924818809",
     "ods_code": "",
     "name": "Parkside Hospital",
-    "address": "53 Parkside, Wimbledon, London",
+    "address": "53 Parkside, London",
     "postcode": "SW19 5NX",
-    "phone": "",
+    "phone": "02089718000",
     "website": "https://www.parkside-hospital.co.uk",
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-110166146",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12924818809",
     "localAuthority": "Merton",
     "lat": 51.4357258,
     "lon": -0.2232272,
@@ -2504,18 +2485,18 @@
     "ar": "Merton"
   },
   {
-    "cqc_id": "1-110166164",
+    "cqc_id": "1-12924818962",
     "ods_code": "",
     "name": "Highgate Hospital",
-    "address": "17-19 View Road, London",
+    "address": "17 View Road, London",
     "postcode": "N6 4DJ",
-    "phone": "",
+    "phone": "02084314182",
     "website": "https://www.highgatehospital.co.uk",
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-110166164",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-12924818962",
     "localAuthority": "Haringey",
     "lat": 51.5765664,
     "lon": -0.1569693,
@@ -2542,18 +2523,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-110176549",
+    "cqc_id": "1-6223072914",
     "ods_code": "",
     "name": "The Basil Street Practice",
     "address": "3 Basil Street, London",
     "postcode": "SW3 1AU",
     "phone": "02072356642",
-    "website": "https://www.3bsp.org",
+    "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-110176549",
+    "cqc_rating": "Outstanding",
+    "cqc_url": "https://www.cqc.org.uk/location/1-6223072914",
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.5006895,
     "lon": -0.1605804,
@@ -3794,7 +3775,7 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-114219406",
+    "cqc_id": "1-207542102",
     "ods_code": "",
     "name": "DHI International UK Limited",
     "address": "43 New Cavendish Street, London",
@@ -3802,10 +3783,10 @@
     "phone": "02074869789",
     "website": "https://www.dhiglobal.com",
     "specialties": [
-      "private-gp"
+      "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-114219406",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-207542102",
     "localAuthority": "Westminster",
     "lat": 51.5191087,
     "lon": -0.1492868,
@@ -5126,18 +5107,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-116935987",
+    "cqc_id": "1-4533091694",
     "ods_code": "",
     "name": "Dr Kelly & Associates - London Wall",
     "address": "65 London Wall, London",
     "postcode": "EC2M 5TU",
     "phone": "02076382999",
-    "website": "https://www.drkellys.co.uk",
+    "website": "https://www.doctorcall.co.uk",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-116935987",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-4533091694",
     "localAuthority": "City of London",
     "lat": 51.516821,
     "lon": -0.086448,
@@ -6474,18 +6455,18 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "1-119752056",
+    "cqc_id": "1-502272908",
     "ods_code": "",
     "name": "Rhodes Farm Clinic",
     "address": "The Ridgeway, London",
     "postcode": "NW7 1RH",
     "phone": "02089060885",
-    "website": "https://www.rhodesfarm.com",
+    "website": "https://www.partnershipsincare.co.uk",
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-119752056",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-502272908",
     "localAuthority": "Barnet",
     "lat": 51.617692,
     "lon": -0.222444,
@@ -6699,25 +6680,6 @@
     "lon": -0.147193,
     "providerName": "",
     "ar": "Barnet"
-  },
-  {
-    "cqc_id": "1-12026411042",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "07940306316",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-12026411042",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-12026693871",
@@ -7346,25 +7308,6 @@
     "ar": "Harrow"
   },
   {
-    "cqc_id": "1-12200657070",
-    "ods_code": "",
-    "name": "Charlton House Medical Centre",
-    "address": "581 High Road, London",
-    "postcode": "N17 6SB",
-    "phone": "02088082837",
-    "website": "https://www.charltonhousemedicalcentre.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-12200657070",
-    "localAuthority": "Haringey",
-    "lat": 51.5961844,
-    "lon": -0.0689675,
-    "providerName": "",
-    "ar": "Haringey"
-  },
-  {
     "cqc_id": "1-12215668749",
     "ods_code": "",
     "name": "Tempus Belgravia",
@@ -7552,25 +7495,6 @@
     "lat": 51.518024,
     "lon": -0.146214,
     "providerName": ""
-  },
-  {
-    "cqc_id": "1-122710388",
-    "ods_code": "",
-    "name": "Optical Express - London (Shaftesbury Avenue) Clinic",
-    "address": "219-229 Shaftesbury Avenue, London",
-    "postcode": "WC2H 8EL",
-    "phone": "02073793979",
-    "website": "https://www.opticalexpress.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-122710388",
-    "localAuthority": "Camden",
-    "lat": 51.516124,
-    "lon": -0.1266783,
-    "providerName": "",
-    "ar": "Camden"
   },
   {
     "cqc_id": "1-122710420",
@@ -8028,18 +7952,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-124510909",
+    "cqc_id": "1-246731494",
     "ods_code": "",
     "name": "Shooting Star House",
     "address": "The Avenue, Hampton",
     "postcode": "TW12 3RA",
     "phone": "02087832000",
-    "website": "https://www.shootingstar.org.uk",
+    "website": "https://www.chasecare.org.uk",
     "specialties": [
       "hospice"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-124510909",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-246731494",
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4262023,
     "lon": -0.376006,
@@ -8730,18 +8654,18 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "1-125734434",
+    "cqc_id": "1-3915396502",
     "ods_code": "",
     "name": "The Junction Health Centre",
-    "address": "Unit 19, The Arches, Grant Road, London",
+    "address": "Arches 5-8, Clapham Junction Station, Grant Road, London",
     "postcode": "SW11 2NU",
-    "phone": "03332001718",
-    "website": "https://www.junctionhealthcentre.co.uk",
+    "phone": "02037334079",
+    "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-125734434",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-3915396502",
     "localAuthority": "Wandsworth",
     "lat": 51.465228,
     "lon": -0.170756,
@@ -11027,44 +10951,6 @@
     "ar": "Camden"
   },
   {
-    "cqc_id": "1-12924818809",
-    "ods_code": "",
-    "name": "Parkside Hospital",
-    "address": "53 Parkside, London",
-    "postcode": "SW19 5NX",
-    "phone": "02089718000",
-    "website": "https://www.parkside-hospital.co.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-12924818809",
-    "localAuthority": "Merton",
-    "lat": 51.4357258,
-    "lon": -0.2232272,
-    "providerName": "",
-    "ar": "Merton"
-  },
-  {
-    "cqc_id": "1-12924818962",
-    "ods_code": "",
-    "name": "Highgate Hospital",
-    "address": "17 View Road, London",
-    "postcode": "N6 4DJ",
-    "phone": "02084314182",
-    "website": "https://www.highgatehospital.co.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-12924818962",
-    "localAuthority": "Haringey",
-    "lat": 51.5765664,
-    "lon": -0.1569693,
-    "providerName": "",
-    "ar": "Haringey"
-  },
-  {
     "cqc_id": "1-12924819034",
     "ods_code": "",
     "name": "Parkside Hospital at Putney",
@@ -13282,25 +13168,6 @@
     "ar": "Wandsworth"
   },
   {
-    "cqc_id": "1-136128662",
-    "ods_code": "",
-    "name": "Keats House",
-    "address": "Keats House, 24-26 St Thomas Street, London",
-    "postcode": "SE1 9RS",
-    "phone": "07534218877",
-    "website": "https://www.londoncbtcentre.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-136128662",
-    "localAuthority": "Southwark",
-    "lat": 51.504656,
-    "lon": -0.088617,
-    "providerName": "",
-    "ar": "Southwark"
-  },
-  {
     "cqc_id": "1-13643199465",
     "ods_code": "",
     "name": "Medicetics",
@@ -13775,21 +13642,21 @@
     "ar": "Newham"
   },
   {
-    "cqc_id": "1-1380283340",
+    "cqc_id": "1-4987162946",
     "ods_code": "",
     "name": "Ziering London Clinic",
-    "address": "Hammersmith Hospital, The Triangle, Hammersmith rove, London",
+    "address": "The Triangle, Hammersmith Grove, London",
     "postcode": "W6 0LG",
-    "phone": "01412483959",
-    "website": "https://www.onehealthmedicalgroup.co.uk",
+    "phone": "02085638111",
+    "website": "https://www.onehealthmedicalgroup.co.uk/",
     "specialties": [
-      "hospital"
+      "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1380283340",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/1-4987162946",
     "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.494068,
-    "lon": -0.226433,
+    "lat": 51.4940686,
+    "lon": -0.2264093,
     "providerName": "",
     "ar": "Hammersmith & Fulham"
   },
@@ -13830,25 +13697,6 @@
     "lon": -0.148828,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-13811740246",
-    "ods_code": "",
-    "name": "Westland Medical Centre",
-    "address": "Westland Avenue, Hornchurch",
-    "postcode": "RM11 3SD",
-    "phone": "07802442106",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-13811740246",
-    "localAuthority": "Havering",
-    "lat": 51.563523,
-    "lon": 0.223137,
-    "providerName": "",
-    "ar": "Havering"
   },
   {
     "cqc_id": "1-13812532810",
@@ -14555,44 +14403,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-1400152028",
-    "ods_code": "",
-    "name": "Westland Medical Centre",
-    "address": "Westland Avenue, Hornchurch",
-    "postcode": "RM11 3SD",
-    "phone": "01708205149",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1400152028",
-    "localAuthority": "Havering",
-    "lat": 51.563523,
-    "lon": 0.223137,
-    "providerName": "",
-    "ar": "Havering"
-  },
-  {
-    "cqc_id": "1-139938480",
-    "ods_code": "",
-    "name": "St Anthony's Hospital",
-    "address": "London Road, North Cheam",
-    "postcode": "SM3 9DW",
-    "phone": "02083376691",
-    "website": "https://www.stanthonys.org.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-139938480",
-    "localAuthority": "Sutton",
-    "lat": 51.37992,
-    "lon": -0.220794,
-    "providerName": "",
-    "ar": "Sutton"
-  },
-  {
     "cqc_id": "1-14030768121",
     "ods_code": "",
     "name": "Living Mind",
@@ -14724,25 +14534,6 @@
     "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-141593684",
-    "ods_code": "",
-    "name": "Avesbury House",
-    "address": "85 Tanners End Lane, Edmonton, London",
-    "postcode": "N18 1PQ",
-    "phone": "02088037316",
-    "website": "https://www.careuk.com",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-141593684",
-    "localAuthority": "Enfield",
-    "lat": 51.615297,
-    "lon": -0.075924,
-    "providerName": "",
-    "ar": "Enfield"
   },
   {
     "cqc_id": "1-141541748",
@@ -15219,18 +15010,18 @@
     "ar": "Camden"
   },
   {
-    "cqc_id": "1-142795405",
+    "cqc_id": "1-365643904",
     "ods_code": "",
-    "name": "CityDoc Moorgate",
+    "name": "Citydoc Moorgate",
     "address": "16 City Road, London",
     "postcode": "EC1Y 2AA",
     "phone": "02072568668",
     "website": "https://www.citydoc.org.uk",
     "specialties": [
-      "diagnostic"
+      "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-142795405",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-365643904",
     "localAuthority": "Islington",
     "lat": 51.522091,
     "lon": -0.087426,
@@ -15485,18 +15276,18 @@
     "ar": "Hackney"
   },
   {
-    "cqc_id": "1-144135399",
-    "ods_code": "NV202",
+    "cqc_id": "1-5537570253",
+    "ods_code": "",
     "name": "The Huntercombe Hospital - Roehampton",
     "address": "Holybourne Avenue, London",
     "postcode": "SW15 4JL",
-    "phone": "02087806155",
-    "website": "https://www.fshc.co.uk",
+    "phone": "",
+    "website": "https://www.huntercombe.com",
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "Inadequate",
-    "cqc_url": "https://www.cqc.org.uk/location/1-144135399",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-5537570253",
     "localAuthority": "Wandsworth",
     "lat": 51.4477883,
     "lon": -0.2422774,
@@ -15561,18 +15352,18 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-144206360",
+    "cqc_id": "1-2344369311",
     "ods_code": "",
     "name": "The Lanes",
-    "address": "The Lane Project, 3-5 Foxley Lane, Purley",
+    "address": "3-5 Foxley Lane, Purley",
     "postcode": "CR8 3EF",
     "phone": "02087634243",
     "website": "",
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-144206360",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/1-2344369311",
     "localAuthority": "Croydon",
     "lat": 51.339417,
     "lon": -0.118284,
@@ -18503,18 +18294,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-155996862",
+    "cqc_id": "1-2039077983",
     "ods_code": "",
     "name": "Cheshunt Minor Injuries Unit",
     "address": "King Arthur Court, Cheshunt, Waltham Cross",
     "postcode": "EN8 8XN",
     "phone": "01992780417",
-    "website": "https://www.cheshunturgentcarecentre.nhs.uk",
+    "website": "",
     "specialties": [
       "urgent-care"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-155996862",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-2039077983",
     "localAuthority": "Hertfordshire",
     "lat": 51.6992295,
     "lon": -0.0331949,
@@ -18956,25 +18747,6 @@
     "ar": "Greenwich"
   },
   {
-    "cqc_id": "1-15840935783",
-    "ods_code": "",
-    "name": "The London Clinic",
-    "address": "20 Devonshire Place, London",
-    "postcode": "W1G 6BW",
-    "phone": "02079354444",
-    "website": "https://thelondonclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15840935783",
-    "localAuthority": "Westminster",
-    "lat": 51.5230236,
-    "lon": -0.1500506,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-15841712831",
     "ods_code": "",
     "name": "Main office",
@@ -19032,21 +18804,21 @@
     "ar": "Camden"
   },
   {
-    "cqc_id": "1-1590965928",
+    "cqc_id": "1-8291478107",
     "ods_code": "",
-    "name": "Dr Morton's - The Medical Helpline",
-    "address": "201 Chapelier House, Eastfields Avenue, London",
+    "name": "Dr Morton's - the medical helpline",
+    "address": "201, Chapelier House, Eastfields Avenue, London",
     "postcode": "SW18 1LR",
     "phone": "02071016386",
-    "website": "https://www.drmortons.co.uk",
+    "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1590965928",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-8291478107",
     "localAuthority": "Wandsworth",
-    "lat": 51.462495,
-    "lon": -0.198131,
+    "lat": 51.4624957,
+    "lon": -0.1981068,
     "providerName": "",
     "ar": "Wandsworth"
   },
@@ -19146,21 +18918,21 @@
     "ar": "Tower Hamlets"
   },
   {
-    "cqc_id": "1-15929100323",
+    "cqc_id": "1-2897199278",
     "ods_code": "",
     "name": "Hanover House",
-    "address": "Hanover House, 76 Coombe Road, Kingston Upon Thames",
+    "address": "78 Coombe Road, Kingston Upon Thames",
     "postcode": "KT2 7AZ",
-    "phone": "",
-    "website": "https://www.seldoc.co.uk",
+    "phone": "01912297545",
+    "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-15929100323",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-2897199278",
     "localAuthority": "Kingston upon Thames",
-    "lat": 51.4125157,
-    "lon": -0.2833746,
+    "lat": 51.412368,
+    "lon": -0.282996,
     "providerName": "",
     "ar": "Kingston upon Thames"
   },
@@ -19184,18 +18956,18 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-1595271608",
+    "cqc_id": "1-2311760426",
     "ods_code": "",
     "name": "Mildmay Mission Hospital",
     "address": "19 Tabernacle Gardens, London",
     "postcode": "E2 7DZ",
     "phone": "",
-    "website": "",
+    "website": "https://www.mildmay.org",
     "specialties": [
-      "diagnostic"
+      "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1595271608",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-2311760426",
     "localAuthority": "Tower Hamlets",
     "lat": 51.5277158,
     "lon": -0.0755989,
@@ -21529,25 +21301,6 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-17709972033",
-    "ods_code": "",
-    "name": "Clinical Diagnostic Services",
-    "address": "104 Harley Street, London",
-    "postcode": "W1G 7JD",
-    "phone": "02087323070",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-17709972033",
-    "localAuthority": "Westminster",
-    "lat": 51.521314,
-    "lon": -0.14781,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-17711159175",
     "ods_code": "",
     "name": "Aestha Clinic",
@@ -21719,21 +21472,21 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-1783451930",
+    "cqc_id": "RF4DG",
     "ods_code": "",
     "name": "King George Hospital",
-    "address": "Barley Lane, Ilford",
+    "address": "Barley Lane, Goodmayes, Ilford",
     "postcode": "IG3 8YB",
-    "phone": "02089265405",
-    "website": "",
+    "phone": "02089708051",
+    "website": "https://www.bhrhospitals.nhs.uk",
     "specialties": [
-      "private-gp"
+      "diagnostic"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1783451930",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RF4DG",
     "localAuthority": "Redbridge",
-    "lat": 51.5805458,
-    "lon": 0.1121259,
+    "lat": 51.580545,
+    "lon": 0.112107,
     "providerName": "",
     "ar": "Redbridge"
   },
@@ -22952,18 +22705,18 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "1-184634049",
+    "cqc_id": "1-226279926",
     "ods_code": "",
-    "name": "The Cyberknife Centre London",
+    "name": "The CyberKnife Centre London",
     "address": "81 Harley Street, London",
     "postcode": "W1G 8PP",
     "phone": "02070348588",
-    "website": "https://www.hcainternational.co.uk",
+    "website": "https://www.cyberknifecentrelondon.co.uk",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-184634049",
+    "cqc_rating": "Outstanding",
+    "cqc_url": "https://www.cqc.org.uk/location/1-226279926",
     "localAuthority": "Westminster",
     "lat": 51.5200008,
     "lon": -0.1476939,
@@ -23234,25 +22987,6 @@
     "lon": -0.1589246,
     "providerName": "",
     "ar": "Kensington & Chelsea"
-  },
-  {
-    "cqc_id": "1-18697798165",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "02074678300",
-    "website": "https://www.tenharleystreet.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-18697798165",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-18728729233",
@@ -23859,25 +23593,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-18881066795",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-18881066795",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-18885480506",
     "ods_code": "",
     "name": "Modality Medical Spa Caterham",
@@ -23934,63 +23649,6 @@
     "ar": "Havering"
   },
   {
-    "cqc_id": "1-1890546867",
-    "ods_code": "",
-    "name": "Highgate Hospital",
-    "address": "17-19 View Road, London",
-    "postcode": "N6 4DJ",
-    "phone": "02083414182",
-    "website": "https://www.highgatehospital.co.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1890546867",
-    "localAuthority": "Haringey",
-    "lat": 51.5765664,
-    "lon": -0.1569693,
-    "providerName": "",
-    "ar": "Haringey"
-  },
-  {
-    "cqc_id": "1-1890547130",
-    "ods_code": "",
-    "name": "Parkside Hospital at Putney",
-    "address": "266-276 Upper Richmond Road, Putney, London",
-    "postcode": "SW15 6TQ",
-    "phone": "02089718026",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1890547130",
-    "localAuthority": "Wandsworth",
-    "lat": 51.461679,
-    "lon": -0.219992,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
-    "cqc_id": "1-1890547068",
-    "ods_code": "",
-    "name": "Parkside Hospital",
-    "address": "53 Parkside, Wimbledon, London",
-    "postcode": "SW19 5NX",
-    "phone": "02089718000",
-    "website": "https://www.parkside-hospital.co.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1890547068",
-    "localAuthority": "Merton",
-    "lat": 51.4357258,
-    "lon": -0.2232272,
-    "providerName": "",
-    "ar": "Merton"
-  },
-  {
     "cqc_id": "1-18914327493",
     "ods_code": "",
     "name": "Andreea Medical",
@@ -24008,25 +23666,6 @@
     "lon": -0.0926496,
     "providerName": "",
     "ar": "City of London"
-  },
-  {
-    "cqc_id": "1-1891695897",
-    "ods_code": "",
-    "name": "Cognacity",
-    "address": "54 Harley Street, London",
-    "postcode": "W1G 9PZ",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1891695897",
-    "localAuthority": "Westminster",
-    "lat": 51.519103,
-    "lon": -0.146804,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-18935495157",
@@ -25432,18 +25071,18 @@
     "ar": "Merton"
   },
   {
-    "cqc_id": "1-197274606",
+    "cqc_id": "1-360627707",
     "ods_code": "",
     "name": "Woodford Medical Limited",
     "address": "8 Upper Wimpole Street, London",
     "postcode": "W1G 6LH",
-    "phone": "01245227983",
+    "phone": "02074864526",
     "website": "https://www.woodfordmedical.com",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-197274606",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-360627707",
     "localAuthority": "Westminster",
     "lat": 51.520983,
     "lon": -0.149106,
@@ -26230,25 +25869,6 @@
     "ar": "Southwark"
   },
   {
-    "cqc_id": "1-19889306284",
-    "ods_code": "",
-    "name": "Ten Harley Street",
-    "address": "Ten Harley Street, 10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "02074678300",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-19889306284",
-    "localAuthority": "Westminster",
-    "lat": 51.517393,
-    "lon": -0.1459834,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-19890941933",
     "ods_code": "",
     "name": "New Mill Street Medical Surgery",
@@ -26302,25 +25922,6 @@
     "lat": 51.6849128,
     "lon": -0.0331934,
     "providerName": ""
-  },
-  {
-    "cqc_id": "1-19892400869",
-    "ods_code": "",
-    "name": "Westminster Clinic- 21 Wimpole Street",
-    "address": "21 Wimpole Street, London",
-    "postcode": "W1G 8GG",
-    "phone": "01789414203",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-19892400869",
-    "localAuthority": "Westminster",
-    "lat": 51.520732,
-    "lon": -0.149736,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-19892920608",
@@ -26567,25 +26168,6 @@
     "lon": -0.194428,
     "providerName": "",
     "ar": "Hammersmith & Fulham"
-  },
-  {
-    "cqc_id": "1-1993825303",
-    "ods_code": "",
-    "name": "THMG Chiswick Clinic",
-    "address": "93A Chiswick High Road, London",
-    "postcode": "W4 2EF",
-    "phone": "02072919700",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-1993825303",
-    "localAuthority": "Hounslow",
-    "lat": 51.4926942,
-    "lon": -0.2523928,
-    "providerName": "",
-    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-1993941845",
@@ -27386,24 +26968,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-2039077983",
-    "ods_code": "",
-    "name": "Cheshunt Minor Injuries Unit",
-    "address": "King Arthur Court, Cheshunt, Waltham Cross",
-    "postcode": "EN8 8XN",
-    "phone": "01992780417",
-    "website": "",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2039077983",
-    "localAuthority": "Hertfordshire",
-    "lat": 51.6992295,
-    "lon": -0.0331949,
-    "providerName": ""
-  },
-  {
     "cqc_id": "1-20392422509",
     "ods_code": "",
     "name": "Dr Melissa Clinics",
@@ -28125,25 +27689,6 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-20631632346",
-    "ods_code": "",
-    "name": "Edition Clinic",
-    "address": "4 St. Mark's Place, London",
-    "postcode": "SW19 7ND",
-    "phone": "02039511231",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-20631632346",
-    "localAuthority": "Merton",
-    "lat": 51.4222038,
-    "lon": -0.207638,
-    "providerName": "",
-    "ar": "Merton"
-  },
-  {
     "cqc_id": "1-20632540315",
     "ods_code": "",
     "name": "PALOMA HEALTH HEAD OFFICE",
@@ -28505,25 +28050,6 @@
     "ar": "Southwark"
   },
   {
-    "cqc_id": "1-207542102",
-    "ods_code": "",
-    "name": "DHI International UK Limited",
-    "address": "43 New Cavendish Street, London",
-    "postcode": "W1G 9TH",
-    "phone": "02074869789",
-    "website": "https://www.dhiglobal.com",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-207542102",
-    "localAuthority": "Westminster",
-    "lat": 51.5191087,
-    "lon": -0.1492868,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-2083321451",
     "ods_code": "",
     "name": "National Slimming & Cosmetic Clinics (Ealing)",
@@ -28694,37 +28220,18 @@
     "ar": "Haringey"
   },
   {
-    "cqc_id": "1-21089041965",
-    "ods_code": "",
-    "name": "Ultram Ltd",
-    "address": "Kings Dental Clinic, Ashcroft House, 36 North End Road, London",
-    "postcode": "W14 0SH",
-    "phone": "02076035211",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21089041965",
-    "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.4940196,
-    "lon": -0.2101612,
-    "providerName": "",
-    "ar": "Hammersmith & Fulham"
-  },
-  {
-    "cqc_id": "1-21094602482",
+    "cqc_id": "1-23847916141",
     "ods_code": "",
     "name": "Beckenham Beacons UTC",
     "address": "379-397 Croydon Road, Beckenham",
     "postcode": "BR3 3QL",
-    "phone": "02038663330",
+    "phone": "016189866037",
     "website": "",
     "specialties": [
       "urgent-care"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21094602482",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-23847916141",
     "localAuthority": "Bromley",
     "lat": 51.4052306,
     "lon": -0.0331825,
@@ -28749,25 +28256,6 @@
     "lon": -0.2753567,
     "providerName": "",
     "ar": "Hounslow"
-  },
-  {
-    "cqc_id": "1-2116644334",
-    "ods_code": "",
-    "name": "Harley Health Village",
-    "address": "64 Harley Street, London",
-    "postcode": "W1G 7HB",
-    "phone": "",
-    "website": "https://www.harleyhealthvillage.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2116644334",
-    "localAuthority": "Westminster",
-    "lat": 51.519602,
-    "lon": -0.147043,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2120888127",
@@ -29036,18 +28524,18 @@
     "ar": "Sutton"
   },
   {
-    "cqc_id": "1-2141183338",
+    "cqc_id": "1-8170775855",
     "ods_code": "",
     "name": "CP Medical Clinic",
-    "address": "61-63 Sloane Avenue, London",
+    "address": "61-63, Sloane Avenue, London",
     "postcode": "SW3 3DH",
     "phone": "02075898776",
     "website": "https://www.cpmedicalclinic.com",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2141183338",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-8170775855",
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.491971,
     "lon": -0.1654548,
@@ -29471,25 +28959,6 @@
     "ar": "Croydon"
   },
   {
-    "cqc_id": "1-21633613916",
-    "ods_code": "",
-    "name": "The New Victoria Hospital",
-    "address": "184 Coombe Lane West, Kingston Upon Thames",
-    "postcode": "KT2 7EG",
-    "phone": "02089499000",
-    "website": "",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21633613916",
-    "localAuthority": "Kingston upon Thames",
-    "lat": 51.415693,
-    "lon": -0.2542662,
-    "providerName": "",
-    "ar": "Kingston upon Thames"
-  },
-  {
     "cqc_id": "1-2166893538",
     "ods_code": "",
     "name": "The Doctors Laboratory",
@@ -29718,25 +29187,6 @@
     "ar": "Kensington & Chelsea"
   },
   {
-    "cqc_id": "1-21752111963",
-    "ods_code": "",
-    "name": "Psymplicity Healthcare",
-    "address": "Churchill House 137-139, Brent Street, London",
-    "postcode": "NW4 4DJ",
-    "phone": "02071180407",
-    "website": "https://www.psymplicity.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-21752111963",
-    "localAuthority": "Barnet",
-    "lat": 51.5885816,
-    "lon": -0.2217327,
-    "providerName": "",
-    "ar": "Barnet"
-  },
-  {
     "cqc_id": "1-21751315415",
     "ods_code": "",
     "name": "The Clock House Ultrasound and Surgical Clinic",
@@ -29904,25 +29354,6 @@
     "localAuthority": "Westminster",
     "lat": 51.515296,
     "lon": -0.154006,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-2182771779",
-    "ods_code": "",
-    "name": "Ten Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "02082018500",
-    "website": "https://www.londonwoundclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2182771779",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -30133,25 +29564,6 @@
     "lon": -0.1777127,
     "providerName": "",
     "ar": "Wandsworth"
-  },
-  {
-    "cqc_id": "1-22002615293",
-    "ods_code": "",
-    "name": "Jorja Healthcare",
-    "address": "10 Eastbourne Terrace, London",
-    "postcode": "W2 6LG",
-    "phone": "03330505088",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-22002615293",
-    "localAuthority": "Westminster",
-    "lat": 51.5170644,
-    "lon": -0.1795515,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-22005422865",
@@ -31463,18 +30875,18 @@
     "ar": "Southwark"
   },
   {
-    "cqc_id": "1-223391334",
+    "cqc_id": "1-7356232738",
     "ods_code": "",
     "name": "446 Cranbrook Road",
-    "address": "446 Cranbrook Road, Gants Hill, Ilford",
+    "address": "446 Cranbrook Road, Ilford",
     "postcode": "IG2 6LL",
-    "phone": "07764514740",
-    "website": "https://www.nscclinics.co.uk/cosmetics/clinics/ilford-clinic/",
+    "phone": "",
+    "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-223391334",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-7356232738",
     "localAuthority": "Redbridge",
     "lat": 51.5768161,
     "lon": 0.0678384,
@@ -31824,25 +31236,6 @@
     "ar": "Islington"
   },
   {
-    "cqc_id": "1-2259250793",
-    "ods_code": "",
-    "name": "Rainham - Farm Lodge",
-    "address": "58 Farm Road, Rainham",
-    "postcode": "RM13 9LG",
-    "phone": "01708557369",
-    "website": "https://www.cambiangroup.com",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2259250793",
-    "localAuthority": "Havering",
-    "lat": 51.5246302,
-    "lon": 0.2070681,
-    "providerName": "",
-    "ar": "Havering"
-  },
-  {
     "cqc_id": "1-226226444",
     "ods_code": "",
     "name": "Sarah Cannon Research UK",
@@ -31900,37 +31293,18 @@
     "ar": "Brent"
   },
   {
-    "cqc_id": "1-226279926",
-    "ods_code": "",
-    "name": "The CyberKnife Centre London",
-    "address": "81 Harley Street, London",
-    "postcode": "W1G 8PP",
-    "phone": "02070348588",
-    "website": "https://www.cyberknifecentrelondon.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/1-226279926",
-    "localAuthority": "Westminster",
-    "lat": 51.5200008,
-    "lon": -0.1476939,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-2264284971",
+    "cqc_id": "1-344408382",
     "ods_code": "",
     "name": "Green Lanes Surgery",
-    "address": "808 Green Lanes, London",
+    "address": "808 Green Lanes, Winchmore Hill, London",
     "postcode": "N21 2SA",
     "phone": "02083505000",
-    "website": "",
+    "website": "https://www.enfieldhealth.co.uk",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2264284971",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-344408382",
     "localAuthority": "Enfield",
     "lat": 51.633095,
     "lon": -0.094075,
@@ -32014,18 +31388,18 @@
     "ar": "Brent"
   },
   {
-    "cqc_id": "1-2274597535",
-    "ods_code": "",
+    "cqc_id": "1-538854516",
+    "ods_code": "E84665001",
     "name": "Greenhill Park Medical Centre",
     "address": "Greenhill Park, London",
     "postcode": "NW10 9AR",
-    "phone": "",
+    "phone": "0844477874",
     "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2274597535",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/1-538854516",
     "localAuthority": "Brent",
     "lat": 51.538402,
     "lon": -0.253535,
@@ -32451,26 +31825,6 @@
     "ar": "Barnet"
   },
   {
-    "cqc_id": "1-230102814",
-    "ods_code": "",
-    "name": "Harley Street Skin",
-    "address": "48 Harley Street, London",
-    "postcode": "W1G 9PU",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "dermatology",
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-230102814",
-    "localAuthority": "Westminster",
-    "lat": 51.518913,
-    "lon": -0.146711,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-23009188305",
     "ods_code": "",
     "name": "Vantive Education Centre South",
@@ -32699,25 +32053,6 @@
     "ar": "Kensington & Chelsea"
   },
   {
-    "cqc_id": "1-2311760426",
-    "ods_code": "",
-    "name": "Mildmay Mission Hospital",
-    "address": "19 Tabernacle Gardens, London",
-    "postcode": "E2 7DZ",
-    "phone": "",
-    "website": "https://www.mildmay.org",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2311760426",
-    "localAuthority": "Tower Hamlets",
-    "lat": 51.5277158,
-    "lon": -0.0755989,
-    "providerName": "",
-    "ar": "Tower Hamlets"
-  },
-  {
     "cqc_id": "1-2311707220",
     "ods_code": "",
     "name": "North Street Medical Care - Ashton Gardens",
@@ -32752,25 +32087,6 @@
     "localAuthority": "Westminster",
     "lat": 51.517004,
     "lon": -0.146403,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-23195608604",
-    "ods_code": "",
-    "name": "Ten Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "02035765911",
-    "website": "https://www.diversemindsclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-23195608604",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -33287,25 +32603,6 @@
     "ar": "Waltham Forest"
   },
   {
-    "cqc_id": "1-23391929474",
-    "ods_code": "",
-    "name": "The Village Practice",
-    "address": "115 Isledon Road, London",
-    "postcode": "N7 7JJ",
-    "phone": "02077006464",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-23391929474",
-    "localAuthority": "Islington",
-    "lat": 51.5597045,
-    "lon": -0.1099844,
-    "providerName": "",
-    "ar": "Islington"
-  },
-  {
     "cqc_id": "1-23392096996",
     "ods_code": "",
     "name": "Optical Express \u2013 Great Portland Street Hospital",
@@ -33380,25 +32677,6 @@
     "lon": -0.159076,
     "providerName": "",
     "ar": "Kensington & Chelsea"
-  },
-  {
-    "cqc_id": "1-2344369311",
-    "ods_code": "",
-    "name": "The Lanes",
-    "address": "3-5 Foxley Lane, Purley",
-    "postcode": "CR8 3EF",
-    "phone": "02087634243",
-    "website": "",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2344369311",
-    "localAuthority": "Croydon",
-    "lat": 51.339417,
-    "lon": -0.118284,
-    "providerName": "",
-    "ar": "Croydon"
   },
   {
     "cqc_id": "1-23484991915",
@@ -33532,25 +32810,6 @@
     "lon": -0.3310275,
     "providerName": "",
     "ar": "Richmond upon Thames"
-  },
-  {
-    "cqc_id": "1-23513365405",
-    "ods_code": "",
-    "name": "Harrow Health Care Centre",
-    "address": "Clementine Churchill Hospital, Sudbury Hill, Harrow",
-    "postcode": "HA1 3RX",
-    "phone": "02088611221",
-    "website": "https://www.harrowhealthcare.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-23513365405",
-    "localAuthority": "Harrow",
-    "lat": 51.564966,
-    "lon": -0.332709,
-    "providerName": "",
-    "ar": "Harrow"
   },
   {
     "cqc_id": "1-2352339844",
@@ -33986,25 +33245,6 @@
     "lon": -0.1965882,
     "providerName": "",
     "ar": "Barnet"
-  },
-  {
-    "cqc_id": "1-23847916141",
-    "ods_code": "",
-    "name": "Beckenham Beacons UTC",
-    "address": "379-397 Croydon Road, Beckenham",
-    "postcode": "BR3 3QL",
-    "phone": "016189866037",
-    "website": "",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-23847916141",
-    "localAuthority": "Bromley",
-    "lat": 51.4052306,
-    "lon": -0.0331825,
-    "providerName": "",
-    "ar": "Bromley"
   },
   {
     "cqc_id": "1-2382887774",
@@ -34459,25 +33699,6 @@
     "lon": -0.011157,
     "providerName": "",
     "ar": "Waltham Forest"
-  },
-  {
-    "cqc_id": "1-24207760650",
-    "ods_code": "",
-    "name": "Click Hearing Upminster",
-    "address": "69 Corbets Tey Road, Upminster",
-    "postcode": "RM14 2AJ",
-    "phone": "01708259863",
-    "website": "https://www.clickhearing.com",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-24207760650",
-    "localAuthority": "Havering",
-    "lat": 51.5538916,
-    "lon": 0.2482325,
-    "providerName": "",
-    "ar": "Havering"
   },
   {
     "cqc_id": "1-24220470496",
@@ -35202,25 +34423,6 @@
     "ar": "Bexley"
   },
   {
-    "cqc_id": "1-246731494",
-    "ods_code": "",
-    "name": "Shooting Star House",
-    "address": "The Avenue, Hampton",
-    "postcode": "TW12 3RA",
-    "phone": "02087832000",
-    "website": "https://www.chasecare.org.uk",
-    "specialties": [
-      "hospice"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-246731494",
-    "localAuthority": "Richmond upon Thames",
-    "lat": 51.4262023,
-    "lon": -0.376006,
-    "providerName": "",
-    "ar": "Richmond upon Thames"
-  },
-  {
     "cqc_id": "1-24671083527",
     "ods_code": "",
     "name": "Queen Mary's Hospital Urgent Care Centre",
@@ -35390,43 +34592,6 @@
     "lon": -0.302332,
     "providerName": "",
     "ar": "Kingston upon Thames"
-  },
-  {
-    "cqc_id": "1-2476233642",
-    "ods_code": "",
-    "name": "Soho Square",
-    "address": "18 Soho Square, London",
-    "postcode": "W1D 3QL",
-    "phone": "02071830553",
-    "website": "https://www.londondoctorsclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2476233642",
-    "localAuthority": "Westminster",
-    "lat": 51.515941,
-    "lon": -0.131712,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-2476232905",
-    "ods_code": "",
-    "name": "Victoria",
-    "address": "Portland House, Bressenden Place, London",
-    "postcode": "SW1E 5RS",
-    "phone": "02071830553",
-    "website": "https://www.londondoctorsclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2476232905",
-    "localAuthority": "Westminster",
-    "lat": 51.497421,
-    "lon": -0.141604,
-    "providerName": ""
   },
   {
     "cqc_id": "1-2476249858",
@@ -35770,18 +34935,18 @@
     "ar": "Barnet"
   },
   {
-    "cqc_id": "1-2494710207",
+    "cqc_id": "1-6971694206",
     "ods_code": "",
     "name": "Silverthorn Medical Centre",
     "address": "Silverthorne Centre, 2 Friars Close, London",
     "postcode": "E4 6UN",
-    "phone": "02084307210",
+    "phone": "",
     "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2494710207",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-6971694206",
     "localAuthority": "Waltham Forest",
     "lat": 51.620089,
     "lon": -0.00105,
@@ -35825,25 +34990,6 @@
     "lon": 0.0021,
     "providerName": "",
     "ar": "Waltham Forest"
-  },
-  {
-    "cqc_id": "1-2494710448",
-    "ods_code": "",
-    "name": "ESS Clinic",
-    "address": "142 George Lane, London",
-    "postcode": "E18 1AY",
-    "phone": "02089892004",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2494710448",
-    "localAuthority": "Redbridge",
-    "lat": 51.5932915,
-    "lon": 0.0252458,
-    "providerName": "",
-    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-2496746910",
@@ -36017,25 +35163,6 @@
     "ar": "Bromley"
   },
   {
-    "cqc_id": "1-2508707095",
-    "ods_code": "",
-    "name": "Wilbraham Place Practice",
-    "address": "9a Wilbraham Place, London",
-    "postcode": "SW1X 9AE",
-    "phone": "02077307928",
-    "website": "https://www.wppractice.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2508707095",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.4941144,
-    "lon": -0.1570535,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
-  },
-  {
     "cqc_id": "1-250768908",
     "ods_code": "",
     "name": "Harley Street Fertility Clinic",
@@ -36187,25 +35314,6 @@
     "lon": 0.02482,
     "providerName": "",
     "ar": "Redbridge"
-  },
-  {
-    "cqc_id": "1-25166942945",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "02039061488",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-25166942945",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2515463578",
@@ -37157,25 +36265,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-25738995902",
-    "ods_code": "",
-    "name": "TEN Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "07962984660",
-    "website": "https://www.dralba.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-25738995902",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-25740944557",
     "ods_code": "",
     "name": "Biowell Battersea",
@@ -37555,25 +36644,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-2595554961",
-    "ods_code": "",
-    "name": "Westland Medical Centre",
-    "address": "Westland Avenue, Hornchurch",
-    "postcode": "RM11 3SD",
-    "phone": "01494560000",
-    "website": "https://www.inhealthgroup.com",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2595554961",
-    "localAuthority": "Havering",
-    "lat": 51.563523,
-    "lon": 0.223137,
-    "providerName": "",
-    "ar": "Havering"
-  },
-  {
     "cqc_id": "1-25980510275",
     "ods_code": "",
     "name": "Medicus",
@@ -37837,25 +36907,6 @@
     "lon": -0.0828815,
     "providerName": "",
     "ar": "City of London"
-  },
-  {
-    "cqc_id": "1-2619939086",
-    "ods_code": "",
-    "name": "King's Cross",
-    "address": "334-354 Grays Inn Road, London",
-    "postcode": "WC1X 8BP",
-    "phone": "02071830553",
-    "website": "https://www.londondoctorsclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2619939086",
-    "localAuthority": "Camden",
-    "lat": 51.529831,
-    "lon": -0.12006,
-    "providerName": "",
-    "ar": "Camden"
   },
   {
     "cqc_id": "1-26271189838",
@@ -38485,44 +37536,6 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "1-26672318977",
-    "ods_code": "",
-    "name": "Alliance Medical Marylebone",
-    "address": "10-11, Bulstrode Place, London",
-    "postcode": "W1U 2HX",
-    "phone": "02075351955",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-26672318977",
-    "localAuthority": "Westminster",
-    "lat": 51.5182929,
-    "lon": -0.1505883,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-26670657361",
-    "ods_code": "",
-    "name": "UNTIL Soho",
-    "address": "111, Charing Cross Road, London",
-    "postcode": "WC2H 0DT",
-    "phone": "07774858279",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-26670657361",
-    "localAuthority": "Westminster",
-    "lat": 51.5145914,
-    "lon": -0.1299718,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-2670384848",
     "ods_code": "",
     "name": "Dr Wayne Cottrell",
@@ -38578,25 +37591,6 @@
     "lon": -0.085253,
     "providerName": "",
     "ar": "City of London"
-  },
-  {
-    "cqc_id": "1-26701331348",
-    "ods_code": "",
-    "name": "Ten Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-26701331348",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2670880940",
@@ -38880,25 +37874,6 @@
     "localAuthority": "Westminster",
     "lat": 51.520605,
     "lon": -0.146675,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-2693453604",
-    "ods_code": "",
-    "name": "The London General Practice",
-    "address": "16 Devonshire Street, London",
-    "postcode": "W1G 7AF",
-    "phone": "02079351000",
-    "website": "https://www.thelondongeneralpractice.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2693453604",
-    "localAuthority": "Westminster",
-    "lat": 51.521986,
-    "lon": -0.147119,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -39223,44 +38198,6 @@
     "lon": 0.185358,
     "providerName": "",
     "ar": "Havering"
-  },
-  {
-    "cqc_id": "1-27126191414",
-    "ods_code": "",
-    "name": "The Retina Clinic London",
-    "address": "24 Queen Anne Street, London",
-    "postcode": "W1G 9AY",
-    "phone": "02045485310",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-27126191414",
-    "localAuthority": "Westminster",
-    "lat": 51.5181685,
-    "lon": -0.1472638,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-27126191442",
-    "ods_code": "",
-    "name": "The Retina Clinic London",
-    "address": "140 Harley Street, London",
-    "postcode": "W1G 7LB",
-    "phone": "07787100482",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-27126191442",
-    "localAuthority": "Westminster",
-    "lat": 51.522717,
-    "lon": -0.148416,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-27135964066",
@@ -40039,44 +38976,6 @@
     "ar": "Brent"
   },
   {
-    "cqc_id": "1-27842102890",
-    "ods_code": "",
-    "name": "UniClinic Limited",
-    "address": "635 Cranbrook Road, Ilford",
-    "postcode": "IG2 6SX",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-27842102890",
-    "localAuthority": "Redbridge",
-    "lat": 51.5780565,
-    "lon": 0.0702202,
-    "providerName": "",
-    "ar": "Redbridge"
-  },
-  {
-    "cqc_id": "1-27857385577",
-    "ods_code": "",
-    "name": "Skin Care Essentials",
-    "address": "55 Warren Street, London",
-    "postcode": "W1T 5NW",
-    "phone": "02037207668",
-    "website": "https://www.skincareessentials.co.uk",
-    "specialties": [
-      "dermatology"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-27857385577",
-    "localAuthority": "Camden",
-    "lat": 51.5241958,
-    "lon": -0.140013,
-    "providerName": "",
-    "ar": "Camden"
-  },
-  {
     "cqc_id": "1-27896462131",
     "ods_code": "",
     "name": "Dr Oliver Rabie",
@@ -40149,25 +39048,6 @@
     "localAuthority": "Westminster",
     "lat": 51.525998,
     "lon": -0.162612,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-279073188",
-    "ods_code": "",
-    "name": "Hospital of St John & St Elizabeth",
-    "address": "60 Grove End Road, St John's Wood, London",
-    "postcode": "NW8 9NH",
-    "phone": "02078064000",
-    "website": "https://www.hje.org.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-279073188",
-    "localAuthority": "Westminster",
-    "lat": 51.533473,
-    "lon": -0.175461,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -40341,7 +39221,7 @@
     "ar": "Lambeth"
   },
   {
-    "cqc_id": "1-2805417641",
+    "cqc_id": "1-2835819838",
     "ods_code": "",
     "name": "Brick Lane Surgery",
     "address": "28 Brick Lane, Enfield",
@@ -40351,8 +39231,8 @@
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2805417641",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-2835819838",
     "localAuthority": "Enfield",
     "lat": 51.6573178,
     "lon": -0.0489906,
@@ -40720,25 +39600,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-2835819838",
-    "ods_code": "",
-    "name": "Brick Lane Surgery",
-    "address": "28 Brick Lane, Enfield",
-    "postcode": "EN3 5BA",
-    "phone": "02084430413",
-    "website": "https://www.bricklanesurgeryenfield.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2835819838",
-    "localAuthority": "Enfield",
-    "lat": 51.6573178,
-    "lon": -0.0489906,
-    "providerName": "",
-    "ar": "Enfield"
-  },
-  {
     "cqc_id": "1-2835244850",
     "ods_code": "",
     "name": "The Mole Clinic",
@@ -40910,26 +39771,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-2855392804",
-    "ods_code": "",
-    "name": "The Harley Street Clinic Diagnostic Centre",
-    "address": "16 Devonshire Street, London",
-    "postcode": "W1G 7AF",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "diagnostic",
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2855392804",
-    "localAuthority": "Westminster",
-    "lat": 51.521986,
-    "lon": -0.147119,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-285809029",
     "ods_code": "",
     "name": "The London Eye Hospital",
@@ -41025,44 +39866,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-2873926731",
-    "ods_code": "",
-    "name": "The Hospital Group - London Weymouth Street Clinic",
-    "address": "31 Weymouth Street, London",
-    "postcode": "W1G 8BJ",
-    "phone": "01214457500",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2873926731",
-    "localAuthority": "Westminster",
-    "lat": 51.520357,
-    "lon": -0.148195,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-288474903",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "07956925272",
-    "website": "https://www.homehealthservice.co.uk/harley-street-clinic/",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-288474903",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-288737847",
     "ods_code": "",
     "name": "The Child and Family Practice",
@@ -41118,25 +39921,6 @@
     "lon": -0.214527,
     "providerName": "",
     "ar": "Kensington & Chelsea"
-  },
-  {
-    "cqc_id": "1-2897199278",
-    "ods_code": "",
-    "name": "Hanover House",
-    "address": "78 Coombe Road, Kingston Upon Thames",
-    "postcode": "KT2 7AZ",
-    "phone": "01912297545",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2897199278",
-    "localAuthority": "Kingston upon Thames",
-    "lat": 51.412368,
-    "lon": -0.282996,
-    "providerName": "",
-    "ar": "Kingston upon Thames"
   },
   {
     "cqc_id": "1-2901463968",
@@ -41227,25 +40011,6 @@
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-291171444",
-    "localAuthority": "Westminster",
-    "lat": 51.5190192,
-    "lon": -0.1544507,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-291682924",
-    "ods_code": "",
-    "name": "The Zita West Clinic",
-    "address": "37 Manchester Street, London",
-    "postcode": "W1U 7LJ",
-    "phone": "",
-    "website": "https://www.zitawest.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-291682924",
     "localAuthority": "Westminster",
     "lat": 51.5190192,
     "lon": -0.1544507,
@@ -41480,25 +40245,6 @@
     "ar": "Wandsworth"
   },
   {
-    "cqc_id": "1-2936237595",
-    "ods_code": "",
-    "name": "Comely Bank Clinic",
-    "address": "46 Ravenswood Road, London",
-    "postcode": "E17 9LY",
-    "phone": "03330124209",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2936237595",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.583176,
-    "lon": -0.00905,
-    "providerName": "",
-    "ar": "Waltham Forest"
-  },
-  {
     "cqc_id": "1-2938978043",
     "ods_code": "",
     "name": "The Private Clinic",
@@ -41516,25 +40262,6 @@
     "lon": -0.1477081,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-2939805726",
-    "ods_code": "",
-    "name": "The Private Clinic Limited - London City Clinic",
-    "address": "107 Cheapside, London",
-    "postcode": "EC2V 6DT",
-    "phone": "02033256590",
-    "website": "https://www.theprivateclinic.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-2939805726",
-    "localAuthority": "City of London",
-    "lat": 51.514091,
-    "lon": -0.093166,
-    "providerName": "",
-    "ar": "City of London"
   },
   {
     "cqc_id": "1-294388489",
@@ -42219,18 +40946,18 @@
     "ar": "Lewisham"
   },
   {
-    "cqc_id": "1-305174102",
+    "cqc_id": "1-5418275062",
     "ods_code": "",
     "name": "The City Walk-in Clinic",
-    "address": "Renown House, 33-34 Bury Street, London",
+    "address": "33-34, Bury Street, London",
     "postcode": "EC3A 5AR",
-    "phone": "02071010355",
+    "phone": "",
     "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-305174102",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-5418275062",
     "localAuthority": "City of London",
     "lat": 51.514052,
     "lon": -0.079329,
@@ -42329,44 +41056,6 @@
     "localAuthority": "Westminster",
     "lat": 51.519909,
     "lon": -0.147679,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-3081078425",
-    "ods_code": "",
-    "name": "Bodyscan City",
-    "address": "Stonehealth Clinic, Lower Ground Floor, 36-38 Cornhill, London",
-    "postcode": "EC3V 3NG",
-    "phone": "07454791758",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3081078425",
-    "localAuthority": "City of London",
-    "lat": 51.513273,
-    "lon": -0.086121,
-    "providerName": "",
-    "ar": "City of London"
-  },
-  {
-    "cqc_id": "1-3081078345",
-    "ods_code": "",
-    "name": "Bodyscan W1",
-    "address": "London Medical, 49 Marylebone High Street, London",
-    "postcode": "W1U 5HJ",
-    "phone": "07454791758",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3081078345",
-    "localAuthority": "Westminster",
-    "lat": 51.521486,
-    "lon": -0.151334,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -43203,25 +41892,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-327232931",
-    "ods_code": "",
-    "name": "The Child and Family Practice",
-    "address": "The Child and Family Practice, Third Floor, 57a Wimpole Street, London",
-    "postcode": "W1G 8YP",
-    "phone": "02072242800",
-    "website": "https://www.thechildandfamilypractice.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-327232931",
-    "localAuthority": "Westminster",
-    "lat": 51.519157,
-    "lon": -0.148939,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-327308436",
     "ods_code": "",
     "name": "Cardio Direct (UK)  Ltd",
@@ -43316,25 +41986,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-329278000",
-    "ods_code": "",
-    "name": "Ten Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "01245244729",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-329278000",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-3295974434",
     "ods_code": "",
     "name": "The London Skin and Hair Clinic",
@@ -43409,25 +42060,6 @@
     "lon": 0.101687,
     "providerName": "",
     "ar": "Bexley"
-  },
-  {
-    "cqc_id": "1-329909932",
-    "ods_code": "",
-    "name": "Parkside Hospital at Putney",
-    "address": "266-276 Upper Richmond Road, Putney, London",
-    "postcode": "SW15 6TQ",
-    "phone": "02089718018",
-    "website": "https://www.parksidehospital.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-329909932",
-    "localAuthority": "Wandsworth",
-    "lat": 51.461679,
-    "lon": -0.219992,
-    "providerName": "",
-    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-3299779333",
@@ -43829,44 +42461,6 @@
     "ar": "Barnet"
   },
   {
-    "cqc_id": "1-344415677",
-    "ods_code": "",
-    "name": "Evergreen Primary Care Centre",
-    "address": "1 Smythe Close, London",
-    "postcode": "N9 0TW",
-    "phone": "02088878354",
-    "website": "https://www.enfieldhealth.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-344415677",
-    "localAuthority": "Enfield",
-    "lat": 51.6238359,
-    "lon": -0.0602384,
-    "providerName": "",
-    "ar": "Enfield"
-  },
-  {
-    "cqc_id": "1-344408382",
-    "ods_code": "",
-    "name": "Green Lanes Surgery",
-    "address": "808 Green Lanes, Winchmore Hill, London",
-    "postcode": "N21 2SA",
-    "phone": "02083505000",
-    "website": "https://www.enfieldhealth.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-344408382",
-    "localAuthority": "Enfield",
-    "lat": 51.633095,
-    "lon": -0.094075,
-    "providerName": "",
-    "ar": "Enfield"
-  },
-  {
     "cqc_id": "1-347369219",
     "ods_code": "",
     "name": "Expert Health Limited",
@@ -44056,24 +42650,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-350226226",
-    "ods_code": "",
-    "name": "Night Doctor",
-    "address": "2 Lower Sloane Street, London",
-    "postcode": "SW1X 8BJ",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-350226226",
-    "localAuthority": "Westminster",
-    "lat": 51.498877,
-    "lon": -0.1511155,
-    "providerName": ""
-  },
-  {
     "cqc_id": "1-351046104",
     "ods_code": "",
     "name": "Sk:n - John Bell and Croydon",
@@ -44186,21 +42762,21 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-3531351411",
+    "cqc_id": "1-5204250976",
     "ods_code": "",
     "name": "The Elixir Clinic",
-    "address": "75 Wimpole Street, London",
+    "address": "3rd Floor, 75 Wimpole Street, London",
     "postcode": "W1G 9RS",
-    "phone": "02033226302",
+    "phone": "07718483484",
     "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3531351411",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-5204250976",
     "localAuthority": "Westminster",
-    "lat": 51.517516,
-    "lon": -0.148238,
+    "lat": 51.5175181,
+    "lon": -0.1482127,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -44335,25 +42911,6 @@
     "lon": -0.017916,
     "providerName": "",
     "ar": "Lewisham"
-  },
-  {
-    "cqc_id": "1-360627707",
-    "ods_code": "",
-    "name": "Woodford Medical Limited",
-    "address": "8 Upper Wimpole Street, London",
-    "postcode": "W1G 6LH",
-    "phone": "02074864526",
-    "website": "https://www.woodfordmedical.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-360627707",
-    "localAuthority": "Westminster",
-    "lat": 51.520983,
-    "lon": -0.149106,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-3616287810",
@@ -44546,25 +43103,6 @@
     "ar": "Lambeth"
   },
   {
-    "cqc_id": "1-365643904",
-    "ods_code": "",
-    "name": "Citydoc Moorgate",
-    "address": "16 City Road, London",
-    "postcode": "EC1Y 2AA",
-    "phone": "02072568668",
-    "website": "https://www.citydoc.org.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-365643904",
-    "localAuthority": "Islington",
-    "lat": 51.522091,
-    "lon": -0.087426,
-    "providerName": "",
-    "ar": "Islington"
-  },
-  {
     "cqc_id": "1-365511404",
     "ods_code": "Y00672",
     "name": "SELDOC Base - Dulwich Community Hospital",
@@ -44639,25 +43177,6 @@
     "lon": -0.354868,
     "providerName": "",
     "ar": "Richmond upon Thames"
-  },
-  {
-    "cqc_id": "1-3671628278",
-    "ods_code": "",
-    "name": "Comely Bank Clinic",
-    "address": "46 Ravenswood Road, London",
-    "postcode": "E17 9LY",
-    "phone": "02084307100",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3671628278",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.583176,
-    "lon": -0.00905,
-    "providerName": "",
-    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-367773012",
@@ -44887,25 +43406,6 @@
     "ar": "Kensington & Chelsea"
   },
   {
-    "cqc_id": "1-376498929",
-    "ods_code": "",
-    "name": "Paddington Medicentre",
-    "address": "Unit 50, Paddington Station, London",
-    "postcode": "W2 1HB",
-    "phone": "02075100312",
-    "website": "https://www.medicentre.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-376498929",
-    "localAuthority": "Westminster",
-    "lat": 51.516471,
-    "lon": -0.176775,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-376499144",
     "ods_code": "",
     "name": "Eldon Street Medicentre (previously Liverpool Street Medicentre)",
@@ -45021,25 +43521,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-3778297239",
-    "ods_code": "",
-    "name": "The London Skin and Hair Clinic Holborn",
-    "address": "233 High Holborn, London",
-    "postcode": "WC1V 7DN",
-    "phone": "02071834565",
-    "website": "https://www.thelondonskinandhairclinic.com",
-    "specialties": [
-      "dermatology"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3778297239",
-    "localAuthority": "Camden",
-    "lat": 51.517516,
-    "lon": -0.119227,
-    "providerName": "",
-    "ar": "Camden"
-  },
-  {
     "cqc_id": "1-378008734",
     "ods_code": "",
     "name": "3rd Floor, Hannah House",
@@ -45114,25 +43595,6 @@
     "lon": -0.114982,
     "providerName": "",
     "ar": "Camden"
-  },
-  {
-    "cqc_id": "1-3805066540",
-    "ods_code": "",
-    "name": "The Park Club",
-    "address": "East Acton Lane, London",
-    "postcode": "W3 7HB",
-    "phone": "02084731900",
-    "website": "https://www.theparkclubmedispa.co.uk/team/dr-bela-horvath",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3805066540",
-    "localAuthority": "Ealing",
-    "lat": 51.511946,
-    "lon": -0.25348,
-    "providerName": "",
-    "ar": "Ealing"
   },
   {
     "cqc_id": "1-3806562283",
@@ -45211,25 +43673,6 @@
     "ar": "Tower Hamlets"
   },
   {
-    "cqc_id": "1-383436830",
-    "ods_code": "",
-    "name": "The Junction Health Centre",
-    "address": "Arch 5-8, Clapham Junction Station, Grant Road, London",
-    "postcode": "SW11 2NU",
-    "phone": "02037334079",
-    "website": "https://www.junctionhealthcentre.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-383436830",
-    "localAuthority": "Wandsworth",
-    "lat": 51.465228,
-    "lon": -0.170756,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
     "cqc_id": "1-3837114335",
     "ods_code": "",
     "name": "Oval Beauty Clinic",
@@ -45285,25 +43728,6 @@
     "lon": -0.1155283,
     "providerName": "",
     "ar": "Lambeth"
-  },
-  {
-    "cqc_id": "1-385113488",
-    "ods_code": "",
-    "name": "Victoria Medicentre",
-    "address": "Main Concourse, Victoria Mainline Station, London",
-    "postcode": "SW1V 1JT",
-    "phone": "02075100314",
-    "website": "https://www.medicentre.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-385113488",
-    "localAuthority": "Westminster",
-    "lat": 51.494974,
-    "lon": -0.144354,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-3855130171",
@@ -45628,25 +44052,6 @@
     "ar": "Wandsworth"
   },
   {
-    "cqc_id": "1-391192499",
-    "ods_code": "",
-    "name": "RoC Private Clinic",
-    "address": "Third Floor, 127 Harley Street, London",
-    "postcode": "W1G 6AZ",
-    "phone": "02079350606",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-391192499",
-    "localAuthority": "Westminster",
-    "lat": 51.522082,
-    "lon": -0.148658,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-391315815",
     "ods_code": "",
     "name": "Viavi Limited - 14 Devonshire Street",
@@ -45682,25 +44087,6 @@
     "lat": 51.446105,
     "lon": 0.216739,
     "providerName": ""
-  },
-  {
-    "cqc_id": "1-3915396502",
-    "ods_code": "",
-    "name": "The Junction Health Centre",
-    "address": "Arches 5-8, Clapham Junction Station, Grant Road, London",
-    "postcode": "SW11 2NU",
-    "phone": "02037334079",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-3915396502",
-    "localAuthority": "Wandsworth",
-    "lat": 51.465228,
-    "lon": -0.170756,
-    "providerName": "",
-    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-392252657",
@@ -46576,25 +44962,6 @@
     "ar": "Croydon"
   },
   {
-    "cqc_id": "1-406446818",
-    "ods_code": "",
-    "name": "Bank Medicentre",
-    "address": "80 Cheapside, London",
-    "postcode": "EC2V 6EE",
-    "phone": "02075100310",
-    "website": "https://www.medicentre.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-406446818",
-    "localAuthority": "City of London",
-    "lat": 51.513635,
-    "lon": -0.091755,
-    "providerName": "",
-    "ar": "City of London"
-  },
-  {
     "cqc_id": "1-4070846782",
     "ods_code": "",
     "name": "iPrimaryCare Head Office",
@@ -46633,25 +45000,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-407075395",
-    "ods_code": "",
-    "name": "The Wilson Health Centre",
-    "address": "Cranmer Road, Mitcham",
-    "postcode": "CR4 4TP",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-407075395",
-    "localAuthority": "Merton",
-    "lat": 51.397252,
-    "lon": -0.163262,
-    "providerName": "",
-    "ar": "Merton"
-  },
-  {
     "cqc_id": "1-408012069",
     "ods_code": "",
     "name": "Orpington Intermediate Care Unit",
@@ -46688,25 +45036,6 @@
     "lon": 0.122606,
     "providerName": "",
     "ar": "Barking & Dagenham"
-  },
-  {
-    "cqc_id": "1-409340635",
-    "ods_code": "",
-    "name": "Blackberry Orthopaedic Clinic - Croydon",
-    "address": "32 Mayday Road, Thornton Heath",
-    "postcode": "CR7 7HL",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-409340635",
-    "localAuthority": "Croydon",
-    "lat": 51.3880747,
-    "lon": -0.1092181,
-    "providerName": "",
-    "ar": "Croydon"
   },
   {
     "cqc_id": "1-409990132",
@@ -47029,25 +45358,6 @@
     "lon": -0.096784,
     "providerName": "",
     "ar": "Islington"
-  },
-  {
-    "cqc_id": "1-4173383878",
-    "ods_code": "",
-    "name": "Harrow Health Care Centre",
-    "address": "Clementine Churchill Hospital, Sudbury Hill, Harrow",
-    "postcode": "HA1 3RX",
-    "phone": "02088611221",
-    "website": "https://harrowhealthcare.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4173383878",
-    "localAuthority": "Harrow",
-    "lat": 51.564966,
-    "lon": -0.332709,
-    "providerName": "",
-    "ar": "Harrow"
   },
   {
     "cqc_id": "1-4194356943",
@@ -47468,25 +45778,6 @@
     "ar": "Camden"
   },
   {
-    "cqc_id": "1-4310764819",
-    "ods_code": "",
-    "name": "The Child and Family Practice",
-    "address": "60 Bloomsbury Street, London",
-    "postcode": "WC1B 3QU",
-    "phone": "07494848434",
-    "website": "https://www.doctornaomielton.london",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4310764819",
-    "localAuthority": "Camden",
-    "lat": 51.518966,
-    "lon": -0.128547,
-    "providerName": "",
-    "ar": "Camden"
-  },
-  {
     "cqc_id": "1-432242046",
     "ods_code": "",
     "name": "Citydoc Westend",
@@ -47598,25 +45889,6 @@
     "lon": -0.196092,
     "providerName": "",
     "ar": "Kensington & Chelsea"
-  },
-  {
-    "cqc_id": "1-434912226",
-    "ods_code": "",
-    "name": "The Hale Clinic",
-    "address": "7 Park Crescent, London",
-    "postcode": "W1B 1PF",
-    "phone": "08455210030",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-434912226",
-    "localAuthority": "Westminster",
-    "lat": 51.523568,
-    "lon": -0.144821,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-436853801",
@@ -48017,44 +46289,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-452208131",
-    "ods_code": "",
-    "name": "Harley Street Healthcare Clinic",
-    "address": "104 Harley Street, London",
-    "postcode": "W1G 7JD",
-    "phone": "02079356554",
-    "website": "https://www.harleystreet104.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-452208131",
-    "localAuthority": "Westminster",
-    "lat": 51.521314,
-    "lon": -0.14781,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-452104507",
-    "ods_code": "",
-    "name": "The Child and Family Practice",
-    "address": "Third Floor, 57a Wimpole Street, London",
-    "postcode": "W1G 8YP",
-    "phone": "02072242800",
-    "website": "https://www.thechildandfamilypractice.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-452104507",
-    "localAuthority": "Westminster",
-    "lat": 51.5191572,
-    "lon": -0.1489389,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-4522488617",
     "ods_code": "",
     "name": "London Hormone Clinic",
@@ -48091,25 +46325,6 @@
     "lon": -0.269576,
     "providerName": "",
     "ar": "Hounslow"
-  },
-  {
-    "cqc_id": "1-4533091694",
-    "ods_code": "",
-    "name": "Dr Kelly & Associates - London Wall",
-    "address": "65 London Wall, London",
-    "postcode": "EC2M 5TU",
-    "phone": "02076382999",
-    "website": "https://www.doctorcall.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4533091694",
-    "localAuthority": "City of London",
-    "lat": 51.516821,
-    "lon": -0.086448,
-    "providerName": "",
-    "ar": "City of London"
   },
   {
     "cqc_id": "1-4539967039",
@@ -48224,25 +46439,6 @@
     "lon": -0.139066,
     "providerName": "",
     "ar": "Islington"
-  },
-  {
-    "cqc_id": "1-455856677",
-    "ods_code": "",
-    "name": "The London Eye Hospital",
-    "address": "8-10 Harley Street, London",
-    "postcode": "W1G 8GP",
-    "phone": "02070602602",
-    "website": "https://www.londoneyehospital.com",
-    "specialties": [
-      "ophthalmology"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-455856677",
-    "localAuthority": "Westminster",
-    "lat": 51.518959,
-    "lon": -0.14837,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-456498248",
@@ -48453,25 +46649,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-4606988780",
-    "ods_code": "",
-    "name": "18 Week Support",
-    "address": "19-21 Great Tower Street, London",
-    "postcode": "EC3R 5AR",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4606988780",
-    "localAuthority": "City of London",
-    "lat": 51.509778,
-    "lon": -0.081255,
-    "providerName": "",
-    "ar": "City of London"
-  },
-  {
     "cqc_id": "1-4629428825",
     "ods_code": "VM9CF",
     "name": "Gallions View",
@@ -48603,25 +46780,6 @@
     "lon": -0.491511,
     "providerName": "",
     "ar": "Hillingdon"
-  },
-  {
-    "cqc_id": "1-464120150",
-    "ods_code": "",
-    "name": "The Child and Family Practice",
-    "address": "Third Floor, 57a Wimpole Street, London",
-    "postcode": "W1G 8YP",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-464120150",
-    "localAuthority": "Westminster",
-    "lat": 51.5191572,
-    "lon": -0.1489389,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-464445868",
@@ -48968,18 +47126,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-474663890",
+    "cqc_id": "1-9261440352",
     "ods_code": "",
     "name": "Lara Clinic Limited",
-    "address": "37 Edgware Road, London",
+    "address": "37b Edgware Road, London",
     "postcode": "W2 2JE",
     "phone": "07904019555",
     "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-474663890",
+    "cqc_rating": "Inadequate",
+    "cqc_url": "https://www.cqc.org.uk/location/1-9261440352",
     "localAuthority": "Westminster",
     "lat": 51.51446,
     "lon": -0.162461,
@@ -49253,18 +47411,18 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-4829976965",
+    "cqc_id": "1-7237856491",
     "ods_code": "",
     "name": "The Great West Surgery",
     "address": "The Meadows Centre For Health, Chinchilla Drive, Hounslow",
     "postcode": "TW4 7NR",
-    "phone": "",
+    "phone": "02086301370",
     "website": "",
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "Inadequate",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4829976965",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-7237856491",
     "localAuthority": "Hounslow",
     "lat": 51.4725555,
     "lon": -0.4012237,
@@ -49291,25 +47449,6 @@
     "ar": "Barnet"
   },
   {
-    "cqc_id": "1-483390412",
-    "ods_code": "",
-    "name": "Optical Express - London (White City) Clinic",
-    "address": "Unit 2121 Westfield Shopping Centre London, Ariel Way, White City, London",
-    "postcode": "W12 7GF",
-    "phone": "02087353585",
-    "website": "https://www.opticalexpress.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-483390412",
-    "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.5074568,
-    "lon": -0.2222752,
-    "providerName": "",
-    "ar": "Hammersmith & Fulham"
-  },
-  {
     "cqc_id": "1-483017017",
     "ods_code": "",
     "name": "CRGH City",
@@ -49327,25 +47466,6 @@
     "lon": -0.1014728,
     "providerName": "",
     "ar": "Islington"
-  },
-  {
-    "cqc_id": "1-483356314",
-    "ods_code": "",
-    "name": "Optical Express - Kingston upon Thames Clinic",
-    "address": "Optical Express, 16 - 18 Clarence Street, Kingston Upon Thames",
-    "postcode": "KT1 1NX",
-    "phone": "02085474240",
-    "website": "https://www.opticalexpress.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-483356314",
-    "localAuthority": "Kingston upon Thames",
-    "lat": 51.410792,
-    "lon": -0.304481,
-    "providerName": "",
-    "ar": "Kingston upon Thames"
   },
   {
     "cqc_id": "1-484391574",
@@ -49385,25 +47505,6 @@
     "ar": "Hillingdon"
   },
   {
-    "cqc_id": "1-4844372170",
-    "ods_code": "",
-    "name": "The Imaging Centre",
-    "address": "The Hive, Camrose Avenue, Edgware",
-    "postcode": "HA8 6AG",
-    "phone": "02083813800",
-    "website": "https://www.thehivelondon.com",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4844372170",
-    "localAuthority": "Harrow",
-    "lat": 51.601518,
-    "lon": -0.288874,
-    "providerName": "",
-    "ar": "Harrow"
-  },
-  {
     "cqc_id": "1-484571408",
     "ods_code": "F86644001",
     "name": "Forest Road Medical Centre",
@@ -49423,18 +47524,18 @@
     "ar": "Waltham Forest"
   },
   {
-    "cqc_id": "1-485645431",
+    "cqc_id": "1-669320774",
     "ods_code": "",
     "name": "DMC Healthcare Ltd",
     "address": "Daisy Business Park, 31-35 Sylvan Grove, London",
     "postcode": "SE15 1PD",
-    "phone": "",
-    "website": "",
+    "phone": "02076351012",
+    "website": "https://www.dmchealthcare.co.uk/",
     "specialties": [
-      "private-gp"
+      "diagnostic"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-485645431",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-669320774",
     "localAuthority": "Southwark",
     "lat": 51.481365,
     "lon": -0.058091,
@@ -49955,44 +48056,6 @@
     "ar": "Newham"
   },
   {
-    "cqc_id": "1-4986947592",
-    "ods_code": "",
-    "name": "Global House",
-    "address": "10 Station Approach, Hayes, Bromley",
-    "postcode": "BR2 7EH",
-    "phone": "02082958281",
-    "website": "https://www.bromleyhealthcare.org.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4986947592",
-    "localAuthority": "Bromley",
-    "lat": 51.376989,
-    "lon": 0.0100521,
-    "providerName": "",
-    "ar": "Bromley"
-  },
-  {
-    "cqc_id": "1-4987162946",
-    "ods_code": "",
-    "name": "Ziering London Clinic",
-    "address": "The Triangle, Hammersmith Grove, London",
-    "postcode": "W6 0LG",
-    "phone": "02085638111",
-    "website": "https://www.onehealthmedicalgroup.co.uk/",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-4987162946",
-    "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.4940686,
-    "lon": -0.2264093,
-    "providerName": "",
-    "ar": "Hammersmith & Fulham"
-  },
-  {
     "cqc_id": "1-498859674",
     "ods_code": "",
     "name": "UniClinic Limited",
@@ -50164,63 +48227,6 @@
     "ar": "Havering"
   },
   {
-    "cqc_id": "1-502272908",
-    "ods_code": "",
-    "name": "Rhodes Farm Clinic",
-    "address": "The Ridgeway, London",
-    "postcode": "NW7 1RH",
-    "phone": "02089060885",
-    "website": "https://www.partnershipsincare.co.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-502272908",
-    "localAuthority": "Barnet",
-    "lat": 51.617692,
-    "lon": -0.222444,
-    "providerName": "",
-    "ar": "Barnet"
-  },
-  {
-    "cqc_id": "1-502298621",
-    "ods_code": "",
-    "name": "THMG Bromley Clinic",
-    "address": "5 Archers Court, Bromley",
-    "postcode": "BR2 9JG",
-    "phone": "02072919700",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-502298621",
-    "localAuthority": "Bromley",
-    "lat": 51.395313,
-    "lon": 0.025373,
-    "providerName": "",
-    "ar": "Bromley"
-  },
-  {
-    "cqc_id": "1-502322629",
-    "ods_code": "",
-    "name": "THMG Harley Street Clinic",
-    "address": "6 Harley Street, London",
-    "postcode": "W1G 9QD",
-    "phone": "02072919700",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-502322629",
-    "localAuthority": "Westminster",
-    "lat": 51.516903,
-    "lon": -0.146389,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-502299379",
     "ods_code": "",
     "name": "THMG Chiswick",
@@ -50238,25 +48244,6 @@
     "lon": -0.252219,
     "providerName": "",
     "ar": "Hounslow"
-  },
-  {
-    "cqc_id": "1-502349608",
-    "ods_code": "",
-    "name": "THMG Wimbledon Clinic",
-    "address": "The Courtyard, 7 Francis Grove, London",
-    "postcode": "SW19 4DW",
-    "phone": "02072919700",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-502349608",
-    "localAuthority": "Merton",
-    "lat": 51.419918,
-    "lon": -0.209471,
-    "providerName": "",
-    "ar": "Merton"
   },
   {
     "cqc_id": "1-5026333531",
@@ -50519,25 +48506,6 @@
     "localAuthority": "Hillingdon",
     "lat": 51.546222,
     "lon": -0.4757185,
-    "providerName": "",
-    "ar": "Hillingdon"
-  },
-  {
-    "cqc_id": "1-5072822693",
-    "ods_code": "",
-    "name": "The Orchard Practice",
-    "address": "Hesa Primary Care Centre, 52 Station Road, Hayes",
-    "postcode": "UB3 4DD",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5072822693",
-    "localAuthority": "Hillingdon",
-    "lat": 51.505917,
-    "lon": -0.419303,
     "providerName": "",
     "ar": "Hillingdon"
   },
@@ -50942,44 +48910,6 @@
     "ar": "Waltham Forest"
   },
   {
-    "cqc_id": "1-516395941",
-    "ods_code": "",
-    "name": "ESS Clinic",
-    "address": "142 George Lane, London",
-    "postcode": "E18 1AY",
-    "phone": "02089892004",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-516395941",
-    "localAuthority": "Redbridge",
-    "lat": 51.5932915,
-    "lon": 0.0252458,
-    "providerName": "",
-    "ar": "Redbridge"
-  },
-  {
-    "cqc_id": "1-516395914",
-    "ods_code": "F86074002",
-    "name": "Langthorne Health Centre",
-    "address": "13 Langthorne Road, London",
-    "postcode": "E11 4HX",
-    "phone": "02084307510",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-516395914",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.555415,
-    "lon": 0.0021,
-    "providerName": "",
-    "ar": "Waltham Forest"
-  },
-  {
     "cqc_id": "1-516373887",
     "ods_code": "",
     "name": "Oliver Road Medical Centre",
@@ -51130,25 +49060,6 @@
     "lon": -0.376294,
     "providerName": "",
     "ar": "Ealing"
-  },
-  {
-    "cqc_id": "1-5204250976",
-    "ods_code": "",
-    "name": "The Elixir Clinic",
-    "address": "3rd Floor, 75 Wimpole Street, London",
-    "postcode": "W1G 9RS",
-    "phone": "07718483484",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5204250976",
-    "localAuthority": "Westminster",
-    "lat": 51.5175181,
-    "lon": -0.1482127,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-5212983876",
@@ -51417,25 +49328,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-5322987978",
-    "ods_code": "",
-    "name": "Westland Medical Centre",
-    "address": "Westland Avenue, Hornchurch",
-    "postcode": "RM11 3SD",
-    "phone": "01371829383",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5322987978",
-    "localAuthority": "Havering",
-    "lat": 51.563523,
-    "lon": 0.223137,
-    "providerName": "",
-    "ar": "Havering"
-  },
-  {
     "cqc_id": "1-532123288",
     "ods_code": "",
     "name": "Greenwood Surgery at Charles Stanley & Co. Limited",
@@ -51452,25 +49344,6 @@
     "lat": 51.52398,
     "lon": -0.082601,
     "providerName": ""
-  },
-  {
-    "cqc_id": "1-5325192204",
-    "ods_code": "",
-    "name": "112 Harley Street",
-    "address": "112 Harley Street, London",
-    "postcode": "W1G 7JQ",
-    "phone": "02075803324",
-    "website": "https://www.cooperhealth.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5325192204",
-    "localAuthority": "Westminster",
-    "lat": 51.5215869,
-    "lon": -0.1479034,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-533591992",
@@ -51663,25 +49536,6 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-538854516",
-    "ods_code": "E84665001",
-    "name": "Greenhill Park Medical Centre",
-    "address": "Greenhill Park, London",
-    "postcode": "NW10 9AR",
-    "phone": "0844477874",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-538854516",
-    "localAuthority": "Brent",
-    "lat": 51.538402,
-    "lon": -0.253535,
-    "providerName": "",
-    "ar": "Brent"
-  },
-  {
     "cqc_id": "1-538891405",
     "ods_code": "F86627001",
     "name": "Ching Way Medical Centre",
@@ -51815,25 +49669,6 @@
     "ar": "Barnet"
   },
   {
-    "cqc_id": "1-5409446527",
-    "ods_code": "",
-    "name": "The Hale Clinic",
-    "address": "3rd Floor, 4 Harley Street, London",
-    "postcode": "W1G 9PB",
-    "phone": "02076310156",
-    "website": "https://www.haleclinic.com",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5409446527",
-    "localAuthority": "Westminster",
-    "lat": 51.517183,
-    "lon": -0.145931,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-5410660975",
     "ods_code": "",
     "name": "Cosmedics Clinics Putney",
@@ -51965,25 +49800,6 @@
     "lon": -0.3193787,
     "providerName": "",
     "ar": "Harrow"
-  },
-  {
-    "cqc_id": "1-5418275062",
-    "ods_code": "",
-    "name": "The City Walk-in Clinic",
-    "address": "33-34, Bury Street, London",
-    "postcode": "EC3A 5AR",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5418275062",
-    "localAuthority": "City of London",
-    "lat": 51.514052,
-    "lon": -0.079329,
-    "providerName": "",
-    "ar": "City of London"
   },
   {
     "cqc_id": "1-541901291",
@@ -52817,25 +50633,6 @@
     "ar": "Hounslow"
   },
   {
-    "cqc_id": "1-5537570253",
-    "ods_code": "",
-    "name": "The Huntercombe Hospital - Roehampton",
-    "address": "Holybourne Avenue, London",
-    "postcode": "SW15 4JL",
-    "phone": "",
-    "website": "https://www.huntercombe.com",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5537570253",
-    "localAuthority": "Wandsworth",
-    "lat": 51.4477883,
-    "lon": -0.2422774,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
     "cqc_id": "1-5557935951",
     "ods_code": "",
     "name": "Belgravia Dermatology",
@@ -53083,25 +50880,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-559411710",
-    "ods_code": "",
-    "name": "City Road Medical Centre",
-    "address": "Unit 1-3 Ground Floor, City House, 190-196 City Road, London",
-    "postcode": "EC1V 2QH",
-    "phone": "02073368170",
-    "website": "https://www.cityroadmedicalcentre.org.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-559411710",
-    "localAuthority": "Islington",
-    "lat": 51.5278972,
-    "lon": -0.0910896,
-    "providerName": "",
-    "ar": "Islington"
-  },
-  {
     "cqc_id": "1-559436297",
     "ods_code": "",
     "name": "Hornsey Rise Medical Centre",
@@ -53117,25 +50895,6 @@
     "localAuthority": "Islington",
     "lat": 51.571444,
     "lon": -0.125007,
-    "providerName": "",
-    "ar": "Islington"
-  },
-  {
-    "cqc_id": "1-559436312",
-    "ods_code": "",
-    "name": "Islington Central Medical Centre",
-    "address": "28 Laycock Street, London",
-    "postcode": "N1 1SW",
-    "phone": "02033168580",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-559436312",
-    "localAuthority": "Islington",
-    "lat": 51.544512,
-    "lon": -0.104701,
     "providerName": "",
     "ar": "Islington"
   },
@@ -53214,44 +50973,6 @@
     "lon": -0.1389014,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-560931122",
-    "ods_code": "",
-    "name": "The Marion Gluck Clinic",
-    "address": "61 Wimpole Street, London",
-    "postcode": "W1G 8AH",
-    "phone": "02074022151",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-560931122",
-    "localAuthority": "Westminster",
-    "lat": 51.518738,
-    "lon": -0.148707,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-560765240",
-    "ods_code": "",
-    "name": "THMG City Clinic",
-    "address": "4th Floor Marc House, Great St Thomas Apostle, City of London",
-    "postcode": "EC4V 2BB",
-    "phone": "02074898468",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-560765240",
-    "localAuthority": "City of London",
-    "lat": 51.511999,
-    "lon": -0.093495,
-    "providerName": "",
-    "ar": "City of London"
   },
   {
     "cqc_id": "1-5619779985",
@@ -53592,25 +51313,6 @@
     "localAuthority": "Westminster",
     "lat": 51.519025,
     "lon": -0.147513,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-569085938",
-    "ods_code": "",
-    "name": "The Wimpole Clinic Ltd",
-    "address": "Hannah House, 11-16 Manchester Street, London",
-    "postcode": "W1U 4DJ",
-    "phone": "02079351861",
-    "website": "https://www.wimpoleclinic.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-569085938",
-    "localAuthority": "Westminster",
-    "lat": 51.519365,
-    "lon": -0.154148,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -54068,21 +51770,21 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-591497528",
+    "cqc_id": "RJZ70",
     "ods_code": "",
     "name": "Orpington Hospital",
-    "address": "Orpington Hospital, Sevenoaks Road, Orpington",
+    "address": "Sevenoaks Road, Orpington",
     "postcode": "BR6 9JU",
-    "phone": "01689442888",
-    "website": "https://www.thepracticeplc.com",
+    "phone": "02032999000",
+    "website": "https://www.kch.nhs.uk",
     "specialties": [
-      "private-gp"
+      "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-591497528",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ70",
     "localAuthority": "Bromley",
-    "lat": 51.362502,
-    "lon": 0.09515,
+    "lat": 51.3625034,
+    "lon": 0.0951765,
     "providerName": "",
     "ar": "Bromley"
   },
@@ -54141,25 +51843,6 @@
     "lon": -0.166425,
     "providerName": "",
     "ar": "Barnet"
-  },
-  {
-    "cqc_id": "1-5936476731",
-    "ods_code": "",
-    "name": "Brent GP Access Centre",
-    "address": "116 Chaplin Road, Wembley",
-    "postcode": "HA0 4UZ",
-    "phone": "03000339950",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-5936476731",
-    "localAuthority": "Brent",
-    "lat": 51.549713,
-    "lon": -0.306785,
-    "providerName": "",
-    "ar": "Brent"
   },
   {
     "cqc_id": "1-5943078177",
@@ -54256,25 +51939,6 @@
     "lon": -0.156554,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-595823241",
-    "ods_code": "",
-    "name": "JA Medical",
-    "address": "Suite 5.3, Broadway House, 3-5 High Street, Bromley",
-    "postcode": "BR1 1LF",
-    "phone": "07762593443",
-    "website": "",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-595823241",
-    "localAuthority": "Bromley",
-    "lat": 51.400525,
-    "lon": 0.017239,
-    "providerName": "",
-    "ar": "Bromley"
   },
   {
     "cqc_id": "1-5964877918",
@@ -54581,42 +52245,23 @@
     "ar": "Bexley"
   },
   {
-    "cqc_id": "1-608312843",
+    "cqc_id": "1-7348692999",
     "ods_code": "",
     "name": "Bodyvie Medi-Clinic",
-    "address": "133-135 Kew Road, Richmond",
+    "address": "133-135, Kew Road, Richmond",
     "postcode": "TW9 2PN",
-    "phone": "08450042995",
+    "phone": "02071000744",
     "website": "https://www.bodyvie.com",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-608312843",
-    "localAuthority": "Richmond upon Thames",
-    "lat": 51.465986,
-    "lon": -0.298801,
-    "providerName": "",
-    "ar": "Richmond upon Thames"
-  },
-  {
-    "cqc_id": "1-6088839608",
-    "ods_code": "E84006001",
-    "name": "The Law Medical Group Practice",
-    "address": "124-128 Harrow Road, Wembley",
-    "postcode": "HA9 6QQ",
-    "phone": "02038188441",
-    "website": "",
     "specialties": [
       "private-gp"
     ],
     "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6088839608",
-    "localAuthority": "Brent",
-    "lat": 51.5481592,
-    "lon": -0.2771376,
+    "cqc_url": "https://www.cqc.org.uk/location/1-7348692999",
+    "localAuthority": "Richmond upon Thames",
+    "lat": 51.465872,
+    "lon": -0.2989006,
     "providerName": "",
-    "ar": "Brent"
+    "ar": "Richmond upon Thames"
   },
   {
     "cqc_id": "1-6096473729",
@@ -54901,25 +52546,6 @@
     "lon": -0.4726953,
     "providerName": "",
     "ar": "Hillingdon"
-  },
-  {
-    "cqc_id": "1-6223072914",
-    "ods_code": "",
-    "name": "The Basil Street Practice",
-    "address": "3 Basil Street, London",
-    "postcode": "SW3 1AU",
-    "phone": "02072356642",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Outstanding",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6223072914",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.5006895,
-    "lon": -0.1605804,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-6239731696",
@@ -55942,25 +53568,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-669320774",
-    "ods_code": "",
-    "name": "DMC Healthcare Ltd",
-    "address": "Daisy Business Park, 31-35 Sylvan Grove, London",
-    "postcode": "SE15 1PD",
-    "phone": "02076351012",
-    "website": "https://www.dmchealthcare.co.uk/",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-669320774",
-    "localAuthority": "Southwark",
-    "lat": 51.481365,
-    "lon": -0.058091,
-    "providerName": "",
-    "ar": "Southwark"
-  },
-  {
     "cqc_id": "1-6692416132",
     "ods_code": "",
     "name": "Dr Muhammad Shahzad",
@@ -56149,24 +53756,6 @@
     "lon": -0.1457541,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-6785683480",
-    "ods_code": "",
-    "name": "Cheshunt Minor Injuries Unit",
-    "address": "King Arthur Court, Cheshunt, Waltham Cross",
-    "postcode": "EN8 8XN",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6785683480",
-    "localAuthority": "Hertfordshire",
-    "lat": 51.6992295,
-    "lon": -0.0331949,
-    "providerName": ""
   },
   {
     "cqc_id": "1-679603177",
@@ -56662,63 +54251,6 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "1-6971694361",
-    "ods_code": "",
-    "name": "ESS Clinic",
-    "address": "142 George Lane, London",
-    "postcode": "E18 1AY",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6971694361",
-    "localAuthority": "Redbridge",
-    "lat": 51.5932915,
-    "lon": 0.0252458,
-    "providerName": "",
-    "ar": "Redbridge"
-  },
-  {
-    "cqc_id": "1-6971694077",
-    "ods_code": "",
-    "name": "Comely Bank Clinic",
-    "address": "46 Ravenswood Road, London",
-    "postcode": "E17 9LY",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6971694077",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.583176,
-    "lon": -0.00905,
-    "providerName": "",
-    "ar": "Waltham Forest"
-  },
-  {
-    "cqc_id": "1-6971694206",
-    "ods_code": "",
-    "name": "Silverthorn Medical Centre",
-    "address": "Silverthorne Centre, 2 Friars Close, London",
-    "postcode": "E4 6UN",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6971694206",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.620089,
-    "lon": -0.00105,
-    "providerName": "",
-    "ar": "Waltham Forest"
-  },
-  {
     "cqc_id": "1-698391289",
     "ods_code": "",
     "name": "The Grove",
@@ -56757,25 +54289,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-6989869885",
-    "ods_code": "",
-    "name": "Chelsea Medics",
-    "address": "102 Sydney Street, London",
-    "postcode": "SW3 6NJ",
-    "phone": "02039555444",
-    "website": "https://www.chelseamedics.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-6989869885",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.488532,
-    "lon": -0.169251,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
-  },
-  {
     "cqc_id": "1-700017073",
     "ods_code": "",
     "name": "The Queen Anne Street Practice - Room 4",
@@ -56795,7 +54308,7 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-7012671181",
+    "cqc_id": "1-9018083701",
     "ods_code": "",
     "name": "King-Lewis Family Practice",
     "address": "Chelsea Consulting Rooms, 2 Lower Sloane Street, London",
@@ -56805,8 +54318,8 @@
     "specialties": [
       "private-gp"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7012671181",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-9018083701",
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.491622,
     "lon": -0.157642,
@@ -57250,25 +54763,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-7237856491",
-    "ods_code": "",
-    "name": "The Great West Surgery",
-    "address": "The Meadows Centre For Health, Chinchilla Drive, Hounslow",
-    "postcode": "TW4 7NR",
-    "phone": "02086301370",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7237856491",
-    "localAuthority": "Hounslow",
-    "lat": 51.4725555,
-    "lon": -0.4012237,
-    "providerName": "",
-    "ar": "Hounslow"
-  },
-  {
     "cqc_id": "1-723604714",
     "ods_code": "",
     "name": "London Ultrasound Centre",
@@ -57341,25 +54835,6 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.379085,
     "lon": -0.288494,
-    "providerName": "",
-    "ar": "Kingston upon Thames"
-  },
-  {
-    "cqc_id": "1-727899272",
-    "ods_code": "",
-    "name": "Surbiton Health Centre",
-    "address": "Ewell Road, Surbiton",
-    "postcode": "KT6 6EZ",
-    "phone": "02083997111",
-    "website": "https://www.yourhealthcare.org",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-727899272",
-    "localAuthority": "Kingston upon Thames",
-    "lat": 51.390825,
-    "lon": -0.299929,
     "providerName": "",
     "ar": "Kingston upon Thames"
   },
@@ -57478,25 +54953,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-7348692999",
-    "ods_code": "",
-    "name": "Bodyvie Medi-Clinic",
-    "address": "133-135, Kew Road, Richmond",
-    "postcode": "TW9 2PN",
-    "phone": "02071000744",
-    "website": "https://www.bodyvie.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7348692999",
-    "localAuthority": "Richmond upon Thames",
-    "lat": 51.465872,
-    "lon": -0.2989006,
-    "providerName": "",
-    "ar": "Richmond upon Thames"
-  },
-  {
     "cqc_id": "1-7348789135",
     "ods_code": "",
     "name": "McPhillips Consulting",
@@ -57514,25 +54970,6 @@
     "lon": -0.157642,
     "providerName": "",
     "ar": "Kensington & Chelsea"
-  },
-  {
-    "cqc_id": "1-7356232738",
-    "ods_code": "",
-    "name": "446 Cranbrook Road",
-    "address": "446 Cranbrook Road, Ilford",
-    "postcode": "IG2 6LL",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7356232738",
-    "localAuthority": "Redbridge",
-    "lat": 51.5768161,
-    "lon": 0.0678384,
-    "providerName": "",
-    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-7370590319",
@@ -57593,25 +55030,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-7371603701",
-    "ods_code": "",
-    "name": "The Sudbury Clinic",
-    "address": "Clementine Churchill Hospital, Sudbury Hill, Harrow",
-    "postcode": "HA1 3GW",
-    "phone": "08456431400",
-    "website": "https://www.streamline-surgical.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7371603701",
-    "localAuthority": "Harrow",
-    "lat": 51.5636618,
-    "lon": -0.3327392,
-    "providerName": "",
-    "ar": "Harrow"
-  },
-  {
     "cqc_id": "1-7381043175",
     "ods_code": "",
     "name": "Harley Street Medical Centre (Wimpole Street)",
@@ -57629,25 +55047,6 @@
     "lon": -0.148133,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-7388798435",
-    "ods_code": "",
-    "name": "Hammersmith Private Hospital",
-    "address": "Enhance Medical, The Triangle 5-17, Hammersmith Grove, London",
-    "postcode": "W6 0LG",
-    "phone": "02085638111",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7388798435",
-    "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.4940686,
-    "lon": -0.2264093,
-    "providerName": "",
-    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-7418424355",
@@ -57933,25 +55332,6 @@
     "lon": -0.090953,
     "providerName": "",
     "ar": "City of London"
-  },
-  {
-    "cqc_id": "1-7511469042",
-    "ods_code": "",
-    "name": "ESS Clinic",
-    "address": "142 George Lane, London",
-    "postcode": "E18 1AY",
-    "phone": "02089892004",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7511469042",
-    "localAuthority": "Redbridge",
-    "lat": 51.5932915,
-    "lon": 0.0252458,
-    "providerName": "",
-    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-7541091671",
@@ -58293,25 +55673,6 @@
     "localAuthority": "Westminster",
     "lat": 51.5165343,
     "lon": -0.1514091,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-7760678673",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "07720463080",
-    "website": "https://www.botonics.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/1-7760678673",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -58771,25 +56132,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-8080982107",
-    "ods_code": "",
-    "name": "23MD",
-    "address": "23 Elystan Street, London",
-    "postcode": "SW3 3NT",
-    "phone": "02070780302",
-    "website": "https://www.23md.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8080982107",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.4912343,
-    "lon": -0.1672274,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
-  },
-  {
     "cqc_id": "1-8117906171",
     "ods_code": "",
     "name": "Edridge Road Community Health Centre",
@@ -58828,25 +56170,6 @@
     "ar": "Brent"
   },
   {
-    "cqc_id": "1-8162183355",
-    "ods_code": "",
-    "name": "Harley Street Specialist Hospital",
-    "address": "18-22 Queen Anne Street, London",
-    "postcode": "W1G 8HU",
-    "phone": "02070343300",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8162183355",
-    "localAuthority": "Westminster",
-    "lat": 51.5182006,
-    "lon": -0.1470175,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-8162516928",
     "ods_code": "",
     "name": "Unilabs Ltd 24 - 32 Stephenson Waw London",
@@ -58864,25 +56187,6 @@
     "lon": -0.135728,
     "providerName": "",
     "ar": "Camden"
-  },
-  {
-    "cqc_id": "1-8170775855",
-    "ods_code": "",
-    "name": "CP Medical Clinic",
-    "address": "61-63, Sloane Avenue, London",
-    "postcode": "SW3 3DH",
-    "phone": "02075898776",
-    "website": "https://www.cpmedicalclinic.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8170775855",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.491971,
-    "lon": -0.1654548,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-8167721835",
@@ -58959,25 +56263,6 @@
     "lon": -0.2225873,
     "providerName": "",
     "ar": "Merton"
-  },
-  {
-    "cqc_id": "1-8197105615",
-    "ods_code": "",
-    "name": "Robin Hood Lane Health Centre",
-    "address": "Robin Hood Lane, Sutton",
-    "postcode": "SM1 2RJ",
-    "phone": "02083957985",
-    "website": "https://www.robinhoodclinic.co.uk/",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8197105615",
-    "localAuthority": "Sutton",
-    "lat": 51.3629959,
-    "lon": -0.1969862,
-    "providerName": "",
-    "ar": "Sutton"
   },
   {
     "cqc_id": "1-8198852568",
@@ -59150,44 +56435,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "1-828595537",
-    "ods_code": "",
-    "name": "The Child and Family Practice",
-    "address": "8 Ridgmount Street, London",
-    "postcode": "WC1E 7AA",
-    "phone": "",
-    "website": "https://www.thechildandfamilypractice.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-828595537",
-    "localAuthority": "Camden",
-    "lat": 51.5204672,
-    "lon": -0.1311703,
-    "providerName": "",
-    "ar": "Camden"
-  },
-  {
-    "cqc_id": "1-8291478107",
-    "ods_code": "",
-    "name": "Dr Morton's - the medical helpline",
-    "address": "201, Chapelier House, Eastfields Avenue, London",
-    "postcode": "SW18 1LR",
-    "phone": "02071016386",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8291478107",
-    "localAuthority": "Wandsworth",
-    "lat": 51.4624957,
-    "lon": -0.1981068,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
     "cqc_id": "1-8295158717",
     "ods_code": "",
     "name": "Image Diagnostic Technology Ltd",
@@ -59262,44 +56509,6 @@
     "lon": -0.3072697,
     "providerName": "",
     "ar": "Ealing"
-  },
-  {
-    "cqc_id": "1-8318284160",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "07720558940",
-    "website": "https://www.christosdimitriou.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8318284160",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-8332553419",
-    "ods_code": "",
-    "name": "Care Polyclinic",
-    "address": "38 Knightsbridge, London",
-    "postcode": "SW1X 7JN",
-    "phone": "02072450450",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8332553419",
-    "localAuthority": "Westminster",
-    "lat": 51.5024969,
-    "lon": -0.1571359,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "1-8360151176",
@@ -59378,25 +56587,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-8365908448",
-    "ods_code": "",
-    "name": "THMG Liverpool Street Clinic",
-    "address": "Ground Floor, 42 New Broad Street, London",
-    "postcode": "EC2M 1JD",
-    "phone": "01604608160",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8365908448",
-    "localAuthority": "City of London",
-    "lat": 51.517078,
-    "lon": -0.084422,
-    "providerName": "",
-    "ar": "City of London"
-  },
-  {
     "cqc_id": "1-8371903492",
     "ods_code": "",
     "name": "Echelon Health Ltd",
@@ -59435,25 +56625,6 @@
     "ar": "Lambeth"
   },
   {
-    "cqc_id": "1-8377642530",
-    "ods_code": "",
-    "name": "THMG Wimbledon Clinic",
-    "address": "The Courtyard, 7 Francis Grove, London",
-    "postcode": "SW19 4DW",
-    "phone": "01604608160",
-    "website": "https://www.harleymedical.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8377642530",
-    "localAuthority": "Merton",
-    "lat": 51.419918,
-    "lon": -0.209471,
-    "providerName": "",
-    "ar": "Merton"
-  },
-  {
     "cqc_id": "1-838498518",
     "ods_code": "",
     "name": "Clear Ear Clinic",
@@ -59469,25 +56640,6 @@
     "localAuthority": "Westminster",
     "lat": 51.516404,
     "lon": -0.14598,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-842483954",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "08006755196",
-    "website": "https://www.callthephysician.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-842483954",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
   },
@@ -59568,25 +56720,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-8490260136",
-    "ods_code": "",
-    "name": "GP Hub Central Croydon",
-    "address": "East Croydon Medical Centre, 59 Addiscombe Road, Croydon",
-    "postcode": "CR0 6SD",
-    "phone": "02082561046",
-    "website": "https://www.croydongphub.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8490260136",
-    "localAuthority": "Croydon",
-    "lat": 51.3752897,
-    "lon": -0.087775,
-    "providerName": "",
-    "ar": "Croydon"
-  },
-  {
     "cqc_id": "1-8490478232",
     "ods_code": "",
     "name": "The Oval GP Surgery",
@@ -59623,44 +56756,6 @@
     "lon": -0.2883269,
     "providerName": "",
     "ar": "Barnet"
-  },
-  {
-    "cqc_id": "1-8490260261",
-    "ods_code": "",
-    "name": "GP Hub Parkway",
-    "address": "Parkway Health Centre, New Addington, Croydon",
-    "postcode": "CR0 0JA",
-    "phone": "02084013238",
-    "website": "https://www.croydongphub.co.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8490260261",
-    "localAuthority": "Croydon",
-    "lat": 51.344382,
-    "lon": -0.018557,
-    "providerName": "",
-    "ar": "Croydon"
-  },
-  {
-    "cqc_id": "1-8490260324",
-    "ods_code": "",
-    "name": "Purley GP Hub",
-    "address": "Purley War Memorial Hospital, 856 Brighton Road, Purley",
-    "postcode": "CR8 2YL",
-    "phone": "02084013238",
-    "website": "https://www.croydongphub.co.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8490260324",
-    "localAuthority": "Croydon",
-    "lat": 51.34074,
-    "lon": -0.114466,
-    "providerName": "",
-    "ar": "Croydon"
   },
   {
     "cqc_id": "1-8524411305",
@@ -60306,25 +57401,6 @@
     "ar": "Richmond upon Thames"
   },
   {
-    "cqc_id": "1-8780851606",
-    "ods_code": "",
-    "name": "10 Harley Street",
-    "address": "10 Harley Street, London",
-    "postcode": "W1G 9PF",
-    "phone": "07860443550",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-8780851606",
-    "localAuthority": "Westminster",
-    "lat": 51.517391,
-    "lon": -0.146009,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-8815856488",
     "ods_code": "",
     "name": "UK Vein Clinic",
@@ -60762,25 +57838,6 @@
     "ar": "Kensington & Chelsea"
   },
   {
-    "cqc_id": "1-900447879",
-    "ods_code": "",
-    "name": "Euromedical Centre",
-    "address": "Unit 5, Holles House, Overton Road, London",
-    "postcode": "SW9 7AP",
-    "phone": "02073260991",
-    "website": "https://www.euromedicalcentre.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-900447879",
-    "localAuthority": "Lambeth",
-    "lat": 51.469964,
-    "lon": -0.111536,
-    "providerName": "",
-    "ar": "Lambeth"
-  },
-  {
     "cqc_id": "1-902577252",
     "ods_code": "",
     "name": "IHealth-Direct Limited",
@@ -60817,25 +57874,6 @@
     "lon": -0.086212,
     "providerName": "",
     "ar": "City of London"
-  },
-  {
-    "cqc_id": "1-9018083701",
-    "ods_code": "",
-    "name": "King-Lewis Family Practice",
-    "address": "Chelsea Consulting Rooms, 2 Lower Sloane Street, London",
-    "postcode": "SW1W 8BJ",
-    "phone": "02077306611",
-    "website": "https://www.king-lewisfamilypractice.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9018083701",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.491622,
-    "lon": -0.157642,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-903506119",
@@ -61407,25 +58445,6 @@
     "ar": "Hillingdon"
   },
   {
-    "cqc_id": "1-9261440352",
-    "ods_code": "",
-    "name": "Lara Clinic Limited",
-    "address": "37b Edgware Road, London",
-    "postcode": "W2 2JE",
-    "phone": "07904019555",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Inadequate",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9261440352",
-    "localAuthority": "Westminster",
-    "lat": 51.51446,
-    "lon": -0.162461,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-9266381865",
     "ods_code": "",
     "name": "Prenetics EMEA Ltd Operational Base",
@@ -61976,25 +58995,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-943641216",
-    "ods_code": "",
-    "name": "The Ella Clinic",
-    "address": "106 Harley Street, London",
-    "postcode": "W1G 7JE",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-943641216",
-    "localAuthority": "Westminster",
-    "lat": 51.521386,
-    "lon": -0.14785,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-9490797738",
     "ods_code": "",
     "name": "Fortius Clinic",
@@ -62069,25 +59069,6 @@
     "lon": -0.073397,
     "providerName": "",
     "ar": "Hackney"
-  },
-  {
-    "cqc_id": "1-952310986",
-    "ods_code": "",
-    "name": "Private Walk-In Clinic",
-    "address": "551 High Road, London",
-    "postcode": "N17 6SB",
-    "phone": "02088085901",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-952310986",
-    "localAuthority": "Haringey",
-    "lat": 51.595325,
-    "lon": -0.069235,
-    "providerName": "",
-    "ar": "Haringey"
   },
   {
     "cqc_id": "1-954613730",
@@ -62392,44 +59373,6 @@
     "lon": -0.1172237,
     "providerName": "",
     "ar": "Croydon"
-  },
-  {
-    "cqc_id": "1-9736478390",
-    "ods_code": "",
-    "name": "The Hale Clinic",
-    "address": "4 Harley Street, London",
-    "postcode": "W1G 9PB",
-    "phone": "01202744747",
-    "website": "https://www.drsharmadiagnostics.com",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9736478390",
-    "localAuthority": "Westminster",
-    "lat": 51.517183,
-    "lon": -0.145931,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
-    "cqc_id": "1-974035211",
-    "ods_code": "",
-    "name": "Unit 10.1.1 The Leathermarket",
-    "address": "11-13 Weston Street, London",
-    "postcode": "SE1 3ER",
-    "phone": "02031894604",
-    "website": "https://www.communityoutpatients.co.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/1-974035211",
-    "localAuthority": "Southwark",
-    "lat": 51.499931,
-    "lon": -0.084536,
-    "providerName": "",
-    "ar": "Southwark"
   },
   {
     "cqc_id": "1-9769729584",
@@ -62926,25 +59869,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "1-9933406405",
-    "ods_code": "",
-    "name": "The Care Oncology Clinic at 76 Harley Street",
-    "address": "76 Harley Street, London",
-    "postcode": "W1G 7HH",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/1-9933406405",
-    "localAuthority": "Westminster",
-    "lat": 51.520009,
-    "lon": -0.147185,
-    "providerName": "",
-    "ar": "Westminster"
-  },
-  {
     "cqc_id": "1-9933858539",
     "ods_code": "",
     "name": "HCA UK Medical Concierge Centre",
@@ -63341,25 +60265,6 @@
     "ar": "Kingston upon Thames"
   },
   {
-    "cqc_id": "5A720",
-    "ods_code": "",
-    "name": "Beckenham Beacon",
-    "address": "379 Croydon Road, Beckenham",
-    "postcode": "BR3 3QL",
-    "phone": "01689866530",
-    "website": "https://www.bromley.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/5A720",
-    "localAuthority": "Bromley",
-    "lat": 51.4052306,
-    "lon": -0.0331825,
-    "providerName": "",
-    "ar": "Bromley"
-  },
-  {
     "cqc_id": "5A818",
     "ods_code": "",
     "name": "Bevan Unit",
@@ -63567,25 +60472,6 @@
     "lon": -0.229374,
     "providerName": "",
     "ar": "Hammersmith & Fulham"
-  },
-  {
-    "cqc_id": "5C504",
-    "ods_code": "",
-    "name": "East Ham Care Centre",
-    "address": "East Ham Memorial Hospital, Shrewsbury Road, Forest Gate, London",
-    "postcode": "E7 8QR",
-    "phone": "02070596751",
-    "website": "https://www.newham.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/5C504",
-    "localAuthority": "Newham",
-    "lat": 51.539588,
-    "lon": 0.04536,
-    "providerName": "",
-    "ar": "Newham"
   },
   {
     "cqc_id": "5H1X1",
@@ -63929,25 +60815,6 @@
     "ar": "Lambeth"
   },
   {
-    "cqc_id": "5LE13",
-    "ods_code": "",
-    "name": "Dulwich Community Hospital",
-    "address": "East Dulwich Grove, London",
-    "postcode": "SE22 8PT",
-    "phone": "02075250407",
-    "website": "https://www.southwarkpct.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/5LE13",
-    "localAuthority": "Southwark",
-    "lat": 51.459067,
-    "lon": -0.081249,
-    "providerName": "",
-    "ar": "Southwark"
-  },
-  {
     "cqc_id": "5LE19",
     "ods_code": "",
     "name": "Mabel Goldwin House",
@@ -63986,18 +60853,18 @@
     "ar": "Lewisham"
   },
   {
-    "cqc_id": "5LG01",
+    "cqc_id": "RJ731",
     "ods_code": "",
     "name": "Queen Mary's Hospital",
     "address": "Roehampton Lane, Roehampton, London",
     "postcode": "SW15 5PN",
-    "phone": "02084876968",
-    "website": "https://www.wandsworth.nhs.uk",
+    "phone": "02084876000",
+    "website": "https://www.stgeorges.nhs.uk",
     "specialties": [
       "diagnostic"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/5LG01",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RJ731",
     "localAuthority": "Wandsworth",
     "lat": 51.45555,
     "lon": -0.241729,
@@ -64210,25 +61077,6 @@
     "ar": "Redbridge"
   },
   {
-    "cqc_id": "5NA24",
-    "ods_code": "",
-    "name": "King George Hospital",
-    "address": "Barley Lane, Goodmayes, Ilford",
-    "postcode": "IG3 8YB",
-    "phone": "02088224135",
-    "website": "https://www.redbridge.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/5NA24",
-    "localAuthority": "Redbridge",
-    "lat": 51.580545,
-    "lon": 0.112107,
-    "providerName": "",
-    "ar": "Redbridge"
-  },
-  {
     "cqc_id": "5P585",
     "ods_code": "",
     "name": "Caterham Dene Community Hospital",
@@ -64336,25 +61184,6 @@
     "lat": 51.532184,
     "lon": -0.049499,
     "providerName": ""
-  },
-  {
-    "cqc_id": "R1H13",
-    "ods_code": "",
-    "name": "Mile End Hospital",
-    "address": "Bancroft Road, London",
-    "postcode": "E1 4DG",
-    "phone": "02073777000",
-    "website": "https://www.bartshealth.nhs.uk/mile-end/",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1H13",
-    "localAuthority": "Tower Hamlets",
-    "lat": 51.5250491,
-    "lon": -0.0421793,
-    "providerName": "",
-    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "R1H41",
@@ -64471,18 +61300,18 @@
     "ar": "Waltham Forest"
   },
   {
-    "cqc_id": "R1K03",
+    "cqc_id": "RV8M2",
     "ods_code": "",
     "name": "St Mark's Hospital",
     "address": "Watford Road, Harrow",
     "postcode": "HA1 3UJ",
     "phone": "02088643232",
-    "website": "https://www.lnwh.nhs.uk",
+    "website": "https://www.nwlh.nhs.uk",
     "specialties": [
-      "hospital"
+      "diagnostic"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1K03",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RV8M2",
     "localAuthority": "Brent",
     "lat": 51.575407,
     "lon": -0.322037,
@@ -64545,25 +61374,6 @@
     "lon": -0.322037,
     "providerName": "",
     "ar": "Brent"
-  },
-  {
-    "cqc_id": "R1K68",
-    "ods_code": "",
-    "name": "Clayponds Hospital",
-    "address": "Sterling Place, Ealing, London",
-    "postcode": "W5 4RN",
-    "phone": "02085604011",
-    "website": "https://www.lnwh.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/R1K68",
-    "localAuthority": "Ealing",
-    "lat": 51.495087,
-    "lon": -0.298884,
-    "providerName": "",
-    "ar": "Ealing"
   },
   {
     "cqc_id": "R1K23",
@@ -64640,25 +61450,6 @@
     "lon": -0.07375,
     "providerName": "",
     "ar": "Enfield"
-  },
-  {
-    "cqc_id": "RAL25",
-    "ods_code": "",
-    "name": "Hospital of St John & St Elizabeth",
-    "address": "60 Grove End Road, St John's Wood, London",
-    "postcode": "NW8 9NH",
-    "phone": "02078064000",
-    "website": "https://www.hje.org.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL25",
-    "localAuthority": "Westminster",
-    "lat": 51.533473,
-    "lon": -0.175461,
-    "providerName": "",
-    "ar": "Westminster"
   },
   {
     "cqc_id": "RAL27",
@@ -64755,44 +61546,6 @@
     "ar": "Haringey"
   },
   {
-    "cqc_id": "RAL40",
-    "ods_code": "",
-    "name": "Finchley Memorial Hospital",
-    "address": "Granville Road, London",
-    "postcode": "N12 0JE",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL40",
-    "localAuthority": "Barnet",
-    "lat": 51.6054556,
-    "lon": -0.1765934,
-    "providerName": "",
-    "ar": "Barnet"
-  },
-  {
-    "cqc_id": "RAL29",
-    "ods_code": "",
-    "name": "Highgate Dialysis Unit",
-    "address": "53-57 Highgate Road, Islington, London",
-    "postcode": "NW5 1TL",
-    "phone": "02072841799",
-    "website": "https://www.fmc-ag.com",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAL29",
-    "localAuthority": "Camden",
-    "lat": 51.553935,
-    "lon": -0.144754,
-    "providerName": "",
-    "ar": "Camden"
-  },
-  {
     "cqc_id": "RAL80",
     "ods_code": "",
     "name": "Hadley Wood Hospital",
@@ -64869,21 +61622,21 @@
     "ar": "Camden"
   },
   {
-    "cqc_id": "RALWH",
+    "cqc_id": "RKEQ4",
     "ods_code": "",
     "name": "The Whittington Hospital",
-    "address": "Highgate Hill, Archway, London",
+    "address": "Trust Offices, Magdala Avenue, London",
     "postcode": "N19 5NF",
     "phone": "02072723070",
     "website": "https://www.whittington.nhs.uk",
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RALWH",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RKEQ4",
     "localAuthority": "Islington",
-    "lat": 51.566482,
-    "lon": -0.139066,
+    "lat": 51.5664822,
+    "lon": -0.1390665,
     "providerName": "",
     "ar": "Islington"
   },
@@ -64926,7 +61679,7 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "RALMV",
+    "cqc_id": "RAS02",
     "ods_code": "",
     "name": "Mount Vernon Hospital",
     "address": "Rickmansworth Road, Northwood",
@@ -64936,8 +61689,8 @@
     "specialties": [
       "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RALMV",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RAS02",
     "localAuthority": "Hillingdon",
     "lat": 51.614923,
     "lon": -0.445823,
@@ -65020,25 +61773,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "RAPCF",
-    "ods_code": "",
-    "name": "Chase Farm Hospital",
-    "address": "127 The Ridgeway, Enfield",
-    "postcode": "EN2 8JL",
-    "phone": "020277940500",
-    "website": "https://www.royalfree.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAPCF",
-    "localAuthority": "Enfield",
-    "lat": 51.666528,
-    "lon": -0.104009,
-    "providerName": "",
-    "ar": "Enfield"
-  },
-  {
     "cqc_id": "RAPST",
     "ods_code": "",
     "name": "St Ann's Hospital",
@@ -65056,25 +61790,6 @@
     "lon": -0.092097,
     "providerName": "",
     "ar": "Haringey"
-  },
-  {
-    "cqc_id": "RAPNM",
-    "ods_code": "",
-    "name": "North Middlesex University Hospital",
-    "address": "Sterling Way, Haringey, London",
-    "postcode": "N18 1QX",
-    "phone": "02088872000",
-    "website": "https://www.northmid.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RAPNM",
-    "localAuthority": "Enfield",
-    "lat": 51.6130962,
-    "lon": -0.0737247,
-    "providerName": "",
-    "ar": "Enfield"
   },
   {
     "cqc_id": "RASW1",
@@ -65151,25 +61866,6 @@
     "lon": -0.3454738,
     "providerName": "",
     "ar": "Ealing"
-  },
-  {
-    "cqc_id": "RAS02",
-    "ods_code": "",
-    "name": "Mount Vernon Hospital",
-    "address": "Rickmansworth Road, Northwood",
-    "postcode": "HA6 2RN",
-    "phone": "01923826111",
-    "website": "https://www.thh.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RAS02",
-    "localAuthority": "Hillingdon",
-    "lat": 51.614923,
-    "lon": -0.445823,
-    "providerName": "",
-    "ar": "Hillingdon"
   },
   {
     "cqc_id": "RASW5",
@@ -65400,25 +62096,6 @@
     "ar": "Waltham Forest"
   },
   {
-    "cqc_id": "RATX7",
-    "ods_code": "",
-    "name": "Heronwood & Galleon Inpatient Facility",
-    "address": "Makepeace Road, Wanstead, London",
-    "postcode": "E11 1UU",
-    "phone": "02085305665",
-    "website": "https://www.nelft.nhc.co.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RATX7",
-    "localAuthority": "Redbridge",
-    "lat": 51.583704,
-    "lon": 0.027334,
-    "providerName": "",
-    "ar": "Redbridge"
-  },
-  {
     "cqc_id": "RATX9",
     "ods_code": "",
     "name": "Nightingale Hospital London",
@@ -65455,100 +62132,6 @@
     "lon": -0.282601,
     "providerName": "",
     "ar": "Kingston upon Thames"
-  },
-  {
-    "cqc_id": "RATX6",
-    "ods_code": "",
-    "name": "St George's Hospital",
-    "address": "117 Suttons Lane, Hornchurch",
-    "postcode": "RM12 6RS",
-    "phone": "01708465302",
-    "website": "https://www.onelcommunityservices.nhs",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RATX6",
-    "localAuthority": "Havering",
-    "lat": 51.547548,
-    "lon": 0.2175,
-    "providerName": ""
-  },
-  {
-    "cqc_id": "RAX05",
-    "ods_code": "RAX05",
-    "name": "Teddington Memorial Hospital",
-    "address": "Hampton Road, Teddington",
-    "postcode": "TW11 0JL",
-    "phone": "07785695086",
-    "website": "",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAX05",
-    "localAuthority": "Richmond upon Thames",
-    "lat": 51.4258375,
-    "lon": -0.340978,
-    "providerName": "",
-    "ar": "Richmond upon Thames"
-  },
-  {
-    "cqc_id": "RAX58",
-    "ods_code": "",
-    "name": "The New Victoria Hospital",
-    "address": "184 Coombe Lane West, Kingston Upon Thames",
-    "postcode": "KT2 7EG",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAX58",
-    "localAuthority": "Kingston upon Thames",
-    "lat": 51.415693,
-    "lon": -0.2542662,
-    "providerName": "",
-    "ar": "Kingston upon Thames"
-  },
-  {
-    "cqc_id": "RAX04",
-    "ods_code": "",
-    "name": "Queen Mary's Hospital",
-    "address": "Roehampton Lane, Roehampton, London",
-    "postcode": "SW15 5PN",
-    "phone": "",
-    "website": "https://www.kingstonhospital.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RAX04",
-    "localAuthority": "Wandsworth",
-    "lat": 51.45555,
-    "lon": -0.241729,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
-    "cqc_id": "RC3X1",
-    "ods_code": "",
-    "name": "Clayponds Hospital",
-    "address": "Sterling Way, Ealing, London",
-    "postcode": "W5 4RN",
-    "phone": "02085604011",
-    "website": "https://www.ealingpct.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RC3X1",
-    "localAuthority": "Ealing",
-    "lat": 51.495087,
-    "lon": -0.298884,
-    "providerName": "",
-    "ar": "Ealing"
   },
   {
     "cqc_id": "RC3X3",
@@ -65589,25 +62172,6 @@
     "ar": "Barking & Dagenham"
   },
   {
-    "cqc_id": "RF4DG",
-    "ods_code": "",
-    "name": "King George Hospital",
-    "address": "Barley Lane, Goodmayes, Ilford",
-    "postcode": "IG3 8YB",
-    "phone": "02089708051",
-    "website": "https://www.bhrhospitals.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RF4DG",
-    "localAuthority": "Redbridge",
-    "lat": 51.580545,
-    "lon": 0.112107,
-    "providerName": "",
-    "ar": "Redbridge"
-  },
-  {
     "cqc_id": "RF4VH",
     "ods_code": "",
     "name": "Victoria Hospital",
@@ -65642,25 +62206,6 @@
     "lat": 51.540956,
     "lon": 0.097698,
     "providerName": ""
-  },
-  {
-    "cqc_id": "RF4XY",
-    "ods_code": "",
-    "name": "Goodmayes Hospital",
-    "address": "157 Barley Lane, Ilford",
-    "postcode": "IG3 8XJ",
-    "phone": "",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RF4XY",
-    "localAuthority": "Redbridge",
-    "lat": 51.5779939,
-    "lon": 0.1105138,
-    "providerName": "",
-    "ar": "Redbridge"
   },
   {
     "cqc_id": "RGCKH",
@@ -65720,44 +62265,6 @@
     "ar": "Waltham Forest"
   },
   {
-    "cqc_id": "RGCMC",
-    "ods_code": "",
-    "name": "Silverthorne Medical Centre",
-    "address": "2 Friars Close, Larkshall Road, Chingford, London",
-    "postcode": "E4 6UN",
-    "phone": "",
-    "website": "https://www.whippsx.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RGCMC",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.620089,
-    "lon": -0.00105,
-    "providerName": "",
-    "ar": "Waltham Forest"
-  },
-  {
-    "cqc_id": "RJ144",
-    "ods_code": "",
-    "name": "Pulross Intermediate Care Centre",
-    "address": "47a Pulross Road, London",
-    "postcode": "SW9 8AE",
-    "phone": "",
-    "website": "https://www.guysandstthomas.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ144",
-    "localAuthority": "Lambeth",
-    "lat": 51.463981,
-    "lon": -0.121497,
-    "providerName": "",
-    "ar": "Lambeth"
-  },
-  {
     "cqc_id": "RJ133",
     "ods_code": "",
     "name": "Guy's Cancer Queen Mary's Hospital",
@@ -65775,25 +62282,6 @@
     "lon": 0.101687,
     "providerName": "",
     "ar": "Bexley"
-  },
-  {
-    "cqc_id": "RGCX2",
-    "ods_code": "",
-    "name": "Ainslie & Highams Inpatient Facility",
-    "address": "3 Friars Close, Chingford, London",
-    "postcode": "E4 6UW",
-    "phone": "02084307270",
-    "website": "https://www.onelcommunityservices.nhs.uk/",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RGCX2",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.619669,
-    "lon": -0.001198,
-    "providerName": "",
-    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "RJ179",
@@ -65948,25 +62436,6 @@
     "ar": "Lewisham"
   },
   {
-    "cqc_id": "RJ1X3",
-    "ods_code": "",
-    "name": "Lambeth Community Care Centre",
-    "address": "Monkton Street, London",
-    "postcode": "SE11 4TX",
-    "phone": "02030494743",
-    "website": "https://www.guysandstthomas.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ1X3",
-    "localAuthority": "Lambeth",
-    "lat": 51.4927892,
-    "lon": -0.1082741,
-    "providerName": "",
-    "ar": "Lambeth"
-  },
-  {
     "cqc_id": "RJ1X9",
     "ods_code": "",
     "name": "Royal Brompton & Harefield Hospitals Specialist Care - Wimpole Street",
@@ -66004,18 +62473,18 @@
     "ar": "Lewisham"
   },
   {
-    "cqc_id": "RJ230",
+    "cqc_id": "RN7QM",
     "ods_code": "",
     "name": "Queen Mary's Hospital",
     "address": "Frognal Avenue, Sidcup",
     "postcode": "DA14 6LT",
-    "phone": "02083333284",
-    "website": "https://www.lewishamandgreenwich.nhs.uk",
+    "phone": "02083022678",
+    "website": "",
     "specialties": [
-      "diagnostic"
+      "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ230",
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/RN7QM",
     "localAuthority": "Bexley",
     "lat": 51.419041,
     "lon": 0.101687,
@@ -66023,18 +62492,18 @@
     "ar": "Bexley"
   },
   {
-    "cqc_id": "RJ253",
+    "cqc_id": "RJZ30",
     "ods_code": "",
     "name": "Princess Royal University Hospital",
     "address": "Farnborough Common, Orpington",
     "postcode": "BR6 8ND",
-    "phone": "02083333284",
-    "website": "https://www.lewishamandgreenwich.nhs.uk",
+    "phone": "02032999000",
+    "website": "https://www.kch.nhs.uk",
     "specialties": [
-      "diagnostic"
+      "hospital"
     ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ253",
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/RJZ30",
     "localAuthority": "Bromley",
     "lat": 51.366243,
     "lon": 0.059146,
@@ -66061,25 +62530,6 @@
     "ar": "Lewisham"
   },
   {
-    "cqc_id": "RJ2X1",
-    "ods_code": "",
-    "name": "Baring Road Medical Centre",
-    "address": "282 Baring Road, Grove Park, London",
-    "postcode": "SE12 0DS",
-    "phone": "02083333284",
-    "website": "https://www.lewisham.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ2X1",
-    "localAuthority": "Lewisham",
-    "lat": 51.4353711,
-    "lon": 0.0194185,
-    "providerName": "",
-    "ar": "Lewisham"
-  },
-  {
     "cqc_id": "RJ2C1",
     "ods_code": "",
     "name": "Waldron Health Centre",
@@ -66097,25 +62547,6 @@
     "lon": -0.03191,
     "providerName": "",
     "ar": "Lewisham"
-  },
-  {
-    "cqc_id": "RJ2X2",
-    "ods_code": "",
-    "name": "Beckenham Beacon",
-    "address": "Beckenham Beacon, 379 Croydon Road, Beckenham",
-    "postcode": "BR3 3QL",
-    "phone": "02083333284",
-    "website": "https://www.lewisham.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ2X2",
-    "localAuthority": "Bromley",
-    "lat": 51.405232,
-    "lon": -0.033209,
-    "providerName": "",
-    "ar": "Bromley"
   },
   {
     "cqc_id": "RJ2X3",
@@ -66345,25 +62776,6 @@
     "ar": "Wandsworth"
   },
   {
-    "cqc_id": "RJ731",
-    "ods_code": "",
-    "name": "Queen Mary's Hospital",
-    "address": "Roehampton Lane, Roehampton, London",
-    "postcode": "SW15 5PN",
-    "phone": "02084876000",
-    "website": "https://www.stgeorges.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ731",
-    "localAuthority": "Wandsworth",
-    "lat": 51.45555,
-    "lon": -0.241729,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
     "cqc_id": "RJ611",
     "ods_code": "",
     "name": "Croydon University Hospital",
@@ -66381,25 +62793,6 @@
     "lon": -0.108758,
     "providerName": "",
     "ar": "Croydon"
-  },
-  {
-    "cqc_id": "RJ7X1",
-    "ods_code": "",
-    "name": "Dawes House",
-    "address": "6 Bramland Close, Battersea, London",
-    "postcode": "SW11 2NS",
-    "phone": "02073268860",
-    "website": "https://www.stgeorges.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJ7X1",
-    "localAuthority": "Wandsworth",
-    "lat": 51.465901,
-    "lon": -0.170671,
-    "providerName": "",
-    "ar": "Wandsworth"
   },
   {
     "cqc_id": "RJ765",
@@ -66497,25 +62890,6 @@
     "ar": "Wandsworth"
   },
   {
-    "cqc_id": "RJZ31",
-    "ods_code": "",
-    "name": "Beckenham Beacon",
-    "address": "379 Croydon Road, Beckenham",
-    "postcode": "BR3 3QL",
-    "phone": "02032999000",
-    "website": "https://www.kch.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ31",
-    "localAuthority": "Bromley",
-    "lat": 51.4052306,
-    "lon": -0.0331825,
-    "providerName": "",
-    "ar": "Bromley"
-  },
-  {
     "cqc_id": "RJZ10",
     "ods_code": "",
     "name": "Queen Mary's Sidcup",
@@ -66533,44 +62907,6 @@
     "lon": 0.101687,
     "providerName": "",
     "ar": "Bexley"
-  },
-  {
-    "cqc_id": "RJZ30",
-    "ods_code": "",
-    "name": "Princess Royal University Hospital",
-    "address": "Farnborough Common, Orpington",
-    "postcode": "BR6 8ND",
-    "phone": "02032999000",
-    "website": "https://www.kch.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ30",
-    "localAuthority": "Bromley",
-    "lat": 51.366243,
-    "lon": 0.059146,
-    "providerName": "",
-    "ar": "Bromley"
-  },
-  {
-    "cqc_id": "RJZ70",
-    "ods_code": "",
-    "name": "Orpington Hospital",
-    "address": "Sevenoaks Road, Orpington",
-    "postcode": "BR6 9JU",
-    "phone": "02032999000",
-    "website": "https://www.kch.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RJZ70",
-    "localAuthority": "Bromley",
-    "lat": 51.3625034,
-    "lon": 0.0951765,
-    "providerName": "",
-    "ar": "Bromley"
   },
   {
     "cqc_id": "RJZX2",
@@ -66668,44 +63004,6 @@
     "ar": "Haringey"
   },
   {
-    "cqc_id": "RKEX1",
-    "ods_code": "",
-    "name": "Hornsey Central Neighbourhood Health Centre",
-    "address": "151 Park Road, Crouch End, London",
-    "postcode": "N8 8JD",
-    "phone": "02030742790",
-    "website": "https://www.haringey.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RKEX1",
-    "localAuthority": "Haringey",
-    "lat": 51.583422,
-    "lon": -0.131013,
-    "providerName": "",
-    "ar": "Haringey"
-  },
-  {
-    "cqc_id": "RKEX2",
-    "ods_code": "",
-    "name": "Chestnut Ward",
-    "address": "St Ann's Hospital, St Ann's Road, Tottenham, London",
-    "postcode": "N15 3TH",
-    "phone": "",
-    "website": "https://www.whittington.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RKEX2",
-    "localAuthority": "Haringey",
-    "lat": 51.5806277,
-    "lon": -0.0920713,
-    "providerName": "",
-    "ar": "Haringey"
-  },
-  {
     "cqc_id": "RKEX3",
     "ods_code": "",
     "name": "Finsbury Health Centre",
@@ -66721,44 +63019,6 @@
     "localAuthority": "Islington",
     "lat": 51.525191,
     "lon": -0.109609,
-    "providerName": "",
-    "ar": "Islington"
-  },
-  {
-    "cqc_id": "RKEQ4",
-    "ods_code": "",
-    "name": "The Whittington Hospital",
-    "address": "Trust Offices, Magdala Avenue, London",
-    "postcode": "N19 5NF",
-    "phone": "02072723070",
-    "website": "https://www.whittington.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RKEQ4",
-    "localAuthority": "Islington",
-    "lat": 51.5664822,
-    "lon": -0.1390665,
-    "providerName": "",
-    "ar": "Islington"
-  },
-  {
-    "cqc_id": "RKEX4",
-    "ods_code": "",
-    "name": "Northern Health Centre",
-    "address": "580 Holloway Road, Holloway, London",
-    "postcode": "N7 6LB",
-    "phone": "",
-    "website": "https://www.whittington.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RKEX4",
-    "localAuthority": "Islington",
-    "lat": 51.5607913,
-    "lon": -0.1233422,
     "providerName": "",
     "ar": "Islington"
   },
@@ -66799,25 +63059,6 @@
     "lon": -0.324434,
     "providerName": "",
     "ar": "Hounslow"
-  },
-  {
-    "cqc_id": "RKL4D",
-    "ods_code": "",
-    "name": "Clayponds Hospital",
-    "address": "Sterling Place, Ealing, London",
-    "postcode": "W5 4RN",
-    "phone": "02083548146",
-    "website": "https://www.westlondon.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RKL4D",
-    "localAuthority": "Ealing",
-    "lat": 51.495087,
-    "lon": -0.298884,
-    "providerName": "",
-    "ar": "Ealing"
   },
   {
     "cqc_id": "RKEX7",
@@ -66895,25 +63136,6 @@
     "providerName": ""
   },
   {
-    "cqc_id": "RN7QM",
-    "ods_code": "",
-    "name": "Queen Mary's Hospital",
-    "address": "Frognal Avenue, Sidcup",
-    "postcode": "DA14 6LT",
-    "phone": "02083022678",
-    "website": "",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RN7QM",
-    "localAuthority": "Bexley",
-    "lat": 51.419041,
-    "lon": 0.101687,
-    "providerName": "",
-    "ar": "Bexley"
-  },
-  {
     "cqc_id": "RNH00",
     "ods_code": "",
     "name": "Newham University Hospital",
@@ -66933,44 +63155,6 @@
     "ar": "Newham"
   },
   {
-    "cqc_id": "RNJ12",
-    "ods_code": "",
-    "name": "The Royal London Hospital",
-    "address": "Whitechapel Road, Whitechapel, London",
-    "postcode": "E1 1BB",
-    "phone": "02073777422",
-    "website": "https://www.bartsandthelondon.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RNJ12",
-    "localAuthority": "Tower Hamlets",
-    "lat": 51.518702,
-    "lon": -0.0601379,
-    "providerName": "",
-    "ar": "Tower Hamlets"
-  },
-  {
-    "cqc_id": "RNJ13",
-    "ods_code": "",
-    "name": "Mile End Hospital",
-    "address": "Mile End Hospital, Bancroft Road, Mile End, London",
-    "postcode": "E1 4DG",
-    "phone": "02073777000",
-    "website": "https://www.bartsandthelondon.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RNJ13",
-    "localAuthority": "Tower Hamlets",
-    "lat": 51.5250491,
-    "lon": -0.0421793,
-    "providerName": "",
-    "ar": "Tower Hamlets"
-  },
-  {
     "cqc_id": "RN7ED",
     "ods_code": "",
     "name": "Erith & District Hospital",
@@ -66988,43 +63172,6 @@
     "lon": 0.166643,
     "providerName": "",
     "ar": "Bexley"
-  },
-  {
-    "cqc_id": "RNJ83",
-    "ods_code": "",
-    "name": "The London Chest Hospital",
-    "address": "Bonner Road, Bethnal Green, London",
-    "postcode": "E2 9JX",
-    "phone": "02073777422",
-    "website": "https://www.bartsandthelondon.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RNJ83",
-    "localAuthority": "Tower Hamlets",
-    "lat": 51.532184,
-    "lon": -0.049499,
-    "providerName": ""
-  },
-  {
-    "cqc_id": "RNJM0",
-    "ods_code": "",
-    "name": "St Bartholomew's Hospital",
-    "address": "West Smithfield, London",
-    "postcode": "EC1A 7BE",
-    "phone": "02073777422",
-    "website": "https://www.bartsandthelondon.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RNJM0",
-    "localAuthority": "City of London",
-    "lat": 51.51775,
-    "lon": -0.100404,
-    "providerName": "",
-    "ar": "City of London"
   },
   {
     "cqc_id": "RNK03",
@@ -67196,25 +63343,6 @@
     "lon": -0.100404,
     "providerName": "",
     "ar": "City of London"
-  },
-  {
-    "cqc_id": "RP640",
-    "ods_code": "",
-    "name": "St Anthony's Hospital",
-    "address": "801 London Road, Cheam, Sutton",
-    "postcode": "SM3 9DW",
-    "phone": "02038117883",
-    "website": "",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RP640",
-    "localAuthority": "Sutton",
-    "lat": 51.3799203,
-    "lon": -0.2207937,
-    "providerName": "",
-    "ar": "Sutton"
   },
   {
     "cqc_id": "RP693",
@@ -67616,25 +63744,6 @@
     "ar": "Bexley"
   },
   {
-    "cqc_id": "RPGX4",
-    "ods_code": "",
-    "name": "Bevan Unit",
-    "address": "20 Pier Way, Thamesmead, London",
-    "postcode": "SE28 0FH",
-    "phone": "02083173610",
-    "website": "https://www.oxleas.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPGX4",
-    "localAuthority": "Greenwich",
-    "lat": 51.49534,
-    "lon": 0.082361,
-    "providerName": "",
-    "ar": "Greenwich"
-  },
-  {
     "cqc_id": "RPGX5",
     "ods_code": "",
     "name": "Bluebell House",
@@ -67768,25 +63877,6 @@
     "ar": "Westminster"
   },
   {
-    "cqc_id": "RPYW1",
-    "ods_code": "",
-    "name": "The Nelson Health Centre",
-    "address": "220 Kingston Road, Raynes Park",
-    "postcode": "SW20 8DA",
-    "phone": "02036683470",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RPYW1",
-    "localAuthority": "Merton",
-    "lat": 51.409967,
-    "lon": -0.210281,
-    "providerName": "",
-    "ar": "Merton"
-  },
-  {
     "cqc_id": "RPGXG",
     "ods_code": "",
     "name": "151-153 Lodge Hill",
@@ -67918,44 +64008,6 @@
     "lon": -0.256518,
     "providerName": "",
     "ar": "Richmond upon Thames"
-  },
-  {
-    "cqc_id": "RQY07",
-    "ods_code": "",
-    "name": "Queen Mary's Hospital",
-    "address": "Roehampton Lane, Roehampton, London",
-    "postcode": "SW15 5PN",
-    "phone": "02084876000",
-    "website": "https://www.swlstg-tr.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RQY07",
-    "localAuthority": "Wandsworth",
-    "lat": 51.45555,
-    "lon": -0.241729,
-    "providerName": "",
-    "ar": "Wandsworth"
-  },
-  {
-    "cqc_id": "RQY08",
-    "ods_code": "",
-    "name": "Tolworth Hospital",
-    "address": "Red Lion Road, Surbiton",
-    "postcode": "KT6 7QU",
-    "phone": "02086820102",
-    "website": "https://www.swlstg-tr.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RQY08",
-    "localAuthority": "Kingston upon Thames",
-    "lat": 51.3790859,
-    "lon": -0.2884965,
-    "providerName": "",
-    "ar": "Kingston upon Thames"
   },
   {
     "cqc_id": "RQY01",
@@ -68108,63 +64160,6 @@
     "lon": -0.300343,
     "providerName": "",
     "ar": "Kingston upon Thames"
-  },
-  {
-    "cqc_id": "RRP02",
-    "ods_code": "",
-    "name": "Chase Farm Hospital",
-    "address": "The Ridgeway, Enfield",
-    "postcode": "EN2 8JL",
-    "phone": "08451114000",
-    "website": "https://www.beh-mht.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRP02",
-    "localAuthority": "Enfield",
-    "lat": 51.666528,
-    "lon": -0.104009,
-    "providerName": "",
-    "ar": "Enfield"
-  },
-  {
-    "cqc_id": "RRP09",
-    "ods_code": "",
-    "name": "Barnet General Hospital",
-    "address": "Wellhouse Lane, Barnet",
-    "postcode": "EN5 3DJ",
-    "phone": "02084405111",
-    "website": "https://www.beh-mht.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRP09",
-    "localAuthority": "Barnet",
-    "lat": 51.650726,
-    "lon": -0.214152,
-    "providerName": "",
-    "ar": "Barnet"
-  },
-  {
-    "cqc_id": "RRP47",
-    "ods_code": "",
-    "name": "Magnolia Unit",
-    "address": "Flat 3 Rowan Court, St Michael's Centre, 2 Gater Drive, Enfield",
-    "postcode": "EN2 0JB",
-    "phone": "02083752949",
-    "website": "https://www.beh-mht.nhs.uk/enfield-community-services/ecs-services/magnolia-unit.htm",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RRP47",
-    "localAuthority": "Enfield",
-    "lat": 51.662127,
-    "lon": -0.084383,
-    "providerName": "",
-    "ar": "Enfield"
   },
   {
     "cqc_id": "RRP17",
@@ -68411,62 +64406,6 @@
     "lon": -0.13541,
     "providerName": "",
     "ar": "Camden"
-  },
-  {
-    "cqc_id": "RT301",
-    "ods_code": "",
-    "name": "Harefield Hospital",
-    "address": "Hill End Road, Harefield",
-    "postcode": "UB9 6JH",
-    "phone": "01895823737",
-    "website": "https://www.rbht.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RT301",
-    "localAuthority": "Hillingdon",
-    "lat": 51.6067317,
-    "lon": -0.4827474,
-    "providerName": "",
-    "ar": "Hillingdon"
-  },
-  {
-    "cqc_id": "RT302",
-    "ods_code": "",
-    "name": "Royal Brompton Hospital",
-    "address": "Sydney Street, Fulham, London",
-    "postcode": "SW3 6NP",
-    "phone": "02073528121",
-    "website": "https://www.rbht.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RT302",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.4897438,
-    "lon": -0.1708308,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
-  },
-  {
-    "cqc_id": "RT3X1",
-    "ods_code": "",
-    "name": "Royal Brompton & Harefield Hospitals Specialist Care - Wimpole Street",
-    "address": "77 - 78 Wimpole Street, London",
-    "postcode": "W1G 9RX",
-    "phone": "02073497713",
-    "website": "https://www.rbhh-specialistcare.co.uk/wimpole",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RT3X1",
-    "localAuthority": "Westminster",
-    "lat": 51.517326,
-    "lon": -0.148145,
-    "providerName": ""
   },
   {
     "cqc_id": "RRVX2",
@@ -68811,25 +64750,6 @@
     "ar": "Kensington & Chelsea"
   },
   {
-    "cqc_id": "RV3DY",
-    "ods_code": "",
-    "name": "South Wing, St Pancras Hospital",
-    "address": "4 St Pancras Way, London",
-    "postcode": "NW1 0PE",
-    "phone": "02033173500",
-    "website": "https://www.cnwl.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RV3DY",
-    "localAuthority": "Camden",
-    "lat": 51.53665,
-    "lon": -0.131658,
-    "providerName": "",
-    "ar": "Camden"
-  },
-  {
     "cqc_id": "RV3AN",
     "ods_code": "",
     "name": "Hillingdon Hospital Mental Health Site",
@@ -69058,81 +64978,6 @@
     "ar": "Croydon"
   },
   {
-    "cqc_id": "RV820",
-    "ods_code": "",
-    "name": "Northwick Park Hospital",
-    "address": "Watford Road, Harrow",
-    "postcode": "HA1 3UJ",
-    "phone": "02088643232",
-    "website": "https://www.nwlh.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RV820",
-    "localAuthority": "Brent",
-    "lat": 51.575407,
-    "lon": -0.322037,
-    "providerName": "",
-    "ar": "Brent"
-  },
-  {
-    "cqc_id": "RV831",
-    "ods_code": "",
-    "name": "Central Middlesex Hospital",
-    "address": "Acton Lane, Park Royal, London",
-    "postcode": "NW10 7NS",
-    "phone": "02088693493",
-    "website": "https://www.nwlh.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RV831",
-    "localAuthority": "Brent",
-    "lat": 51.5309378,
-    "lon": -0.2691376,
-    "providerName": "",
-    "ar": "Brent"
-  },
-  {
-    "cqc_id": "RV8M2",
-    "ods_code": "",
-    "name": "St Mark's Hospital",
-    "address": "Watford Road, Harrow",
-    "postcode": "HA1 3UJ",
-    "phone": "02088643232",
-    "website": "https://www.nwlh.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "Requires improvement",
-    "cqc_url": "https://www.cqc.org.uk/location/RV8M2",
-    "localAuthority": "Brent",
-    "lat": 51.575407,
-    "lon": -0.322037,
-    "providerName": "",
-    "ar": "Brent"
-  },
-  {
-    "cqc_id": "RVR04",
-    "ods_code": "",
-    "name": "Nelson Hospital",
-    "address": "Kingston Road, Raynes Park, London",
-    "postcode": "SW20 8DB",
-    "phone": "02082962000",
-    "website": "https://www.epsom-sthelier.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RVR04",
-    "localAuthority": "Merton",
-    "lat": 51.410661,
-    "lon": -0.209171,
-    "providerName": ""
-  },
-  {
     "cqc_id": "RVRD4",
     "ods_code": "",
     "name": "Kingston Satellite Dialysis Unit",
@@ -69152,24 +64997,6 @@
     "ar": "Kingston upon Thames"
   },
   {
-    "cqc_id": "RVR06",
-    "ods_code": "",
-    "name": "Sutton Hospital",
-    "address": "Cotswold Road, Sutton",
-    "postcode": "SM2 5NF",
-    "phone": "02082962000",
-    "website": "https://www.epsom-sthelier.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RVR06",
-    "localAuthority": "Sutton",
-    "lat": 51.3448032,
-    "lon": -0.1936459,
-    "providerName": ""
-  },
-  {
     "cqc_id": "RVRD5",
     "ods_code": "",
     "name": "Mayday Satellite Dialysis Unit",
@@ -69187,24 +65014,6 @@
     "lon": -0.108758,
     "providerName": "",
     "ar": "Croydon"
-  },
-  {
-    "cqc_id": "RVRL4",
-    "ods_code": "",
-    "name": "Molesey Community Hospital",
-    "address": "High Street, West Molesey",
-    "postcode": "KT8 2LU",
-    "phone": "02082962000",
-    "website": "https://www.epsom-sthelier.nhs.uk",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "Good",
-    "cqc_url": "https://www.cqc.org.uk/location/RVRL4",
-    "localAuthority": "Surrey",
-    "lat": 51.3975304,
-    "lon": -0.3725214,
-    "providerName": ""
   },
   {
     "cqc_id": "RWK46",
@@ -69359,25 +65168,6 @@
     "ar": "Barking & Dagenham"
   },
   {
-    "cqc_id": "RWK89",
-    "ods_code": "",
-    "name": "East Ham Care Centre",
-    "address": "Shrewsbury Road, Forest Gate, London",
-    "postcode": "E7 8QR",
-    "phone": "",
-    "website": "https://www.eastlondon.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWK89",
-    "localAuthority": "Newham",
-    "lat": 51.539588,
-    "lon": 0.04536,
-    "providerName": "",
-    "ar": "Newham"
-  },
-  {
     "cqc_id": "RWKG3",
     "ods_code": "",
     "name": "Rainham and Upminster Medical Centre",
@@ -69435,25 +65225,6 @@
     "ar": "Tower Hamlets"
   },
   {
-    "cqc_id": "RWKX4",
-    "ods_code": "",
-    "name": "Urgent Care Centre",
-    "address": "Newham University Hospital NHS Trust, Glen Road, Plaistow, London",
-    "postcode": "E13 8SA",
-    "phone": "02070596751",
-    "website": "https://www.eastlondon.nhs.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWKX4",
-    "localAuthority": "Newham",
-    "lat": 51.519729,
-    "lon": 0.033701,
-    "providerName": "",
-    "ar": "Newham"
-  },
-  {
     "cqc_id": "RWKX6",
     "ods_code": "",
     "name": "Warehouse K - Management Building",
@@ -69469,44 +65240,6 @@
     "localAuthority": "Newham",
     "lat": 51.508934,
     "lon": 0.024978,
-    "providerName": "",
-    "ar": "Newham"
-  },
-  {
-    "cqc_id": "RWKX8",
-    "ods_code": "",
-    "name": "Urgent Care Centre",
-    "address": "Newham University Hospital NHS Trust, Glen Road, Plaistow, London",
-    "postcode": "E13 8SA",
-    "phone": "",
-    "website": "https://www.eastlondon.nhs.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWKX8",
-    "localAuthority": "Newham",
-    "lat": 51.519729,
-    "lon": 0.033701,
-    "providerName": "",
-    "ar": "Newham"
-  },
-  {
-    "cqc_id": "RWKX5",
-    "ods_code": "",
-    "name": "East Ham Care Centre",
-    "address": "Shrewsbury Road, Forest Gate, London",
-    "postcode": "E7 8QR",
-    "phone": "02070596751",
-    "website": "https://www.eastlondon.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWKX5",
-    "localAuthority": "Newham",
-    "lat": 51.539588,
-    "lon": 0.04536,
     "providerName": "",
     "ar": "Newham"
   },
@@ -69528,25 +65261,6 @@
     "lon": -0.072273,
     "providerName": "",
     "ar": "Tower Hamlets"
-  },
-  {
-    "cqc_id": "RWNX3",
-    "ods_code": "",
-    "name": "Whipps Cross Urgent Care Centre",
-    "address": "Whipps Cross Road, London",
-    "postcode": "E11 1NR",
-    "phone": "",
-    "website": "https://www.sept.nhs.uk",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RWNX3",
-    "localAuthority": "Waltham Forest",
-    "lat": 51.578831,
-    "lon": 0.002638,
-    "providerName": "",
-    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "RXXED",
@@ -69584,25 +65298,6 @@
     "lon": -0.324434,
     "providerName": "",
     "ar": "Hounslow"
-  },
-  {
-    "cqc_id": "RY902",
-    "ods_code": "",
-    "name": "Teddington Memorial Hospital",
-    "address": "Hampton Road, Teddington",
-    "postcode": "TW11 0JL",
-    "phone": "",
-    "website": "https://www.hrch.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RY902",
-    "localAuthority": "Richmond upon Thames",
-    "lat": 51.4258375,
-    "lon": -0.340978,
-    "providerName": "",
-    "ar": "Richmond upon Thames"
   },
   {
     "cqc_id": "RY908",
@@ -69738,25 +65433,6 @@
     "ar": "Greenwich"
   },
   {
-    "cqc_id": "RYQ30",
-    "ods_code": "",
-    "name": "Princess Royal University Hospital",
-    "address": "Farnborough Common, Orpington",
-    "postcode": "BR6 8ND",
-    "phone": "02083022678",
-    "website": "https://www.slh.nhs.uk",
-    "specialties": [
-      "diagnostic"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RYQ30",
-    "localAuthority": "Bromley",
-    "lat": 51.366243,
-    "lon": 0.059146,
-    "providerName": "",
-    "ar": "Bromley"
-  },
-  {
     "cqc_id": "RYQ10",
     "ods_code": "",
     "name": "Queen Mary's Hospital, Sidcup",
@@ -69793,25 +65469,6 @@
     "lon": -0.2351969,
     "providerName": "",
     "ar": "Hammersmith & Fulham"
-  },
-  {
-    "cqc_id": "RYX01",
-    "ods_code": "",
-    "name": "St Charles Urgent Care Centre",
-    "address": "St Charles Centre for Health & Wellbeing, Exmoor Street, London",
-    "postcode": "W10 6DZ",
-    "phone": "02089624265",
-    "website": "https://www.clch.nhs.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RYX01",
-    "localAuthority": "Kensington and Chelsea",
-    "lat": 51.522362,
-    "lon": -0.217218,
-    "providerName": "",
-    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "RYX09",
@@ -69909,25 +65566,6 @@
     "ar": "Brent"
   },
   {
-    "cqc_id": "RYXX2",
-    "ods_code": "",
-    "name": "Hammersmith Centre for Health",
-    "address": "Hammersmith Hospital, 150 Du Cane Road, Hammersmith, London",
-    "postcode": "W12 0HS",
-    "phone": "02077981300",
-    "website": "https://www.clch.nhs.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RYXX2",
-    "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.51742,
-    "lon": -0.234721,
-    "providerName": "",
-    "ar": "Hammersmith & Fulham"
-  },
-  {
     "cqc_id": "RYXX7",
     "ods_code": "",
     "name": "Milne House Medical Centre",
@@ -69964,25 +65602,6 @@
     "lon": -0.1986205,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "RYXX8",
-    "ods_code": "",
-    "name": "Fulham Centre for Health",
-    "address": "Charing Cross Hospital, Fulham Palace Road, London",
-    "postcode": "W6 8RF",
-    "phone": "02077981300",
-    "website": "https://www.clch.nhs.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RYXX8",
-    "localAuthority": "Hammersmith and Fulham",
-    "lat": 51.487045,
-    "lon": -0.219935,
-    "providerName": "",
-    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "RYXY5",
@@ -70080,24 +65699,6 @@
     "ar": "Hammersmith & Fulham"
   },
   {
-    "cqc_id": "RYYD8",
-    "ods_code": "",
-    "name": "Livingstone Hospital",
-    "address": "East Hill, Dartford",
-    "postcode": "DA1 1SA",
-    "phone": "01474622317",
-    "website": "",
-    "specialties": [
-      "private-gp"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/RYYD8",
-    "localAuthority": "Kent",
-    "lat": 51.4423342,
-    "lon": 0.2268236,
-    "providerName": ""
-  },
-  {
     "cqc_id": "T131X",
     "ods_code": "",
     "name": "Health Protection Agency - Health Protection Services Division",
@@ -70172,44 +65773,6 @@
     "lon": -0.146519,
     "providerName": "",
     "ar": "Westminster"
-  },
-  {
-    "cqc_id": "TAF002",
-    "ods_code": "",
-    "name": "Barnet General Hospital",
-    "address": "Wellhouse Lane, Barnet",
-    "postcode": "EN5 3DJ",
-    "phone": "02087023000",
-    "website": "",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF002",
-    "localAuthority": "Barnet",
-    "lat": 51.650726,
-    "lon": -0.214152,
-    "providerName": "",
-    "ar": "Barnet"
-  },
-  {
-    "cqc_id": "TAF003",
-    "ods_code": "",
-    "name": "Edgware Community Hospital",
-    "address": "Burnt Oak Broadway, Edgware",
-    "postcode": "HA8 0AD",
-    "phone": "02087023000",
-    "website": "",
-    "specialties": [
-      "hospital"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/TAF003",
-    "localAuthority": "Barnet",
-    "lat": 51.606478,
-    "lon": -0.271248,
-    "providerName": "",
-    "ar": "Barnet"
   },
   {
     "cqc_id": "TAF006",
@@ -70305,25 +65868,6 @@
     "lon": -0.166289,
     "providerName": "",
     "ar": "Camden"
-  },
-  {
-    "cqc_id": "TAK21",
-    "ods_code": "",
-    "name": "Urgent Care Centre",
-    "address": "Queen Mary's Hospital, Frognal Avenue, Sidcup",
-    "postcode": "DA14 6LT",
-    "phone": "02082986036",
-    "website": "https://www.bexley.nhs.uk",
-    "specialties": [
-      "urgent-care"
-    ],
-    "cqc_rating": "",
-    "cqc_url": "https://www.cqc.org.uk/location/TAK21",
-    "localAuthority": "Bexley",
-    "lat": 51.419041,
-    "lon": 0.101687,
-    "providerName": "",
-    "ar": "Bexley"
   },
   {
     "cqc_id": "TAKX2",

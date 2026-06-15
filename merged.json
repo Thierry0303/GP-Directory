@@ -16232,11 +16232,11 @@
     "web": "https://www.opticalexpress.co.uk/store/london-westfield-white-city.html"
   },
   {
-    "o": "1-1002333348",
+    "o": "1-288474903",
     "n": "10 Harley Street",
     "a": "10 Harley Street, London",
     "p": "W1G 9PF",
-    "ph": "02074678301",
+    "ph": "07956925272",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -16249,7 +16249,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.doctor4u.co.uk"
+    "web": "https://www.homehealthservice.co.uk/harley-street-clinic/"
   },
   {
     "o": "1-10040354180",
@@ -16412,9 +16412,9 @@
     "web": "https://www.hillsidehairclinic.co.uk/"
   },
   {
-    "o": "1-10121947715",
+    "o": "1-10748240392",
     "n": "The Hale Clinic",
-    "a": "4, Harley Street, London",
+    "a": "4 Harley Street, London",
     "p": "W1G 9PB",
     "ph": "02076310156",
     "s": null,
@@ -16429,7 +16429,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.haleclinic.com/contact"
+    "web": ""
   },
   {
     "o": "1-10154883924",
@@ -17812,26 +17812,6 @@
     "web": ""
   },
   {
-    "o": "1-10748240392",
-    "n": "The Hale Clinic",
-    "a": "4 Harley Street, London",
-    "p": "W1G 9PB",
-    "ph": "02076310156",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-10748240392",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-10754733110",
     "n": "Rejuv Lab London",
     "a": "Ground Floor, 4 Harley Street, London",
@@ -18732,11 +18712,11 @@
     "web": "https://www.aces-eyeclinic.co.uk"
   },
   {
-    "o": "1-110166146",
+    "o": "1-12924818809",
     "n": "Parkside Hospital",
-    "a": "53 Parkside, Wimbledon, London",
+    "a": "53 Parkside, London",
     "p": "SW19 5NX",
-    "ph": "",
+    "ph": "02089718000",
     "s": null,
     "c": null,
     "pcn": "hospital",
@@ -18752,11 +18732,11 @@
     "web": "https://www.parkside-hospital.co.uk"
   },
   {
-    "o": "1-110166164",
+    "o": "1-12924818962",
     "n": "Highgate Hospital",
-    "a": "17-19 View Road, London",
+    "a": "17 View Road, London",
     "p": "N6 4DJ",
-    "ph": "",
+    "ph": "02084314182",
     "s": null,
     "c": null,
     "pcn": "hospital",
@@ -18792,7 +18772,7 @@
     "web": "https://www.dritoclinic.co.uk"
   },
   {
-    "o": "1-110176549",
+    "o": "1-6223072914",
     "n": "The Basil Street Practice",
     "a": "3 Basil Street, London",
     "p": "SW3 1AU",
@@ -18809,7 +18789,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.3bsp.org"
+    "web": ""
   },
   {
     "o": "1-110192456",
@@ -20112,16 +20092,16 @@
     "web": ""
   },
   {
-    "o": "1-114219406",
+    "o": "1-207542102",
     "n": "DHI International UK Limited",
     "a": "43 New Cavendish Street, London",
     "p": "W1G 9TH",
     "ph": "02074869789",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "hospital",
     "specs": [
-      "private-gp"
+      "hospital"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-207542102",
@@ -20724,8 +20704,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1150397125",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-1150357230",
     "ar": "Barnet",
     "la": null,
     "ln": null,
@@ -20764,8 +20744,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1150397125",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-1150357230",
     "ar": "Westminster",
     "la": null,
     "ln": null,
@@ -21515,7 +21495,7 @@
     "web": ""
   },
   {
-    "o": "1-116935987",
+    "o": "1-4533091694",
     "n": "Dr Kelly & Associates - London Wall",
     "a": "65 London Wall, London",
     "p": "EC2M 5TU",
@@ -21532,7 +21512,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.drkellys.co.uk"
+    "web": "https://www.doctorcall.co.uk"
   },
   {
     "o": "1-116977672",
@@ -22936,7 +22916,7 @@
     "web": "https://www.ultralase.com"
   },
   {
-    "o": "1-119752056",
+    "o": "1-502272908",
     "n": "Rhodes Farm Clinic",
     "a": "The Ridgeway, London",
     "p": "NW7 1RH",
@@ -22953,7 +22933,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.rhodesfarm.com"
+    "web": "https://www.partnershipsincare.co.uk"
   },
   {
     "o": "1-119770797",
@@ -23174,26 +23154,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.numiscan.co.uk"
-  },
-  {
-    "o": "1-12026411042",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "07940306316",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-12026693871",
@@ -23856,26 +23816,6 @@
     "web": "https://www.cosmeticsurgery-uk.com"
   },
   {
-    "o": "1-12200657070",
-    "n": "Charlton House Medical Centre",
-    "a": "581 High Road, London",
-    "p": "N17 6SB",
-    "ph": "02088082837",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-10495490315",
-    "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.charltonhousemedicalcentre.co.uk"
-  },
-  {
     "o": "1-12215668749",
     "n": "Tempus Belgravia",
     "a": "11a, West Halkin Street, London",
@@ -24070,26 +24010,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-122710187",
     "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.opticalexpress.com"
-  },
-  {
-    "o": "1-122710388",
-    "n": "Optical Express - London (Shaftesbury Avenue) Clinic",
-    "a": "219-229 Shaftesbury Avenue, London",
-    "p": "WC2H 8EL",
-    "ph": "02073793979",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1001911451",
-    "ar": "Camden",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -24576,7 +24496,7 @@
     "web": "https://www.laserclinic.uk.com"
   },
   {
-    "o": "1-124510909",
+    "o": "1-246731494",
     "n": "Shooting Star House",
     "a": "The Avenue, Hampton",
     "p": "TW12 3RA",
@@ -24593,7 +24513,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.shootingstar.org.uk"
+    "web": "https://www.chasecare.org.uk"
   },
   {
     "o": "1-12445586999",
@@ -25316,11 +25236,11 @@
     "web": ""
   },
   {
-    "o": "1-125734434",
+    "o": "1-3915396502",
     "n": "The Junction Health Centre",
-    "a": "Unit 19, The Arches, Grant Road, London",
+    "a": "Arches 5-8, Clapham Junction Station, Grant Road, London",
     "p": "SW11 2NU",
-    "ph": "03332001718",
+    "ph": "02037334079",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -25328,12 +25248,12 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3253845518",
+    "cu": "https://www.cqc.org.uk/location/1-3915396502",
     "ar": "Wandsworth",
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.junctionhealthcentre.co.uk"
+    "web": ""
   },
   {
     "o": "1-125734464",
@@ -27696,46 +27616,6 @@
     "web": "https://www.newmedica.co.uk"
   },
   {
-    "o": "1-12924818809",
-    "n": "Parkside Hospital",
-    "a": "53 Parkside, London",
-    "p": "SW19 5NX",
-    "ph": "02089718000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-12924818809",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.parkside-hospital.co.uk"
-  },
-  {
-    "o": "1-12924818962",
-    "n": "Highgate Hospital",
-    "a": "17 View Road, London",
-    "p": "N6 4DJ",
-    "ph": "02084314182",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-12924818962",
-    "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.highgatehospital.co.uk"
-  },
-  {
     "o": "1-12924819034",
     "n": "Parkside Hospital at Putney",
     "a": "266 - 276 Upper Richmond Road, Putney, London",
@@ -30036,26 +29916,6 @@
     "web": "https://wandsgpfed.co.uk"
   },
   {
-    "o": "1-136128662",
-    "n": "Keats House",
-    "a": "Keats House, 24-26 St Thomas Street, London",
-    "p": "SE1 9RS",
-    "ph": "07534218877",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-259801746",
-    "ar": "Southwark",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.londoncbtcentre.com"
-  },
-  {
     "o": "1-13643199465",
     "n": "Medicetics",
     "a": "37 Connaught Street, Hyde Park, London",
@@ -30557,16 +30417,16 @@
     "web": "https://www.adhdme.care"
   },
   {
-    "o": "1-1380283340",
+    "o": "1-4987162946",
     "n": "Ziering London Clinic",
-    "a": "Hammersmith Hospital, The Triangle, Hammersmith rove, London",
+    "a": "The Triangle, Hammersmith Grove, London",
     "p": "W6 0LG",
-    "ph": "01412483959",
+    "ph": "02085638111",
     "s": null,
     "c": null,
-    "pcn": "hospital",
+    "pcn": "private-gp",
     "specs": [
-      "hospital"
+      "private-gp"
     ],
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/1-4987162946",
@@ -30574,7 +30434,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.onehealthmedicalgroup.co.uk"
+    "web": "https://www.onehealthmedicalgroup.co.uk/"
   },
   {
     "o": "1-1379690991",
@@ -30615,26 +30475,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.surgicare.co.uk"
-  },
-  {
-    "o": "1-13811740246",
-    "n": "Westland Medical Centre",
-    "a": "Westland Avenue, Hornchurch",
-    "p": "RM11 3SD",
-    "ph": "07802442106",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-13811740246",
-    "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-13812532810",
@@ -31379,46 +31219,6 @@
     "web": "https://www.arnotteye.com"
   },
   {
-    "o": "1-1400152028",
-    "n": "Westland Medical Centre",
-    "a": "Westland Avenue, Hornchurch",
-    "p": "RM11 3SD",
-    "ph": "01708205149",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-1400152028",
-    "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-139938480",
-    "n": "St Anthony's Hospital",
-    "a": "London Road, North Cheam",
-    "p": "SM3 9DW",
-    "ph": "02083376691",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1382018165",
-    "ar": "Sutton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.stanthonys.org.uk"
-  },
-  {
     "o": "1-14030768121",
     "n": "Living Mind",
     "a": "10 Harley Street, London",
@@ -31557,26 +31357,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-141593684",
-    "n": "Avesbury House",
-    "a": "85 Tanners End Lane, Edmonton, London",
-    "p": "N18 1PQ",
-    "ph": "02088037316",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1265559130",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.careuk.com"
   },
   {
     "o": "1-141541748",
@@ -32079,16 +31859,16 @@
     "web": ""
   },
   {
-    "o": "1-142795405",
-    "n": "CityDoc Moorgate",
+    "o": "1-365643904",
+    "n": "Citydoc Moorgate",
     "a": "16 City Road, London",
     "p": "EC1Y 2AA",
     "ph": "02072568668",
     "s": null,
     "c": null,
-    "pcn": "diagnostic",
+    "pcn": "private-gp",
     "specs": [
-      "diagnostic"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-365643904",
@@ -32359,11 +32139,11 @@
     "web": ""
   },
   {
-    "o": "1-144135399",
+    "o": "1-5537570253",
     "n": "The Huntercombe Hospital - Roehampton",
     "a": "Holybourne Avenue, London",
     "p": "SW15 4JL",
-    "ph": "02087806155",
+    "ph": "",
     "s": null,
     "c": null,
     "pcn": "hospital",
@@ -32376,7 +32156,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.fshc.co.uk"
+    "web": "https://www.huntercombe.com"
   },
   {
     "o": "1-144170122",
@@ -32439,9 +32219,9 @@
     "web": "https://www.healthbridgedirect.co.uk"
   },
   {
-    "o": "1-144206360",
+    "o": "1-2344369311",
     "n": "The Lanes",
-    "a": "The Lane Project, 3-5 Foxley Lane, Purley",
+    "a": "3-5 Foxley Lane, Purley",
     "p": "CR8 3EF",
     "ph": "02087634243",
     "s": null,
@@ -35539,7 +35319,7 @@
     "web": "https://www.uprightmri.co.uk"
   },
   {
-    "o": "1-155996862",
+    "o": "1-2039077983",
     "n": "Cheshunt Minor Injuries Unit",
     "a": "King Arthur Court, Cheshunt, Waltham Cross",
     "p": "EN8 8XN",
@@ -35556,7 +35336,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.cheshunturgentcarecentre.nhs.uk"
+    "web": ""
   },
   {
     "o": "1-156002954",
@@ -36000,26 +35780,6 @@
     "web": ""
   },
   {
-    "o": "1-15840935783",
-    "n": "The London Clinic",
-    "a": "20 Devonshire Place, London",
-    "p": "W1G 6BW",
-    "ph": "02079354444",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-114617347",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://thelondonclinic.co.uk"
-  },
-  {
     "o": "1-15841712831",
     "n": "Main office",
     "a": "32 Watford Road, Northwood",
@@ -36080,9 +35840,9 @@
     "web": ""
   },
   {
-    "o": "1-1590965928",
-    "n": "Dr Morton's - The Medical Helpline",
-    "a": "201 Chapelier House, Eastfields Avenue, London",
+    "o": "1-8291478107",
+    "n": "Dr Morton's - the medical helpline",
+    "a": "201, Chapelier House, Eastfields Avenue, London",
     "p": "SW18 1LR",
     "ph": "02071016386",
     "s": null,
@@ -36092,12 +35852,12 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3892014487",
+    "cu": "https://www.cqc.org.uk/location/1-8291478107",
     "ar": "Wandsworth",
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.drmortons.co.uk"
+    "web": ""
   },
   {
     "o": "1-15879699743",
@@ -36200,11 +35960,11 @@
     "web": ""
   },
   {
-    "o": "1-15929100323",
+    "o": "1-2897199278",
     "n": "Hanover House",
-    "a": "Hanover House, 76 Coombe Road, Kingston Upon Thames",
+    "a": "78 Coombe Road, Kingston Upon Thames",
     "p": "KT2 7AZ",
-    "ph": "",
+    "ph": "01912297545",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -36217,7 +35977,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.seldoc.co.uk"
+    "web": ""
   },
   {
     "o": "1-159311401",
@@ -36240,16 +36000,16 @@
     "web": "https://www.beehivesolutions.co.uk"
   },
   {
-    "o": "1-1595271608",
+    "o": "1-2311760426",
     "n": "Mildmay Mission Hospital",
     "a": "19 Tabernacle Gardens, London",
     "p": "E2 7DZ",
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "diagnostic",
+    "pcn": "private-gp",
     "specs": [
-      "diagnostic"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-2311760426",
@@ -36257,7 +36017,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": ""
+    "web": "https://www.mildmay.org"
   },
   {
     "o": "1-159646952",
@@ -38702,26 +38462,6 @@
     "web": ""
   },
   {
-    "o": "1-17709972033",
-    "n": "Clinical Diagnostic Services",
-    "a": "104 Harley Street, London",
-    "p": "W1G 7JD",
-    "ph": "02087323070",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-17709972033",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-17711159175",
     "n": "Aestha Clinic",
     "a": "21 Welbeck Street, London",
@@ -38902,16 +38642,16 @@
     "web": "https://www.elanlaserclinics.co.uk"
   },
   {
-    "o": "1-1783451930",
+    "o": "RF4DG",
     "n": "King George Hospital",
-    "a": "Barley Lane, Ilford",
+    "a": "Barley Lane, Goodmayes, Ilford",
     "p": "IG3 8YB",
-    "ph": "02089265405",
+    "ph": "02089708051",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic",
     "specs": [
-      "private-gp"
+      "diagnostic"
     ],
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/RF4DG",
@@ -38919,7 +38659,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": ""
+    "web": "https://www.bhrhospitals.nhs.uk"
   },
   {
     "o": "1-17823459554",
@@ -40162,8 +39902,8 @@
     "web": "https://www.peakandprime.co.uk"
   },
   {
-    "o": "1-184634049",
-    "n": "The Cyberknife Centre London",
+    "o": "1-226279926",
+    "n": "The CyberKnife Centre London",
     "a": "81 Harley Street, London",
     "p": "W1G 8PP",
     "ph": "02070348588",
@@ -40179,7 +39919,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.hcainternational.co.uk"
+    "web": "https://www.cyberknifecentrelondon.co.uk"
   },
   {
     "o": "1-185430923",
@@ -40460,26 +40200,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.90sloanestreet.com"
-  },
-  {
-    "o": "1-18697798165",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "02074678300",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.tenharleystreet.co.uk"
   },
   {
     "o": "1-18728729233",
@@ -41102,26 +40822,6 @@
     "web": "https://www.hcainternational.co.uk"
   },
   {
-    "o": "1-18881066795",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-1888033478",
     "n": "Wholistic Medical Centre",
     "a": "8 Upper Wimpole Street, London",
@@ -41162,66 +40862,6 @@
     "web": ""
   },
   {
-    "o": "1-1890546867",
-    "n": "Highgate Hospital",
-    "a": "17-19 View Road, London",
-    "p": "N6 4DJ",
-    "ph": "02083414182",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1890546867",
-    "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.highgatehospital.co.uk"
-  },
-  {
-    "o": "1-1890547130",
-    "n": "Parkside Hospital at Putney",
-    "a": "266-276 Upper Richmond Road, Putney, London",
-    "p": "SW15 6TQ",
-    "ph": "02089718026",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1890547130",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-1890547068",
-    "n": "Parkside Hospital",
-    "a": "53 Parkside, Wimbledon, London",
-    "p": "SW19 5NX",
-    "ph": "02089718000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1890547068",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.parkside-hospital.co.uk"
-  },
-  {
     "o": "1-18914327493",
     "n": "Andreea Medical",
     "a": "Warwick House, 65-66 Queen Street, London",
@@ -41236,26 +40876,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-18914327493",
     "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-1891695897",
-    "n": "Cognacity",
-    "a": "54 Harley Street, London",
-    "p": "W1G 9PZ",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1891695897",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -41353,8 +40973,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1150397125",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-1150357230",
     "ar": "Westminster",
     "la": null,
     "ln": null,
@@ -42723,11 +42343,11 @@
     "web": "https://www.cancercentrelondon.co.uk"
   },
   {
-    "o": "1-197274606",
+    "o": "1-360627707",
     "n": "Woodford Medical Limited",
     "a": "8 Upper Wimpole Street, London",
     "p": "W1G 6LH",
-    "ph": "01245227983",
+    "ph": "02074864526",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -43563,26 +43183,6 @@
     "web": ""
   },
   {
-    "o": "1-19889306284",
-    "n": "Ten Harley Street",
-    "a": "Ten Harley Street, 10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "02074678300",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-19889306284",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-19890941933",
     "n": "New Mill Street Medical Surgery",
     "a": "1 Wolseley Street, London",
@@ -43637,26 +43237,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-19891992370",
     "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-19892400869",
-    "n": "Westminster Clinic- 21 Wimpole Street",
-    "a": "21 Wimpole Street, London",
-    "p": "W1G 8GG",
-    "ph": "01789414203",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-16436397171",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -43921,26 +43501,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.fksclinic.co.uk"
-  },
-  {
-    "o": "1-1993825303",
-    "n": "THMG Chiswick Clinic",
-    "a": "93A Chiswick High Road, London",
-    "p": "W4 2EF",
-    "ph": "02072919700",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-1993825303",
-    "ar": "Hounslow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
   },
   {
     "o": "1-1993941845",
@@ -44783,26 +44343,6 @@
     "web": ""
   },
   {
-    "o": "1-2039077983",
-    "n": "Cheshunt Minor Injuries Unit",
-    "a": "King Arthur Court, Cheshunt, Waltham Cross",
-    "p": "EN8 8XN",
-    "ph": "01992780417",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2039077983",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-20392422509",
     "n": "Dr Melissa Clinics",
     "a": "64 North Row, Mayfair, London",
@@ -45563,26 +45103,6 @@
     "web": ""
   },
   {
-    "o": "1-20631632346",
-    "n": "Edition Clinic",
-    "a": "4 St. Mark's Place, London",
-    "p": "SW19 7ND",
-    "ph": "02039511231",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-20631632346",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-20632540315",
     "n": "PALOMA HEALTH HEAD OFFICE",
     "a": "The Typewriter Building, 140 Borough High Street, London",
@@ -45963,26 +45483,6 @@
     "web": "https://www.cygnethealth.co.uk"
   },
   {
-    "o": "1-207542102",
-    "n": "DHI International UK Limited",
-    "a": "43 New Cavendish Street, London",
-    "p": "W1G 9TH",
-    "ph": "02074869789",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-207542102",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.dhiglobal.com"
-  },
-  {
     "o": "1-2083321451",
     "n": "National Slimming & Cosmetic Clinics (Ealing)",
     "a": "15A The Mall, London",
@@ -46164,31 +45664,11 @@
     "web": "https://www.doctors4you.co"
   },
   {
-    "o": "1-21089041965",
-    "n": "Ultram Ltd",
-    "a": "Kings Dental Clinic, Ashcroft House, 36 North End Road, London",
-    "p": "W14 0SH",
-    "ph": "02076035211",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-21089041965",
-    "ar": "Hammersmith & Fulham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-21094602482",
+    "o": "1-23847916141",
     "n": "Beckenham Beacons UTC",
     "a": "379-397 Croydon Road, Beckenham",
     "p": "BR3 3QL",
-    "ph": "02038663330",
+    "ph": "016189866037",
     "s": null,
     "c": null,
     "pcn": "urgent-care",
@@ -46222,26 +45702,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-2116644334",
-    "n": "Harley Health Village",
-    "a": "64 Harley Street, London",
-    "p": "W1G 7HB",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2116644334",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleyhealthvillage.com"
   },
   {
     "o": "1-2120888127",
@@ -46524,9 +45984,9 @@
     "web": "https://www.firsthealthmedical.co.uk"
   },
   {
-    "o": "1-2141183338",
+    "o": "1-8170775855",
     "n": "CP Medical Clinic",
-    "a": "61-63 Sloane Avenue, London",
+    "a": "61-63, Sloane Avenue, London",
     "p": "SW3 3DH",
     "ph": "02075898776",
     "s": null,
@@ -46535,8 +45995,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2141183338",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-8170775855",
     "ar": "Kensington & Chelsea",
     "la": null,
     "ln": null,
@@ -46984,26 +46444,6 @@
     "web": ""
   },
   {
-    "o": "1-21633613916",
-    "n": "The New Victoria Hospital",
-    "a": "184 Coombe Lane West, Kingston Upon Thames",
-    "p": "KT2 7EG",
-    "ph": "02089499000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-21633613916",
-    "ar": "Kingston upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-2166893538",
     "n": "The Doctors Laboratory",
     "a": "Patient  Reception, 76 Wimpole Street, London",
@@ -47244,26 +46684,6 @@
     "web": "https://www.simplyclinics.co.uk"
   },
   {
-    "o": "1-21752111963",
-    "n": "Psymplicity Healthcare",
-    "a": "Churchill House 137-139, Brent Street, London",
-    "p": "NW4 4DJ",
-    "ph": "02071180407",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-14732134288",
-    "ar": "Barnet",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.psymplicity.com"
-  },
-  {
     "o": "1-21751315415",
     "n": "The Clock House Ultrasound and Surgical Clinic",
     "a": "29 High Street, Purley",
@@ -47442,26 +46862,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.orthogenclinic.co.uk"
-  },
-  {
-    "o": "1-2182771779",
-    "n": "Ten Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "02082018500",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2182771779",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.londonwoundclinic.co.uk"
   },
   {
     "o": "1-2182464814",
@@ -47678,26 +47078,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-21966159431",
     "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-22002615293",
-    "n": "Jorja Healthcare",
-    "a": "10 Eastbourne Terrace, London",
-    "p": "W2 6LG",
-    "ph": "03330505088",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-22002615293",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -49044,11 +48424,11 @@
     "web": "https://www.cardiacscreen.co.uk"
   },
   {
-    "o": "1-223391334",
+    "o": "1-7356232738",
     "n": "446 Cranbrook Road",
-    "a": "446 Cranbrook Road, Gants Hill, Ilford",
+    "a": "446 Cranbrook Road, Ilford",
     "p": "IG2 6LL",
-    "ph": "07764514740",
+    "ph": "",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -49061,7 +48441,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.nscclinics.co.uk/cosmetics/clinics/ilford-clinic/"
+    "web": ""
   },
   {
     "o": "1-2232774455",
@@ -49424,26 +48804,6 @@
     "web": "https://www.gpdq.co.uk"
   },
   {
-    "o": "1-2259250793",
-    "n": "Rainham - Farm Lodge",
-    "a": "58 Farm Road, Rainham",
-    "p": "RM13 9LG",
-    "ph": "01708557369",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2259250793",
-    "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.cambiangroup.com"
-  },
-  {
     "o": "1-226226444",
     "n": "Sarah Cannon Research UK",
     "a": "93 Harley Street, London",
@@ -49504,29 +48864,9 @@
     "web": ""
   },
   {
-    "o": "1-226279926",
-    "n": "The CyberKnife Centre London",
-    "a": "81 Harley Street, London",
-    "p": "W1G 8PP",
-    "ph": "02070348588",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Outstanding",
-    "cu": "https://www.cqc.org.uk/location/1-226279926",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.cyberknifecentrelondon.co.uk"
-  },
-  {
-    "o": "1-2264284971",
+    "o": "1-344408382",
     "n": "Green Lanes Surgery",
-    "a": "808 Green Lanes, London",
+    "a": "808 Green Lanes, Winchmore Hill, London",
     "p": "N21 2SA",
     "ph": "02083505000",
     "s": null,
@@ -49541,7 +48881,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": ""
+    "web": "https://www.enfieldhealth.co.uk"
   },
   {
     "o": "1-22728144204",
@@ -49624,11 +48964,11 @@
     "web": ""
   },
   {
-    "o": "1-2274597535",
+    "o": "1-538854516",
     "n": "Greenhill Park Medical Centre",
     "a": "Greenhill Park, London",
     "p": "NW10 9AR",
-    "ph": "",
+    "ph": "0844477874",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -50084,27 +49424,6 @@
     "web": "https://www.ellernmede.org"
   },
   {
-    "o": "1-230102814",
-    "n": "Harley Street Skin",
-    "a": "48 Harley Street, London",
-    "p": "W1G 9PU",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "dermatology, private-gp",
-    "specs": [
-      "dermatology",
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1152786732",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-23009188305",
     "n": "Vantive Education Centre South",
     "a": "2 Priory Road, Kew, Richmond",
@@ -50345,26 +49664,6 @@
     "web": ""
   },
   {
-    "o": "1-2311760426",
-    "n": "Mildmay Mission Hospital",
-    "a": "19 Tabernacle Gardens, London",
-    "p": "E2 7DZ",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2311760426",
-    "ar": "Tower Hamlets",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.mildmay.org"
-  },
-  {
     "o": "1-2311707220",
     "n": "North Street Medical Care - Ashton Gardens",
     "a": "Chadwell Heath Health Centre, Ashton Gardens, Romford",
@@ -50403,26 +49702,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-23195608604",
-    "n": "Ten Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "02035765911",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-23195608604",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.diversemindsclinic.co.uk"
   },
   {
     "o": "1-23205102125",
@@ -50965,26 +50244,6 @@
     "web": ""
   },
   {
-    "o": "1-23391929474",
-    "n": "The Village Practice",
-    "a": "115 Isledon Road, London",
-    "p": "N7 7JJ",
-    "ph": "02077006464",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-13187534210",
-    "ar": "Islington",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-23392096996",
     "n": "Optical Express \u2013 Great Portland Street Hospital",
     "a": "74 Great Portland Street, London",
@@ -51059,26 +50318,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-234368798",
     "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-2344369311",
-    "n": "The Lanes",
-    "a": "3-5 Foxley Lane, Purley",
-    "p": "CR8 3EF",
-    "ph": "02087634243",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-2344369311",
-    "ar": "Croydon",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -51223,26 +50462,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-23513365405",
-    "n": "Harrow Health Care Centre",
-    "a": "Clementine Churchill Hospital, Sudbury Hill, Harrow",
-    "p": "HA1 3RX",
-    "ph": "02088611221",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2172619996",
-    "ar": "Harrow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harrowhealthcare.co.uk"
   },
   {
     "o": "1-2352339844",
@@ -51703,26 +50922,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.thebrooksurgery.com"
-  },
-  {
-    "o": "1-23847916141",
-    "n": "Beckenham Beacons UTC",
-    "a": "379-397 Croydon Road, Beckenham",
-    "p": "BR3 3QL",
-    "ph": "016189866037",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-23847916141",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-2382887774",
@@ -52203,26 +51402,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.pastelhealth.co.uk"
-  },
-  {
-    "o": "1-24207760650",
-    "n": "Click Hearing Upminster",
-    "a": "69 Corbets Tey Road, Upminster",
-    "p": "RM14 2AJ",
-    "ph": "01708259863",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-24207760650",
-    "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.clickhearing.com"
   },
   {
     "o": "1-24220470496",
@@ -52985,26 +52164,6 @@
     "web": ""
   },
   {
-    "o": "1-246731494",
-    "n": "Shooting Star House",
-    "a": "The Avenue, Hampton",
-    "p": "TW12 3RA",
-    "ph": "02087832000",
-    "s": null,
-    "c": null,
-    "pcn": "hospice",
-    "specs": [
-      "hospice"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-246731494",
-    "ar": "Richmond upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.chasecare.org.uk"
-  },
-  {
     "o": "1-24671083527",
     "n": "Queen Mary's Hospital Urgent Care Centre",
     "a": "Frognal Avenue, Sidcup",
@@ -53183,46 +52342,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.physioandmore.co.uk"
-  },
-  {
-    "o": "1-2476233642",
-    "n": "Soho Square",
-    "a": "18 Soho Square, London",
-    "p": "W1D 3QL",
-    "ph": "02071830553",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2476233642",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.londondoctorsclinic.co.uk"
-  },
-  {
-    "o": "1-2476232905",
-    "n": "Victoria",
-    "a": "Portland House, Bressenden Place, London",
-    "p": "SW1E 5RS",
-    "ph": "02071830553",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-10676537410",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.londondoctorsclinic.co.uk"
   },
   {
     "o": "1-2476249858",
@@ -53585,11 +52704,11 @@
     "web": "https://www.umediagnostics.com"
   },
   {
-    "o": "1-2494710207",
+    "o": "1-6971694206",
     "n": "Silverthorn Medical Centre",
     "a": "Silverthorne Centre, 2 Friars Close, London",
     "p": "E4 6UN",
-    "ph": "02084307210",
+    "ph": "",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -53597,7 +52716,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-4042961114",
+    "cu": "https://www.cqc.org.uk/location/1-6971694206",
     "ar": "Waltham Forest",
     "la": null,
     "ln": null,
@@ -53639,26 +52758,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-2494710392",
     "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-2494710448",
-    "n": "ESS Clinic",
-    "a": "142 George Lane, London",
-    "p": "E18 1AY",
-    "ph": "02089892004",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2494710448",
-    "ar": "Redbridge",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -53845,26 +52944,6 @@
     "web": ""
   },
   {
-    "o": "1-2508707095",
-    "n": "Wilbraham Place Practice",
-    "a": "9a Wilbraham Place, London",
-    "p": "SW1X 9AE",
-    "ph": "02077307928",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2508707095",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.wppractice.com"
-  },
-  {
     "o": "1-250768908",
     "n": "Harley Street Fertility Clinic",
     "a": "43 Devonshire Street, Westminster, London",
@@ -54020,26 +53099,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-2517715266",
     "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-25166942945",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "02039061488",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -55047,26 +54106,6 @@
     "web": ""
   },
   {
-    "o": "1-25738995902",
-    "n": "TEN Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "07962984660",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-25738995902",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.dralba.co.uk"
-  },
-  {
     "o": "1-25740944557",
     "n": "Biowell Battersea",
     "a": "Unit 6, Circus West Village, Circus Road West, London",
@@ -55467,26 +54506,6 @@
     "web": "https://www.skin55.co.uk"
   },
   {
-    "o": "1-2595554961",
-    "n": "Westland Medical Centre",
-    "a": "Westland Avenue, Hornchurch",
-    "p": "RM11 3SD",
-    "ph": "01494560000",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2595554961",
-    "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.inhealthgroup.com"
-  },
-  {
     "o": "1-25980510275",
     "n": "Medicus",
     "a": "1271 Greenford Road, Greenford",
@@ -55765,26 +54784,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.askinology.com"
-  },
-  {
-    "o": "1-2619939086",
-    "n": "King's Cross",
-    "a": "334-354 Grays Inn Road, London",
-    "p": "WC1X 8BP",
-    "ph": "02071830553",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2619939086",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.londondoctorsclinic.co.uk"
   },
   {
     "o": "1-26271189838",
@@ -56447,46 +55446,6 @@
     "web": ""
   },
   {
-    "o": "1-26672318977",
-    "n": "Alliance Medical Marylebone",
-    "a": "10-11, Bulstrode Place, London",
-    "p": "W1U 2HX",
-    "ph": "02075351955",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-26672318977",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-26670657361",
-    "n": "UNTIL Soho",
-    "a": "111, Charing Cross Road, London",
-    "p": "WC2H 0DT",
-    "ph": "07774858279",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-26670657361",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-2670384848",
     "n": "Dr Wayne Cottrell",
     "a": "34 North Colonnade, Canary Wharf, London",
@@ -56541,26 +55500,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-2670096581",
     "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-26701331348",
-    "n": "Ten Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-26701331348",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -56865,26 +55804,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-2693453604",
-    "n": "The London General Practice",
-    "a": "16 Devonshire Street, London",
-    "p": "W1G 7AF",
-    "ph": "02079351000",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-4704019461",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thelondongeneralpractice.com"
   },
   {
     "o": "1-26941055525",
@@ -57221,46 +56140,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-27123588629",
     "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-27126191414",
-    "n": "The Retina Clinic London",
-    "a": "24 Queen Anne Street, London",
-    "p": "W1G 9AY",
-    "ph": "02045485310",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-27126191414",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-27126191442",
-    "n": "The Retina Clinic London",
-    "a": "140 Harley Street, London",
-    "p": "W1G 7LB",
-    "ph": "07787100482",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-27126191442",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -58087,46 +56966,6 @@
     "web": "https://www.instadocapp.uk"
   },
   {
-    "o": "1-27842102890",
-    "n": "UniClinic Limited",
-    "a": "635 Cranbrook Road, Ilford",
-    "p": "IG2 6SX",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1086695206",
-    "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-27857385577",
-    "n": "Skin Care Essentials",
-    "a": "55 Warren Street, London",
-    "p": "W1T 5NW",
-    "ph": "02037207668",
-    "s": null,
-    "c": null,
-    "pcn": "dermatology",
-    "specs": [
-      "dermatology"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-27857385577",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.skincareessentials.co.uk"
-  },
-  {
     "o": "1-27896462131",
     "n": "Dr Oliver Rabie",
     "a": "7 Lion Yard, London",
@@ -58205,26 +57044,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-279073188",
-    "n": "Hospital of St John & St Elizabeth",
-    "a": "60 Grove End Road, St John's Wood, London",
-    "p": "NW8 9NH",
-    "ph": "02078064000",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-115480780",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.hje.org.uk"
   },
   {
     "o": "1-2791246614",
@@ -58407,7 +57226,7 @@
     "web": "https://www.holisticgynaecologylondon.co.uk/"
   },
   {
-    "o": "1-2805417641",
+    "o": "1-2835819838",
     "n": "Brick Lane Surgery",
     "a": "28 Brick Lane, Enfield",
     "p": "EN3 5BA",
@@ -58807,26 +57626,6 @@
     "web": "https://www.art-clinic.co.uk"
   },
   {
-    "o": "1-2835819838",
-    "n": "Brick Lane Surgery",
-    "a": "28 Brick Lane, Enfield",
-    "p": "EN3 5BA",
-    "ph": "02084430413",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2835819838",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bricklanesurgeryenfield.nhs.uk"
-  },
-  {
     "o": "1-2835244850",
     "n": "The Mole Clinic",
     "a": "Basildon House, 7 Moorgate, London",
@@ -59007,27 +57806,6 @@
     "web": ""
   },
   {
-    "o": "1-2855392804",
-    "n": "The Harley Street Clinic Diagnostic Centre",
-    "a": "16 Devonshire Street, London",
-    "p": "W1G 7AF",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic, private-gp",
-    "specs": [
-      "diagnostic",
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2855392804",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-285809029",
     "n": "The London Eye Hospital",
     "a": "29a Wimpole Street, London",
@@ -59128,46 +57906,6 @@
     "web": "https://www.samedaydoctor.co.uk"
   },
   {
-    "o": "1-2873926731",
-    "n": "The Hospital Group - London Weymouth Street Clinic",
-    "a": "31 Weymouth Street, London",
-    "p": "W1G 8BJ",
-    "ph": "01214457500",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2873926731",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-288474903",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "07956925272",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.homehealthservice.co.uk/harley-street-clinic/"
-  },
-  {
     "o": "1-288737847",
     "n": "The Child and Family Practice",
     "a": "57a Wimpole Street, London",
@@ -59222,26 +57960,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-2899633105",
     "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-2897199278",
-    "n": "Hanover House",
-    "a": "78 Coombe Road, Kingston Upon Thames",
-    "p": "KT2 7AZ",
-    "ph": "01912297545",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2897199278",
-    "ar": "Kingston upon Thames",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -59326,26 +58044,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-291682924",
-    "n": "The Zita West Clinic",
-    "a": "37 Manchester Street, London",
-    "p": "W1U 7LJ",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-291682924",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.zitawest.com"
   },
   {
     "o": "1-2923508286",
@@ -59588,26 +58286,6 @@
     "web": ""
   },
   {
-    "o": "1-2936237595",
-    "n": "Comely Bank Clinic",
-    "a": "46 Ravenswood Road, London",
-    "p": "E17 9LY",
-    "ph": "03330124209",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2936237595",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-2938978043",
     "n": "The Private Clinic",
     "a": "98 Harley Street, London",
@@ -59626,26 +58304,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-2939805726",
-    "n": "The Private Clinic Limited - London City Clinic",
-    "a": "107 Cheapside, London",
-    "p": "EC2V 6DT",
-    "ph": "02033256590",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2939805726",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.theprivateclinic.co.uk"
   },
   {
     "o": "1-294388489",
@@ -60349,11 +59007,11 @@
     "web": ""
   },
   {
-    "o": "1-305174102",
+    "o": "1-5418275062",
     "n": "The City Walk-in Clinic",
-    "a": "Renown House, 33-34 Bury Street, London",
+    "a": "33-34, Bury Street, London",
     "p": "EC3A 5AR",
-    "ph": "02071010355",
+    "ph": "",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -60462,46 +59120,6 @@
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-456498248",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-3081078425",
-    "n": "Bodyscan City",
-    "a": "Stonehealth Clinic, Lower Ground Floor, 36-38 Cornhill, London",
-    "p": "EC3V 3NG",
-    "ph": "07454791758",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3081078425",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-3081078345",
-    "n": "Bodyscan W1",
-    "a": "London Medical, 49 Marylebone High Street, London",
-    "p": "W1U 5HJ",
-    "ph": "07454791758",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3081078345",
     "ar": "Westminster",
     "la": null,
     "ln": null,
@@ -61369,26 +59987,6 @@
     "web": ""
   },
   {
-    "o": "1-327232931",
-    "n": "The Child and Family Practice",
-    "a": "The Child and Family Practice, Third Floor, 57a Wimpole Street, London",
-    "p": "W1G 8YP",
-    "ph": "02072242800",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2333739567",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thechildandfamilypractice.com"
-  },
-  {
     "o": "1-327308436",
     "n": "Cardio Direct (UK)  Ltd",
     "a": "112 Harley Street, London",
@@ -61489,26 +60087,6 @@
     "web": "https://www.eudelo.com"
   },
   {
-    "o": "1-329278000",
-    "n": "Ten Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "01245244729",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-329278000",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-3295974434",
     "n": "The London Skin and Hair Clinic",
     "a": "96 Harley Street, London",
@@ -61587,26 +60165,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.bhnc.org.uk"
-  },
-  {
-    "o": "1-329909932",
-    "n": "Parkside Hospital at Putney",
-    "a": "266-276 Upper Richmond Road, Putney, London",
-    "p": "SW15 6TQ",
-    "ph": "02089718018",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-12924819034",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.parksidehospital.co.uk"
   },
   {
     "o": "1-3299779333",
@@ -62029,46 +60587,6 @@
     "web": "https://www.sknclinics.co.uk"
   },
   {
-    "o": "1-344415677",
-    "n": "Evergreen Primary Care Centre",
-    "a": "1 Smythe Close, London",
-    "p": "N9 0TW",
-    "ph": "02088878354",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-510954802",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.enfieldhealth.co.uk"
-  },
-  {
-    "o": "1-344408382",
-    "n": "Green Lanes Surgery",
-    "a": "808 Green Lanes, Winchmore Hill, London",
-    "p": "N21 2SA",
-    "ph": "02083505000",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-344408382",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.enfieldhealth.co.uk"
-  },
-  {
     "o": "1-347369219",
     "n": "Expert Health Limited",
     "a": "Mezzanine Floor, 50-54 Wigmore Street, London",
@@ -62269,26 +60787,6 @@
     "web": ""
   },
   {
-    "o": "1-350226226",
-    "n": "Night Doctor",
-    "a": "2 Lower Sloane Street, London",
-    "p": "SW1X 8BJ",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-350226226",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-351046104",
     "n": "Sk:n - John Bell and Croydon",
     "a": "Mezzanine Floor, 50-54 Wigmore Street, London",
@@ -62409,11 +60907,11 @@
     "web": ""
   },
   {
-    "o": "1-3531351411",
+    "o": "1-5204250976",
     "n": "The Elixir Clinic",
-    "a": "75 Wimpole Street, London",
+    "a": "3rd Floor, 75 Wimpole Street, London",
     "p": "W1G 9RS",
-    "ph": "02033226302",
+    "ph": "07718483484",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -62567,26 +61065,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-360627707",
-    "n": "Woodford Medical Limited",
-    "a": "8 Upper Wimpole Street, London",
-    "p": "W1G 6LH",
-    "ph": "02074864526",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-360627707",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.woodfordmedical.com"
   },
   {
     "o": "1-3616287810",
@@ -62789,26 +61267,6 @@
     "web": ""
   },
   {
-    "o": "1-365643904",
-    "n": "Citydoc Moorgate",
-    "a": "16 City Road, London",
-    "p": "EC1Y 2AA",
-    "ph": "02072568668",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-365643904",
-    "ar": "Islington",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.citydoc.org.uk"
-  },
-  {
     "o": "1-365511404",
     "n": "SELDOC Base - Dulwich Community Hospital",
     "a": "Dulwich Community Hospital, East Dulwich Grove, London",
@@ -62883,26 +61341,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-3667521315",
     "ar": "Richmond upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-3671628278",
-    "n": "Comely Bank Clinic",
-    "a": "46 Ravenswood Road, London",
-    "p": "E17 9LY",
-    "ph": "02084307100",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-3671628278",
-    "ar": "Waltham Forest",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -63149,26 +61587,6 @@
     "web": "https://www.hcahealthcare.co.uk/"
   },
   {
-    "o": "1-376498929",
-    "n": "Paddington Medicentre",
-    "a": "Unit 50, Paddington Station, London",
-    "p": "W2 1HB",
-    "ph": "02075100312",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-376498929",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.medicentre.co.uk"
-  },
-  {
     "o": "1-376499144",
     "n": "Eldon Street Medicentre (previously Liverpool Street Medicentre)",
     "a": "New Liverpool Street House, 15 Eldon Street, London",
@@ -63290,26 +61708,6 @@
     "web": "https://www.harleystreetent.com"
   },
   {
-    "o": "1-3778297239",
-    "n": "The London Skin and Hair Clinic Holborn",
-    "a": "233 High Holborn, London",
-    "p": "WC1V 7DN",
-    "ph": "02071834565",
-    "s": null,
-    "c": null,
-    "pcn": "dermatology",
-    "specs": [
-      "dermatology"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-13772675135",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thelondonskinandhairclinic.com"
-  },
-  {
     "o": "1-378008734",
     "n": "3rd Floor, Hannah House",
     "a": "11-16 Manchester Street, London",
@@ -63388,26 +61786,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.stevens-trichology.com"
-  },
-  {
-    "o": "1-3805066540",
-    "n": "The Park Club",
-    "a": "East Acton Lane, London",
-    "p": "W3 7HB",
-    "ph": "02084731900",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-3805066540",
-    "ar": "Ealing",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.theparkclubmedispa.co.uk/team/dr-bela-horvath"
   },
   {
     "o": "1-3806562283",
@@ -63490,26 +61868,6 @@
     "web": ""
   },
   {
-    "o": "1-383436830",
-    "n": "The Junction Health Centre",
-    "a": "Arch 5-8, Clapham Junction Station, Grant Road, London",
-    "p": "SW11 2NU",
-    "ph": "02037334079",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3253845518",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.junctionhealthcentre.co.uk"
-  },
-  {
     "o": "1-3837114335",
     "n": "Oval Beauty Clinic",
     "a": "34A Clapham Road, London",
@@ -63568,26 +61926,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.waterloohealthclinic.com"
-  },
-  {
-    "o": "1-385113488",
-    "n": "Victoria Medicentre",
-    "a": "Main Concourse, Victoria Mainline Station, London",
-    "p": "SW1V 1JT",
-    "ph": "02075100314",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-385113488",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.medicentre.co.uk"
   },
   {
     "o": "1-3855130171",
@@ -63930,26 +62268,6 @@
     "web": "https://www.treatmentroomslondon.com"
   },
   {
-    "o": "1-391192499",
-    "n": "RoC Private Clinic",
-    "a": "Third Floor, 127 Harley Street, London",
-    "p": "W1G 6AZ",
-    "ph": "02079350606",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-4965182681",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-391315815",
     "n": "Viavi Limited - 14 Devonshire Street",
     "a": "14 Devonshire Street, London",
@@ -63984,26 +62302,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-3914050466",
     "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-3915396502",
-    "n": "The Junction Health Centre",
-    "a": "Arches 5-8, Clapham Junction Station, Grant Road, London",
-    "p": "SW11 2NU",
-    "ph": "02037334079",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3915396502",
-    "ar": "Wandsworth",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -64931,26 +63229,6 @@
     "web": "https://www.destinationskin.com"
   },
   {
-    "o": "1-406446818",
-    "n": "Bank Medicentre",
-    "a": "80 Cheapside, London",
-    "p": "EC2V 6EE",
-    "ph": "02075100310",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-406446818",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.medicentre.co.uk"
-  },
-  {
     "o": "1-4070846782",
     "n": "iPrimaryCare Head Office",
     "a": "10th Floor, Blue Star House, 234-240 Stockwell Road, London",
@@ -64991,26 +63269,6 @@
     "web": "https://www.sweatclinic.org.uk"
   },
   {
-    "o": "1-407075395",
-    "n": "The Wilson Health Centre",
-    "a": "Cranmer Road, Mitcham",
-    "p": "CR4 4TP",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1348899455",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-408012069",
     "n": "Orpington Intermediate Care Unit",
     "a": "Orpington Hospital, Sevenoaks Road, Orpington",
@@ -65045,26 +63303,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-1243055982",
     "ar": "Barking & Dagenham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-409340635",
-    "n": "Blackberry Orthopaedic Clinic - Croydon",
-    "a": "32 Mayday Road, Thornton Heath",
-    "p": "CR7 7HL",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2814790993",
-    "ar": "Croydon",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -65409,26 +63647,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.fmcmarketing.co.uk"
-  },
-  {
-    "o": "1-4173383878",
-    "n": "Harrow Health Care Centre",
-    "a": "Clementine Churchill Hospital, Sudbury Hill, Harrow",
-    "p": "HA1 3RX",
-    "ph": "02088611221",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2172619996",
-    "ar": "Harrow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://harrowhealthcare.co.uk"
   },
   {
     "o": "1-4194356943",
@@ -65871,26 +64089,6 @@
     "web": ""
   },
   {
-    "o": "1-4310764819",
-    "n": "The Child and Family Practice",
-    "a": "60 Bloomsbury Street, London",
-    "p": "WC1B 3QU",
-    "ph": "07494848434",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2333739567",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.doctornaomielton.london"
-  },
-  {
     "o": "1-432242046",
     "n": "Citydoc Westend",
     "a": "22 Upper Wimpole Street, London",
@@ -66009,26 +64207,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.travelvaccination.co.uk"
-  },
-  {
-    "o": "1-434912226",
-    "n": "The Hale Clinic",
-    "a": "7 Park Crescent, London",
-    "p": "W1B 1PF",
-    "ph": "08455210030",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-10748240392",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-436853801",
@@ -66431,46 +64609,6 @@
     "web": ""
   },
   {
-    "o": "1-452208131",
-    "n": "Harley Street Healthcare Clinic",
-    "a": "104 Harley Street, London",
-    "p": "W1G 7JD",
-    "ph": "02079356554",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-452208131",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleystreet104.com"
-  },
-  {
-    "o": "1-452104507",
-    "n": "The Child and Family Practice",
-    "a": "Third Floor, 57a Wimpole Street, London",
-    "p": "W1G 8YP",
-    "ph": "02072242800",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2333739567",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thechildandfamilypractice.com"
-  },
-  {
     "o": "1-4522488617",
     "n": "London Hormone Clinic",
     "a": "106 Harley Street, London",
@@ -66509,26 +64647,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.hcainternational.co.uk"
-  },
-  {
-    "o": "1-4533091694",
-    "n": "Dr Kelly & Associates - London Wall",
-    "a": "65 London Wall, London",
-    "p": "EC2M 5TU",
-    "ph": "02076382999",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-4533091694",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.doctorcall.co.uk"
   },
   {
     "o": "1-4539967039",
@@ -66649,26 +64767,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.nupas.co.uk"
-  },
-  {
-    "o": "1-455856677",
-    "n": "The London Eye Hospital",
-    "a": "8-10 Harley Street, London",
-    "p": "W1G 8GP",
-    "ph": "02070602602",
-    "s": null,
-    "c": null,
-    "pcn": "ophthalmology",
-    "specs": [
-      "ophthalmology"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-285809029",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.londoneyehospital.com"
   },
   {
     "o": "1-456498248",
@@ -66891,26 +64989,6 @@
     "web": ""
   },
   {
-    "o": "1-4606988780",
-    "n": "18 Week Support",
-    "a": "19-21 Great Tower Street, London",
-    "p": "EC3R 5AR",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-4606988780",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-4629428825",
     "n": "Gallions View",
     "a": "Duncan House, 20 Pier Way, London",
@@ -67045,26 +65123,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-463684815",
     "ar": "Hillingdon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-464120150",
-    "n": "The Child and Family Practice",
-    "a": "Third Floor, 57a Wimpole Street, London",
-    "p": "W1G 8YP",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2333739567",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -67433,9 +65491,9 @@
     "web": ""
   },
   {
-    "o": "1-474663890",
+    "o": "1-9261440352",
     "n": "Lara Clinic Limited",
-    "a": "37 Edgware Road, London",
+    "a": "37b Edgware Road, London",
     "p": "W2 2JE",
     "ph": "07904019555",
     "s": null,
@@ -67733,11 +65791,11 @@
     "web": ""
   },
   {
-    "o": "1-4829976965",
+    "o": "1-7237856491",
     "n": "The Great West Surgery",
     "a": "The Meadows Centre For Health, Chinchilla Drive, Hounslow",
     "p": "TW4 7NR",
-    "ph": "",
+    "ph": "02086301370",
     "s": null,
     "c": null,
     "pcn": "private-gp",
@@ -67773,26 +65831,6 @@
     "web": "https://www.my-iclinic.co.uk"
   },
   {
-    "o": "1-483390412",
-    "n": "Optical Express - London (White City) Clinic",
-    "a": "Unit 2121 Westfield Shopping Centre London, Ariel Way, White City, London",
-    "p": "W12 7GF",
-    "ph": "02087353585",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-483390412",
-    "ar": "Hammersmith & Fulham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.opticalexpress.com"
-  },
-  {
     "o": "1-483017017",
     "n": "CRGH City",
     "a": "16 St John Street, London",
@@ -67811,26 +65849,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.crgh.co.uk/crgh-city/"
-  },
-  {
-    "o": "1-483356314",
-    "n": "Optical Express - Kingston upon Thames Clinic",
-    "a": "Optical Express, 16 - 18 Clarence Street, Kingston Upon Thames",
-    "p": "KT1 1NX",
-    "ph": "02085474240",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-483356314",
-    "ar": "Kingston upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.opticalexpress.com"
   },
   {
     "o": "1-4839898961",
@@ -67853,26 +65871,6 @@
     "web": "https://www.alphascreening.co.uk"
   },
   {
-    "o": "1-4844372170",
-    "n": "The Imaging Centre",
-    "a": "The Hive, Camrose Avenue, Edgware",
-    "p": "HA8 6AG",
-    "ph": "02083813800",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-4844372170",
-    "ar": "Harrow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thehivelondon.com"
-  },
-  {
     "o": "1-484571408",
     "n": "Forest Road Medical Centre",
     "a": "354-358 Forest Road, Walthamstow",
@@ -67893,24 +65891,24 @@
     "web": ""
   },
   {
-    "o": "1-485645431",
+    "o": "1-669320774",
     "n": "DMC Healthcare Ltd",
     "a": "Daisy Business Park, 31-35 Sylvan Grove, London",
     "p": "SE15 1PD",
-    "ph": "",
+    "ph": "02076351012",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic",
     "specs": [
-      "private-gp"
+      "diagnostic"
     ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-485645431",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-669320774",
     "ar": "Southwark",
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": ""
+    "web": "https://www.dmchealthcare.co.uk/"
   },
   {
     "o": "1-4858700904",
@@ -68453,46 +66451,6 @@
     "web": ""
   },
   {
-    "o": "1-4986947592",
-    "n": "Global House",
-    "a": "10 Station Approach, Hayes, Bromley",
-    "p": "BR2 7EH",
-    "ph": "02082958281",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-463247119",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bromleyhealthcare.org.uk"
-  },
-  {
-    "o": "1-4987162946",
-    "n": "Ziering London Clinic",
-    "a": "The Triangle, Hammersmith Grove, London",
-    "p": "W6 0LG",
-    "ph": "02085638111",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-4987162946",
-    "ar": "Hammersmith & Fulham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.onehealthmedicalgroup.co.uk/"
-  },
-  {
     "o": "1-498859674",
     "n": "UniClinic Limited",
     "a": "30 Uphall Road, Ilford",
@@ -68673,66 +66631,6 @@
     "web": ""
   },
   {
-    "o": "1-502272908",
-    "n": "Rhodes Farm Clinic",
-    "a": "The Ridgeway, London",
-    "p": "NW7 1RH",
-    "ph": "02089060885",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-502272908",
-    "ar": "Barnet",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.partnershipsincare.co.uk"
-  },
-  {
-    "o": "1-502298621",
-    "n": "THMG Bromley Clinic",
-    "a": "5 Archers Court, Bromley",
-    "p": "BR2 9JG",
-    "ph": "02072919700",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-502298621",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
-  },
-  {
-    "o": "1-502322629",
-    "n": "THMG Harley Street Clinic",
-    "a": "6 Harley Street, London",
-    "p": "W1G 9QD",
-    "ph": "02072919700",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-502322629",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
-  },
-  {
     "o": "1-502299379",
     "n": "THMG Chiswick",
     "a": "93a Chiswick High Road, London",
@@ -68751,26 +66649,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.harleymedical.com"
-  },
-  {
-    "o": "1-502349608",
-    "n": "THMG Wimbledon Clinic",
-    "a": "The Courtyard, 7 Francis Grove, London",
-    "p": "SW19 4DW",
-    "ph": "02072919700",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-502349608",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
   },
   {
     "o": "1-5026333531",
@@ -69046,26 +66924,6 @@
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-5072822666",
-    "ar": "Hillingdon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-5072822693",
-    "n": "The Orchard Practice",
-    "a": "Hesa Primary Care Centre, 52 Station Road, Hayes",
-    "p": "UB3 4DD",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2285225832",
     "ar": "Hillingdon",
     "la": null,
     "ln": null,
@@ -69494,46 +67352,6 @@
     "web": "https://www.essprimarycare.co.uk"
   },
   {
-    "o": "1-516395941",
-    "n": "ESS Clinic",
-    "a": "142 George Lane, London",
-    "p": "E18 1AY",
-    "ph": "02089892004",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-516395941",
-    "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-516395914",
-    "n": "Langthorne Health Centre",
-    "a": "13 Langthorne Road, London",
-    "p": "E11 4HX",
-    "ph": "02084307510",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-516395914",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-516373887",
     "n": "Oliver Road Medical Centre",
     "a": "75 Oliver Road, London",
@@ -69692,26 +67510,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.miravueskinclinic.com"
-  },
-  {
-    "o": "1-5204250976",
-    "n": "The Elixir Clinic",
-    "a": "3rd Floor, 75 Wimpole Street, London",
-    "p": "W1G 9RS",
-    "ph": "07718483484",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-5204250976",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-5212983876",
@@ -69994,26 +67792,6 @@
     "web": ""
   },
   {
-    "o": "1-5322987978",
-    "n": "Westland Medical Centre",
-    "a": "Westland Avenue, Hornchurch",
-    "p": "RM11 3SD",
-    "ph": "01371829383",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-5322987978",
-    "ar": "Havering",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-532123288",
     "n": "Greenwood Surgery at Charles Stanley & Co. Limited",
     "a": "Charles Stanley & Co Limited, 35 Luke Street, London",
@@ -70032,26 +67810,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-5325192204",
-    "n": "112 Harley Street",
-    "a": "112 Harley Street, London",
-    "p": "W1G 7JQ",
-    "ph": "02075803324",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-11519253055",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.cooperhealth.co.uk"
   },
   {
     "o": "1-533591992",
@@ -70255,26 +68013,6 @@
     "web": ""
   },
   {
-    "o": "1-538854516",
-    "n": "Greenhill Park Medical Centre",
-    "a": "Greenhill Park, London",
-    "p": "NW10 9AR",
-    "ph": "0844477874",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-538854516",
-    "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-538891405",
     "n": "Ching Way Medical Centre",
     "a": "7 Ching Way, Chingford, London",
@@ -70415,26 +68153,6 @@
     "web": "https://www.derwentmedical.co.uk"
   },
   {
-    "o": "1-5409446527",
-    "n": "The Hale Clinic",
-    "a": "3rd Floor, 4 Harley Street, London",
-    "p": "W1G 9PB",
-    "ph": "02076310156",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-10748240392",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.haleclinic.com"
-  },
-  {
     "o": "1-5410660975",
     "n": "Cosmedics Clinics Putney",
     "a": "4 Disraeli Road, London",
@@ -70569,26 +68287,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-541846253",
     "ar": "Harrow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-5418275062",
-    "n": "The City Walk-in Clinic",
-    "a": "33-34, Bury Street, London",
-    "p": "EC3A 5AR",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-5418275062",
-    "ar": "City of London",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -71475,26 +69173,6 @@
     "web": "https://www.thegreenandfirroadsurgeries.co.uk"
   },
   {
-    "o": "1-5537570253",
-    "n": "The Huntercombe Hospital - Roehampton",
-    "a": "Holybourne Avenue, London",
-    "p": "SW15 4JL",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-144135399",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.huntercombe.com"
-  },
-  {
     "o": "1-5557935951",
     "n": "Belgravia Dermatology",
     "a": "6-7 Ludgate Square, London",
@@ -71755,26 +69433,6 @@
     "web": "https://www.perfecteyesltd.com"
   },
   {
-    "o": "1-559411710",
-    "n": "City Road Medical Centre",
-    "a": "Unit 1-3 Ground Floor, City House, 190-196 City Road, London",
-    "p": "EC1V 2QH",
-    "ph": "02073368170",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-559411710",
-    "ar": "Islington",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.cityroadmedicalcentre.org.uk"
-  },
-  {
     "o": "1-559436297",
     "n": "Hornsey Rise Medical Centre",
     "a": "Hornsey Rise Health Centre, Hornsey Rise, London",
@@ -71788,26 +69446,6 @@
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-2843840710",
-    "ar": "Islington",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-559436312",
-    "n": "Islington Central Medical Centre",
-    "a": "28 Laycock Street, London",
-    "p": "N1 1SW",
-    "ph": "02033168580",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2234568405",
     "ar": "Islington",
     "la": null,
     "ln": null,
@@ -71893,46 +69531,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-560931122",
-    "n": "The Marion Gluck Clinic",
-    "a": "61 Wimpole Street, London",
-    "p": "W1G 8AH",
-    "ph": "02074022151",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-560931122",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-560765240",
-    "n": "THMG City Clinic",
-    "a": "4th Floor Marc House, Great St Thomas Apostle, City of London",
-    "p": "EC4V 2BB",
-    "ph": "02074898468",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-560765240",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
   },
   {
     "o": "1-5619779985",
@@ -72293,26 +69891,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-569085938",
-    "n": "The Wimpole Clinic Ltd",
-    "a": "Hannah House, 11-16 Manchester Street, London",
-    "p": "W1U 4DJ",
-    "ph": "02079351861",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-9104134545",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.wimpoleclinic.com"
   },
   {
     "o": "1-568608739",
@@ -72775,16 +70353,16 @@
     "web": "https://www.thepracticeplc.com"
   },
   {
-    "o": "1-591497528",
+    "o": "RJZ70",
     "n": "Orpington Hospital",
-    "a": "Orpington Hospital, Sevenoaks Road, Orpington",
+    "a": "Sevenoaks Road, Orpington",
     "p": "BR6 9JU",
-    "ph": "01689442888",
+    "ph": "02032999000",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "hospital",
     "specs": [
-      "private-gp"
+      "hospital"
     ],
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/RJZ70",
@@ -72792,7 +70370,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.thepracticeplc.com"
+    "web": "https://www.kch.nhs.uk"
   },
   {
     "o": "1-591497574",
@@ -72853,26 +70431,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.thepracticeplc.com"
-  },
-  {
-    "o": "1-5936476731",
-    "n": "Brent GP Access Centre",
-    "a": "116 Chaplin Road, Wembley",
-    "p": "HA0 4UZ",
-    "ph": "03000339950",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-5936476731",
-    "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-5943078177",
@@ -72974,26 +70532,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.gracebelgravia.com"
-  },
-  {
-    "o": "1-595823241",
-    "n": "JA Medical",
-    "a": "Suite 5.3, Broadway House, 3-5 High Street, Bromley",
-    "p": "BR1 1LF",
-    "ph": "07762593443",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-595823241",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-5964877918",
@@ -73316,16 +70854,16 @@
     "web": "https://www.waverleypractice.co.uk"
   },
   {
-    "o": "1-608312843",
+    "o": "1-7348692999",
     "n": "Bodyvie Medi-Clinic",
-    "a": "133-135 Kew Road, Richmond",
+    "a": "133-135, Kew Road, Richmond",
     "p": "TW9 2PN",
-    "ph": "08450042995",
+    "ph": "02071000744",
     "s": null,
     "c": null,
-    "pcn": "diagnostic",
+    "pcn": "private-gp",
     "specs": [
-      "diagnostic"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-7348692999",
@@ -73334,26 +70872,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.bodyvie.com"
-  },
-  {
-    "o": "1-6088839608",
-    "n": "The Law Medical Group Practice",
-    "a": "124-128 Harrow Road, Wembley",
-    "p": "HA9 6QQ",
-    "ph": "02038188441",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-6088839608",
-    "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-6096473729",
@@ -73654,26 +71172,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.hillingdonprimarycare.co.uk"
-  },
-  {
-    "o": "1-6223072914",
-    "n": "The Basil Street Practice",
-    "a": "3 Basil Street, London",
-    "p": "SW3 1AU",
-    "ph": "02072356642",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Outstanding",
-    "cu": "https://www.cqc.org.uk/location/1-6223072914",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-6239731696",
@@ -74716,26 +72214,6 @@
     "web": "https://www.medicspot.co.uk"
   },
   {
-    "o": "1-669320774",
-    "n": "DMC Healthcare Ltd",
-    "a": "Daisy Business Park, 31-35 Sylvan Grove, London",
-    "p": "SE15 1PD",
-    "ph": "02076351012",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-669320774",
-    "ar": "Southwark",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.dmchealthcare.co.uk/"
-  },
-  {
     "o": "1-6692416132",
     "n": "Dr Muhammad Shahzad",
     "a": "48 Harrow View, Harrow",
@@ -74930,26 +72408,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-6781442456",
     "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-6785683480",
-    "n": "Cheshunt Minor Injuries Unit",
-    "a": "King Arthur Court, Cheshunt, Waltham Cross",
-    "p": "EN8 8XN",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-6785683480",
-    "ar": "",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -75476,66 +72934,6 @@
     "web": ""
   },
   {
-    "o": "1-6971694361",
-    "n": "ESS Clinic",
-    "a": "142 George Lane, London",
-    "p": "E18 1AY",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-6971694361",
-    "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-6971694077",
-    "n": "Comely Bank Clinic",
-    "a": "46 Ravenswood Road, London",
-    "p": "E17 9LY",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-6971694077",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-6971694206",
-    "n": "Silverthorn Medical Centre",
-    "a": "Silverthorne Centre, 2 Friars Close, London",
-    "p": "E4 6UN",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-6971694206",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-698391289",
     "n": "The Grove",
     "a": "103 The Grove, Isleworth",
@@ -75576,26 +72974,6 @@
     "web": ""
   },
   {
-    "o": "1-6989869885",
-    "n": "Chelsea Medics",
-    "a": "102 Sydney Street, London",
-    "p": "SW3 6NJ",
-    "ph": "02039555444",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-6989869885",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.chelseamedics.co.uk"
-  },
-  {
     "o": "1-700017073",
     "n": "The Queen Anne Street Practice - Room 4",
     "a": "55 Queen Anne Street, London",
@@ -75616,7 +72994,7 @@
     "web": ""
   },
   {
-    "o": "1-7012671181",
+    "o": "1-9018083701",
     "n": "King-Lewis Family Practice",
     "a": "Chelsea Consulting Rooms, 2 Lower Sloane Street, London",
     "p": "SW1W 8BJ",
@@ -76096,26 +73474,6 @@
     "web": "https://www.dralexchambers.co.uk"
   },
   {
-    "o": "1-7237856491",
-    "n": "The Great West Surgery",
-    "a": "The Meadows Centre For Health, Chinchilla Drive, Hounslow",
-    "p": "TW4 7NR",
-    "ph": "02086301370",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-4829976965",
-    "ar": "Hounslow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-723604714",
     "n": "London Ultrasound Centre",
     "a": "112 Harley Street, London",
@@ -76189,26 +73547,6 @@
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-727827967",
-    "ar": "Kingston upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.yourhealthcare.org"
-  },
-  {
-    "o": "1-727899272",
-    "n": "Surbiton Health Centre",
-    "a": "Ewell Road, Surbiton",
-    "p": "KT6 6EZ",
-    "ph": "02083997111",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1126352622",
     "ar": "Kingston upon Thames",
     "la": null,
     "ln": null,
@@ -76336,26 +73674,6 @@
     "web": ""
   },
   {
-    "o": "1-7348692999",
-    "n": "Bodyvie Medi-Clinic",
-    "a": "133-135, Kew Road, Richmond",
-    "p": "TW9 2PN",
-    "ph": "02071000744",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7348692999",
-    "ar": "Richmond upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bodyvie.com"
-  },
-  {
     "o": "1-7348789135",
     "n": "McPhillips Consulting",
     "a": "Chelsea Consulting Rooms, 2 Lower Sloane Street, London",
@@ -76370,26 +73688,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-7348789135",
     "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-7356232738",
-    "n": "446 Cranbrook Road",
-    "a": "446 Cranbrook Road, Ilford",
-    "p": "IG2 6LL",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7356232738",
-    "ar": "Redbridge",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -76457,26 +73755,6 @@
     "web": ""
   },
   {
-    "o": "1-7371603701",
-    "n": "The Sudbury Clinic",
-    "a": "Clementine Churchill Hospital, Sudbury Hill, Harrow",
-    "p": "HA1 3GW",
-    "ph": "08456431400",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2950102775",
-    "ar": "Harrow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.streamline-surgical.com"
-  },
-  {
     "o": "1-7381043175",
     "n": "Harley Street Medical Centre (Wimpole Street)",
     "a": "79 Wimpole Street, London",
@@ -76491,26 +73769,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-7381043175",
     "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-7388798435",
-    "n": "Hammersmith Private Hospital",
-    "a": "Enhance Medical, The Triangle 5-17, Hammersmith Grove, London",
-    "p": "W6 0LG",
-    "ph": "02085638111",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7388798435",
-    "ar": "Hammersmith & Fulham",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -76811,26 +74069,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-7509650578",
     "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-7511469042",
-    "n": "ESS Clinic",
-    "a": "142 George Lane, London",
-    "p": "E18 1AY",
-    "ph": "02089892004",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-7511469042",
-    "ar": "Redbridge",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -77196,26 +74434,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.apricity.life"
-  },
-  {
-    "o": "1-7760678673",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "07720463080",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.botonics.co.uk"
   },
   {
     "o": "1-7773710913",
@@ -77698,26 +74916,6 @@
     "web": "https://www.drtickle.co.uk"
   },
   {
-    "o": "1-8080982107",
-    "n": "23MD",
-    "a": "23 Elystan Street, London",
-    "p": "SW3 3NT",
-    "ph": "02070780302",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-8080982107",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.23md.co.uk"
-  },
-  {
     "o": "1-8117906171",
     "n": "Edridge Road Community Health Centre",
     "a": "Impact House, 2 Edridge Road, Croydon",
@@ -77758,26 +74956,6 @@
     "web": "https://www.zoomdoc.com"
   },
   {
-    "o": "1-8162183355",
-    "n": "Harley Street Specialist Hospital",
-    "a": "18-22 Queen Anne Street, London",
-    "p": "W1G 8HU",
-    "ph": "02070343300",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8162183355",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-8162516928",
     "n": "Unilabs Ltd 24 - 32 Stephenson Waw London",
     "a": "24-32, Stephenson Way, London",
@@ -77796,26 +74974,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.unilabs.co.uk"
-  },
-  {
-    "o": "1-8170775855",
-    "n": "CP Medical Clinic",
-    "a": "61-63, Sloane Avenue, London",
-    "p": "SW3 3DH",
-    "ph": "02075898776",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8170775855",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.cpmedicalclinic.com"
   },
   {
     "o": "1-8167721835",
@@ -77896,26 +75054,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-8197105615",
-    "n": "Robin Hood Lane Health Centre",
-    "a": "Robin Hood Lane, Sutton",
-    "p": "SM1 2RJ",
-    "ph": "02083957985",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-8197105615",
-    "ar": "Sutton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.robinhoodclinic.co.uk/"
   },
   {
     "o": "1-8198852568",
@@ -78098,46 +75236,6 @@
     "web": ""
   },
   {
-    "o": "1-828595537",
-    "n": "The Child and Family Practice",
-    "a": "8 Ridgmount Street, London",
-    "p": "WC1E 7AA",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2333739567",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thechildandfamilypractice.com"
-  },
-  {
-    "o": "1-8291478107",
-    "n": "Dr Morton's - the medical helpline",
-    "a": "201, Chapelier House, Eastfields Avenue, London",
-    "p": "SW18 1LR",
-    "ph": "02071016386",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8291478107",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-8295158717",
     "n": "Image Diagnostic Technology Ltd",
     "a": "53 Windermere Road, London",
@@ -78212,46 +75310,6 @@
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/1-8331555009",
     "ar": "Ealing",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "1-8318284160",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "07720558940",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8318284160",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.christosdimitriou.co.uk"
-  },
-  {
-    "o": "1-8332553419",
-    "n": "Care Polyclinic",
-    "a": "38 Knightsbridge, London",
-    "p": "SW1X 7JN",
-    "ph": "02072450450",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-8332553419",
-    "ar": "Westminster",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -78338,26 +75396,6 @@
     "web": "https://www.harleymedical.co.uk"
   },
   {
-    "o": "1-8365908448",
-    "n": "THMG Liverpool Street Clinic",
-    "a": "Ground Floor, 42 New Broad Street, London",
-    "p": "EC2M 1JD",
-    "ph": "01604608160",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-8365908448",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
-  },
-  {
     "o": "1-8371903492",
     "n": "Echelon Health Ltd",
     "a": "68 Harley Street, London",
@@ -78398,26 +75436,6 @@
     "web": "https://www.womenshealthdulwich.com"
   },
   {
-    "o": "1-8377642530",
-    "n": "THMG Wimbledon Clinic",
-    "a": "The Courtyard, 7 Francis Grove, London",
-    "p": "SW19 4DW",
-    "ph": "01604608160",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-8377642530",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.harleymedical.co.uk"
-  },
-  {
     "o": "1-838498518",
     "n": "Clear Ear Clinic",
     "a": "Suite 21 Harcourt House, 19 Cavendish Square, London",
@@ -78436,26 +75454,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.clearearclinic.com"
-  },
-  {
-    "o": "1-842483954",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "08006755196",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.callthephysician.com"
   },
   {
     "o": "1-8462112285",
@@ -78538,26 +75536,6 @@
     "web": "https://www.optimalhealth.org.uk"
   },
   {
-    "o": "1-8490260136",
-    "n": "GP Hub Central Croydon",
-    "a": "East Croydon Medical Centre, 59 Addiscombe Road, Croydon",
-    "p": "CR0 6SD",
-    "ph": "02082561046",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8490260136",
-    "ar": "Croydon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.croydongphub.co.uk"
-  },
-  {
     "o": "1-8490478232",
     "n": "The Oval GP Surgery",
     "a": "2 Clapham Road, London",
@@ -78596,46 +75574,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.zapped.org.uk"
-  },
-  {
-    "o": "1-8490260261",
-    "n": "GP Hub Parkway",
-    "a": "Parkway Health Centre, New Addington, Croydon",
-    "p": "CR0 0JA",
-    "ph": "02084013238",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8490260261",
-    "ar": "Croydon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.croydongphub.co.uk"
-  },
-  {
-    "o": "1-8490260324",
-    "n": "Purley GP Hub",
-    "a": "Purley War Memorial Hospital, 856 Brighton Road, Purley",
-    "p": "CR8 2YL",
-    "ph": "02084013238",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8490260324",
-    "ar": "Croydon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.croydongphub.co.uk"
   },
   {
     "o": "1-8524411305",
@@ -79298,26 +76236,6 @@
     "web": ""
   },
   {
-    "o": "1-8780851606",
-    "n": "10 Harley Street",
-    "a": "10 Harley Street, London",
-    "p": "W1G 9PF",
-    "ph": "07860443550",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-288474903",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-8815856488",
     "n": "UK Vein Clinic",
     "a": "92 Harley Street, London",
@@ -79778,26 +76696,6 @@
     "web": "https://www.drvictoriaowen.com"
   },
   {
-    "o": "1-900447879",
-    "n": "Euromedical Centre",
-    "a": "Unit 5, Holles House, Overton Road, London",
-    "p": "SW9 7AP",
-    "ph": "02073260991",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-900447879",
-    "ar": "Lambeth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.euromedicalcentre.co.uk"
-  },
-  {
     "o": "1-902577252",
     "n": "IHealth-Direct Limited",
     "a": "31 Clapham High Street, London",
@@ -79836,26 +76734,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.myvitalmetrics.com"
-  },
-  {
-    "o": "1-9018083701",
-    "n": "King-Lewis Family Practice",
-    "a": "Chelsea Consulting Rooms, 2 Lower Sloane Street, London",
-    "p": "SW1W 8BJ",
-    "ph": "02077306611",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-9018083701",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.king-lewisfamilypractice.co.uk"
   },
   {
     "o": "1-903506119",
@@ -80458,26 +77336,6 @@
     "web": ""
   },
   {
-    "o": "1-9261440352",
-    "n": "Lara Clinic Limited",
-    "a": "37b Edgware Road, London",
-    "p": "W2 2JE",
-    "ph": "07904019555",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-9261440352",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-9266381865",
     "n": "Prenetics EMEA Ltd Operational Base",
     "a": "Unit 2, Orpington Business Park, Faraday Way, Orpington",
@@ -81058,26 +77916,6 @@
     "web": ""
   },
   {
-    "o": "1-943641216",
-    "n": "The Ella Clinic",
-    "a": "106 Harley Street, London",
-    "p": "W1G 7JE",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-943641216",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-9490797738",
     "n": "Fortius Clinic",
     "a": "22 Worple Road, Wimbledon,, London",
@@ -81156,26 +77994,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.hillmedicalcentre.co.uk"
-  },
-  {
-    "o": "1-952310986",
-    "n": "Private Walk-In Clinic",
-    "a": "551 High Road, London",
-    "p": "N17 6SB",
-    "ph": "02088085901",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3000587215",
-    "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "1-954613730",
@@ -81496,46 +78314,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "1-9736478390",
-    "n": "The Hale Clinic",
-    "a": "4 Harley Street, London",
-    "p": "W1G 9PB",
-    "ph": "01202744747",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-9736478390",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.drsharmadiagnostics.com"
-  },
-  {
-    "o": "1-974035211",
-    "n": "Unit 10.1.1 The Leathermarket",
-    "a": "11-13 Weston Street, London",
-    "p": "SE1 3ER",
-    "ph": "02031894604",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-974035211",
-    "ar": "Southwark",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.communityoutpatients.co.uk"
   },
   {
     "o": "1-9769729584",
@@ -82058,26 +78836,6 @@
     "web": "https://www.londoneyehospital.com"
   },
   {
-    "o": "1-9933406405",
-    "n": "The Care Oncology Clinic at 76 Harley Street",
-    "a": "76 Harley Street, London",
-    "p": "W1G 7HH",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-9933406405",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "1-9933858539",
     "n": "HCA UK Medical Concierge Centre",
     "a": "47 Nottingham Place, Marylebone, London",
@@ -82498,26 +79256,6 @@
     "web": "https://www.kingstonpct.nhs.uk"
   },
   {
-    "o": "5A720",
-    "n": "Beckenham Beacon",
-    "a": "379 Croydon Road, Beckenham",
-    "p": "BR3 3QL",
-    "ph": "01689866530",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-233070238",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bromley.nhs.uk"
-  },
-  {
     "o": "5A818",
     "n": "Bevan Unit",
     "a": "20 Pier Way, Thamesmead, London",
@@ -82736,26 +79474,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.hf-pct.nhs.uk"
-  },
-  {
-    "o": "5C504",
-    "n": "East Ham Care Centre",
-    "a": "East Ham Memorial Hospital, Shrewsbury Road, Forest Gate, London",
-    "p": "E7 8QR",
-    "ph": "02070596751",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-542884805",
-    "ar": "Newham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.newham.nhs.uk"
   },
   {
     "o": "5H1X1",
@@ -83118,26 +79836,6 @@
     "web": "https://www.lambethpct.nhs.uk"
   },
   {
-    "o": "5LE13",
-    "n": "Dulwich Community Hospital",
-    "a": "East Dulwich Grove, London",
-    "p": "SE22 8PT",
-    "ph": "02075250407",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/5LE13",
-    "ar": "Southwark",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.southwarkpct.nhs.uk"
-  },
-  {
     "o": "5LE19",
     "n": "Mabel Goldwin House",
     "a": "49 Grange Walk, London",
@@ -83178,11 +79876,11 @@
     "web": "https://www.lewishampct.nhs.uk"
   },
   {
-    "o": "5LG01",
+    "o": "RJ731",
     "n": "Queen Mary's Hospital",
     "a": "Roehampton Lane, Roehampton, London",
     "p": "SW15 5PN",
-    "ph": "02084876968",
+    "ph": "02084876000",
     "s": null,
     "c": null,
     "pcn": "diagnostic",
@@ -83195,7 +79893,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.wandsworth.nhs.uk"
+    "web": "https://www.stgeorges.nhs.uk"
   },
   {
     "o": "5LF22",
@@ -83418,26 +80116,6 @@
     "web": "https://www.redbridge.nhs.uk"
   },
   {
-    "o": "5NA24",
-    "n": "King George Hospital",
-    "a": "Barley Lane, Goodmayes, Ilford",
-    "p": "IG3 8YB",
-    "ph": "02088224135",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RF4DG",
-    "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.redbridge.nhs.uk"
-  },
-  {
     "o": "5P926",
     "n": "Livingstone Hospital",
     "a": "East Hill, Dartford",
@@ -83516,26 +80194,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.bartsandthelondion.nhs.uk/proposed-merger"
-  },
-  {
-    "o": "R1H13",
-    "n": "Mile End Hospital",
-    "a": "Bancroft Road, London",
-    "p": "E1 4DG",
-    "ph": "02073777000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/R1H13",
-    "ar": "Tower Hamlets",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bartshealth.nhs.uk/mile-end/"
   },
   {
     "o": "R1H41",
@@ -83658,16 +80316,16 @@
     "web": "https://www.bartsandthelondion.nhs.uk/proposed-merger"
   },
   {
-    "o": "R1K03",
+    "o": "RV8M2",
     "n": "St Mark's Hospital",
     "a": "Watford Road, Harrow",
     "p": "HA1 3UJ",
     "ph": "02088643232",
     "s": null,
     "c": null,
-    "pcn": "hospital",
+    "pcn": "diagnostic",
     "specs": [
-      "hospital"
+      "diagnostic"
     ],
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/RV8M2",
@@ -83675,7 +80333,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.lnwh.nhs.uk"
+    "web": "https://www.nwlh.nhs.uk"
   },
   {
     "o": "R1K02",
@@ -83732,26 +80390,6 @@
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/R1K01",
     "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.lnwh.nhs.uk"
-  },
-  {
-    "o": "R1K68",
-    "n": "Clayponds Hospital",
-    "a": "Sterling Place, Ealing, London",
-    "p": "W5 4RN",
-    "ph": "02085604011",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/R1K68",
-    "ar": "Ealing",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -83836,26 +80474,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "RAL25",
-    "n": "Hospital of St John & St Elizabeth",
-    "a": "60 Grove End Road, St John's Wood, London",
-    "p": "NW8 9NH",
-    "ph": "02078064000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-115480780",
-    "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.hje.org.uk"
   },
   {
     "o": "RAL27",
@@ -83958,46 +80576,6 @@
     "web": ""
   },
   {
-    "o": "RAL40",
-    "n": "Finchley Memorial Hospital",
-    "a": "Granville Road, London",
-    "p": "N12 0JE",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RAL40",
-    "ar": "Barnet",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "RAL29",
-    "n": "Highgate Dialysis Unit",
-    "a": "53-57 Highgate Road, Islington, London",
-    "p": "NW5 1TL",
-    "ph": "02072841799",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RAL29",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.fmc-ag.com"
-  },
-  {
     "o": "RAL80",
     "n": "Hadley Wood Hospital",
     "a": "52 Moxon Street, Barnet",
@@ -84078,9 +80656,9 @@
     "web": "https://www.royalfree.nhs.uk"
   },
   {
-    "o": "RALWH",
+    "o": "RKEQ4",
     "n": "The Whittington Hospital",
-    "a": "Highgate Hill, Archway, London",
+    "a": "Trust Offices, Magdala Avenue, London",
     "p": "N19 5NF",
     "ph": "02072723070",
     "s": null,
@@ -84138,7 +80716,7 @@
     "web": "https://www.rnoh.nhs.uk"
   },
   {
-    "o": "RALMV",
+    "o": "RAS02",
     "n": "Mount Vernon Hospital",
     "a": "Rickmansworth Road, Northwood",
     "p": "HA6 2RN",
@@ -84238,26 +80816,6 @@
     "web": ""
   },
   {
-    "o": "RAPCF",
-    "n": "Chase Farm Hospital",
-    "a": "127 The Ridgeway, Enfield",
-    "p": "EN2 8JL",
-    "ph": "020277940500",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RALC7",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.royalfree.nhs.uk"
-  },
-  {
     "o": "RAPST",
     "n": "St Ann's Hospital",
     "a": "St Ann's Road, Tottenham, London",
@@ -84272,26 +80830,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RAPST",
     "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.northmid.nhs.uk"
-  },
-  {
-    "o": "RAPNM",
-    "n": "North Middlesex University Hospital",
-    "a": "Sterling Way, Haringey, London",
-    "p": "N18 1QX",
-    "ph": "02088872000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RAPNM",
-    "ar": "Enfield",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -84376,26 +80914,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.lnwh.nhs.uk"
-  },
-  {
-    "o": "RAS02",
-    "n": "Mount Vernon Hospital",
-    "a": "Rickmansworth Road, Northwood",
-    "p": "HA6 2RN",
-    "ph": "01923826111",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RAS02",
-    "ar": "Hillingdon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.thh.nhs.uk"
   },
   {
     "o": "RASW5",
@@ -84638,26 +81156,6 @@
     "web": "https://www.nelft.nhs.uk"
   },
   {
-    "o": "RATX7",
-    "n": "Heronwood & Galleon Inpatient Facility",
-    "a": "Makepeace Road, Wanstead, London",
-    "p": "E11 1UU",
-    "ph": "02085305665",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RATX7",
-    "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.nelft.nhc.co.uk"
-  },
-  {
     "o": "RATX9",
     "n": "Nightingale Hospital London",
     "a": "1 Western Gateway, London",
@@ -84698,106 +81196,6 @@
     "web": "https://www.kingstonhospital.nhs.uk"
   },
   {
-    "o": "RATX6",
-    "n": "St George's Hospital",
-    "a": "117 Suttons Lane, Hornchurch",
-    "p": "RM12 6RS",
-    "ph": "01708465302",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RATX6",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.onelcommunityservices.nhs"
-  },
-  {
-    "o": "RAX05",
-    "n": "Teddington Memorial Hospital",
-    "a": "Hampton Road, Teddington",
-    "p": "TW11 0JL",
-    "ph": "07785695086",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RAX05",
-    "ar": "Richmond upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "RAX58",
-    "n": "The New Victoria Hospital",
-    "a": "184 Coombe Lane West, Kingston Upon Thames",
-    "p": "KT2 7EG",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-108386437",
-    "ar": "Kingston upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "RAX04",
-    "n": "Queen Mary's Hospital",
-    "a": "Roehampton Lane, Roehampton, London",
-    "p": "SW15 5PN",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RJ731",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.kingstonhospital.nhs.uk"
-  },
-  {
-    "o": "RC3X1",
-    "n": "Clayponds Hospital",
-    "a": "Sterling Way, Ealing, London",
-    "p": "W5 4RN",
-    "ph": "02085604011",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RC3X1",
-    "ar": "Ealing",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.ealingpct.nhs.uk"
-  },
-  {
     "o": "RC3X3",
     "n": "Willesden Centre for Health & Care",
     "a": "Willesden Centre for Health and Care, Robson Avenue, London",
@@ -84832,26 +81230,6 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-1790509337",
     "ar": "Barking & Dagenham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bhrhospitals.nhs.uk"
-  },
-  {
-    "o": "RF4DG",
-    "n": "King George Hospital",
-    "a": "Barley Lane, Goodmayes, Ilford",
-    "p": "IG3 8YB",
-    "ph": "02089708051",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RF4DG",
-    "ar": "Redbridge",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -84896,26 +81274,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.bhrhospitals.nhs.uk"
-  },
-  {
-    "o": "RF4XY",
-    "n": "Goodmayes Hospital",
-    "a": "157 Barley Lane, Ilford",
-    "p": "IG3 8XJ",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RF4XY",
-    "ar": "Redbridge",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "RGCKH",
@@ -84969,53 +81327,13 @@
     "specs": [
       "hospice"
     ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RGCX1",
+    "cqc": "Inadequate",
+    "cu": "https://www.cqc.org.uk/location/R1HX9",
     "ar": "Waltham Forest",
     "la": null,
     "ln": null,
     "type": "Private",
     "web": "https://www.whippsx.nhs.uk"
-  },
-  {
-    "o": "RGCMC",
-    "n": "Silverthorne Medical Centre",
-    "a": "2 Friars Close, Larkshall Road, Chingford, London",
-    "p": "E4 6UN",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RGCMC",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.whippsx.nhs.uk"
-  },
-  {
-    "o": "RJ144",
-    "n": "Pulross Intermediate Care Centre",
-    "a": "47a Pulross Road, London",
-    "p": "SW9 8AE",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RJ144",
-    "ar": "Lambeth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.guysandstthomas.nhs.uk"
   },
   {
     "o": "RJ133",
@@ -85036,26 +81354,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "RGCX2",
-    "n": "Ainslie & Highams Inpatient Facility",
-    "a": "3 Friars Close, Chingford, London",
-    "p": "E4 6UW",
-    "ph": "02084307270",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RGCX2",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.onelcommunityservices.nhs.uk/"
   },
   {
     "o": "RJ179",
@@ -85218,26 +81516,6 @@
     "web": "https://www.baringroadmedicalcentre.co.uk"
   },
   {
-    "o": "RJ1X3",
-    "n": "Lambeth Community Care Centre",
-    "a": "Monkton Street, London",
-    "p": "SE11 4TX",
-    "ph": "02030494743",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7729851670",
-    "ar": "Lambeth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.guysandstthomas.nhs.uk"
-  },
-  {
     "o": "RJ1X9",
     "n": "Royal Brompton & Harefield Hospitals Specialist Care - Wimpole Street",
     "a": "77  Wimpole Street, London",
@@ -85278,36 +81556,36 @@
     "web": "https://www.lewisham.nhs.uk"
   },
   {
-    "o": "RJ230",
+    "o": "RN7QM",
     "n": "Queen Mary's Hospital",
     "a": "Frognal Avenue, Sidcup",
     "p": "DA14 6LT",
-    "ph": "02083333284",
+    "ph": "02083022678",
     "s": null,
     "c": null,
-    "pcn": "diagnostic",
+    "pcn": "hospital",
     "specs": [
-      "diagnostic"
+      "hospital"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RJ731",
+    "cu": "https://www.cqc.org.uk/location/RN7QM",
     "ar": "Bexley",
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.lewishamandgreenwich.nhs.uk"
+    "web": ""
   },
   {
-    "o": "RJ253",
+    "o": "RJZ30",
     "n": "Princess Royal University Hospital",
     "a": "Farnborough Common, Orpington",
     "p": "BR6 8ND",
-    "ph": "02083333284",
+    "ph": "02032999000",
     "s": null,
     "c": null,
-    "pcn": "diagnostic",
+    "pcn": "hospital",
     "specs": [
-      "diagnostic"
+      "hospital"
     ],
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/RJZ30",
@@ -85315,7 +81593,7 @@
     "la": null,
     "ln": null,
     "type": "Private",
-    "web": "https://www.lewishamandgreenwich.nhs.uk"
+    "web": "https://www.kch.nhs.uk"
   },
   {
     "o": "RJ224",
@@ -85338,26 +81616,6 @@
     "web": "https://www.lewishamandgreenwich.nhs.uk"
   },
   {
-    "o": "RJ2X1",
-    "n": "Baring Road Medical Centre",
-    "a": "282 Baring Road, Grove Park, London",
-    "p": "SE12 0DS",
-    "ph": "02083333284",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-6706030382",
-    "ar": "Lewisham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.lewisham.nhs.uk"
-  },
-  {
     "o": "RJ2C1",
     "n": "Waldron Health Centre",
     "a": "Amersham Vale, London",
@@ -85376,26 +81634,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.lewishamandgreenwich.nhs.uk"
-  },
-  {
-    "o": "RJ2X2",
-    "n": "Beckenham Beacon",
-    "a": "Beckenham Beacon, 379 Croydon Road, Beckenham",
-    "p": "BR3 3QL",
-    "ph": "02083333284",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-233070238",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.lewisham.nhs.uk"
   },
   {
     "o": "RJ2X3",
@@ -85638,26 +81876,6 @@
     "web": "https://www.stgeorges.nhs.uk"
   },
   {
-    "o": "RJ731",
-    "n": "Queen Mary's Hospital",
-    "a": "Roehampton Lane, Roehampton, London",
-    "p": "SW15 5PN",
-    "ph": "02084876000",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RJ731",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.stgeorges.nhs.uk"
-  },
-  {
     "o": "RJ611",
     "n": "Croydon University Hospital",
     "a": "530 London Road, Croydon",
@@ -85676,26 +81894,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.croydonhealthservices.nhs.uk"
-  },
-  {
-    "o": "RJ7X1",
-    "n": "Dawes House",
-    "a": "6 Bramland Close, Battersea, London",
-    "p": "SW11 2NS",
-    "ph": "02073268860",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RJ7X1",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.stgeorges.nhs.uk"
   },
   {
     "o": "RJ765",
@@ -85798,26 +81996,6 @@
     "web": "https://www.stgeorges.nhs.uk"
   },
   {
-    "o": "RJZ31",
-    "n": "Beckenham Beacon",
-    "a": "379 Croydon Road, Beckenham",
-    "p": "BR3 3QL",
-    "ph": "02032999000",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-233070238",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.kch.nhs.uk"
-  },
-  {
     "o": "RJZ10",
     "n": "Queen Mary's Sidcup",
     "a": "Frognal Avenue, Sidcup",
@@ -85832,46 +82010,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RJZ10",
     "ar": "Bexley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.kch.nhs.uk"
-  },
-  {
-    "o": "RJZ30",
-    "n": "Princess Royal University Hospital",
-    "a": "Farnborough Common, Orpington",
-    "p": "BR6 8ND",
-    "ph": "02032999000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RJZ30",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.kch.nhs.uk"
-  },
-  {
-    "o": "RJZ70",
-    "n": "Orpington Hospital",
-    "a": "Sevenoaks Road, Orpington",
-    "p": "BR6 9JU",
-    "ph": "02032999000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RJZ70",
-    "ar": "Bromley",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -85978,46 +82116,6 @@
     "web": ""
   },
   {
-    "o": "RKEX1",
-    "n": "Hornsey Central Neighbourhood Health Centre",
-    "a": "151 Park Road, Crouch End, London",
-    "p": "N8 8JD",
-    "ph": "02030742790",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-4946972674",
-    "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.haringey.nhs.uk"
-  },
-  {
-    "o": "RKEX2",
-    "n": "Chestnut Ward",
-    "a": "St Ann's Hospital, St Ann's Road, Tottenham, London",
-    "p": "N15 3TH",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RKEX2",
-    "ar": "Haringey",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.whittington.nhs.uk"
-  },
-  {
     "o": "RKEX3",
     "n": "Finsbury Health Centre",
     "a": "Pine Street, Islington, London",
@@ -86031,46 +82129,6 @@
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RKEX3",
-    "ar": "Islington",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.whittington.nhs.uk"
-  },
-  {
-    "o": "RKEQ4",
-    "n": "The Whittington Hospital",
-    "a": "Trust Offices, Magdala Avenue, London",
-    "p": "N19 5NF",
-    "ph": "02072723070",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RKEQ4",
-    "ar": "Islington",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.whittington.nhs.uk"
-  },
-  {
-    "o": "RKEX4",
-    "n": "Northern Health Centre",
-    "a": "580 Holloway Road, Holloway, London",
-    "p": "N7 6LB",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-14787251999",
     "ar": "Islington",
     "la": null,
     "ln": null,
@@ -86112,26 +82170,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RKL14",
     "ar": "Hounslow",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.westlondon.nhs.uk"
-  },
-  {
-    "o": "RKL4D",
-    "n": "Clayponds Hospital",
-    "a": "Sterling Place, Ealing, London",
-    "p": "W5 4RN",
-    "ph": "02083548146",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RKL4D",
-    "ar": "Ealing",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -86218,26 +82256,6 @@
     "web": "https://www.westlondon.nhs.uk"
   },
   {
-    "o": "RN7QM",
-    "n": "Queen Mary's Hospital",
-    "a": "Frognal Avenue, Sidcup",
-    "p": "DA14 6LT",
-    "ph": "02083022678",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RN7QM",
-    "ar": "Bexley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "RNH00",
     "n": "Newham University Hospital",
     "a": "Glen Road, Plaistow, London",
@@ -86258,46 +82276,6 @@
     "web": "https://www.newhamuniversityhospital.nhs.uk"
   },
   {
-    "o": "RNJ12",
-    "n": "The Royal London Hospital",
-    "a": "Whitechapel Road, Whitechapel, London",
-    "p": "E1 1BB",
-    "ph": "02073777422",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/R1H12",
-    "ar": "Tower Hamlets",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bartsandthelondon.nhs.uk"
-  },
-  {
-    "o": "RNJ13",
-    "n": "Mile End Hospital",
-    "a": "Mile End Hospital, Bancroft Road, Mile End, London",
-    "p": "E1 4DG",
-    "ph": "02073777000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RNJ13",
-    "ar": "Tower Hamlets",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bartsandthelondon.nhs.uk"
-  },
-  {
     "o": "RN7ED",
     "n": "Erith & District Hospital",
     "a": "Park Crescent, Erith",
@@ -86316,46 +82294,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "RNJ83",
-    "n": "The London Chest Hospital",
-    "a": "Bonner Road, Bethnal Green, London",
-    "p": "E2 9JX",
-    "ph": "02073777422",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RNJ83",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bartsandthelondon.nhs.uk"
-  },
-  {
-    "o": "RNJM0",
-    "n": "St Bartholomew's Hospital",
-    "a": "West Smithfield, London",
-    "p": "EC1A 7BE",
-    "ph": "02073777422",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/R1HM0",
-    "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bartsandthelondon.nhs.uk"
   },
   {
     "o": "RNK03",
@@ -86532,26 +82470,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RP633",
     "ar": "City of London",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "RP640",
-    "n": "St Anthony's Hospital",
-    "a": "801 London Road, Cheam, Sutton",
-    "p": "SM3 9DW",
-    "ph": "02038117883",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1382018165",
-    "ar": "Sutton",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -86978,26 +82896,6 @@
     "web": "https://www.oxleas.nhs.uk"
   },
   {
-    "o": "RPGX4",
-    "n": "Bevan Unit",
-    "a": "20 Pier Way, Thamesmead, London",
-    "p": "SE28 0FH",
-    "ph": "02083173610",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RPGX4",
-    "ar": "Greenwich",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.oxleas.nhs.uk"
-  },
-  {
     "o": "RPGX5",
     "n": "Bluebell House",
     "a": "Bungalow 2, Wensley Close, Eltham, London",
@@ -87138,26 +83036,6 @@
     "web": ""
   },
   {
-    "o": "RPYW1",
-    "n": "The Nelson Health Centre",
-    "a": "220 Kingston Road, Raynes Park",
-    "p": "SW20 8DA",
-    "ph": "02036683470",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2215797504",
-    "ar": "Merton",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "RPGXG",
     "n": "151-153 Lodge Hill",
     "a": "Goldie Leigh Hospital Site, Lodge Hill, Abbeywood, London",
@@ -87292,46 +83170,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RQY05",
     "ar": "Richmond upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.swlstg-tr.nhs.uk"
-  },
-  {
-    "o": "RQY07",
-    "n": "Queen Mary's Hospital",
-    "a": "Roehampton Lane, Roehampton, London",
-    "p": "SW15 5PN",
-    "ph": "02084876000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RJ731",
-    "ar": "Wandsworth",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.swlstg-tr.nhs.uk"
-  },
-  {
-    "o": "RQY08",
-    "n": "Tolworth Hospital",
-    "a": "Red Lion Road, Surbiton",
-    "p": "KT6 7QU",
-    "ph": "02086820102",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RQY08",
-    "ar": "Kingston upon Thames",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -87496,66 +83334,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.swlstg-tr.nhs.uk"
-  },
-  {
-    "o": "RRP02",
-    "n": "Chase Farm Hospital",
-    "a": "The Ridgeway, Enfield",
-    "p": "EN2 8JL",
-    "ph": "08451114000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RALC7",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.beh-mht.nhs.uk"
-  },
-  {
-    "o": "RRP09",
-    "n": "Barnet General Hospital",
-    "a": "Wellhouse Lane, Barnet",
-    "p": "EN5 3DJ",
-    "ph": "02084405111",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RAL26",
-    "ar": "Barnet",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.beh-mht.nhs.uk"
-  },
-  {
-    "o": "RRP47",
-    "n": "Magnolia Unit",
-    "a": "Flat 3 Rowan Court, St Michael's Centre, 2 Gater Drive, Enfield",
-    "p": "EN2 0JB",
-    "ph": "02083752949",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RRP47",
-    "ar": "Enfield",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.beh-mht.nhs.uk/enfield-community-services/ecs-services/magnolia-unit.htm"
   },
   {
     "o": "RRP17",
@@ -87816,66 +83594,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.uclh.org"
-  },
-  {
-    "o": "RT301",
-    "n": "Harefield Hospital",
-    "a": "Hill End Road, Harefield",
-    "p": "UB9 6JH",
-    "ph": "01895823737",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RT301",
-    "ar": "Hillingdon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.rbht.nhs.uk"
-  },
-  {
-    "o": "RT302",
-    "n": "Royal Brompton Hospital",
-    "a": "Sydney Street, Fulham, London",
-    "p": "SW3 6NP",
-    "ph": "02073528121",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RT302",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.rbht.nhs.uk"
-  },
-  {
-    "o": "RT3X1",
-    "n": "Royal Brompton & Harefield Hospitals Specialist Care - Wimpole Street",
-    "a": "77 - 78 Wimpole Street, London",
-    "p": "W1G 9RX",
-    "ph": "02073497713",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RT3X1",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.rbhh-specialistcare.co.uk/wimpole"
   },
   {
     "o": "RRVX2",
@@ -88238,26 +83956,6 @@
     "web": "https://www.cnwl.nhs.uk"
   },
   {
-    "o": "RV3DY",
-    "n": "South Wing, St Pancras Hospital",
-    "a": "4 St Pancras Way, London",
-    "p": "NW1 0PE",
-    "ph": "02033173500",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RV3DY",
-    "ar": "Camden",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.cnwl.nhs.uk"
-  },
-  {
     "o": "RV3AN",
     "n": "Hillingdon Hospital Mental Health Site",
     "a": "Pield Heath Road, Uxbridge",
@@ -88498,86 +84196,6 @@
     "web": "https://www.croydonhealthservices.nhs.uk/croydon-university-hospital"
   },
   {
-    "o": "RV820",
-    "n": "Northwick Park Hospital",
-    "a": "Watford Road, Harrow",
-    "p": "HA1 3UJ",
-    "ph": "02088643232",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RV820",
-    "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.nwlh.nhs.uk"
-  },
-  {
-    "o": "RV831",
-    "n": "Central Middlesex Hospital",
-    "a": "Acton Lane, Park Royal, London",
-    "p": "NW10 7NS",
-    "ph": "02088693493",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RV831",
-    "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.nwlh.nhs.uk"
-  },
-  {
-    "o": "RV8M2",
-    "n": "St Mark's Hospital",
-    "a": "Watford Road, Harrow",
-    "p": "HA1 3UJ",
-    "ph": "02088643232",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RV8M2",
-    "ar": "Brent",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.nwlh.nhs.uk"
-  },
-  {
-    "o": "RVR04",
-    "n": "Nelson Hospital",
-    "a": "Kingston Road, Raynes Park, London",
-    "p": "SW20 8DB",
-    "ph": "02082962000",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RVR04",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.epsom-sthelier.nhs.uk"
-  },
-  {
     "o": "RVRD4",
     "n": "Kingston Satellite Dialysis Unit",
     "a": "Manorgate House, 2 Manorgate Road, Kingston Upon Thames",
@@ -88598,26 +84216,6 @@
     "web": "https://www.epsom-sthelier.nhs.uk"
   },
   {
-    "o": "RVR06",
-    "n": "Sutton Hospital",
-    "a": "Cotswold Road, Sutton",
-    "p": "SM2 5NF",
-    "ph": "02082962000",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RVR06",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.epsom-sthelier.nhs.uk"
-  },
-  {
     "o": "RVRD5",
     "n": "Mayday Satellite Dialysis Unit",
     "a": "Croydon University Hospital, 530 London Road, Thornton Heath",
@@ -88632,26 +84230,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RVRD5",
     "ar": "Croydon",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.epsom-sthelier.nhs.uk"
-  },
-  {
-    "o": "RVRL4",
-    "n": "Molesey Community Hospital",
-    "a": "High Street, West Molesey",
-    "p": "KT8 2LU",
-    "ph": "02082962000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/RVRL4",
-    "ar": "",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -88818,26 +84396,6 @@
     "web": ""
   },
   {
-    "o": "RWK89",
-    "n": "East Ham Care Centre",
-    "a": "Shrewsbury Road, Forest Gate, London",
-    "p": "E7 8QR",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-542884805",
-    "ar": "Newham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.eastlondon.nhs.uk"
-  },
-  {
     "o": "RWKG3",
     "n": "Rainham and Upminster Medical Centre",
     "a": "Upminster Road South, Rainham",
@@ -88898,26 +84456,6 @@
     "web": ""
   },
   {
-    "o": "RWKX4",
-    "n": "Urgent Care Centre",
-    "a": "Newham University Hospital NHS Trust, Glen Road, Plaistow, London",
-    "p": "E13 8SA",
-    "ph": "02070596751",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RWKX4",
-    "ar": "Newham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.eastlondon.nhs.uk"
-  },
-  {
     "o": "RWKX6",
     "n": "Warehouse K - Management Building",
     "a": "2 Western Gateway, Newham, London",
@@ -88931,46 +84469,6 @@
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RWKX6",
-    "ar": "Newham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.eastlondon.nhs.uk"
-  },
-  {
-    "o": "RWKX8",
-    "n": "Urgent Care Centre",
-    "a": "Newham University Hospital NHS Trust, Glen Road, Plaistow, London",
-    "p": "E13 8SA",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RWKX8",
-    "ar": "Newham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.eastlondon.nhs.uk"
-  },
-  {
-    "o": "RWKX5",
-    "n": "East Ham Care Centre",
-    "a": "Shrewsbury Road, Forest Gate, London",
-    "p": "E7 8QR",
-    "ph": "02070596751",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-542884805",
     "ar": "Newham",
     "la": null,
     "ln": null,
@@ -88998,26 +84496,6 @@
     "web": ""
   },
   {
-    "o": "RWNX3",
-    "n": "Whipps Cross Urgent Care Centre",
-    "a": "Whipps Cross Road, London",
-    "p": "E11 1NR",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RWNX3",
-    "ar": "Waltham Forest",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.sept.nhs.uk"
-  },
-  {
     "o": "RY901",
     "n": "Hounslow Urgent Care Centre",
     "a": "Twickenham Road, Isleworth",
@@ -89036,26 +84514,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "RY902",
-    "n": "Teddington Memorial Hospital",
-    "a": "Hampton Road, Teddington",
-    "p": "TW11 0JL",
-    "ph": "",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RY902",
-    "ar": "Richmond upon Thames",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.hrch.nhs.uk"
   },
   {
     "o": "RY908",
@@ -89198,26 +84656,6 @@
     "web": "https://www.slh.nhs.uk"
   },
   {
-    "o": "RYQ30",
-    "n": "Princess Royal University Hospital",
-    "a": "Farnborough Common, Orpington",
-    "p": "BR6 8ND",
-    "ph": "02083022678",
-    "s": null,
-    "c": null,
-    "pcn": "diagnostic",
-    "specs": [
-      "diagnostic"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RJZ30",
-    "ar": "Bromley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.slh.nhs.uk"
-  },
-  {
     "o": "RYQ10",
     "n": "Queen Mary's Hospital, Sidcup",
     "a": "Queen Mary's Hospital, Frognal Avenue, Sidcup",
@@ -89256,26 +84694,6 @@
     "ln": null,
     "type": "Private",
     "web": ""
-  },
-  {
-    "o": "RYX01",
-    "n": "St Charles Urgent Care Centre",
-    "a": "St Charles Centre for Health & Wellbeing, Exmoor Street, London",
-    "p": "W10 6DZ",
-    "ph": "02089624265",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RYX01",
-    "ar": "Kensington & Chelsea",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.clch.nhs.uk"
   },
   {
     "o": "RYX09",
@@ -89378,26 +84796,6 @@
     "web": "https://www.clch.nhs.uk"
   },
   {
-    "o": "RYXX2",
-    "n": "Hammersmith Centre for Health",
-    "a": "Hammersmith Hospital, 150 Du Cane Road, Hammersmith, London",
-    "p": "W12 0HS",
-    "ph": "02077981300",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RYXX2",
-    "ar": "Hammersmith & Fulham",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.clch.nhs.uk"
-  },
-  {
     "o": "RYXX7",
     "n": "Milne House Medical Centre",
     "a": "1 Norfolk Square, London",
@@ -89432,26 +84830,6 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/RYXX9",
     "ar": "Westminster",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.clch.nhs.uk"
-  },
-  {
-    "o": "RYXX8",
-    "n": "Fulham Centre for Health",
-    "a": "Charing Cross Hospital, Fulham Palace Road, London",
-    "p": "W6 8RF",
-    "ph": "02077981300",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/RYXX8",
-    "ar": "Hammersmith & Fulham",
     "la": null,
     "ln": null,
     "type": "Private",
@@ -89558,26 +84936,6 @@
     "web": ""
   },
   {
-    "o": "RYYD8",
-    "n": "Livingstone Hospital",
-    "a": "East Hill, Dartford",
-    "p": "DA1 1SA",
-    "ph": "01474622317",
-    "s": null,
-    "c": null,
-    "pcn": "private-gp",
-    "specs": [
-      "private-gp"
-    ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2781090973",
-    "ar": "",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
     "o": "T131X",
     "n": "Health Protection Agency - Health Protection Services Division",
     "a": "151 Buckingham Palace Road, London",
@@ -89656,46 +85014,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.hpa.org.uk"
-  },
-  {
-    "o": "TAF002",
-    "n": "Barnet General Hospital",
-    "a": "Wellhouse Lane, Barnet",
-    "p": "EN5 3DJ",
-    "ph": "02087023000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/RAL26",
-    "ar": "Barnet",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
-  },
-  {
-    "o": "TAF003",
-    "n": "Edgware Community Hospital",
-    "a": "Burnt Oak Broadway, Edgware",
-    "p": "HA8 0AD",
-    "ph": "02087023000",
-    "s": null,
-    "c": null,
-    "pcn": "hospital",
-    "specs": [
-      "hospital"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/TAF003",
-    "ar": "Barnet",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": ""
   },
   {
     "o": "TAF006",
@@ -89796,26 +85114,6 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.candi.nhs.uk"
-  },
-  {
-    "o": "TAK21",
-    "n": "Urgent Care Centre",
-    "a": "Queen Mary's Hospital, Frognal Avenue, Sidcup",
-    "p": "DA14 6LT",
-    "ph": "02082986036",
-    "s": null,
-    "c": null,
-    "pcn": "urgent-care",
-    "specs": [
-      "urgent-care"
-    ],
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/TAK21",
-    "ar": "Bexley",
-    "la": null,
-    "ln": null,
-    "type": "Private",
-    "web": "https://www.bexley.nhs.uk"
   },
   {
     "o": "TAKX2",
