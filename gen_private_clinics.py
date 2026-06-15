@@ -2,123 +2,42 @@
 """
 Generate private_clinics.json from cqc_london_cache, classified by specialty.
 
-A record qualifies as a private clinic if:
-  - gacServiceTypes contains ANY of the Independent service types
-  - AND is not an NHS GP practice (no GP-pattern ODS)
-  - AND name doesn't match known exclusions (care home etc - already
-    filtered at cache stage)
+Outputs in the EXACT shape that merge_into_dataset.py expects (snake_case
+fields). After this runs:
+    private_clinics.json -> merge_into_dataset.py -> merged.json + index.html
 
-Specialty classification uses CQC's specialisms[] field (authoritative)
-PLUS name pattern fallback for clinics with no specialisms set.
+Improvements over previous version:
+  - URLs prefixed with https:// at source (no more broken Website buttons)
+  - Address-only names like "10 Harley Street" get the providerName appended
+    so multiple consultants at the same address show as distinct cards
+  - Expanded specialty patterns (women's health, sexual health, travel,
+    sports medicine, physiotherapy, etc.) — moves records out of the
+    generic "consultation" bucket
+  - "consultation" bucket renamed to "private-gp" (more meaningful)
 
-Runs in seconds — no API calls.
+Runs in seconds — no API calls (cache is local).
 """
 import gzip, json, re
 from pathlib import Path
-from collections import Counter, defaultdict
+from collections import Counter
 
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "cqc_london_cache.json.gz"
 OUT = ROOT / "private_clinics.json"
 
-# Map CQC's specialisms[] strings to OUR specialty keys (used by site pages)
-SPECIALISM_MAP = {
-    "Treatment of disease, disorder or injury": None,  # too generic
-    "Diagnostic and screening procedures": "diagnostic",
-    "Surgical procedures": "surgery",
-    "Maternity and midwifery services": "maternity",
-    "Family planning": "gynaecology",
-    "Termination of pregnancies": "gynaecology",
-    "Services in slimming clinics": "weight",
-    "Services for everyone": None,
-    "Mental health conditions": "psychiatry",
-    "Eating disorders": "psychiatry",
-    "Learning disabilities": "psychiatry",
-    "Substance misuse problems": "psychiatry",
-    "Dementia": "psychiatry",
-    "Cardiology": "cardiology",
-    "Dermatology": "dermatology",
-    "Endocrinology": "endocrinology",
-    "Gastroenterology": "gastroenterology",
-    "General surgery": "surgery",
-    "Geriatrics": "geriatrics",
-    "Gynaecology": "gynaecology",
-    "Haematology": "haematology",
-    "Neurology": "neurology",
-    "Obstetrics": "gynaecology",
-    "Oncology": "oncology",
-    "Ophthalmology": "ophthalmology",
-    "Orthopaedics": "orthopaedics",
-    "Otorhinolaryngology": "ent",
-    "Paediatrics": "paediatrics",
-    "Plastic surgery": "plastic-surgery",
-    "Radiology": "diagnostic",
-    "Respiratory medicine": "respiratory",
-    "Rheumatology": "rheumatology",
-    "Urology": "urology",
-    "Vascular surgery": "vascular",
-}
-
-# Name pattern fallback when specialisms is empty / generic
-NAME_PATTERNS = [
-    ("psychiatry",      r"\b(?:psychiatr|psycholog|mental\s+health|counsell|therap|trauma\s+therap|cbt\b|eating\s+disorder)\b"),
-    ("cardiology",      r"\b(?:cardio|heart\s+clinic|cardiologist)\b"),
-    ("dermatology",     r"\b(?:dermatolog|skin\s+clinic|skin\s+doctor)\b"),
-    ("gynaecology",     r"\b(?:gynae|obstet|fertility|womens?\s+health|menopause)\b"),
-    ("paediatrics",     r"\b(?:paediatr|childrens?|child\s+health)\b"),
-    ("orthopaedics",    r"\b(?:orthopaed|musculoskelet|sports\s+med|joint\s+(?:clinic|specialist))\b"),
-    ("urology",         r"\b(?:urology|urologist|prostate)\b"),
-    ("ent",             r"\b(?:\bent\b|ear,?\s+nose|otolaryng)\b"),
-    ("ophthalmology",   r"\b(?:ophthalm|eye\s+clinic|eye\s+specialist|laser\s+eye)\b"),
-    ("gastroenterology", r"\b(?:gastroenterolog|endoscop|liver\s+clinic)\b"),
-    ("oncology",        r"\b(?:oncolog|cancer\s+(?:clinic|centre))\b"),
-    ("rheumatology",    r"\brheumatolog"),
-    ("endocrinology",   r"\b(?:endocrinolog|diabetes\s+clinic|hormone)\b"),
-    ("respiratory",     r"\b(?:respirator|lung\s+clinic|chest\s+clinic|sleep\s+clinic)\b"),
-    ("neurology",       r"\b(?:neurolog|epileps|migraine)\b"),
-    ("haematology",     r"\bhaematolog"),
-    ("plastic-surgery", r"\b(?:plastic\s+surg|reconstruct|cosmetic\s+surg)\b"),
-    ("vascular",        r"\b(?:vascular|vein\s+clinic|varicose)\b"),
-    ("diagnostic",      r"\b(?:diagnostic|imaging|radiology|scan|mri|x-ray|ultrasound)\b"),
-    ("aesthetic",       r"\b(?:aesthet|botox|laser\s+hair|cosmetic(?!\s+surg)|filler)\b"),
-    ("weight",          r"\b(?:slimming|weight\s+loss|bariatric|obesity)\b"),
-    ("private-gp",      r"\b(?:private\s+gp|harley\s+street(?!\s+aesthet)|family\s+(?:doctor|medicine))\b"),
-]
-
-def classify_specialties(rec):
-    """Return list of specialty keys for a private clinic record."""
-    specs = set()
-
-    # 1. From CQC specialisms[]
-    for s in rec.get("specialisms", []):
-        key = SPECIALISM_MAP.get(s)
-        if key: specs.add(key)
-
-    # 2. From name patterns
-    name_l = rec["name"].lower()
-    for key, pat in NAME_PATTERNS:
-        if re.search(pat, name_l): specs.add(key)
-
-    # 3. Default to general consultation if nothing specific
-    if not specs:
-        specs.add("consultation")
-
-    return sorted(specs)
-
-# NHS GP practice ODS code: single letter (A-H, J-N, P, W, Y) + 5 digits.
-# V = dental, so excluded. This is the standard NHS Digital convention.
+# NHS GP practice ODS code pattern: letter (not V/X) + 5 digits.
 NHS_GP_ODS_RE = re.compile(r"^[A-HJ-NPSW-Y]\d{5}$")
 
-# Service types CQC actually uses (short names — not the schema's full names!)
+# Service types CQC actually returns (short names, not the schema's full names)
 MEDICAL_SERVICE_TYPES = {
-    "Doctors/Gps",                # GP practices + private GPs (5k+)
-    "Mobile doctors",             # always private (no NHS mobile GPs)
-    "Diagnosis/screening",        # diagnostic centres
-    "Clinic",                     # general clinics
-    "Hospital",                   # private hospitals + some NHS
+    "Doctors/Gps",
+    "Mobile doctors",
+    "Diagnosis/screening",
+    "Clinic",
+    "Hospital",
     "Hospitals - Mental health/capacity",
     "Urgent care centres",
-    "Phone/online advice",        # telemedicine
+    "Phone/online advice",
     "Long-term conditions",
     "Rehabilitation (illness/injury)",
     "Hyperbaric chamber services",
@@ -126,7 +45,7 @@ MEDICAL_SERVICE_TYPES = {
     "Home hospice care",
 }
 
-# Exclude these even though they appear in the cache — not what we list
+# Service types we explicitly DO NOT include in private clinic listings
 EXCLUDE_SERVICE_TYPES = {
     "Homecare agencies",
     "Residential homes",
@@ -143,6 +62,90 @@ EXCLUDE_SERVICE_TYPES = {
     "Rehabilitation (substance abuse)",
 }
 
+# Name patterns to identify clinical specialty.
+# Order matters: first match wins for ambiguous names.
+NAME_PATTERNS = [
+    ("psychiatry",       r"\b(?:psychiatr|psycholog|mental\s+health|counsell|therap|cbt\b|"
+                         r"eating\s+disorder|addiction|anxiety|depression|trauma)\b"),
+    ("cardiology",       r"\b(?:cardio|heart\s+clinic|cardiologist|arrhythmia)\b"),
+    ("dermatology",      r"\b(?:dermatolog|skin\s+(?:clinic|doctor|specialist)|"
+                         r"\bskin\b|mole\s+clinic|acne\s+clinic)\b"),
+    ("gynaecology",      r"\b(?:gynae|obstet|fertility|ivf\b|womens?\s+(?:health|clinic)|"
+                         r"menopause|\bpms\b|premenstrual|maternity|pregnan|cervical|"
+                         r"endometri|miscarriage|coil|contracep)\b"),
+    ("paediatrics",      r"\b(?:paediatr|childrens?\s+(?:clinic|health|hospital)|"
+                         r"child\s+(?:health|psych))\b"),
+    ("orthopaedics",     r"\b(?:orthopaed|musculoskelet|sports\s+(?:med|injury|clinic)|"
+                         r"joint\s+(?:clinic|specialist)|knee\s+clinic|shoulder\s+clinic|"
+                         r"spine\s+(?:clinic|surgery)|back\s+pain\s+clinic)\b"),
+    ("urology",          r"\b(?:urolog|prostate|kidney\s+(?:clinic|stone)|"
+                         r"erectile|circumcis|vasectom)\b"),
+    ("ent",              r"\b(?:\bent\b|ear,?\s+nose|otolaryng|hearing\s+(?:test|clinic)|"
+                         r"sinus\s+clinic|voice\s+clinic)\b"),
+    ("ophthalmology",    r"\b(?:ophthalm|eye\s+(?:clinic|specialist|hospital)|"
+                         r"\boptometr|laser\s+eye|cataract|vision\s+clinic)\b"),
+    ("gastroenterology", r"\b(?:gastroenterolog|endoscop|colonoscop|liver\s+clinic|"
+                         r"\bibd\b|crohn|colitis|gut\s+clinic|gastrointestinal)\b"),
+    ("oncology",         r"\b(?:oncolog|cancer\s+(?:clinic|centre|care)|chemotherap|"
+                         r"radiotherap|tumour|mammogram)\b"),
+    ("rheumatology",     r"\b(?:rheumatolog|arthritis\s+clinic|gout\s+clinic|fibromyalg|lupus)\b"),
+    ("endocrinology",    r"\b(?:endocrinolog|diabetes\s+(?:clinic|centre)|hormone|"
+                         r"thyroid\s+(?:clinic|specialist))\b"),
+    ("respiratory",      r"\b(?:respirator|lung\s+(?:clinic|cancer)|chest\s+clinic|"
+                         r"sleep\s+(?:clinic|disorder|apno?ea)|asthma\s+clinic|copd)\b"),
+    ("neurology",        r"\b(?:neurolog|epileps|migraine|parkinson|mult.+sclerosis|"
+                         r"memory\s+clinic|stroke\s+clinic|headache\s+clinic)\b"),
+    ("haematology",      r"\b(?:haematolog|hematolog|blood\s+(?:clinic|disorder)|"
+                         r"anaem|leukaemia|lymphoma)\b"),
+    ("plastic-surgery",  r"\b(?:plastic\s+surg|reconstruct\s+surg|cosmetic\s+surg|"
+                         r"rhinoplast|breast\s+(?:augment|reduct|implant)|liposuct)\b"),
+    ("vascular",         r"\b(?:vascular|vein\s+clinic|varicose|venous|phlebolog|"
+                         r"thrombosis|deep\s+vein)\b"),
+    ("diagnostic",       r"\b(?:diagnostic|imaging|radiology|scan(?:ning)?\s+(?:clinic|centre)|"
+                         r"\bmri\b|\bx-?ray\b|ultrasound|ct\s+scan|pet\s+scan|"
+                         r"echocardio|ecg\b)\b"),
+    ("aesthetic",        r"\b(?:aesthet|botox|laser\s+hair|cosmetic(?!\s+surg)|"
+                         r"filler|anti-aging|anti-?wrinkle|rejuvenat|beauty\s+clinic)\b"),
+    ("weight-loss",      r"\b(?:slimming|weight\s+(?:loss|management)|bariatric|"
+                         r"obesity\s+clinic|gastric\s+(?:band|sleeve|bypass))\b"),
+    ("travel-health",    r"\b(?:travel\s+(?:clinic|health|medicine|vaccin)|yellow\s+fever|"
+                         r"tropical\s+med|expat\s+health)\b"),
+    ("sexual-health",    r"\b(?:sexual\s+health|\bsti\b|\bstd\b|\bhiv\b|genitourinary|"
+                         r"\bgum\s+clinic|hpv\s+clinic)\b"),
+    ("private-gp",       r"\b(?:private\s+(?:gp|doctor|practice|family)|harley\s+street|"
+                         r"family\s+(?:doctor|medicine|practice)|general\s+practice|"
+                         r"medicentre|medicus|medic\s+clinic|doctor\s+now|doctap)\b"),
+    ("physiotherapy",    r"\b(?:physiotherap|chiropract|osteopath|pilates|rehab)\b"),
+]
+
+def classify_specialties(rec):
+    """Return list of specialty keys for a private clinic record."""
+    specs = set()
+    name_l = rec["name"].lower()
+
+    # 1. Name pattern matching
+    for key, pat in NAME_PATTERNS:
+        if re.search(pat, name_l):
+            specs.add(key)
+
+    # 2. Default by service type if nothing specific matched
+    if not specs:
+        gac = rec.get("gacServiceTypes", [])
+        if "Diagnosis/screening" in gac:
+            specs.add("diagnostic")
+        elif "Hospital" in gac or "Hospitals - Mental health/capacity" in gac:
+            specs.add("hospital")
+        elif "Urgent care centres" in gac:
+            specs.add("urgent-care")
+        elif "Hospice" in gac or "Home hospice care" in gac:
+            specs.add("hospice")
+        elif "Mobile doctors" in gac:
+            specs.add("private-gp")
+        else:
+            specs.add("private-gp")
+
+    return sorted(specs)
+
 def is_nhs_gp(rec):
     """A real NHS GMS GP practice."""
     gac = rec.get("gacServiceTypes", [])
@@ -154,61 +157,85 @@ def is_private(rec):
     """A private medical clinic / consultant / hospital — NOT an NHS GP."""
     gac = rec.get("gacServiceTypes", [])
 
-    # Drop excluded service types first
     if any(g in EXCLUDE_SERVICE_TYPES for g in gac):
         return False
-
-    # Must have at least one medical service type
     if not any(g in MEDICAL_SERVICE_TYPES for g in gac):
         return False
+    if is_nhs_gp(rec):
+        return False
 
-    # Exclude NHS GP practices (those go via gen_nhs_gps.py / refresh_nhs_data.py)
-    if is_nhs_gp(rec): return False
-
-    # Exclude obvious NHS hospitals: provider name contains NHS/Trust/Foundation
     prov = (rec.get("providerName") or "").lower()
     if any(t in prov for t in ["nhs trust", "nhs foundation", " trust"]):
         return False
 
-    # Exclude names that scream NHS even without provider info
     nm = rec["name"].lower()
     if any(t in nm for t in [
-        " nhs trust", "nhs foundation", "community nhs", "urgent treatment centre",
-        "walk-in centre", "walk in centre",
+        " nhs trust", "nhs foundation", "community nhs",
+        "urgent treatment centre", "walk-in centre", "walk in centre",
     ]):
         return False
-
-    # Exclude any non-medical leftovers
     if any(bad in nm for bad in ["veterinary", "funeral", "tattoo", "piercing"]):
         return False
 
     return True
 
+DOMAINY_RE = re.compile(r"^[a-z0-9][\w\-.]*\.[a-z]{2,}", re.IGNORECASE)
+
+def normalize_url(u):
+    """Ensure website URL has https:// prefix; drop garbage."""
+    if not u: return ""
+    u = u.strip()
+    if not u: return ""
+    low = u.lower()
+    if low.startswith(("mailto:", "tel:", "fax:", "sms:")):
+        return ""
+    if low.startswith(("http://", "https://")):
+        return u
+    if DOMAINY_RE.match(u):
+        return "https://" + u
+    return ""
+
+def display_name(rec):
+    """If the CQC location name is just an address (e.g. '10 Harley Street'),
+    append the provider name so duplicates show as distinct cards."""
+    name = (rec.get("name") or "").strip()
+    prov = (rec.get("providerName") or "").strip()
+    if not prov or not name:
+        return name
+    # Address-only pattern: starts with number, ends with street type, no
+    # medical noun
+    looks_like_address = bool(re.match(
+        r"^\d+[a-z]?\s*[-–]?\s*\d*\s+[A-Z]",
+        name
+    )) and not re.search(
+        r"\b(surgery|practice|clinic|centre|center|medical|health|hospital)\b",
+        name, re.IGNORECASE
+    )
+    if looks_like_address:
+        # Keep provider name short to avoid bloating card display
+        if len(prov) > 50:
+            prov = prov[:47] + "..."
+        return f"{name} — {prov}"
+    return name
+
 def to_merge_shape(rec, specs):
-    """Map cache record into the EXACT shape that merge_into_dataset.py
-    expects (snake_case fields it reads in normalise_private())."""
-    # Build a single-line address: line1, line2, town
     parts = [p for p in [
         rec.get("address1") or "",
         rec.get("address2") or "",
         rec.get("town") or "",
     ] if p]
     address = ", ".join(parts)
-
     return {
-        # CQC location ID becomes the unique key (used as "o" in DATA)
-        "cqc_id":     rec.get("locationId", ""),
-        "ods_code":   rec.get("odsCode", ""),
-        "name":       rec.get("name", ""),
-        "address":    address,
-        "postcode":   rec.get("postcode", ""),
-        "phone":      rec.get("phone", ""),
-        "website":    rec.get("website", ""),
-        "specialties": specs,
-        "cqc_rating": rec.get("currentRating", ""),
-        "cqc_url":    rec.get("cqcUrl", ""),
-        # Keep some extras that merge_into_dataset.py ignores but useful
-        # for future-proofing borough/specialty pages:
+        "cqc_id":         rec.get("locationId", ""),
+        "ods_code":       rec.get("odsCode", ""),
+        "name":           display_name(rec),
+        "address":        address,
+        "postcode":       rec.get("postcode", ""),
+        "phone":          rec.get("phone", ""),
+        "website":        normalize_url(rec.get("website", "")),
+        "specialties":    specs,
+        "cqc_rating":     rec.get("currentRating", ""),
+        "cqc_url":        rec.get("cqcUrl", ""),
         "localAuthority": rec.get("localAuthority", ""),
         "lat":            rec.get("lat"),
         "lon":            rec.get("lon"),
@@ -218,9 +245,7 @@ def to_merge_shape(rec, specs):
 def main():
     if not CACHE.exists():
         print(f"ERROR: {CACHE} not found.")
-        print("Run build_cqc_london_cache.py first to populate the cache.")
         return
-
     with gzip.open(CACHE, "rt") as f:
         cache = json.load(f)
     print(f"Loaded {len(cache):,} cached locations")
@@ -228,23 +253,18 @@ def main():
     output = []
     by_specialty = Counter()
     by_borough = Counter()
-
     for rec in cache.values():
         if not is_private(rec): continue
         specs = classify_specialties(rec)
-        merge_rec = to_merge_shape(rec, specs)
-        output.append(merge_rec)
+        output.append(to_merge_shape(rec, specs))
         for s in specs: by_specialty[s] += 1
         by_borough[rec.get("localAuthority", "(unknown)")] += 1
 
     OUT.write_text(json.dumps(output, indent=2))
     print(f"\nWrote {len(output):,} private clinics to {OUT.name}")
-    print(f"  (in merge_into_dataset.py-compatible shape)")
-
     print(f"\nBy specialty:")
     for s, n in by_specialty.most_common():
         print(f"  {s:25s} {n:4d}")
-
     print(f"\nBy borough (top 10):")
     for b, n in by_borough.most_common(10):
         print(f"  {b:30s} {n:4d}")
