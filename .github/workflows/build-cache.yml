@@ -1,6 +1,8 @@
-name: Build CQC London cache (one-time, ~45 min)
+name: Build CQC London cache (one-time / weekly)
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * MON"   # weekly Monday 4am to refresh stale records
 permissions:
   contents: write
 jobs:
@@ -12,7 +14,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Build cache
+      - name: Build / update cache
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python build_cqc_london_cache.py
@@ -21,5 +23,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cqc_london_cache.json.gz cqc_london_cache.meta.json
-          git commit -m "Update CQC London cache" || echo "no changes"
+          git diff --cached --quiet || git commit -m "Update CQC London cache ($(date -u +%Y-%m-%d))"
           git push
