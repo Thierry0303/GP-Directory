@@ -7,6 +7,7 @@ Slug convention: lowercase, "&" dropped, spaces → "-".
   "Barking & Dagenham"      -> "barking-dagenham"
   "Kensington & Chelsea"    -> "kensington-chelsea"
   "Richmond upon Thames"    -> "richmond-upon-thames"
+  "Kingston upon Thames"    -> "kingston-upon-thames"
 
 If build_borough_pages.py uses a different slug, change SLUG_STYLE below.
 """
