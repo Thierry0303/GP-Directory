@@ -41,7 +41,9 @@ a{color:#003087;text-decoration:none}
 h1{font-family:Georgia,serif;color:#003087;font-size:2rem;margin-bottom:10px;line-height:1.15}
 .lede{color:#444;margin-bottom:26px;max-width:680px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
-.row{display:block;background:#fff;border:1px solid #e5e5e3;border-radius:10px;padding:14px 18px;transition:all .15s}
+.row{display:flex;flex-direction:column;background:#fff;border:1px solid #e5e5e3;border-radius:10px;padding:14px 18px;transition:all .15s;min-height:120px}
+.row h3{margin-bottom:6px}
+.row p{flex:1}
 .row:hover{border-color:#003087;background:#f7faff;box-shadow:0 4px 12px rgba(0,48,135,.07)}
 .row h3{color:#003087;font-size:1.05rem;margin-bottom:4px}
 .row p{font-size:.85rem;color:#666;margin-bottom:3px}
@@ -119,10 +121,14 @@ def category_page(slug_key, label, blurb, records):
             actions.append(f'<a href="{r["website"]}" target="_blank">Website ↗</a>')
         if r.get("cqc_url"):
             actions.append(f'<a href="{r["cqc_url"]}" target="_blank">CQC ↗</a>')
+        display = r["name"] or r.get("providerName") or r.get("localAuthority") or "Unnamed"
+        addr = r.get("address","")
+        if r.get("postcode"): addr = (addr + ", " + r["postcode"]).strip(", ")
+        if not addr: addr = "&mdash;"
         cards.append(f'''<a class="row" href="{r.get("cqc_url","#")}" target="_blank">
-            <h3>{r["name"]} <span class="cqc-tag {cqc_class}">{cqc_label}</span></h3>
-            <p>{r.get("address","")}{(", " + r["postcode"]) if r.get("postcode") else ""}</p>
-            <div class="meta">{r.get("localAuthority","")} · {" · ".join(actions)}</div>
+            <h3>{display} <span class="cqc-tag {cqc_class}">{cqc_label}</span></h3>
+            <p>{addr}</p>
+            <div class="meta">{r.get("localAuthority","")} {" · " + " · ".join(actions) if actions else ""}</div>
         </a>''')
     grid = ''.join(cards) if cards else '<p style="color:#888;padding:24px 0">No records in this category yet. We rely on CQC data — if you know of a missing service, please <a href="/corrections.html">tell us</a>.</p>'
     return f"""<!DOCTYPE html>
