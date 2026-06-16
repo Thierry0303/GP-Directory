@@ -43,17 +43,24 @@ def normalize_url(u):
     return ""
 
 def is_nhs(rec):
-    """Decide if this location is NHS-affiliated."""
+    """Decide if this location is NHS-affiliated.
+    Uses ownershipType from CQC's provider record (most reliable),
+    falls back to name patterns for cases where ownership not yet enriched."""
+    # Primary signal: ownershipType from CQC provider detail
+    ownership = (rec.get("ownershipType") or "").strip()
+    if ownership:
+        # Known NHS ownership types
+        if ownership in ("NHS", "NHS Trust", "NHS Foundation Trust", "Public"):
+            return True
+        # Known non-NHS types
+        if ownership in ("Individual", "Partnership", "Organisation", "Charity"):
+            return False
+    # Fallback: name pattern matching
     prov = (rec.get("providerName") or "").lower()
     name = (rec.get("name") or "").lower()
-    nhs_markers = [
-        "nhs trust", "nhs foundation", "nhs england", "nhs london",
-        " nhs ", " trust ", " icb ", "ccg ",
-    ]
-    for blob in (prov, name):
-        for m in nhs_markers:
-            if m in f" {blob} ":
-                return True
+    for m in ["nhs trust", "nhs foundation", "nhs england", "nhs london", " nhs ", " trust ", " icb ", "ccg "]:
+        if m in f" {prov} " or m in f" {name} ":
+            return True
     return False
 
 def is_nhs_gp_practice(rec):
