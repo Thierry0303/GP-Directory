@@ -19,7 +19,9 @@ a{color:#003087;text-decoration:none}
 h1{font-family:Georgia,serif;color:#003087;font-size:2rem;margin-bottom:10px;line-height:1.15}
 .lede{color:#444;margin-bottom:26px;max-width:680px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
-.row{display:block;background:#fff;border:1px solid #e5e5e3;border-radius:10px;padding:14px 18px;transition:all .15s}
+.row{display:flex;flex-direction:column;background:#fff;border:1px solid #e5e5e3;border-radius:10px;padding:14px 18px;transition:all .15s;min-height:120px}
+.row h3{margin-bottom:6px}
+.row p{flex:1}
 .row:hover{border-color:#003087;background:#f7faff;box-shadow:0 4px 12px rgba(0,48,135,.07)}
 .row h3{color:#003087;font-size:1.05rem;margin-bottom:4px}
 .row p{font-size:.85rem;color:#666;margin-bottom:3px}
