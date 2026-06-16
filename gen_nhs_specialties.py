@@ -99,12 +99,26 @@ def classify(rec):
         return "nhs-community"
     return None  # don't list
 
+
+def display_name(rec):
+    """Build a readable name when CQC's locationName is missing or
+    is just the borough (common for NHS community services)."""
+    name = (rec.get("name") or "").strip()
+    prov = (rec.get("providerName") or "").strip()
+    la   = (rec.get("localAuthority") or "").strip()
+    # If name is empty or matches the borough, use the provider name
+    if not name or name == la:
+        if prov:
+            return f"{prov}" + (f" — {la}" if la and la not in prov else "")
+        return la or "(Unnamed service)"
+    return name
+
 def slim(rec, category):
     parts = [p for p in [rec.get("address1") or "", rec.get("address2") or "",
                           rec.get("town") or ""] if p]
     return {
         "cqc_id":         rec.get("locationId", ""),
-        "name":           rec["name"],
+        "name":           display_name(rec),
         "address":        ", ".join(parts),
         "postcode":       rec.get("postcode", ""),
         "phone":          rec.get("phone", ""),
@@ -139,9 +153,13 @@ def main():
     output = []
     by_cat = Counter()
     by_borough = Counter()
+    skipped_no_id = 0
     for rec in cache.values():
         cat = classify(rec)
         if not cat: continue
+        # Skip records where we have nothing useful to display
+        if not (rec.get('name') or rec.get('providerName')):
+            skipped_no_id += 1; continue
         output.append(slim(rec, cat))
         by_cat[cat] += 1
         by_borough[rec.get("localAuthority", "(unknown)")] += 1
