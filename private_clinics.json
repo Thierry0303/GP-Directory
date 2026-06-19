@@ -61339,5 +61339,24 @@
     "lon": -0.146519,
     "providerName": "Health Protection Agency",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-27990853913",
+    "ods_code": "",
+    "name": "Child Psychiatry Consultancy",
+    "address": "Hillgrove House, 186a High Street, Edgware",
+    "postcode": "HA8 7EX",
+    "phone": "07861684180",
+    "website": "https://www.childpsychiatry.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-27990853913",
+    "localAuthority": "Barnet",
+    "lat": 51.6137708,
+    "lon": -0.2822842,
+    "providerName": "",
+    "ar": "Barnet"
   }
 ]

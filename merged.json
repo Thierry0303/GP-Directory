@@ -80354,5 +80354,25 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.hpa.org.uk"
+  },
+  {
+    "o": "1-27990853913",
+    "n": "Child Psychiatry Consultancy",
+    "a": "Hillgrove House, 186a High Street, Edgware",
+    "p": "HA8 7EX",
+    "ph": "07861684180",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-27990853913",
+    "ar": "Barnet",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": "https://www.childpsychiatry.uk"
   }
 ]
