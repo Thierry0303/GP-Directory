@@ -64100,8 +64100,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-434849506",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-434786686",
     "ar": "Redbridge",
     "la": null,
     "ln": null,
@@ -64120,8 +64120,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-434849506",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-434786686",
     "ar": "Southwark",
     "la": null,
     "ln": null,
@@ -64160,8 +64160,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-434849506",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-434786686",
     "ar": "",
     "la": null,
     "ln": null,
@@ -69825,7 +69825,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-568272230",
+    "cu": "https://www.cqc.org.uk/location/1-568272214",
     "ar": "Merton",
     "la": null,
     "ln": null,
@@ -69845,7 +69845,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-568272230",
+    "cu": "https://www.cqc.org.uk/location/1-568272214",
     "ar": "Wandsworth",
     "la": null,
     "ln": null,
@@ -75227,8 +75227,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8236428111",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-434786686",
     "ar": "Southwark",
     "la": null,
     "ln": null,
@@ -80374,5 +80374,25 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.childpsychiatry.uk"
+  },
+  {
+    "o": "1-28164471171",
+    "n": "UNTIL Canary Wharf",
+    "a": "Unit 7, YY London, Canary Wharf, London",
+    "p": "E14 5HX",
+    "ph": "07944396017",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28164471171",
+    "ar": "Tower Hamlets",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": ""
   }
 ]

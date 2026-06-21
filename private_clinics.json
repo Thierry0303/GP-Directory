@@ -61358,5 +61358,24 @@
     "lon": -0.2822842,
     "providerName": "",
     "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-28164471171",
+    "ods_code": "",
+    "name": "UNTIL Canary Wharf",
+    "address": "Unit 7, YY London, Canary Wharf, London",
+    "postcode": "E14 5HX",
+    "phone": "07944396017",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28164471171",
+    "localAuthority": "Tower Hamlets",
+    "lat": 51.5056989,
+    "lon": -0.0200713,
+    "providerName": "",
+    "ar": "Tower Hamlets"
   }
 ]
