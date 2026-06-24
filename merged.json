@@ -64100,8 +64100,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-434849506",
     "ar": "Redbridge",
     "la": null,
     "ln": null,
@@ -64120,8 +64120,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-434849506",
     "ar": "Southwark",
     "la": null,
     "ln": null,
@@ -64160,8 +64160,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-434849506",
     "ar": "",
     "la": null,
     "ln": null,
@@ -75227,8 +75227,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-8236428111",
     "ar": "Southwark",
     "la": null,
     "ln": null,
@@ -80394,5 +80394,25 @@
     "ln": null,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-24769367298",
+    "n": "Plumbridge Medical Centre",
+    "a": "32-33 Plumbridge Street, Greenwich, London",
+    "p": "SE10 8PA",
+    "ph": "02086927591",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-24769367298",
+    "ar": "Greenwich",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": "https://www.plumbridgemedicalcentre.nhs.net"
   }
 ]

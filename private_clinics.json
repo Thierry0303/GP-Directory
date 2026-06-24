@@ -61377,5 +61377,24 @@
     "lon": -0.0200713,
     "providerName": "Until Medical Ltd",
     "ar": "Tower Hamlets"
+  },
+  {
+    "cqc_id": "1-24769367298",
+    "ods_code": "",
+    "name": "Plumbridge Medical Centre",
+    "address": "32-33 Plumbridge Street, Greenwich, London",
+    "postcode": "SE10 8PA",
+    "phone": "02086927591",
+    "website": "https://www.plumbridgemedicalcentre.nhs.net",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "Requires improvement",
+    "cqc_url": "https://www.cqc.org.uk/location/1-24769367298",
+    "localAuthority": "Greenwich",
+    "lat": 51.4732796,
+    "lon": -0.013912,
+    "providerName": "",
+    "ar": "Greenwich"
   }
 ]
