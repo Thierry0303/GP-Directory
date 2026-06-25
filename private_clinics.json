@@ -61396,5 +61396,24 @@
     "lon": -0.013912,
     "providerName": "",
     "ar": "Greenwich"
+  },
+  {
+    "cqc_id": "1-28493077598",
+    "ods_code": "",
+    "name": "Eve Clinics \u2013 London (Harley Street)",
+    "address": "86 Harley Street, London",
+    "postcode": "W1G 7HP",
+    "phone": "07943480445",
+    "website": "https://www.eveclinics.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28493077598",
+    "localAuthority": "Westminster",
+    "lat": 51.520389,
+    "lon": -0.147372,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
