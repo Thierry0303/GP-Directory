@@ -248,8 +248,8 @@
     "s": 58.2,
     "c": 51.2,
     "pcn": "BARNET 7",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-540525527",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-540525527",
     "ar": "Barnet",
     "la": 51.6145,
     "ln": -0.2422,
@@ -69825,7 +69825,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-568272214",
+    "cu": "https://www.cqc.org.uk/location/1-568272246",
     "ar": "Merton",
     "la": null,
     "ln": null,
@@ -69845,7 +69845,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-568272214",
+    "cu": "https://www.cqc.org.uk/location/1-568272246",
     "ar": "Wandsworth",
     "la": null,
     "ln": null,
@@ -80434,5 +80434,25 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.eveclinics.co.uk"
+  },
+  {
+    "o": "1-28599541715",
+    "n": "EK Dermatology and Hair Clinics Limited",
+    "a": "Unit 6, Airport House, Purley Way, Croydon",
+    "p": "CR0 0XZ",
+    "ph": "07917015313",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28599541715",
+    "ar": "Croydon",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": "https://www.ekdermatology.co.uk"
   }
 ]

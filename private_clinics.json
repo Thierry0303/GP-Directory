@@ -61415,5 +61415,24 @@
     "lon": -0.147372,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28599541715",
+    "ods_code": "",
+    "name": "EK Dermatology and Hair Clinics Limited",
+    "address": "Unit 6, Airport House, Purley Way, Croydon",
+    "postcode": "CR0 0XZ",
+    "phone": "07917015313",
+    "website": "https://www.ekdermatology.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28599541715",
+    "localAuthority": "Croydon",
+    "lat": 51.3566128,
+    "lon": -0.1178388,
+    "providerName": "",
+    "ar": "Croydon"
   }
 ]
