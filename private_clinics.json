@@ -61394,7 +61394,7 @@
     "localAuthority": "Greenwich",
     "lat": 51.4732796,
     "lon": -0.013912,
-    "providerName": "",
+    "providerName": "Plumbridge Medical Centre",
     "ar": "Greenwich"
   },
   {
@@ -61413,7 +61413,7 @@
     "localAuthority": "Westminster",
     "lat": 51.520389,
     "lon": -0.147372,
-    "providerName": "",
+    "providerName": "Eve Clinics Aesthetic & Medical Ltd",
     "ar": "Westminster"
   },
   {
@@ -61432,7 +61432,7 @@
     "localAuthority": "Croydon",
     "lat": 51.3566128,
     "lon": -0.1178388,
-    "providerName": "",
+    "providerName": "EK Dermatology and Hair Clinics Limited",
     "ar": "Croydon"
   }
 ]
