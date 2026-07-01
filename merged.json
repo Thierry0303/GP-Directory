@@ -64100,8 +64100,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-434849506",
     "ar": "Redbridge",
     "la": null,
     "ln": null,
@@ -64120,8 +64120,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-434849506",
     "ar": "Southwark",
     "la": null,
     "ln": null,
@@ -64160,8 +64160,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-434849506",
     "ar": "",
     "la": null,
     "ln": null,
@@ -75227,8 +75227,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-434786686",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-8236428111",
     "ar": "Southwark",
     "la": null,
     "ln": null,
@@ -80454,5 +80454,25 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.ekdermatology.co.uk"
+  },
+  {
+    "o": "1-28598873672",
+    "n": "Rejuva London",
+    "a": "15 Harley Street, London",
+    "p": "W1G 9QQ",
+    "ph": "02076370467",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28598873672",
+    "ar": "Westminster",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": "https://www.rejuvalondon.co.uk"
   }
 ]

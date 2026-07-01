@@ -61434,5 +61434,24 @@
     "lon": -0.1178388,
     "providerName": "EK Dermatology and Hair Clinics Limited",
     "ar": "Croydon"
+  },
+  {
+    "cqc_id": "1-28598873672",
+    "ods_code": "",
+    "name": "Rejuva London",
+    "address": "15 Harley Street, London",
+    "postcode": "W1G 9QQ",
+    "phone": "02076370467",
+    "website": "https://www.rejuvalondon.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28598873672",
+    "localAuthority": "Westminster",
+    "lat": 51.517273,
+    "lon": -0.14646,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
