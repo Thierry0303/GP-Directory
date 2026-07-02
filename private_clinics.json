@@ -61453,5 +61453,43 @@
     "lon": -0.14646,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-26816267479",
+    "ods_code": "",
+    "name": "Abbey Wood Hospital",
+    "address": "The Cottage, Bostall Hill,  Abbey Wood, London",
+    "postcode": "SE2 0GD",
+    "phone": "077427693560",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-26816267479",
+    "localAuthority": "Greenwich",
+    "lat": 51.4826105,
+    "lon": 0.1212742,
+    "providerName": "",
+    "ar": "Greenwich"
+  },
+  {
+    "cqc_id": "1-28427862345",
+    "ods_code": "",
+    "name": "EGA Clinic Ltd",
+    "address": "12 Upper Wimpole Street, Marylebone, London",
+    "postcode": "W1G 6LD",
+    "phone": "02081913012",
+    "website": "https://www.egaclinic.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28427862345",
+    "localAuthority": "Westminster",
+    "lat": 51.5205527,
+    "lon": -0.1490409,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
