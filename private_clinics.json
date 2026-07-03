@@ -61491,5 +61491,24 @@
     "lon": -0.1490409,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28492530816",
+    "ods_code": "",
+    "name": "Head Office",
+    "address": "67 Tavistock Gardens, Ilford",
+    "postcode": "IG3 9BD",
+    "phone": "02045265738",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28492530816",
+    "localAuthority": "Redbridge",
+    "lat": 51.5491936,
+    "lon": 0.0967909,
+    "providerName": "",
+    "ar": "Redbridge"
   }
 ]

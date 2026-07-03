@@ -69825,7 +69825,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-568272230",
+    "cu": "https://www.cqc.org.uk/location/1-568272214",
     "ar": "Merton",
     "la": null,
     "ln": null,
@@ -69845,7 +69845,7 @@
       "private-gp"
     ],
     "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-568272230",
+    "cu": "https://www.cqc.org.uk/location/1-568272214",
     "ar": "Wandsworth",
     "la": null,
     "ln": null,
@@ -80514,5 +80514,25 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.egaclinic.com"
+  },
+  {
+    "o": "1-28492530816",
+    "n": "Head Office",
+    "a": "67 Tavistock Gardens, Ilford",
+    "p": "IG3 9BD",
+    "ph": "02045265738",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "ar": "Redbridge",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": ""
   }
 ]
