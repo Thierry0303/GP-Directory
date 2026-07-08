@@ -61510,5 +61510,24 @@
     "lon": 0.0967909,
     "providerName": "Cornerstone GP Services Ltd",
     "ar": "Redbridge"
+  },
+  {
+    "cqc_id": "1-28532495665",
+    "ods_code": "",
+    "name": "London GP Concierge Headquarters",
+    "address": "10 Harley Street, London",
+    "postcode": "W1G 9PF",
+    "phone": "07508511625",
+    "website": "https://www.londongpconcierge.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28532495665",
+    "localAuthority": "Westminster",
+    "lat": 51.517391,
+    "lon": -0.146009,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
