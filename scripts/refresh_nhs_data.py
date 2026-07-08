@@ -250,6 +250,21 @@ for ods in ods_codes:
         "ln": round(lng,5) if lng else None,
     })
 
+# Accepting-new-patients flags (written by fetch_accepting_patients.py)
+ANP_FILE = Path("accepting_patients.json")
+if ANP_FILE.exists():
+    try:
+        anp = {k.upper(): v for k, v in json.loads(ANP_FILE.read_text()).items()}
+        tagged = 0
+        for r in merged:
+            v = anp.get((r.get("o") or "").upper())
+            if v is not None:
+                r["anp"] = v
+                tagged += 1
+        print(f"  accepting-new-patients flag set on {tagged} practices")
+    except Exception as e:
+        print(f"  WARNING: could not apply accepting_patients.json: {e}")
+
 print(f"  {len(merged)} active GP practices")
 
 # Cache merged dataset so build_borough_pages.py can reuse it
