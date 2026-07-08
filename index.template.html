@@ -8,6 +8,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#003087">
 <link rel="canonical" href="https://londongp.directory/">
+<link rel="preload" href="/data.json" as="fetch" crossorigin="anonymous">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23003087'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='42' font-weight='700' fill='white'%3EGP%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="London GP Directory">
@@ -245,7 +246,8 @@ footer a{color:rgba(255,255,255,.8)}
   <a href="/nhs-services/">NHS Services</a>
 </footer>
 <script>
-const DATA = __DATA_PLACEHOLDER__;
+let DATA = [];
+const DATA_READY = fetch('/data.json').then(r => r.json()).then(d => { DATA = d; }).catch(() => { document.getElementById('grid').innerHTML = '<div class="empty"><h3>Could not load practice data. Please refresh.</h3></div>'; });
 const slugify = s => (s||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 const PAGE = 24;
 let page = 1, filtered = [], selType = 'NHS', selSpec = 'all';
@@ -336,10 +338,12 @@ const _urlType = new URLSearchParams(location.search).get('type');
 if (_urlType && ['NHS','Private','All'].includes(_urlType)) selType = _urlType;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();});
 document.querySelectorAll('.type-tab').forEach(t => t.addEventListener('click', () => selectType(t.dataset.type)));
-updateTypeCounts();
-buildFilters();
-buildSpecialtyChips();
-render();
+DATA_READY.then(() => {
+  updateTypeCounts();
+  buildFilters();
+  buildSpecialtyChips();
+  render();
+});
 </script>
 </body>
 </html>
