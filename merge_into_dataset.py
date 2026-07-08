@@ -130,34 +130,10 @@ def main():
     private_records = json.loads(PRIVATE_JSON.read_text())
     print(f"Loaded {len(private_records)} private records from {PRIVATE_JSON.name}")
 
-    if not INDEX_HTML.exists():
-        sys.exit(f"ERROR: {INDEX_HTML} not found.")
-    html = INDEX_HTML.read_text(encoding="utf-8")
-
-    data_start_marker = "const DATA = "
-    data_start = html.find(data_start_marker)
-    if data_start == -1:
-        sys.exit("ERROR: Could not find 'const DATA = ' in index.html")
-    arr_start = data_start + len(data_start_marker)
-    depth = 0
-    i = arr_start
-    while i < len(html):
-        if html[i] == '[':
-            depth += 1
-        elif html[i] == ']':
-            depth -= 1
-            if depth == 0:
-                arr_end = i + 1
-                break
-        i += 1
-    else:
-        sys.exit("ERROR: Could not find end of DATA array in index.html")
-    existing_json = html[arr_start:arr_end]
-
-    try:
-        existing = json.loads(existing_json)
-    except json.JSONDecodeError as e:
-        sys.exit(f"ERROR: Could not parse DATA array: {e}")
+    DATA_JSON = ROOT / "data.json"
+    if not DATA_JSON.exists():
+        sys.exit(f"ERROR: {DATA_JSON} not found — run refresh_nhs_data.py first.")
+    existing = json.loads(DATA_JSON.read_text(encoding="utf-8"))
     nhs_records = [r for r in existing if r.get("type") != "Private"]
     # Ensure every NHS record explicitly has type="NHS" — page builders
     # may filter strictly and reject records with no type field.
@@ -178,13 +154,14 @@ def main():
     merged = nhs_records + new_private
     print(f"  Total merged records: {len(merged)}")
 
-    new_json_compact = json.dumps(merged, separators=(',', ':'), ensure_ascii=False)
-    new_html = (
-        html[:data_start]
-        + data_start_marker
-        + new_json_compact
-        + html[arr_end:]
-    )
+    DATA_JSON.write_text(
+        json.dumps(merged, separators=(',', ':'), ensure_ascii=False),
+        encoding="utf-8")
+
+    # Update the static counters in index.html (SEO-visible text)
+    if not INDEX_HTML.exists():
+        sys.exit(f"ERROR: {INDEX_HTML} not found.")
+    new_html = INDEX_HTML.read_text(encoding="utf-8")
     new_html = re.sub(
         r'(id="cntPriv">)\d+(</span>)',
         rf'\g<1>{len(new_private)}\g<2>',
