@@ -60,6 +60,8 @@ jobs:
         run: python build_borough_index.py
       - name: Build NHS services pages
         run: python build_nhs_services_pages.py
+      - name: Build unified sitemap
+        run: python build_sitemap_unified.py
 
       # ---- 6. Commit ----
       - name: Commit & push
