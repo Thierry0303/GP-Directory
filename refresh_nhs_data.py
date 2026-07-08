@@ -250,14 +250,29 @@ for ods in ods_codes:
         "ln": round(lng,5) if lng else None,
     })
 
+# Accepting-new-patients flags (written by fetch_accepting_patients.py)
+ANP_FILE = Path("accepting_patients.json")
+if ANP_FILE.exists():
+    try:
+        anp = {k.upper(): v for k, v in json.loads(ANP_FILE.read_text()).items()}
+        tagged = 0
+        for r in merged:
+            v = anp.get((r.get("o") or "").upper())
+            if v is not None:
+                r["anp"] = v
+                tagged += 1
+        print(f"  accepting-new-patients flag set on {tagged} practices")
+    except Exception as e:
+        print(f"  WARNING: could not apply accepting_patients.json: {e}")
+
 print(f"  {len(merged)} active GP practices")
 
 # Cache merged dataset so build_borough_pages.py can reuse it
 Path("merged.json").write_text(json.dumps(merged))
 print(f"  wrote merged.json cache")
 
-print("Writing index.html...")
-DATA_JS = json.dumps(merged, separators=(",",":"))
+print("Writing data.json + index.html...")
+Path("data.json").write_text(json.dumps(merged, separators=(",",":"), ensure_ascii=False))
 date = datetime.utcnow().strftime("%-d %B %Y")
 
 with open("index.template.html") as f:
@@ -274,7 +289,6 @@ borough_nav = " ".join(
 )
 
 html = (html
-        .replace("__DATA_PLACEHOLDER__", DATA_JS)
         .replace("__UPDATED_DATE__", date)
         .replace("__PRACTICE_COUNT__", str(len(merged)))
         .replace("__BOROUGH_NAV__", borough_nav))

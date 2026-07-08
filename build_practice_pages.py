@@ -268,6 +268,19 @@ def render_about(practice):
         f"All patient registrations are managed through the NHS — there is "
         f"no fee to register. Use the button above to start your registration online.</p>"
     ]
+    anp = practice.get("anp")
+    if anp is True:
+        parts.append(
+            "<p><strong>✅ This practice is currently accepting new patient "
+            "registrations</strong> (per the NHS Directory of Healthcare "
+            "Services, refreshed regularly — confirm with the practice when "
+            "you apply).</p>")
+    elif anp is False:
+        parts.append(
+            "<p><strong>⚠️ This practice is not currently accepting new "
+            "patient registrations</strong> according to the NHS Directory of "
+            f"Healthcare Services. See <a href='/practice/{slug(practice.get('ar',''))}/'>"
+            f"other practices in {borough}</a> that may have capacity.</p>")
     if cqc:
         parts.append(
             f'<p>The practice is rated <strong>{html.escape(cqc)}</strong> by '
