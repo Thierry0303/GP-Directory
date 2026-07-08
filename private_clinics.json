@@ -28916,5 +28916,81 @@
     "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28493430438",
+    "ods_code": "",
+    "name": "The Foundry",
+    "address": "154-156 Blackfriars Road, London",
+    "postcode": "SE1 8EN",
+    "phone": "07561538166",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28493430438",
+    "localAuthority": "Southwark",
+    "lat": 51.5010956,
+    "lon": -0.1041982,
+    "providerName": "",
+    "ar": "Southwark"
+  },
+  {
+    "cqc_id": "1-22156318331",
+    "ods_code": "",
+    "name": "Elective Services Ltd",
+    "address": "2 North Terrace, London",
+    "postcode": "SW3 2BA",
+    "phone": "07872077837",
+    "website": "https://www.electiveuk.com",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-22156318331",
+    "localAuthority": "Kensington and Chelsea",
+    "lat": 51.4959049,
+    "lon": -0.1697485,
+    "providerName": "",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "cqc_id": "1-28415438322",
+    "ods_code": "",
+    "name": "Beyond Aesthetic Clinic",
+    "address": "10-11, Percy Street, London",
+    "postcode": "W1T 1DN",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "aesthetic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28415438322",
+    "localAuthority": "Camden",
+    "lat": 51.5181258,
+    "lon": -0.1332265,
+    "providerName": "",
+    "ar": "Camden"
+  },
+  {
+    "cqc_id": "1-28734903837",
+    "ods_code": "",
+    "name": "J&M Skincare Ltd",
+    "address": "82 Shepherds Bush Road, London",
+    "postcode": "W6 7PH",
+    "phone": "",
+    "website": "https://www.neogleam.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28734903837",
+    "localAuthority": "Hammersmith and Fulham",
+    "lat": 51.5001227,
+    "lon": -0.2223849,
+    "providerName": "",
+    "ar": "Hammersmith & Fulham"
   }
 ]

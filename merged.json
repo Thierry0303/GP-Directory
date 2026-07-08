@@ -46390,5 +46390,85 @@
     "ln": null,
     "type": "Private",
     "web": "https://www.londongpconcierge.com"
+  },
+  {
+    "o": "1-28493430438",
+    "n": "The Foundry",
+    "a": "154-156 Blackfriars Road, London",
+    "p": "SE1 8EN",
+    "ph": "07561538166",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28493430438",
+    "ar": "Southwark",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-22156318331",
+    "n": "Elective Services Ltd",
+    "a": "2 North Terrace, London",
+    "p": "SW3 2BA",
+    "ph": "07872077837",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-22156318331",
+    "ar": "Kensington & Chelsea",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": "https://www.electiveuk.com"
+  },
+  {
+    "o": "1-28415438322",
+    "n": "Beyond Aesthetic Clinic",
+    "a": "10-11, Percy Street, London",
+    "p": "W1T 1DN",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "aesthetic",
+    "specs": [
+      "aesthetic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28415438322",
+    "ar": "Camden",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28734903837",
+    "n": "J&M Skincare Ltd",
+    "a": "82 Shepherds Bush Road, London",
+    "p": "W6 7PH",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28734903837",
+    "ar": "Hammersmith & Fulham",
+    "la": null,
+    "ln": null,
+    "type": "Private",
+    "web": "https://www.neogleam.co.uk"
   }
 ]
