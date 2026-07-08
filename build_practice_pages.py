@@ -143,6 +143,38 @@ footer a{color:rgba(255,255,255,.85)}
 
 # ---------------------------------------------------------------- render
 
+SPEC_LABELS = {
+    "private-gp": "Private GP", "consultant": "Consultant-Led", "diagnostic": "Diagnostics & Imaging",
+    "sexual-health": "Sexual Health", "gynaecology": "Gynaecology & Women's Health",
+    "aesthetic": "Aesthetic Medicine", "weight-loss": "Weight Management",
+    "dermatology": "Dermatology", "hospital": "Private Hospital",
+    "psychiatry": "Psychiatry & Mental Health", "ophthalmology": "Ophthalmology",
+    "orthopaedics": "Orthopaedics", "urgent-care": "Urgent Care",
+    "oncology": "Oncology", "plastic-surgery": "Plastic Surgery",
+    "cardiology": "Cardiology", "urology": "Urology", "ent": "ENT",
+    "physiotherapy": "Physiotherapy", "travel-health": "Travel Health",
+    "gastroenterology": "Gastroenterology", "neurology": "Neurology",
+    "endocrinology": "Endocrinology", "paediatrics": "Paediatrics",
+    "vascular": "Vascular", "respiratory": "Respiratory",
+    "rheumatology": "Rheumatology", "haematology": "Haematology",
+    "hospice": "Hospice",
+}
+SCHEMA_SPECIALTY = {
+    "dermatology": "Dermatology", "cardiology": "Cardiovascular",
+    "gynaecology": "Gynecologic", "psychiatry": "Psychiatric",
+    "ophthalmology": "Otolaryngologic", "orthopaedics": "Musculoskeletal",
+    "oncology": "Oncologic", "urology": "Urologic", "ent": "Otolaryngologic",
+    "gastroenterology": "Gastroenterologic", "neurology": "Neurologic",
+    "endocrinology": "Endocrine", "paediatrics": "Pediatric",
+    "private-gp": "PrimaryCare",
+}
+def is_priv(practice):
+    return practice.get("type") == "Private"
+
+def spec_labels(practice):
+    return [SPEC_LABELS.get(s, s.replace("-", " ").title())
+            for s in practice.get("specs", [])]
+
 def render_aside(practice, neighbours):
     addr = html.escape(", ".join(b for b in (practice.get("a", ""), practice.get("p", "")) if b))
     pcn = html.escape(str(practice.get("pcn", "")))
@@ -150,12 +182,13 @@ def render_aside(practice, neighbours):
     addr_block = f'<strong>Address</strong>{addr}'
     if ph:
         addr_block += f'<br><br><strong>Phone</strong><a href="tel:{normalise_phone(ph)}" style="color:#003087">{html.escape(ph)}</a>'
-    if pcn:
+    if pcn and not is_priv(practice):
         addr_block += f'<br><br><strong>PCN</strong>{pcn}'
 
     nbs = ""
     if neighbours:
-        nbs = "<h3>Other practices nearby</h3><ul>" + "".join(
+        heading = "Other private clinics nearby" if is_priv(practice) else "Other practices nearby"
+        nbs = f"<h3>{heading}</h3><ul>" + "".join(
             f'<li><a href="/practice/{slug(n["ar"])}/{slug(n["n"])}/">{html.escape(n["n"])}</a></li>'
             for n in neighbours
         ) + "</ul>"
@@ -176,6 +209,17 @@ def render_metrics(practice):
 
 def render_actions(practice):
     out = []
+    if is_priv(practice):
+        web = practice.get("web", "")
+        ph = practice.get("ph", "")
+        if web:
+            out.append(f'<a class="btn btn-primary" href="{html.escape(web)}" target="_blank" rel="noopener">Visit website &rarr;</a>')
+        if ph:
+            out.append(f'<a class="btn btn-secondary" href="tel:{normalise_phone(ph)}">Call {html.escape(ph)}</a>')
+        cu = practice.get("cu")
+        if cu:
+            out.append(f'<a class="btn btn-secondary" href="{html.escape(cu)}" target="_blank" rel="noopener">CQC registration</a>')
+        return f'<div class="actions">{"".join(out)}</div>' if out else ""
     ods = practice.get("o", "")
     if ods:
         out.append(f'<a class="btn btn-primary" href="https://gp-registration.nhs.uk/{ods}" target="_blank" rel="noopener">Register online &rarr;</a>')
@@ -195,6 +239,30 @@ def render_about(practice):
     cqc = practice.get("cqc")
     s = practice.get("s")
     pcn = practice.get("pcn", "")
+    if is_priv(practice):
+        labels = spec_labels(practice)
+        svc = ", ".join(labels[:3]) if labels else "private healthcare services"
+        parts = [
+            f"<p>{name} is an independent (private) healthcare provider in "
+            f"{borough}, London, offering {html.escape(svc)}. Unlike NHS GP "
+            f"practices, appointments are paid for directly or through "
+            f"private medical insurance — contact the clinic for fees and "
+            f"availability.</p>"
+        ]
+        if cqc:
+            parts.append(
+                f'<p>The service is rated <strong>{html.escape(cqc)}</strong> by '
+                f'the Care Quality Commission (CQC), the independent regulator '
+                f'for health and social care in England.</p>'
+            )
+        else:
+            parts.append(
+                "<p>This provider is registered with the Care Quality Commission "
+                "(CQC). Many independent clinics have not yet received a formal "
+                "CQC rating — check the CQC registration link below for the "
+                "latest inspection reports.</p>"
+            )
+        return f'<div class="about">{"".join(parts)}</div>'
     parts = [
         f"<p>{name} is an NHS GP practice located in {borough}, London. "
         f"All patient registrations are managed through the NHS — there is "
@@ -225,6 +293,41 @@ def render_faq(practice):
     ods = practice.get("o", "")
     ph = practice.get("ph", "")
 
+    if is_priv(practice):
+        web = practice.get("web", "")
+        qa = [
+            ("How do I book an appointment?",
+             ("Book directly via the clinic's website" +
+              (f' at <a href="{html.escape(web)}" target="_blank" rel="noopener">{html.escape(web.replace("https://","").replace("http://","").rstrip("/"))}</a>' if web else "") +
+              (f', or call <a href="tel:{normalise_phone(ph)}">{html.escape(ph)}</a>' if ph else "") +
+              ". As a private provider, no NHS referral or registration is needed, "
+              "though some specialists may ask for a GP referral letter.")),
+            ("How much does it cost?",
+             "Fees are set by the clinic and vary by service. Most private clinics "
+             "publish prices on their website or provide them on enquiry. Many are "
+             "recognised by private medical insurers such as Bupa, AXA Health, "
+             "Aviva and Vitality — check with your insurer before booking."),
+            ("Is this clinic regulated?",
+             f"Yes — {name} is registered with the Care Quality Commission (CQC), "
+             f"which regulates all providers of medical care in England, private "
+             f"and NHS alike. Registration details and any inspection reports are "
+             f"linked above."),
+            ("How do I find a named consultant?",
+             'The Private Healthcare Information Network (PHIN) is the '
+             'official, CMA-mandated source of information on individual '
+             'private consultants in the UK, including fees and activity '
+             'volumes. Search for consultants at this or any location on '
+             '<a href="https://www.phin.org.uk/" target="_blank" rel="noopener">phin.org.uk</a>.'),
+            ("Where is the data on this page from?",
+             "Provider details come from the Care Quality Commission's public "
+             "register and are refreshed regularly. Always confirm details "
+             "directly with the clinic before travelling."),
+        ]
+        items = "".join(
+            f'<details><summary>{q}</summary><div>{a}</div></details>'
+            for q, a in qa
+        )
+        return f'<div class="faq">{items}</div>'
     qa = [
         ("How do I register with this practice?",
          f'You can register online at no cost via the NHS at '
@@ -268,16 +371,29 @@ def render_page(practice, neighbours):
     ph = practice.get("ph", "")
     s = practice.get("s")
 
-    title = f"{name} — {cqc + ' ' if cqc else ''}NHS GP in {borough}, London"
-    if len(title) > 65:
-        title = f"{name} — NHS GP in {borough}"
-    desc_bits = [f"NHS GP practice in {borough}, London."]
-    if cqc:
-        desc_bits.append(f"Rated {cqc} by the CQC.")
-    if s:
-        desc_bits.append(f"{round(s)}% patient satisfaction.")
-    desc_bits.append("Register online, see opening hours, contact details and reviews.")
-    desc = " ".join(desc_bits)
+    priv = is_priv(practice)
+    if priv:
+        labels = spec_labels(practice)
+        kind = labels[0] if labels else "Private Clinic"
+        title = f"{name} — {kind} in {borough}, London"
+        if len(title) > 65:
+            title = f"{name} — {kind}, {borough}"
+        desc_bits = [f"{kind} in {borough}, London."]
+        if cqc:
+            desc_bits.append(f"Rated {cqc} by the CQC.")
+        desc_bits.append("CQC-registered private healthcare provider — contact details, website and regulation info.")
+        desc = " ".join(desc_bits)
+    else:
+        title = f"{name} — {cqc + ' ' if cqc else ''}NHS GP in {borough}, London"
+        if len(title) > 65:
+            title = f"{name} — NHS GP in {borough}"
+        desc_bits = [f"NHS GP practice in {borough}, London."]
+        if cqc:
+            desc_bits.append(f"Rated {cqc} by the CQC.")
+        if s:
+            desc_bits.append(f"{round(s)}% patient satisfaction.")
+        desc_bits.append("Register online, see opening hours, contact details and reviews.")
+        desc = " ".join(desc_bits)
 
     # ---- JSON-LD MedicalBusiness
     ld = {
@@ -288,9 +404,17 @@ def render_page(practice, neighbours):
         "url": canonical,
         "address": normalise_for_schema(practice.get("a", ""), practice.get("p", "")),
         "areaServed": {"@type": "AdministrativeArea", "name": borough},
-        "medicalSpecialty": "PrimaryCare",
-        "isPartOf": {"@type": "GovernmentOrganization", "name": "NHS England"},
     }
+    if priv:
+        ld["@type"] = "MedicalClinic"
+        specs = [SCHEMA_SPECIALTY[s] for s in practice.get("specs", []) if s in SCHEMA_SPECIALTY]
+        if specs:
+            ld["medicalSpecialty"] = specs[0] if len(specs) == 1 else specs
+        if practice.get("web"):
+            ld["sameAs"] = practice["web"]
+    else:
+        ld["medicalSpecialty"] = "PrimaryCare"
+        ld["isPartOf"] = {"@type": "GovernmentOrganization", "name": "NHS England"}
     if ph:
         ld["telephone"] = ph
     la, ln = practice.get("la"), practice.get("ln")
@@ -315,6 +439,10 @@ def render_page(practice, neighbours):
             {"@type": "ListItem", "position": 3, "name": name, "item": canonical},
         ]
     }
+
+    eyebrow_kind = ("Private Clinic" if priv else "NHS GP Practice")
+    if priv and practice.get("specs"):
+        eyebrow_kind = f"Private &middot; {html.escape(spec_labels(practice)[0])}"
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -360,7 +488,7 @@ def render_page(practice, neighbours):
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">NHS GP Practice &middot; <a href="/practice/{bslug}/">More practices in {borough_h}</a></div>
+    <div class="eyebrow">{eyebrow_kind} &middot; <a href="/practice/{bslug}/">More in {borough_h}</a></div>
     <h1>{name_h}</h1>
     {cqc_html}
     <div class="hero-meta">
@@ -375,10 +503,10 @@ def render_page(practice, neighbours):
     <h2>About {name_h}</h2>
     {render_about(practice)}
 
-    <h2>Patient survey &amp; CQC scores</h2>
+    <h2>{"CQC rating" if priv else "Patient survey &amp; CQC scores"}</h2>
     {render_metrics(practice)}
 
-    <h2>Register, call or get directions</h2>
+    <h2>{"Book or contact" if priv else "Register, call or get directions"}</h2>
     {render_actions(practice)}
 
     <h2>Frequently asked questions</h2>
@@ -467,13 +595,35 @@ def main():
             if not pslug or pslug == "unknown":
                 continue
             # Pick 4 neighbours (other practices in same borough), prefer closest by index
-            neighbours = [q for j, q in enumerate(plist_sorted) if j != i][:4]
+            neighbours = [q for j, q in enumerate(plist_sorted)
+                          if j != i and (q.get("type") == p.get("type") or
+                                         (not q.get("type") and not p.get("type")))][:4]
             out = OUT_DIR / bslug / pslug / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(render_page(p, neighbours))
             practice_urls.append(f"{SITE_URL}/practice/{bslug}/{pslug}/")
             written += 1
         print(f"  {borough:30s} {len(plist_sorted):3d} pages")
+
+    # Prune stale pages — records that dropped out of merged.json
+    # (e.g. deregistered CQC locations) must not keep serving old HTML.
+    import shutil
+    valid = set()
+    for borough, plist in by_borough.items():
+        for q in plist:
+            ps = slug(q.get("n", ""))
+            if ps and ps != "unknown":
+                valid.add((slug(borough), ps))
+    pruned = 0
+    for bdir in OUT_DIR.iterdir():
+        if not bdir.is_dir():
+            continue
+        for pdir in bdir.iterdir():
+            if pdir.is_dir() and (bdir.name, pdir.name) not in valid:
+                shutil.rmtree(pdir)
+                pruned += 1
+    if pruned:
+        print(f"Pruned {pruned} stale practice pages.")
 
     write_sitemap(set(slug(b) for b in by_borough), practice_urls)
     print(f"\nDone. {written} practice pages.")
