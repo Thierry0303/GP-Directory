@@ -17,6 +17,14 @@ jobs:
       - name: Install dependencies
         run: pip install requests pandas numpy pyyaml
 
+      # ---- 0. Accepting-new-patients flags (needs NHS_SERVICE_SEARCH_KEY;
+      #         skips gracefully when the secret is missing) ----
+      - name: Fetch accepting-new-patients flags
+        env:
+          NHS_SERVICE_SEARCH_KEY: ${{ secrets.NHS_SERVICE_SEARCH_KEY }}
+        run: python fetch_accepting_patients.py
+        continue-on-error: true
+
       # ---- 1. NHS GP data (canonical via FHIR) ----
       - name: NHS refresh
         run: python refresh_nhs_data.py
