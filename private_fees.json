@@ -1,0 +1,7 @@
+{
+  "_comment": "Manually curated private consultation fees. Key = CQC location id. from_gbp = cheapest standard GP consultation on the clinic's published price list. Always record source URL and date checked. Remove or update entries when prices change — the site shows the checked date.",
+  "1-13974231891": {"from_gbp": 89, "note": "15-min standard GP consultation", "source": "https://www.londondoctorsclinic.co.uk/prices/", "checked": "2026-07-08"},
+  "1-15678447155": {"from_gbp": 89, "note": "15-min standard GP consultation", "source": "https://www.londondoctorsclinic.co.uk/prices/", "checked": "2026-07-08"},
+  "1-20294992735": {"from_gbp": 89, "note": "15-min standard GP consultation", "source": "https://www.londondoctorsclinic.co.uk/prices/", "checked": "2026-07-08"},
+  "1-23565119909": {"from_gbp": 89, "note": "15-min standard GP consultation", "source": "https://www.londondoctorsclinic.co.uk/prices/", "checked": "2026-07-08"}
+}
