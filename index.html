@@ -145,6 +145,11 @@ footer a{color:rgba(255,255,255,.8)}
   .sidebar{grid-template-columns:1fr}
   #grid{grid-template-columns:1fr}
 }
+.anp-y{background:#e7f6ec;color:#0F6E56;border:1px solid #bfe5cd;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
+.anp-n{background:#fdeeee;color:#a33;border:1px solid #f2cfcf;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
+.dist-chip{background:#eef3fb;color:#003087;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
+.near-btn{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.2);color:#fff;padding:11px 15px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;white-space:nowrap}
+.geo-clear{background:none;border:none;color:#a33;cursor:pointer;font-size:12px;padding:0 2px}
 </style>
 </head>
 <body>
@@ -178,9 +183,10 @@ footer a{color:rgba(255,255,255,.8)}
   <div class="search-inner">
     <div class="s-wrap">
       <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="white" stroke-width="1.5"/><path d="M13.5 13.5L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
-      <input id="q" type="text" placeholder="Search by name, postcode, area or PCN&#x2026;" autocomplete="off">
+      <input id="q" type="text" placeholder="Postcode (e.g. SW1A 1AA) or name, area, PCN&#x2026;" autocomplete="off">
     </div>
     <button class="clr" id="clrBtn" onclick="clearSearch()">Clear</button>
+    <button class="near-btn" id="nearBtn" onclick="nearMe()" title="Sort by distance from your location">&#x1F4CD; Near me</button>
   </div>
 </div>
 <div class="type-zone">
@@ -222,12 +228,14 @@ footer a{color:rgba(255,255,255,.8)}
       <div class="panel-hdr">Sort by</div>
       <select id="sortSel" onchange="render()">
         <option value="name">Name (A&#x2013;Z)</option>
+        <option value="dist">Distance (near&#x2013;far)</option>
         <option value="score_d">Patient score (high&#x2013;low)</option>
         <option value="score_a">Patient score (low&#x2013;high)</option>
         <option value="contact_d">Contact ease (high&#x2013;low)</option>
         <option value="area">Area (A&#x2013;Z)</option>
       </select>
     </div>
+    <div class="panel" id="anpPanel"><div class="panel-hdr">Availability</div><div class="opts"><label><input type="checkbox" id="anpChk" onchange="page=1;render()">Accepting new patients <span class="badge" id="anpCt"></span></label></div></div>
     <div class="panel"><div class="panel-hdr">CQC rating</div><div class="opts" id="cqcOpts"></div></div>
     <div class="panel"><div class="panel-hdr">Borough</div><div class="opts" id="areaOpts"></div></div>
   </aside>
@@ -249,11 +257,60 @@ footer a{color:rgba(255,255,255,.8)}
 let DATA = [];
 const DATA_READY = fetch('/data.json').then(r => r.json()).then(d => { DATA = d; }).catch(() => { document.getElementById('grid').innerHTML = '<div class="empty"><h3>Could not load practice data. Please refresh.</h3></div>'; });
 const slugify = s => (s||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+let geo = null;                       // {lat, lon, label} when location search active
+const PC_FULL = /^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/;
+const PC_OUT  = /^[A-Za-z]{1,2}\d[A-Za-z\d]?$/;
+function distMi(d){
+  if(!geo || d.la==null || d.ln==null) return Infinity;
+  const R=3958.8, toR=Math.PI/180;
+  const dLa=(d.la-geo.lat)*toR, dLn=(d.ln-geo.lon)*toR;
+  const a=Math.sin(dLa/2)**2 + Math.cos(geo.lat*toR)*Math.cos(d.la*toR)*Math.sin(dLn/2)**2;
+  return 2*R*Math.asin(Math.sqrt(a));
+}
+async function geocode(q){
+  const pc = q.replace(/\s+/g,'');
+  const url = PC_FULL.test(q) ? `https://api.postcodes.io/postcodes/${encodeURIComponent(pc)}`
+            : PC_OUT.test(q)  ? `https://api.postcodes.io/outcodes/${encodeURIComponent(pc)}`
+            : null;
+  if(!url) return null;
+  try{
+    const r = await fetch(url);
+    if(!r.ok) return null;
+    const j = (await r.json()).result;
+    return j && j.latitude!=null ? {lat:j.latitude, lon:j.longitude, label:q.toUpperCase()} : null;
+  }catch(e){ return null; }
+}
+let geoTimer = null;
+function maybeGeocode(){
+  const q = document.getElementById('q').value.trim();
+  clearTimeout(geoTimer);
+  if(!(PC_FULL.test(q) || PC_OUT.test(q))){ if(geo){ geo=null; render(); } return; }
+  geoTimer = setTimeout(async ()=>{
+    const g = await geocode(q);
+    if(g){ geo=g; document.getElementById('sortSel').value='dist'; page=1; render(); }
+  }, 350);
+}
+function clearGeo(){ geo=null; if(document.getElementById('sortSel').value==='dist') document.getElementById('sortSel').value='name'; page=1; render(); }
+function nearMe(){
+  if(!navigator.geolocation) return;
+  const btn=document.getElementById('nearBtn'); btn.textContent='Locating\u2026';
+  navigator.geolocation.getCurrentPosition(pos=>{
+    geo={lat:pos.coords.latitude, lon:pos.coords.longitude, label:'your location'};
+    document.getElementById('sortSel').value='dist';
+    btn.innerHTML='\u{1F4CD} Near me'; page=1; render();
+  }, ()=>{ btn.innerHTML='\u{1F4CD} Near me'; });
+}
 const PAGE = 24;
 let page = 1, filtered = [], selType = 'NHS', selSpec = 'all';
 const selCQC = new Set(), selArea = new Set();
 function cqcClass(r){ if(!r)return'cqc-N';if(r==='Outstanding')return'cqc-O';if(r==='Good')return'cqc-G';if(r.startsWith('Requires'))return'cqc-R';if(r==='Inadequate')return'cqc-I';return'cqc-N'; }
 function cqcLabel(r){ return r||'Not rated'; }
+function updateAnpUI(){
+  const n = DATA.filter(d => (d.type||'NHS')==='NHS' && d.anp===true).length;
+  const panel = document.getElementById('anpPanel');
+  panel.style.display = (n>0 && selType!=='Private') ? '' : 'none';
+  document.getElementById('anpCt').textContent = n || '';
+}
 function updateTypeCounts(){
   const n = DATA.filter(d => (d.type||'NHS')==='NHS').length;
   const p = DATA.filter(d => d.type==='Private').length;
@@ -273,7 +330,8 @@ function buildSpecialtyChips(){
   zone.classList.add('active');
   zone.querySelectorAll('.specialty-chip').forEach(c => c.addEventListener('click', () => selectSpec(c.dataset.spec)));
 }
-function selectType(type){
+function selectType(type){ setTimeout(updateAnpUI,0);
+
   selType = type; selSpec = 'all';
   document.querySelectorAll('.type-tab').forEach(t => { const on = t.dataset.type === type; t.classList.toggle('active', on); t.setAttribute('aria-selected', on?'true':'false'); });
   buildSpecialtyChips(); page = 1; render();
@@ -286,7 +344,7 @@ function buildFilters(){
   document.getElementById('areaOpts').innerHTML = Object.entries(areaC).sort((a,b)=>a[0].localeCompare(b[0])).map(([ar,c])=>`<label><input type="checkbox" onchange="toggle('area','${ar}')">${ar}<span class="badge">${c}</span></label>`).join('');
 }
 function toggle(type,val){ const s = type==='cqc'?selCQC:selArea; s.has(val)?s.delete(val):s.add(val); page=1; render(); }
-function clearSearch(){ document.getElementById('q').value=''; document.getElementById('clrBtn').style.display='none'; page=1; render(); }
+function clearSearch(){ document.getElementById('q').value=''; document.getElementById('clrBtn').style.display='none'; geo=null; page=1; render(); }
 function render(){
   const q = document.getElementById('q').value.trim().toLowerCase();
   const sort = document.getElementById('sortSel').value;
@@ -295,18 +353,20 @@ function render(){
     const recType = d.type || 'NHS';
     if(selType !== 'All' && recType !== selType) return false;
     if(selType === 'Private' && selSpec !== 'all' && !(d.specs||[]).includes(selSpec)) return false;
-    const ms = !q || d.n.toLowerCase().includes(q) || (d.p||'').toLowerCase().includes(q) || (d.a||'').toLowerCase().includes(q) || (d.ar||'').toLowerCase().includes(q) || (d.pcn||'').toLowerCase().includes(q) || (d.specs||[]).some(s => s.toLowerCase().includes(q));
+    const ms = !q || !!geo || d.n.toLowerCase().includes(q) || (d.p||'').toLowerCase().includes(q) || (d.a||'').toLowerCase().includes(q) || (d.ar||'').toLowerCase().includes(q) || (d.pcn||'').toLowerCase().includes(q) || (d.specs||[]).some(s => s.toLowerCase().includes(q));
     const mc = selCQC.size===0 || selCQC.has(d.cqc||'');
     const ma = selArea.size===0 || selArea.has(d.ar||'');
-    return ms && mc && ma;
+    const manp = !(document.getElementById('anpChk').checked && recType==='NHS') || d.anp===true;
+    return ms && mc && ma && manp;
   });
-  filtered.sort((a,b)=>{ if(sort==='name') return a.n.localeCompare(b.n); if(sort==='score_d') return (b.s||0)-(a.s||0); if(sort==='score_a'){ if(!a.s&&!b.s)return 0; if(!a.s)return 1; if(!b.s)return -1; return a.s-b.s; } if(sort==='contact_d') return (b.c||0)-(a.c||0); if(sort==='area') return (a.ar||'').localeCompare(b.ar||''); return 0; });
+  filtered.sort((a,b)=>{ if(sort==='dist') return distMi(a)-distMi(b); if(sort==='name') return a.n.localeCompare(b.n); if(sort==='score_d') return (b.s||0)-(a.s||0); if(sort==='score_a'){ if(!a.s&&!b.s)return 0; if(!a.s)return 1; if(!b.s)return -1; return a.s-b.s; } if(sort==='contact_d') return (b.c||0)-(a.c||0); if(sort==='area') return (a.ar||'').localeCompare(b.ar||''); return 0; });
   const tot = filtered.length;
   const pages = Math.max(1,Math.ceil(tot/PAGE));
   if(page>pages) page=Math.max(1,pages);
   const slice = filtered.slice((page-1)*PAGE, page*PAGE);
   const typeLabel = selType==='All' ? 'practices &amp; clinics' : selType==='Private' ? 'private clinics' : 'NHS practices';
-  document.getElementById('resCt').innerHTML = `Showing <strong>${slice.length}</strong> of <strong>${tot}</strong> ${typeLabel}`;
+  const geoNote = geo ? ` &middot; by distance from <strong>${geo.label}</strong> <button class="geo-clear" onclick="clearGeo()" title="Clear location">&#x2715;</button>` : '';
+  document.getElementById('resCt').innerHTML = `Showing <strong>${slice.length}</strong> of <strong>${tot}</strong> ${typeLabel}${geoNote}`;
   const grid = document.getElementById('grid');
   if(!slice.length){ grid.innerHTML='<div class="empty"><h3>No practices found</h3></div>'; document.getElementById('pager').innerHTML=''; return; }
   grid.innerHTML = slice.map(d=>{
@@ -321,9 +381,12 @@ function render(){
     const cqcBtn = d.cu?`<a class="pill pill-cqc" href="${d.cu}" target="_blank">CQC</a>`:'';
     const actionBtns = isPriv ? `${d.web?`<a class="pill pill-web" href="${d.web}" target="_blank">Website &#x2192;</a>`:''}${cqcBtn}` : `<a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>${cqcBtn}<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>`;
     const typeBadge = isPriv ? `<span class="type-badge t-priv">Private</span>` : `<span class="type-badge t-nhs">NHS</span>`;
+    const anpBadge = (!isPriv && d.anp===true) ? `<span class="anp-y">Accepting new patients</span>` : (!isPriv && d.anp===false) ? `<span class="anp-n">Not accepting new patients</span>` : '';
+    const dm = distMi(d);
+    const distChip = (geo && dm!==Infinity) ? `<span class="dist-chip">${dm<10?dm.toFixed(1):Math.round(dm)} mi</span>` : '';
     const specBadges = isPriv && d.specs ? d.specs.slice(0,2).map(s => `<span class="spec-badge">${s}</span>`).join('') : '';
     const metricsBlock = isPriv ? '' : `<div class="metrics"><div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div><div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div></div>`;
-    return `<div class="card"><div class="card-top"><div class="card-name">${d.n}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
+    return `<div class="card"><div class="card-top"><div class="card-name">${d.n}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
   }).join('');
   renderPager(pages);
 }
@@ -336,9 +399,10 @@ function renderPager(pages){
 function go(n){ const pages=Math.ceil(filtered.length/PAGE); if(n<1||n>pages)return; page=n; render(); window.scrollTo({top:0,behavior:'smooth'}); }
 const _urlType = new URLSearchParams(location.search).get('type');
 if (_urlType && ['NHS','Private','All'].includes(_urlType)) selType = _urlType;
-document.getElementById('q').addEventListener('input',()=>{page=1;render();});
+document.getElementById('q').addEventListener('input',()=>{page=1;render();maybeGeocode();});
 document.querySelectorAll('.type-tab').forEach(t => t.addEventListener('click', () => selectType(t.dataset.type)));
 DATA_READY.then(() => {
+  updateAnpUI();
   updateTypeCounts();
   buildFilters();
   buildSpecialtyChips();
