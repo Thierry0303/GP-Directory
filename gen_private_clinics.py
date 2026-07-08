@@ -66,69 +66,91 @@ EXCLUDE_SERVICE_TYPES = {
 # Order matters: first match wins for ambiguous names.
 NAME_PATTERNS = [
     ("psychiatry",       r"\b(?:psychiatr|psycholog|mental\s+health|counsell|therap|cbt\b|"
-                         r"eating\s+disorder|addiction|anxiety|depression|trauma)\b"),
-    ("cardiology",       r"\b(?:cardio|heart\s+clinic|cardiologist|arrhythmia)\b"),
+                         r"eating\s+disorder|addiction|anxiety|depression|trauma)"),
+    ("cardiology",       r"\b(?:cardio|heart\s+clinic|cardiologist|arrhythmia)"),
     ("dermatology",      r"\b(?:dermatolog|skin\s+(?:clinic|doctor|specialist)|"
-                         r"\bskin\b|mole\s+clinic|acne\s+clinic)\b"),
+                         r"\bskin\b|mole\s+clinic|acne\s+clinic)"),
     ("gynaecology",      r"\b(?:gynae|obstet|fertility|ivf\b|womens?\s+(?:health|clinic)|"
                          r"menopause|\bpms\b|premenstrual|maternity|pregnan|cervical|"
-                         r"endometri|miscarriage|coil|contracep)\b"),
+                         r"endometri|miscarriage|coil|contracep)"),
     ("paediatrics",      r"\b(?:paediatr|childrens?\s+(?:clinic|health|hospital)|"
-                         r"child\s+(?:health|psych))\b"),
+                         r"child\s+(?:health|psych))"),
     ("orthopaedics",     r"\b(?:orthopaed|musculoskelet|sports\s+(?:med|injury|clinic)|"
                          r"joint\s+(?:clinic|specialist)|knee\s+clinic|shoulder\s+clinic|"
-                         r"spine\s+(?:clinic|surgery)|back\s+pain\s+clinic)\b"),
+                         r"spine\s+(?:clinic|surgery)|back\s+pain\s+clinic)"),
     ("urology",          r"\b(?:urolog|prostate|kidney\s+(?:clinic|stone)|"
-                         r"erectile|circumcis|vasectom)\b"),
+                         r"erectile|circumcis|vasectom)"),
     ("ent",              r"\b(?:\bent\b|ear,?\s+nose|otolaryng|hearing\s+(?:test|clinic)|"
-                         r"sinus\s+clinic|voice\s+clinic)\b"),
+                         r"sinus\s+clinic|voice\s+clinic)"),
     ("ophthalmology",    r"\b(?:ophthalm|eye\s+(?:clinic|specialist|hospital)|"
-                         r"\boptometr|laser\s+eye|cataract|vision\s+clinic)\b"),
+                         r"\boptometr|laser\s+eye|cataract|vision\s+clinic)"),
     ("gastroenterology", r"\b(?:gastroenterolog|endoscop|colonoscop|liver\s+clinic|"
-                         r"\bibd\b|crohn|colitis|gut\s+clinic|gastrointestinal)\b"),
+                         r"\bibd\b|crohn|colitis|gut\s+clinic|gastrointestinal)"),
     ("oncology",         r"\b(?:oncolog|cancer\s+(?:clinic|centre|care)|chemotherap|"
-                         r"radiotherap|tumour|mammogram)\b"),
-    ("rheumatology",     r"\b(?:rheumatolog|arthritis\s+clinic|gout\s+clinic|fibromyalg|lupus)\b"),
+                         r"radiotherap|tumour|mammogram)"),
+    ("rheumatology",     r"\b(?:rheumatolog|arthritis\s+clinic|gout\s+clinic|fibromyalg|lupus)"),
     ("endocrinology",    r"\b(?:endocrinolog|diabetes\s+(?:clinic|centre)|hormone|"
-                         r"thyroid\s+(?:clinic|specialist))\b"),
+                         r"thyroid\s+(?:clinic|specialist))"),
     ("respiratory",      r"\b(?:respirator|lung\s+(?:clinic|cancer)|chest\s+clinic|"
-                         r"sleep\s+(?:clinic|disorder|apno?ea)|asthma\s+clinic|copd)\b"),
+                         r"sleep\s+(?:clinic|disorder|apno?ea)|asthma\s+clinic|copd)"),
     ("neurology",        r"\b(?:neurolog|epileps|migraine|parkinson|mult.+sclerosis|"
-                         r"memory\s+clinic|stroke\s+clinic|headache\s+clinic)\b"),
+                         r"memory\s+clinic|stroke\s+clinic|headache\s+clinic)"),
     ("haematology",      r"\b(?:haematolog|hematolog|blood\s+(?:clinic|disorder)|"
-                         r"anaem|leukaemia|lymphoma)\b"),
+                         r"anaem|leukaemia|lymphoma)"),
     ("plastic-surgery",  r"\b(?:plastic\s+surg|reconstruct\s+surg|cosmetic\s+surg|"
-                         r"rhinoplast|breast\s+(?:augment|reduct|implant)|liposuct)\b"),
+                         r"rhinoplast|breast\s+(?:augment|reduct|implant)|liposuct)"),
     ("vascular",         r"\b(?:vascular|vein\s+clinic|varicose|venous|phlebolog|"
-                         r"thrombosis|deep\s+vein)\b"),
+                         r"thrombosis|deep\s+vein)"),
     ("diagnostic",       r"\b(?:diagnostic|imaging|radiology|scan(?:ning)?\s+(?:clinic|centre)|"
                          r"\bmri\b|\bx-?ray\b|ultrasound|ct\s+scan|pet\s+scan|"
-                         r"echocardio|ecg\b)\b"),
+                         r"echocardio|ecg\b)"),
     ("aesthetic",        r"\b(?:aesthet|botox|laser\s+hair|cosmetic(?!\s+surg)|"
-                         r"filler|anti-aging|anti-?wrinkle|rejuvenat|beauty\s+clinic)\b"),
+                         r"filler|anti-aging|anti-?wrinkle|rejuvenat|beauty\s+clinic)"),
     ("weight-loss",      r"\b(?:slimming|weight\s+(?:loss|management)|bariatric|"
-                         r"obesity\s+clinic|gastric\s+(?:band|sleeve|bypass))\b"),
+                         r"obesity\s+clinic|gastric\s+(?:band|sleeve|bypass))"),
     ("travel-health",    r"\b(?:travel\s+(?:clinic|health|medicine|vaccin)|yellow\s+fever|"
-                         r"tropical\s+med|expat\s+health)\b"),
+                         r"tropical\s+med|expat\s+health)"),
     ("sexual-health",    r"\b(?:sexual\s+health|\bsti\b|\bstd\b|\bhiv\b|genitourinary|"
-                         r"\bgum\s+clinic|hpv\s+clinic)\b"),
+                         r"\bgum\s+clinic|hpv\s+clinic)"),
     ("private-gp",       r"\b(?:private\s+(?:gp|doctor|practice|family)|harley\s+street|"
                          r"family\s+(?:doctor|medicine|practice)|general\s+practice|"
-                         r"medicentre|medicus|medic\s+clinic|doctor\s+now|doctap)\b"),
-    ("physiotherapy",    r"\b(?:physiotherap|chiropract|osteopath|pilates|rehab)\b"),
+                         r"medicentre|medicus|medic\s+clinic|doctor\s+now|doctap)"),
+    ("physiotherapy",    r"\b(?:physiotherap|chiropract|osteopath|pilates|rehab)"),
 ]
+
+# CQC regulated activities that imply a specialty when the name is generic.
+ACTIVITY_SPECIALTIES = {
+    "Family planning": "sexual-health",
+    "Maternity and midwifery services": "gynaecology",
+    "Termination of pregnancies": "gynaecology",
+    "Services in slimming clinics": "weight-loss",
+}
 
 def classify_specialties(rec):
     """Return list of specialty keys for a private clinic record."""
     specs = set()
-    name_l = rec["name"].lower()
+    # Match against location name, provider name and website domain —
+    # e.g. "10 Harley Street" tells us nothing, but its provider
+    # "XYZ Dermatology Ltd" or website drhausdermatology.com does.
+    text = " ".join([
+        rec.get("name", ""),
+        rec.get("providerName", ""),
+        (rec.get("website", "") or "").replace("-", " ").replace(".", " ").replace("/", " "),
+    ]).lower()
 
     # 1. Name pattern matching
     for key, pat in NAME_PATTERNS:
-        if re.search(pat, name_l):
+        if re.search(pat, text):
             specs.add(key)
 
-    # 2. Default by service type if nothing specific matched
+    # 2. Regulated-activity hints (only when the name tells us nothing —
+    #    a full-service hospital registers many activities)
+    if not specs:
+        for act, key in ACTIVITY_SPECIALTIES.items():
+            if act in rec.get("regulatedActivities", []):
+                specs.add(key)
+
+    # 3. Default by service type if nothing specific matched
     if not specs:
         gac = rec.get("gacServiceTypes", [])
         if "Diagnosis/screening" in gac:
@@ -146,6 +168,17 @@ def classify_specialties(rec):
 
     return sorted(specs)
 
+# Person-led providers: an individual doctor registered with CQC in their
+# own name — the closest open-data proxy for "private consultant".
+PERSON_RE = re.compile(
+    r"^(dr|mr|mrs|ms|miss|prof(?:essor)?)\.?\s+[a-z]", re.I)
+
+def is_consultant_led(rec):
+    if rec.get("ownershipType") == "Individual":
+        return True
+    return bool(PERSON_RE.match(rec.get("providerName", "")) or
+                PERSON_RE.match(rec.get("name", "")))
+
 def is_nhs_gp(rec):
     """A real NHS GMS GP practice."""
     gac = rec.get("gacServiceTypes", [])
@@ -155,6 +188,8 @@ def is_nhs_gp(rec):
 
 def is_private(rec):
     """A private medical clinic / consultant / hospital — NOT an NHS GP."""
+    if rec.get("registrationStatus") == "Deregistered":
+        return False
     gac = rec.get("gacServiceTypes", [])
 
     if any(g in EXCLUDE_SERVICE_TYPES for g in gac):
@@ -275,6 +310,8 @@ def main():
     for rec in cache.values():
         if not is_private(rec): continue
         specs = classify_specialties(rec)
+        if is_consultant_led(rec):
+            specs = sorted(set(specs) | {"consultant"})
         output.append(to_merge_shape(rec, specs))
         for s in specs: by_specialty[s] += 1
         by_borough[rec.get("localAuthority", "(unknown)")] += 1
