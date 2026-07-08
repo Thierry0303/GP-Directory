@@ -256,8 +256,8 @@ print(f"  {len(merged)} active GP practices")
 Path("merged.json").write_text(json.dumps(merged))
 print(f"  wrote merged.json cache")
 
-print("Writing index.html...")
-DATA_JS = json.dumps(merged, separators=(",",":"))
+print("Writing data.json + index.html...")
+Path("data.json").write_text(json.dumps(merged, separators=(",",":"), ensure_ascii=False))
 date = datetime.utcnow().strftime("%-d %B %Y")
 
 with open("index.template.html") as f:
@@ -274,7 +274,6 @@ borough_nav = " ".join(
 )
 
 html = (html
-        .replace("__DATA_PLACEHOLDER__", DATA_JS)
         .replace("__UPDATED_DATE__", date)
         .replace("__PRACTICE_COUNT__", str(len(merged)))
         .replace("__BOROUGH_NAV__", borough_nav))
