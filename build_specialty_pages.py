@@ -52,6 +52,7 @@ SPECIALTY_META = {
     "urgent-care":       {"emoji": "🚑", "label": "Urgent Care",                   "desc": "Walk-in and urgent care centres in London for same-day treatment of non-emergency injuries and illnesses."},
     "hospice":           {"emoji": "🕊️", "label": "Hospices",                      "desc": "Hospice and end-of-life care services in London providing specialist palliative care and bereavement support."},
     "private-gp":        {"emoji": "🏠", "label": "Private GP & Family Medicine",  "desc": "Private GP clinics in London for same-day appointments, health checks, prescriptions and general medical care."},
+    "consultant":        {"emoji": "🩺", "label": "Consultant-Led Practices",   "desc": "Doctor-led private practices in London — CQC-registered clinics run by an individual consultant or doctor in their own name."},
 }
 
 # NHS GPs appear on the "private-gp" page as an alternative option
