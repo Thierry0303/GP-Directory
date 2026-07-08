@@ -24,6 +24,7 @@ from collections import Counter
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "cqc_london_cache.json.gz"
 OUT = ROOT / "private_clinics.json"
+FEES = ROOT / "private_fees.json"
 
 # NHS GP practice ODS code pattern: letter (not V/X) + 5 digits.
 NHS_GP_ODS_RE = re.compile(r"^[A-HJ-NPSW-Y]\d{5}$")
@@ -277,6 +278,12 @@ def to_merge_shape(rec, specs):
         "providerName":   rec.get("providerName", ""),
     }
 
+def load_fees():
+    if not FEES.exists():
+        return {}
+    data = json.loads(FEES.read_text())
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
 
 def deduplicate(records):
     """When multiple records share (name, postcode), keep the best-rated one.
@@ -304,6 +311,7 @@ def main():
         cache = json.load(f)
     print(f"Loaded {len(cache):,} cached locations")
 
+    fees = load_fees()
     output = []
     by_specialty = Counter()
     by_borough = Counter()
@@ -312,7 +320,13 @@ def main():
         specs = classify_specialties(rec)
         if is_consultant_led(rec):
             specs = sorted(set(specs) | {"consultant"})
-        output.append(to_merge_shape(rec, specs))
+        shaped = to_merge_shape(rec, specs)
+        fee = fees.get(rec.get("locationId") or "")
+        if fee and fee.get("from_gbp"):
+            shaped["fee_from"] = fee["from_gbp"]
+            shaped["fee_note"] = fee.get("note", "")
+            shaped["fee_checked"] = fee.get("checked", "")
+        output.append(shaped)
         for s in specs: by_specialty[s] += 1
         by_borough[rec.get("localAuthority", "(unknown)")] += 1
 

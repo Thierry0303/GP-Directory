@@ -281,7 +281,11 @@ def regenerate_index_html():
     (ROOT / "data.json").write_text(
         json.dumps(combined, separators=(",", ":"), ensure_ascii=False),
         encoding="utf-8")
+    nhs_n  = sum(1 for r in combined if r.get("type") != "Private")
+    priv_n = len(combined) - nhs_n
     html = (template
+            .replace("__NHS_COUNT__",        str(nhs_n))
+            .replace("__PRIVATE_COUNT__",    str(priv_n))
             .replace("__PRACTICE_COUNT__",   str(len(combined)))
             .replace("__BOROUGH_NAV__",      borough_nav)
             .replace("__UPDATED_DATE__",     today))

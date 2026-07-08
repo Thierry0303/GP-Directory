@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>London GP Directory — Find &amp; Compare NHS GP Practices in London</title>
-<meta name="description" content="Free directory of every NHS GP practice in London. Compare __PRACTICE_COUNT__ practices by patient survey, CQC rating and contact details. Updated weekly from NHS ODS.">
+<meta name="description" content="Free directory of NHS GP practices and private clinics in London. Compare __NHS_COUNT__ NHS practices and __PRIVATE_COUNT__ CQC-registered private clinics by patient survey scores, CQC rating and contact details. Updated weekly.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#003087">
 <link rel="canonical" href="https://londongp.directory/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="London GP Directory">
 <meta property="og:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
-<meta property="og:description" content="Free directory of every NHS GP practice in London. Compare patient scores, CQC ratings and contact details across __PRACTICE_COUNT__ practices.">
+<meta property="og:description" content="Free directory of London healthcare: __NHS_COUNT__ NHS GP practices and __PRIVATE_COUNT__ private clinics with patient scores, CQC ratings and contact details.">
 <meta property="og:url" content="https://londongp.directory/">
 <meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://londongp.directory/og-image.png">
@@ -147,6 +147,7 @@ footer a{color:rgba(255,255,255,.8)}
 }
 .anp-y{background:#e7f6ec;color:#0F6E56;border:1px solid #bfe5cd;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
 .anp-n{background:#fdeeee;color:#a33;border:1px solid #f2cfcf;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
+.fee-chip{background:#fff7e6;color:#8a5a00;border:1px solid #f0dfb8;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
 .dist-chip{background:#eef3fb;color:#003087;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
 .near-btn{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.2);color:#fff;padding:11px 15px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;white-space:nowrap}
 .geo-clear{background:none;border:none;color:#a33;cursor:pointer;font-size:12px;padding:0 2px}
@@ -161,7 +162,8 @@ footer a{color:rgba(255,255,255,.8)}
         <p>Find &amp; compare NHS GP practices &amp; private clinics across London</p>
       </div>
       <div class="hdr-stats">
-        <div><strong>__PRACTICE_COUNT__</strong><span>practices</span></div>
+        <div><strong>__NHS_COUNT__</strong><span>NHS practices</span></div>
+        <div><strong>__PRIVATE_COUNT__</strong><span>private clinics</span></div>
         <div><strong>101</strong><span>areas</span></div>
         <div><strong>121</strong><span>PCNs</span></div>
         <div><strong id="avgScore">76</strong><span>avg score %</span></div>
@@ -173,7 +175,7 @@ footer a{color:rgba(255,255,255,.8)}
       <a href="/" class="active">Search</a>
       <a href="/boroughs/">Boroughs</a>
       <a href="/nhs-services/">NHS Services</a>
-      <a href="/private/">Private Clinics</a>
+      <a href="/private/">Private Clinics</a> <a href="/guides/">Guides</a>
       <a href="/methodology.html">Methodology</a>
       <a href="/sources.html">Sources</a>
     </div>
@@ -251,7 +253,8 @@ footer a{color:rgba(255,255,255,.8)}
   <a href="/methodology.html">Methodology</a> &middot;
   <a href="/sources.html">Sources</a> &middot;
   <a href="/boroughs/">Boroughs</a> &middot;
-  <a href="/nhs-services/">NHS Services</a>
+  <a href="/nhs-services/">NHS Services</a> &middot;
+  <a href="/guides/">Guides</a>
 </footer>
 <script>
 let DATA = [];
@@ -385,8 +388,9 @@ function render(){
     const dm = distMi(d);
     const distChip = (geo && dm!==Infinity) ? `<span class="dist-chip">${dm<10?dm.toFixed(1):Math.round(dm)} mi</span>` : '';
     const specBadges = isPriv && d.specs ? d.specs.slice(0,2).map(s => `<span class="spec-badge">${s}</span>`).join('') : '';
+    const feeChip = (isPriv && d.fee) ? `<span class="fee-chip">GP visit from &pound;${d.fee}</span>` : '';
     const metricsBlock = isPriv ? '' : `<div class="metrics"><div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div><div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div></div>`;
-    return `<div class="card"><div class="card-top"><div class="card-name">${d.n}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
+    return `<div class="card"><div class="card-top"><div class="card-name">${d.n}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${feeChip}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
   }).join('');
   renderPager(pages);
 }

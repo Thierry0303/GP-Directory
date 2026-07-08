@@ -118,10 +118,11 @@ def normalise_private(r):
         "cqc":  cqc_rating,
         "cu":   r.get("cqc_url") or "",
         "ar":   borough,
-        "la":   None,
-        "ln":   None,
+        "la":   r.get("lat"),
+        "ln":   r.get("lon"),
         "type": "Private",
         "web":  r.get("website") or "",
+        **({"fee": r["fee_from"], "feeChk": r.get("fee_checked","")} if r.get("fee_from") else {}),
     }
 
 def main():

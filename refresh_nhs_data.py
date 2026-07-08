@@ -289,6 +289,8 @@ borough_nav = " ".join(
 )
 
 html = (html
+        .replace("__NHS_COUNT__", str(len(merged)))
+        .replace("__PRIVATE_COUNT__", "0")
         .replace("__UPDATED_DATE__", date)
         .replace("__PRACTICE_COUNT__", str(len(merged)))
         .replace("__BOROUGH_NAV__", borough_nav))

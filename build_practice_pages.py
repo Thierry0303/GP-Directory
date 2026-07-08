@@ -249,6 +249,14 @@ def render_about(practice):
             f"private medical insurance — contact the clinic for fees and "
             f"availability.</p>"
         ]
+        fee = practice.get("fee")
+        if fee:
+            chk = practice.get("feeChk", "")
+            parts.append(
+                f"<p>Standard GP consultations start from <strong>&pound;{fee}</strong> "
+                f"according to the clinic's published price list"
+                + (f" (checked {html.escape(chk)})" if chk else "")
+                + ". Always confirm current fees with the clinic before booking.</p>")
         if cqc:
             parts.append(
                 f'<p>The service is rated <strong>{html.escape(cqc)}</strong> by '
@@ -316,6 +324,7 @@ def render_faq(practice):
               ". As a private provider, no NHS referral or registration is needed, "
               "though some specialists may ask for a GP referral letter.")),
             ("How much does it cost?",
+             (f"Standard GP consultations start from &pound;{practice['fee']} per the clinic's published price list. " if practice.get("fee") else "") +
              "Fees are set by the clinic and vary by service. Most private clinics "
              "publish prices on their website or provide them on enquiry. Many are "
              "recognised by private medical insurers such as Bupa, AXA Health, "
