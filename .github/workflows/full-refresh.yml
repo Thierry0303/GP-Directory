@@ -56,6 +56,11 @@ jobs:
         run: python drop_non_gms.py
       - name: Fix borough assignments
         run: python fix_boroughs.py
+      - name: Fetch CQC key-question ratings
+        env:
+          CQC_KEY: ${{ secrets.CQC_KEY }}
+        run: python fetch_cqc_domain_ratings.py
+        continue-on-error: true
 
       # ---- 5. Build pages ----
       - name: Build borough pages
