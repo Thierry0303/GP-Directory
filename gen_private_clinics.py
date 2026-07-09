@@ -115,7 +115,7 @@ NAME_PATTERNS = [
                          r"\bgum\s+clinic|hpv\s+clinic)"),
     ("private-gp",       r"\b(?:private\s+(?:gp|doctor|practice|family)|harley\s+street|"
                          r"family\s+(?:doctor|medicine|practice)|general\s+practice|"
-                         r"medicentre|medicus|medic\s+clinic|doctor\s+now|doctap)"),
+                         r"medicentre|medicus|medic\s+clinic|doctor\s+now|doctap|doctors\s+clinic|private\s+clinic|walk-?in\s+clinic)"),
     ("physiotherapy",    r"\b(?:physiotherap|chiropract|osteopath|pilates|rehab)"),
 ]
 
