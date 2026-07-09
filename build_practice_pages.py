@@ -205,7 +205,18 @@ def render_metrics(practice):
     c = practice.get("c")
     if c:
         blocks.append(f'<div class="metric"><div class="metric-lbl">Contact Ease</div><div class="metric-val">{round(c,1)}%</div><div class="metric-track"><div class="metric-bar" style="width:{round(c,1)}%;background:#0F6E56"></div></div></div>')
-    return f'<div class="metrics">{"".join(blocks)}</div>' if blocks else ""
+    extra_gpps = [("Confidence & trust", practice.get("t")),
+                  ("Needs met", practice.get("nm")),
+                  ("Reception helpful", practice.get("rc")),
+                  ("Sees preferred GP", practice.get("ct"))]
+    for lbl, v in extra_gpps:
+        if v:
+            blocks.append(
+                f'<div class="metric"><div class="metric-lbl">{lbl}</div>'
+                f'<div class="metric-val">{round(v,1)}%</div>'
+                f'<div class="metric-track"><div class="metric-bar" style="width:{round(v,1)}%;background:#5B2C83"></div></div></div>')
+    main_block = f'<div class="metrics">{"".join(blocks)}</div>' if blocks else ""
+    return main_block + render_cqc_domains(practice)
 
 def render_actions(practice):
     out = []
@@ -548,6 +559,38 @@ def render_page(practice, neighbours):
 """
 
 # ---------------------------------------------------------------- data load
+
+DOMAINS_FILE = ROOT / "cqc_domains.json"
+try:
+    CQC_DOMAINS = json.loads(DOMAINS_FILE.read_text()) if DOMAINS_FILE.exists() else {}
+except Exception:
+    CQC_DOMAINS = {}
+import re as _re
+_LOC_RE = _re.compile(r"/location/(1-\d+)")
+
+def cqc_location_id(practice):
+    o = str(practice.get("o", ""))
+    if o.startswith("1-"):
+        return o
+    m = _LOC_RE.search(practice.get("cu") or "")
+    return m.group(1) if m else ""
+
+def render_cqc_domains(practice):
+    dom = CQC_DOMAINS.get(cqc_location_id(practice)) or {}
+    rows = [(lbl, dom.get(k)) for lbl, k in
+            (("Safe","safe"), ("Effective","effective"), ("Caring","caring"),
+             ("Responsive","responsive"), ("Well-led","wellLed"))
+            if dom.get(k)]
+    if not rows:
+        return ""
+    cells = "".join(
+        f'<div class="metric"><div class="metric-lbl">{lbl}</div>'
+        f'<div class="metric-val"><span class="cqc-badge {cqc_class(r)}">{html.escape(r)}</span></div></div>'
+        for lbl, r in rows)
+    insp = dom.get("inspected", "")
+    note = (f'<p style="font-size:12.5px;color:#888;margin:6px 0 0">'
+            f'CQC key question ratings · last inspection {html.escape(insp)}</p>' if insp else "")
+    return f'<div class="metrics">{cells}</div>{note}'
 
 def load_practices():
     if MERGED_JSON.exists():

@@ -248,6 +248,10 @@ for ods in ods_codes:
         "ar": area(pc),
         "la": round(lat,5) if lat else None,
         "ln": round(lng,5) if lng else None,
+        **{ck: base[fk] for ck, fk in
+           (("t","gpps_trust_pct"), ("nm","gpps_needs_met_pct"),
+            ("rc","gpps_reception_pct"), ("ct","gpps_continuity_pct"))
+           if base.get(fk) is not None},
     })
 
 # Accepting-new-patients flags (written by fetch_accepting_patients.py)
