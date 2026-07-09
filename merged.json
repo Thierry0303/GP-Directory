@@ -20811,9 +20811,9 @@
     "ph": "02085974321",
     "s": null,
     "c": null,
-    "pcn": "weight-loss",
+    "pcn": "private-gp",
     "specs": [
-      "weight-loss"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-12924892907",
@@ -22623,10 +22623,9 @@
     "ph": "02071830553",
     "s": null,
     "c": null,
-    "pcn": "sexual-health, weight-loss",
+    "pcn": "private-gp",
     "specs": [
-      "sexual-health",
-      "weight-loss"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-13974231891",
@@ -24694,10 +24693,9 @@
     "ph": "02071830553",
     "s": null,
     "c": null,
-    "pcn": "sexual-health, weight-loss",
+    "pcn": "private-gp",
     "specs": [
-      "sexual-health",
-      "weight-loss"
+      "private-gp"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-15678447155",
@@ -26206,9 +26204,9 @@
     "ph": "02039033021",
     "s": null,
     "c": null,
-    "pcn": "hospital",
+    "pcn": "private-gp",
     "specs": [
-      "hospital"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-17429112856",
@@ -30201,9 +30199,9 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "weight-loss",
+    "pcn": "private-gp",
     "specs": [
-      "weight-loss"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-14142156446",
@@ -34414,9 +34412,9 @@
     "ph": "02071830553",
     "s": null,
     "c": null,
-    "pcn": "weight-loss",
+    "pcn": "private-gp",
     "specs": [
-      "weight-loss"
+      "private-gp"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-7740758067",
@@ -46411,7 +46409,7 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-28493430438",
     "ar": "Southwark",
     "la": 51.5010956,
@@ -46478,5 +46476,25 @@
     "ln": -0.2223849,
     "type": "Private",
     "web": "https://www.neogleam.co.uk"
+  },
+  {
+    "o": "1-26021347023",
+    "n": "Neuner Road",
+    "a": "Flat 123, Alington House, 1 Mary Neuner Road, London",
+    "p": "N8 0ES",
+    "ph": "07800754646",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-26021347023",
+    "ar": "Haringey",
+    "la": 51.5922879,
+    "ln": -0.1136922,
+    "type": "Private",
+    "web": ""
   }
 ]

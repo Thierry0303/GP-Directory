@@ -4497,7 +4497,7 @@
     "phone": "02085974321",
     "website": "",
     "specialties": [
-      "weight-loss"
+      "private-gp"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-12924892907",
@@ -6235,8 +6235,7 @@
     "phone": "02071830553",
     "website": "",
     "specialties": [
-      "sexual-health",
-      "weight-loss"
+      "private-gp"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-13974231891",
@@ -8202,8 +8201,7 @@
     "phone": "02071830553",
     "website": "",
     "specialties": [
-      "sexual-health",
-      "weight-loss"
+      "private-gp"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-15678447155",
@@ -9657,7 +9655,7 @@
     "phone": "02039033021",
     "website": "",
     "specialties": [
-      "hospital"
+      "private-gp"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-17429112856",
@@ -13483,7 +13481,7 @@
     "phone": "",
     "website": "https://www.londondoctorsclinic.co.uk",
     "specialties": [
-      "weight-loss"
+      "private-gp"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-20294992735",
@@ -17523,7 +17521,7 @@
     "phone": "02071830553",
     "website": "https://www.londondoctorsclinic.co.uk/clinics/london-bridge/",
     "specialties": [
-      "weight-loss"
+      "private-gp"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-23565119909",
@@ -29004,5 +29002,24 @@
     "lon": -0.2223849,
     "providerName": "",
     "ar": "Hammersmith & Fulham"
+  },
+  {
+    "cqc_id": "1-26021347023",
+    "ods_code": "",
+    "name": "Neuner Road",
+    "address": "Flat 123, Alington House, 1 Mary Neuner Road, London",
+    "postcode": "N8 0ES",
+    "phone": "07800754646",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-26021347023",
+    "localAuthority": "Haringey",
+    "lat": 51.5922879,
+    "lon": -0.1136922,
+    "providerName": "",
+    "ar": "Haringey"
   }
 ]
