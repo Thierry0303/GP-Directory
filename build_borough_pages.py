@@ -79,8 +79,13 @@ def render_card(d):
         actions = (f'<a class="pill pill-reg" href="https://gp-registration.nhs.uk/{o}" target="_blank">Register</a>'
                    + cqc_btn
                    + f'<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X{o}" target="_blank">NHS</a>')
+    pslug = slugify(d.get("n", ""))
+    bslug = slugify(d.get("ar", ""))
+    page_url = f"/practice/{bslug}/{pslug}/" if pslug and bslug else ""
+    name_html = (f'<a class="card-name-link" href="{page_url}">{name}</a>'
+                 if page_url else name)
     return (f'<div class="card" data-type="{rec_type}" data-specs="{",".join(specs)}">'
-            f'<div class="card-top"><div class="card-name">{name}</div>'
+            f'<div class="card-top"><div class="card-name">{name_html}</div>'
             f'<span class="cqc {cc}">{cqc_label}</span></div>'
             f'<div class="card-badges">{type_badge}{spec_badges}</div>'
             f'<div class="card-addr">{addr}{", " + pc if pc else ""}</div>'
@@ -155,7 +160,11 @@ def render_borough_page(borough, records, all_boroughs, today):
         '.results-bar{font-size:13px;color:#888;margin-bottom:14px}\n'
         '.results-bar strong{color:#222}\n'
         '#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:13px}\n'
-        '.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column}\n'
+        '.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:15px 16px;display:flex;flex-direction:column;position:relative;transition:box-shadow .15s,border-color .15s}\n'
+        '.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 10px rgba(0,48,135,.12);cursor:pointer}\n'
+        '.card-name-link{color:inherit;text-decoration:none}\n'
+        '.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}\n'
+        '.card .card-phone,.card .actions,.card .pill{position:relative;z-index:1}\n'
         '.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:7px}\n'
         '.card-name{font-family:Georgia,serif;font-size:14px;font-weight:700;color:#003087;flex:1;line-height:1.3}\n'
         '.cqc{flex-shrink:0;font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:99px;white-space:nowrap}\n'
