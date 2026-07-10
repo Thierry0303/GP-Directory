@@ -91,8 +91,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -140,6 +144,27 @@ def cqc_class(r):
 def cqc_label(r):
     return r or 'Not rated'
 
+_PAGE_URLS = None
+def _page_urls():
+    """cqc_id -> /practice/<b>/<slug>/ from merged.json (the same records
+    build_practice_pages.py generates from), verified to exist on disk —
+    CQC's localAuthority and our postcode-derived borough disagree at times,
+    so never guess the URL from raw CQC data."""
+    global _PAGE_URLS
+    if _PAGE_URLS is not None:
+        return _PAGE_URLS
+    import json as _json
+    _PAGE_URLS = {}
+    merged = ROOT / "merged.json"
+    if merged.exists():
+        for r in _json.loads(merged.read_text()):
+            if r.get("type") != "Private":
+                continue
+            b, n = slugify(r.get("ar", "")), slugify(r.get("n", ""))
+            if b and n and (ROOT / "practice" / b / n / "index.html").exists():
+                _PAGE_URLS[r.get("o", "")] = f"/practice/{b}/{n}/"
+    return _PAGE_URLS
+
 def render_private_card(p):
     rating  = p.get('cqc_rating','')
     badge   = f'<span class="cqc-badge cqc-{cqc_class(rating)}">{cqc_label(rating)}</span>' if rating else ''
@@ -150,8 +175,11 @@ def render_private_card(p):
     if p.get('phone'):    actions.append(f'<span class="btn-phone">📞 {p["phone"]}</span>')
     if p.get('cqc_url'):  actions.append(f'<a class="btn btn-cqc" href="{p["cqc_url"]}" target="_blank" rel="noopener">CQC</a>')
     if p.get('website'):  actions.append(f'<a class="btn btn-web" href="{p["website"]}" target="_blank" rel="noopener">Website</a>')
+    page_url = _page_urls().get(p.get("cqc_id", ""), "")
+    name_html = (f'<a class="card-name-link" href="{page_url}">{p["name"]}</a>'
+                 if page_url else p['name'])
     return f"""<div class="card" data-borough="{borough}" data-type="private">
-  <div class="card-name">{p['name']}</div>
+  <div class="card-name">{name_html}</div>
   <div class="card-addr">{p.get('address','')}{', ' + p['postcode'] if p.get('postcode') else ''}</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -169,9 +197,14 @@ def render_nhs_card(g):
     if g.get('ph'): actions.append(f'<span class="btn-phone">📞 {g["ph"]}</span>')
     if g.get('cu'): actions.append(f'<a class="btn btn-cqc" href="{g["cu"]}" target="_blank" rel="noopener">CQC</a>')
     slug_name = slugify(g.get('n',''))
-    actions.append(f'<a class="btn btn-nhs" href="/practice/{slug_name}/">View</a>')
+    page_url = (f"/practice/{slugify(borough)}/{slug_name}/"
+                if borough and slug_name else "")
+    if page_url:
+        actions.append(f'<a class="btn btn-nhs" href="{page_url}">View</a>')
+    name_html = (f'<a class="card-name-link" href="{page_url}">{g.get("n","")}</a>'
+                 if page_url else g.get('n',''))
     return f"""<div class="card" data-borough="{borough}" data-type="nhs">
-  <div class="card-name">{g.get('n','')}</div>
+  <div class="card-name">{name_html}</div>
   <div class="card-addr">{g.get('a','')}{', ' + g['p'] if g.get('p') else ''}</div>
   <div class="card-tags">
     <span class="tag nhs">NHS</span>

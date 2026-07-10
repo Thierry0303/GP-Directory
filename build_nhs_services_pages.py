@@ -100,7 +100,13 @@ def index_page(grouped):
 <title>NHS Services in London — London GP Directory</title>
 <meta name="description" content="Browse NHS hospitals, urgent care, mental health, diagnostic and community services across London.">
 <link rel="canonical" href="https://londongp.directory/nhs-services/">
-<style>{CSS}</style></head><body>
+<style>{CSS}
+.row{{position:relative;transition:box-shadow .15s,border-color .15s}}
+.row:has(.row-link):hover{{border-color:#003087;box-shadow:0 2px 10px rgba(0,48,135,.12);cursor:pointer}}
+.row-link{{color:inherit;text-decoration:none}}
+.row-link::after{{content:"";position:absolute;inset:0;border-radius:inherit}}
+.row .meta a,.row .meta{{position:relative;z-index:1}}
+</style></head><body>
 {NAV.format(nhs_active='active')}
 <main class="wrap">
 <div class="crumbs"><a href="/">Home</a> &rsaquo; NHS Services</div>
@@ -113,9 +119,20 @@ def index_page(grouped):
 def category_page(slug_key, label, blurb, records):
     records.sort(key=lambda r: r["name"])
     cards = []
+    import json as _json
+    prov_file = NHS_JSON.parent / "provider_ratings.json"
+    prov_ratings = _json.loads(prov_file.read_text()) if prov_file.exists() else {}
     for r in records:
-        cqc_class = rating_class(r.get("cqc_rating", ""))
-        cqc_label = r.get("cqc_rating") or "Not rated"
+        rating = r.get("cqc_rating", "")
+        trust_rating = "" if rating else prov_ratings.get(r.get("providerId",""), "")
+        if rating:
+            chip = f'<span class="cqc-tag {rating_class(rating)}">{rating}</span>'
+        elif trust_rating:
+            chip = (f'<span class="cqc-tag {rating_class(trust_rating)}" '
+                    f'title="CQC rating of the NHS trust that runs this service">'
+                    f'Trust: {trust_rating}</span>')
+        else:
+            chip = ""   # showing "Not rated" on every card reads as broken data
         actions = []
         if r.get("phone"):
             actions.append(f'<a href="tel:{r["phone"]}">📞 {r["phone"]}</a>')
@@ -123,15 +140,28 @@ def category_page(slug_key, label, blurb, records):
             actions.append(f'<a href="{r["website"]}" target="_blank">Website ↗</a>')
         if r.get("cqc_url"):
             actions.append(f'<a href="{r["cqc_url"]}" target="_blank">CQC ↗</a>')
-        display = r["name"] or r.get("providerName") or r.get("localAuthority") or "Unnamed"
+        # CQC often names NHS community locations after the borough they
+        # cover ("Lewisham") — meaningless on a card. Prefer the provider.
+        name = (r["name"] or "").strip()
+        prov = (r.get("providerName") or "").strip()
+        la   = (r.get("localAuthority") or "").strip()
+        boroughs = {rec.get("localAuthority","") for rec in records}
+        if prov and (not name or name == la or name in boroughs):
+            display = f"{prov}" + (f" ({name})" if name and name not in prov else "")
+        else:
+            display = name or prov or "Unnamed service"
         addr = r.get("address","")
         if r.get("postcode"): addr = (addr + ", " + r["postcode"]).strip(", ")
-        if not addr: addr = "&mdash;"
-        cards.append(f'''<a class="row" href="{r.get("cqc_url","#")}" target="_blank">
-            <h3>{display} <span class="cqc-tag {cqc_class}">{cqc_label}</span></h3>
-            <p>{addr}</p>
-            <div class="meta">{r.get("localAuthority","")} {" · " + " · ".join(actions) if actions else ""}</div>
-        </a>''')
+        # Whole card clicks through to the service's website, falling back
+        # to its CQC profile. Inner links stay independently clickable.
+        main_href = r.get("website") or r.get("cqc_url") or ""
+        name_html = (f'<a class="row-link" href="{main_href}" target="_blank" rel="noopener">{display}</a>'
+                     if main_href else display)
+        cards.append(f'''<div class="row">
+            <h3>{name_html} {chip}</h3>
+            {f"<p>{addr}</p>" if addr else ""}
+            <div class="meta">{la}{" · " + " · ".join(actions) if actions else ""}</div>
+        </div>''')
     grid = ''.join(cards) if cards else '<p style="color:#888;padding:24px 0">No records in this category yet. We rely on CQC data — if you know of a missing service, please <a href="/corrections.html">tell us</a>.</p>'
     return f"""<!DOCTYPE html>
 <html lang="en"><head>
@@ -139,7 +169,13 @@ def category_page(slug_key, label, blurb, records):
 <title>{label} in London — London GP Directory</title>
 <meta name="description" content="{blurb}">
 <link rel="canonical" href="https://londongp.directory/nhs-services/{slug_key}/">
-<style>{CSS}</style></head><body>
+<style>{CSS}
+.row{{position:relative;transition:box-shadow .15s,border-color .15s}}
+.row:has(.row-link):hover{{border-color:#003087;box-shadow:0 2px 10px rgba(0,48,135,.12);cursor:pointer}}
+.row-link{{color:inherit;text-decoration:none}}
+.row-link::after{{content:"";position:absolute;inset:0;border-radius:inherit}}
+.row .meta a,.row .meta{{position:relative;z-index:1}}
+</style></head><body>
 {NAV.format(nhs_active='active')}
 <main class="wrap">
 <div class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/nhs-services/">NHS Services</a> &rsaquo; {label}</div>

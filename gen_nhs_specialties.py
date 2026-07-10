@@ -147,6 +147,7 @@ def slim(rec, category):
         "cqc_url":        rec.get("cqcUrl", ""),
         "localAuthority": rec.get("localAuthority", ""),
         "providerName":   rec.get("providerName", ""),
+        "providerId":     rec.get("providerId", ""),
         "lat":            rec.get("lat"),
         "lon":            rec.get("lon"),
     }

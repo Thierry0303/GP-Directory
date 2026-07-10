@@ -11,6 +11,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1H12",
     "localAuthority": "Tower Hamlets",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.518702,
     "lon": -0.0601379
   },
@@ -26,6 +27,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1H13",
     "localAuthority": "Tower Hamlets",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.5250491,
     "lon": -0.0421793
   },
@@ -41,6 +43,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1H41",
     "localAuthority": "Barking and Dagenham",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.5385625,
     "lon": 0.0987522
   },
@@ -56,6 +59,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1HM0",
     "localAuthority": "City of London",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.51775,
     "lon": -0.100404
   },
@@ -71,6 +75,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1HNH",
     "localAuthority": "Newham",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.5227774,
     "lon": 0.0347443
   },
@@ -86,6 +91,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1HX7",
     "localAuthority": "Tower Hamlets",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.500806,
     "lon": -0.025725
   },
@@ -101,6 +107,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1HKH",
     "localAuthority": "Waltham Forest",
     "providerName": "Barts Health NHS Trust",
+    "providerId": "R1H",
     "lat": 51.5788328,
     "lon": 0.0026655
   },
@@ -116,6 +123,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1K03",
     "localAuthority": "Brent",
     "providerName": "London North West University Healthcare NHS Trust",
+    "providerId": "R1K",
     "lat": 51.575407,
     "lon": -0.322037
   },
@@ -131,6 +139,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1K02",
     "localAuthority": "Brent",
     "providerName": "London North West University Healthcare NHS Trust",
+    "providerId": "R1K",
     "lat": 51.5309378,
     "lon": -0.2691376
   },
@@ -146,6 +155,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1K04",
     "localAuthority": "Ealing",
     "providerName": "London North West University Healthcare NHS Trust",
+    "providerId": "R1K",
     "lat": 51.512608,
     "lon": -0.364849
   },
@@ -161,6 +171,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/R1K01",
     "localAuthority": "Brent",
     "providerName": "London North West University Healthcare NHS Trust",
+    "providerId": "R1K",
     "lat": 51.575407,
     "lon": -0.322037
   },
@@ -176,6 +187,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL002",
     "localAuthority": "Enfield",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.662127,
     "lon": -0.084383
   },
@@ -191,6 +203,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL001",
     "localAuthority": "Enfield",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.613094,
     "lon": -0.07375
   },
@@ -206,6 +219,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL004",
     "localAuthority": "Enfield",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.6584313,
     "lon": -0.0877052
   },
@@ -221,6 +235,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL003",
     "localAuthority": "Enfield",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.6526224,
     "lon": -0.0833083
   },
@@ -236,6 +251,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL01",
     "localAuthority": "Camden",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.5532265,
     "lon": -0.1652982
   },
@@ -251,6 +267,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL26",
     "localAuthority": "Barnet",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.650726,
     "lon": -0.214152
   },
@@ -266,6 +283,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAL45",
     "localAuthority": "Haringey",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.589278,
     "lon": -0.054824
   },
@@ -281,6 +299,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RALC7",
     "localAuthority": "Enfield",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.666528,
     "lon": -0.104009
   },
@@ -296,6 +315,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAN01",
     "localAuthority": "Harrow",
     "providerName": "Royal National Orthopaedic Hospital NHS Trust",
+    "providerId": "RAN",
     "lat": 51.6325664,
     "lon": -0.310418
   },
@@ -311,6 +331,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAN02",
     "localAuthority": "Westminster",
     "providerName": "Royal National Orthopaedic Hospital NHS Trust",
+    "providerId": "RAN",
     "lat": 51.5233121,
     "lon": -0.1432637
   },
@@ -326,6 +347,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAS02",
     "localAuthority": "Hillingdon",
     "providerName": "The Hillingdon Hospitals NHS Foundation Trust",
+    "providerId": "RAS",
     "lat": 51.614923,
     "lon": -0.445823
   },
@@ -341,6 +363,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RALRA",
     "localAuthority": "Barnet",
     "providerName": "Royal Free London NHS Foundation Trust",
+    "providerId": "RAL",
     "lat": 51.606478,
     "lon": -0.271248
   },
@@ -356,6 +379,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAN03",
     "localAuthority": "Enfield",
     "providerName": "Royal National Orthopaedic Hospital NHS Trust",
+    "providerId": "RAN",
     "lat": 51.6335902,
     "lon": -0.0530157
   },
@@ -371,6 +395,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAS01",
     "localAuthority": "Hillingdon",
     "providerName": "The Hillingdon Hospitals NHS Foundation Trust",
+    "providerId": "RAS",
     "lat": 51.526077,
     "lon": -0.461175
   },
@@ -386,6 +411,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RATGA",
     "localAuthority": "Redbridge",
     "providerName": "North East London NHS Foundation Trust",
+    "providerId": "RAT",
     "lat": 51.5779939,
     "lon": 0.1105138
   },
@@ -401,6 +427,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RATPP",
     "localAuthority": "Redbridge",
     "providerName": "North East London NHS Foundation Trust",
+    "providerId": "RAT",
     "lat": 51.5779939,
     "lon": 0.1105138
   },
@@ -416,6 +443,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RATRK",
     "localAuthority": "Redbridge",
     "providerName": "North East London NHS Foundation Trust",
+    "providerId": "RAT",
     "lat": 51.5729286,
     "lon": 0.1107126
   },
@@ -431,6 +459,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RATLQ",
     "localAuthority": "Waltham Forest",
     "providerName": "North East London NHS Foundation Trust",
+    "providerId": "RAT",
     "lat": 51.619669,
     "lon": -0.001198
   },
@@ -446,6 +475,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RATWD",
     "localAuthority": "Waltham Forest",
     "providerName": "North East London NHS Foundation Trust",
+    "providerId": "RAT",
     "lat": 51.57765,
     "lon": 0.0066258
   },
@@ -461,6 +491,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAX01",
     "localAuthority": "Kingston upon Thames",
     "providerName": "Kingston and Richmond NHS Foundation Trust",
+    "providerId": "RAX",
     "lat": 51.414826,
     "lon": -0.282601
   },
@@ -476,6 +507,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAX05",
     "localAuthority": "Richmond upon Thames",
     "providerName": "Kingston and Richmond NHS Foundation Trust",
+    "providerId": "RAX",
     "lat": 51.4258375,
     "lon": -0.340978
   },
@@ -491,6 +523,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RAX32",
     "localAuthority": "Richmond upon Thames",
     "providerName": "Kingston and Richmond NHS Foundation Trust",
+    "providerId": "RAX",
     "lat": 51.427449,
     "lon": -0.326599
   },
@@ -506,6 +539,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RF4PP",
     "localAuthority": "Barking and Dagenham",
     "providerName": "Barking, Havering and Redbridge University Hospitals NHS Trust",
+    "providerId": "RF4",
     "lat": 51.538564,
     "lon": 0.098727
   },
@@ -521,6 +555,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RF4DG",
     "localAuthority": "Redbridge",
     "providerName": "Barking, Havering and Redbridge University Hospitals NHS Trust",
+    "providerId": "RF4",
     "lat": 51.580545,
     "lon": 0.112107
   },
@@ -536,6 +571,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RF4XY",
     "localAuthority": "Redbridge",
     "providerName": "Barking, Havering and Redbridge University Hospitals NHS Trust",
+    "providerId": "RF4",
     "lat": 51.5779939,
     "lon": 0.1105138
   },
@@ -551,6 +587,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RF4QH",
     "localAuthority": "Havering",
     "providerName": "Barking, Havering and Redbridge University Hospitals NHS Trust",
+    "providerId": "RF4",
     "lat": 51.568647,
     "lon": 0.179031
   },
@@ -566,6 +603,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ144",
     "localAuthority": "Lambeth",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.463981,
     "lon": -0.121497
   },
@@ -581,6 +619,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ121",
     "localAuthority": "Southwark",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.503331,
     "lon": -0.086771
   },
@@ -596,6 +635,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ122",
     "localAuthority": "Lambeth",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.497959,
     "lon": -0.118905
   },
@@ -611,6 +651,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ181",
     "localAuthority": "Hillingdon",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.6067317,
     "lon": -0.4827474
   },
@@ -626,6 +667,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ182",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.489743,
     "lon": -0.170855
   },
@@ -641,6 +683,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1A4",
     "localAuthority": "Lewisham",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.4767244,
     "lon": -0.0396423
   },
@@ -656,6 +699,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1A0",
     "localAuthority": "Southwark",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.5009198,
     "lon": -0.0909086
   },
@@ -671,6 +715,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1A1",
     "localAuthority": "Lambeth",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.472601,
     "lon": -0.101074
   },
@@ -686,6 +731,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1E0",
     "localAuthority": "Lambeth",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.4523045,
     "lon": -0.1454549
   },
@@ -701,6 +747,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1I0",
     "localAuthority": "Lewisham",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.435023,
     "lon": 0.019737
   },
@@ -716,6 +763,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1X3",
     "localAuthority": "Lambeth",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.4927892,
     "lon": -0.1082741
   },
@@ -731,6 +779,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1X9",
     "localAuthority": "Westminster",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.517326,
     "lon": -0.148145
   },
@@ -746,6 +795,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ1X8",
     "localAuthority": "Southwark",
     "providerName": "Guy's and St Thomas' NHS Foundation Trust",
+    "providerId": "RJ1",
     "lat": 51.500926,
     "lon": -0.092171
   },
@@ -761,6 +811,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RN7QM",
     "localAuthority": "Bexley",
     "providerName": "Dartford and Gravesham NHS Trust",
+    "providerId": "RN7",
     "lat": 51.419041,
     "lon": 0.101687
   },
@@ -776,6 +827,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ224",
     "localAuthority": "Lewisham",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.453022,
     "lon": -0.017916
   },
@@ -791,6 +843,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ2C1",
     "localAuthority": "Lewisham",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.476288,
     "lon": -0.03191
   },
@@ -806,6 +859,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ231",
     "localAuthority": "Greenwich",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.4781929,
     "lon": 0.0500687
   },
@@ -821,6 +875,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ2Y4",
     "localAuthority": "Greenwich",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.449946,
     "lon": 0.053714
   },
@@ -836,6 +891,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ2Y5",
     "localAuthority": "Greenwich",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.4924854,
     "lon": 0.0726186
   },
@@ -851,6 +907,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ2Y3",
     "localAuthority": "Greenwich",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.4854431,
     "lon": 0.093288
   },
@@ -866,6 +923,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ2Y1",
     "localAuthority": "Bexley",
     "providerName": "Lewisham and Greenwich NHS Trust",
+    "providerId": "RJ2",
     "lat": 51.477113,
     "lon": 0.166643
   },
@@ -881,6 +939,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ6CC",
     "localAuthority": "Croydon",
     "providerName": "Croydon Health Services NHS Trust",
+    "providerId": "RJ6",
     "lat": 51.3891284,
     "lon": -0.1087578
   },
@@ -896,6 +955,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ613",
     "localAuthority": "Croydon",
     "providerName": "Croydon Health Services NHS Trust",
+    "providerId": "RJ6",
     "lat": 51.34074,
     "lon": -0.114466
   },
@@ -911,6 +971,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ760",
     "localAuthority": "Wandsworth",
     "providerName": "St George's University Hospitals NHS Foundation Trust",
+    "providerId": "RJ7",
     "lat": 51.4599675,
     "lon": -0.1793913
   },
@@ -926,6 +987,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ731",
     "localAuthority": "Wandsworth",
     "providerName": "St George's University Hospitals NHS Foundation Trust",
+    "providerId": "RJ7",
     "lat": 51.45555,
     "lon": -0.241729
   },
@@ -941,6 +1003,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ611",
     "localAuthority": "Croydon",
     "providerName": "Croydon Health Services NHS Trust",
+    "providerId": "RJ6",
     "lat": 51.389128,
     "lon": -0.108758
   },
@@ -956,6 +1019,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJ701",
     "localAuthority": "Wandsworth",
     "providerName": "St George's University Hospitals NHS Foundation Trust",
+    "providerId": "RJ7",
     "lat": 51.426682,
     "lon": -0.175694
   },
@@ -971,6 +1035,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJZ31",
     "localAuthority": "Bromley",
     "providerName": "King's College Hospital NHS Foundation Trust",
+    "providerId": "RJZ",
     "lat": 51.4052306,
     "lon": -0.0331825
   },
@@ -986,6 +1051,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJZ10",
     "localAuthority": "Bexley",
     "providerName": "King's College Hospital NHS Foundation Trust",
+    "providerId": "RJZ",
     "lat": 51.419041,
     "lon": 0.101687
   },
@@ -1001,6 +1067,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJZ30",
     "localAuthority": "Bromley",
     "providerName": "King's College Hospital NHS Foundation Trust",
+    "providerId": "RJZ",
     "lat": 51.366243,
     "lon": 0.059146
   },
@@ -1016,6 +1083,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJZ70",
     "localAuthority": "Bromley",
     "providerName": "King's College Hospital NHS Foundation Trust",
+    "providerId": "RJZ",
     "lat": 51.3625034,
     "lon": 0.0951765
   },
@@ -1031,6 +1099,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RJZ01",
     "localAuthority": "Lambeth",
     "providerName": "King's College Hospital NHS Foundation Trust",
+    "providerId": "RJZ",
     "lat": 51.4680779,
     "lon": -0.0938901
   },
@@ -1046,6 +1115,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKEQ5",
     "localAuthority": "Haringey",
     "providerName": "Whittington Health NHS Trust",
+    "providerId": "RKE",
     "lat": 51.594571,
     "lon": -0.1095923
   },
@@ -1061,6 +1131,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKEQ4",
     "localAuthority": "Islington",
     "providerName": "Whittington Health NHS Trust",
+    "providerId": "RKE",
     "lat": 51.5664822,
     "lon": -0.1390665
   },
@@ -1076,6 +1147,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKL48",
     "localAuthority": "Richmond upon Thames",
     "providerName": "West London NHS Trust",
+    "providerId": "RKL",
     "lat": 51.4329132,
     "lon": -0.3080839
   },
@@ -1091,6 +1163,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKL14",
     "localAuthority": "Hounslow",
     "providerName": "West London NHS Trust",
+    "providerId": "RKL",
     "lat": 51.473648,
     "lon": -0.324434
   },
@@ -1106,6 +1179,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKL4D",
     "localAuthority": "Ealing",
     "providerName": "West London NHS Trust",
+    "providerId": "RKL",
     "lat": 51.495087,
     "lon": -0.298884
   },
@@ -1121,6 +1195,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKL53",
     "localAuthority": "Ealing",
     "providerName": "West London NHS Trust",
+    "providerId": "RKL",
     "lat": 51.506667,
     "lon": -0.349737
   },
@@ -1136,6 +1211,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKL62",
     "localAuthority": "Ealing",
     "providerName": "West London NHS Trust",
+    "providerId": "RKL",
     "lat": 51.5049861,
     "lon": -0.3774134
   },
@@ -1151,6 +1227,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RKL79",
     "localAuthority": "Hammersmith and Fulham",
     "providerName": "West London NHS Trust",
+    "providerId": "RKL",
     "lat": 51.4864055,
     "lon": -0.2174164
   },
@@ -1166,6 +1243,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RNK01",
     "localAuthority": "Camden",
     "providerName": "Tavistock and Portman NHS Foundation Trust",
+    "providerId": "RNK",
     "lat": 51.5469007,
     "lon": -0.175418
   },
@@ -1181,6 +1259,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RNK03",
     "localAuthority": "Hammersmith and Fulham",
     "providerName": "Tavistock and Portman NHS Foundation Trust",
+    "providerId": "RNK",
     "lat": 51.484686,
     "lon": -0.219754
   },
@@ -1196,6 +1275,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RP601",
     "localAuthority": "Islington",
     "providerName": "Moorfields Eye Hospital NHS Foundation Trust",
+    "providerId": "RP6",
     "lat": 51.5272477,
     "lon": -0.0898625
   },
@@ -1211,6 +1291,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RP604",
     "localAuthority": "Wandsworth",
     "providerName": "Moorfields Eye Hospital NHS Foundation Trust",
+    "providerId": "RP6",
     "lat": 51.4259116,
     "lon": -0.1782276
   },
@@ -1226,6 +1307,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RP401",
     "localAuthority": "Camden",
     "providerName": "Great Ormond Street Hospital for Children NHS Foundation Trust",
+    "providerId": "RP4",
     "lat": 51.5222115,
     "lon": -0.1198984
   },
@@ -1241,6 +1323,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RP608",
     "localAuthority": "Croydon",
     "providerName": "Moorfields Eye Hospital NHS Foundation Trust",
+    "providerId": "RP6",
     "lat": 51.389128,
     "lon": -0.108758
   },
@@ -1256,6 +1339,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RP633",
     "localAuthority": "City of London",
     "providerName": "Moorfields Eye Hospital NHS Foundation Trust",
+    "providerId": "RP6",
     "lat": 51.51775,
     "lon": -0.100404
   },
@@ -1271,6 +1355,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGAE",
     "localAuthority": "Greenwich",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.478193,
     "lon": 0.050043
   },
@@ -1286,6 +1371,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGAD",
     "localAuthority": "Bromley",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.366243,
     "lon": 0.059146
   },
@@ -1301,6 +1387,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGAH",
     "localAuthority": "Bexley",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.419041,
     "lon": 0.101687
   },
@@ -1316,6 +1403,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGAP",
     "localAuthority": "Greenwich",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.478611,
     "lon": 0.116667
   },
@@ -1331,6 +1419,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGAR",
     "localAuthority": "Greenwich",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.468597,
     "lon": 0.064009
   },
@@ -1346,6 +1435,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGEP",
     "localAuthority": "Greenwich",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.468597,
     "lon": 0.064009
   },
@@ -1361,6 +1451,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGEQ",
     "localAuthority": "Greenwich",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.468597,
     "lon": 0.064009
   },
@@ -1376,6 +1467,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPGFD",
     "localAuthority": "Bexley",
     "providerName": "Oxleas NHS Foundation Trust",
+    "providerId": "RPG",
     "lat": 51.419041,
     "lon": 0.101687
   },
@@ -1391,6 +1483,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPY01",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "The Royal Marsden NHS Foundation Trust",
+    "providerId": "RPY",
     "lat": 51.4905598,
     "lon": -0.1725443
   },
@@ -1406,6 +1499,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPY02",
     "localAuthority": "Sutton",
     "providerName": "The Royal Marsden NHS Foundation Trust",
+    "providerId": "RPY",
     "lat": 51.3434765,
     "lon": -0.1910896
   },
@@ -1421,6 +1515,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RPY25",
     "localAuthority": "Westminster",
     "providerName": "The Royal Marsden NHS Foundation Trust",
+    "providerId": "RPY",
     "lat": 51.5161785,
     "lon": -0.1459609
   },
@@ -1436,6 +1531,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RQM01",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Chelsea and Westminster Hospital NHS Foundation Trust",
+    "providerId": "RQM",
     "lat": 51.4843046,
     "lon": -0.1816141
   },
@@ -1451,6 +1547,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RQXM1",
     "localAuthority": "Hackney",
     "providerName": "Homerton Healthcare NHS Foundation Trust",
+    "providerId": "RQX",
     "lat": 51.550634,
     "lon": -0.046099
   },
@@ -1466,6 +1563,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RQM91",
     "localAuthority": "Hounslow",
     "providerName": "Chelsea and Westminster Hospital NHS Foundation Trust",
+    "providerId": "RQM",
     "lat": 51.473648,
     "lon": -0.324434
   },
@@ -1481,6 +1579,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RQM45",
     "localAuthority": "Hounslow",
     "providerName": "Chelsea and Westminster Hospital NHS Foundation Trust",
+    "providerId": "RQM",
     "lat": 51.473648,
     "lon": -0.324434
   },
@@ -1496,6 +1595,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RQY08",
     "localAuthority": "Kingston upon Thames",
     "providerName": "South West London and St George's Mental Health NHS Trust",
+    "providerId": "RQY",
     "lat": 51.3790859,
     "lon": -0.2884965
   },
@@ -1511,6 +1611,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RQYND",
     "localAuthority": "Wandsworth",
     "providerName": "South West London and St George's Mental Health NHS Trust",
+    "providerId": "RQY",
     "lat": 51.4385044,
     "lon": -0.1722925
   },
@@ -1526,6 +1627,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRV02",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.5385093,
     "lon": -0.1415346
   },
@@ -1541,6 +1643,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRV30",
     "localAuthority": "Westminster",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.5195835,
     "lon": -0.1497433
   },
@@ -1556,6 +1659,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRV34",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.5467983,
     "lon": -0.1448025
   },
@@ -1571,6 +1675,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRV60",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.5217406,
     "lon": -0.1213737
   },
@@ -1586,6 +1691,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRV03",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.524891,
     "lon": -0.136911
   },
@@ -1601,6 +1707,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRVNQ",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.5221728,
     "lon": -0.1219757
   },
@@ -1616,6 +1723,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRVCR",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.522693,
     "lon": -0.136009
   },
@@ -1631,6 +1739,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RRVRH",
     "localAuthority": "Camden",
     "providerName": "University College London Hospitals NHS Foundation Trust",
+    "providerId": "RRV",
     "lat": 51.523158,
     "lon": -0.13541
   },
@@ -1646,6 +1755,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV312",
     "localAuthority": "Brent",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.530936,
     "lon": -0.269161
   },
@@ -1661,6 +1771,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV320",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.5223636,
     "lon": -0.2171939
   },
@@ -1676,6 +1787,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV329",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.496665,
     "lon": -0.191597
   },
@@ -1691,6 +1803,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV332",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.4843235,
     "lon": -0.1802225
   },
@@ -1706,6 +1819,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV346",
     "localAuthority": "Westminster",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.492338,
     "lon": -0.135789
   },
@@ -1721,6 +1835,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV355",
     "localAuthority": "Harrow",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.5669919,
     "lon": -0.3634329
   },
@@ -1736,6 +1851,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV383",
     "localAuthority": "Brent",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.575407,
     "lon": -0.322037
   },
@@ -1751,6 +1867,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV357",
     "localAuthority": "Harrow",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.560505,
     "lon": -0.333896
   },
@@ -1766,6 +1883,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV396",
     "localAuthority": "Westminster",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.52253,
     "lon": -0.198621
   },
@@ -1781,6 +1899,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV3CX",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.496665,
     "lon": -0.191597
   },
@@ -1796,6 +1915,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV3DY",
     "localAuthority": "Camden",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.53665,
     "lon": -0.131658
   },
@@ -1811,6 +1931,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV3AN",
     "localAuthority": "Hillingdon",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.526077,
     "lon": -0.461175
   },
@@ -1826,6 +1947,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV3E5",
     "localAuthority": "Brent",
     "providerName": "Central and North West London NHS Foundation Trust",
+    "providerId": "RV3",
     "lat": 51.5902051,
     "lon": -0.2818845
   },
@@ -1841,6 +1963,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV502",
     "localAuthority": "Lambeth",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.4653159,
     "lon": -0.1222234
   },
@@ -1856,6 +1979,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV505",
     "localAuthority": "Bromley",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.3809196,
     "lon": -0.0297407
   },
@@ -1871,6 +1995,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV504",
     "localAuthority": "Southwark",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.4687703,
     "lon": -0.0914425
   },
@@ -1886,6 +2011,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV509",
     "localAuthority": "Lewisham",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.453022,
     "lon": -0.017916
   },
@@ -1901,6 +2027,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV581",
     "localAuthority": "Lewisham",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.4475514,
     "lon": -0.0049851
   },
@@ -1916,6 +2043,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV5C5",
     "localAuthority": "Lambeth",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.4201864,
     "lon": -0.1264895
   },
@@ -1931,6 +2059,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV5X1",
     "localAuthority": "Richmond upon Thames",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.4460743,
     "lon": -0.3305019
   },
@@ -1946,6 +2075,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RV5Z1",
     "localAuthority": "Croydon",
     "providerName": "South London and Maudsley NHS Foundation Trust",
+    "providerId": "RV5",
     "lat": 51.389128,
     "lon": -0.108758
   },
@@ -1961,6 +2091,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RVRD4",
     "localAuthority": "Kingston upon Thames",
     "providerName": "Epsom and St Helier University Hospitals NHS Trust",
+    "providerId": "RVR",
     "lat": 51.4135752,
     "lon": -0.2868999
   },
@@ -1976,6 +2107,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RVR06",
     "localAuthority": "Sutton",
     "providerName": "Epsom and St Helier University Hospitals NHS Trust",
+    "providerId": "RVR",
     "lat": 51.3448032,
     "lon": -0.1936459
   },
@@ -1991,6 +2123,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RVRD5",
     "localAuthority": "Croydon",
     "providerName": "Epsom and St Helier University Hospitals NHS Trust",
+    "providerId": "RVR",
     "lat": 51.389128,
     "lon": -0.108758
   },
@@ -2006,6 +2139,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RVRL4",
     "localAuthority": "Surrey",
     "providerName": "Epsom and St Helier University Hospitals NHS Trust",
+    "providerId": "RVR",
     "lat": 51.3975304,
     "lon": -0.3725214
   },
@@ -2021,6 +2155,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWK46",
     "localAuthority": "Newham",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.5204741,
     "lon": 0.0384327
   },
@@ -2036,6 +2171,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWH04",
     "localAuthority": "Hillingdon",
     "providerName": "East and North Hertfordshire Teaching NHS Trust",
+    "providerId": "RWH",
     "lat": 51.614923,
     "lon": -0.445823
   },
@@ -2051,6 +2187,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RVR05",
     "localAuthority": "Sutton",
     "providerName": "Epsom and St Helier University Hospitals NHS Trust",
+    "providerId": "RVR",
     "lat": 51.3801895,
     "lon": -0.1837084
   },
@@ -2066,6 +2203,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWK60",
     "localAuthority": "Hackney",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.5483823,
     "lon": -0.0386491
   },
@@ -2081,6 +2219,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWK61",
     "localAuthority": "Tower Hamlets",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.525048,
     "lon": -0.042206
   },
@@ -2096,6 +2235,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWK62",
     "localAuthority": "Hackney",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.550634,
     "lon": -0.046099
   },
@@ -2111,6 +2251,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWK89",
     "localAuthority": "Newham",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.539588,
     "lon": 0.04536
   },
@@ -2126,6 +2267,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWKW2",
     "localAuthority": "Tower Hamlets",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.513374,
     "lon": -0.071865
   },
@@ -2141,6 +2283,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWKW3",
     "localAuthority": "Tower Hamlets",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.513374,
     "lon": -0.071865
   },
@@ -2156,6 +2299,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWKW4",
     "localAuthority": "Tower Hamlets",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.513374,
     "lon": -0.071865
   },
@@ -2171,6 +2315,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RWKX9",
     "localAuthority": "Tower Hamlets",
     "providerName": "East London NHS Foundation Trust",
+    "providerId": "RWK",
     "lat": 51.516339,
     "lon": -0.072273
   },
@@ -2186,6 +2331,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ01",
     "localAuthority": "Westminster",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.516971,
     "lon": -0.1735448
   },
@@ -2201,6 +2347,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ04",
     "localAuthority": "Hammersmith and Fulham",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.517632,
     "lon": -0.240435
   },
@@ -2216,6 +2363,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ05",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.522362,
     "lon": -0.217218
   },
@@ -2231,6 +2379,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ03",
     "localAuthority": "Hammersmith and Fulham",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.517632,
     "lon": -0.240435
   },
@@ -2246,6 +2395,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ02",
     "localAuthority": "Hammersmith and Fulham",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.4870459,
     "lon": -0.2199121
   },
@@ -2261,6 +2411,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ07",
     "localAuthority": "Westminster",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.5207049,
     "lon": -0.1633052
   },
@@ -2276,6 +2427,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJ51",
     "localAuthority": "Hillingdon",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.521721,
     "lon": -0.423579
   },
@@ -2291,6 +2443,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJX2",
     "localAuthority": "Brent",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.575407,
     "lon": -0.322037
   },
@@ -2306,6 +2459,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJX1",
     "localAuthority": "Brent",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.5309378,
     "lon": -0.2691376
   },
@@ -2321,6 +2475,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJX4",
     "localAuthority": "Hounslow",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.473648,
     "lon": -0.324434
   },
@@ -2336,6 +2491,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYJX5",
     "localAuthority": "Ealing",
     "providerName": "Imperial College Healthcare NHS Trust",
+    "providerId": "RYJ",
     "lat": 51.507606,
     "lon": -0.345495
   },
@@ -2351,6 +2507,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYX01",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.522362,
     "lon": -0.217218
   },
@@ -2366,6 +2523,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYX02",
     "localAuthority": "Westminster",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.5145254,
     "lon": -0.1318893
   },
@@ -2381,6 +2539,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXW2",
     "localAuthority": "Kensington and Chelsea",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.5197475,
     "lon": -0.221211
   },
@@ -2396,6 +2555,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXX0",
     "localAuthority": "Brent",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.542836,
     "lon": -0.235526
   },
@@ -2411,6 +2571,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXX3",
     "localAuthority": "Hammersmith and Fulham",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.4743493,
     "lon": -0.1999439
   },
@@ -2426,6 +2587,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXX9",
     "localAuthority": "Westminster",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.5225301,
     "lon": -0.1986205
   },
@@ -2441,6 +2603,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXY1",
     "localAuthority": "Barnet",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.606478,
     "lon": -0.271248
   },
@@ -2456,6 +2619,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXY9",
     "localAuthority": "Barnet",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.6064789,
     "lon": -0.2712458
   },
@@ -2471,6 +2635,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXZ1",
     "localAuthority": "Barnet",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.60546,
     "lon": -0.176595
   },
@@ -2486,6 +2651,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/RYXZ2",
     "localAuthority": "Barnet",
     "providerName": "Central London Community Healthcare NHS Trust",
+    "providerId": "RYX",
     "lat": 51.60546,
     "lon": -0.176595
   },
@@ -2501,6 +2667,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/T146K",
     "localAuthority": "Wandsworth",
     "providerName": "NHS Blood and Transplant",
+    "providerId": "T1460",
     "lat": 51.4275399,
     "lon": -0.1759475
   },
@@ -2516,6 +2683,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/TAF004",
     "localAuthority": "Enfield",
     "providerName": "North London NHS Foundation Trust",
+    "providerId": "G6V2S",
     "lat": 51.6486618,
     "lon": -0.0459229
   },
@@ -2531,6 +2699,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/TAF005",
     "localAuthority": "Enfield",
     "providerName": "North London NHS Foundation Trust",
+    "providerId": "G6V2S",
     "lat": 51.6276286,
     "lon": -0.0433305
   },
@@ -2546,6 +2715,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/TAF006",
     "localAuthority": "Haringey",
     "providerName": "North London NHS Foundation Trust",
+    "providerId": "G6V2S",
     "lat": 51.5806277,
     "lon": -0.0920713
   },
@@ -2561,6 +2731,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/TAF01",
     "localAuthority": "Camden",
     "providerName": "North London NHS Foundation Trust",
+    "providerId": "G6V2S",
     "lat": 51.53665,
     "lon": -0.131658
   },
@@ -2576,6 +2747,7 @@
     "cqc_url": "https://www.cqc.org.uk/location/TAF72",
     "localAuthority": "Camden",
     "providerName": "North London NHS Foundation Trust",
+    "providerId": "G6V2S",
     "lat": 51.566612,
     "lon": -0.142348
   }

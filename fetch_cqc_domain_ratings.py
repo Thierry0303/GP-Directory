@@ -141,6 +141,39 @@ def main():
     print(f"Done: fetched {fetched}, {with_ratings} had ratings. "
           f"Cache now {len(cache)} entries → {OUT.name}")
 
+    # ---- Provider (trust) level ratings for NHS services pages.
+    # CQC rates NHS trusts at provider level; their individual sites are
+    # mostly unrated, so build_nhs_services_pages.py falls back to these.
+    nhs_json = ROOT / "nhs_specialties.json"
+    prov_out = ROOT / "provider_ratings.json"
+    if nhs_json.exists():
+        provs = {}
+        for r in json.loads(nhs_json.read_text()):
+            pid = r.get("providerId")
+            if pid and not r.get("cqc_rating"):
+                provs[pid] = True
+        existing = json.loads(prov_out.read_text()) if prov_out.exists() else {}
+        todo_p = [pid for pid in provs if pid not in existing][:100]
+        print(f"Provider ratings: {len(provs)} trusts referenced, "
+              f"{len(todo_p)} to fetch.")
+        for pid in todo_p:
+            url = f"{CQC_BASE}/providers/{pid}"
+            headers = {"Ocp-Apim-Subscription-Key": key,
+                       "User-Agent": "londongp.directory/1.0",
+                       "Accept": "application/json"}
+            try:
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    detail = json.loads(r.read())
+                rating = ((detail.get("currentRatings", {}) or {})
+                          .get("overall", {}) or {}).get("rating", "")
+                existing[pid] = rating if rating in VALID else ""
+            except Exception:
+                existing[pid] = existing.get(pid, "")
+            time.sleep(0.35)
+        prov_out.write_text(json.dumps(existing, indent=1, sort_keys=True))
+        print(f"Wrote {prov_out.name} ({len(existing)} providers)")
+
 
 if __name__ == "__main__":
     main()
