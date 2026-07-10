@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Urology & Men's Health <span class="count">6</span></div>
   <div class="cards"><div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Circumcision London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/circumcision-london/">Circumcision London</a></div>
   <div class="card-addr">23 Temple Fortune Lane, London, NW11 7TE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07896718812</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13840772657" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://circumcisionlondon.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Redbridge" data-type="private">
-  <div class="card-name">Goodmayes Circumcision Service</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/redbridge/goodmayes-circumcision-service/">Goodmayes Circumcision Service</a></div>
   <div class="card-addr">Doctors Surgery, 595 Green Lane, Ilford, IG3 9RN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02036687499</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12859354107" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.goodmayesmedicalpractice.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Brent" data-type="private">
-  <div class="card-name">LMCS Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/lmcs-limited/">LMCS Limited</a></div>
   <div class="card-addr">78 Beverley Drive, Edgware, HA8 5NE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089513794</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-470883883" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.circumcisioninlondon.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Redbridge" data-type="private">
-  <div class="card-name">London Circumcision Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/redbridge/london-circumcision-centre/">London Circumcision Centre</a></div>
   <div class="card-addr">142 George Lane, South Woodford, London, E18 1AY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07527314081</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-10240859556" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.londoncircumcisioncentre.co.uk/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Hounslow" data-type="private">
-  <div class="card-name">London Circumcision Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hounslow/london-circumcision-clinic/">London Circumcision Clinic</a></div>
   <div class="card-addr">300A Bath Road, Hounslow, TW4 7DN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07957394662</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3796787694" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Tower Hamlets" data-type="private">
-  <div class="card-name">The London Circumcision Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/tower-hamlets/the-london-circumcision-clinic/">The London Circumcision Clinic</a></div>
   <div class="card-addr">Harley Medical, 17-19 Cavell Street, Whitechapel, London, E1 2BP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
