@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Plastic & Reconstructive Surgery <span class="count">7</span></div>
   <div class="cards"><div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">111 Harley St. — American Cosmetic Surgery Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/111-harley-st-american-cosmetic-surgery-ltd/">111 Harley St. — American Cosmetic Surgery Ltd</a></div>
   <div class="card-addr">111 Harley Street, London, W1G 6AW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 03446291111</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6891023158" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Aesthetic Plastic Surgery Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/aesthetic-plastic-surgery-ltd/">Aesthetic Plastic Surgery Ltd</a></div>
   <div class="card-addr">Aveling House 1b, Upper Wimpole Street, London, W1G 6AB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074867757</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7418424355" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.aesthetic-plastic-surgery.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">American Cosmetic Surgery Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/american-cosmetic-surgery-ltd/">American Cosmetic Surgery Ltd</a></div>
   <div class="card-addr">1 Devonshire Place, London, W1G 6HH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02037587200</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8561665750" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Cosmetic Surgery Partners</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/cosmetic-surgery-partners/">Cosmetic Surgery Partners</a></div>
   <div class="card-addr">The London Welbeck Hospital, 27 Welbeck Street, London, W1G 8EN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074866778</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2150994788" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cosmeticsurgery-partners.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Plastic Surgery W1 Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/plastic-surgery-w1-limited/">Plastic Surgery W1 Limited</a></div>
   <div class="card-addr">Suite 1, 14 Queen Anne Street, London, W1G 9LG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070790050</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-106213545" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.plasticsurgeryw1.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Professional Cosmetic Surgery Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/professional-cosmetic-surgery-limited/">Professional Cosmetic Surgery Limited</a></div>
   <div class="card-addr">112 Harley Street, London, W1G 7JQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072241622</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-213259381" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.professionalcosmeticsurgery.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Plastic Surgery Group</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-plastic-surgery-group/">The Plastic Surgery Group</a></div>
   <div class="card-addr">100 Harley Street, London, W1G 7JA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
