@@ -88,6 +88,8 @@ def index_page(grouped):
     cards = []
     for slug_key, label, blurb in CATEGORIES:
         n = len(grouped.get(slug_key, []))
+        if not n:
+            continue
         cards.append(f'''<a class="row" href="/nhs-services/{slug_key}/">
             <h3>{label} <span class="cnt">{n}</span></h3>
             <p>{blurb}</p>
@@ -160,10 +162,18 @@ def main():
     (OUT_DIR / "index.html").write_text(index_page(grouped), encoding="utf-8")
     print(f"Wrote /nhs-services/index.html")
 
+    import shutil
     for slug_key, label, blurb in CATEGORIES:
         page_dir = OUT_DIR / slug_key
-        page_dir.mkdir(exist_ok=True)
         recs = grouped.get(slug_key, [])
+        if not recs:
+            # No real services in this category — remove the page entirely
+            # rather than serving an empty (or stale) listing.
+            if page_dir.exists():
+                shutil.rmtree(page_dir)
+                print(f"  /nhs-services/{slug_key}/   pruned (0 records)")
+            continue
+        page_dir.mkdir(exist_ok=True)
         (page_dir / "index.html").write_text(
             category_page(slug_key, label, blurb, recs), encoding="utf-8"
         )

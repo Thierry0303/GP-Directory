@@ -50,7 +50,7 @@ def is_nhs(rec):
     ownership = (rec.get("ownershipType") or "").strip()
     if ownership:
         # Known NHS ownership types
-        if ownership in ("NHS", "NHS Trust", "NHS Foundation Trust", "Public"):
+        if ownership in ("NHS", "NHS Body", "NHS Trust", "NHS Foundation Trust", "Public"):
             return True
         # Known non-NHS types
         if ownership in ("Individual", "Partnership", "Organisation", "Charity"):
@@ -70,35 +70,54 @@ def is_nhs_gp_practice(rec):
     ods = (rec.get("odsCode") or "").upper()
     return bool(NHS_GP_ODS_RE.match(ods))
 
+HQ_RE = re.compile(r"\b(headquarters|hq)\b|trust offices|head office", re.I)
+
 def classify(rec):
     """Return category key or None to skip."""
-    if is_nhs_gp_practice(rec): return None  # covered elsewhere
-    if not is_nhs(rec): return None           # private — covered elsewhere
+    if rec.get("registrationStatus") == "Deregistered":
+        return None                            # closed / defunct location
+    if is_nhs_gp_practice(rec): return None    # covered by gps.json
+    if not is_nhs(rec): return None            # private — covered elsewhere
+
+    name_l = rec["name"].lower()
+    prov_l = (rec.get("providerName") or "").lower()
+    if HQ_RE.search(name_l):
+        return None                            # admin buildings, not services
 
     gac = rec.get("gacServiceTypes", [])
-    name_l = rec["name"].lower()
+    has_hospital = "Hospital" in gac
+    has_mh_hosp  = "Hospitals - Mental health/capacity" in gac
 
-    # Most specific first
-    if "Hospitals - Mental health/capacity" in gac \
-       or any(m in name_l for m in ["mental health", "psychiatr", "cmht", "crisis team"]):
+    # Priority order matters: big acute hospitals register many service
+    # types at one site — they must land in "hospital", not whatever
+    # niche activity they also happen to be registered for.
+    # Dedicated hospices only — acute hospitals register palliative-care
+    # units too, but belong under "hospital".
+    if ("Hospice" in gac or "Home hospice care" in gac) and not has_hospital:
+        return "nhs-hospice"
+    if "ambulance service" in prov_l:
+        return "nhs-ambulance"
+    # Mental health only when it's a dedicated MH site.
+    if (has_mh_hosp and not has_hospital) \
+       or any(m in name_l for m in ["mental health", "psychiatr", "cmht",
+                                    "crisis team", "camhs"]) \
+       or ("mental health" in prov_l and not has_hospital):
         return "nhs-mental-health"
+    # Acute hospitals next — they register urgent-care/diagnostic/hospice
+    # activities at the main site but are, to a user, hospitals.
+    if has_hospital or has_mh_hosp:
+        return "nhs-hospital"
+    # Dedicated urgent-care sites (hospital UTCs are covered above).
     if "Urgent care centres" in gac \
-       or any(m in name_l for m in ["urgent treatment", "walk-in centre", "walk in centre",
-                                     "minor injuries", "uti centre"]):
+       or any(m in name_l for m in ["urgent treatment", "walk-in centre",
+                                    "walk in centre", "minor injuries"]):
         return "nhs-urgent-care"
     if "Diagnosis/screening" in gac:
         return "nhs-diagnostic"
-    if "Ambulances" in gac:
-        return "nhs-ambulance"
-    if "Hospice" in gac or "Home hospice care" in gac:
-        return "nhs-hospice"
-    if "Hospital" in gac:
-        return "nhs-hospital"
-    # Community services covers many sub-types
-    if any(g.startswith("Community services") for g in gac):
+    if any(g.startswith("Community services") for g in gac) \
+       or "Long-term conditions" in gac or "Rehabilitation (illness/injury)" in gac:
         return "nhs-community"
     return None  # don't list
-
 
 def display_name(rec):
     """Build a readable name when CQC's locationName is missing or
