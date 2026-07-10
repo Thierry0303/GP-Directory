@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Urgent Care <span class="count">10</span></div>
   <div class="cards"><div class="card" data-borough="Bromley" data-type="private">
-  <div class="card-name">Beckenham Beacons UTC</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/bromley/beckenham-beacons-utc/">Beckenham Beacons UTC</a></div>
   <div class="card-addr">379-397 Croydon Road, Beckenham, BR3 3QL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 016189866037</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-23847916141" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Hertfordshire" data-type="private">
-  <div class="card-name">Cheshunt Minor Injuries Unit</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/cheshunt-minor-injuries-unit/">Cheshunt Minor Injuries Unit</a></div>
   <div class="card-addr">King Arthur Court, Cheshunt, Waltham Cross, EN8 8XN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6785683480" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
-  <div class="card-name">Croydon GP Collaborative Services</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/croydon/croydon-gp-collaborative-services/">Croydon GP Collaborative Services</a></div>
   <div class="card-addr">Croydon University Hospital, 530 London Road, Thornton Heath, CR7 7YE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02037275375</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3624534048" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cgpc.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Ellern Mede Ridgeway</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/ellern-mede-ridgeway/">Ellern Mede Ridgeway</a></div>
   <div class="card-addr">Holcombe Hill, The Ridgeway, London, NW7 4HX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02032097900</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-230086551" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ellernmede.org" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Emergency Doctors</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/emergency-doctors/">Emergency Doctors</a></div>
   <div class="card-addr">The Penthouse, 89 Piccadilly, London, W1J 7NE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07507773114</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27297207781" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.streamwave.ai" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Bexley" data-type="private">
-  <div class="card-name">Erith Urgent Care Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/bexley/erith-urgent-care-centre/">Erith Urgent Care Centre</a></div>
   <div class="card-addr">Park Crescent, Erith, DA8 3EE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01322356116</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24671083689" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name">Greenwich Health UTC</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/greenwich-health-utc/">Greenwich Health UTC</a></div>
   <div class="card-addr">Queen Elizabeth Hospital, Stadium Road, London, SE18 4QH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -168,7 +172,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089708426</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-351993193" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Maida Vale Urgent Care 365</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/maida-vale-urgent-care-365/">Maida Vale Urgent Care 365</a></div>
   <div class="card-addr">2, 3 & 4 Elgin Avenue, London, W9 3QR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
