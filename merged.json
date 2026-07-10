@@ -11368,7 +11368,7 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
+    "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/1-547715603",
     "ar": "Tower Hamlets",
     "la": 51.5281,
@@ -46496,5 +46496,25 @@
     "ln": -0.1136922,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28799494131",
+    "n": "HCA Healthcare UK Upper Bank Street Medical Centre",
+    "a": "2 Upper Bank Street, London",
+    "p": "E14 5EE",
+    "ph": "02038622515",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28799494131",
+    "ar": "Tower Hamlets",
+    "la": 51.5026686,
+    "ln": -0.0171741,
+    "type": "Private",
+    "web": "https://www.hcahealthcare.co.uk/services/gp-and-urgent-care/private-gp-services"
   }
 ]

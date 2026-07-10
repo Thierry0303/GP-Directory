@@ -29021,5 +29021,24 @@
     "lon": -0.1136922,
     "providerName": "",
     "ar": "Haringey"
+  },
+  {
+    "cqc_id": "1-28799494131",
+    "ods_code": "",
+    "name": "HCA Healthcare UK Upper Bank Street Medical Centre",
+    "address": "2 Upper Bank Street, London",
+    "postcode": "E14 5EE",
+    "phone": "02038622515",
+    "website": "https://www.hcahealthcare.co.uk/services/gp-and-urgent-care/private-gp-services",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28799494131",
+    "localAuthority": "Tower Hamlets",
+    "lat": 51.5026686,
+    "lon": -0.0171741,
+    "providerName": "",
+    "ar": "Tower Hamlets"
   }
 ]
