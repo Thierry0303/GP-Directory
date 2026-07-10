@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Travel Health & Vaccines <span class="count">5</span></div>
   <div class="cards"><div class="card" data-borough="Redbridge" data-type="private">
-  <div class="card-name">ANPC Healthcare & Travel Clinic Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/redbridge/anpc-healthcare-and-travel-clinic-ltd/">ANPC Healthcare & Travel Clinic Ltd</a></div>
   <div class="card-addr">11 The Shrubberies, George Lane, South Woodford, E18 1BD</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02071751802</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2517715266" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">CT Clinics, Division of The City and Travel Clinic Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/ct-clinics-division-of-the-city-and-travel-clinic-ltd/">CT Clinics, Division of The City and Travel Clinic Ltd</a></div>
   <div class="card-addr">21 Knightsbridge, London, SW1X 7LY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13440598962" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">MASTA Travel Clinic Westminster</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/masta-travel-clinic-westminster/">MASTA Travel Clinic Westminster</a></div>
   <div class="card-addr">St. Georges House, 82 Vincent Square, London, SW1P 2PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 03301004200</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20394176499" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.masta-travel-health.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Trailfinders Travel Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/trailfinders-travel-clinic/">Trailfinders Travel Clinic</a></div>
   <div class="card-addr">194 Kensington High Street, Kensington, London, W8 7RG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079383837</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-117162348" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.trailfinders.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Lambeth" data-type="private">
-  <div class="card-name">Your Travel Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lambeth/your-travel-clinic/">Your Travel Clinic</a></div>
   <div class="card-addr">2nd Floor, Akerman Health Centre, 60 Patmos Road, London, SW9 6AF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
