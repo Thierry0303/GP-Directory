@@ -33,6 +33,12 @@ NHS_GP_ODS_RE = re.compile(r"^[A-HJ-NPSW-Y]\d{5}$")
 
 DOMAINY_RE = re.compile(r"^[a-z0-9][\w\-.]*\.[a-z]{2,}", re.IGNORECASE)
 
+# URLs confirmed dead by check_external_links.py — never publish these.
+try:
+    DEAD_LINKS = set(json.loads((ROOT / "dead_links.json").read_text()))
+except Exception:
+    DEAD_LINKS = set()
+
 def normalize_url(u):
     if not u: return ""
     u = u.strip()
@@ -141,7 +147,7 @@ def slim(rec, category):
         "address":        ", ".join(parts),
         "postcode":       rec.get("postcode", ""),
         "phone":          rec.get("phone", ""),
-        "website":        normalize_url(rec.get("website", "")),
+        "website":        (lambda w: "" if w in DEAD_LINKS else w)(normalize_url(rec.get("website", ""))),
         "category":       category,
         "cqc_rating":     rec.get("currentRating", ""),
         "cqc_url":        rec.get("cqcUrl", ""),

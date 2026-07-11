@@ -24,6 +24,13 @@ from collections import Counter
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "cqc_london_cache.json.gz"
 OUT = ROOT / "private_clinics.json"
+
+# URLs confirmed dead by check_external_links.py — never publish these.
+try:
+    DEAD_LINKS = set(json.loads((ROOT / "dead_links.json").read_text()))
+except Exception:
+    DEAD_LINKS = set()
+
 FEES = ROOT / "private_fees.json"
 
 # NHS GP practice ODS code pattern: letter (not V/X) + 5 digits.
@@ -268,7 +275,7 @@ def to_merge_shape(rec, specs):
         "address":        address,
         "postcode":       rec.get("postcode", ""),
         "phone":          rec.get("phone", ""),
-        "website":        normalize_url(rec.get("website", "")),
+        "website": (lambda w: "" if w in DEAD_LINKS else w)(normalize_url(rec.get("website", ""))),
         "specialties":    specs,
         "cqc_rating":     rec.get("currentRating", ""),
         "cqc_url":        rec.get("cqcUrl", ""),
