@@ -37,6 +37,12 @@ jobs:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python build_cqc_london_cache.py
 
+      # ---- 2b. Verify external links (CQC website URLs go stale) ----
+      - name: Check external links
+        run: python check_external_links.py
+        continue-on-error: true
+        timeout-minutes: 15
+
       # ---- 3. Generate JSONs from cache ----
       - name: Generate private clinics by specialty
         run: python gen_private_clinics.py
