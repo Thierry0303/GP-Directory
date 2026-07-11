@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Consultant-Led Practices <span class="count">125</span></div>
   <div class="cards"><div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">10 Harley Street — Dr Lisa Marlene Chavda</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/10-harley-street-dr-lisa-marlene-chavda/">10 Harley Street — Dr Lisa Marlene Chavda</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07940306316</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12026411042" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Tower Hamlets" data-type="private">
-  <div class="card-name">1st Floor, LMC Business Wing</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/tower-hamlets/1st-floor-lmc-business-wing/">1st Floor, LMC Business Wing</a></div>
   <div class="card-addr">38-44 Whitechapel Road, London, E1 1JX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07855227614</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19508334125" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">27 Wimpole Street — K J Ugboma</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/27-wimpole-street-k-j-ugboma/">27 Wimpole Street — K J Ugboma</a></div>
   <div class="card-addr">27 Wimpole Street, London, W1G 8GN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074366600</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-198176605" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Ai Beauty Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/ai-beauty-clinic/">Ai Beauty Clinic</a></div>
   <div class="card-addr">147 Oxford Street, London, W1D 2JE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8829315959" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Alameda Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/alameda-clinic/">Alameda Clinic</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07713746876</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24608493865" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Anna De Leo</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/anna-de-leo/">Anna De Leo</a></div>
   <div class="card-addr">Harley Health Village, 64 Harley Street, London, W1G 7HB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-26859552157" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.adlsynergy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Anna De Leo Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/anna-de-leo-ltd/">Anna De Leo Ltd</a></div>
   <div class="card-addr">2nd Floor Consultation Room, The London Welbeck Hospital, 27 Welbeck Street, London, W1G 8EN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -159,7 +163,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-17968962094" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.londonwelbeckhospital.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">CHARTERHOUSE CLINIC LONDON</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/charterhouse-clinic-london/">CHARTERHOUSE CLINIC LONDON</a></div>
   <div class="card-addr">98 Crawford Street, London, W1H 2HL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -168,7 +172,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13091282807" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Church Crescent Medical Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/church-crescent-medical-practice/">Church Crescent Medical Practice</a></div>
   <div class="card-addr">13 Church Crescent, London, N20 0JR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -177,7 +181,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07764998495</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13930174929" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.churchcrescent.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Circumcision London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/circumcision-london/">Circumcision London</a></div>
   <div class="card-addr">23 Temple Fortune Lane, London, NW11 7TE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -186,7 +190,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07896718812</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13840772657" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://circumcisionlondon.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Hounslow" data-type="private">
-  <div class="card-name">Clifford House Medical Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hounslow/clifford-house-medical-centre/">Clifford House Medical Centre</a></div>
   <div class="card-addr">12 Hanworth Road, Feltham, TW13 5AB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -195,7 +199,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19878365877" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">clinicbe</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/clinicbe/">clinicbe</a></div>
   <div class="card-addr">32 Clabon Mews, London, SW1X 0EH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -204,7 +208,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02071250521</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1231299703" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.clinicbe.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">DGA Health</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/dga-health/">DGA Health</a></div>
   <div class="card-addr">5-6 Monkville Parade, Finchley Road, Temple Fortune, London, NW11 0AL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -213,7 +217,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039000132</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19887212328" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drdanielgordon.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Alexandra Chambers Medical and Aesthetic Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-alexandra-chambers-medical-and-aesthetic-practice/">Dr Alexandra Chambers Medical and Aesthetic Practice</a></div>
   <div class="card-addr">21 Welbeck Street, London, W1G 8EE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -222,7 +226,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073850960</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7203025997" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.dralexchambers.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">Dr Ali Erdinch Havutcu T/A Green Lanes Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/dr-ali-erdinch-havutcu-t-a-green-lanes-clinic/">Dr Ali Erdinch Havutcu T/A Green Lanes Clinic</a></div>
   <div class="card-addr">551a Green Lanes, Palmers Green, London, N13 4DR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -231,7 +235,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-341756874" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Ann Coxon</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-ann-coxon/">Dr Ann Coxon</a></div>
   <div class="card-addr">101 Harley Street, London, W1G 6AH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -240,7 +244,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074862534</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-680741120" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Anne Mendelovici Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-anne-mendelovici-clinic/">Dr Anne Mendelovici Clinic</a></div>
   <div class="card-addr">104 Harley Street, London, W1G 7JD</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -249,7 +253,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07901206846</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13937849595" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drmendelovici.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Apul Parikh Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-apul-parikh-clinic/">Dr Apul Parikh Clinic</a></div>
   <div class="card-addr">7 Grosvenor Gardens, Vicoria, London, SW1W 0BD</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -258,7 +262,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02034053538</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-15779406945" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Barry Grimaldi Diagnostics Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-barry-grimaldi-diagnostics-limited/">Dr Barry Grimaldi Diagnostics Limited</a></div>
   <div class="card-addr">75 Wimpole Street, London, W1G 9RT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -267,7 +271,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02076377989</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-26447705935" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.grimaldi.md" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">Dr Behnam Private GP</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/dr-behnam-private-gp/">Dr Behnam Private GP</a></div>
   <div class="card-addr">269 West End Lane, London, NW6 1QS</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -276,7 +280,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07809669079</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20123034521" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drbehnam.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Buyanovsky Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-buyanovsky-ltd/">Dr Buyanovsky Ltd</a></div>
   <div class="card-addr">121 Gloucester Place, London, W1U 6JY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -294,7 +298,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07932676831</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8477194456" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Daniel Consulting Rooms</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-daniel-consulting-rooms/">Dr Daniel Consulting Rooms</a></div>
   <div class="card-addr">99 Harley Street, London, W1G 6AQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -303,7 +307,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079357501</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-115093804" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.phpservice.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr David Jack</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-david-jack/">Dr David Jack</a></div>
   <div class="card-addr">59 Ebury Street, London, SW1W 0NZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -312,7 +316,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075896309</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18332546865" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drdavidjack.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Hammersmith and Fulham" data-type="private">
-  <div class="card-name">Dr Dropin</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hammersmith-and-fulham/dr-dropin/">Dr Dropin</a></div>
   <div class="card-addr">498-504, Fulham Road, London, SW6 5NH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -321,7 +325,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18844235305" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drdropin.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Esra Caglar’s Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-esra-caglar-s-clinic/">Dr Esra Caglar’s Clinic</a></div>
   <div class="card-addr">55 Queen Anne Street, London, W1G 9JR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -330,7 +334,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07517358453</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20394350794" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.esracaglar.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name">Dr Eve Skin</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/dr-eve-skin/">Dr Eve Skin</a></div>
   <div class="card-addr">9-11, Gunnery Terrace, Cornwallis Road, London, SE18 6SW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -339,7 +343,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07761412514</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-17534907209" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.dreveskin.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Fiona McAndrew, Private GP</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-fiona-mcandrew-private-gp/">Dr Fiona McAndrew, Private GP</a></div>
   <div class="card-addr">10 Pennant Mews, London, W8 5JN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -348,7 +352,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-9146725245" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Frances Prenna Jones Clinic Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-frances-prenna-jones-clinic-limited/">Dr Frances Prenna Jones Clinic Limited</a></div>
   <div class="card-addr">33 Shepherd Street, London, W1J 7HY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -357,7 +361,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074993848</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6610480367" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drfrancesprennajones.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Gabriela Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-gabriela-clinic/">Dr Gabriela Clinic</a></div>
   <div class="card-addr">56 Harley Street, London, W1G 9QA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -366,7 +370,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02034902798</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11601480166" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr George S. Kaye</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-george-s-kaye/">Dr George S. Kaye</a></div>
   <div class="card-addr">4 Manson Mews, London, SW7 5AF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -375,7 +379,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-4112997281" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Hammersmith and Fulham" data-type="private">
-  <div class="card-name">Dr Hala Medical Aesthetics</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hammersmith-and-fulham/dr-hala-medical-aesthetics/">Dr Hala Medical Aesthetics</a></div>
   <div class="card-addr">Unit 3-4, Broxholme House, Harwood Road, London, SW6 4AA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -384,7 +388,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073718939</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-16571674303" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Hounslow" data-type="private">
-  <div class="card-name">Dr Harry Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hounslow/dr-harry-clinic/">Dr Harry Clinic</a></div>
   <div class="card-addr">300, Chiswick High Road, London, W4 1NP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -393,7 +397,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07817642388</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-26966381495" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Haus Dermatology</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-haus-dermatology/">Dr Haus Dermatology</a></div>
   <div class="card-addr">Suites 6 & 7, First Floor, 75 Harley Street, London, W1G 8QL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -411,7 +415,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074860967</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14575204656" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Ionita</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-ionita/">Dr Ionita</a></div>
   <div class="card-addr">3rd Floor, 10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -420,7 +424,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07546244573</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-5964877918" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drionita.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Ito Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-ito-clinic/">Dr Ito Clinic</a></div>
   <div class="card-addr">96 Harley Street, London, W1G 7HY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -429,7 +433,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02076375560</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3099161449" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.dritoclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">Dr Jenny Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/dr-jenny-clinic/">Dr Jenny Clinic</a></div>
   <div class="card-addr">Oatlands Suite, Boutique Workplace Company, 12-18 Theobalds Road, London, WC1X 8PL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -438,7 +442,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07476937397</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25539717115" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drjennyclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">Dr Jessica Harland Office</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/dr-jessica-harland-office/">Dr Jessica Harland Office</a></div>
   <div class="card-addr">16 Kemplay Road, London, NW3 1SY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -456,7 +460,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07710306065</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2171957411" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Dr Jonny</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/dr-jonny/">Dr Jonny</a></div>
   <div class="card-addr">Treatment Room 1, 139b Northcote Road, London, SW11 6PX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -465,7 +469,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-21949509302" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Joy Medical Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-joy-medical-practice/">Dr Joy Medical Practice</a></div>
   <div class="card-addr">2 Lower Sloane Street, London, SW1W 8BJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -474,7 +478,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11006057924" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://drjoy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr K Citron</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-k-citron/">Dr K Citron</a></div>
   <div class="card-addr">9 Harley Street, London, W1G 9QY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -483,7 +487,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07787478216</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-23178918439" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Hillingdon" data-type="private">
-  <div class="card-name">Dr K G Thevan Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hillingdon/dr-k-g-thevan-ltd/">Dr K G Thevan Ltd</a></div>
   <div class="card-addr">12 Jackets Lane, Northwood, HA6 2SH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -492,7 +496,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02038596205</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25809164425" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Dr Karen’s Women’s Health Service Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/dr-karen-s-women-s-health-service-ltd/">Dr Karen’s Women’s Health Service Ltd</a></div>
   <div class="card-addr">201 Chapelier House, Eastfields Avenue, London, SW18 1LR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -501,7 +505,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02031952126</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24248398703" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drmortons.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Merton" data-type="private">
-  <div class="card-name">Dr Kate Panter</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/merton/dr-kate-panter/">Dr Kate Panter</a></div>
   <div class="card-addr">30b, Burghley Road, London, SW19 5HN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -510,7 +514,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01622538173</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13081777240" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.katepanter.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Leah Cosmetic Skin Clinics</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-leah-cosmetic-skin-clinics/">Dr Leah Cosmetic Skin Clinics</a></div>
   <div class="card-addr">10 Glentworth Street, Marylebone, London, NW1 5PG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -519,7 +523,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02078775999</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7635505156" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drleah.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Liliya Burrett</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-liliya-burrett/">Dr Liliya Burrett</a></div>
   <div class="card-addr">2 Lower Sloane Street, London, SW1W 8BJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -528,7 +532,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14906025769" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Dr Lyndon Wagman</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/dr-lyndon-wagman/">Dr Lyndon Wagman</a></div>
   <div class="card-addr">60 Temple Fortune Lane, London, NW11 7UE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -537,7 +541,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25515609962" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Lynette Yong t/a Pure Age Management</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-lynette-yong-t-a-pure-age-management/">Dr Lynette Yong t/a Pure Age Management</a></div>
   <div class="card-addr">Wellbeing Business Centre, 58 South Molton Street, London, W1K 5SL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -546,7 +550,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073078752</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18239928869" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Martin, Private General Practitioners</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-martin-private-general-practitioners/">Dr Martin, Private General Practitioners</a></div>
   <div class="card-addr">14 Harley Street, London, W1G 9PQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -555,7 +559,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02045801414</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14779815035" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drmartingp.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Melissa Clinics</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-melissa-clinics/">Dr Melissa Clinics</a></div>
   <div class="card-addr">64 North Row, Mayfair, London, W1K 7DA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -573,7 +577,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07588385133</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22155185428" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">Dr Mohammed Abedi</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/dr-mohammed-abedi/">Dr Mohammed Abedi</a></div>
   <div class="card-addr">The Surgery, 340 High Street, Enfield, EN3 4DE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -582,7 +586,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08448151474</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-501073164" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Motox</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-motox/">Dr Motox</a></div>
   <div class="card-addr">1, London, W1G 9QD</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -591,7 +595,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07867493367</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12026693871" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Harrow" data-type="private">
-  <div class="card-name">Dr Muhammad Shahzad</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/harrow/dr-muhammad-shahzad/">Dr Muhammad Shahzad</a></div>
   <div class="card-addr">48 Harrow View, Harrow, HA1 1RQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -600,7 +604,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02084277172</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6692416132" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Dr Nolan Wengrowe - Golders Hill Health Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/dr-nolan-wengrowe-golders-hill-health-centre/">Dr Nolan Wengrowe - Golders Hill Health Centre</a></div>
   <div class="card-addr">151 North End Road, London, NW11 7HT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -609,7 +613,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02084556886</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-118099070" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Ealing" data-type="private">
-  <div class="card-name">Dr Noor Aesthetics Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/ealing/dr-noor-aesthetics-clinic/">Dr Noor Aesthetics Clinic</a></div>
   <div class="card-addr">103 - 105 Churchfield Road, London, W3 6AH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -636,7 +640,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02077305070</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-116481505" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Lambeth" data-type="private">
-  <div class="card-name">Dr Oliver Rabie</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lambeth/dr-oliver-rabie/">Dr Oliver Rabie</a></div>
   <div class="card-addr">7 Lion Yard, London, SW4 7NQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -645,7 +649,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07815813163</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27896462131" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.droliverrabie.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Rachel Reset Coach</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-rachel-reset-coach/">Dr Rachel Reset Coach</a></div>
   <div class="card-addr">167-169 Great Portland Street, London, W1W 5PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -654,7 +658,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07796177329</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-17196610185" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drrachelresetcoach.co.ukNorth West London CCG" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Ramia Mokbel Clinic Chelsea</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-ramia-mokbel-clinic-chelsea/">Dr Ramia Mokbel Clinic Chelsea</a></div>
   <div class="card-addr">11 Elystan Street, London, SW3 3NT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -663,7 +667,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02037958427</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19894727220" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drmokbelclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Rasha Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-rasha-clinic/">Dr Rasha Clinic</a></div>
   <div class="card-addr">161 Brompton Road, London, SW3 1QP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -672,7 +676,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 0203742211</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19898679875" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Rowland Payne Dermatology</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-rowland-payne-dermatology/">Dr Rowland Payne Dermatology</a></div>
   <div class="card-addr">27 Devonshire Place, London, W1G 6JF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -681,7 +685,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072241228</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2496746910" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.thelondonclinic.co.uk/consultants/dr-christopher-rowland-payne" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Sam Bunting</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-sam-bunting/">Dr Sam Bunting</a></div>
   <div class="card-addr">41 Harley Street, London, W1G 8QH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -690,7 +694,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02034754773</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7586312318" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drsambunting.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Southwark" data-type="private">
-  <div class="card-name">Dr Sandeep Bolia Private Medical Services</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/southwark/dr-sandeep-bolia-private-medical-services/">Dr Sandeep Bolia Private Medical Services</a></div>
   <div class="card-addr">203m Camberwell Grove, London, SE5 8JU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -699,7 +703,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-339410966" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drbolia.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Shruthi Guruswamy (127 Harley Street)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-shruthi-guruswamy-127-harley-street/">Dr Shruthi Guruswamy (127 Harley Street)</a></div>
   <div class="card-addr">127 Harley Street, London, W1G 6AZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -708,7 +712,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070421875</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3054830151" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drshruthiguruswamy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Dr Shruthi Guruswamy (The Priory Hospital)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/dr-shruthi-guruswamy-the-priory-hospital/">Dr Shruthi Guruswamy (The Priory Hospital)</a></div>
   <div class="card-addr">Priory Lane, Roehampton, London, SW15 5JJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -717,7 +721,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070421875</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3054799452" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drshruthiguruswamy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Silvia Pierini</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-silvia-pierini/">Dr Silvia Pierini</a></div>
   <div class="card-addr">ZEN, 53 Beauchamp Place, London, SW3 1NY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -726,7 +730,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07814298494</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-17195519206" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr SNA Aesthetic and Regenerative Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-sna-aesthetic-and-regenerative-clinic/">Dr SNA Aesthetic and Regenerative Clinic</a></div>
   <div class="card-addr">48 Wimpole Street, London, W1G 8SF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -735,7 +739,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07728790215</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19265449279" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Dr Street & Co Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/dr-street-and-co-limited/">Dr Street & Co Limited</a></div>
   <div class="card-addr">Chelsea Consulting Rooms, 2 Lower Sloane Street, London, SW1W 8BJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -744,7 +748,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039650556</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-5678361593" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drdebbiestreet.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Todd Mitchell, Consultant Psychiatrist</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-todd-mitchell-consultant-psychiatrist/">Dr Todd Mitchell, Consultant Psychiatrist</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -753,7 +757,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07535636831</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6239731696" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.harleytherapy.co.uk/todd-mitchell.htm" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Toro</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-toro/">Dr Toro</a></div>
   <div class="card-addr">1 Orchard Street, Marylebone, London, W1H 6HJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -762,7 +766,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07957390634</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-23004106707" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.oaesthetics.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Hammersmith and Fulham" data-type="private">
-  <div class="card-name">Dr Valda Porcionato Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hammersmith-and-fulham/dr-valda-porcionato-ltd/">Dr Valda Porcionato Ltd</a></div>
   <div class="card-addr">39 Harwood Road, First Floor, London, SW6 4QP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -771,7 +775,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07767079769</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-26670026649" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">Dr Vania Healthcare</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/dr-vania-healthcare/">Dr Vania Healthcare</a></div>
   <div class="card-addr">49 Netherhall Gardens, Hampstead, London, NW3 5RJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -780,7 +784,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 03301138422</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1607538184" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.vaniahealthcarelondon.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Tower Hamlets" data-type="private">
-  <div class="card-name">Dr Wayne Cottrell</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/tower-hamlets/dr-wayne-cottrell/">Dr Wayne Cottrell</a></div>
   <div class="card-addr">34 North Colonnade, Canary Wharf, London, E14 5HX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -789,7 +793,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02031979100</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2670384848" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">Dr Wolf Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/dr-wolf-clinic/">Dr Wolf Clinic</a></div>
   <div class="card-addr">Adam House, 1 Fitzroy Square, London, W1T 5HF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -798,7 +802,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08001701790</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24699621065" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drwolf.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Brent" data-type="private">
-  <div class="card-name">Equilibrium Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/brent/equilibrium-clinic/">Equilibrium Clinic</a></div>
   <div class="card-addr">5 Shorts Croft, London, NW9 9AP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -807,7 +811,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07512645110</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14435359167" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.equilibrium-clinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
-  <div class="card-name">Falcon Medical Aesthetic Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/croydon/falcon-medical-aesthetic-clinic/">Falcon Medical Aesthetic Clinic</a></div>
   <div class="card-addr">29 Russell Hill, Purley, CR8 2JB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -816,7 +820,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07725981645</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11165273799" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.falconclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Sutton" data-type="private">
-  <div class="card-name">First Health Medical and Skin Care Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/sutton/first-health-medical-and-skin-care-centre/">First Health Medical and Skin Care Centre</a></div>
   <div class="card-addr">43 Stonecot Hill, Sutton, SM3 9HH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -825,7 +829,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02086445511</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2139819517" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.firsthealthmedical.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">Fleet Street Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/fleet-street-clinic/">Fleet Street Clinic</a></div>
   <div class="card-addr">29 Fleet Street, London, EC4Y 1AA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -834,7 +838,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073535678</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-118072619" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.fleetstreetclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Redbridge" data-type="private">
-  <div class="card-name">Goodmayes Circumcision Service</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/redbridge/goodmayes-circumcision-service/">Goodmayes Circumcision Service</a></div>
   <div class="card-addr">Doctors Surgery, 595 Green Lane, Ilford, IG3 9RN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -852,7 +856,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07974557664</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-532123288" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kingston upon Thames" data-type="private">
-  <div class="card-name">Groves Medical Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kingston/groves-medical-centre/">Groves Medical Centre</a></div>
   <div class="card-addr">171 Clarence Avenue, New Malden, KT3 3TX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -861,7 +865,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07984910177</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11309361439" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.kathyabernethy.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Harley Street Dermatology Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/harley-street-dermatology-clinic/">Harley Street Dermatology Clinic</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -870,7 +874,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072990392</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-325122385" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.harleystdermatology.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Southwark" data-type="private">
-  <div class="card-name">Keats House Consulting Rooms</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/southwark/keats-house-consulting-rooms/">Keats House Consulting Rooms</a></div>
   <div class="card-addr">24-26 St Thomas Street, London, SE1 9RS</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -879,7 +883,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070890610</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18167419142" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.keatshouse.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Kenric Li</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/kenric-li/">Kenric Li</a></div>
   <div class="card-addr">41 Earls Court Road, Kensington, London, W8 6ED</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -888,7 +892,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079385488</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-677232336" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.thegrouppractice.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Knightsbridge Doctors</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/knightsbridge-doctors/">Knightsbridge Doctors</a></div>
   <div class="card-addr">15 Basil Mansions, Basil Street, London, SW3 1AP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -897,7 +901,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7192899466" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Hackney" data-type="private">
-  <div class="card-name">Leadale Medical Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hackney/leadale-medical-practice/">Leadale Medical Practice</a></div>
   <div class="card-addr">31 Ravensdale Road, London, N16 6TJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -906,7 +910,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02088008177</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-438292991" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Life-GP</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/life-gp/">Life-GP</a></div>
   <div class="card-addr">167-169 Great Portland Street, London, W1W 5PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -915,7 +919,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07866764885</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19892920608" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.life-gp.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">London Healthcare Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/london-healthcare-clinic/">London Healthcare Clinic</a></div>
   <div class="card-addr">Ground Floor, 38 Lombard Street, London, EC3V 9BS</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -924,7 +928,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 020773746181</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25396288127" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London Screening Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-screening-centre/">London Screening Centre</a></div>
   <div class="card-addr">129 Harley Street, London, W1G 6BA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -933,7 +937,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-297711454" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Haringey" data-type="private">
-  <div class="card-name">Luma Medical Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/haringey/luma-medical-practice/">Luma Medical Practice</a></div>
   <div class="card-addr">8 Stuart Crescent, Wood Green, London, N22 5NJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -942,7 +946,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02036971760</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-26872375458" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.stuartcrescenthealthcentre.nhs.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Ealing" data-type="private">
-  <div class="card-name">Mobile Cardiac Service</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/ealing/mobile-cardiac-service/">Mobile Cardiac Service</a></div>
   <div class="card-addr">Flat 9, Glatt House, Hilda Road, Southall, UB2 4FQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -951,7 +955,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07862115571</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6857338553" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Mr Jan Jiri Stanek</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/mr-jan-jiri-stanek/">Mr Jan Jiri Stanek</a></div>
   <div class="card-addr">Flat 19 Milford House, 7 Queen Anne Street, London, W1G 8HN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -960,7 +964,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7023301817" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">My Cosmetic Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/my-cosmetic-centre/">My Cosmetic Centre</a></div>
   <div class="card-addr">44 Chippenham Road, London, W9 2AF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -969,7 +973,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07958435072</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3773466267" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">MyHarleyMedical</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/myharleymedical/">MyHarleyMedical</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -978,7 +982,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039030344</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18147440763" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.myharleymedical.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Pixie and Sera</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/pixie-and-sera/">Pixie and Sera</a></div>
   <div class="card-addr">1st Floor, 5 Devonshire Place, London, W1G 6HL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -987,7 +991,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02076167773</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11724368667" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.pixieandsera.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Rajendra Persaud T/A Dr Raj Persaud</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/rajendra-persaud-t-a-dr-raj-persaud/">Rajendra Persaud T/A Dr Raj Persaud</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -996,7 +1000,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07860709741</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13407625441" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Lewisham" data-type="private">
-  <div class="card-name">Rodina Daley</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lewisham/rodina-daley/">Rodina Daley</a></div>
   <div class="card-addr">14 Argosy House, Windlass Place, London, SE8 3QZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1005,7 +1009,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07930266453</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20244080407" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.rodinadaley.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Room 8, 102 Sydney Street, HCA UK</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/room-8-102-sydney-street-hca-uk/">Room 8, 102 Sydney Street, HCA UK</a></div>
   <div class="card-addr">Room 8, 102 Sydney Street, 102 Sydney Street, London, SW3 6NJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1014,7 +1018,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02038768300</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12864870225" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Barking and Dagenham" data-type="private">
-  <div class="card-name">Salisbury Avenue Surgery</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barking-and-dagenham/salisbury-avenue-surgery/">Salisbury Avenue Surgery</a></div>
   <div class="card-addr">7 Salisbury Avenue, Barking, IG11 9XQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1023,7 +1027,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02084779971</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27109768921" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.salisburyavenue.nhs.uk/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Say GP</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/say-gp/">Say GP</a></div>
   <div class="card-addr">35 Galley Lane, Barnet, EN5 4AR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1032,7 +1036,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02033277777</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-16967407920" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.say-gp.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Havering" data-type="private">
-  <div class="card-name">St George’s Country Park Surgery</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/havering/st-george-s-country-park-surgery/">St George’s Country Park Surgery</a></div>
   <div class="card-addr">Suttons Lane, Hornchurch, RM12 6RR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1041,7 +1045,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01708440642</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20293892952" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Ten Harley Street, Medical Consulting Rooms</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/ten-harley-street-medical-consulting-rooms/">Ten Harley Street, Medical Consulting Rooms</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1050,7 +1054,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074678300</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24129865095" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Aesthetics Doctor</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-aesthetics-doctor/">The Aesthetics Doctor</a></div>
   <div class="card-addr">71 Duke Street, London, W1K 5NX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1059,7 +1063,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27258751897" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Ealing" data-type="private">
-  <div class="card-name">The Boileau Surgery</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/ealing/the-boileau-surgery/">The Boileau Surgery</a></div>
   <div class="card-addr">104 Boileau Road, Ealing, London, W5 3AJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1068,7 +1072,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089976604</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24220470496" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.boileauroadsurgery.nhs.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">The Child and Family Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/the-child-and-family-practice/">The Child and Family Practice</a></div>
   <div class="card-addr">60 Bloomsbury Street, London, WC1B 3QU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1077,7 +1081,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070342690</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2333739567" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.tcfp.org.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Lewisham" data-type="private">
-  <div class="card-name">The Clinic by Dr Mayoni</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lewisham/the-clinic-by-dr-mayoni/">The Clinic by Dr Mayoni</a></div>
   <div class="card-addr">43 Honor Oak Park, London, SE23 1DZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1086,7 +1090,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02086999496</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-9109958895" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drmayoni.co.uk/the-clinic" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">The Criswell Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/the-criswell-practice/">The Criswell Practice</a></div>
   <div class="card-addr">6b Sloane Square, Chelsea, London, SW1W 8EE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1095,7 +1099,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02077300505</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8167721835" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The KB Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-kb-clinic/">The KB Clinic</a></div>
   <div class="card-addr">75 Harley Street, Suite 3 Ground Floor, London, W1G 8QJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1104,7 +1108,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02076361928</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11440302315" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Tower Hamlets" data-type="private">
-  <div class="card-name">The London Circumcision Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/tower-hamlets/the-london-circumcision-clinic/">The London Circumcision Clinic</a></div>
   <div class="card-addr">Harley Medical, 17-19 Cavell Street, Whitechapel, London, E1 2BP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1113,7 +1117,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07946376591</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-10917631192" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.circumcision-clinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The London Endocrine Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-london-endocrine-centre/">The London Endocrine Centre</a></div>
   <div class="card-addr">68 Harley Street, London, W1G 7HE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1122,7 +1126,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073232755</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-202180110" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.qmul.ac.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Islington" data-type="private">
-  <div class="card-name">The Mittal Hair Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/islington/the-mittal-hair-clinic/">The Mittal Hair Clinic</a></div>
   <div class="card-addr">111 Charterhouse Street, London, EC1M 6AW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1131,7 +1135,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02045418794</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22809535615" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.mittalhairclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Merton" data-type="private">
-  <div class="card-name">The Park Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/merton/the-park-clinic/">The Park Clinic</a></div>
   <div class="card-addr">52 Durham Road, Raynes Park, London, SW20 0TW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1140,7 +1144,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089463064</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8361343070" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Havering" data-type="private">
-  <div class="card-name">The Surgery (Dr S R Dey)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/havering/the-surgery-dr-s-r-dey/">The Surgery (Dr S R Dey)</a></div>
   <div class="card-addr">9 Glanville Drive, Hornchurch, RM11 3SZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1158,7 +1162,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11434071076" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Redbridge" data-type="private">
-  <div class="card-name">Time Clinic Medical Aesthetics and Wellness</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/redbridge/time-clinic-medical-aesthetics-and-wellness/">Time Clinic Medical Aesthetics and Wellness</a></div>
   <div class="card-addr">1st Floor, Telecoms House, 15 The Broadway, Woodford Green, IG8 0HL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1167,7 +1171,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02037959063</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22846992134" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.time-clinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kingston upon Thames" data-type="private">
-  <div class="card-name">Transcend Consulting Rooms</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kingston/transcend-consulting-rooms/">Transcend Consulting Rooms</a></div>
   <div class="card-addr">65 Warren Drive North, Surbiton, KT5 9LG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1176,7 +1180,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02034412341</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6882607433" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.TranscendConsultingRooms.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name">Trinity Medical Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/trinity-medical-centre/">Trinity Medical Centre</a></div>
   <div class="card-addr">2 Garland Road, London, SE18 2AE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1194,7 +1198,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07803586324</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14278319788" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name">Unit 8.1.3 - Aatma Aesthetics</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/unit-8-1-3-aatma-aesthetics/">Unit 8.1.3 - Aatma Aesthetics</a></div>
   <div class="card-addr">Unit 8.1.3, Peninsula Square, London, SE10 0DX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1203,7 +1207,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07737281566</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22006198731" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">West End Medical Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/west-end-medical-centre/">West End Medical Centre</a></div>
   <div class="card-addr">Suite 5 Egmont House, 116 Shaftesbury Avenue, London, W1D 5EW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -1212,7 +1216,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02077340845</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-116406794" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Your Excellent Health Service</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/your-excellent-health-service/">Your Excellent Health Service</a></div>
   <div class="card-addr">25 Harley Street, London, W1G 9QW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

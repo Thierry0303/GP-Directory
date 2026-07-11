@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Psychiatry & Mental Health <span class="count">29</span></div>
   <div class="cards"><div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">96 Harley Street — The Department Of Psychological Medicine At 96 ...</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/96-harley-street-the-department-of-psychological-medicine-at-96/">96 Harley Street — The Department Of Psychological Medicine At 96 ...</a></div>
   <div class="card-addr">96 Harley Street, London, W1G 7HY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-595814750" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Tower Hamlets" data-type="private">
-  <div class="card-name">ADHD Clinic (Inam Psychiatry Ltd)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/tower-hamlets/adhd-clinic-inam-psychiatry-ltd/">ADHD Clinic (Inam Psychiatry Ltd)</a></div>
   <div class="card-addr">5 Brayford Square, London, E1 0SG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 0800549572</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19611907351" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.adhd-clinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Richmond upon Thames" data-type="private">
-  <div class="card-name">Baxter Renal Education Centre - Kew</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/richmond/baxter-renal-education-centre-kew/">Baxter Renal Education Centre - Kew</a></div>
   <div class="card-addr">2 Priory Road, Kew, Richmond, TW9 3DG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089486824</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-112852211" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.baxterhealthcare.co.uk/patients_and_caregivers/therapies/renal/education_resources" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Child Psychiatry Consultancy</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/child-psychiatry-consultancy/">Child Psychiatry Consultancy</a></div>
   <div class="card-addr">Hillgrove House, 186a High Street, Edgware, HA8 7EX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07861684180</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27990853913" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.childpsychiatry.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Shruthi Guruswamy (127 Harley Street)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-shruthi-guruswamy-127-harley-street/">Dr Shruthi Guruswamy (127 Harley Street)</a></div>
   <div class="card-addr">127 Harley Street, London, W1G 6AZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070421875</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3054830151" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drshruthiguruswamy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Dr Shruthi Guruswamy (The Priory Hospital)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/dr-shruthi-guruswamy-the-priory-hospital/">Dr Shruthi Guruswamy (The Priory Hospital)</a></div>
   <div class="card-addr">Priory Lane, Roehampton, London, SW15 5JJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070421875</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3054799452" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.drshruthiguruswamy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Dr Todd Mitchell, Consultant Psychiatrist</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dr-todd-mitchell-consultant-psychiatrist/">Dr Todd Mitchell, Consultant Psychiatrist</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -159,7 +163,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07535636831</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6239731696" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.harleytherapy.co.uk/todd-mitchell.htm" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Eton Psychiatrists Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/eton-psychiatrists-limited/">Eton Psychiatrists Limited</a></div>
   <div class="card-addr">Room 2, 227 Maida Vale, London, W9 1QJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -168,7 +172,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079292520</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20629949263" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.etonpsychiatrists.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Harley Mind Care Psychiatrists</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/harley-mind-care-psychiatrists/">Harley Mind Care Psychiatrists</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -177,7 +181,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070478888</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18665910048" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Harley Street Mental Health</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/harley-street-mental-health/">Harley Street Mental Health</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -186,7 +190,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02034883655</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13866810106" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.Hsmh.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Helene Therapeutics</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/helene-therapeutics/">Helene Therapeutics</a></div>
   <div class="card-addr">75/77 Brook Street, London, W1K 4HX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -195,7 +199,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25527437651" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.heleneclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Waltham Forest" data-type="private">
-  <div class="card-name">Highams Lodge</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/waltham-forest/highams-lodge/">Highams Lodge</a></div>
   <div class="card-addr">49-51 The Avenue, Highams Park, London, E4 9LB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -204,7 +208,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02085234651</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-114045387" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cht.org.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
-  <div class="card-name">Lilias Gillies House</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/croydon/lilias-gillies-house/">Lilias Gillies House</a></div>
   <div class="card-addr">169 Tollers Lane, Coulsdon, CR5 1BJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -213,7 +217,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01737668112</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-524233225" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London Psychiatry Services</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-psychiatry-services/">London Psychiatry Services</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -222,7 +226,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-21709224309" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Online Psychiatry UK</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/online-psychiatry-uk/">Online Psychiatry UK</a></div>
   <div class="card-addr">85 Great Portland Street, First Floor, London, W1W 7LT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -231,7 +235,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07990341396</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22156219781" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Richmond upon Thames" data-type="private">
-  <div class="card-name">Orchard Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/richmond/orchard-clinic/">Orchard Clinic</a></div>
   <div class="card-addr">89 St Margarets Road, Twickenham, TW1 2LJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -240,7 +244,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02031983100</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2285225832" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.orchard-clinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Private Psychiatry</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/private-psychiatry/">Private Psychiatry</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -249,7 +253,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039301967</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22058517026" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.privatepsychiatry.co.uk/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Private Therapy Clinic Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/private-therapy-clinic-ltd/">Private Therapy Clinic Ltd</a></div>
   <div class="card-addr">63 Wigmore Street, London, W1U 1BQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -258,7 +262,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25466290755" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Psychiatric And Psychological Consultant Services Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/psychiatric-and-psychological-consultant-services-limited/">Psychiatric And Psychological Consultant Services Limited</a></div>
   <div class="card-addr">14 Devonshire Place, London, W1G 6HX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -267,7 +271,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079350640</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-121794125" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ppcsltd.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Psychiatry Access</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/psychiatry-access/">Psychiatry Access</a></div>
   <div class="card-addr">227 Maida Vale, London, W9 1QJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -276,7 +280,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07946011291</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-26271189838" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kingston upon Thames" data-type="private">
-  <div class="card-name">Remote Trauma</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kingston/remote-trauma/">Remote Trauma</a></div>
   <div class="card-addr">2 Bridle Close, Kingston Upon Thames, KT1 2JW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -285,7 +289,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08448009158</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-9621912615" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.remotetrauma.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">S E I K Psychiatry</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/s-e-i-k-psychiatry/">S E I K Psychiatry</a></div>
   <div class="card-addr">12th Floor, Broadgate Tower, 20 Primrose Street, London, EC2A 2EW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -294,7 +298,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02080810837</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-16309712251" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.seikpsychiatry.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Ten Harley Street</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/ten-harley-street/">Ten Harley Street</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -303,7 +307,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074678300</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13839644886" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Holistic Psychiatry Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-holistic-psychiatry-clinic/">The Holistic Psychiatry Clinic</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -312,7 +316,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07956500135</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22146235729" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The London Psychiatry Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-london-psychiatry-centre/">The London Psychiatry Centre</a></div>
   <div class="card-addr">72 Harley Street, London, W1G 7HG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -321,7 +325,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075804224</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-424371541" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.psychiatrycentre.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Marylebone Psychiatry Clinic Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-marylebone-psychiatry-clinic-ltd/">The Marylebone Psychiatry Clinic Ltd</a></div>
   <div class="card-addr">85 Wimpole Street, London, W1G 9RJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -330,7 +334,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02031953873</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-21744341632" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.marylebonepsychiatry.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Psychiatric Care Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-psychiatric-care-clinic/">The Psychiatric Care Clinic</a></div>
   <div class="card-addr">85 Wimpole Street, London, W1G 9RJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -339,7 +343,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20243647327" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.psychareclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Islington" data-type="private">
-  <div class="card-name">Thérapie Medical (UK) Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/islington/th-rapie-medical-uk-ltd/">Thérapie Medical (UK) Ltd</a></div>
   <div class="card-addr">Thérapie Clinic Angel, Unit RU7, 35 Parkfield Street, London, N1 0PS</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -348,7 +352,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08000121565</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24888034384" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">UK Psychiatry Services Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/uk-psychiatry-services-ltd/">UK Psychiatry Services Ltd</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

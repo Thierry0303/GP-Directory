@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Orthopaedics & Sports Medicine <span class="count">11</span></div>
   <div class="cards"><div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">Broadgate Spine & Joint Clinic Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/broadgate-spine-and-joint-clinic-limited/">Broadgate Spine & Joint Clinic Limited</a></div>
   <div class="card-addr">65 London Wall, London, EC2M 5TU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02076884330</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-110951204" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.broadgategp.co.uk/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kingston upon Thames" data-type="private">
-  <div class="card-name">Lambert Sports Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kingston/lambert-sports-clinic/">Lambert Sports Clinic</a></div>
   <div class="card-addr">380 Ewell Road, Tolworth, Surbiton, KT6 7BE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02081335694</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13774886305" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.lambertsportsclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">OneWelbeck Orthopaedics</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/onewelbeck-orthopaedics/">OneWelbeck Orthopaedics</a></div>
   <div class="card-addr">1 Welbeck Street, London, W1G 0AR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02036532002</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-8600636337" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.onewelbeck.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Tower Hamlets" data-type="private">
-  <div class="card-name">Pure Sports Medicine (Canary Wharf)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/tower-hamlets/pure-sports-medicine-canary-wharf/">Pure Sports Medicine (Canary Wharf)</a></div>
   <div class="card-addr">Cabot Place, London, E14 4QT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-321528300" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">Pure Sports Medicine (Chancery Lane)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/pure-sports-medicine-chancery-lane/">Pure Sports Medicine (Chancery Lane)</a></div>
   <div class="card-addr">36 Chancery Lane, London, WC2A 1EN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02035951235</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-4754062270" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.puresportsmed.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Islington" data-type="private">
-  <div class="card-name">Pure Sports Medicine (Finsbury Square)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/islington/pure-sports-medicine-finsbury-square/">Pure Sports Medicine (Finsbury Square)</a></div>
   <div class="card-addr">12 Finsbury Square, London, EC2A 1AS</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08447700800</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-4971733550" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.puresportsmed.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">Pure Sports Medicine (One New Change)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/pure-sports-medicine-one-new-change/">Pure Sports Medicine (One New Change)</a></div>
   <div class="card-addr">One New Change, SU35/36, First Floor, Cheapside, London, EC4M 9AF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -159,7 +163,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 03447700800</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-5587600558" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.puresportsmed.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Pure Sports Medicine Limited (Kensington)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/pure-sports-medicine-limited-kensington/">Pure Sports Medicine Limited (Kensington)</a></div>
   <div class="card-addr">Point West, 116 Cromwell Road, Kensington, London, SW7 4XR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -168,7 +172,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08447700800</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-106025394" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.puresportsmed.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Merton" data-type="private">
-  <div class="card-name">Pure Sports Medicine Limited (Raynes Park)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/merton/pure-sports-medicine-limited-raynes-park/">Pure Sports Medicine Limited (Raynes Park)</a></div>
   <div class="card-addr">Bushey Road, London, SW20 8DE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -177,7 +181,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-159792139" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.puresportsmed.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">Pure Sports Medicine Limited (Threadneedle)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/pure-sports-medicine-limited-threadneedle/">Pure Sports Medicine Limited (Threadneedle)</a></div>
   <div class="card-addr">41-47 Threadneedle Street, London, EC2R 8AR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -186,7 +190,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08447700800</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-106025374" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.puresportsmed.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Pure Sports Medicine Roehampton</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/pure-sports-medicine-roehampton/">Pure Sports Medicine Roehampton</a></div>
   <div class="card-addr">Roehampton Lane,, London, SW15 5LR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

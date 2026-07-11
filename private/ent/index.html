@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private ENT — Ear, Nose & Throat <span class="count">6</span></div>
   <div class="cards"><div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">150 Harley Street — ENT at 150 Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/150-harley-street-ent-at-150-limited/">150 Harley Street — ENT at 150 Limited</a></div>
   <div class="card-addr">150 Harley Street, London, W1G 7LQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02030753150</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-295115737" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.150harleyst.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London Allergy Nose and Sinus Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-allergy-nose-and-sinus-clinic/">London Allergy Nose and Sinus Clinic</a></div>
   <div class="card-addr">28 Weymouth Street, London, W1G 7BZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02046181462</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-21881736703" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.lnscm.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London ENT Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-ent-clinic/">London ENT Clinic</a></div>
   <div class="card-addr">51 Harley Street, London, W1G 8QQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072620297</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2182464814" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.londonentclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">OneWelbeck Ear, Nose & Throat</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/onewelbeck-ear-nose-and-throat/">OneWelbeck Ear, Nose & Throat</a></div>
   <div class="card-addr">1 Welbeck Street, London, W1G 0AR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02036532007</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-9645365332" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Harley Street ENT Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-harley-street-ent-clinic/">The Harley Street ENT Clinic</a></div>
   <div class="card-addr">109 Harley Street, London, W1G 6AN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072242350</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-377082542" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.harleystreetent.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Haringey" data-type="private">
-  <div class="card-name">West Green ENT Service</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/haringey/west-green-ent-service/">West Green ENT Service</a></div>
   <div class="card-addr">590 - 598 Green Lanes, London, N8 0RA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

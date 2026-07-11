@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Ophthalmology & Eye Care <span class="count">13</span></div>
   <div class="cards"><div class="card" data-borough="Havering" data-type="private">
-  <div class="card-name">Evolutio Ophthalmology Clinic – Victoria Road</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/havering/evolutio-ophthalmology-clinic-victoria-road/">Evolutio Ophthalmology Clinic – Victoria Road</a></div>
   <div class="card-addr">23 Victoria Road, Romford, RM1 2JT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02037807860</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-27123588629" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Eye Clinic London Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/eye-clinic-london-ltd/">Eye Clinic London Ltd</a></div>
   <div class="card-addr">7 Devonshire Street, London, W1W 5DY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039744454</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19877862965" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Harley Street Eye Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/harley-street-eye-clinic/">Harley Street Eye Clinic</a></div>
   <div class="card-addr">86 Harley Street, London, W1G 7HP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070600086</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-5353496345" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.harleystreeteye.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Infinity Eye Clinic Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/infinity-eye-clinic-limited/">Infinity Eye Clinic Limited</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 08008803300</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2283828271" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.infinityeyeclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Kersley Eye Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/kersley-eye-clinic/">Kersley Eye Clinic</a></div>
   <div class="card-addr">42 Harley Street, London, W1G 9PR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074361591</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-4017111373" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.kersleyeyeclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Laser Eye Clinic London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/laser-eye-clinic-london/">Laser Eye Clinic London</a></div>
   <div class="card-addr">Retail Unit 2, Collier House, 163-169, Brompton Road, London, SW3 1PY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039108970</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-15879699743" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.lec-london.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London Centre for Refractive Surgery (Ultralase Harley Street)</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-centre-for-refractive-surgery-ultralase-harley-street/">London Centre for Refractive Surgery (Ultralase Harley Street)</a></div>
   <div class="card-addr">15 Harley Street, London, W1G 9QQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -159,7 +163,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075809010</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1177001323" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ultralase.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London Vision Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-vision-clinic/">London Vision Clinic</a></div>
   <div class="card-addr">138 Harley Street, London, W1G 7LA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -168,7 +172,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072241005</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3086882805" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Optegra Eye Hospital London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/optegra-eye-hospital-london/">Optegra Eye Hospital London</a></div>
   <div class="card-addr">25 - 27 Queen Anne Street, London, W1G 9HT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -177,7 +181,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075095400</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2185777628" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.optegra.com/hospitals-and-clinics/optegra-eye-hospital-london/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Optegra London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/optegra-london/">Optegra London</a></div>
   <div class="card-addr">Unit 6, Technology Park, Colindeep Lane, London, NW9 6BX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -186,7 +190,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02082058003</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-479467117" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.optegra.com/hospitals-and-clinics/optegra-eye-hospital-north-london" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">Optimax Laser Eye Clinics - London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/optimax-laser-eye-clinics-london/">Optimax Laser Eye Clinics - London</a></div>
   <div class="card-addr">128 Finchley Road, London, NW3 5HT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -195,7 +199,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074316708</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-131383541" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.optimax.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kingston upon Thames" data-type="private">
-  <div class="card-name">Seon Vision</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kingston/seon-vision/">Seon Vision</a></div>
   <div class="card-addr">140 London Road, Kingston Upon Thames, KT2 6QL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -204,7 +208,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02082871820</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-21670181843" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">The Cataract Centre - Lincoln Road Medical Practice</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/the-cataract-centre-lincoln-road-medical-practice/">The Cataract Centre - Lincoln Road Medical Practice</a></div>
   <div class="card-addr">Lincoln Road, Enfield, EN1 1LJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

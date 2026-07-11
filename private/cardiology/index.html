@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Cardiology & Heart <span class="count">7</span></div>
   <div class="cards"><div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Cardioscan - Putney</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/cardioscan-putney/">Cardioscan - Putney</a></div>
   <div class="card-addr">7-8 Crescent Stables, London, SW15 2TN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01992351033</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-19886917631" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Hounslow" data-type="private">
-  <div class="card-name">London Heart Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/hounslow/london-heart-clinic/">London Heart Clinic</a></div>
   <div class="card-addr">941 Great West Road, Brentford, TW8 9DU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3667274464" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">One Heart Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/one-heart-clinic/">One Heart Clinic</a></div>
   <div class="card-addr">68 Harley Street, London, W1G 7HE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039838001</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-9558221950" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.oneheartclinic.com/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">One Heart Clinic City</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/one-heart-clinic-city/">One Heart Clinic City</a></div>
   <div class="card-addr">80 Cheapside, London, EC2V 6EE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039838001</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-18281338465" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">One Heart Clinic Marylebone</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/one-heart-clinic-marylebone/">One Heart Clinic Marylebone</a></div>
   <div class="card-addr">10-11 Bulstrode Place, London, W1U 2HX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039838001</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14251737509" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.oneheartclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Cardiovascular Diagnostics Centre Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-cardiovascular-diagnostics-centre-limited/">The Cardiovascular Diagnostics Centre Limited</a></div>
   <div class="card-addr">3rd Floor, 75 Harley Street, London, W1G 8QL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07711307803</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11859378005" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The National Heart Clinic Ltd</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-national-heart-clinic-ltd/">The National Heart Clinic Ltd</a></div>
   <div class="card-addr">69 Harley Street, London, W1G 8QW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

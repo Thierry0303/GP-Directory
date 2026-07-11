@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Neurology & Brain Health <span class="count">4</span></div>
   <div class="cards"><div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">London Neurology Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/london-neurology-clinic/">London Neurology Clinic</a></div>
   <div class="card-addr">10 Harley Street, London, W1G 9PF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07311878686</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-10593188838" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.londonneurologyclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">National Migraine Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/national-migraine-centre/">National Migraine Centre</a></div>
   <div class="card-addr">999 Finchley Road, London, NW11 7HB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072513322</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-15927872601" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">The Gamma Knife Centre at The National Hospital for Neurology and Neurosurgery</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/the-gamma-knife-centre-at-the-national-hospital-for-neurology-and-neurosurgery/">The Gamma Knife Centre at The National Hospital for Neurology and Neurosurgery</a></div>
   <div class="card-addr">Chandler Wing, Queen Square, London, WC1N 3BG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02039416395</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-500740407" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.amethyst-radiotherapy.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">The London Migraine Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/the-london-migraine-clinic/">The London Migraine Clinic</a></div>
   <div class="card-addr">2-4 Bulls Head Passage, London, EC3V 1LU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Private Hospitals <span class="count">33</span></div>
   <div class="cards"><div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">Avesbury House</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/avesbury-house/">Avesbury House</a></div>
   <div class="card-addr">85 Tanners End Lane, London, N18 1PQ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02088037316</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1265559130" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.priorygroup.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Battersea Bridge House</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/battersea-bridge-house/">Battersea Bridge House</a></div>
   <div class="card-addr">1 Randal Close, Battersea, London, SW11 3TG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079247991</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-139149784" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.inmind.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Lewisham" data-type="private">
-  <div class="card-name">Bromley Road Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lewisham/bromley-road-hospital/">Bromley Road Hospital</a></div>
   <div class="card-addr">84-86 Bromley Road / 82 Canadian Avenue, London, SE6 2UR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02086956051</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-126736267" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.elysiumhealthcare.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">Chelsea Hospital Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/chelsea-hospital-limited/">Chelsea Hospital Limited</a></div>
   <div class="card-addr">169 Fulham Road, London, SW3 6SP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-23637683651" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.memorialhouston.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name">Cygnet Bostall House</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/cygnet-bostall-house/">Cygnet Bostall House</a></div>
   <div class="card-addr">Bostall Heath, Knee Hill, London, SE2 0AT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02083197954</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-519868002" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Southwark" data-type="private">
-  <div class="card-name">Cygnet Churchill</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/southwark/cygnet-churchill/">Cygnet Churchill</a></div>
   <div class="card-addr">22 Barkham Terrace, 80 Lambeth Road, Lambeth, London, SE1 7PW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079282334</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-207202943" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Newham" data-type="private">
-  <div class="card-name">Cygnet Hospital Beckton</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/newham/cygnet-hospital-beckton/">Cygnet Hospital Beckton</a></div>
   <div class="card-addr">23 Tunnan Leys, Beckton, London, E6 6ZB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -159,7 +163,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075112299</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130471820" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Lewisham" data-type="private">
-  <div class="card-name">Cygnet Hospital Blackheath</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lewisham/cygnet-hospital-blackheath/">Cygnet Hospital Blackheath</a></div>
   <div class="card-addr">80-82 Blackheath Hill, London, SE10 8AD</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -168,7 +172,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02086942111</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130486688" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Ealing" data-type="private">
-  <div class="card-name">Cygnet Hospital Ealing</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/ealing/cygnet-hospital-ealing/">Cygnet Hospital Ealing</a></div>
   <div class="card-addr">22 Corfton Road, Ealing, London, W5 2HT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -177,7 +181,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089916699</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130486723" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Harrow" data-type="private">
-  <div class="card-name">Cygnet Hospital Harrow</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/harrow/cygnet-hospital-harrow/">Cygnet Hospital Harrow</a></div>
   <div class="card-addr">London Road, Harrow, HA1 3JL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -186,7 +190,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089667000</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130486784" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Harrow" data-type="private">
-  <div class="card-name">Cygnet Lodge Kenton</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/harrow/cygnet-lodge-kenton/">Cygnet Lodge Kenton</a></div>
   <div class="card-addr">74 Kenton Road, Kenton, HA3 8AE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -195,7 +199,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089070770</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130486890" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Lewisham" data-type="private">
-  <div class="card-name">Cygnet Lodge Lewisham</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/lewisham/cygnet-lodge-lewisham/">Cygnet Lodge Lewisham</a></div>
   <div class="card-addr">44 Lewisham Park, Lewisham, London, SE13 6QZ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -204,7 +208,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02083145123</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-130486872" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cygnethealth.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name">DaVita (UK) Ltd - HMP Thameside</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/davita-uk-ltd-hmp-thameside/">DaVita (UK) Ltd - HMP Thameside</a></div>
   <div class="card-addr">Griffin Manor Way, London, SE28 0FJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -213,7 +217,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075813139</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13053163420" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.renalservices.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">DHI International UK Limited</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/dhi-international-uk-limited/">DHI International UK Limited</a></div>
   <div class="card-addr">43 New Cavendish Street, London, W1G 9TH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -222,7 +226,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074869789</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-207542102" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.dhiglobal.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Barnet" data-type="private">
-  <div class="card-name">Ellern Mede Barnet</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/barnet/ellern-mede-barnet/">Ellern Mede Barnet</a></div>
   <div class="card-addr">2 Warwick Road, Barnet, EN5 5EE</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -231,7 +235,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089596311</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3996963196" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.ellenmede.org" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Haringey" data-type="private">
-  <div class="card-name">Highgate Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/haringey/highgate-hospital/">Highgate Hospital</a></div>
   <div class="card-addr">17 View Road, London, N6 4DJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -240,7 +244,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02084314182</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12924818962" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.highgatehospital.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Islington" data-type="private">
-  <div class="card-name">Holloway Surgical Centre London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/islington/holloway-surgical-centre-london/">Holloway Surgical Centre London</a></div>
   <div class="card-addr">Unit 5, 6 Hornsey Street, London, N7 8GR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -249,7 +253,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07546576919</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25403207707" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.hollowaysurgicalcentre.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">Holybourne Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/holybourne-hospital/">Holybourne Hospital</a></div>
   <div class="card-addr">Holybourne Avenue, London, SW15 4JL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -267,7 +271,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01992787202</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-108646848" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.barchester.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Nightingale Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/nightingale-hospital/">Nightingale Hospital</a></div>
   <div class="card-addr">11-19 Lisson Grove, Marylebone, London, NW1 6SH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -276,7 +280,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02075357700</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-109980250" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.nightingalehospital.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Merton" data-type="private">
-  <div class="card-name">Parkside Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/merton/parkside-hospital/">Parkside Hospital</a></div>
   <div class="card-addr">53 Parkside, London, SW19 5NX</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -285,7 +289,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02089718000</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12924818809" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.parkside-hospital.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">Priory Hospital Enfield</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/priory-hospital-enfield/">Priory Hospital Enfield</a></div>
   <div class="card-addr">15 Church Street, Edmonton, London, N9 9DY</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -303,7 +307,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01708687398</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-129389323" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.priorygroup.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
-  <div class="card-name">Southleigh Community Independent Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/croydon/southleigh-community-independent-hospital/">Southleigh Community Independent Hospital</a></div>
   <div class="card-addr">42 Brighton Road, South Croydon, CR2 6AA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -312,7 +316,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02082560906</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-147462806" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.inmind.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">The Cavell Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/the-cavell-hospital/">The Cavell Hospital</a></div>
   <div class="card-addr">Cavell Drive, Uplands Park Road, Enfield, Enfield, EN2 7PR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -321,7 +325,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02083623640</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-128758601" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.circlehealthgroup.co.uk/hospitals/the-cavell-hospital" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">The Fitzrovia Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/the-fitzrovia-hospital/">The Fitzrovia Hospital</a></div>
   <div class="card-addr">13-14, Fitzroy Square, London, W1T 6AH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -330,7 +334,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02070343301</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13740482832" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.fitzroviahospital.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">The Kings Oak Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/the-kings-oak-hospital/">The Kings Oak Hospital</a></div>
   <div class="card-addr">Chase Farm (North Side), Chase Farm (North Side) Enfield, London, EN2 8SD</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -339,7 +343,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02083709500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-128766906" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.circlehealthgroup.co.uk/hospitals/the-kings-oak-hospital" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The London Welbeck Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-london-welbeck-hospital/">The London Welbeck Hospital</a></div>
   <div class="card-addr">27 Welbeck Street, London, W1G 8EN</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -348,7 +352,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072242242</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-114202293" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.londonwelbeckhospital.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Bromley" data-type="private">
-  <div class="card-name">The Priory Hospital Hayes Grove</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/bromley/the-priory-hospital-hayes-grove/">The Priory Hospital Hayes Grove</a></div>
   <div class="card-addr">Prestons Road, Hayes, Bromley, BR2 7AS</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -357,7 +361,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02084627722</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-127132208" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.priorygroup.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Enfield" data-type="private">
-  <div class="card-name">The Priory Hospital North London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/enfield/the-priory-hospital-north-london/">The Priory Hospital North London</a></div>
   <div class="card-addr">Grovelands House, The Bourne, Southgate, London, N14 6RA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -366,7 +370,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02088828191</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-127132229" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.priorygroup.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Wandsworth" data-type="private">
-  <div class="card-name">The Priory Hospital Roehampton</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/wandsworth/the-priory-hospital-roehampton/">The Priory Hospital Roehampton</a></div>
   <div class="card-addr">Priory Lane, London, SW15 5JJ</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -375,7 +379,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02088768261</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-127132286" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.priorygroup.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">Weymouth Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/weymouth-hospital/">Weymouth Hospital</a></div>
   <div class="card-addr">42-46 Weymouth Street, London, W1G 6NP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -384,7 +388,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02079351200</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-129508000" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.bmihealthcare.co.uk/weymouth" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
-  <div class="card-name">Woodleigh Community Independent Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/croydon/woodleigh-community-independent-hospital/">Woodleigh Community Independent Hospital</a></div>
   <div class="card-addr">28 Elmwood Road, Croydon, CR0 2SG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

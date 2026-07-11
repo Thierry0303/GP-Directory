@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Oncology & Cancer Care <span class="count">8</span></div>
   <div class="cards"><div class="card" data-borough="Merton" data-type="private">
-  <div class="card-name">Cancer Centre London LLP</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/merton/cancer-centre-london-llp/">Cancer Centre London LLP</a></div>
   <div class="card-addr">49 Parkside, Wimbledon, London, SW19 5NB</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02082473352</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-197177428" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.cancercentrelondon.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">GenesisCare Centre for Radiotherapy at Cromwell Hospital</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/genesiscare-centre-for-radiotherapy-at-cromwell-hospital/">GenesisCare Centre for Radiotherapy at Cromwell Hospital</a></div>
   <div class="card-addr">Bupa Cromwell Hospital, 164-178 Cromwell Road, London, SW5 0TU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074602000</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-6555059021" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">HCA Healthcare UK Leaders in Oncology Care</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/hca-healthcare-uk-leaders-in-oncology-care/">HCA Healthcare UK Leaders in Oncology Care</a></div>
   <div class="card-addr">95 Harley Street, London, W1G 6AF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073172500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-157211433" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.hcahealthcare.co.uk/facilities/loc-leaders-in-oncology-care" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Southwark" data-type="private">
-  <div class="card-name">HCA Healthcare UK London Bridge Hospital, Leaders in Oncology Care</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/southwark/hca-healthcare-uk-london-bridge-hospital-leaders-in-oncology-care/">HCA Healthcare UK London Bridge Hospital, Leaders in Oncology Care</a></div>
   <div class="card-addr">Guy's Hospital, Great Maze Pond, London, SE1 9RT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02072342029</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-4305940372" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">HCA Healthcare UK Sydney Street Outpatients, Leaders in Oncology Care</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/kensington-and-chelsea/hca-healthcare-uk-sydney-street-outpatients-leaders-in-oncology-care/">HCA Healthcare UK Sydney Street Outpatients, Leaders in Oncology Care</a></div>
   <div class="card-addr">102  Sydney Street, London, SW3 6NR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -141,7 +145,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073172500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3768881480" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.hcahealthcare.co.uk/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">HCA Healthcare UK Wellington Hospital Outpatients, Leaders in Oncology Care</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/hca-healthcare-uk-wellington-hospital-outpatients-leaders-in-oncology-care/">HCA Healthcare UK Wellington Hospital Outpatients, Leaders in Oncology Care</a></div>
   <div class="card-addr">15-17 Lodge Road, London, NW8 7JA</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -150,7 +154,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02073172500</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-3758794199" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Care Oncology Clinic at 76 Harley Street</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-care-oncology-clinic-at-76-harley-street/">The Care Oncology Clinic at 76 Harley Street</a></div>
   <div class="card-addr">76 Harley Street, London, W1G 7HH</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -159,7 +163,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02038555939</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11866119975" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.careoncologyclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name">The Gamma Knife Centre at The National Hospital for Neurology and Neurosurgery</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/camden/the-gamma-knife-centre-at-the-national-hospital-for-neurology-and-neurosurgery/">The Gamma Knife Centre at The National Hospital for Neurology and Neurosurgery</a></div>
   <div class="card-addr">Chandler Wing, Queen Square, London, WC1N 3BG</div>
   <div class="card-tags">
     <span class="tag private">Private</span>

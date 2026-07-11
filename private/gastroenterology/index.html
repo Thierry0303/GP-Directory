@@ -30,8 +30,12 @@ a{text-decoration:none;color:inherit}
 .section-title{font-size:1rem;font-weight:700;color:#003087;margin:20px 0 12px;display:flex;align-items:center;gap:8px}
 .section-title .count{background:#e8f0fe;color:#003087;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
-.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8;transition:box-shadow .15s;position:relative}
 .card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card:has(.card-name-link):hover{border-color:#003087;box-shadow:0 2px 12px rgba(0,48,135,.12);cursor:pointer}
+.card-name-link{color:inherit;text-decoration:none}
+.card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
@@ -96,7 +100,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="section-title">💊 Private Gastroenterology & Digestion <span class="count">5</span></div>
   <div class="cards"><div class="card" data-borough="City of London" data-type="private">
-  <div class="card-name">LSDC Healthcare</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/city-of-london/lsdc-healthcare/">LSDC Healthcare</a></div>
   <div class="card-addr">22 -23 Widegate Street, London, E1 7HP</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -105,7 +109,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 07711228813</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-14143778721" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">One Welbeck Endoscopy Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/one-welbeck-endoscopy-centre/">One Welbeck Endoscopy Centre</a></div>
   <div class="card-addr">1 Welbeck Street, London, W1G 0AR</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -114,7 +118,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02036532004</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7124003259" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.asi.healthcare" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Bromley" data-type="private">
-  <div class="card-name">Orpington Endoscopy Centre</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/bromley/orpington-endoscopy-centre/">Orpington Endoscopy Centre</a></div>
   <div class="card-addr">Enso House, 3 New Mill Road, St. Pauls Cray, Orpington, BR5 3TW</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -123,7 +127,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 01689668220</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7775939428" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Functional Gut Clinic London</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-functional-gut-clinic-london/">The Functional Gut Clinic London</a></div>
   <div class="card-addr">8 Dorset Square, London, NW1 6PU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
@@ -132,7 +136,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-actions"><span class="btn-phone">📞 02074867777</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-13654602973" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.thefunctionalgutclinic.com" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name">The Liver Clinic</div>
+  <div class="card-name"><a class="card-name-link" href="/practice/westminster/the-liver-clinic/">The Liver Clinic</a></div>
   <div class="card-addr">John Bell & Croyden, 50 - 54 Wigmore Street, London, W1U 2AU</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
