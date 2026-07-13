@@ -59,6 +59,7 @@ SPECIALTY_META = {
 NHS_INCLUDE_SPECS = {"private-gp"}
 
 NAV = """<nav class="site-nav">
+  <a class="brand" href="/">London GP <em>Directory</em></a>
   <a href="/">Search</a>
   <a href="/boroughs/">Boroughs</a>
   <a href="/nhs-services/">NHS Services</a>
@@ -71,15 +72,18 @@ CSS = """<style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
 a{text-decoration:none;color:inherit}
-.site-nav{background:#003087;padding:10px 24px;display:flex;gap:20px;flex-wrap:wrap}
+.site-nav{background:#003087;padding:12px 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
 .site-nav a{color:rgba(255,255,255,.8);font-size:.85rem}
 .site-nav a:hover,.site-nav a.active{color:#fff}
-.page-header{background:linear-gradient(135deg,#003087 0%,#0047bb 100%);color:#fff;padding:40px 24px}
-.page-header h1{font-size:2rem;font-weight:700;margin-bottom:8px}
-.page-header p{opacity:.8;max-width:700px;line-height:1.6}
-.stats{display:flex;gap:32px;margin-top:20px;flex-wrap:wrap}
-.stat strong{display:block;font-size:1.6rem;font-weight:300}
-.stat span{font-size:.75rem;opacity:.7;text-transform:uppercase;letter-spacing:.05em}
+.site-nav .brand{font-family:Georgia,serif;font-size:1.05rem;font-weight:700;color:#fff;margin-right:14px}
+.site-nav .brand em{color:#B5D4F4;font-style:italic;font-weight:400}
+.page-header{background:#003087;color:#fff;padding:32px 24px;border-bottom:4px solid #0072CE}
+.page-header h1{font-family:Georgia,serif;font-size:1.7rem;font-weight:700;line-height:1.15;margin-bottom:8px}
+.page-header h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
+.page-header p{opacity:.8;max-width:680px;line-height:1.45;font-size:.9rem}
+.stats{display:flex;gap:28px;margin-top:16px;flex-wrap:wrap}
+.stat strong{display:block;font-size:1.4rem;font-weight:300;letter-spacing:-.03em}
+.stat span{font-size:.7rem;opacity:.6;text-transform:uppercase;letter-spacing:.05em}
 .content{max-width:1100px;margin:0 auto;padding:24px}
 .filter-bar{background:#fff;border-radius:10px;padding:14px 16px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .filter-label{font-size:.8rem;color:#888;margin-right:4px}
@@ -97,7 +101,7 @@ a{text-decoration:none;color:inherit}
 .card-name-link{color:inherit;text-decoration:none}
 .card-name-link::after{content:"";position:absolute;inset:0;border-radius:inherit}
 .card .card-actions,.card .card-actions a{position:relative;z-index:1}
-.card-name{font-weight:600;font-size:.95rem;color:#003087;margin-bottom:4px}
+.card-name{font-family:Georgia,serif;font-weight:700;font-size:.9rem;color:#003087;margin-bottom:4px;line-height:1.3}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
 .tag{padding:2px 8px;border-radius:8px;font-size:.68rem;font-weight:600}
@@ -118,10 +122,10 @@ a{text-decoration:none;color:inherit}
 .btn-nhs{background:#005EB8;color:#fff}
 .btn-phone{color:#003087;font-size:.78rem}
 .spec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:20px}
-.spec-card{background:#fff;border-radius:12px;padding:20px;border:1px solid #e8e8e8;display:block;transition:box-shadow .15s;color:inherit}
-.spec-card:hover{box-shadow:0 4px 16px rgba(0,48,135,.12);border-color:#c7d7f4}
-.spec-emoji{font-size:2rem;margin-bottom:8px}
-.spec-card h2{font-size:1rem;font-weight:700;color:#003087;margin-bottom:4px}
+.spec-card{background:#fff;border-radius:12px;padding:15px 16px;border:1px solid #ddd;display:block;transition:box-shadow .15s,border-color .15s;color:inherit}
+.spec-card:hover{box-shadow:0 2px 10px rgba(0,48,135,.12);border-color:#003087}
+.spec-emoji{display:inline-block;font-size:1.05rem;margin-right:7px;vertical-align:-1px}
+.spec-card h2{font-family:Georgia,serif;font-size:.95rem;font-weight:700;color:#003087;margin-bottom:4px;line-height:1.3}
 .spec-card p{font-size:.8rem;color:#666}
 .spec-count{font-size:.75rem;color:#888;margin-top:6px}
 .spec-count strong{color:#003087}
@@ -323,8 +327,7 @@ def build_hub_page(specialty_counts):
         label  = meta.get('label', spec.replace('-', ' ').title())
         n_priv, n_nhs = specialty_counts[spec]
         cards += f"""<a class="spec-card" href="/private/{spec}/">
-  <div class="spec-emoji">{emoji}</div>
-  <h2>{label}</h2>
+  <h2><span class="spec-emoji">{emoji}</span>{label}</h2>
   <p class="spec-count">
     <strong>{n_priv}</strong> private{f' · <strong>{n_nhs}</strong> NHS' if n_nhs else ''}
   </p>
@@ -344,7 +347,7 @@ def build_hub_page(specialty_counts):
 <body>
 {NAV}
 <div class="page-header">
-  <h1>🔬 Healthcare Specialists in London</h1>
+  <h1>Healthcare Specialists in London <em>by specialty</em></h1>
   <p>Browse NHS and private consultants, clinics and hospitals across London by specialty. All providers CQC-registered.</p>
   <div class="stats">
     <div class="stat"><strong>{total_priv}</strong><span>Private providers</span></div>
