@@ -28924,7 +28924,7 @@
     "localAuthority": "Westminster",
     "lat": 51.517391,
     "lon": -0.146009,
-    "providerName": "",
+    "providerName": "London GP Medical Concierge Ltd",
     "ar": "Westminster"
   },
   {
@@ -28943,7 +28943,7 @@
     "localAuthority": "Southwark",
     "lat": 51.5010956,
     "lon": -0.1041982,
-    "providerName": "",
+    "providerName": "The Althea Practice Limited",
     "ar": "Southwark"
   },
   {
@@ -28962,7 +28962,7 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4959049,
     "lon": -0.1697485,
-    "providerName": "",
+    "providerName": "Elective Services Ltd",
     "ar": "Kensington & Chelsea"
   },
   {
@@ -28981,7 +28981,7 @@
     "localAuthority": "Camden",
     "lat": 51.5181258,
     "lon": -0.1332265,
-    "providerName": "",
+    "providerName": "Exclusive Medical Services Limited",
     "ar": "Camden"
   },
   {
@@ -29000,7 +29000,7 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.5001227,
     "lon": -0.2223849,
-    "providerName": "",
+    "providerName": "J&M Skincare Ltd",
     "ar": "Hammersmith & Fulham"
   },
   {
@@ -29019,7 +29019,7 @@
     "localAuthority": "Haringey",
     "lat": 51.5922879,
     "lon": -0.1136922,
-    "providerName": "",
+    "providerName": "Adviskin LTD",
     "ar": "Haringey"
   },
   {
@@ -29038,7 +29038,7 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5026686,
     "lon": -0.0171741,
-    "providerName": "",
+    "providerName": "Roodlane Medical Limited",
     "ar": "Tower Hamlets"
   }
 ]
