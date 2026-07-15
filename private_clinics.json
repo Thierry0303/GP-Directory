@@ -29040,5 +29040,24 @@
     "lon": -0.0171741,
     "providerName": "Roodlane Medical Limited",
     "ar": "Tower Hamlets"
+  },
+  {
+    "cqc_id": "1-28812965988",
+    "ods_code": "",
+    "name": "National MRI Scan Limited",
+    "address": "Level 8, 180 Strand, 2 Arundel Street, London",
+    "postcode": "WC2R 3DA",
+    "phone": "",
+    "website": "https://www.uk.scan.com",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28812965988",
+    "localAuthority": "Westminster",
+    "lat": 51.5120875,
+    "lon": -0.1144065,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]

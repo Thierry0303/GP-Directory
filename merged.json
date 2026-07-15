@@ -26549,8 +26549,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-1150357230",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-17709972033",
     "ar": "Westminster",
     "la": 51.521314,
     "ln": -0.14781,
@@ -46516,5 +46516,25 @@
     "ln": -0.0171741,
     "type": "Private",
     "web": "https://www.hcahealthcare.co.uk/services/gp-and-urgent-care/private-gp-services"
+  },
+  {
+    "o": "1-28812965988",
+    "n": "National MRI Scan Limited",
+    "a": "Level 8, 180 Strand, 2 Arundel Street, London",
+    "p": "WC2R 3DA",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28812965988",
+    "ar": "Westminster",
+    "la": 51.5120875,
+    "ln": -0.1144065,
+    "type": "Private",
+    "web": "https://www.uk.scan.com"
   }
 ]
