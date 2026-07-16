@@ -5193,6 +5193,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.uk.scan.com": {
+"checked": "2026-07-16",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.ukpsychiatryservices.co.uk": {
 "checked": "2026-07-11",
 "ok": true,
