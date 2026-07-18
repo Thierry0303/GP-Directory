@@ -46536,5 +46536,25 @@
     "ln": -0.1144065,
     "type": "Private",
     "web": "https://www.uk.scan.com"
+  },
+  {
+    "o": "1-28231448709",
+    "n": "The Iron Clinic London Ltd",
+    "a": "101 Harley Street, London",
+    "p": "W1G 6AH",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28231448709",
+    "ar": "Westminster",
+    "la": 51.5209794,
+    "ln": -0.1481587,
+    "type": "Private",
+    "web": ""
   }
 ]

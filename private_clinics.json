@@ -29059,5 +29059,24 @@
     "lon": -0.1144065,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28231448709",
+    "ods_code": "",
+    "name": "The Iron Clinic London Ltd",
+    "address": "101 Harley Street, London",
+    "postcode": "W1G 6AH",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28231448709",
+    "localAuthority": "Westminster",
+    "lat": 51.5209794,
+    "lon": -0.1481587,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
