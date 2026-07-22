@@ -26549,8 +26549,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-1150357230",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-17709972033",
     "ar": "Westminster",
     "la": 51.521314,
     "ln": -0.14781,
@@ -46554,6 +46554,26 @@
     "ar": "Westminster",
     "la": 51.5209794,
     "ln": -0.1481587,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28826840251",
+    "n": "Kindt Clinics London",
+    "a": "22 Wimpole Street, London",
+    "p": "W1G 8GQ",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28826840251",
+    "ar": "Westminster",
+    "la": 51.518513,
+    "ln": -0.14814,
     "type": "Private",
     "web": ""
   }
