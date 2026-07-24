@@ -29097,5 +29097,24 @@
     "lon": -0.14814,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28506440613",
+    "ods_code": "",
+    "name": "Neurodiverge",
+    "address": "Office 4, First Floor, JMH House, 481 Green Lanes, Palmers Green, London",
+    "postcode": "N13 4BS",
+    "phone": "07931670738",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28506440613",
+    "localAuthority": "Enfield",
+    "lat": 51.6223108,
+    "lon": -0.1055792,
+    "providerName": "",
+    "ar": "Enfield"
   }
 ]

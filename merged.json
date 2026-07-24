@@ -46576,5 +46576,25 @@
     "ln": -0.14814,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28506440613",
+    "n": "Neurodiverge",
+    "a": "Office 4, First Floor, JMH House, 481 Green Lanes, Palmers Green, London",
+    "p": "N13 4BS",
+    "ph": "07931670738",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28506440613",
+    "ar": "Enfield",
+    "la": 51.6223108,
+    "ln": -0.1055792,
+    "type": "Private",
+    "web": ""
   }
 ]
