@@ -29116,5 +29116,62 @@
     "lon": -0.1055792,
     "providerName": "",
     "ar": "Enfield"
+  },
+  {
+    "cqc_id": "1-28893211146",
+    "ods_code": "",
+    "name": "Your Menopause Care With Rupa",
+    "address": "103 Basildene Road, Hounslow",
+    "postcode": "TW4 7LX",
+    "phone": "07956371792",
+    "website": "https://www.yourmenopausecare.co.uk",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28893211146",
+    "localAuthority": "Hounslow",
+    "lat": 51.4693831,
+    "lon": -0.3939988,
+    "providerName": "",
+    "ar": "Hounslow"
+  },
+  {
+    "cqc_id": "1-28492935535",
+    "ods_code": "",
+    "name": "Room 2",
+    "address": "Room 2, 23 Harley Street, London",
+    "postcode": "W1G 9QN",
+    "phone": "07513314800",
+    "website": "https://www.barbanenteclinic.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28492935535",
+    "localAuthority": "Westminster",
+    "lat": 51.5175917,
+    "lon": -0.1466098,
+    "providerName": "",
+    "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28455776131",
+    "ods_code": "",
+    "name": "Elevate Health 360 Ltd - Remote only",
+    "address": "Flat D, 97 Mayow Road, London",
+    "postcode": "SE26 4AA",
+    "phone": "07345526465",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28455776131",
+    "localAuthority": "Lewisham",
+    "lat": 51.4290192,
+    "lon": -0.0462307,
+    "providerName": "",
+    "ar": "Lewisham"
   }
 ]

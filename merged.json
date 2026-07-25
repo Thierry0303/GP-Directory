@@ -46596,5 +46596,65 @@
     "ln": -0.1055792,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28893211146",
+    "n": "Your Menopause Care With Rupa",
+    "a": "103 Basildene Road, Hounslow",
+    "p": "TW4 7LX",
+    "ph": "07956371792",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28893211146",
+    "ar": "Hounslow",
+    "la": 51.4693831,
+    "ln": -0.3939988,
+    "type": "Private",
+    "web": "https://www.yourmenopausecare.co.uk"
+  },
+  {
+    "o": "1-28492935535",
+    "n": "Room 2",
+    "a": "Room 2, 23 Harley Street, London",
+    "p": "W1G 9QN",
+    "ph": "07513314800",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28492935535",
+    "ar": "Westminster",
+    "la": 51.5175917,
+    "ln": -0.1466098,
+    "type": "Private",
+    "web": "https://www.barbanenteclinic.co.uk"
+  },
+  {
+    "o": "1-28455776131",
+    "n": "Elevate Health 360 Ltd - Remote only",
+    "a": "Flat D, 97 Mayow Road, London",
+    "p": "SE26 4AA",
+    "ph": "07345526465",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28455776131",
+    "ar": "Lewisham",
+    "la": 51.4290192,
+    "ln": -0.0462307,
+    "type": "Private",
+    "web": ""
   }
 ]
