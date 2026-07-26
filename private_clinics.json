@@ -29173,5 +29173,44 @@
     "lon": -0.0462307,
     "providerName": "",
     "ar": "Lewisham"
+  },
+  {
+    "cqc_id": "1-28825798517",
+    "ods_code": "",
+    "name": "Thamesmead Health Centre",
+    "address": "4-5 Thames Reach, Thamesmead, London",
+    "postcode": "SE28 0NY",
+    "phone": "02083195880",
+    "website": "",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28825798517",
+    "localAuthority": "Greenwich",
+    "lat": 51.4988813,
+    "lon": 0.089913,
+    "providerName": "",
+    "ar": "Greenwich"
+  },
+  {
+    "cqc_id": "1-27710654725",
+    "ods_code": "",
+    "name": "The Surgery",
+    "address": "260-262 Harrow Road, Wembley",
+    "postcode": "HA9 6QL",
+    "phone": "02089020055",
+    "website": "https://www.thesurgeryharrowroadwembley.co.uk",
+    "specialties": [
+      "gynaecology",
+      "sexual-health"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-27710654725",
+    "localAuthority": "Brent",
+    "lat": 51.5511552,
+    "lon": -0.2827651,
+    "providerName": "",
+    "ar": "Brent"
   }
 ]

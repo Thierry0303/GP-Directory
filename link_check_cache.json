@@ -538,6 +538,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.barbanenteclinic.co.uk": {
+"checked": "2026-07-26",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.barchester.com": {
 "checked": "2026-07-11",
 "ok": true,
@@ -5570,6 +5577,13 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
+},
+"https://www.yourmenopausecare.co.uk": {
+"checked": "2026-07-26",
+"ok": true,
+"really_ok": false,
+"status": "503",
+"strikes": 1
 },
 "https://www.yourtravelclinic.com": {
 "checked": "2026-07-11",

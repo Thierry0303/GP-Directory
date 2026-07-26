@@ -46656,5 +46656,46 @@
     "ln": -0.0462307,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28825798517",
+    "n": "Thamesmead Health Centre",
+    "a": "4-5 Thames Reach, Thamesmead, London",
+    "p": "SE28 0NY",
+    "ph": "02083195880",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-1997877116",
+    "ar": "Greenwich",
+    "la": 51.4988813,
+    "ln": 0.089913,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-27710654725",
+    "n": "The Surgery",
+    "a": "260-262 Harrow Road, Wembley",
+    "p": "HA9 6QL",
+    "ph": "02089020055",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology, sexual-health",
+    "specs": [
+      "gynaecology",
+      "sexual-health"
+    ],
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-27710654725",
+    "ar": "Brent",
+    "la": 51.5511552,
+    "ln": -0.2827651,
+    "type": "Private",
+    "web": "https://www.thesurgeryharrowroadwembley.co.uk"
   }
 ]
