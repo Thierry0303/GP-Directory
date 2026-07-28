@@ -46685,8 +46685,9 @@
     "ph": "02089020055",
     "s": null,
     "c": null,
-    "pcn": "gynaecology, sexual-health",
+    "pcn": "consultant, gynaecology, sexual-health",
     "specs": [
+      "consultant",
       "gynaecology",
       "sexual-health"
     ],
@@ -46697,5 +46698,25 @@
     "ln": -0.2827651,
     "type": "Private",
     "web": "https://www.thesurgeryharrowroadwembley.co.uk"
+  },
+  {
+    "o": "1-28881772775",
+    "n": "Spire Wimbledon Clinic",
+    "a": "8-10 Harfield Road, Wimbledon, London",
+    "p": "SE19 3TA",
+    "ph": "02089472053",
+    "s": null,
+    "c": null,
+    "pcn": "weight-loss",
+    "specs": [
+      "weight-loss"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28881772775",
+    "ar": "Croydon",
+    "la": 51.4184133,
+    "ln": -0.0907503,
+    "type": "Private",
+    "web": ""
   }
 ]
