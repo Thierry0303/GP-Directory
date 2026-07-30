@@ -29232,5 +29232,43 @@
     "lon": -0.0907503,
     "providerName": "",
     "ar": "Croydon"
+  },
+  {
+    "cqc_id": "1-28402080079",
+    "ods_code": "",
+    "name": "Snatch & Glow Islington",
+    "address": "27 Hercules Street, London",
+    "postcode": "N7 6AT",
+    "phone": "07732134837",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28402080079",
+    "localAuthority": "Islington",
+    "lat": 51.559631,
+    "lon": -0.1199564,
+    "providerName": "",
+    "ar": "Islington"
+  },
+  {
+    "cqc_id": "1-28402080101",
+    "ods_code": "",
+    "name": "Snatch & Glow Beckenham",
+    "address": "67 Beckenham Road, Beckenham",
+    "postcode": "BR3 4PR",
+    "phone": "07732134837",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28402080101",
+    "localAuthority": "Bromley",
+    "lat": 51.4085391,
+    "lon": -0.0395688,
+    "providerName": "",
+    "ar": "Bromley"
   }
 ]
