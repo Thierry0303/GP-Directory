@@ -29270,5 +29270,43 @@
     "lon": -0.0395688,
     "providerName": "",
     "ar": "Bromley"
+  },
+  {
+    "cqc_id": "1-28705890981",
+    "ods_code": "",
+    "name": "The Private Orthopaedic Clinic",
+    "address": "Airport House, Purley Way, Croydon",
+    "postcode": "CR0 0XZ",
+    "phone": "07999555909",
+    "website": "",
+    "specialties": [
+      "orthopaedics"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28705890981",
+    "localAuthority": "Croydon",
+    "lat": 51.356521,
+    "lon": -0.117739,
+    "providerName": "",
+    "ar": "Croydon"
+  },
+  {
+    "cqc_id": "1-29016364355",
+    "ods_code": "",
+    "name": "National Heart Clinic Ltd",
+    "address": "15 King Street, Richmond",
+    "postcode": "TW9 1ND",
+    "phone": "07805173382",
+    "website": "",
+    "specialties": [
+      "cardiology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29016364355",
+    "localAuthority": "Richmond upon Thames",
+    "lat": 51.4599848,
+    "lon": -0.3072497,
+    "providerName": "",
+    "ar": "Richmond"
   }
 ]

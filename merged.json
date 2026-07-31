@@ -46758,5 +46758,45 @@
     "ln": -0.0395688,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28705890981",
+    "n": "The Private Orthopaedic Clinic",
+    "a": "Airport House, Purley Way, Croydon",
+    "p": "CR0 0XZ",
+    "ph": "07999555909",
+    "s": null,
+    "c": null,
+    "pcn": "orthopaedics",
+    "specs": [
+      "orthopaedics"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28705890981",
+    "ar": "Croydon",
+    "la": 51.356521,
+    "ln": -0.117739,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-29016364355",
+    "n": "National Heart Clinic Ltd",
+    "a": "15 King Street, Richmond",
+    "p": "TW9 1ND",
+    "ph": "07805173382",
+    "s": null,
+    "c": null,
+    "pcn": "cardiology",
+    "specs": [
+      "cardiology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29016364355",
+    "ar": "Richmond",
+    "la": 51.4599848,
+    "ln": -0.3072497,
+    "type": "Private",
+    "web": ""
   }
 ]
