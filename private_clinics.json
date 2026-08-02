@@ -29308,5 +29308,62 @@
     "lon": -0.3072497,
     "providerName": "",
     "ar": "Richmond"
+  },
+  {
+    "cqc_id": "1-29091433517",
+    "ods_code": "",
+    "name": "Psych2Gether",
+    "address": "79 College Road, Harrow",
+    "postcode": "HA1 1BD",
+    "phone": "07947521280",
+    "website": "https://www.Psych2Gether.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29091433517",
+    "localAuthority": "Harrow",
+    "lat": 51.579874,
+    "lon": -0.337027,
+    "providerName": "",
+    "ar": "Harrow"
+  },
+  {
+    "cqc_id": "1-28864025994",
+    "ods_code": "",
+    "name": "Unilabs Ltd Stephenson Way",
+    "address": "24-32, Stephenson Way, London",
+    "postcode": "NW1 2HD",
+    "phone": "02072994490",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28864025994",
+    "localAuthority": "Camden",
+    "lat": 51.526403,
+    "lon": -0.135728,
+    "providerName": "",
+    "ar": "Camden"
+  },
+  {
+    "cqc_id": "1-28864025967",
+    "ods_code": "",
+    "name": "UniLabs Ltd Cavendish Street",
+    "address": "100a, New Cavendish Street, London",
+    "postcode": "W1W 6NR",
+    "phone": "02072994490",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28864025967",
+    "localAuthority": "Westminster",
+    "lat": 51.5198301,
+    "lon": -0.1437225,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]

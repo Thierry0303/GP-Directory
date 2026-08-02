@@ -46798,5 +46798,65 @@
     "ln": -0.3072497,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29091433517",
+    "n": "Psych2Gether",
+    "a": "79 College Road, Harrow",
+    "p": "HA1 1BD",
+    "ph": "07947521280",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29091433517",
+    "ar": "Harrow",
+    "la": 51.579874,
+    "ln": -0.337027,
+    "type": "Private",
+    "web": "https://www.Psych2Gether.co.uk"
+  },
+  {
+    "o": "1-28864025994",
+    "n": "Unilabs Ltd Stephenson Way",
+    "a": "24-32, Stephenson Way, London",
+    "p": "NW1 2HD",
+    "ph": "02072994490",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28864025994",
+    "ar": "Camden",
+    "la": 51.526403,
+    "ln": -0.135728,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28864025967",
+    "n": "UniLabs Ltd Cavendish Street",
+    "a": "100a, New Cavendish Street, London",
+    "p": "W1W 6NR",
+    "ph": "02072994490",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28864025967",
+    "ar": "Westminster",
+    "la": 51.5198301,
+    "ln": -0.1437225,
+    "type": "Private",
+    "web": ""
   }
 ]
