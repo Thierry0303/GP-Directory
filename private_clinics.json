@@ -29230,7 +29230,7 @@
     "localAuthority": "Croydon",
     "lat": 51.4184133,
     "lon": -0.0907503,
-    "providerName": "",
+    "providerName": "Vita Health Solutions Limited",
     "ar": "Croydon"
   },
   {
@@ -29249,7 +29249,7 @@
     "localAuthority": "Islington",
     "lat": 51.559631,
     "lon": -0.1199564,
-    "providerName": "",
+    "providerName": "Snatch & Glow",
     "ar": "Islington"
   },
   {
@@ -29268,7 +29268,7 @@
     "localAuthority": "Bromley",
     "lat": 51.4085391,
     "lon": -0.0395688,
-    "providerName": "",
+    "providerName": "Snatch & Glow",
     "ar": "Bromley"
   },
   {
@@ -29280,6 +29280,7 @@
     "phone": "07999555909",
     "website": "",
     "specialties": [
+      "consultant",
       "orthopaedics"
     ],
     "cqc_rating": "",
@@ -29287,7 +29288,7 @@
     "localAuthority": "Croydon",
     "lat": 51.356521,
     "lon": -0.117739,
-    "providerName": "",
+    "providerName": "Mr Mohammed Obaidee Jelloo",
     "ar": "Croydon"
   },
   {
@@ -29306,7 +29307,7 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4599848,
     "lon": -0.3072497,
-    "providerName": "",
+    "providerName": "The National Heart Clinic Ltd",
     "ar": "Richmond"
   },
   {
@@ -29325,7 +29326,7 @@
     "localAuthority": "Harrow",
     "lat": 51.579874,
     "lon": -0.337027,
-    "providerName": "",
+    "providerName": "Psych2Gether Limited",
     "ar": "Harrow"
   },
   {
@@ -29344,7 +29345,7 @@
     "localAuthority": "Camden",
     "lat": 51.526403,
     "lon": -0.135728,
-    "providerName": "",
+    "providerName": "Circle Hospital (Reading) Limited",
     "ar": "Camden"
   },
   {
@@ -29363,7 +29364,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5198301,
     "lon": -0.1437225,
-    "providerName": "",
+    "providerName": "Circle Hospital (Reading) Limited",
     "ar": "Westminster"
   }
 ]

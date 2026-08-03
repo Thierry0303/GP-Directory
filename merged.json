@@ -46767,8 +46767,9 @@
     "ph": "07999555909",
     "s": null,
     "c": null,
-    "pcn": "orthopaedics",
+    "pcn": "consultant, orthopaedics",
     "specs": [
+      "consultant",
       "orthopaedics"
     ],
     "cqc": "",
