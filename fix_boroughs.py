@@ -45,6 +45,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 GPS_JSON      = ROOT / "gps.json"
 PRIVATE_JSON  = ROOT / "private_clinics.json"
+DENTISTS_JSON = ROOT / "dentists.json"
 MERGED_JSON   = ROOT / "merged.json"
 TEMPLATE_HTML = ROOT / "index.template.html"
 INDEX_HTML    = ROOT / "index.html"
@@ -223,10 +224,10 @@ def print_delta(name, before, after):
             print(f"  {b:30s} {bef:>8d} {aft:>8d} {flag:>8s}")
 
 def main():
-    paths = [GPS_JSON, PRIVATE_JSON, MERGED_JSON]
+    paths = [GPS_JSON, PRIVATE_JSON, DENTISTS_JSON, MERGED_JSON]
     existing = [p for p in paths if p.exists()]
     if not existing:
-        sys.exit("None of gps.json / private_clinics.json / merged.json found.")
+        sys.exit("None of gps.json / private_clinics.json / dentists.json / merged.json found.")
 
     # Collect every unique postcode across all files.
     all_postcodes = set()
