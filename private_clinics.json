@@ -29366,5 +29366,43 @@
     "lon": -0.1437225,
     "providerName": "Circle Hospital (Reading) Limited",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-28882481273",
+    "ods_code": "",
+    "name": "TeqDr",
+    "address": "193 Whitecross Street, London",
+    "postcode": "EC1Y 8QP",
+    "phone": "02037805207",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28882481273",
+    "localAuthority": "Islington",
+    "lat": 51.524172,
+    "lon": -0.093837,
+    "providerName": "",
+    "ar": "Islington"
+  },
+  {
+    "cqc_id": "1-29148822811",
+    "ods_code": "",
+    "name": "TIC Romford",
+    "address": "Romford & Gidea Park RFC, Crowlands Avenue, Crow Lane, Romford",
+    "postcode": "RM7 0EP",
+    "phone": "03330040955",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29148822811",
+    "localAuthority": "Havering",
+    "lat": 51.5675141,
+    "lon": 0.1640964,
+    "providerName": "",
+    "ar": "Havering"
   }
 ]

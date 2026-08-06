@@ -19890,7 +19890,7 @@
     "specs": [
       "hospital"
     ],
-    "cqc": "Good",
+    "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/1-1265559130",
     "ar": "Enfield",
     "la": 51.6145225,
@@ -46857,6 +46857,46 @@
     "ar": "Westminster",
     "la": 51.5198301,
     "ln": -0.1437225,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28882481273",
+    "n": "TeqDr",
+    "a": "193 Whitecross Street, London",
+    "p": "EC1Y 8QP",
+    "ph": "02037805207",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28882481273",
+    "ar": "Islington",
+    "la": 51.524172,
+    "ln": -0.093837,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-29148822811",
+    "n": "TIC Romford",
+    "a": "Romford & Gidea Park RFC, Crowlands Avenue, Crow Lane, Romford",
+    "p": "RM7 0EP",
+    "ph": "03330040955",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29148822811",
+    "ar": "Havering",
+    "la": 51.5675141,
+    "ln": 0.1640964,
     "type": "Private",
     "web": ""
   }
