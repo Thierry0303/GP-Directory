@@ -51,6 +51,7 @@ def main():
     # Section indexes + hubs + leaf pages
     seen = set()
     for subdir, prio in (("boroughs", "0.8"), ("private", "0.8"),
+                         ("dentists", "0.7"),
                          ("nhs-services", "0.7"), ("guides", "0.6")):
         for loc in walk_index_pages(subdir):
             if loc not in seen:
