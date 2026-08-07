@@ -14,7 +14,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4365554,
     "lon": 0.0736568,
-    "providerName": "Mr Max Pura"
+    "providerName": "Mr Max Pura",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-10022458505",
@@ -31,7 +32,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5212146,
     "lon": -0.1482501,
-    "providerName": "Shakib & Neale Ltd"
+    "providerName": "Shakib & Neale Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1015786013",
@@ -48,7 +50,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5343307,
     "lon": -0.3326955,
-    "providerName": "Dr Rashpal Kaur Saggi"
+    "providerName": "Dr Rashpal Kaur Saggi",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-10164693542",
@@ -65,7 +68,8 @@
     "localAuthority": "Harrow",
     "lat": 51.594788,
     "lon": -0.288636,
-    "providerName": "Egodent Ltd"
+    "providerName": "Egodent Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-10216133312",
@@ -82,7 +86,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5899955,
     "lon": -0.1041231,
-    "providerName": "Tabibzadeh and Hejazi-Tehrani partnership"
+    "providerName": "Tabibzadeh and Hejazi-Tehrani partnership",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-10216241870",
@@ -99,7 +104,8 @@
     "localAuthority": "Camden",
     "lat": 51.5548266,
     "lon": -0.1721724,
-    "providerName": "Tabibzadeh and Hejazi-Tehrani partnership"
+    "providerName": "Tabibzadeh and Hejazi-Tehrani partnership",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-10269120125",
@@ -116,7 +122,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.5724849,
     "lon": -0.4277832,
-    "providerName": "Ardencray Ltd"
+    "providerName": "Ardencray Ltd",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-1034441807",
@@ -133,7 +140,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6230952,
     "lon": -0.121929,
-    "providerName": "Cannon Hill Clinic Limited"
+    "providerName": "Cannon Hill Clinic Limited",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-10353776163",
@@ -150,7 +158,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4615714,
     "lon": -0.1130486,
-    "providerName": "Monteiro Ltd"
+    "providerName": "Monteiro Ltd",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-10399588654",
@@ -167,7 +176,8 @@
     "localAuthority": "Brent",
     "lat": 51.5534332,
     "lon": -0.2118822,
-    "providerName": "Zental Dental Practices Ltd"
+    "providerName": "Zental Dental Practices Ltd",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-10429770492",
@@ -184,7 +194,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5697568,
     "lon": 0.1270952,
-    "providerName": "Gabsta Limited"
+    "providerName": "Gabsta Limited",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-10456198741",
@@ -201,7 +212,8 @@
     "localAuthority": "Ealing",
     "lat": 51.512183,
     "lon": -0.304465,
-    "providerName": "Luxmedica Limited"
+    "providerName": "Luxmedica Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-10476767282",
@@ -218,7 +230,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6140729,
     "lon": -0.0647714,
-    "providerName": "My Health Medical Clinic Ltd"
+    "providerName": "My Health Medical Clinic Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-10484688628",
@@ -235,7 +248,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4492477,
     "lon": -0.1747372,
-    "providerName": "Prisoner Centred Dental Care Limited"
+    "providerName": "Prisoner Centred Dental Care Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-10488652685",
@@ -269,7 +283,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5040531,
     "lon": -0.0634118,
-    "providerName": "Dr Kamil Ahmed"
+    "providerName": "Dr Kamil Ahmed",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-10553285849",
@@ -286,7 +301,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5212146,
     "lon": -0.1482501,
-    "providerName": "Dr Omid Sobhani Ezabadi"
+    "providerName": "Dr Omid Sobhani Ezabadi",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-10585599408",
@@ -303,7 +319,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5136297,
     "lon": -0.1795876,
-    "providerName": "Freshdental London Limited"
+    "providerName": "Freshdental London Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-10617794548",
@@ -321,7 +338,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5911651,
     "lon": -0.1480774,
-    "providerName": "The Smile Studios Limited"
+    "providerName": "The Smile Studios Limited",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-10631910634",
@@ -338,7 +356,8 @@
     "localAuthority": "Harrow",
     "lat": 51.5802353,
     "lon": -0.3357649,
-    "providerName": "MSSA Investments Ltd"
+    "providerName": "MSSA Investments Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-10649983103",
@@ -355,7 +374,8 @@
     "localAuthority": "Brent",
     "lat": 51.5483335,
     "lon": -0.2218899,
-    "providerName": "Icedent Limited"
+    "providerName": "Icedent Limited",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-10649489787",
@@ -372,7 +392,8 @@
     "localAuthority": "Merton",
     "lat": 51.4049244,
     "lon": -0.164203,
-    "providerName": "Dr Komal Mital Patel"
+    "providerName": "Dr Komal Mital Patel",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-10688148545",
@@ -389,7 +410,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518667,
     "lon": -0.146519,
-    "providerName": "Serenata UK Limited"
+    "providerName": "Serenata UK Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-19322548856",
@@ -407,7 +429,8 @@
     "localAuthority": "Harrow",
     "lat": 51.5811666,
     "lon": -0.3318659,
-    "providerName": "Hemant Patel Orthodontist Ltd"
+    "providerName": "Hemant Patel Orthodontist Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-10771481607",
@@ -424,7 +447,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4685499,
     "lon": 0.1100675,
-    "providerName": "Mr Shadi Abou-Deeb"
+    "providerName": "Mr Shadi Abou-Deeb",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-10771502246",
@@ -441,7 +465,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4133973,
     "lon": -0.3109548,
-    "providerName": "Dr Hanel Suresh Nathwani"
+    "providerName": "Dr Hanel Suresh Nathwani",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-10795564811",
@@ -458,7 +483,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5023101,
     "lon": -0.1544058,
-    "providerName": "Mr Sheraz Aleem"
+    "providerName": "Mr Sheraz Aleem",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-10821394033",
@@ -475,7 +501,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6098591,
     "lon": -0.2804354,
-    "providerName": "Cherry Dental Ltd"
+    "providerName": "Cherry Dental Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-10923303865",
@@ -492,7 +519,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4989834,
     "lon": -0.0539477,
-    "providerName": "Dakatra Ltd"
+    "providerName": "Dakatra Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-1093260216",
@@ -509,7 +537,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5076105,
     "lon": -0.2770398,
-    "providerName": "Dr. Keith Cohen"
+    "providerName": "Dr. Keith Cohen",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-10976497954",
@@ -526,7 +555,8 @@
     "localAuthority": "City of London",
     "lat": 51.5104718,
     "lon": -0.0802316,
-    "providerName": "Portman Healthcare Limited"
+    "providerName": "Portman Healthcare Limited",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-10976628184",
@@ -543,7 +573,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518725,
     "lon": -0.145511,
-    "providerName": "Portman Healthcare Limited"
+    "providerName": "Portman Healthcare Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-11129412475",
@@ -561,7 +592,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4618604,
     "lon": -0.2958077,
-    "providerName": "Richmond Hill Orthodontics Limited"
+    "providerName": "Richmond Hill Orthodontics Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-11142154511",
@@ -578,7 +610,8 @@
     "localAuthority": "Newham",
     "lat": 51.530023,
     "lon": 0.035314,
-    "providerName": "Dentex Assets Limited"
+    "providerName": "Dentex Assets Limited",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-11205822616",
@@ -596,7 +629,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.3725749,
     "lon": -0.2922278,
-    "providerName": "Sedation Solutions (Clinical) LLP"
+    "providerName": "Sedation Solutions (Clinical) LLP",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-11218072143",
@@ -613,7 +647,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.6121077,
     "lon": -0.4259232,
-    "providerName": "Suhail Rashid Ltd"
+    "providerName": "Suhail Rashid Ltd",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-11223092490",
@@ -630,7 +665,8 @@
     "localAuthority": "Westminster",
     "lat": 51.4987738,
     "lon": -0.1571277,
-    "providerName": "Bupa Dental Services Limited"
+    "providerName": "Bupa Dental Services Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-11260798936",
@@ -665,7 +701,8 @@
     "localAuthority": "City of London",
     "lat": 51.5116173,
     "lon": -0.0926754,
-    "providerName": "Just Orthodontics Limited"
+    "providerName": "Just Orthodontics Limited",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-11295380283",
@@ -682,7 +719,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4567154,
     "lon": 0.1462133,
-    "providerName": "Zental Dental Practices Ltd"
+    "providerName": "Zental Dental Practices Ltd",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-11350128090",
@@ -700,7 +738,8 @@
     "localAuthority": "Haringey",
     "lat": 51.577093,
     "lon": -0.1254854,
-    "providerName": "Finchley Orthodontics Ltd"
+    "providerName": "Finchley Orthodontics Ltd",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-11381774794",
@@ -717,7 +756,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.517771,
     "lon": -0.203824,
-    "providerName": "Dr Bahar Sadeghi"
+    "providerName": "Dr Bahar Sadeghi",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-11414788357",
@@ -735,7 +775,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4199935,
     "lon": -0.3208529,
-    "providerName": "Dentex Assets Limited"
+    "providerName": "Dentex Assets Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-11414949482",
@@ -752,7 +793,8 @@
     "localAuthority": "Harrow",
     "lat": 51.583606,
     "lon": -0.352378,
-    "providerName": "Dentology Harley Street Ltd"
+    "providerName": "Dentology Harley Street Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-1147046682",
@@ -769,7 +811,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.463049,
     "lon": -0.2162464,
-    "providerName": "Perfect Smile Associates Ltd"
+    "providerName": "Perfect Smile Associates Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-1148364004",
@@ -786,7 +829,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4396351,
     "lon": -0.1866142,
-    "providerName": "Perfect Smile Associates Ltd"
+    "providerName": "Perfect Smile Associates Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-1148364039",
@@ -803,7 +847,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4724659,
     "lon": -0.2020339,
-    "providerName": "Perfect Smile Associates Ltd"
+    "providerName": "Perfect Smile Associates Ltd",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-11566458446",
@@ -820,7 +865,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5742019,
     "lon": 0.078112,
-    "providerName": "GHCLINIC Ltd"
+    "providerName": "GHCLINIC Ltd",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-1160412725",
@@ -837,7 +883,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4893934,
     "lon": -0.1633688,
-    "providerName": "The Wellington Clinic Limited"
+    "providerName": "The Wellington Clinic Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-11637148525",
@@ -854,7 +901,8 @@
     "localAuthority": "Brent",
     "lat": 51.5322263,
     "lon": -0.2827858,
-    "providerName": "Visiting Specialist Services Limited"
+    "providerName": "Visiting Specialist Services Limited",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-11664668285",
@@ -888,7 +936,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5176236,
     "lon": -0.1406701,
-    "providerName": "ABC Smile Ltd"
+    "providerName": "ABC Smile Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1181377879",
@@ -905,7 +954,8 @@
     "localAuthority": "City of London",
     "lat": 51.5184606,
     "lon": -0.0789187,
-    "providerName": "The Whiter Smile Limited"
+    "providerName": "The Whiter Smile Limited",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-11816568165",
@@ -922,7 +972,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.497972,
     "lon": -0.166319,
-    "providerName": "Nicodental Ltd"
+    "providerName": "Nicodental Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-1181948124",
@@ -939,7 +990,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.498831,
     "lon": 0.1199241,
-    "providerName": "Photay And Associates"
+    "providerName": "Photay And Associates",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-1181948327",
@@ -956,7 +1008,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4658519,
     "lon": 0.1467288,
-    "providerName": "Photay And Associates"
+    "providerName": "Photay And Associates",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-11857199717",
@@ -973,7 +1026,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4575291,
     "lon": -0.0735294,
-    "providerName": "Smile Dental Surgery"
+    "providerName": "Smile Dental Surgery",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-11941071585",
@@ -990,7 +1044,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5064058,
     "lon": -0.2569691,
-    "providerName": "Cedars Trading Limited"
+    "providerName": "Cedars Trading Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-11989012258",
@@ -1007,7 +1062,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4917148,
     "lon": -0.2491934,
-    "providerName": "The Door W4 Limited"
+    "providerName": "The Door W4 Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-11990271105",
@@ -1024,7 +1080,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4440181,
     "lon": -0.4099418,
-    "providerName": "Dr Benjamin Levy-Agami"
+    "providerName": "Dr Benjamin Levy-Agami",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-11991041838",
@@ -1041,7 +1098,8 @@
     "localAuthority": "Enfield",
     "lat": 51.641675,
     "lon": -0.0704602,
-    "providerName": "Dentozen Ltd"
+    "providerName": "Dentozen Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-12025576972",
@@ -1058,7 +1116,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521656,
     "lon": -0.14954,
-    "providerName": "Diamond Whites Aligners Limited"
+    "providerName": "Diamond Whites Aligners Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-12128929104",
@@ -1075,7 +1134,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.48623,
     "lon": 0.0985395,
-    "providerName": "Denvolve"
+    "providerName": "Denvolve",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-12200054983",
@@ -1092,7 +1152,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.392184,
     "lon": -0.3062029,
-    "providerName": "Gentle Den Dorking Limited"
+    "providerName": "Gentle Den Dorking Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-1231394452",
@@ -1109,7 +1170,8 @@
     "localAuthority": "Merton",
     "lat": 51.415848,
     "lon": -0.1852654,
-    "providerName": "Petrie Tucker and Partners Limited"
+    "providerName": "Petrie Tucker and Partners Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-12333894146",
@@ -1126,7 +1188,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5180256,
     "lon": -0.1461886,
-    "providerName": "Mr. Asif Chatoo"
+    "providerName": "Mr. Asif Chatoo",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-12383095827",
@@ -1143,7 +1206,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5188393,
     "lon": -0.076103,
-    "providerName": "Smile2Impress Clinics Ltd"
+    "providerName": "Smile2Impress Clinics Ltd",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-12422444986",
@@ -1160,7 +1224,8 @@
     "localAuthority": "Islington",
     "lat": 51.5460171,
     "lon": -0.1034241,
-    "providerName": "Ellade Limited"
+    "providerName": "Ellade Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-12470904527",
@@ -1177,7 +1242,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.5003325,
     "lon": -0.2113401,
-    "providerName": "Dr Zahraa Zarruk"
+    "providerName": "Dr Zahraa Zarruk",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-12548188022",
@@ -1194,7 +1260,8 @@
     "localAuthority": "Camden",
     "lat": 51.5236252,
     "lon": -0.1346593,
-    "providerName": "The University College London Hospitals Charitable Foundation"
+    "providerName": "The University College London Hospitals Charitable Foundation",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-12628416205",
@@ -1229,7 +1296,8 @@
     "localAuthority": "Merton",
     "lat": 51.403308,
     "lon": -0.192439,
-    "providerName": "The Domiciliary Dental Practice Limited"
+    "providerName": "The Domiciliary Dental Practice Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-12717759490",
@@ -1246,7 +1314,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5742019,
     "lon": 0.078112,
-    "providerName": "Mr Satvir Singh Atkar"
+    "providerName": "Mr Satvir Singh Atkar",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-12758340258",
@@ -1280,7 +1349,8 @@
     "localAuthority": "Camden",
     "lat": 51.5518851,
     "lon": -0.1860224,
-    "providerName": "Quex Dental Care Partnership"
+    "providerName": "Quex Dental Care Partnership",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-12814178086",
@@ -1297,7 +1367,8 @@
     "localAuthority": "Hackney",
     "lat": 51.5631357,
     "lon": -0.0585797,
-    "providerName": "Ardent Smile LTD"
+    "providerName": "Ardent Smile LTD",
+    "ar": "Hackney"
   },
   {
     "cqc_id": "1-1290110989",
@@ -1315,7 +1386,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.5033799,
     "lon": -0.1922443,
-    "providerName": "Sharing Smiles Orthodontics Ltd"
+    "providerName": "Sharing Smiles Orthodontics Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-12910405316",
@@ -1332,7 +1404,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.3665595,
     "lon": -0.3065297,
-    "providerName": "Dr Kunal Patel"
+    "providerName": "Dr Kunal Patel",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-12957245847",
@@ -1349,7 +1422,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4785954,
     "lon": -0.0113785,
-    "providerName": "NAMTA Limited"
+    "providerName": "NAMTA Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-12999391338",
@@ -1366,7 +1440,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6307899,
     "lon": -0.1281387,
-    "providerName": "NL Dentistry Ltd"
+    "providerName": "NL Dentistry Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-13031482971",
@@ -1383,7 +1458,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3734207,
     "lon": -0.105023,
-    "providerName": "Top Medical Clinic LTD"
+    "providerName": "Top Medical Clinic LTD",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-13057545278",
@@ -1417,7 +1493,8 @@
     "localAuthority": "City of London",
     "lat": 51.513275,
     "lon": -0.102741,
-    "providerName": "Mr Keith Thomas Burns"
+    "providerName": "Mr Keith Thomas Burns",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-13227089363",
@@ -1434,7 +1511,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.477755,
     "lon": -0.1469929,
-    "providerName": "Proface Limited"
+    "providerName": "Proface Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-1334844769",
@@ -1451,7 +1529,8 @@
     "localAuthority": "Ealing",
     "lat": 51.511318,
     "lon": -0.317605,
-    "providerName": "PMC Dental"
+    "providerName": "PMC Dental",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-134189869",
@@ -1468,7 +1547,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4936323,
     "lon": -0.1903258,
-    "providerName": "The Medical Chambers Kensington Limited"
+    "providerName": "The Medical Chambers Kensington Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-13420825637",
@@ -1485,7 +1565,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520154,
     "lon": -0.149529,
-    "providerName": "Dentex Assets Limited"
+    "providerName": "Dentex Assets Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-13452227385",
@@ -1502,7 +1583,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4962165,
     "lon": -0.1689724,
-    "providerName": "Manrina LTD"
+    "providerName": "Manrina LTD",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-1351721541",
@@ -1520,7 +1602,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4842199,
     "lon": -0.3724932,
-    "providerName": "The Smile Studios Limited"
+    "providerName": "The Smile Studios Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-13560460311",
@@ -1537,7 +1620,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.614489,
     "lon": 0.0068047,
-    "providerName": "Damira Dental Studios Limited"
+    "providerName": "Damira Dental Studios Limited",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-13639530470",
@@ -1554,7 +1638,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4331975,
     "lon": -0.0171056,
-    "providerName": "Oral Healthcare Bellingham Ltd"
+    "providerName": "Oral Healthcare Bellingham Ltd",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-1378224017",
@@ -1571,7 +1656,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5924679,
     "lon": -0.1428847,
-    "providerName": "Perfect Smile Surgery Limited"
+    "providerName": "Perfect Smile Surgery Limited",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-13811911660",
@@ -1588,7 +1674,8 @@
     "localAuthority": "Newham",
     "lat": 51.5490355,
     "lon": -0.0122387,
-    "providerName": "Aesthetics Clinique Ltd"
+    "providerName": "Aesthetics Clinique Ltd",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-13813038075",
@@ -1605,7 +1692,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.481467,
     "lon": -0.1798464,
-    "providerName": "Patel and Maliderou"
+    "providerName": "Patel and Maliderou",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-13819311997",
@@ -1622,7 +1710,8 @@
     "localAuthority": "Westminster",
     "lat": 51.532761,
     "lon": -0.1694377,
-    "providerName": "TWOTH PASTE SJW LIMITED"
+    "providerName": "TWOTH PASTE SJW LIMITED",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-13827361996",
@@ -1639,7 +1728,8 @@
     "localAuthority": "Camden",
     "lat": 51.5541737,
     "lon": -0.1706695,
-    "providerName": "Rosslyn Practice Limited"
+    "providerName": "Rosslyn Practice Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-13839806930",
@@ -1656,7 +1746,8 @@
     "localAuthority": "Camden",
     "lat": 51.529831,
     "lon": -0.12006,
-    "providerName": "Dr Clear Aligners Ltd"
+    "providerName": "Dr Clear Aligners Ltd",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-13885646394",
@@ -1673,7 +1764,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518667,
     "lon": -0.146519,
-    "providerName": "Mr Asif Hamid"
+    "providerName": "Mr Asif Hamid",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-13911881195",
@@ -1691,7 +1783,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6100609,
     "lon": -0.2780348,
-    "providerName": "Shaunak Popat Orthodontists Ltd"
+    "providerName": "Shaunak Popat Orthodontists Ltd",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-13911881239",
@@ -1709,7 +1802,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5599749,
     "lon": -0.2095081,
-    "providerName": "Shaunak Popat Orthodontists Ltd"
+    "providerName": "Shaunak Popat Orthodontists Ltd",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-13932428087",
@@ -1726,7 +1820,8 @@
     "localAuthority": "Newham",
     "lat": 51.5318131,
     "lon": -0.0086017,
-    "providerName": "Dentaprime UK Plc"
+    "providerName": "Dentaprime UK Plc",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-13937274831",
@@ -1743,7 +1838,8 @@
     "localAuthority": "Islington",
     "lat": 51.545129,
     "lon": -0.088073,
-    "providerName": "Dentalshine Ltd"
+    "providerName": "Dentalshine Ltd",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-13935390815",
@@ -1760,7 +1856,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4608034,
     "lon": -0.1633461,
-    "providerName": "Miss Anisha Ramesh Patel"
+    "providerName": "Miss Anisha Ramesh Patel",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-13939202733",
@@ -1778,7 +1875,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6159613,
     "lon": -0.2400054,
-    "providerName": "Q-Orthodontics Limited"
+    "providerName": "Q-Orthodontics Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-1408186054",
@@ -1795,7 +1893,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520551,
     "lon": -0.149066,
-    "providerName": "Crosbie Care Limited"
+    "providerName": "Crosbie Care Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-14144872716",
@@ -1812,7 +1911,8 @@
     "localAuthority": "Westminster",
     "lat": 51.519818,
     "lon": -0.147625,
-    "providerName": "Harley Street Dental Art Clinic Ltd"
+    "providerName": "Harley Street Dental Art Clinic Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-14244614661",
@@ -1829,7 +1929,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.586798,
     "lon": 0.069032,
-    "providerName": "Bifrost Enterprises Ltd"
+    "providerName": "Bifrost Enterprises Ltd",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-14265987617",
@@ -1846,7 +1947,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6051868,
     "lon": -0.2964856,
-    "providerName": "Zeca-Dent Limited"
+    "providerName": "Zeca-Dent Limited",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-14333784160",
@@ -1863,7 +1965,8 @@
     "localAuthority": "Haringey",
     "lat": 51.598729,
     "lon": -0.13867,
-    "providerName": "Muswell Hill Smile Ltd"
+    "providerName": "Muswell Hill Smile Ltd",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-14344475985",
@@ -1880,7 +1983,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4964578,
     "lon": 0.0121912,
-    "providerName": "London Smile Centres Ltd"
+    "providerName": "London Smile Centres Ltd",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-14345941832",
@@ -1897,7 +2001,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4930542,
     "lon": 0.0701996,
-    "providerName": "London Smile Centres Ltd"
+    "providerName": "London Smile Centres Ltd",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-1440017781",
@@ -1914,7 +2019,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4200901,
     "lon": 0.0695451,
-    "providerName": "Smile 4 U Limited"
+    "providerName": "Smile 4 U Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-14422035258",
@@ -1931,7 +2037,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5195196,
     "lon": -0.1491116,
-    "providerName": "Wimpole Street Endodontics Limited"
+    "providerName": "Wimpole Street Endodontics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-14436456794",
@@ -1948,7 +2055,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5132949,
     "lon": -0.1472887,
-    "providerName": "Dr. Gillian Millman"
+    "providerName": "Dr. Gillian Millman",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-14452306395",
@@ -1965,7 +2073,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5959244,
     "lon": -0.1087564,
-    "providerName": "n22dental"
+    "providerName": "n22dental",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-14484748870",
@@ -1982,7 +2091,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.5019699,
     "lon": -0.1164999,
-    "providerName": "Smile2Impress Clinics Ltd"
+    "providerName": "Smile2Impress Clinics Ltd",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-1453545796",
@@ -1999,7 +2109,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518579,
     "lon": -0.147762,
-    "providerName": "Mr Harry Shiers"
+    "providerName": "Mr Harry Shiers",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-14546864126",
@@ -2016,7 +2127,8 @@
     "localAuthority": "Havering",
     "lat": 51.5631218,
     "lon": 0.2169864,
-    "providerName": "Smile Sanctuary Essex Ltd"
+    "providerName": "Smile Sanctuary Essex Ltd",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-14597175461",
@@ -2050,7 +2162,8 @@
     "localAuthority": "Camden",
     "lat": 51.5464292,
     "lon": -0.1914316,
-    "providerName": "Perfect Smile Surgery Limited"
+    "providerName": "Perfect Smile Surgery Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-14614731379",
@@ -2067,7 +2180,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4988314,
     "lon": -0.1579322,
-    "providerName": "Dr. Mahsa Shoaei"
+    "providerName": "Dr. Mahsa Shoaei",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-14623710925",
@@ -2084,7 +2198,8 @@
     "localAuthority": "Brent",
     "lat": 51.5358489,
     "lon": -0.2057514,
-    "providerName": "The Doctor's Method Ltd"
+    "providerName": "The Doctor's Method Ltd",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-14787784183",
@@ -2102,7 +2217,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.4188762,
     "lon": -0.301981,
-    "providerName": "Kingston Orthodontics Limited"
+    "providerName": "Kingston Orthodontics Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-14829097922",
@@ -2119,7 +2235,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5214286,
     "lon": -0.0315596,
-    "providerName": "Damira Dental Studios Limited"
+    "providerName": "Damira Dental Studios Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-14864455638",
@@ -2137,7 +2254,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6217411,
     "lon": -0.0832399,
-    "providerName": "Sandip Haria Orthodontists Ltd"
+    "providerName": "Sandip Haria Orthodontists Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-14980834523",
@@ -2154,7 +2272,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518314,
     "lon": -0.148061,
-    "providerName": "Dentex Assets Limited"
+    "providerName": "Dentex Assets Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-15005075686",
@@ -2171,7 +2290,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5089181,
     "lon": -0.1406356,
-    "providerName": "Oliver Aesthetics Ltd"
+    "providerName": "Oliver Aesthetics Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1503544149",
@@ -2188,7 +2308,8 @@
     "localAuthority": "Camden",
     "lat": 51.5376733,
     "lon": -0.1852178,
-    "providerName": "Smile Cliniq Limited"
+    "providerName": "Smile Cliniq Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-15307994958",
@@ -2205,7 +2326,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5121475,
     "lon": -0.1543683,
-    "providerName": "The Dental Sisters Limited"
+    "providerName": "The Dental Sisters Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1531123575",
@@ -2222,7 +2344,8 @@
     "localAuthority": "City of London",
     "lat": 51.5165543,
     "lon": -0.0837376,
-    "providerName": "Dr Farid Fahid"
+    "providerName": "Dr Farid Fahid",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-15314494054",
@@ -2239,7 +2362,8 @@
     "localAuthority": "Croydon",
     "lat": 51.339493,
     "lon": -0.1157688,
-    "providerName": "The Family Dental Practice Management Limited"
+    "providerName": "The Family Dental Practice Management Limited",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-15350227887",
@@ -2291,7 +2415,8 @@
     "localAuthority": "Newham",
     "lat": 51.514483,
     "lon": 0.057608,
-    "providerName": "Jayesh Kotecha & Karissa Kotecha"
+    "providerName": "Jayesh Kotecha & Karissa Kotecha",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-15671545716",
@@ -2308,7 +2433,8 @@
     "localAuthority": "Haringey",
     "lat": 51.6084342,
     "lon": -0.0699888,
-    "providerName": "Mr Cheong Ng"
+    "providerName": "Mr Cheong Ng",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-1566854401",
@@ -2325,7 +2451,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4974675,
     "lon": -0.2275739,
-    "providerName": "The Centre London Limited"
+    "providerName": "The Centre London Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-15818265785",
@@ -2342,7 +2469,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5085015,
     "lon": -0.2826119,
-    "providerName": "Aesthetica Studio Limited"
+    "providerName": "Aesthetica Studio Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-15843266166",
@@ -2359,7 +2487,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4342734,
     "lon": 0.1022998,
-    "providerName": "Dr. Ramin Kardel-Tabar"
+    "providerName": "Dr. Ramin Kardel-Tabar",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-15857637922",
@@ -2376,7 +2505,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4042122,
     "lon": 0.1021715,
-    "providerName": "Bromley Healthcare Community Interest Company"
+    "providerName": "Bromley Healthcare Community Interest Company",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-15871264575",
@@ -2393,7 +2523,8 @@
     "localAuthority": "Southwark",
     "lat": 51.5036185,
     "lon": -0.0756729,
-    "providerName": "Londent Oral Care Ltd"
+    "providerName": "Londent Oral Care Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-15977989290",
@@ -2410,7 +2541,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.567188,
     "lon": -0.034064,
-    "providerName": "Ivy Dent Clinique Ltd"
+    "providerName": "Ivy Dent Clinique Ltd",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-15980326895",
@@ -2427,7 +2559,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517843,
     "lon": -0.146711,
-    "providerName": "SDS Swiss UK Ltd"
+    "providerName": "SDS Swiss UK Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-16133868662",
@@ -2444,7 +2577,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5741919,
     "lon": -0.1964635,
-    "providerName": "The Lotus Clinic Limited"
+    "providerName": "The Lotus Clinic Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-1615441298",
@@ -2478,7 +2612,8 @@
     "localAuthority": "Islington",
     "lat": 51.5425195,
     "lon": -0.1027359,
-    "providerName": "Islington Smile Group Limited"
+    "providerName": "Islington Smile Group Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-1670686011",
@@ -2495,7 +2630,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4595401,
     "lon": -0.1794763,
-    "providerName": "Shubhra Smiles Ltd"
+    "providerName": "Shubhra Smiles Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-16875543119",
@@ -2512,7 +2648,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6317047,
     "lon": -0.1758132,
-    "providerName": "WHETSTONE CLINIC LIMITED"
+    "providerName": "WHETSTONE CLINIC LIMITED",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-16893320572",
@@ -2529,7 +2666,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.381162,
     "lon": -0.2824535,
-    "providerName": "Portman Healthcare Limited"
+    "providerName": "Portman Healthcare Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-16893592959",
@@ -2546,7 +2684,8 @@
     "localAuthority": "Merton",
     "lat": 51.3997618,
     "lon": -0.1325782,
-    "providerName": "Portman Healthcare Limited"
+    "providerName": "Portman Healthcare Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-16953971204",
@@ -2563,7 +2702,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521311,
     "lon": -0.14595,
-    "providerName": "Baudelaire Dental Clinic Ltd"
+    "providerName": "Baudelaire Dental Clinic Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-16893774337",
@@ -2580,7 +2720,8 @@
     "localAuthority": "Merton",
     "lat": 51.4192208,
     "lon": -0.2106381,
-    "providerName": "Portman Healthcare Limited"
+    "providerName": "Portman Healthcare Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-16981038214",
@@ -2597,7 +2738,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3985871,
     "lon": -0.072801,
-    "providerName": "DFY (Marham) Ltd"
+    "providerName": "DFY (Marham) Ltd",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-17025560890",
@@ -2631,7 +2773,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4165334,
     "lon": -0.0562837,
-    "providerName": "Dr Anushika Brogan"
+    "providerName": "Dr Anushika Brogan",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-17193566405",
@@ -2648,7 +2791,8 @@
     "localAuthority": "Harrow",
     "lat": 51.608496,
     "lon": -0.286417,
-    "providerName": "Smile Arts Studio PVT Ltd"
+    "providerName": "Smile Arts Studio PVT Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-17381680622",
@@ -2665,7 +2809,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4548669,
     "lon": 0.062842,
-    "providerName": "HPAD Limited"
+    "providerName": "HPAD Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-17410856689",
@@ -2683,7 +2828,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.494884,
     "lon": -0.17935,
-    "providerName": "Dentex Clinical Limited"
+    "providerName": "Dentex Clinical Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-17428267964",
@@ -2701,7 +2847,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520554,
     "lon": -0.146961,
-    "providerName": "Dentex Clinical Limited"
+    "providerName": "Dentex Clinical Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-17428681763",
@@ -2719,7 +2866,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522381,
     "lon": -0.150462,
-    "providerName": "Dentex Clinical Limited"
+    "providerName": "Dentex Clinical Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-17429243626",
@@ -2736,7 +2884,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4797335,
     "lon": -0.206832,
-    "providerName": "Pro Smile Limited"
+    "providerName": "Pro Smile Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-17429712263",
@@ -2754,7 +2903,8 @@
     "localAuthority": "Camden",
     "lat": 51.5467386,
     "lon": -0.1587085,
-    "providerName": "Dentex Clinical Limited"
+    "providerName": "Dentex Clinical Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-17429748197",
@@ -2771,7 +2921,8 @@
     "localAuthority": "Havering",
     "lat": 51.6030736,
     "lon": 0.247663,
-    "providerName": "Dentex Clinical Limited"
+    "providerName": "Dentex Clinical Limited",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-17430389315",
@@ -2788,7 +2939,8 @@
     "localAuthority": "Westminster",
     "lat": 51.523126,
     "lon": -0.1485617,
-    "providerName": "Dentex Clinical Limited"
+    "providerName": "Dentex Clinical Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1750855351",
@@ -2805,7 +2957,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5785454,
     "lon": -0.1980813,
-    "providerName": "Bergin Davis Sidelsky Practice Limited"
+    "providerName": "Bergin Davis Sidelsky Practice Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-17505586775",
@@ -2822,7 +2975,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4718836,
     "lon": -0.2039431,
-    "providerName": "Damira Dental Studios Limited"
+    "providerName": "Damira Dental Studios Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-17584794545",
@@ -2839,7 +2993,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4077939,
     "lon": -0.0262425,
-    "providerName": "3GO Smiles Limited"
+    "providerName": "3GO Smiles Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-17594360914",
@@ -2856,7 +3011,8 @@
     "localAuthority": "Westminster",
     "lat": 51.498007,
     "lon": -0.144437,
-    "providerName": "Two Legacy Partners Limited"
+    "providerName": "Two Legacy Partners Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-17594911011",
@@ -2873,7 +3029,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4564607,
     "lon": -0.3217022,
-    "providerName": "TW1PRAC Ltd"
+    "providerName": "TW1PRAC Ltd",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-17596722065",
@@ -2890,7 +3047,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4564607,
     "lon": -0.3217022,
-    "providerName": "TW1PRAC Ltd T/A St Margarets Smiles"
+    "providerName": "TW1PRAC Ltd T/A St Margarets Smiles",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-17707724545",
@@ -2908,7 +3066,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4831666,
     "lon": -0.1769559,
-    "providerName": "Moonz Orthodontics Limited"
+    "providerName": "Moonz Orthodontics Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-17709227788",
@@ -2926,7 +3085,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6075195,
     "lon": -0.3736586,
-    "providerName": "Shaunak Popat Orthodontists Ltd"
+    "providerName": "Shaunak Popat Orthodontists Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-17712446492",
@@ -2943,7 +3103,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.389861,
     "lon": -0.2982577,
-    "providerName": "The Dentgist Ltd"
+    "providerName": "The Dentgist Ltd",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-17715773390",
@@ -2960,7 +3121,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.577646,
     "lon": -0.424566,
-    "providerName": "Damira Dental Studios Limited"
+    "providerName": "Damira Dental Studios Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-17716951178",
@@ -2977,7 +3139,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4871409,
     "lon": -0.0751599,
-    "providerName": "Martdent Ltd"
+    "providerName": "Martdent Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-1772294881",
@@ -2994,7 +3157,8 @@
     "localAuthority": "Islington",
     "lat": 51.557629,
     "lon": -0.098051,
-    "providerName": "Dr Anita Patel"
+    "providerName": "Dr Anita Patel",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-1774669725",
@@ -3012,7 +3176,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5771254,
     "lon": -0.1967313,
-    "providerName": "Golders Green Orthodontic Practice"
+    "providerName": "Golders Green Orthodontic Practice",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-1787180555",
@@ -3029,7 +3194,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5785454,
     "lon": -0.1980813,
-    "providerName": "Mr Ian Davis"
+    "providerName": "Mr Ian Davis",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-17939810146",
@@ -3046,7 +3212,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521867,
     "lon": -0.150411,
-    "providerName": "Dr Jasmine Piran"
+    "providerName": "Dr Jasmine Piran",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-17947592920",
@@ -3063,7 +3230,8 @@
     "localAuthority": "Westminster",
     "lat": 51.4872144,
     "lon": -0.1443422,
-    "providerName": "Smileone Pimlico Ltd"
+    "providerName": "Smileone Pimlico Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1798132637",
@@ -3080,7 +3248,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.460426,
     "lon": -0.216255,
-    "providerName": "One 4 One Partnership"
+    "providerName": "One 4 One Partnership",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-17988914295",
@@ -3097,7 +3266,8 @@
     "localAuthority": "Havering",
     "lat": 51.5811063,
     "lon": 0.2048129,
-    "providerName": "Teki 19 Limited"
+    "providerName": "Teki 19 Limited",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-17990638965",
@@ -3114,7 +3284,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4913328,
     "lon": 0.0433404,
-    "providerName": "Mr James Edward Carter"
+    "providerName": "Mr James Edward Carter",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-18025166463",
@@ -3131,7 +3302,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5152963,
     "lon": -0.1540063,
-    "providerName": "Until Oral Ltd"
+    "providerName": "Until Oral Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-1807358962",
@@ -3148,7 +3320,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522146,
     "lon": -0.149726,
-    "providerName": "Dale of Harley Street Ltd"
+    "providerName": "Dale of Harley Street Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-18119600128",
@@ -3165,7 +3338,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4956199,
     "lon": -0.1653227,
-    "providerName": "Zental Dental Practices Ltd"
+    "providerName": "Zental Dental Practices Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-18159986189",
@@ -3182,7 +3356,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4641832,
     "lon": -0.1864157,
-    "providerName": "Advanced Aesthetics and Implants Limited"
+    "providerName": "Advanced Aesthetics and Implants Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-18187072470",
@@ -3216,7 +3391,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.48902,
     "lon": -0.1920056,
-    "providerName": "Orthowise UK Ltd"
+    "providerName": "Orthowise UK Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-18391331993",
@@ -3233,7 +3409,8 @@
     "localAuthority": "Havering",
     "lat": 51.5575187,
     "lon": 0.2500865,
-    "providerName": "Church View Clinic Limited"
+    "providerName": "Church View Clinic Limited",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-18413536477",
@@ -3250,7 +3427,8 @@
     "localAuthority": "Sutton",
     "lat": 51.3599284,
     "lon": -0.1919354,
-    "providerName": "Love Teeth Sutton Limited"
+    "providerName": "Love Teeth Sutton Limited",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-18475164715",
@@ -3267,7 +3445,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4045783,
     "lon": 0.0147686,
-    "providerName": "3GO Smiles Limited"
+    "providerName": "3GO Smiles Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-18549437685",
@@ -3284,7 +3463,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521311,
     "lon": -0.14595,
-    "providerName": "SPB Innovation Ltd"
+    "providerName": "SPB Innovation Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-18617355035",
@@ -3301,7 +3481,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4295294,
     "lon": -0.3547261,
-    "providerName": "Lura Care Ltd"
+    "providerName": "Lura Care Ltd",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-18680452135",
@@ -3319,7 +3500,8 @@
     "localAuthority": "Westminster",
     "lat": 51.497688,
     "lon": -0.1481381,
-    "providerName": "Broad Smiles Limited"
+    "providerName": "Broad Smiles Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-186842659",
@@ -3336,7 +3518,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5198659,
     "lon": -0.1471228,
-    "providerName": "Michael Carling Limited"
+    "providerName": "Michael Carling Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-18745481655",
@@ -3353,7 +3536,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4573347,
     "lon": 0.168756,
-    "providerName": "GMD Bexleyheath LTD"
+    "providerName": "GMD Bexleyheath LTD",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-18745678435",
@@ -3370,7 +3554,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4892873,
     "lon": 0.0033807,
-    "providerName": "Boarway Care Ltd"
+    "providerName": "Boarway Care Ltd",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-18767425878",
@@ -3388,7 +3573,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5197644,
     "lon": -0.1572314,
-    "providerName": "Dr Nazan Adali Orthodontics"
+    "providerName": "Dr Nazan Adali Orthodontics",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-188084803",
@@ -3405,7 +3591,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.5848115,
     "lon": -0.4019976,
-    "providerName": "Mr. Ketan Mehta"
+    "providerName": "Mr. Ketan Mehta",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-188085230",
@@ -3422,7 +3609,8 @@
     "localAuthority": "Barnet",
     "lat": 51.609607,
     "lon": -0.264683,
-    "providerName": "Deansbrooks Care Centre Limited"
+    "providerName": "Deansbrooks Care Centre Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-188110459",
@@ -3439,7 +3627,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5609761,
     "lon": 0.1001893,
-    "providerName": "Mr. Saranjit Sihra"
+    "providerName": "Mr. Saranjit Sihra",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-188129225",
@@ -3456,7 +3645,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.387982,
     "lon": -0.271539,
-    "providerName": "Mr. Yon Jon Wang"
+    "providerName": "Mr. Yon Jon Wang",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-188146267",
@@ -3473,7 +3663,8 @@
     "localAuthority": "Islington",
     "lat": 51.5363188,
     "lon": -0.1163897,
-    "providerName": "Mrs. Josie Talib"
+    "providerName": "Mrs. Josie Talib",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-188222121",
@@ -3492,7 +3683,8 @@
     "localAuthority": "Hackney",
     "lat": 51.5726356,
     "lon": -0.0933148,
-    "providerName": "Mr. Yousif Daniel"
+    "providerName": "Mr. Yousif Daniel",
+    "ar": "Hackney"
   },
   {
     "cqc_id": "1-188382410",
@@ -3510,7 +3702,8 @@
     "localAuthority": "City of London",
     "lat": 51.519662,
     "lon": -0.098537,
-    "providerName": "Dr. Garry Mancini"
+    "providerName": "Dr. Garry Mancini",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-188444054",
@@ -3527,7 +3720,8 @@
     "localAuthority": "Southwark",
     "lat": 51.475968,
     "lon": -0.094065,
-    "providerName": "C Watson Limited"
+    "providerName": "C Watson Limited",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-188477119",
@@ -3544,7 +3738,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4728039,
     "lon": -0.2094364,
-    "providerName": "Pure Smiles"
+    "providerName": "Pure Smiles",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-188481383",
@@ -3561,7 +3756,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4370889,
     "lon": -0.0545194,
-    "providerName": "Dr. Parisa Akhavan-Tabib"
+    "providerName": "Dr. Parisa Akhavan-Tabib",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-188485691",
@@ -3578,7 +3774,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.435616,
     "lon": -0.0176052,
-    "providerName": "Dr. Martin Zhaeentan"
+    "providerName": "Dr. Martin Zhaeentan",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-188634544",
@@ -3595,7 +3792,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3511376,
     "lon": -0.0995512,
-    "providerName": "Dr. Noozhat Dathi"
+    "providerName": "Dr. Noozhat Dathi",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-188728322",
@@ -3612,7 +3810,8 @@
     "localAuthority": "Harrow",
     "lat": 51.5977412,
     "lon": -0.2806905,
-    "providerName": "Confident Dental Practices Limited"
+    "providerName": "Confident Dental Practices Limited",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-18878087045",
@@ -3629,7 +3828,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.4142113,
     "lon": -0.2879168,
-    "providerName": "Brunswick Rooms Ltd"
+    "providerName": "Brunswick Rooms Ltd",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-189006173",
@@ -3647,7 +3847,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5369368,
     "lon": -0.1754129,
-    "providerName": "Dr. Parita Bagheri"
+    "providerName": "Dr. Parita Bagheri",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-189092849",
@@ -3664,7 +3865,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4170212,
     "lon": -0.1377936,
-    "providerName": "Bhageerutty Smiles Limited"
+    "providerName": "Bhageerutty Smiles Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-189185804",
@@ -3681,7 +3883,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5305808,
     "lon": -0.2076166,
-    "providerName": "Dr. Ishtaq Mohammed"
+    "providerName": "Dr. Ishtaq Mohammed",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-18929430225",
@@ -3698,7 +3901,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.5446806,
     "lon": -0.4754383,
-    "providerName": "Petrie Tucker and Partners Limited"
+    "providerName": "Petrie Tucker and Partners Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-189352653",
@@ -3716,7 +3920,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4607112,
     "lon": -0.1688241,
-    "providerName": "Battersea Orthodontics Limited"
+    "providerName": "Battersea Orthodontics Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-189399714",
@@ -3733,7 +3938,8 @@
     "localAuthority": "Barking and Dagenham",
     "lat": 51.5449218,
     "lon": 0.0922678,
-    "providerName": "M C Dentistry Limited"
+    "providerName": "M C Dentistry Limited",
+    "ar": "Barking & Dagenham"
   },
   {
     "cqc_id": "1-189661312",
@@ -3750,7 +3956,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5918872,
     "lon": 0.0594432,
-    "providerName": "Dentaliving"
+    "providerName": "Dentaliving",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-189770621",
@@ -3768,7 +3975,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6228142,
     "lon": -0.191524,
-    "providerName": "Southover Orthodontics Limited"
+    "providerName": "Southover Orthodontics Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-18990834914",
@@ -3785,7 +3993,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4373044,
     "lon": -0.0949987,
-    "providerName": "Dr Anisha Udhyam Amin"
+    "providerName": "Dr Anisha Udhyam Amin",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-189842598",
@@ -3803,7 +4012,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.6147841,
     "lon": -0.0286436,
-    "providerName": "Angle House Orthodontics (Chingford)"
+    "providerName": "Angle House Orthodontics (Chingford)",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-1899446513",
@@ -3820,7 +4030,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4709054,
     "lon": -0.2111377,
-    "providerName": "Orviol Ltd"
+    "providerName": "Orviol Ltd",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-190129905",
@@ -3837,7 +4048,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4411491,
     "lon": -0.1052711,
-    "providerName": "Haynes Dental Limited"
+    "providerName": "Haynes Dental Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-19032500450",
@@ -3854,7 +4066,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4611098,
     "lon": 0.0268117,
-    "providerName": "Smile 4 U (Kidbrooke) Limited"
+    "providerName": "Smile 4 U (Kidbrooke) Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-19034176908",
@@ -3872,7 +4085,8 @@
     "localAuthority": "Islington",
     "lat": 51.5205584,
     "lon": -0.0976815,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-190458188",
@@ -3889,7 +4103,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518314,
     "lon": -0.148061,
-    "providerName": "Cantwell Healthcare Limited"
+    "providerName": "Cantwell Healthcare Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-19059221982",
@@ -3923,7 +4138,8 @@
     "localAuthority": "Camden",
     "lat": 51.5589028,
     "lon": -0.178703,
-    "providerName": "Dr. Jaideep Prashar"
+    "providerName": "Dr. Jaideep Prashar",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-1909673910",
@@ -3940,7 +4156,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5928,
     "lon": 0.023942,
-    "providerName": "Woodford Partnership"
+    "providerName": "Woodford Partnership",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-1916623288",
@@ -3974,7 +4191,8 @@
     "localAuthority": "Southwark",
     "lat": 51.488345,
     "lon": -0.0929033,
-    "providerName": "Macedent Clinic Ltd"
+    "providerName": "Macedent Clinic Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-19210567475",
@@ -3991,7 +4209,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6123109,
     "lon": -0.2851378,
-    "providerName": "Toothaid Ltd"
+    "providerName": "Toothaid Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-19210994091",
@@ -4008,7 +4227,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4894444,
     "lon": -0.1897849,
-    "providerName": "Zental Dental Practices Ltd"
+    "providerName": "Zental Dental Practices Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-19219798745",
@@ -4026,7 +4246,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.6166647,
     "lon": -0.0169768,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-19225379992",
@@ -4044,7 +4265,8 @@
     "localAuthority": "Westminster",
     "lat": 51.51885,
     "lon": -0.146685,
-    "providerName": "The Harley Street Implant Centre Ltd"
+    "providerName": "The Harley Street Implant Centre Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-19231555915",
@@ -4061,7 +4283,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.4034783,
     "lon": -0.2740651,
-    "providerName": "Tooth Doc Limited"
+    "providerName": "Tooth Doc Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-19320969134",
@@ -4079,7 +4302,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5704337,
     "lon": -0.1455576,
-    "providerName": "Hemant Patel Orthodontist Ltd"
+    "providerName": "Hemant Patel Orthodontist Ltd",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-19320969173",
@@ -4097,7 +4321,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6070425,
     "lon": -0.299431,
-    "providerName": "Hemant Patel Orthodontist Ltd"
+    "providerName": "Hemant Patel Orthodontist Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-19320969199",
@@ -4115,7 +4340,8 @@
     "localAuthority": "Haringey",
     "lat": 51.581675,
     "lon": -0.124832,
-    "providerName": "Hemant Patel Orthodontist Ltd"
+    "providerName": "Hemant Patel Orthodontist Ltd",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-19321576703",
@@ -4132,7 +4358,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4858964,
     "lon": -0.2325023,
-    "providerName": "Envisage Dental UK Limited"
+    "providerName": "Envisage Dental UK Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-193516949",
@@ -4149,7 +4376,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6455187,
     "lon": -0.0462452,
-    "providerName": "Ponders End Dentistry Limited"
+    "providerName": "Ponders End Dentistry Limited",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-193313706",
@@ -4167,7 +4395,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5181904,
     "lon": -0.0776583,
-    "providerName": "The Brace Orthodontic Group Ltd"
+    "providerName": "The Brace Orthodontic Group Ltd",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-19367849422",
@@ -4184,7 +4413,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.402858,
     "lon": -0.2563758,
-    "providerName": "Love Teeth New Malden Limited"
+    "providerName": "Love Teeth New Malden Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-193749018",
@@ -4201,7 +4431,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5116062,
     "lon": -0.034181,
-    "providerName": "UltraSmile Limited"
+    "providerName": "UltraSmile Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-19377470076",
@@ -4218,7 +4449,8 @@
     "localAuthority": "Croydon",
     "lat": 51.4003168,
     "lon": -0.1172237,
-    "providerName": "Dr Syed Tariq Hussain Kazmi"
+    "providerName": "Dr Syed Tariq Hussain Kazmi",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-194251319",
@@ -4235,7 +4467,8 @@
     "localAuthority": "Islington",
     "lat": 51.550138,
     "lon": -0.086968,
-    "providerName": "Mrs. Gillian Ward"
+    "providerName": "Mrs. Gillian Ward",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-194333909",
@@ -4252,7 +4485,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4094776,
     "lon": 0.0133017,
-    "providerName": "The Buckley Practice Limited"
+    "providerName": "The Buckley Practice Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-194669482",
@@ -4269,7 +4503,8 @@
     "localAuthority": "Westminster",
     "lat": 51.519746,
     "lon": -0.1476,
-    "providerName": "Dr. Mehran Sanei"
+    "providerName": "Dr. Mehran Sanei",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-194731935",
@@ -4286,7 +4521,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518813,
     "lon": -0.146657,
-    "providerName": "Dr. Shabir Pandor"
+    "providerName": "Dr. Shabir Pandor",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-19493468220",
@@ -4303,7 +4539,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5081842,
     "lon": -0.1414292,
-    "providerName": "Dr Doris Ltd"
+    "providerName": "Dr Doris Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-195021117",
@@ -4320,7 +4557,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5860884,
     "lon": -0.2203987,
-    "providerName": "Dr. Adel Bou Saba"
+    "providerName": "Dr. Adel Bou Saba",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-195091925",
@@ -4337,7 +4575,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4865714,
     "lon": -0.2806506,
-    "providerName": "Dr. Marc Hughes"
+    "providerName": "Dr. Marc Hughes",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-195098004",
@@ -4354,7 +4593,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5247172,
     "lon": -0.3415377,
-    "providerName": "Mrs. Bhavisha Thakrar"
+    "providerName": "Mrs. Bhavisha Thakrar",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-1953806792",
@@ -4371,7 +4611,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.50307,
     "lon": -0.018583,
-    "providerName": "Smile Pod Limited"
+    "providerName": "Smile Pod Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-19548102141",
@@ -4388,7 +4629,8 @@
     "localAuthority": "Barnet",
     "lat": 51.633799,
     "lon": -0.1755465,
-    "providerName": "Foxforth Healthcare Limited"
+    "providerName": "Foxforth Healthcare Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-195704458",
@@ -4405,7 +4647,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.600239,
     "lon": 0.020128,
-    "providerName": "Improve Your Smile Ltd"
+    "providerName": "Improve Your Smile Ltd",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-195762931",
@@ -4422,7 +4665,8 @@
     "localAuthority": "Islington",
     "lat": 51.545004,
     "lon": -0.115884,
-    "providerName": "Mr. Paramjit Chopra"
+    "providerName": "Mr. Paramjit Chopra",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-196029136",
@@ -4439,7 +4683,8 @@
     "localAuthority": "Haringey",
     "lat": 51.568389,
     "lon": -0.109855,
-    "providerName": "Ms. Kasturi Rao"
+    "providerName": "Ms. Kasturi Rao",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-19610774184",
@@ -4456,7 +4701,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6046399,
     "lon": -0.3401287,
-    "providerName": "Poland Medical LLP"
+    "providerName": "Poland Medical LLP",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-196352174",
@@ -4473,7 +4719,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.441515,
     "lon": -0.434075,
-    "providerName": "Mr. Abdul Khan"
+    "providerName": "Mr. Abdul Khan",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-196542532",
@@ -4491,7 +4738,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5755286,
     "lon": 0.0635817,
-    "providerName": "Dr. Maheshchandra Patel"
+    "providerName": "Dr. Maheshchandra Patel",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-196557078",
@@ -4508,7 +4756,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6472202,
     "lon": -0.1839125,
-    "providerName": "Dr. Khosro Basirat"
+    "providerName": "Dr. Khosro Basirat",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-196573553",
@@ -4525,7 +4774,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5753451,
     "lon": 0.0266565,
-    "providerName": "Dr. Amit Gupta"
+    "providerName": "Dr. Amit Gupta",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-19677644389",
@@ -4542,7 +4792,8 @@
     "localAuthority": "Brent",
     "lat": 51.5731491,
     "lon": -0.2618767,
-    "providerName": "Vestadent Limited"
+    "providerName": "Vestadent Limited",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-19680665038",
@@ -4559,7 +4810,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4815083,
     "lon": -0.1454432,
-    "providerName": "LIPS Battersea Limited"
+    "providerName": "LIPS Battersea Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-19681215402",
@@ -4576,7 +4828,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4665185,
     "lon": 0.0525937,
-    "providerName": "AR Smiles Dental Limited"
+    "providerName": "AR Smiles Dental Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-196883079",
@@ -4593,7 +4846,8 @@
     "localAuthority": "Westminster",
     "lat": 51.514947,
     "lon": -0.19746,
-    "providerName": "Mr Pedro Mendoza Paton"
+    "providerName": "Mr Pedro Mendoza Paton",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-197086145",
@@ -4610,7 +4864,8 @@
     "localAuthority": "Camden",
     "lat": 51.5353201,
     "lon": -0.1388961,
-    "providerName": "Camden High Street Practice Limited"
+    "providerName": "Camden High Street Practice Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-197041104",
@@ -4627,7 +4882,8 @@
     "localAuthority": "Southwark",
     "lat": 51.5022328,
     "lon": -0.0490801,
-    "providerName": "Dr. Gim Ooi"
+    "providerName": "Dr. Gim Ooi",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-197041087",
@@ -4644,7 +4900,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4876085,
     "lon": -0.111571,
-    "providerName": "Dr. Gim Ooi"
+    "providerName": "Dr. Gim Ooi",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-197781477",
@@ -4662,7 +4919,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6571686,
     "lon": -0.0985439,
-    "providerName": "Angle House Orthodontics"
+    "providerName": "Angle House Orthodontics",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-19779416541",
@@ -4679,7 +4937,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5228544,
     "lon": -0.148443,
-    "providerName": "MyHealthcare Clinic Ltd"
+    "providerName": "MyHealthcare Clinic Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-197800629",
@@ -4696,7 +4955,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.468326,
     "lon": -0.1505453,
-    "providerName": "Dr. Atputharajah Somasundararajah"
+    "providerName": "Dr. Atputharajah Somasundararajah",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-197800907",
@@ -4713,7 +4973,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522951,
     "lon": -0.1597262,
-    "providerName": "Dr. Atputharajah Somasundararajah"
+    "providerName": "Dr. Atputharajah Somasundararajah",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-197961676",
@@ -4730,7 +4991,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520624,
     "lon": -0.152537,
-    "providerName": "Smiles and Smiles Limited"
+    "providerName": "Smiles and Smiles Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-197967006",
@@ -4747,7 +5009,8 @@
     "localAuthority": "Harrow",
     "lat": 51.5726626,
     "lon": -0.3709351,
-    "providerName": "Dr. Hamza Maududi"
+    "providerName": "Dr. Hamza Maududi",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-197989509",
@@ -4764,7 +5027,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5729569,
     "lon": -0.1997956,
-    "providerName": "Dr. Michael Bass"
+    "providerName": "Dr. Michael Bass",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-1980698738",
@@ -4781,7 +5045,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518722,
     "lon": -0.14656,
-    "providerName": "Brazilian Smile Ltd"
+    "providerName": "Brazilian Smile Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-198177201",
@@ -4798,7 +5063,8 @@
     "localAuthority": "Bromley",
     "lat": 51.3900399,
     "lon": 0.0498917,
-    "providerName": "Dr. Khalid Faiz"
+    "providerName": "Dr. Khalid Faiz",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-198204771",
@@ -4815,7 +5081,8 @@
     "localAuthority": "Havering",
     "lat": 51.577401,
     "lon": 0.188583,
-    "providerName": "Share a Smile Limited"
+    "providerName": "Share a Smile Limited",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-198208092",
@@ -4832,7 +5099,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.5618177,
     "lon": -0.0104751,
-    "providerName": "Smile In London"
+    "providerName": "Smile In London",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-198244449",
@@ -4850,7 +5118,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6172235,
     "lon": -0.2619671,
-    "providerName": "Dr. Gaurav Madhok"
+    "providerName": "Dr. Gaurav Madhok",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-198301876",
@@ -4868,7 +5137,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5440964,
     "lon": -0.373715,
-    "providerName": "Mr. Surrinder Kumar"
+    "providerName": "Mr. Surrinder Kumar",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-198316758",
@@ -4885,7 +5155,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.4045518,
     "lon": -0.2777627,
-    "providerName": "Dr. Rupa Patel"
+    "providerName": "Dr. Rupa Patel",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-198414773",
@@ -4902,7 +5173,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4626723,
     "lon": -0.0587727,
-    "providerName": "Maxident Limited"
+    "providerName": "Maxident Limited",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-19878562275",
@@ -4919,7 +5191,8 @@
     "localAuthority": "Sutton",
     "lat": 51.3660037,
     "lon": -0.1812379,
-    "providerName": "Dr. Sonya Hamzehnejad-Mccann"
+    "providerName": "Dr. Sonya Hamzehnejad-Mccann",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-19880383785",
@@ -4936,7 +5209,8 @@
     "localAuthority": "Camden",
     "lat": 51.545359,
     "lon": -0.1780613,
-    "providerName": "MyHealthcare Clinic Ltd"
+    "providerName": "MyHealthcare Clinic Ltd",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-19881541704",
@@ -4953,7 +5227,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6073524,
     "lon": -0.3746679,
-    "providerName": "Hatch End Clinic Ltd"
+    "providerName": "Hatch End Clinic Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-19883082258",
@@ -4988,7 +5263,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.419709,
     "lon": -0.302332,
-    "providerName": "Healthwise Enterprises Ltd"
+    "providerName": "Healthwise Enterprises Ltd",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-19890963549",
@@ -5005,7 +5281,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4962655,
     "lon": -0.0748699,
-    "providerName": "Olive Health & Travel Ltd"
+    "providerName": "Olive Health & Travel Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-198961527",
@@ -5022,7 +5299,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517856,
     "lon": -0.147503,
-    "providerName": "Dr. Norman Bloom"
+    "providerName": "Dr. Norman Bloom",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-199290457",
@@ -5039,7 +5317,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6397332,
     "lon": -0.048214,
-    "providerName": "Mr. Anthony John Winstanley Trewella"
+    "providerName": "Mr. Anthony John Winstanley Trewella",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-1992385057",
@@ -5056,7 +5335,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521311,
     "lon": -0.14595,
-    "providerName": "Dr Alan Sidi Ltd"
+    "providerName": "Dr Alan Sidi Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-199357240",
@@ -5090,7 +5370,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.518372,
     "lon": -0.406765,
-    "providerName": "IDH Limited"
+    "providerName": "IDH Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-199357473",
@@ -5107,7 +5388,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522394,
     "lon": -0.172996,
-    "providerName": "IDH Limited"
+    "providerName": "IDH Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-199357358",
@@ -5124,7 +5406,8 @@
     "localAuthority": "Croydon",
     "lat": 51.320839,
     "lon": -0.139238,
-    "providerName": "IDH Limited"
+    "providerName": "IDH Limited",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-199364569",
@@ -5141,7 +5424,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4258459,
     "lon": -0.044683,
-    "providerName": "IDH Limited"
+    "providerName": "IDH Limited",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-199364674",
@@ -5158,7 +5442,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.428533,
     "lon": -0.1687007,
-    "providerName": "IDH Limited"
+    "providerName": "IDH Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-199367704",
@@ -5175,7 +5460,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4569091,
     "lon": -0.1978763,
-    "providerName": "IDH Limited"
+    "providerName": "IDH Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-199367764",
@@ -5209,7 +5495,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6017547,
     "lon": -0.2692467,
-    "providerName": "Mr. Jitendra Shah"
+    "providerName": "Mr. Jitendra Shah",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-199670166",
@@ -5227,7 +5514,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4584243,
     "lon": 0.147186,
-    "providerName": "Chapel Road Orthodontics Limited"
+    "providerName": "Chapel Road Orthodontics Limited",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-199929192",
@@ -5244,7 +5532,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5158426,
     "lon": -0.1889254,
-    "providerName": "Archangel Clinic Limited"
+    "providerName": "Archangel Clinic Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-200073026",
@@ -5261,7 +5550,8 @@
     "localAuthority": "Barnet",
     "lat": 51.584613,
     "lon": -0.21737,
-    "providerName": "Dr. Sunil Kakkad"
+    "providerName": "Dr. Sunil Kakkad",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-200426531",
@@ -5279,7 +5569,8 @@
     "localAuthority": "Westminster",
     "lat": 51.4942385,
     "lon": -0.1341886,
-    "providerName": "Dr. Marjan Mokhber"
+    "providerName": "Dr. Marjan Mokhber",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-200824213",
@@ -5296,7 +5587,8 @@
     "localAuthority": "Camden",
     "lat": 51.5462933,
     "lon": -0.1618562,
-    "providerName": "Smile Solutions Limited"
+    "providerName": "Smile Solutions Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-201579341",
@@ -5313,7 +5605,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.479597,
     "lon": -0.411991,
-    "providerName": "Dental Care Mirza and Sanehi"
+    "providerName": "Dental Care Mirza and Sanehi",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-201625118",
@@ -5331,7 +5624,8 @@
     "localAuthority": "Harrow",
     "lat": 51.5904452,
     "lon": -0.3698896,
-    "providerName": "Dr. Fiona Millen"
+    "providerName": "Dr. Fiona Millen",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-2019214925",
@@ -5348,7 +5642,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4999452,
     "lon": -0.2112977,
-    "providerName": "Mr Sheraz Aleem"
+    "providerName": "Mr Sheraz Aleem",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-202007179",
@@ -5365,7 +5660,8 @@
     "localAuthority": "Camden",
     "lat": 51.5544168,
     "lon": -0.164356,
-    "providerName": "Hampstead Healthcare Limited"
+    "providerName": "Hampstead Healthcare Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-202081871",
@@ -5383,7 +5679,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518725,
     "lon": -0.145511,
-    "providerName": "Bass Orthodontics Limited"
+    "providerName": "Bass Orthodontics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-202295504",
@@ -5400,7 +5697,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4597698,
     "lon": -0.3623177,
-    "providerName": "Dr. Samit Shah"
+    "providerName": "Dr. Samit Shah",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-202309856",
@@ -5417,7 +5715,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5132949,
     "lon": -0.1472887,
-    "providerName": "Dr. Aayesha Meghji"
+    "providerName": "Dr. Aayesha Meghji",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-202307151",
@@ -5434,7 +5733,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521314,
     "lon": -0.14781,
-    "providerName": "Mr. Mark Atkinson"
+    "providerName": "Mr. Mark Atkinson",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-20241786145",
@@ -5451,7 +5751,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5166668,
     "lon": -0.1387488,
-    "providerName": "Expert Medical Oxford Circus LTD"
+    "providerName": "Expert Medical Oxford Circus LTD",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-202738020",
@@ -5468,7 +5769,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521314,
     "lon": -0.14781,
-    "providerName": "Dr. Michael Norton"
+    "providerName": "Dr. Michael Norton",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-202961100",
@@ -5485,7 +5787,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521351,
     "lon": -0.1483454,
-    "providerName": "Harley Dental Clinics Limited"
+    "providerName": "Harley Dental Clinics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-203005247",
@@ -5502,7 +5805,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521656,
     "lon": -0.14954,
-    "providerName": "Dr. Philip Stemmer"
+    "providerName": "Dr. Philip Stemmer",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-203047635",
@@ -5519,7 +5823,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520905,
     "lon": -0.148143,
-    "providerName": "Cunnington Endodontics Limited"
+    "providerName": "Cunnington Endodontics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-203672820",
@@ -5536,7 +5841,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5840342,
     "lon": -0.1299344,
-    "providerName": "Park Road Practice Limited"
+    "providerName": "Park Road Practice Limited",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-203731609",
@@ -5553,7 +5859,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518813,
     "lon": -0.146657,
-    "providerName": "Dr. Filippos Mavroskoufis"
+    "providerName": "Dr. Filippos Mavroskoufis",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-20396834305",
@@ -5570,7 +5877,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6130521,
     "lon": -0.1571924,
-    "providerName": "Iconic Smiles Friern Barnet"
+    "providerName": "Iconic Smiles Friern Barnet",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-203967210",
@@ -5587,7 +5895,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4787842,
     "lon": -0.2809923,
-    "providerName": "Dr. Howard Stean"
+    "providerName": "Dr. Howard Stean",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-20398246690",
@@ -5604,7 +5913,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522146,
     "lon": -0.149726,
-    "providerName": "NG Smiles Ltd"
+    "providerName": "NG Smiles Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-204577458",
@@ -5621,7 +5931,8 @@
     "localAuthority": "Westminster",
     "lat": 51.523124,
     "lon": -0.148587,
-    "providerName": "Sturridge, Capp And Barrett"
+    "providerName": "Sturridge, Capp And Barrett",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-205206688",
@@ -5638,7 +5949,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521389,
     "lon": -0.149162,
-    "providerName": "Dr. Gaynor Langley"
+    "providerName": "Dr. Gaynor Langley",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2056039863",
@@ -5655,7 +5967,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4379531,
     "lon": -0.1865379,
-    "providerName": "Perfect Smile Earlsfield Partnership"
+    "providerName": "Perfect Smile Earlsfield Partnership",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-2058419411",
@@ -5672,7 +5985,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.6045824,
     "lon": -0.4159885,
-    "providerName": "Smile Radiance Limited"
+    "providerName": "Smile Radiance Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-206141691",
@@ -5689,7 +6003,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.432662,
     "lon": -0.129475,
-    "providerName": "Whitecross Dental Care Limited"
+    "providerName": "Whitecross Dental Care Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-206161474",
@@ -5706,7 +6021,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4613719,
     "lon": -0.1993027,
-    "providerName": "Petrie Tucker and Partners Limited"
+    "providerName": "Petrie Tucker and Partners Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-206161324",
@@ -5723,7 +6039,8 @@
     "localAuthority": "Enfield",
     "lat": 51.681474,
     "lon": -0.034066,
-    "providerName": "Petrie Tucker and Partners Limited"
+    "providerName": "Petrie Tucker and Partners Limited",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-206161489",
@@ -5740,7 +6057,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.5090661,
     "lon": -0.4736886,
-    "providerName": "Petrie Tucker and Partners Limited"
+    "providerName": "Petrie Tucker and Partners Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-206165264",
@@ -5757,7 +6075,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5554929,
     "lon": -0.3360768,
-    "providerName": "Petrie Tucker and Partners Limited"
+    "providerName": "Petrie Tucker and Partners Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-20629553001",
@@ -5774,7 +6093,8 @@
     "localAuthority": "Hackney",
     "lat": 51.5476707,
     "lon": -0.0250531,
-    "providerName": "Skon LTD"
+    "providerName": "Skon LTD",
+    "ar": "Hackney"
   },
   {
     "cqc_id": "1-20629202890",
@@ -5809,7 +6129,8 @@
     "localAuthority": "Islington",
     "lat": 51.5294831,
     "lon": -0.095709,
-    "providerName": "Dr. Alejandro Seijas"
+    "providerName": "Dr. Alejandro Seijas",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-20709295895",
@@ -5826,7 +6147,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520551,
     "lon": -0.149066,
-    "providerName": "Bespoke Smile Limited"
+    "providerName": "Bespoke Smile Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-20709922517",
@@ -5843,7 +6165,8 @@
     "localAuthority": "Westminster",
     "lat": 51.515296,
     "lon": -0.154006,
-    "providerName": "Implantly Ltd"
+    "providerName": "Implantly Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2079457145",
@@ -5860,7 +6183,8 @@
     "localAuthority": "Merton",
     "lat": 51.4111038,
     "lon": -0.2327931,
-    "providerName": "Cloudwalk Ltd"
+    "providerName": "Cloudwalk Ltd",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-209638582",
@@ -5877,7 +6201,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517856,
     "lon": -0.147503,
-    "providerName": "Mr. Christopher Parte"
+    "providerName": "Mr. Christopher Parte",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2103661742",
@@ -5894,7 +6219,8 @@
     "localAuthority": "Brent",
     "lat": 51.558731,
     "lon": -0.24612,
-    "providerName": "Premier Smiles Holdings Ltd"
+    "providerName": "Premier Smiles Holdings Ltd",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-210404188",
@@ -5928,7 +6254,8 @@
     "localAuthority": "Haringey",
     "lat": 51.594191,
     "lon": -0.069168,
-    "providerName": "Dr. Paul Ocansey"
+    "providerName": "Dr. Paul Ocansey",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-210739864",
@@ -5945,7 +6272,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522146,
     "lon": -0.149726,
-    "providerName": "Dr. Farydon Mirzai"
+    "providerName": "Dr. Farydon Mirzai",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-210862953",
@@ -5962,7 +6290,8 @@
     "localAuthority": "Newham",
     "lat": 51.5355805,
     "lon": 0.034897,
-    "providerName": "Dr. Gurbakhshish Singh Ubhi"
+    "providerName": "Dr. Gurbakhshish Singh Ubhi",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-210769942",
@@ -5979,7 +6308,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518999,
     "lon": -0.168227,
-    "providerName": "Dr. Alkesh Patel"
+    "providerName": "Dr. Alkesh Patel",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2112551143",
@@ -5996,7 +6326,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517876,
     "lon": -0.149362,
-    "providerName": "The Welbeck Clinic (Cosmetic) Ltd"
+    "providerName": "The Welbeck Clinic (Cosmetic) Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-211387091",
@@ -6013,7 +6344,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.497784,
     "lon": -0.01822,
-    "providerName": "Ms. Anita Agarwal"
+    "providerName": "Ms. Anita Agarwal",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-211471945",
@@ -6030,7 +6362,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.507126,
     "lon": -0.243866,
-    "providerName": "iDental Limited"
+    "providerName": "iDental Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-211497791",
@@ -6047,7 +6380,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6170129,
     "lon": -0.1770195,
-    "providerName": "Mr Colin Gaunt"
+    "providerName": "Mr Colin Gaunt",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-211491222",
@@ -6064,7 +6398,8 @@
     "localAuthority": "Sutton",
     "lat": 51.36657,
     "lon": -0.189903,
-    "providerName": "Dr. Sonya Hamzehnejad-Mccann"
+    "providerName": "Dr. Sonya Hamzehnejad-Mccann",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-2118226363",
@@ -6081,7 +6416,8 @@
     "localAuthority": "Islington",
     "lat": 51.532327,
     "lon": -0.106574,
-    "providerName": "London City Smiles Ltd"
+    "providerName": "London City Smiles Ltd",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-211825790",
@@ -6098,7 +6434,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5204537,
     "lon": -0.1496071,
-    "providerName": "H.W. Preiskel"
+    "providerName": "H.W. Preiskel",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-21252917275",
@@ -6115,7 +6452,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5258445,
     "lon": -0.1791867,
-    "providerName": "Maida Vale Smile Group Limited"
+    "providerName": "Maida Vale Smile Group Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2132287433",
@@ -6132,7 +6470,8 @@
     "localAuthority": "Camden",
     "lat": 51.551275,
     "lon": -0.2001246,
-    "providerName": "Noorani and Noorani"
+    "providerName": "Noorani and Noorani",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-214255844",
@@ -6149,7 +6488,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4638829,
     "lon": -0.3019517,
-    "providerName": "Perfect Smile Surgery Limited"
+    "providerName": "Perfect Smile Surgery Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-214255859",
@@ -6166,7 +6506,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4378568,
     "lon": -0.3149026,
-    "providerName": "Perfect Smile Surgery Limited"
+    "providerName": "Perfect Smile Surgery Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-214255812",
@@ -6183,7 +6524,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4660518,
     "lon": -0.1519349,
-    "providerName": "Perfect Smile Surgery Limited"
+    "providerName": "Perfect Smile Surgery Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-214945948",
@@ -6217,7 +6559,8 @@
     "localAuthority": "City of London",
     "lat": 51.5119834,
     "lon": -0.0824739,
-    "providerName": "Smile Pod Limited"
+    "providerName": "Smile Pod Limited",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-215610582",
@@ -6234,7 +6577,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4670083,
     "lon": 0.0084036,
-    "providerName": "Sparkly Smile Limited"
+    "providerName": "Sparkly Smile Limited",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-21590869908",
@@ -6251,7 +6595,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4863057,
     "lon": -0.0942904,
-    "providerName": "KC Dentprojects Ltd"
+    "providerName": "KC Dentprojects Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-2162737136",
@@ -6269,7 +6614,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5192249,
     "lon": -0.3189347,
-    "providerName": "Dr. Peter Ilori"
+    "providerName": "Dr. Peter Ilori",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-216303573",
@@ -6286,7 +6632,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.462976,
     "lon": -0.2284641,
-    "providerName": "Dr. Sam Afshar"
+    "providerName": "Dr. Sam Afshar",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-216439048",
@@ -6303,7 +6650,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3377258,
     "lon": -0.0822312,
-    "providerName": "Dr. Graham Aird"
+    "providerName": "Dr. Graham Aird",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-21683021042",
@@ -6320,7 +6668,8 @@
     "localAuthority": "Ealing",
     "lat": 51.506827,
     "lon": -0.2702391,
-    "providerName": "Dr Thuha Jabbar"
+    "providerName": "Dr Thuha Jabbar",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-21686625095",
@@ -6338,7 +6687,8 @@
     "localAuthority": "Bromley",
     "lat": 51.3897934,
     "lon": 0.0715845,
-    "providerName": "Simply Orthodontics Ltd"
+    "providerName": "Simply Orthodontics Ltd",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-21709224360",
@@ -6355,7 +6705,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4681319,
     "lon": -0.0740907,
-    "providerName": "Change Please SFC LTD"
+    "providerName": "Change Please SFC LTD",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-217854413",
@@ -6372,7 +6723,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4270191,
     "lon": -0.3324296,
-    "providerName": "Aromaden Limited"
+    "providerName": "Aromaden Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-217978252",
@@ -6389,7 +6741,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.432816,
     "lon": 0.021021,
-    "providerName": "Dr. Priya Gupta"
+    "providerName": "Dr. Priya Gupta",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-2179821691",
@@ -6406,7 +6759,8 @@
     "localAuthority": "Ealing",
     "lat": 51.509918,
     "lon": -0.2860028,
-    "providerName": "Dentopedia Limited"
+    "providerName": "Dentopedia Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-218108966",
@@ -6423,7 +6777,8 @@
     "localAuthority": "Bromley",
     "lat": 51.3772745,
     "lon": 0.0112285,
-    "providerName": "Dr. Annemarie Ayling"
+    "providerName": "Dr. Annemarie Ayling",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-21813539913",
@@ -6440,7 +6795,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5242554,
     "lon": -0.1591835,
-    "providerName": "The Root Canal Specialist Limited"
+    "providerName": "The Root Canal Specialist Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2184261978",
@@ -6457,7 +6813,8 @@
     "localAuthority": "City of London",
     "lat": 51.5155595,
     "lon": -0.0878155,
-    "providerName": "Dr. Keith Cohen"
+    "providerName": "Dr. Keith Cohen",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-21881088109",
@@ -6474,7 +6831,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5857583,
     "lon": -0.2193667,
-    "providerName": "Crest Dental Ltd"
+    "providerName": "Crest Dental Ltd",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-219326171",
@@ -6491,7 +6849,8 @@
     "localAuthority": "Brent",
     "lat": 51.5419118,
     "lon": -0.1982445,
-    "providerName": "Mr. G.N. Rashid"
+    "providerName": "Mr. G.N. Rashid",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-219593549",
@@ -6508,7 +6867,8 @@
     "localAuthority": "Newham",
     "lat": 51.5256555,
     "lon": 0.02921,
-    "providerName": "Du Toit and Burger Partnership Limited"
+    "providerName": "Du Toit and Burger Partnership Limited",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-219648928",
@@ -6525,7 +6885,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.494406,
     "lon": -0.172916,
-    "providerName": "Mr. Haider Raza"
+    "providerName": "Mr. Haider Raza",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-220044699",
@@ -6542,7 +6903,8 @@
     "localAuthority": "Camden",
     "lat": 51.5502925,
     "lon": -0.1411408,
-    "providerName": "AG Dentistry"
+    "providerName": "AG Dentistry",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-2200566125",
@@ -6559,7 +6921,8 @@
     "localAuthority": "Camden",
     "lat": 51.5181494,
     "lon": -0.1189414,
-    "providerName": "Smile Pod Limited"
+    "providerName": "Smile Pod Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-220111562",
@@ -6576,7 +6939,8 @@
     "localAuthority": "Barnet",
     "lat": 51.591536,
     "lon": -0.2293585,
-    "providerName": "Dr. Bernard Doherty"
+    "providerName": "Dr. Bernard Doherty",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-220105022",
@@ -6594,7 +6958,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.493281,
     "lon": -0.223674,
-    "providerName": "Artiste Ltd"
+    "providerName": "Artiste Ltd",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-220318378",
@@ -6611,7 +6976,8 @@
     "localAuthority": "Merton",
     "lat": 51.41781,
     "lon": -0.213307,
-    "providerName": "Dr. Asim Ayub"
+    "providerName": "Dr. Asim Ayub",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-220371166",
@@ -6628,7 +6994,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4213919,
     "lon": -0.319433,
-    "providerName": "Care Medical Limited"
+    "providerName": "Care Medical Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-220480682",
@@ -6645,7 +7012,8 @@
     "localAuthority": "Barnet",
     "lat": 51.600731,
     "lon": -0.147555,
-    "providerName": "Mr. Patrick McAnerney"
+    "providerName": "Mr. Patrick McAnerney",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-220620691",
@@ -6662,7 +7030,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.5065197,
     "lon": -0.2321219,
-    "providerName": "Gregory G Lai & Associates"
+    "providerName": "Gregory G Lai & Associates",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-220620676",
@@ -6679,7 +7048,8 @@
     "localAuthority": "Brent",
     "lat": 51.5345328,
     "lon": -0.242975,
-    "providerName": "Gregory G Lai & Associates"
+    "providerName": "Gregory G Lai & Associates",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-221040048",
@@ -6696,7 +7066,8 @@
     "localAuthority": "Islington",
     "lat": 51.535939,
     "lon": -0.103976,
-    "providerName": "IGDP Limited"
+    "providerName": "IGDP Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-221104626",
@@ -6714,7 +7085,8 @@
     "localAuthority": "Merton",
     "lat": 51.4167782,
     "lon": -0.1620855,
-    "providerName": "Dr. Patrick Williams"
+    "providerName": "Dr. Patrick Williams",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-22129493317",
@@ -6731,7 +7103,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6494268,
     "lon": -0.1469466,
-    "providerName": "Endoclinic Limited"
+    "providerName": "Endoclinic Limited",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-22151399414",
@@ -6748,7 +7121,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4644942,
     "lon": -0.1847038,
-    "providerName": "DM Dehgani Ltd"
+    "providerName": "DM Dehgani Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-22150639075",
@@ -6765,7 +7139,8 @@
     "localAuthority": "Westminster",
     "lat": 51.516446,
     "lon": -0.171688,
-    "providerName": "Dentyl Integration Ltd"
+    "providerName": "Dentyl Integration Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-22152958096",
@@ -6782,7 +7157,8 @@
     "localAuthority": "Newham",
     "lat": 51.5163264,
     "lon": 0.0108182,
-    "providerName": "East Village Dental Partnership"
+    "providerName": "East Village Dental Partnership",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-221568864",
@@ -6800,7 +7176,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6194952,
     "lon": -0.1138872,
-    "providerName": "The Smile Studios Limited"
+    "providerName": "The Smile Studios Limited",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-221568885",
@@ -6818,7 +7195,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4593546,
     "lon": -0.3064269,
-    "providerName": "The Smile Studios Limited"
+    "providerName": "The Smile Studios Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-22157094515",
@@ -6835,7 +7213,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5791717,
     "lon": -0.0993198,
-    "providerName": "Dentalondon Ltd"
+    "providerName": "Dentalondon Ltd",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-22158439875",
@@ -6852,7 +7231,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5256958,
     "lon": -0.3149193,
-    "providerName": "Maplerate Limited"
+    "providerName": "Maplerate Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-22162804665",
@@ -6869,7 +7249,8 @@
     "localAuthority": "Camden",
     "lat": 51.522767,
     "lon": -0.1147292,
-    "providerName": "Land Of Smiles Ltd"
+    "providerName": "Land Of Smiles Ltd",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-22164681062",
@@ -6886,7 +7267,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4694063,
     "lon": -0.3602811,
-    "providerName": "HHS Dent Limited"
+    "providerName": "HHS Dent Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-221840311",
@@ -6903,7 +7285,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5907776,
     "lon": -0.1423329,
-    "providerName": "Dr. Sonali Mehta"
+    "providerName": "Dr. Sonali Mehta",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-221840327",
@@ -6920,7 +7303,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6010201,
     "lon": -0.2089667,
-    "providerName": "Dr. Sonali Mehta"
+    "providerName": "Dr. Sonali Mehta",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-2226023402",
@@ -6937,7 +7321,8 @@
     "localAuthority": "Westminster",
     "lat": 51.499288,
     "lon": -0.137998,
-    "providerName": "UK Smile Ltd"
+    "providerName": "UK Smile Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-22305187409",
@@ -6954,7 +7339,8 @@
     "localAuthority": "Islington",
     "lat": 51.5386069,
     "lon": -0.0988033,
-    "providerName": "Traveloclinic Ltd"
+    "providerName": "Traveloclinic Ltd",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-223865733",
@@ -6971,7 +7357,8 @@
     "localAuthority": "Barnet",
     "lat": 51.583443,
     "lon": -0.230392,
-    "providerName": "Dr. Jonathan Murgraff"
+    "providerName": "Dr. Jonathan Murgraff",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-223847838",
@@ -6988,7 +7375,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6465903,
     "lon": -0.1472646,
-    "providerName": "Azamay Ltd"
+    "providerName": "Azamay Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-224248193",
@@ -7005,7 +7393,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4967691,
     "lon": -0.1634756,
-    "providerName": "GJG Roberts Limited"
+    "providerName": "GJG Roberts Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-224251954",
@@ -7022,7 +7411,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518894,
     "lon": -0.148355,
-    "providerName": "LCIAD Limited"
+    "providerName": "LCIAD Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-224247905",
@@ -7039,7 +7429,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518095,
     "lon": -0.14843,
-    "providerName": "Sensu"
+    "providerName": "Sensu",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-224320175",
@@ -7056,7 +7447,8 @@
     "localAuthority": "Camden",
     "lat": 51.5551224,
     "lon": -0.2129701,
-    "providerName": "Mr. Philip Chai Kee Wee"
+    "providerName": "Mr. Philip Chai Kee Wee",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-224387415",
@@ -7073,7 +7465,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.4099505,
     "lon": -0.3022401,
-    "providerName": "Dr. Rapinder Bhamra"
+    "providerName": "Dr. Rapinder Bhamra",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-224446773",
@@ -7090,7 +7483,8 @@
     "localAuthority": "Westminster",
     "lat": 51.523124,
     "lon": -0.148587,
-    "providerName": "152 Harley Street Limited"
+    "providerName": "152 Harley Street Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-224450821",
@@ -7107,7 +7501,8 @@
     "localAuthority": "Barnet",
     "lat": 51.5857991,
     "lon": -0.2000962,
-    "providerName": "Dr. Veronica Morris"
+    "providerName": "Dr. Veronica Morris",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-224687913",
@@ -7124,7 +7519,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.3935206,
     "lon": -0.3029543,
-    "providerName": "Dr. Darshan Patel"
+    "providerName": "Dr. Darshan Patel",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-224867182",
@@ -7141,7 +7537,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.492993,
     "lon": -0.2512574,
-    "providerName": "Mr. Andrew Michelmore"
+    "providerName": "Mr. Andrew Michelmore",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-225099977",
@@ -7158,7 +7555,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.445003,
     "lon": -0.205012,
-    "providerName": "Maishco limited"
+    "providerName": "Maishco limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-2251872446",
@@ -7175,7 +7573,8 @@
     "localAuthority": "Camden",
     "lat": 51.545602,
     "lon": -0.141909,
-    "providerName": "Ep Dent Ltd"
+    "providerName": "Ep Dent Ltd",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-2262387478",
@@ -7192,7 +7591,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.4825799,
     "lon": -0.4623315,
-    "providerName": "Evo Dental Centre Limited"
+    "providerName": "Evo Dental Centre Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-226303653",
@@ -7209,7 +7609,8 @@
     "localAuthority": "Haringey",
     "lat": 51.5899955,
     "lon": -0.1041231,
-    "providerName": "Millennium Clinic Limited"
+    "providerName": "Millennium Clinic Limited",
+    "ar": "Haringey"
   },
   {
     "cqc_id": "1-226594347",
@@ -7243,7 +7644,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517843,
     "lon": -0.146711,
-    "providerName": "R McNeil Limited"
+    "providerName": "R McNeil Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-22767883085",
@@ -7260,7 +7662,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.4953579,
     "lon": -0.0134866,
-    "providerName": "Damira Dental Studios Limited"
+    "providerName": "Damira Dental Studios Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-22807453279",
@@ -7277,7 +7680,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4808139,
     "lon": -0.2128097,
-    "providerName": "Come Smile With Me Ltd"
+    "providerName": "Come Smile With Me Ltd",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-228825580",
@@ -7295,7 +7699,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.473674,
     "lon": -0.16054,
-    "providerName": "Hungarian DentaCare Ltd"
+    "providerName": "Hungarian DentaCare Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-22967089652",
@@ -7312,7 +7717,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5086357,
     "lon": -0.3375107,
-    "providerName": "Dhatri Limited"
+    "providerName": "Dhatri Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-22994877224",
@@ -7329,7 +7735,8 @@
     "localAuthority": "Havering",
     "lat": 51.5753643,
     "lon": 0.1829548,
-    "providerName": "Tooth Club Op Co Ltd"
+    "providerName": "Tooth Club Op Co Ltd",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-22994877330",
@@ -7346,7 +7753,8 @@
     "localAuthority": "Bromley",
     "lat": 51.3759759,
     "lon": 0.0991247,
-    "providerName": "Tooth Club Op Co Ltd"
+    "providerName": "Tooth Club Op Co Ltd",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-23101042855",
@@ -7380,7 +7788,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5185699,
     "lon": -0.1408045,
-    "providerName": "Vital Europe UK Ltd"
+    "providerName": "Vital Europe UK Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-232409018",
@@ -7398,7 +7807,8 @@
     "localAuthority": "Camden",
     "lat": 51.55439,
     "lon": -0.164527,
-    "providerName": "Hampstead Ortho Ltd"
+    "providerName": "Hampstead Ortho Ltd",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-232374667",
@@ -7415,7 +7825,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520009,
     "lon": -0.147185,
-    "providerName": "76 Harley Street Limited"
+    "providerName": "76 Harley Street Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-232758064",
@@ -7432,7 +7843,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.494235,
     "lon": -0.182128,
-    "providerName": "London Smiling Limited"
+    "providerName": "London Smiling Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-232758037",
@@ -7449,7 +7861,8 @@
     "localAuthority": "Camden",
     "lat": 51.5190908,
     "lon": -0.1367906,
-    "providerName": "London Smiling Limited"
+    "providerName": "London Smiling Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-2330647339",
@@ -7466,7 +7879,8 @@
     "localAuthority": "Ealing",
     "lat": 51.540536,
     "lon": -0.318331,
-    "providerName": "Este Dent Limited"
+    "providerName": "Este Dent Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-233099813",
@@ -7483,7 +7897,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.5104869,
     "lon": -0.2298354,
-    "providerName": "Dr Amish Jessa"
+    "providerName": "Dr Amish Jessa",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-23410011722",
@@ -7500,7 +7915,8 @@
     "localAuthority": "Barnet",
     "lat": 51.588379,
     "lon": -0.2519523,
-    "providerName": "Dr Milind Gaglani"
+    "providerName": "Dr Milind Gaglani",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-23665650371",
@@ -7517,7 +7933,8 @@
     "localAuthority": "Havering",
     "lat": 51.5636747,
     "lon": 0.2197702,
-    "providerName": "Simplyteeth Hornchurch Ltd"
+    "providerName": "Simplyteeth Hornchurch Ltd",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-23667577755",
@@ -7534,7 +7951,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3936292,
     "lon": -0.1149675,
-    "providerName": "UK Dentplus Limited"
+    "providerName": "UK Dentplus Limited",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-2398446742",
@@ -7551,7 +7969,8 @@
     "localAuthority": "Westminster",
     "lat": 51.519364,
     "lon": -0.149071,
-    "providerName": "Dr Rory McCormick"
+    "providerName": "Dr Rory McCormick",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-24049542557",
@@ -7568,7 +7987,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517843,
     "lon": -0.146711,
-    "providerName": "City Cap Limited"
+    "providerName": "City Cap Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2409016381",
@@ -7585,7 +8005,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520605,
     "lon": -0.146675,
-    "providerName": "The London Centre for Prosthodontics Limited"
+    "providerName": "The London Centre for Prosthodontics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2428839084",
@@ -7603,7 +8024,8 @@
     "localAuthority": "Ealing",
     "lat": 51.51513,
     "lon": -0.314986,
-    "providerName": "Working Wires Ltd"
+    "providerName": "Working Wires Ltd",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-24338138972",
@@ -7620,7 +8042,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4962339,
     "lon": -0.2062647,
-    "providerName": "London Medical Suites Ltd"
+    "providerName": "London Medical Suites Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-24314991615",
@@ -7638,7 +8061,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.435893,
     "lon": -0.090623,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-24326309193",
@@ -7656,7 +8080,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4365204,
     "lon": -0.0908776,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-24529985015",
@@ -7673,7 +8098,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4505118,
     "lon": 0.0122855,
-    "providerName": "R & T (Lee) Clinic Limited"
+    "providerName": "R & T (Lee) Clinic Limited",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-2466665345",
@@ -7691,7 +8117,8 @@
     "localAuthority": "Bromley",
     "lat": 51.37254,
     "lon": 0.094643,
-    "providerName": "Simply Orthodontics Ltd"
+    "providerName": "Simply Orthodontics Ltd",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-2467456628",
@@ -7709,7 +8136,8 @@
     "localAuthority": "Harrow",
     "lat": 51.61732,
     "lon": -0.311801,
-    "providerName": "Dr Arash Naseri & Dr Anthony Lam"
+    "providerName": "Dr Arash Naseri & Dr Anthony Lam",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-24777537399",
@@ -7726,7 +8154,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.5859082,
     "lon": -0.0194849,
-    "providerName": "123 Hoe Street"
+    "providerName": "123 Hoe Street",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-247941974",
@@ -7744,7 +8173,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4365214,
     "lon": -0.1862371,
-    "providerName": "Mrs Katereh Bohran"
+    "providerName": "Mrs Katereh Bohran",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-24953745045",
@@ -7761,7 +8191,8 @@
     "localAuthority": "Brent",
     "lat": 51.5542738,
     "lon": -0.2127581,
-    "providerName": "NW London Smiles Centre Partnership"
+    "providerName": "NW London Smiles Centre Partnership",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-25060022474",
@@ -7778,7 +8209,8 @@
     "localAuthority": "Hackney",
     "lat": 51.547278,
     "lon": -0.075783,
-    "providerName": "IB4U LTD"
+    "providerName": "IB4U LTD",
+    "ar": "Hackney"
   },
   {
     "cqc_id": "1-25232421785",
@@ -7795,7 +8227,8 @@
     "localAuthority": "Havering",
     "lat": 51.5583767,
     "lon": 0.2402271,
-    "providerName": "Viva DP"
+    "providerName": "Viva DP",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-25259820749",
@@ -7812,7 +8245,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.5687159,
     "lon": 0.0116148,
-    "providerName": "Etera Medical Ltd"
+    "providerName": "Etera Medical Ltd",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-25402340775",
@@ -7829,7 +8263,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.496497,
     "lon": 0.090165,
-    "providerName": "Integris Healthcare Partners Limited"
+    "providerName": "Integris Healthcare Partners Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-25403109195",
@@ -7846,7 +8281,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.49345,
     "lon": 0.087506,
-    "providerName": "Integris Healthcare Partners Limited"
+    "providerName": "Integris Healthcare Partners Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-25403109224",
@@ -7863,7 +8299,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4968464,
     "lon": 0.0927312,
-    "providerName": "Integris Healthcare Partners Limited"
+    "providerName": "Integris Healthcare Partners Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-2541010281",
@@ -7881,7 +8318,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4082955,
     "lon": -0.0363007,
-    "providerName": "Grosvenor Orthodontic Clinic (Beckenham) Limited"
+    "providerName": "Grosvenor Orthodontic Clinic (Beckenham) Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-2558086109",
@@ -7898,7 +8336,8 @@
     "localAuthority": "Ealing",
     "lat": 51.508089,
     "lon": -0.377447,
-    "providerName": "Sage Referral Centre Limited"
+    "providerName": "Sage Referral Centre Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-25610016098",
@@ -7915,7 +8354,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4417653,
     "lon": -0.3449375,
-    "providerName": "A La Clinic"
+    "providerName": "A La Clinic",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-25635329041",
@@ -7933,7 +8373,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4365204,
     "lon": -0.0908776,
-    "providerName": "Orthodontic Suites Limited"
+    "providerName": "Orthodontic Suites Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-257523992",
@@ -7950,7 +8391,8 @@
     "localAuthority": "Barking and Dagenham",
     "lat": 51.5337301,
     "lon": 0.151681,
-    "providerName": "Orchard Road (DS) Limited"
+    "providerName": "Orchard Road (DS) Limited",
+    "ar": "Barking & Dagenham"
   },
   {
     "cqc_id": "1-257659733",
@@ -7967,7 +8409,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4500175,
     "lon": -0.3581922,
-    "providerName": "Eye Smile Limited"
+    "providerName": "Eye Smile Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-2576728398",
@@ -7985,7 +8428,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518314,
     "lon": -0.148061,
-    "providerName": "Advance Continuing Education London Ltd"
+    "providerName": "Advance Continuing Education London Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-25980271859",
@@ -8002,7 +8446,8 @@
     "localAuthority": "City of London",
     "lat": 51.5159064,
     "lon": -0.0859124,
-    "providerName": "Pure Periodontics Limited"
+    "providerName": "Pure Periodontics Limited",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-25993917022",
@@ -8020,7 +8465,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521386,
     "lon": -0.14785,
-    "providerName": "London Cosmetic Dent Ltd"
+    "providerName": "London Cosmetic Dent Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-26098384125",
@@ -8037,7 +8483,8 @@
     "localAuthority": "Islington",
     "lat": 51.5308668,
     "lon": -0.1028457,
-    "providerName": "Dentico Clinic Ltd"
+    "providerName": "Dentico Clinic Ltd",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-26117884632",
@@ -8054,7 +8501,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520154,
     "lon": -0.149529,
-    "providerName": "London Craniofacial Surgery Ltd"
+    "providerName": "London Craniofacial Surgery Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-262593323",
@@ -8071,7 +8519,8 @@
     "localAuthority": "Camden",
     "lat": 51.5564352,
     "lon": -0.1784698,
-    "providerName": "Vogueteeth Limited"
+    "providerName": "Vogueteeth Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-26314381780",
@@ -8088,7 +8537,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3788783,
     "lon": -0.0889045,
-    "providerName": "Oral Wellness Ltd"
+    "providerName": "Oral Wellness Ltd",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-2636702841",
@@ -8105,7 +8555,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4619354,
     "lon": 0.1108276,
-    "providerName": "Medidenta Limited"
+    "providerName": "Medidenta Limited",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-26416302424",
@@ -8122,7 +8573,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517906,
     "lon": -0.146737,
-    "providerName": "Dr. Keith Cohen"
+    "providerName": "Dr. Keith Cohen",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2652885851",
@@ -8139,7 +8591,8 @@
     "localAuthority": "Westminster",
     "lat": 51.51922,
     "lon": -0.148515,
-    "providerName": "Pantaleon Limited"
+    "providerName": "Pantaleon Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-26686969203",
@@ -8156,7 +8609,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5194188,
     "lon": -0.0599777,
-    "providerName": "Selenite U.K. Limited"
+    "providerName": "Selenite U.K. Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-2668228378",
@@ -8190,7 +8644,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3747641,
     "lon": -0.1002403,
-    "providerName": "Tooth Club Op Co Ltd"
+    "providerName": "Tooth Club Op Co Ltd",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-26767667609",
@@ -8207,7 +8662,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5182006,
     "lon": -0.1470175,
-    "providerName": "UGE Dent Ltd"
+    "providerName": "UGE Dent Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2692925803",
@@ -8225,7 +8681,8 @@
     "localAuthority": "Brent",
     "lat": 51.57107,
     "lon": -0.308084,
-    "providerName": "Dr Farhana Malik Campbell-Barr"
+    "providerName": "Dr Farhana Malik Campbell-Barr",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-26896986221",
@@ -8242,7 +8699,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4974539,
     "lon": -0.2160055,
-    "providerName": "Premium Smile LTD"
+    "providerName": "Premium Smile LTD",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-2700311755",
@@ -8260,7 +8718,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.461946,
     "lon": -0.29674,
-    "providerName": "Richmond Hill Orthodontics Limited"
+    "providerName": "Richmond Hill Orthodontics Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-27244830581",
@@ -8277,7 +8736,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.447254,
     "lon": -0.3278414,
-    "providerName": "Twickenham Smiles Ltd"
+    "providerName": "Twickenham Smiles Ltd",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-27247144285",
@@ -8294,7 +8754,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4736599,
     "lon": -0.2470579,
-    "providerName": "Zen Dental Ltd"
+    "providerName": "Zen Dental Ltd",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-27286246285",
@@ -8311,7 +8772,8 @@
     "localAuthority": "City of London",
     "lat": 51.5188877,
     "lon": -0.0784796,
-    "providerName": "Smile Hub Dental Group Limited"
+    "providerName": "Smile Hub Dental Group Limited",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-27362010936",
@@ -8328,7 +8790,8 @@
     "localAuthority": "Enfield",
     "lat": 51.66498,
     "lon": -0.0436294,
-    "providerName": "Sensational Smiles Ltd"
+    "providerName": "Sensational Smiles Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-27379820305",
@@ -8345,7 +8808,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4942264,
     "lon": -0.1573112,
-    "providerName": "My Looc Ltd"
+    "providerName": "My Looc Ltd",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-2741021191",
@@ -8363,7 +8827,8 @@
     "localAuthority": "Ealing",
     "lat": 51.507548,
     "lon": -0.277071,
-    "providerName": "Dental Care Falmer"
+    "providerName": "Dental Care Falmer",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-2747767866",
@@ -8380,7 +8845,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.50972,
     "lon": -0.414468,
-    "providerName": "R L Services (UK) Limited"
+    "providerName": "R L Services (UK) Limited",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-27750281062",
@@ -8397,7 +8863,8 @@
     "localAuthority": "Hackney",
     "lat": 51.5460848,
     "lon": -0.0704914,
-    "providerName": "Oral Surgery Ltd"
+    "providerName": "Oral Surgery Ltd",
+    "ar": "Hackney"
   },
   {
     "cqc_id": "1-2773661524",
@@ -8414,7 +8881,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6431547,
     "lon": -0.1666272,
-    "providerName": "Rohan Devalia and Roshan Devalia"
+    "providerName": "Rohan Devalia and Roshan Devalia",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-27750281088",
@@ -8431,7 +8899,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.470171,
     "lon": -0.0959627,
-    "providerName": "Oral Surgery Ltd"
+    "providerName": "Oral Surgery Ltd",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-27750281114",
@@ -8448,7 +8917,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.435616,
     "lon": -0.0176052,
-    "providerName": "Oral Surgery Ltd"
+    "providerName": "Oral Surgery Ltd",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-27750281135",
@@ -8465,7 +8935,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.4817775,
     "lon": 0.0373353,
-    "providerName": "Oral Surgery Ltd"
+    "providerName": "Oral Surgery Ltd",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-27750281246",
@@ -8482,7 +8953,8 @@
     "localAuthority": "Bexley",
     "lat": 51.45119,
     "lon": 0.179507,
-    "providerName": "Oral Surgery Ltd"
+    "providerName": "Oral Surgery Ltd",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-27750281415",
@@ -8499,7 +8971,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.48597,
     "lon": 0.009658,
-    "providerName": "Oral Surgery Ltd"
+    "providerName": "Oral Surgery Ltd",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-2781555998",
@@ -8516,7 +8989,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5197644,
     "lon": -0.1572314,
-    "providerName": "Montagu Dental"
+    "providerName": "Montagu Dental",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-278732231",
@@ -8533,7 +9007,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5148438,
     "lon": -0.3025651,
-    "providerName": "Vikanna Services Limited"
+    "providerName": "Vikanna Services Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-279292156",
@@ -8550,7 +9025,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5198659,
     "lon": -0.1471228,
-    "providerName": "Cime Dentistry Limited"
+    "providerName": "Cime Dentistry Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-279291944",
@@ -8567,7 +9043,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.561363,
     "lon": 0.082548,
-    "providerName": "Denta Clinic Ltd"
+    "providerName": "Denta Clinic Ltd",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-2819837359",
@@ -8584,7 +9061,8 @@
     "localAuthority": "Havering",
     "lat": 51.566748,
     "lon": 0.219009,
-    "providerName": "Best Health Clinics Limited"
+    "providerName": "Best Health Clinics Limited",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-28346683866",
@@ -8601,7 +9079,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5023842,
     "lon": -0.01812,
-    "providerName": "Bupa Dental Services Limited"
+    "providerName": "Bupa Dental Services Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-28426143595",
@@ -8618,7 +9097,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4983541,
     "lon": -0.1068709,
-    "providerName": "BZ Smiles Clinics Ltd"
+    "providerName": "BZ Smiles Clinics Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-286324050",
@@ -8636,7 +9116,8 @@
     "localAuthority": "Merton",
     "lat": 51.415997,
     "lon": -0.187779,
-    "providerName": "Smile Studio Trading Limited"
+    "providerName": "Smile Studio Trading Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-2867109518",
@@ -8653,7 +9134,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517843,
     "lon": -0.146711,
-    "providerName": "V Gherardi Ltd"
+    "providerName": "V Gherardi Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-286972014",
@@ -8670,7 +9152,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521311,
     "lon": -0.14595,
-    "providerName": "Julia Brewin"
+    "providerName": "Julia Brewin",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2931358006",
@@ -8687,7 +9170,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517067,
     "lon": -0.145838,
-    "providerName": "Dr. Goran Danilo Stojanovic"
+    "providerName": "Dr. Goran Danilo Stojanovic",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-2977623559",
@@ -8705,7 +9189,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521672,
     "lon": -0.148848,
-    "providerName": "14 Degrees Ltd"
+    "providerName": "14 Degrees Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-302584288",
@@ -8722,7 +9207,8 @@
     "localAuthority": "Brent",
     "lat": 51.5347861,
     "lon": -0.2198084,
-    "providerName": "Dr Ali Ghaffarpour"
+    "providerName": "Dr Ali Ghaffarpour",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-3038626218",
@@ -8739,7 +9225,8 @@
     "localAuthority": "Westminster",
     "lat": 51.517929,
     "lon": -0.148754,
-    "providerName": "Plowman And Partners"
+    "providerName": "Plowman And Partners",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-305157907",
@@ -8756,7 +9243,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520905,
     "lon": -0.148143,
-    "providerName": "Endocare UK Limited"
+    "providerName": "Endocare UK Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-305157922",
@@ -8773,7 +9261,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.459732,
     "lon": -0.305935,
-    "providerName": "Endocare UK Limited"
+    "providerName": "Endocare UK Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-306784005",
@@ -8790,7 +9279,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4562993,
     "lon": -0.0357532,
-    "providerName": "L.Ziman & Associates Limited"
+    "providerName": "L.Ziman & Associates Limited",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-3071446645",
@@ -8807,7 +9297,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.469989,
     "lon": -0.170944,
-    "providerName": "Dr Marisa Andrade"
+    "providerName": "Dr Marisa Andrade",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-3080751288",
@@ -8824,7 +9315,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.459819,
     "lon": -0.217732,
-    "providerName": "Gentle Dentistry Care Limited"
+    "providerName": "Gentle Dentistry Care Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-3096334044",
@@ -8841,7 +9333,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4724068,
     "lon": -0.2011147,
-    "providerName": "Pure Smiles"
+    "providerName": "Pure Smiles",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-309965828",
@@ -8858,7 +9351,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.504622,
     "lon": -0.016295,
-    "providerName": "Smile Pod Limited"
+    "providerName": "Smile Pod Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-3133210293",
@@ -8875,7 +9369,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4918505,
     "lon": -0.1577671,
-    "providerName": "The No8 Partnership"
+    "providerName": "The No8 Partnership",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-320544802",
@@ -8892,7 +9387,8 @@
     "localAuthority": "Islington",
     "lat": 51.5506115,
     "lon": -0.0849748,
-    "providerName": "Mrs. Gillian Ward"
+    "providerName": "Mrs. Gillian Ward",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-3242004771",
@@ -8909,7 +9405,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4986338,
     "lon": -0.1841523,
-    "providerName": "Kensington Health Clinic Limited"
+    "providerName": "Kensington Health Clinic Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-3239994565",
@@ -8926,7 +9423,8 @@
     "localAuthority": "Brent",
     "lat": 51.533849,
     "lon": -0.247759,
-    "providerName": "Vita Smile Ltd"
+    "providerName": "Vita Smile Ltd",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-331616876",
@@ -8943,7 +9441,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6160285,
     "lon": -0.2419714,
-    "providerName": "Dr. Jaideep Prashar"
+    "providerName": "Dr. Jaideep Prashar",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-333800451",
@@ -8960,7 +9459,8 @@
     "localAuthority": "Westminster",
     "lat": 51.519818,
     "lon": -0.147625,
-    "providerName": "MZinc Limited"
+    "providerName": "MZinc Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-338758452",
@@ -8977,7 +9477,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5653904,
     "lon": 0.094217,
-    "providerName": "Mr Rishi Mehrotra"
+    "providerName": "Mr Rishi Mehrotra",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-343207871",
@@ -8994,7 +9495,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5211433,
     "lon": -0.1477196,
-    "providerName": "Dr Bertrand Larmoyer"
+    "providerName": "Dr Bertrand Larmoyer",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-349136578",
@@ -9011,7 +9513,8 @@
     "localAuthority": "Westminster",
     "lat": 51.519818,
     "lon": -0.147625,
-    "providerName": "Future Drilling Limited"
+    "providerName": "Future Drilling Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-3526676885",
@@ -9028,7 +9531,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5917937,
     "lon": 0.022927,
-    "providerName": "Woodbury Practice"
+    "providerName": "Woodbury Practice",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-3531192155",
@@ -9045,7 +9549,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.466009,
     "lon": -0.151792,
-    "providerName": "Tooting Med Centre Ltd"
+    "providerName": "Tooting Med Centre Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-3558759682",
@@ -9062,7 +9567,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5168282,
     "lon": -0.3029814,
-    "providerName": "Haven Green Clinic ltd"
+    "providerName": "Haven Green Clinic ltd",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-3571441045",
@@ -9079,7 +9585,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6154307,
     "lon": -0.1457841,
-    "providerName": "Eyes & Smiles"
+    "providerName": "Eyes & Smiles",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-358677117",
@@ -9096,7 +9603,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.524557,
     "lon": -0.0743627,
-    "providerName": "Liberty Dentists Ltd"
+    "providerName": "Liberty Dentists Ltd",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-3679294604",
@@ -9114,7 +9622,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518667,
     "lon": -0.146519,
-    "providerName": "Dr. Simon Manara"
+    "providerName": "Dr. Simon Manara",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-375440319",
@@ -9131,7 +9640,8 @@
     "localAuthority": "Islington",
     "lat": 51.569042,
     "lon": -0.112019,
-    "providerName": "Dr Asma Khan"
+    "providerName": "Dr Asma Khan",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-376307810",
@@ -9148,7 +9658,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6379433,
     "lon": -0.2379185,
-    "providerName": "Mr Lance Ruvain Kruger"
+    "providerName": "Mr Lance Ruvain Kruger",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-376356220",
@@ -9165,7 +9676,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5174112,
     "lon": -0.1477125,
-    "providerName": "Lister House Iced Limited"
+    "providerName": "Lister House Iced Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-377856722",
@@ -9182,7 +9694,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6125395,
     "lon": -0.1747088,
-    "providerName": "Dr Handan Sabahlar"
+    "providerName": "Dr Handan Sabahlar",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-385895220",
@@ -9199,7 +9712,8 @@
     "localAuthority": "Merton",
     "lat": 51.4111536,
     "lon": -0.2095766,
-    "providerName": "Infinitidental Clinic Limited"
+    "providerName": "Infinitidental Clinic Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-3957725008",
@@ -9216,7 +9730,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520734,
     "lon": -0.147559,
-    "providerName": "Portman Healthcare Limited"
+    "providerName": "Portman Healthcare Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-3959281271",
@@ -9233,7 +9748,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5059373,
     "lon": -0.3047839,
-    "providerName": "Angle House Ealing Ltd"
+    "providerName": "Angle House Ealing Ltd",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-396169179",
@@ -9250,7 +9766,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.505738,
     "lon": -0.005194,
-    "providerName": "Align and Smile Limited"
+    "providerName": "Align and Smile Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-3970275014",
@@ -9267,7 +9784,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6001883,
     "lon": -0.2679244,
-    "providerName": "Elixir Cosmetics Ltd"
+    "providerName": "Elixir Cosmetics Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-411127889",
@@ -9284,7 +9802,8 @@
     "localAuthority": "Westminster",
     "lat": 51.513946,
     "lon": -0.136824,
-    "providerName": "Smile Pod Limited"
+    "providerName": "Smile Pod Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-412300791",
@@ -9301,7 +9820,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4728138,
     "lon": -0.2865731,
-    "providerName": "Dr Naveed Sethu"
+    "providerName": "Dr Naveed Sethu",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-4135504750",
@@ -9318,7 +9838,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5017311,
     "lon": -0.2857482,
-    "providerName": "MERITUN LIMITED"
+    "providerName": "MERITUN LIMITED",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-415764085",
@@ -9336,7 +9857,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521865,
     "lon": -0.148595,
-    "providerName": "Ad Implant.Com Limited"
+    "providerName": "Ad Implant.Com Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-418285551",
@@ -9353,7 +9875,8 @@
     "localAuthority": "Merton",
     "lat": 51.4202252,
     "lon": -0.1612056,
-    "providerName": "Tooting Med Centre Ltd"
+    "providerName": "Tooting Med Centre Ltd",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-417746808",
@@ -9370,7 +9893,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6488709,
     "lon": -0.1805174,
-    "providerName": "Mr Nigel Monkman"
+    "providerName": "Mr Nigel Monkman",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-4199829425",
@@ -9387,7 +9911,8 @@
     "localAuthority": "Southwark",
     "lat": 51.504243,
     "lon": -0.090462,
-    "providerName": "Sensu"
+    "providerName": "Sensu",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-421310974",
@@ -9404,7 +9929,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.3824811,
     "lon": -0.2847968,
-    "providerName": "CHDP Limited"
+    "providerName": "CHDP Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-4251429922",
@@ -9421,7 +9947,8 @@
     "localAuthority": "Ealing",
     "lat": 51.510263,
     "lon": -0.334375,
-    "providerName": "Orthodental Ltd"
+    "providerName": "Orthodental Ltd",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-4288738796",
@@ -9438,7 +9965,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.492605,
     "lon": -0.194221,
-    "providerName": "Medicare Francais"
+    "providerName": "Medicare Francais",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-430553594",
@@ -9472,7 +10000,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.454945,
     "lon": -0.3109604,
-    "providerName": "Care4MilkTeeth Limited"
+    "providerName": "Care4MilkTeeth Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-433574485",
@@ -9489,7 +10018,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6142176,
     "lon": -0.2469235,
-    "providerName": "Dr Afsaneh Dehpour"
+    "providerName": "Dr Afsaneh Dehpour",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-449218968",
@@ -9506,7 +10036,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.444061,
     "lon": -0.3650373,
-    "providerName": "Eye Smile Limited"
+    "providerName": "Eye Smile Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-455749980",
@@ -9523,7 +10054,8 @@
     "localAuthority": "Islington",
     "lat": 51.520893,
     "lon": -0.08965,
-    "providerName": "Smile Pod Limited"
+    "providerName": "Smile Pod Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-455969905",
@@ -9540,7 +10072,8 @@
     "localAuthority": "Waltham Forest",
     "lat": 51.57593,
     "lon": -0.011735,
-    "providerName": "Mrs Shilpa Chirag Roy"
+    "providerName": "Mrs Shilpa Chirag Roy",
+    "ar": "Waltham Forest"
   },
   {
     "cqc_id": "1-4580335737",
@@ -9574,7 +10107,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6002178,
     "lon": -0.2678628,
-    "providerName": "Care Dental Ltd"
+    "providerName": "Care Dental Ltd",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-4724465500",
@@ -9591,7 +10125,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6335515,
     "lon": -0.1762255,
-    "providerName": "Angle House Whetstone Ltd"
+    "providerName": "Angle House Whetstone Ltd",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-474276215",
@@ -9608,7 +10143,8 @@
     "localAuthority": "Brent",
     "lat": 51.5482025,
     "lon": -0.2979915,
-    "providerName": "Surgery@102 Limited"
+    "providerName": "Surgery@102 Limited",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-4790597629",
@@ -9625,7 +10161,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4279195,
     "lon": 0.1055757,
-    "providerName": "Bromley Healthcare Community Interest Company"
+    "providerName": "Bromley Healthcare Community Interest Company",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-4790597659",
@@ -9642,7 +10179,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.478803,
     "lon": 0.085815,
-    "providerName": "Bromley Healthcare Community Interest Company"
+    "providerName": "Bromley Healthcare Community Interest Company",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-4790597685",
@@ -9659,7 +10197,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4965186,
     "lon": 0.1224821,
-    "providerName": "Bromley Healthcare Community Interest Company"
+    "providerName": "Bromley Healthcare Community Interest Company",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-485296697",
@@ -9676,7 +10215,8 @@
     "localAuthority": "Newham",
     "lat": 51.5361112,
     "lon": -0.0048624,
-    "providerName": "Dr.Anuj Patel"
+    "providerName": "Dr.Anuj Patel",
+    "ar": "Newham"
   },
   {
     "cqc_id": "1-486449458",
@@ -9693,7 +10233,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5260824,
     "lon": -0.0665133,
-    "providerName": "Felinski & Co Limited"
+    "providerName": "Felinski & Co Limited",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-4910167933",
@@ -9710,7 +10251,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3488581,
     "lon": -0.101498,
-    "providerName": "Bluedental"
+    "providerName": "Bluedental",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-4941230169",
@@ -9727,7 +10269,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3758979,
     "lon": -0.0635087,
-    "providerName": "Smile 4 U Shirley Limited"
+    "providerName": "Smile 4 U Shirley Limited",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-5037132400",
@@ -9745,7 +10288,8 @@
     "localAuthority": "Barking and Dagenham",
     "lat": 51.5721717,
     "lon": 0.1380677,
-    "providerName": "Chadwell Heath Orthodontics Limited"
+    "providerName": "Chadwell Heath Orthodontics Limited",
+    "ar": "Barking & Dagenham"
   },
   {
     "cqc_id": "1-5056830619",
@@ -9762,7 +10306,8 @@
     "localAuthority": "Harrow",
     "lat": 51.5643213,
     "lon": -0.3549499,
-    "providerName": "Mr Chirag Chunilal Shah"
+    "providerName": "Mr Chirag Chunilal Shah",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-5101406927",
@@ -9780,7 +10325,8 @@
     "localAuthority": "Harrow",
     "lat": 51.6070425,
     "lon": -0.299431,
-    "providerName": "Angle House Orthodontics"
+    "providerName": "Angle House Orthodontics",
+    "ar": "Harrow"
   },
   {
     "cqc_id": "1-5169233955",
@@ -9797,7 +10343,8 @@
     "localAuthority": "Bexley",
     "lat": 51.4500621,
     "lon": 0.1017061,
-    "providerName": "Dr Punam Kaur Tanday"
+    "providerName": "Dr Punam Kaur Tanday",
+    "ar": "Bexley"
   },
   {
     "cqc_id": "1-5227173340",
@@ -9814,7 +10361,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4815543,
     "lon": -0.1988971,
-    "providerName": "MyHealthcare Clinic Ltd"
+    "providerName": "MyHealthcare Clinic Ltd",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-5234365697",
@@ -9832,7 +10380,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521311,
     "lon": -0.14595,
-    "providerName": "ARKR Limited"
+    "providerName": "ARKR Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-5324510330",
@@ -9850,7 +10399,8 @@
     "localAuthority": "Westminster",
     "lat": 51.4998206,
     "lon": -0.1408332,
-    "providerName": "First British Clinic Limited"
+    "providerName": "First British Clinic Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-5356712520",
@@ -9867,7 +10417,8 @@
     "localAuthority": "Westminster",
     "lat": 51.521311,
     "lon": -0.14595,
-    "providerName": "Dr. David Wright"
+    "providerName": "Dr. David Wright",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-536901004",
@@ -9884,7 +10435,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.383834,
     "lon": -0.289691,
-    "providerName": "Cottage Clinic Limited"
+    "providerName": "Cottage Clinic Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-5697612325",
@@ -9902,7 +10454,8 @@
     "localAuthority": "Islington",
     "lat": 51.536218,
     "lon": -0.1123564,
-    "providerName": "Angle House Orthodontics Islington Limited"
+    "providerName": "Angle House Orthodontics Islington Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-5745278339",
@@ -9919,7 +10472,8 @@
     "localAuthority": "Westminster",
     "lat": 51.51759,
     "lon": -0.146635,
-    "providerName": "The Centre London Limited"
+    "providerName": "The Centre London Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-5745634091",
@@ -9953,7 +10507,8 @@
     "localAuthority": "Bromley",
     "lat": 51.366766,
     "lon": 0.054571,
-    "providerName": "Dencare Clinic Limited"
+    "providerName": "Dencare Clinic Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-595883361",
@@ -9971,7 +10526,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4121809,
     "lon": 0.0145566,
-    "providerName": "Premier Orthodontics Limited"
+    "providerName": "Premier Orthodontics Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-600759161",
@@ -9989,7 +10545,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518314,
     "lon": -0.148061,
-    "providerName": "Q-Orthodontics Limited"
+    "providerName": "Q-Orthodontics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6017186820",
@@ -10006,7 +10563,8 @@
     "localAuthority": "Islington",
     "lat": 51.5362647,
     "lon": -0.0963342,
-    "providerName": "Prebend Street Practice Limited"
+    "providerName": "Prebend Street Practice Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-6046957705",
@@ -10023,7 +10581,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.46788,
     "lon": -0.258734,
-    "providerName": "Dentex Assets Limited"
+    "providerName": "Dentex Assets Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-6150934740",
@@ -10040,7 +10599,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6544427,
     "lon": -0.2018861,
-    "providerName": "Zental Dental Practices Ltd"
+    "providerName": "Zental Dental Practices Ltd",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-6178654023",
@@ -10057,7 +10617,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5278832,
     "lon": -0.1819166,
-    "providerName": "Dentyl Integration Ltd"
+    "providerName": "Dentyl Integration Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6248973776",
@@ -10074,7 +10635,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.5775362,
     "lon": -0.3992845,
-    "providerName": "Chirangi Ruparelia and Jeet Ruparelia"
+    "providerName": "Chirangi Ruparelia and Jeet Ruparelia",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-6307333187",
@@ -10092,7 +10654,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.506042,
     "lon": -0.0537302,
-    "providerName": "Implantology & MC Ltd"
+    "providerName": "Implantology & MC Ltd",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-6313867400",
@@ -10109,7 +10672,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.446798,
     "lon": -0.1238033,
-    "providerName": "Whitecross Dental Care Limited"
+    "providerName": "Whitecross Dental Care Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-6382832601",
@@ -10126,7 +10690,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5874557,
     "lon": 0.0852997,
-    "providerName": "AC Dentartis Ltd"
+    "providerName": "AC Dentartis Ltd",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-6414900115",
@@ -10143,7 +10708,8 @@
     "localAuthority": "Havering",
     "lat": 51.5684335,
     "lon": 0.2199783,
-    "providerName": "I.C. Goossens Limited"
+    "providerName": "I.C. Goossens Limited",
+    "ar": "Havering"
   },
   {
     "cqc_id": "1-6415173802",
@@ -10160,7 +10726,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.3826366,
     "lon": -0.2853724,
-    "providerName": "Whitecross Dental Care Limited"
+    "providerName": "Whitecross Dental Care Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-6430801705",
@@ -10194,7 +10761,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520905,
     "lon": -0.148143,
-    "providerName": "Academy of Advanced Endodontics"
+    "providerName": "Academy of Advanced Endodontics",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6484713953",
@@ -10211,7 +10779,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.467471,
     "lon": -0.369105,
-    "providerName": "Whitecross Dental Care Limited"
+    "providerName": "Whitecross Dental Care Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-6504912910",
@@ -10228,7 +10797,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520389,
     "lon": -0.147372,
-    "providerName": "Ortho London Ltd"
+    "providerName": "Ortho London Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6590574716",
@@ -10245,7 +10815,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520732,
     "lon": -0.149736,
-    "providerName": "Dr Kishan Modha"
+    "providerName": "Dr Kishan Modha",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-662744913",
@@ -10262,7 +10833,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4566105,
     "lon": -0.1625516,
-    "providerName": "Dentistree Battersea"
+    "providerName": "Dentistree Battersea",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-6654699457",
@@ -10279,7 +10851,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5109839,
     "lon": -0.2710039,
-    "providerName": "Perfect Smile Healthcare Limited"
+    "providerName": "Perfect Smile Healthcare Limited",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "1-6739544502",
@@ -10296,7 +10869,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4898813,
     "lon": -0.1902091,
-    "providerName": "Orthosmile Earls Court Limited"
+    "providerName": "Orthosmile Earls Court Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-672330762",
@@ -10313,7 +10887,8 @@
     "localAuthority": "Islington",
     "lat": 51.5219042,
     "lon": -0.0919602,
-    "providerName": "Smileright Dencare Limited"
+    "providerName": "Smileright Dencare Limited",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-676571338",
@@ -10330,7 +10905,8 @@
     "localAuthority": "Westminster",
     "lat": 51.49678,
     "lon": -0.128966,
-    "providerName": "Leyland-Dent Limited"
+    "providerName": "Leyland-Dent Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6786081850",
@@ -10347,7 +10923,8 @@
     "localAuthority": "Brent",
     "lat": 51.5416831,
     "lon": -0.197994,
-    "providerName": "Dr Vian Ansari"
+    "providerName": "Dr Vian Ansari",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-686245528",
@@ -10364,7 +10941,8 @@
     "localAuthority": "Westminster",
     "lat": 51.518667,
     "lon": -0.146519,
-    "providerName": "Alexandra Health Care Limited"
+    "providerName": "Alexandra Health Care Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-686254357",
@@ -10381,7 +10959,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5180256,
     "lon": -0.1461886,
-    "providerName": "Basil Mizrahi Prosthodontics Limited"
+    "providerName": "Basil Mizrahi Prosthodontics Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6876487834",
@@ -10398,7 +10977,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4602449,
     "lon": -0.1881626,
-    "providerName": "The Neem Tree Wandsworth Limited"
+    "providerName": "The Neem Tree Wandsworth Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-6913703118",
@@ -10415,7 +10995,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5218672,
     "lon": -0.1485695,
-    "providerName": "Dentex Assets Limited"
+    "providerName": "Dentex Assets Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-6926303935",
@@ -10433,7 +11014,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3791409,
     "lon": -0.0884625,
-    "providerName": "Orchard Orthodontics Limited"
+    "providerName": "Orchard Orthodontics Limited",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "1-6953603949",
@@ -10450,7 +11032,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4696767,
     "lon": -0.111548,
-    "providerName": "Condor Dent Ltd"
+    "providerName": "Condor Dent Ltd",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-7015094265",
@@ -10467,7 +11050,8 @@
     "localAuthority": "Barnet",
     "lat": 51.6085286,
     "lon": -0.221803,
-    "providerName": "Vidhi Smiles Ltd"
+    "providerName": "Vidhi Smiles Ltd",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-702769220",
@@ -10484,7 +11068,8 @@
     "localAuthority": "Sutton",
     "lat": 51.3601051,
     "lon": -0.194225,
-    "providerName": "ESM Management Limited"
+    "providerName": "ESM Management Limited",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-7053296136",
@@ -10502,7 +11087,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.581407,
     "lon": 0.059157,
-    "providerName": "The Orthodontic Gallery Limited"
+    "providerName": "The Orthodontic Gallery Limited",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-7450867838",
@@ -10519,7 +11105,8 @@
     "localAuthority": "Sutton",
     "lat": 51.366848,
     "lon": -0.137586,
-    "providerName": "Mrs Joanne Lee Kennedy"
+    "providerName": "Mrs Joanne Lee Kennedy",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-7498074205",
@@ -10536,7 +11123,8 @@
     "localAuthority": "Enfield",
     "lat": 51.6133862,
     "lon": -0.1098968,
-    "providerName": "Ina Health Ltd"
+    "providerName": "Ina Health Ltd",
+    "ar": "Enfield"
   },
   {
     "cqc_id": "1-7556476568",
@@ -10554,7 +11142,8 @@
     "localAuthority": "Redbridge",
     "lat": 51.5623108,
     "lon": 0.1064981,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Redbridge"
   },
   {
     "cqc_id": "1-7560387605",
@@ -10572,7 +11161,8 @@
     "localAuthority": "Camden",
     "lat": 51.5558168,
     "lon": -0.1931365,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-7560387689",
@@ -10590,7 +11180,8 @@
     "localAuthority": "Camden",
     "lat": 51.5180664,
     "lon": -0.1171287,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-7560387662",
@@ -10608,7 +11199,8 @@
     "localAuthority": "Camden",
     "lat": 51.5203857,
     "lon": -0.1061107,
-    "providerName": "Malmin Orthodontic Group Limited"
+    "providerName": "Malmin Orthodontic Group Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-7579043998",
@@ -10626,7 +11218,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.507405,
     "lon": -0.2407626,
-    "providerName": "Southwest Orthodontists Limited"
+    "providerName": "Southwest Orthodontists Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-7648694506",
@@ -10644,7 +11237,8 @@
     "localAuthority": "Brent",
     "lat": 51.542836,
     "lon": -0.235526,
-    "providerName": "Dr. Parita Bagheri"
+    "providerName": "Dr. Parita Bagheri",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-7705688741",
@@ -10661,7 +11255,8 @@
     "localAuthority": "Merton",
     "lat": 51.3997618,
     "lon": -0.1325782,
-    "providerName": "BIP Dental Limited"
+    "providerName": "BIP Dental Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-7708339136",
@@ -10679,7 +11274,8 @@
     "localAuthority": "Lewisham",
     "lat": 51.4570228,
     "lon": -0.0188949,
-    "providerName": "Oasis Dental Care Limited"
+    "providerName": "Oasis Dental Care Limited",
+    "ar": "Lewisham"
   },
   {
     "cqc_id": "1-7705688651",
@@ -10697,7 +11293,8 @@
     "localAuthority": "Merton",
     "lat": 51.4192208,
     "lon": -0.2106381,
-    "providerName": "BIP Dental Limited"
+    "providerName": "BIP Dental Limited",
+    "ar": "Merton"
   },
   {
     "cqc_id": "1-7705689058",
@@ -10715,7 +11312,8 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.381162,
     "lon": -0.2824535,
-    "providerName": "BIP Dental Limited"
+    "providerName": "BIP Dental Limited",
+    "ar": "Kingston"
   },
   {
     "cqc_id": "1-7739702998",
@@ -10733,7 +11331,8 @@
     "localAuthority": "Sutton",
     "lat": 51.3524459,
     "lon": -0.1917423,
-    "providerName": "Sutton Orthodontics Limited"
+    "providerName": "Sutton Orthodontics Limited",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-7778721697",
@@ -10751,7 +11350,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4834561,
     "lon": -0.302675,
-    "providerName": "Orthodontic Care Limited"
+    "providerName": "Orthodontic Care Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-777793717",
@@ -10768,7 +11368,8 @@
     "localAuthority": "Westminster",
     "lat": 51.520715,
     "lon": -0.156612,
-    "providerName": "The Whiter Smile Limited"
+    "providerName": "The Whiter Smile Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-7841191486",
@@ -10785,7 +11386,8 @@
     "localAuthority": "Hillingdon",
     "lat": 51.5721574,
     "lon": -0.393638,
-    "providerName": "Dr Rikesh Patel"
+    "providerName": "Dr Rikesh Patel",
+    "ar": "Hillingdon"
   },
   {
     "cqc_id": "1-8001335647",
@@ -10802,7 +11404,8 @@
     "localAuthority": "Greenwich",
     "lat": 51.477959,
     "lon": 0.018983,
-    "providerName": "UUD Limited"
+    "providerName": "UUD Limited",
+    "ar": "Greenwich"
   },
   {
     "cqc_id": "1-8003608284",
@@ -10820,7 +11423,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4737994,
     "lon": -0.2127957,
-    "providerName": "ARKR Limited"
+    "providerName": "ARKR Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-8169461152",
@@ -10837,7 +11441,8 @@
     "localAuthority": "City of London",
     "lat": 51.5192956,
     "lon": -0.0996656,
-    "providerName": "My Smile Dental Ltd"
+    "providerName": "My Smile Dental Ltd",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-8255311502",
@@ -10854,7 +11459,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4656062,
     "lon": -0.3755265,
-    "providerName": "Orthosmile Hounslow Limited"
+    "providerName": "Orthosmile Hounslow Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-8302731152",
@@ -10871,7 +11477,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.4900025,
     "lon": -0.1072226,
-    "providerName": "Pure Elegant Smile PES1 Limited"
+    "providerName": "Pure Elegant Smile PES1 Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-8323523749",
@@ -10888,7 +11495,8 @@
     "localAuthority": "Sutton",
     "lat": 51.3595516,
     "lon": -0.1493619,
-    "providerName": "Wallington Smiles Limited"
+    "providerName": "Wallington Smiles Limited",
+    "ar": "Sutton"
   },
   {
     "cqc_id": "1-8325267338",
@@ -10906,7 +11514,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.5001166,
     "lon": -0.2213909,
-    "providerName": "The Kensington Orthodontic Clinic Limited"
+    "providerName": "The Kensington Orthodontic Clinic Limited",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-8379669331",
@@ -10923,7 +11532,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4964667,
     "lon": -0.0938011,
-    "providerName": "Prem Dent Ltd"
+    "providerName": "Prem Dent Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-8412507607",
@@ -10940,7 +11550,8 @@
     "localAuthority": "City of London",
     "lat": 51.5166334,
     "lon": -0.086611,
-    "providerName": "Forma Smile Ltd"
+    "providerName": "Forma Smile Ltd",
+    "ar": "City of London"
   },
   {
     "cqc_id": "1-8457754778",
@@ -10958,7 +11569,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.45941,
     "lon": -0.1171577,
-    "providerName": "Orchard Orthodontics (Brixton) Limited"
+    "providerName": "Orchard Orthodontics (Brixton) Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-8497053370",
@@ -10976,7 +11588,8 @@
     "localAuthority": "Hounslow",
     "lat": 51.4324951,
     "lon": -0.4186095,
-    "providerName": "Orthodontic Care Limited"
+    "providerName": "Orthodontic Care Limited",
+    "ar": "Hounslow"
   },
   {
     "cqc_id": "1-8768050609",
@@ -10993,7 +11606,8 @@
     "localAuthority": "Southwark",
     "lat": 51.4925095,
     "lon": -0.0987634,
-    "providerName": "Ani Dental Clinic Limited"
+    "providerName": "Ani Dental Clinic Limited",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-8768435759",
@@ -11010,7 +11624,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4820037,
     "lon": -0.1463683,
-    "providerName": "Ani Dental Clinic Limited"
+    "providerName": "Ani Dental Clinic Limited",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-8827233532",
@@ -11027,7 +11642,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5044133,
     "lon": -0.014519,
-    "providerName": "Mouth Ltd"
+    "providerName": "Mouth Ltd",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-8889365739",
@@ -11045,7 +11661,8 @@
     "localAuthority": "Southwark",
     "lat": 51.503633,
     "lon": -0.077219,
-    "providerName": "Novelty Orthodontics Ltd"
+    "providerName": "Novelty Orthodontics Ltd",
+    "ar": "Southwark"
   },
   {
     "cqc_id": "1-8972622915",
@@ -11063,7 +11680,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4274486,
     "lon": -0.3312315,
-    "providerName": "Richmond Hill Orthodontics Limited"
+    "providerName": "Richmond Hill Orthodontics Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-8996091555",
@@ -11080,7 +11698,8 @@
     "localAuthority": "Barnet",
     "lat": 51.623009,
     "lon": -0.1783,
-    "providerName": "London Dental Surgery Centre Limited"
+    "providerName": "London Dental Surgery Centre Limited",
+    "ar": "Barnet"
   },
   {
     "cqc_id": "1-9006880370",
@@ -11097,7 +11716,8 @@
     "localAuthority": "Camden",
     "lat": 51.5279069,
     "lon": -0.1223308,
-    "providerName": "EVD Kingscross LTD"
+    "providerName": "EVD Kingscross LTD",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-9048159916",
@@ -11114,7 +11734,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.464852,
     "lon": -0.1101491,
-    "providerName": "Endodontist For You Ltd"
+    "providerName": "Endodontist For You Ltd",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-9048850771",
@@ -11131,7 +11752,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5169969,
     "lon": -0.1488104,
-    "providerName": "cksuperdent Limited"
+    "providerName": "cksuperdent Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-9080160884",
@@ -11148,7 +11770,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5222756,
     "lon": -0.1482358,
-    "providerName": "DDA Clinic Ltd"
+    "providerName": "DDA Clinic Ltd",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-9226555085",
@@ -11165,7 +11788,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4644577,
     "lon": -0.1633229,
-    "providerName": "Dr Chirag Subhashchandra Patel"
+    "providerName": "Dr Chirag Subhashchandra Patel",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-9371581517",
@@ -11182,7 +11806,8 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.467394,
     "lon": -0.187514,
-    "providerName": "PMD Ortho Ltd"
+    "providerName": "PMD Ortho Ltd",
+    "ar": "Hammersmith & Fulham"
   },
   {
     "cqc_id": "1-938293133",
@@ -11199,7 +11824,8 @@
     "localAuthority": "Camden",
     "lat": 51.5411438,
     "lon": -0.1386728,
-    "providerName": "Kulina Limited"
+    "providerName": "Kulina Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-948991093",
@@ -11216,7 +11842,8 @@
     "localAuthority": "Brent",
     "lat": 51.5549451,
     "lon": -0.2166843,
-    "providerName": "Dr Thuha Jabbar"
+    "providerName": "Dr Thuha Jabbar",
+    "ar": "Brent"
   },
   {
     "cqc_id": "1-9629356724",
@@ -11234,7 +11861,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4982644,
     "lon": -0.1670894,
-    "providerName": "Knightsbridge Orthodontics Limited"
+    "providerName": "Knightsbridge Orthodontics Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-9775218666",
@@ -11251,7 +11879,8 @@
     "localAuthority": "Hackney",
     "lat": 51.5323648,
     "lon": -0.0773902,
-    "providerName": "Cosmo Clinic Limited"
+    "providerName": "Cosmo Clinic Limited",
+    "ar": "Hackney"
   },
   {
     "cqc_id": "1-9779214900",
@@ -11268,7 +11897,8 @@
     "localAuthority": "Westminster",
     "lat": 51.519746,
     "lon": -0.1476,
-    "providerName": "RW Perio Limited"
+    "providerName": "RW Perio Limited",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-9963964046",
@@ -11285,7 +11915,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.454856,
     "lon": -0.31142,
-    "providerName": "SSDAS Limited"
+    "providerName": "SSDAS Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-9971863269",
@@ -11302,7 +11933,8 @@
     "localAuthority": "Croydon",
     "lat": 51.3436855,
     "lon": -0.0618656,
-    "providerName": "Selsdon Smiles Limited"
+    "providerName": "Selsdon Smiles Limited",
+    "ar": "Croydon"
   },
   {
     "cqc_id": "R1HV8",
@@ -11319,7 +11951,8 @@
     "localAuthority": "Newham",
     "lat": 51.5486532,
     "lon": -0.0053646,
-    "providerName": "Barts Health NHS Trust"
+    "providerName": "Barts Health NHS Trust",
+    "ar": "Newham"
   },
   {
     "cqc_id": "R1HX7",
@@ -11336,7 +11969,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.500806,
     "lon": -0.025725,
-    "providerName": "Barts Health NHS Trust"
+    "providerName": "Barts Health NHS Trust",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "R1K69",
@@ -11353,7 +11987,8 @@
     "localAuthority": "Ealing",
     "lat": 51.5062146,
     "lon": -0.2701758,
-    "providerName": "London North West University Healthcare NHS Trust"
+    "providerName": "London North West University Healthcare NHS Trust",
+    "ar": "Ealing"
   },
   {
     "cqc_id": "RRV30",
@@ -11370,7 +12005,8 @@
     "localAuthority": "Westminster",
     "lat": 51.5195835,
     "lon": -0.1497433,
-    "providerName": "University College London Hospitals NHS Foundation Trust"
+    "providerName": "University College London Hospitals NHS Foundation Trust",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "RV3X2",
@@ -11387,7 +12023,8 @@
     "localAuthority": "Camden",
     "lat": 51.5243359,
     "lon": -0.1421804,
-    "providerName": "Central and North West London NHS Foundation Trust"
+    "providerName": "Central and North West London NHS Foundation Trust",
+    "ar": "Camden"
   },
   {
     "cqc_id": "RYXX4",
@@ -11404,7 +12041,8 @@
     "localAuthority": "Westminster",
     "lat": 51.522838,
     "lon": -0.151539,
-    "providerName": "Central London Community Healthcare NHS Trust"
+    "providerName": "Central London Community Healthcare NHS Trust",
+    "ar": "Westminster"
   },
   {
     "cqc_id": "1-28258014869",
@@ -11421,7 +12059,8 @@
     "localAuthority": "Islington",
     "lat": 51.5273039,
     "lon": -0.0888943,
-    "providerName": "Dr Curt McKenzie"
+    "providerName": "Dr Curt McKenzie",
+    "ar": "Islington"
   },
   {
     "cqc_id": "1-28081125478",
@@ -11438,7 +12077,8 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5056989,
     "lon": -0.0200713,
-    "providerName": "Until Oral Ltd"
+    "providerName": "Until Oral Ltd",
+    "ar": "Tower Hamlets"
   },
   {
     "cqc_id": "1-25878641327",
@@ -11455,7 +12095,8 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4947799,
     "lon": -0.1824136,
-    "providerName": "Pure Dental Aesthetics Limited"
+    "providerName": "Pure Dental Aesthetics Limited",
+    "ar": "Kensington & Chelsea"
   },
   {
     "cqc_id": "1-25871447749",
@@ -11472,7 +12113,8 @@
     "localAuthority": "Camden",
     "lat": 51.5190908,
     "lon": -0.1367906,
-    "providerName": "Pure Dental Aesthetics Limited"
+    "providerName": "Pure Dental Aesthetics Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-27654629339",
@@ -11489,7 +12131,8 @@
     "localAuthority": "Wandsworth",
     "lat": 51.462976,
     "lon": -0.2284641,
-    "providerName": "Crown Clinic London Ltd"
+    "providerName": "Crown Clinic London Ltd",
+    "ar": "Wandsworth"
   },
   {
     "cqc_id": "1-24498618668",
@@ -11507,7 +12150,8 @@
     "localAuthority": "Bromley",
     "lat": 51.4180087,
     "lon": 0.0940597,
-    "providerName": "J V Orthodontics Limited"
+    "providerName": "J V Orthodontics Limited",
+    "ar": "Bromley"
   },
   {
     "cqc_id": "1-28521325149",
@@ -11524,7 +12168,8 @@
     "localAuthority": "Richmond upon Thames",
     "lat": 51.4613725,
     "lon": -0.3012242,
-    "providerName": "SSDAS Limited"
+    "providerName": "SSDAS Limited",
+    "ar": "Richmond"
   },
   {
     "cqc_id": "1-28975081066",
@@ -11541,7 +12186,8 @@
     "localAuthority": "Camden",
     "lat": 51.550435,
     "lon": -0.1912035,
-    "providerName": "West Hampstead Smile Group Limited"
+    "providerName": "West Hampstead Smile Group Limited",
+    "ar": "Camden"
   },
   {
     "cqc_id": "1-28879143581",
@@ -11558,6 +12204,43 @@
     "localAuthority": "Brent",
     "lat": 51.5450251,
     "lon": -0.2018856,
-    "providerName": "E. Hakimnia Limited"
+    "providerName": "E. Hakimnia Limited",
+    "ar": "Brent"
+  },
+  {
+    "cqc_id": "1-28164905176",
+    "name": "Mydentist, Ravensbury Court, Morden",
+    "address": "Ravensbury Court, Bishopsford Road, Morden",
+    "postcode": "SM4 6AL",
+    "phone": "01204799799",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28164905176",
+    "localAuthority": "Merton",
+    "lat": 51.3945819,
+    "lon": -0.1743153,
+    "providerName": "",
+    "ar": "Merton"
+  },
+  {
+    "cqc_id": "1-25059298735",
+    "name": "Revive Clinic",
+    "address": "82 Queensway, London",
+    "postcode": "W2 3RL",
+    "phone": "02072296248",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-25059298735",
+    "localAuthority": "Westminster",
+    "lat": 51.5128598,
+    "lon": -0.1873576,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dentists in London by Borough — London GP Directory</title>
+<meta name="description" content="Browse 676 CQC-registered dental practices across all London boroughs. Ratings, addresses and contact details.">
+<link rel="canonical" href="https://londongp.directory/dentists/">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.site-nav{background:#003087;padding:12px 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.site-nav a{color:rgba(255,255,255,.8);font-size:.85rem}
+.site-nav a:hover,.site-nav a.active{color:#fff}
+.site-nav .brand{font-family:Georgia,serif;font-size:1.05rem;font-weight:700;color:#fff;margin-right:14px}
+.site-nav .brand em{color:#B5D4F4;font-style:italic;font-weight:400}
+.page-header{background:#003087;color:#fff;padding:32px 24px;border-bottom:4px solid #0072CE}
+.page-header h1{font-family:Georgia,serif;font-size:1.7rem;font-weight:700;line-height:1.15;margin-bottom:8px}
+.page-header h1 em{color:#B5D4F4;font-style:italic;font-weight:400}
+.page-header p{opacity:.8;max-width:680px;line-height:1.45;font-size:.9rem}
+.stats{display:flex;gap:28px;margin-top:16px;flex-wrap:wrap}
+.stat strong{display:block;font-size:1.4rem;font-weight:300;letter-spacing:-.03em}
+.stat span{font-size:.7rem;opacity:.6;text-transform:uppercase;letter-spacing:.05em}
+.content{max-width:1100px;margin:0 auto;padding:24px}
+.filter-bar{background:#fff;border-radius:10px;padding:14px 16px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filter-label{font-size:.8rem;color:#888;margin-right:4px}
+.filter-chip{padding:4px 12px;border-radius:16px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-size:.78rem;font-weight:500;color:#555}
+.filter-chip.active{background:#003087;color:#fff;border-color:#003087}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.card{background:#fff;border-radius:10px;padding:16px;border:1px solid #e8e8e8}
+.card:hover{box-shadow:0 2px 12px rgba(0,0,0,.09)}
+.card-name{font-family:Georgia,serif;font-weight:700;font-size:.9rem;color:#003087;margin-bottom:4px;line-height:1.3}
+.card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.tag{padding:2px 8px;border-radius:8px;font-size:.68rem;font-weight:600}
+.tag.dent{background:#eef2ff;color:#3730a3}
+.tag.borough{background:#fff7ed;color:#9a3412}
+.tag.spec{background:#f5f3ff;color:#5521b5;font-weight:400}
+.cqc-badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.65rem;font-weight:700}
+.cqc-O{background:#d1fae5;color:#065f46}
+.cqc-G{background:#dcfce7;color:#166534}
+.cqc-RI{background:#fef3c7;color:#92400e}
+.cqc-I{background:#fee2e2;color:#991b1b}
+.cqc-{background:#f3f4f6;color:#6b7280}
+.card-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center}
+.btn{padding:4px 12px;border-radius:6px;font-size:.75rem;font-weight:600;text-decoration:none}
+.btn-cqc{background:#003087;color:#fff}
+.btn-web{background:#0072CE;color:#fff}
+.btn-phone{color:#003087;font-size:.78rem}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:20px}
+.spec-card{background:#fff;border-radius:12px;padding:15px 16px;border:1px solid #ddd;display:block;color:inherit}
+.spec-card:hover{box-shadow:0 2px 10px rgba(0,48,135,.12);border-color:#003087}
+.spec-card h2{font-family:Georgia,serif;font-size:.95rem;font-weight:700;color:#003087;margin-bottom:4px}
+.spec-count{font-size:.75rem;color:#888;margin-top:6px}
+.spec-count strong{color:#003087}
+.back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+.notice{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:10px 14px;font-size:.78rem;color:#92400e;margin-bottom:16px}
+footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-top:1px solid #e8e8e8;margin-top:40px}
+.hidden{display:none!important}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.stats{gap:16px}}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="brand" href="/">London GP <em>Directory</em></a>
+  <a href="/">Search</a>
+  <a href="/boroughs/">Boroughs</a>
+  <a href="/nhs-services/">NHS Services</a>
+  <a href="/private/">Private Clinics</a>
+  <a href="/dentists/" class="active">Dentists</a>
+  <a href="/methodology.html">Methodology</a>
+  <a href="/sources.html">Sources</a>
+</nav>
+<div class="page-header">
+  <h1>Dentists in London <em>by borough</em></h1>
+  <p>Browse 676 CQC-registered dental practices across all London boroughs.</p>
+  <div class="stats">
+    <div class="stat"><strong>676</strong><span>Dental practices</span></div>
+    <div class="stat"><strong>37</strong><span>Boroughs</span></div>
+  </div>
+</div>
+<div class="content">
+  <div class="spec-grid"><a class="spec-card" href="/dentists/westminster/">
+  <h2>Westminster</h2>
+  <p class="spec-count"><strong>127</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/barnet/">
+  <h2>Barnet</h2>
+  <p class="spec-count"><strong>37</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/camden/">
+  <h2>Camden</h2>
+  <p class="spec-count"><strong>31</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/wandsworth/">
+  <h2>Wandsworth</h2>
+  <p class="spec-count"><strong>29</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/richmond-upon-thames/">
+  <h2>Richmond upon Thames</h2>
+  <p class="spec-count"><strong>26</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/kensington-and-chelsea/">
+  <h2>Kensington and Chelsea</h2>
+  <p class="spec-count"><strong>26</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/ealing/">
+  <h2>Ealing</h2>
+  <p class="spec-count"><strong>25</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/harrow/">
+  <h2>Harrow</h2>
+  <p class="spec-count"><strong>22</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/islington/">
+  <h2>Islington</h2>
+  <p class="spec-count"><strong>20</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/greenwich/">
+  <h2>Greenwich</h2>
+  <p class="spec-count"><strong>18</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/tower-hamlets/">
+  <h2>Tower Hamlets</h2>
+  <p class="spec-count"><strong>18</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/kingston-upon-thames/">
+  <h2>Kingston upon Thames</h2>
+  <p class="spec-count"><strong>18</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/hammersmith-and-fulham/">
+  <h2>Hammersmith and Fulham</h2>
+  <p class="spec-count"><strong>18</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/lambeth/">
+  <h2>Lambeth</h2>
+  <p class="spec-count"><strong>17</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/brent/">
+  <h2>Brent</h2>
+  <p class="spec-count"><strong>17</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/southwark/">
+  <h2>Southwark</h2>
+  <p class="spec-count"><strong>17</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/redbridge/">
+  <h2>Redbridge</h2>
+  <p class="spec-count"><strong>16</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/haringey/">
+  <h2>Haringey</h2>
+  <p class="spec-count"><strong>15</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/bromley/">
+  <h2>Bromley</h2>
+  <p class="spec-count"><strong>15</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/enfield/">
+  <h2>Enfield</h2>
+  <p class="spec-count"><strong>14</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/merton/">
+  <h2>Merton</h2>
+  <p class="spec-count"><strong>14</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/croydon/">
+  <h2>Croydon</h2>
+  <p class="spec-count"><strong>14</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/hounslow/">
+  <h2>Hounslow</h2>
+  <p class="spec-count"><strong>13</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/hillingdon/">
+  <h2>Hillingdon</h2>
+  <p class="spec-count"><strong>12</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/city-of-london/">
+  <h2>City of London</h2>
+  <p class="spec-count"><strong>12</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/bexley/">
+  <h2>Bexley</h2>
+  <p class="spec-count"><strong>11</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/lewisham/">
+  <h2>Lewisham</h2>
+  <p class="spec-count"><strong>10</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/havering/">
+  <h2>Havering</h2>
+  <p class="spec-count"><strong>10</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/newham/">
+  <h2>Newham</h2>
+  <p class="spec-count"><strong>9</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/sutton/">
+  <h2>Sutton</h2>
+  <p class="spec-count"><strong>9</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/waltham-forest/">
+  <h2>Waltham Forest</h2>
+  <p class="spec-count"><strong>8</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/surrey/">
+  <h2>Surrey</h2>
+  <p class="spec-count"><strong>7</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/hackney/">
+  <h2>Hackney</h2>
+  <p class="spec-count"><strong>6</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/kent/">
+  <h2>Kent</h2>
+  <p class="spec-count"><strong>5</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/hertfordshire/">
+  <h2>Hertfordshire</h2>
+  <p class="spec-count"><strong>4</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/essex/">
+  <h2>Essex</h2>
+  <p class="spec-count"><strong>3</strong> dentists</p>
+</a><a class="spec-card" href="/dentists/barking-and-dagenham/">
+  <h2>Barking and Dagenham</h2>
+  <p class="spec-count"><strong>3</strong> dentists</p>
+</a></div>
+</div>
+<footer>
+  Data: CQC · London GP Directory<br>
+  <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/methodology.html">Methodology</a>
+</footer>
+</body>
+</html>

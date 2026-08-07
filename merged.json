@@ -46899,5 +46899,25 @@
     "ln": 0.1640964,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29090864605",
+    "n": "The Vintry",
+    "a": "53-63, Redbridge Lane East, Ilford",
+    "p": "IG4 5EY",
+    "ph": "07809770454",
+    "s": null,
+    "c": null,
+    "pcn": "sexual-health",
+    "specs": [
+      "sexual-health"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29090864605",
+    "ar": "Redbridge",
+    "la": 51.5801724,
+    "ln": 0.0552157,
+    "type": "Private",
+    "web": ""
   }
 ]

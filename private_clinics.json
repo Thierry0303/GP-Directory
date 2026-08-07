@@ -29404,5 +29404,24 @@
     "lon": 0.1640964,
     "providerName": "",
     "ar": "Havering"
+  },
+  {
+    "cqc_id": "1-29090864605",
+    "ods_code": "",
+    "name": "The Vintry",
+    "address": "53-63, Redbridge Lane East, Ilford",
+    "postcode": "IG4 5EY",
+    "phone": "07809770454",
+    "website": "",
+    "specialties": [
+      "sexual-health"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29090864605",
+    "localAuthority": "Redbridge",
+    "lat": 51.5801724,
+    "lon": 0.0552157,
+    "providerName": "",
+    "ar": "Redbridge"
   }
 ]
