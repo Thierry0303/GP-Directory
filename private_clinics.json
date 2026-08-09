@@ -29423,5 +29423,43 @@
     "lon": 0.0552157,
     "providerName": "",
     "ar": "Redbridge"
+  },
+  {
+    "cqc_id": "1-28958720780",
+    "ods_code": "",
+    "name": "LoveMyLife Ltd",
+    "address": "Unit 2023, Westfield London Shopping Centre, Ariel Way, London",
+    "postcode": "W12 7GF",
+    "phone": "07788412128",
+    "website": "https://www.lovemylife.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28958720780",
+    "localAuthority": "Hammersmith and Fulham",
+    "lat": 51.5101066,
+    "lon": -0.2216957,
+    "providerName": "",
+    "ar": "Hammersmith & Fulham"
+  },
+  {
+    "cqc_id": "1-29197045286",
+    "ods_code": "",
+    "name": "DaVita (UK) Limited - Tolworth",
+    "address": "Unit 6 & 7 Metroplex, Red Lion Road, Surbiton",
+    "postcode": "KT6 7QD",
+    "phone": "02036495244",
+    "website": "https://www.davita.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29197045286",
+    "localAuthority": "Kingston upon Thames",
+    "lat": 51.3757054,
+    "lon": -0.2922983,
+    "providerName": "",
+    "ar": "Kingston"
   }
 ]

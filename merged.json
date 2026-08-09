@@ -46919,5 +46919,45 @@
     "ln": 0.0552157,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28958720780",
+    "n": "LoveMyLife Ltd",
+    "a": "Unit 2023, Westfield London Shopping Centre, Ariel Way, London",
+    "p": "W12 7GF",
+    "ph": "07788412128",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28958720780",
+    "ar": "Hammersmith & Fulham",
+    "la": 51.5101066,
+    "ln": -0.2216957,
+    "type": "Private",
+    "web": "https://www.lovemylife.com"
+  },
+  {
+    "o": "1-29197045286",
+    "n": "DaVita (UK) Limited - Tolworth",
+    "a": "Unit 6 & 7 Metroplex, Red Lion Road, Surbiton",
+    "p": "KT6 7QD",
+    "ph": "02036495244",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29197045286",
+    "ar": "Kingston",
+    "la": 51.3757054,
+    "ln": -0.2922983,
+    "type": "Private",
+    "web": "https://www.davita.com"
   }
 ]
