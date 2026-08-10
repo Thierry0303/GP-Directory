@@ -114,14 +114,17 @@ def load_merged(path: str):
 
 
 def diagnose_field(records, field_name, label):
-    """Fail loudly with a helpful sample if a configured field is missing."""
+    """Fail loudly with a full sample record if a configured field is missing."""
     missing = sum(1 for r in records if field_name not in r)
     if missing == len(records):
-        sample_keys = list(records[0].keys()) if records else []
+        sample = records[0] if records else {}
+        sample_pretty = json.dumps(sample, indent=2, ensure_ascii=False)
         sys.exit(
             f"ERROR: field '{field_name}' (configured for {label}) does not "
-            f"appear on ANY record. Available fields on a sample record: "
-            f"{sample_keys}. Fix the CONFIG block at the top of this script."
+            f"appear on ANY record.\n"
+            f"Full sample record (match the value that looks like a "
+            f"{label} to a key below, then update CONFIG):\n"
+            f"{sample_pretty}"
         )
     elif missing:
         print(
