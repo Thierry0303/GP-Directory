@@ -69,19 +69,18 @@ MERGED_JSON_PATH = "merged.json"
 STATS_OUTPUT_PATH = "stats.json"
 
 # The field on each record that distinguishes NHS practice vs private
-# clinic vs dentist. Adjust FIELD_NAME and the three VALUE_* constants
-# to match what's actually in merged.json.
+# clinic vs dentist.
 TYPE_FIELD = "type"              # e.g. record["type"]
-VALUE_NHS = "nhs"                # value meaning "NHS GP practice"
-VALUE_PRIVATE = "private"        # value meaning "private clinic"
-VALUE_DENTIST = "dentist"        # value meaning "dentist"
+VALUE_NHS = "NHS"                # value meaning "NHS GP practice"
+VALUE_PRIVATE = "Private"        # value meaning "private clinic"
+VALUE_DENTIST = "Dentist"        # value meaning "dentist"
 
-# Field holding the borough name/slug, used for borough count + PCN count
-BOROUGH_FIELD = "borough"
+# Field holding the borough name, used for borough count + PCN count
+BOROUGH_FIELD = "ar"             # e.g. "Barnet" — NOT "la"/"ln" (those are lat/lon)
 PCN_FIELD = "pcn"                # Primary Care Network field (NHS records only)
 
 # Field holding patient survey / satisfaction score (0-100), used for avg score
-SCORE_FIELD = "patient_score"
+SCORE_FIELD = "s"
 
 # ============================================================
 
@@ -143,9 +142,12 @@ def main():
     diagnose_field(records, TYPE_FIELD, "record type")
     diagnose_field(records, BOROUGH_FIELD, "borough")
 
-    nhs_count = sum(1 for r in records if r.get(TYPE_FIELD) == VALUE_NHS)
-    private_count = sum(1 for r in records if r.get(TYPE_FIELD) == VALUE_PRIVATE)
-    dentist_count = sum(1 for r in records if r.get(TYPE_FIELD) == VALUE_DENTIST)
+    def type_of(r):
+        return str(r.get(TYPE_FIELD, "")).strip().lower()
+
+    nhs_count = sum(1 for r in records if type_of(r) == VALUE_NHS.lower())
+    private_count = sum(1 for r in records if type_of(r) == VALUE_PRIVATE.lower())
+    dentist_count = sum(1 for r in records if type_of(r) == VALUE_DENTIST.lower())
 
     boroughs = {r[BOROUGH_FIELD] for r in records if r.get(BOROUGH_FIELD)}
     pcns = {r[PCN_FIELD] for r in records if r.get(PCN_FIELD)}
@@ -163,12 +165,12 @@ def main():
         b = r.get(BOROUGH_FIELD)
         if not b:
             continue
-        t = r.get(TYPE_FIELD)
-        if t == VALUE_NHS:
+        t = type_of(r)
+        if t == VALUE_NHS.lower():
             per_borough[b]["nhs"] += 1
-        elif t == VALUE_PRIVATE:
+        elif t == VALUE_PRIVATE.lower():
             per_borough[b]["private"] += 1
-        elif t == VALUE_DENTIST:
+        elif t == VALUE_DENTIST.lower():
             per_borough[b]["dentist"] += 1
 
     stats = {
