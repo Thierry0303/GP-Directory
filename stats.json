@@ -1,0 +1,177 @@
+{
+  "generated_from": "merged.json",
+  "total_records": 2537,
+  "nhs_practice_count": 1007,
+  "private_clinic_count": 1530,
+  "dentist_count": 0,
+  "borough_count": 33,
+  "pcn_count": 176,
+  "avg_patient_score": 75.9,
+  "per_borough": {
+    "Barnet": {
+      "nhs": 34,
+      "private": 48,
+      "dentist": 0
+    },
+    "Brent": {
+      "nhs": 53,
+      "private": 19,
+      "dentist": 0
+    },
+    "Hammersmith & Fulham": {
+      "nhs": 27,
+      "private": 31,
+      "dentist": 0
+    },
+    "Ealing": {
+      "nhs": 55,
+      "private": 27,
+      "dentist": 0
+    },
+    "Westminster": {
+      "nhs": 30,
+      "private": 536,
+      "dentist": 0
+    },
+    "Kensington & Chelsea": {
+      "nhs": 30,
+      "private": 103,
+      "dentist": 0
+    },
+    "Camden": {
+      "nhs": 31,
+      "private": 85,
+      "dentist": 0
+    },
+    "Islington": {
+      "nhs": 29,
+      "private": 33,
+      "dentist": 0
+    },
+    "Hackney": {
+      "nhs": 35,
+      "private": 18,
+      "dentist": 0
+    },
+    "Newham": {
+      "nhs": 37,
+      "private": 15,
+      "dentist": 0
+    },
+    "Tower Hamlets": {
+      "nhs": 27,
+      "private": 34,
+      "dentist": 0
+    },
+    "City of London": {
+      "nhs": 1,
+      "private": 53,
+      "dentist": 0
+    },
+    "Haringey": {
+      "nhs": 32,
+      "private": 27,
+      "dentist": 0
+    },
+    "Enfield": {
+      "nhs": 28,
+      "private": 24,
+      "dentist": 0
+    },
+    "Waltham Forest": {
+      "nhs": 38,
+      "private": 12,
+      "dentist": 0
+    },
+    "Redbridge": {
+      "nhs": 34,
+      "private": 37,
+      "dentist": 0
+    },
+    "Greenwich": {
+      "nhs": 29,
+      "private": 18,
+      "dentist": 0
+    },
+    "Bexley": {
+      "nhs": 15,
+      "private": 14,
+      "dentist": 0
+    },
+    "Bromley": {
+      "nhs": 35,
+      "private": 30,
+      "dentist": 0
+    },
+    "Southwark": {
+      "nhs": 30,
+      "private": 36,
+      "dentist": 0
+    },
+    "Lambeth": {
+      "nhs": 39,
+      "private": 32,
+      "dentist": 0
+    },
+    "Lewisham": {
+      "nhs": 25,
+      "private": 19,
+      "dentist": 0
+    },
+    "Croydon": {
+      "nhs": 38,
+      "private": 35,
+      "dentist": 0
+    },
+    "Richmond": {
+      "nhs": 24,
+      "private": 24,
+      "dentist": 0
+    },
+    "Wandsworth": {
+      "nhs": 37,
+      "private": 27,
+      "dentist": 0
+    },
+    "Merton": {
+      "nhs": 22,
+      "private": 20,
+      "dentist": 0
+    },
+    "Havering": {
+      "nhs": 27,
+      "private": 23,
+      "dentist": 0
+    },
+    "Kingston": {
+      "nhs": 16,
+      "private": 25,
+      "dentist": 0
+    },
+    "Hounslow": {
+      "nhs": 27,
+      "private": 20,
+      "dentist": 0
+    },
+    "Harrow": {
+      "nhs": 24,
+      "private": 22,
+      "dentist": 0
+    },
+    "Barking & Dagenham": {
+      "nhs": 29,
+      "private": 8,
+      "dentist": 0
+    },
+    "Hillingdon": {
+      "nhs": 25,
+      "private": 19,
+      "dentist": 0
+    },
+    "Sutton": {
+      "nhs": 16,
+      "private": 12,
+      "dentist": 0
+    }
+  }
+}
