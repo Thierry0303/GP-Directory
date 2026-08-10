@@ -70,6 +70,14 @@ jobs:
         run: python fetch_cqc_domain_ratings.py
         continue-on-error: true
 
+      # ---- 4b. Canonical stats — MUST run after all cleanup above and
+      #          before any page-building step below. Every page that
+      #          shows a count (homepage, /boroughs/, etc.) should read
+      #          from stats.json rather than computing its own numbers,
+      #          so the two can never drift apart again. ----
+      - name: Compute canonical stats
+        run: python compute_stats.py
+
       # ---- 5. Build pages ----
       - name: Build borough pages
         run: python build_borough_pages.py
