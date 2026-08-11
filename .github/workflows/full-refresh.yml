@@ -77,6 +77,8 @@ jobs:
       #          so the two can never drift apart again. ----
       - name: Compute canonical stats
         run: python compute_stats.py
+      - name: Update homepage counters
+        run: python update_index_counters.py
 
       # ---- 5. Build pages ----
       - name: Build borough pages
