@@ -145,26 +145,36 @@ def main():
     def type_of(r):
         return str(r.get(TYPE_FIELD, "")).strip().lower()
 
-    nhs_count = sum(1 for r in records if type_of(r) == VALUE_NHS.lower())
-    private_count = sum(1 for r in records if type_of(r) == VALUE_PRIVATE.lower())
-    dentist_count = sum(1 for r in records if type_of(r) == VALUE_DENTIST.lower())
+    def has_borough(r):
+        # fix_boroughs.py clears the borough field (e.g. "ar": "") on
+        # records whose postcode resolved outside London. Those records
+        # stay in merged.json (data.json needs them for other purposes)
+        # but must NOT be counted here — build_borough_index.py only
+        # ever sums records with a real borough, so counting everyone
+        # here is exactly what caused the homepage/boroughs-page drift.
+        return bool(r.get(BOROUGH_FIELD))
 
-    boroughs = {r[BOROUGH_FIELD] for r in records if r.get(BOROUGH_FIELD)}
-    pcns = {r[PCN_FIELD] for r in records if r.get(PCN_FIELD)}
+    in_london = [r for r in records if has_borough(r)]
+    excluded_non_london = len(records) - len(in_london)
+
+    nhs_count = sum(1 for r in in_london if type_of(r) == VALUE_NHS.lower())
+    private_count = sum(1 for r in in_london if type_of(r) == VALUE_PRIVATE.lower())
+    dentist_count = sum(1 for r in in_london if type_of(r) == VALUE_DENTIST.lower())
+
+    boroughs = {r[BOROUGH_FIELD] for r in in_london}
+    pcns = {r[PCN_FIELD] for r in in_london if r.get(PCN_FIELD)}
 
     scores = [
         r[SCORE_FIELD]
-        for r in records
+        for r in in_london
         if isinstance(r.get(SCORE_FIELD), (int, float))
     ]
     avg_score = round(sum(scores) / len(scores), 1) if scores else None
 
     # Per-borough breakdown (used by /boroughs/ index and borough pages)
     per_borough = defaultdict(lambda: {"nhs": 0, "private": 0, "dentist": 0})
-    for r in records:
-        b = r.get(BOROUGH_FIELD)
-        if not b:
-            continue
+    for r in in_london:
+        b = r[BOROUGH_FIELD]
         t = type_of(r)
         if t == VALUE_NHS.lower():
             per_borough[b]["nhs"] += 1
@@ -175,7 +185,9 @@ def main():
 
     stats = {
         "generated_from": MERGED_JSON_PATH,
-        "total_records": len(records),
+        "total_records": len(in_london),
+        "total_records_incl_non_london": len(records),
+        "excluded_non_london": excluded_non_london,
         "nhs_practice_count": nhs_count,
         "private_clinic_count": private_count,
         "dentist_count": dentist_count,
@@ -189,6 +201,7 @@ def main():
         json.dump(stats, f, indent=2, ensure_ascii=False)
 
     print(f"\nWrote {STATS_OUTPUT_PATH}:")
+    print(f"  Excluded (non-London, cleared by fix_boroughs.py): {excluded_non_london}")
     print(f"  NHS practices:    {nhs_count}")
     print(f"  Private clinics:  {private_count}")
     print(f"  Dentists:         {dentist_count}")
