@@ -35,6 +35,17 @@ Run order
 ---------
 This should run AFTER fetch_private_clinics.py + refresh_nhs_data.py,
 and BEFORE merge_into_dataset.py / build_borough_pages.py.
+
+NOTE (amended): this script used to also regenerate index.html directly
+(regenerate_index_html()), computing NHS/private counts from EVERY record
+in merged.json — including records whose postcode this script had just
+determined were outside London (their borough field gets cleared to "",
+but the record itself stays in merged.json). That inflated the homepage
+counts above what /boroughs/ shows, since build_borough_index.py only
+ever sums records with a real borough. index.html is now regenerated once,
+at the very end of the pipeline, by regenerate_index_from_stats.py, using
+compute_stats.py's London-filtered counts. This script now only keeps
+data.json (used by the homepage's client-side search) up to date.
 """
 
 import json, re, sys, time, urllib.request, urllib.error, urllib.parse
@@ -223,6 +234,27 @@ def print_delta(name, before, after):
         if delta != 0:
             print(f"  {b:30s} {bef:>8d} {aft:>8d} {flag:>8s}")
 
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower().replace("&", "and")).strip("-")
+
+def write_data_json():
+    """Refresh data.json (used by the homepage's client-side search) with
+    the corrected borough assignments.
+
+    index.html itself is NOT regenerated here anymore — it's regenerated
+    once, at the very end of the pipeline, by
+    regenerate_index_from_stats.py, using compute_stats.py's final,
+    London-filtered counts. Writing it here (as the old
+    regenerate_index_html() did) used unfiltered counts that included
+    records this script had just determined were outside London, which
+    is what caused the homepage/boroughs-page count mismatch.
+    """
+    combined = json.loads(MERGED_JSON.read_text())
+    (ROOT / "data.json").write_text(
+        json.dumps(combined, separators=(",", ":"), ensure_ascii=False),
+        encoding="utf-8")
+    print(f"\nRefreshed data.json ({len(combined)} records)")
+
 def main():
     paths = [GPS_JSON, PRIVATE_JSON, DENTISTS_JSON, MERGED_JSON]
     existing = [p for p in paths if p.exists()]
@@ -250,49 +282,15 @@ def main():
         if p.name == "merged.json":
             print_delta(p.name, before, after)
 
-    # Regenerate index.html from the template using the corrected merged.json
-    # so the homepage shows the right borough counts on each card.
-    if MERGED_JSON.exists() and TEMPLATE_HTML.exists():
-        regenerate_index_html()
+    # Refresh data.json (client-side search) with the corrected borough
+    # assignments. index.html is handled later by
+    # regenerate_index_from_stats.py.
+    if MERGED_JSON.exists():
+        write_data_json()
 
     print("\nDone. Re-run the page builders (build_borough_pages.py, "
           "build_specialty_pages.py) to regenerate the site with correct "
           "borough assignments.")
-
-def slugify(s):
-    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower().replace("&", "and")).strip("-")
-
-def regenerate_index_html():
-    """Re-inject merged.json into index.template.html so the homepage
-    reflects the corrected borough assignments."""
-    combined = json.loads(MERGED_JSON.read_text())
-    template = TEMPLATE_HTML.read_text()
-
-    boroughs = sorted({(r.get("ar") or "") for r in combined if r.get("ar")})
-    borough_nav = "\n      ".join(
-        f'<a href="/practice/{slugify(b)}/">{b}</a>'
-        for b in boroughs
-    )
-
-    try:
-        today = datetime.now().strftime("%-d %B %Y")
-    except ValueError:
-        today = datetime.now().strftime("%d %B %Y")
-
-    (ROOT / "data.json").write_text(
-        json.dumps(combined, separators=(",", ":"), ensure_ascii=False),
-        encoding="utf-8")
-    nhs_n  = sum(1 for r in combined if r.get("type") != "Private")
-    priv_n = len(combined) - nhs_n
-    html = (template
-            .replace("__NHS_COUNT__",        str(nhs_n))
-            .replace("__PRIVATE_COUNT__",    str(priv_n))
-            .replace("__PRACTICE_COUNT__",   str(len(combined)))
-            .replace("__BOROUGH_NAV__",      borough_nav)
-            .replace("__UPDATED_DATE__",     today))
-    INDEX_HTML.write_text(html)
-    print(f"\nRegenerated index.html — {INDEX_HTML.stat().st_size//1024} KB "
-          f"({len(combined)} records, {len(boroughs)} boroughs)")
 
 if __name__ == "__main__":
     main()
