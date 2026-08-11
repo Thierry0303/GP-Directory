@@ -162,18 +162,6 @@ def main():
     # Update the static counters in index.html (SEO-visible text)
     if not INDEX_HTML.exists():
         sys.exit(f"ERROR: {INDEX_HTML} not found.")
-    new_html = INDEX_HTML.read_text(encoding="utf-8")
-    new_html = re.sub(
-        r'(id="cntPriv">)\d+(</span>)',
-        rf'\g<1>{len(new_private)}\g<2>',
-        new_html
-    )
-    new_html = re.sub(
-        r'(id="cntAll">)\d+(</span>)',
-        rf'\g<1>{len(merged)}\g<2>',
-        new_html
-    )
-    INDEX_HTML.write_text(new_html, encoding="utf-8")
 
     # NEW: write merged.json — downstream page builders read this
     MERGED_JSON.write_text(
