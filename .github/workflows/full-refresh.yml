@@ -26,6 +26,10 @@ jobs:
         continue-on-error: true
 
       # ---- 1. NHS GP data (canonical via FHIR) ----
+      # NOTE: refresh_nhs_data.py must NOT write index.html — it runs
+      # before private clinics even exist, so any counts it writes are
+      # always wrong. index.html is now only written at the very end,
+      # by regenerate_index_from_stats.py.
       - name: NHS refresh
         run: python refresh_nhs_data.py
       - name: Strip non-GP NHS records
@@ -71,14 +75,15 @@ jobs:
         continue-on-error: true
 
       # ---- 4b. Canonical stats — MUST run after all cleanup above and
-      #          before any page-building step below. Every page that
-      #          shows a count (homepage, /boroughs/, etc.) should read
-      #          from stats.json rather than computing its own numbers,
-      #          so the two can never drift apart again. ----
+      #          before any page-building step below. compute_stats.py
+      #          excludes non-London records (empty borough field) so
+      #          its counts match what build_borough_index.py sums.
+      #          regenerate_index_from_stats.py is now the ONLY script
+      #          allowed to write index.html's count placeholders. ----
       - name: Compute canonical stats
         run: python compute_stats.py
-      - name: Update homepage counters
-        run: python update_index_counters.py
+      - name: Regenerate index.html from stats
+        run: python regenerate_index_from_stats.py
 
       # ---- 5. Build pages ----
       - name: Build borough pages
