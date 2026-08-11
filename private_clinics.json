@@ -29461,5 +29461,43 @@
     "lon": -0.2922983,
     "providerName": "DaVita (UK) Limited",
     "ar": "Kingston"
+  },
+  {
+    "cqc_id": "1-29091054551",
+    "ods_code": "",
+    "name": "Serenity (UK) Global Healthcare Limited",
+    "address": "Ground Floor, 40 Grosvenor Gardens, London",
+    "postcode": "SW1W 0EB",
+    "phone": "02080814220",
+    "website": "https://www.serenity-uk.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29091054551",
+    "localAuthority": "Westminster",
+    "lat": 51.4965822,
+    "lon": -0.1464541,
+    "providerName": "",
+    "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-29173927050",
+    "ods_code": "",
+    "name": "The Family Treatment Service",
+    "address": "Ridgway Mews, 18A Ridgway, London",
+    "postcode": "SW19 4QN",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29173927050",
+    "localAuthority": "Merton",
+    "lat": 51.423557,
+    "lon": -0.216323,
+    "providerName": "",
+    "ar": "Merton"
   }
 ]

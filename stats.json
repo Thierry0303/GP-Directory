@@ -1,8 +1,8 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2537,
+  "total_records": 2539,
   "nhs_practice_count": 1007,
-  "private_clinic_count": 1530,
+  "private_clinic_count": 1532,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -30,7 +30,7 @@
     },
     "Westminster": {
       "nhs": 30,
-      "private": 536,
+      "private": 537,
       "dentist": 0
     },
     "Kensington & Chelsea": {
@@ -135,7 +135,7 @@
     },
     "Merton": {
       "nhs": 22,
-      "private": 20,
+      "private": 21,
       "dentist": 0
     },
     "Havering": {

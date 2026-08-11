@@ -12248,7 +12248,7 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Requires improvement",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-552527797",
     "ar": "Sutton",
     "la": null,
@@ -46959,5 +46959,45 @@
     "ln": -0.2922983,
     "type": "Private",
     "web": "https://www.davita.com"
+  },
+  {
+    "o": "1-29091054551",
+    "n": "Serenity (UK) Global Healthcare Limited",
+    "a": "Ground Floor, 40 Grosvenor Gardens, London",
+    "p": "SW1W 0EB",
+    "ph": "02080814220",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29091054551",
+    "ar": "Westminster",
+    "la": 51.4965822,
+    "ln": -0.1464541,
+    "type": "Private",
+    "web": "https://www.serenity-uk.com"
+  },
+  {
+    "o": "1-29173927050",
+    "n": "The Family Treatment Service",
+    "a": "Ridgway Mews, 18A Ridgway, London",
+    "p": "SW19 4QN",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29173927050",
+    "ar": "Merton",
+    "la": 51.423557,
+    "ln": -0.216323,
+    "type": "Private",
+    "web": ""
   }
 ]
