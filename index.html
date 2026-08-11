@@ -321,8 +321,14 @@ function updateAnpUI(){
   document.getElementById('anpCt').textContent = n || '';
 }
 function updateTypeCounts(){
-  const n = DATA.filter(d => (d.type||'NHS')==='NHS').length;
-  const p = DATA.filter(d => d.type==='Private').length;
+  // Only count records with a valid London borough (d.ar). Records whose
+  // postcode resolved outside London have their borough field cleared by
+  // fix_boroughs.py but remain in data.json for other purposes — they
+  // must not be counted here, or these pills drift from the header
+  // stats (which come from stats.json, already filtered the same way)
+  // and from /boroughs/, which only ever sums bordered records.
+  const n = DATA.filter(d => (d.type||'NHS')==='NHS' && d.ar).length;
+  const p = DATA.filter(d => d.type==='Private' && d.ar).length;
   document.getElementById('cntNHS').textContent = n;
   document.getElementById('cntPriv').textContent = p;
   document.getElementById('cntAll').textContent = n+p;
