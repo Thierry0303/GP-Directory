@@ -29499,5 +29499,25 @@
     "lon": -0.216323,
     "providerName": "",
     "ar": "Merton"
+  },
+  {
+    "cqc_id": "1-29095875525",
+    "ods_code": "",
+    "name": "Dr Ophelia Veraitch",
+    "address": "First Floor, 130 Harley Street, London",
+    "postcode": "W1G 7JU",
+    "phone": "02070229888",
+    "website": "",
+    "specialties": [
+      "consultant",
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29095875525",
+    "localAuthority": "Westminster",
+    "lat": 51.5223744,
+    "lon": -0.1482318,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]

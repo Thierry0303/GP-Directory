@@ -46999,5 +46999,26 @@
     "ln": -0.216323,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29095875525",
+    "n": "Dr Ophelia Veraitch",
+    "a": "First Floor, 130 Harley Street, London",
+    "p": "W1G 7JU",
+    "ph": "02070229888",
+    "s": null,
+    "c": null,
+    "pcn": "consultant, private-gp",
+    "specs": [
+      "consultant",
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29095875525",
+    "ar": "Westminster",
+    "la": 51.5223744,
+    "ln": -0.1482318,
+    "type": "Private",
+    "web": ""
   }
 ]
