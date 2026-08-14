@@ -29519,5 +29519,24 @@
     "lon": -0.1482318,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-26724637989",
+    "ods_code": "",
+    "name": "Bromley Urgent Care Centre",
+    "address": "Farnborough Common, Orpington",
+    "postcode": "BR6 8ND",
+    "phone": "01689863050",
+    "website": "",
+    "specialties": [
+      "urgent-care"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-26724637989",
+    "localAuthority": "Bromley",
+    "lat": 51.366243,
+    "lon": 0.059146,
+    "providerName": "",
+    "ar": "Bromley"
   }
 ]

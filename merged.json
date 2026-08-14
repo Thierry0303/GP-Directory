@@ -4344,8 +4344,8 @@
     "s": 48.4,
     "c": 43.6,
     "pcn": "UNITY (GREENWICH)",
-    "cqc": "Requires improvement",
-    "cu": "http://www.cqc.org.uk/location/1-541790426",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-541790426",
     "ar": "Greenwich",
     "la": 51.4892,
     "ln": 0.0716,
@@ -47018,6 +47018,26 @@
     "ar": "Westminster",
     "la": 51.5223744,
     "ln": -0.1482318,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-26724637989",
+    "n": "Bromley Urgent Care Centre",
+    "a": "Farnborough Common, Orpington",
+    "p": "BR6 8ND",
+    "ph": "01689863050",
+    "s": null,
+    "c": null,
+    "pcn": "urgent-care",
+    "specs": [
+      "urgent-care"
+    ],
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-984411924",
+    "ar": "Bromley",
+    "la": 51.366243,
+    "ln": 0.059146,
     "type": "Private",
     "web": ""
   }
