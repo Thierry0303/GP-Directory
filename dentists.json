@@ -12242,5 +12242,77 @@
     "lon": -0.1873576,
     "providerName": "Revive Clinic (Bayswater) Limited",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-29095969916",
+    "name": "Oral Surgery Ltd - Bexley",
+    "address": "151-153, Blendon Road, Bexley",
+    "postcode": "DA5 1BT",
+    "phone": "03301229382",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29095969916",
+    "localAuthority": "Bexley",
+    "lat": 51.447966,
+    "lon": 0.121454,
+    "providerName": "",
+    "ar": "Bexley"
+  },
+  {
+    "cqc_id": "1-29095969949",
+    "name": "Oral Surgery Ltd - Dalston",
+    "address": "333   Kingsland Road, London",
+    "postcode": "E8 4FD",
+    "phone": "03301229382",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29095969949",
+    "localAuthority": "Hackney",
+    "lat": 51.5392822,
+    "lon": -0.0773569,
+    "providerName": "",
+    "ar": "Hackney"
+  },
+  {
+    "cqc_id": "1-29095969816",
+    "name": "Oral Surgery Ltd - Lee",
+    "address": "134 Burnt Ash Road, London",
+    "postcode": "SE12 8PU",
+    "phone": "03301229382",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29095969816",
+    "localAuthority": "Lewisham",
+    "lat": 51.4502407,
+    "lon": 0.0123599,
+    "providerName": "",
+    "ar": "Lewisham"
+  },
+  {
+    "cqc_id": "1-29095969883",
+    "name": "Oral Surgery Ltd - Kingsland",
+    "address": "537 Kingsland Road, London",
+    "postcode": "E8 4AR",
+    "phone": "03301229382",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29095969883",
+    "localAuthority": "Hackney",
+    "lat": 51.5459068,
+    "lon": -0.0759233,
+    "providerName": "",
+    "ar": "Hackney"
   }
 ]
