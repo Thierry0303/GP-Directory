@@ -29478,7 +29478,7 @@
     "localAuthority": "Westminster",
     "lat": 51.4965822,
     "lon": -0.1464541,
-    "providerName": "",
+    "providerName": "Serenity (UK) Global Healthcare Limited",
     "ar": "Westminster"
   },
   {
@@ -29497,7 +29497,7 @@
     "localAuthority": "Merton",
     "lat": 51.423557,
     "lon": -0.216323,
-    "providerName": "",
+    "providerName": "The Family Treatment Service Limited",
     "ar": "Merton"
   },
   {
@@ -29517,7 +29517,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5223744,
     "lon": -0.1482318,
-    "providerName": "",
+    "providerName": "O Veraitch Ltd",
     "ar": "Westminster"
   },
   {
@@ -29536,7 +29536,7 @@
     "localAuthority": "Bromley",
     "lat": 51.366243,
     "lon": 0.059146,
-    "providerName": "",
+    "providerName": "Partnering Health Limited",
     "ar": "Bromley"
   }
 ]
