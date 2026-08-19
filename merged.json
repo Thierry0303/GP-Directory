@@ -26549,8 +26549,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-17709972033",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-1150357230",
     "ar": "Westminster",
     "la": 51.521314,
     "ln": -0.14781,
@@ -47040,5 +47040,25 @@
     "ln": 0.059146,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29197187290",
+    "n": "Doctorum",
+    "a": "Apartment 3601, 1 St. Gabriel Walk, London",
+    "p": "SE1 6FF",
+    "ph": "07958932945",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29197187290",
+    "ar": "Southwark",
+    "la": 51.4934902,
+    "ln": -0.101512,
+    "type": "Private",
+    "web": "https://www.doctorum.co.uk"
   }
 ]

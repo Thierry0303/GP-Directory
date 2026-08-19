@@ -29538,5 +29538,24 @@
     "lon": 0.059146,
     "providerName": "Partnering Health Limited",
     "ar": "Bromley"
+  },
+  {
+    "cqc_id": "1-29197187290",
+    "ods_code": "",
+    "name": "Doctorum",
+    "address": "Apartment 3601, 1 St. Gabriel Walk, London",
+    "postcode": "SE1 6FF",
+    "phone": "07958932945",
+    "website": "https://www.doctorum.co.uk",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29197187290",
+    "localAuthority": "Southwark",
+    "lat": 51.4934902,
+    "lon": -0.101512,
+    "providerName": "",
+    "ar": "Southwark"
   }
 ]
