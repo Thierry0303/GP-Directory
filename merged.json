@@ -47060,5 +47060,105 @@
     "ln": -0.101512,
     "type": "Private",
     "web": "https://www.doctorum.co.uk"
+  },
+  {
+    "o": "1-28508972740",
+    "n": "Dose HQ",
+    "a": "18-22, Queen Anne Street, London",
+    "p": "W1G 8HU",
+    "ph": "07974788850",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28508972740",
+    "ar": "Westminster",
+    "la": 51.5182006,
+    "ln": -0.1470175,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28667632205",
+    "n": "Bazire Medical Limited",
+    "a": "49 Morrison Avenue, London",
+    "p": "N17 6TU",
+    "ph": "07702737367",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28667632205",
+    "ar": "Haringey",
+    "la": 51.5914636,
+    "ln": -0.0777582,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28958720683",
+    "n": "Unbound Living",
+    "a": "26 Drysdale Street, London",
+    "p": "N1 6LS",
+    "ph": "07990147576",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28958720683",
+    "ar": "Hackney",
+    "la": 51.5280837,
+    "ln": -0.0793895,
+    "type": "Private",
+    "web": "https://www.unbound.living"
+  },
+  {
+    "o": "1-29145851310",
+    "n": "Marylebone Health Group (Virgin Active Mayfair)",
+    "a": "Hereford House, 64 North Row, London",
+    "p": "W1K 7DA",
+    "ph": "02081676480",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29145851310",
+    "ar": "Westminster",
+    "la": 51.5131588,
+    "ln": -0.1563451,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28919477638",
+    "n": "Evida HQ",
+    "a": "19 Portland Place, London",
+    "p": "W1B 1PX",
+    "ph": "07824640046",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28919477638",
+    "ar": "Westminster",
+    "la": 51.51931,
+    "ln": -0.145052,
+    "type": "Private",
+    "web": "https://www.evida.uk"
   }
 ]

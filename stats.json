@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2470,
-  "total_records_incl_non_london": 2542,
+  "total_records": 2475,
+  "total_records_incl_non_london": 2547,
   "excluded_non_london": 72,
   "nhs_practice_count": 979,
-  "private_clinic_count": 1491,
+  "private_clinic_count": 1496,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -32,7 +32,7 @@
     },
     "Westminster": {
       "nhs": 30,
-      "private": 538,
+      "private": 541,
       "dentist": 0
     },
     "Kensington & Chelsea": {
@@ -52,7 +52,7 @@
     },
     "Hackney": {
       "nhs": 35,
-      "private": 18,
+      "private": 19,
       "dentist": 0
     },
     "Newham": {
@@ -72,7 +72,7 @@
     },
     "Haringey": {
       "nhs": 32,
-      "private": 27,
+      "private": 28,
       "dentist": 0
     },
     "Enfield": {

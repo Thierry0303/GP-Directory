@@ -1518,6 +1518,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.doctorum.co.uk": {
+"checked": "2026-08-21",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.doctov.co.uk": {
 "checked": "2026-08-10",
 "ok": true,
