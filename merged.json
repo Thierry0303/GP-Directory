@@ -568,8 +568,8 @@
     "s": 69.3,
     "c": 57.1,
     "pcn": "HARNESS NORTH",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-496491998",
+    "cqc": "Inadequate",
+    "cu": "https://www.cqc.org.uk/location/1-118630360",
     "ar": "Brent",
     "la": 51.5922,
     "ln": -0.2504,
@@ -1496,8 +1496,8 @@
     "s": 85.6,
     "c": 88.2,
     "pcn": "ST JOHN'S WOOD & MAIDA VALE",
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-547469382",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-13415799423",
     "ar": "Westminster",
     "la": 51.5311,
     "ln": -0.1704,
@@ -3160,8 +3160,8 @@
     "s": 90.7,
     "c": 91.2,
     "pcn": "HARINGEY - NORTH EAST",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-18239419110",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-10495490315",
     "ar": "Haringey",
     "la": 51.5982,
     "ln": -0.07,
@@ -3688,8 +3688,8 @@
     "s": 58.0,
     "c": 51.1,
     "pcn": "WALTHAM FOREST LEYTON COLLABORATIVE",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-572958578",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-130090775",
     "ar": "Waltham Forest",
     "la": 51.569,
     "ln": -0.0074,
@@ -3880,8 +3880,8 @@
     "s": 54.3,
     "c": 55.4,
     "pcn": "WALTHAM FOREST WALTHAMSTOW WEST",
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-547967785",
+    "cqc": "Outstanding",
+    "cu": "https://www.cqc.org.uk/location/1-117286224",
     "ar": "Waltham Forest",
     "la": 51.5889,
     "ln": -0.0198,
@@ -4632,8 +4632,8 @@
     "s": 80.3,
     "c": 67.7,
     "pcn": "GREENWICH WEST",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-537744626",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-112545754",
     "ar": "Greenwich",
     "la": 51.4792,
     "ln": -0.0108,
@@ -5400,8 +5400,8 @@
     "s": 70.8,
     "c": 67.6,
     "pcn": "NORTH LEWISHAM",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-552977127",
+    "cqc": "Outstanding",
+    "cu": "https://www.cqc.org.uk/location/1-117286224",
     "ar": "Lewisham",
     "la": 51.4771,
     "ln": -0.0329,
@@ -5944,8 +5944,8 @@
     "s": 91.4,
     "c": 80.0,
     "pcn": "SOUTH SOUTHWARK",
-    "cqc": "Requires improvement",
-    "cu": "http://www.cqc.org.uk/location/1-537675048",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-10888890191",
     "ar": "Southwark",
     "la": 51.4523,
     "ln": -0.0607,
@@ -6120,8 +6120,8 @@
     "s": 64.3,
     "c": 64.2,
     "pcn": "LEWISHAM ALLIANCE",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-496038174",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-112545754",
     "ar": "Lewisham",
     "la": 51.459,
     "ln": -0.0159,
@@ -6408,8 +6408,8 @@
     "s": 83.1,
     "c": 76.8,
     "pcn": "PRIME WANDSWORTH",
-    "cqc": "Good",
-    "cu": "http://www.cqc.org.uk/location/1-554282054",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-140342131",
     "ar": "Wandsworth",
     "la": 51.4564,
     "ln": -0.2219,
@@ -8248,8 +8248,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-16579091793",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-128278780",
     "ar": "Barking & Dagenham",
     "la": null,
     "ln": null,
@@ -8280,8 +8280,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1754652641",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-10616662318",
     "ar": "Hillingdon",
     "la": null,
     "ln": null,
@@ -8408,8 +8408,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-19546646798",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-14787251999",
     "ar": "Islington",
     "la": 51.5545,
     "ln": -0.1167,
@@ -9464,8 +9464,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-485173537",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-11218801525",
     "ar": "Brent",
     "la": null,
     "ln": null,
@@ -10104,8 +10104,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-540434907",
+    "cqc": "Inadequate",
+    "cu": "https://www.cqc.org.uk/location/1-13187534210",
     "ar": "Barnet",
     "la": null,
     "ln": null,
@@ -10920,8 +10920,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "",
-    "cu": "https://www.cqc.org.uk/location/1-2670880988",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-12149045849",
     "ar": "Tower Hamlets",
     "la": 51.53,
     "ln": -0.0186,
@@ -11176,8 +11176,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-545934340",
+    "cqc": "Outstanding",
+    "cu": "https://www.cqc.org.uk/location/1-115085073",
     "ar": "Enfield",
     "la": 51.6263,
     "ln": -0.0622,
@@ -12200,8 +12200,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-552148568",
+    "cqc": "Outstanding",
+    "cu": "https://www.cqc.org.uk/location/1-117286224",
     "ar": "Ealing",
     "la": null,
     "ln": null,
@@ -12376,8 +12376,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-553246300",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-12540799208",
     "ar": "Richmond",
     "la": null,
     "ln": null,
@@ -13592,8 +13592,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-573771085",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-112545754",
     "ar": "Bexley",
     "la": null,
     "ln": null,
@@ -14616,8 +14616,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-530276096",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-125140173",
     "ar": "Ealing",
     "la": 51.5118,
     "ln": -0.2727,
@@ -15384,8 +15384,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-537673398",
+    "cqc": "Inadequate",
+    "cu": "https://www.cqc.org.uk/location/1-13187534210",
     "ar": "Islington",
     "la": 51.5545,
     "ln": -0.1167,
@@ -15512,8 +15512,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-547357171",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-11871894400",
     "ar": "Newham",
     "la": 51.549,
     "ln": 0.0247,
@@ -15992,8 +15992,8 @@
     "s": null,
     "c": null,
     "pcn": "",
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-549230365",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-130090775",
     "ar": "Sutton",
     "la": null,
     "ln": null,
@@ -17731,8 +17731,8 @@
       "consultant",
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-552497644",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-11309361439",
     "ar": "Kingston",
     "la": 51.410048,
     "ln": -0.26224,
@@ -19529,8 +19529,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7423875960",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-12495563655",
     "ar": "City of London",
     "la": 51.517227,
     "ln": -0.087598,
@@ -20353,8 +20353,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-9104134545",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-12808523607",
     "ar": "Westminster",
     "la": 51.518024,
     "ln": -0.146214,
@@ -22527,8 +22527,8 @@
     "specs": [
       "weight-loss"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8559701380",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-13938483238",
     "ar": "Westminster",
     "la": 51.514402,
     "ln": -0.1309143,
@@ -23071,8 +23071,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-561454985",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-14423536594",
     "ar": "Redbridge",
     "la": 51.5768535,
     "ln": 0.0644355,
@@ -23091,8 +23091,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-559517846",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-14423831150",
     "ar": "Redbridge",
     "la": 51.557148,
     "ln": 0.074248,
@@ -23111,8 +23111,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-544293809",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-14423831189",
     "ar": "Redbridge",
     "la": 51.5607454,
     "ln": 0.0964997,
@@ -23514,8 +23514,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-553882385",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-14684887506",
     "ar": "Southwark",
     "la": 51.430298,
     "ln": -0.086094,
@@ -25001,8 +25001,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2897199278",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-15929100323",
     "ar": "Kingston",
     "la": 51.4125157,
     "ln": -0.2833746,
@@ -25644,8 +25644,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-545390964",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-16566274251",
     "ar": "Hounslow",
     "la": 51.497426,
     "ln": -0.2452733,
@@ -27197,8 +27197,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8378187847",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-18332772562",
     "ar": "Westminster",
     "la": 51.497688,
     "ln": -0.1481381,
@@ -27217,8 +27217,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-589645273",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-18362019059",
     "ar": "Havering",
     "la": 51.5498577,
     "ln": 0.247485,
@@ -27257,8 +27257,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-547871991",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-18383306840",
     "ar": "Haringey",
     "la": 51.5980403,
     "ln": -0.0933778,
@@ -27578,8 +27578,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-9849552131",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-18729780804",
     "ar": "Westminster",
     "la": 51.51136,
     "ln": -0.1471943,
@@ -28122,7 +28122,7 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
+    "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-19162051361",
     "ar": "Westminster",
     "la": 51.5185981,
@@ -29533,8 +29533,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7721458666",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-19888275133",
     "ar": "Southwark",
     "la": 51.5035085,
     "ln": -0.0932766,
@@ -30102,8 +30102,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7014653740",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20244103326",
     "ar": "Westminster",
     "la": 51.5198966,
     "ln": -0.1582062,
@@ -30183,8 +30183,8 @@
       "consultant",
       "gynaecology"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-522508208",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20293892952",
     "ar": "Havering",
     "la": 51.5473303,
     "ln": 0.2163601,
@@ -30226,8 +30226,8 @@
       "consultant",
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-323513763",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20294844161",
     "ar": "Westminster",
     "la": 51.517662,
     "ln": -0.146646,
@@ -30306,8 +30306,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7721458666",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20308296149",
     "ar": "Westminster",
     "la": 51.5152979,
     "ln": -0.1539814,
@@ -30569,8 +30569,8 @@
       "consultant",
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8061977658",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20394350794",
     "ar": "Westminster",
     "la": 51.517593,
     "ln": -0.1489736,
@@ -30711,8 +30711,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-547778928",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20401237899",
     "ar": "Lambeth",
     "la": 51.4186151,
     "ln": -0.1266401,
@@ -31131,7 +31131,7 @@
     "specs": [
       "hospital"
     ],
-    "cqc": "Requires improvement",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-207202943",
     "ar": "Southwark",
     "la": 51.4972074,
@@ -32197,8 +32197,8 @@
     "specs": [
       "gynaecology"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-22137663145",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-22137663169",
     "ar": "Greenwich",
     "la": 51.4791133,
     "ln": 0.1042471,
@@ -32338,8 +32338,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-953184915",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-22152626449",
     "ar": "Kensington & Chelsea",
     "la": 51.5153255,
     "ln": -0.2010138,
@@ -33406,8 +33406,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3991263240",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-22956076977",
     "ar": "Croydon",
     "la": 51.389128,
     "ln": -0.108758,
@@ -34155,8 +34155,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2255765270",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-23395239077",
     "ar": "Waltham Forest",
     "la": 51.6081698,
     "ln": -0.0007241,
@@ -34256,8 +34256,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-3936438484",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-23484991915",
     "ar": "Barnet",
     "la": 51.6495297,
     "ln": -0.1948173,
@@ -34376,8 +34376,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2172619996",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-23513365405",
     "ar": "Harrow",
     "la": 51.564966,
     "ln": -0.332709,
@@ -34416,8 +34416,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7740758067",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-23565119909",
     "ar": "Southwark",
     "la": 51.5051362,
     "ln": -0.0888569,
@@ -34619,8 +34619,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2429124355",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-23676648961",
     "ar": "Westminster",
     "la": 51.5193572,
     "ln": -0.161082,
@@ -34659,8 +34659,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-7740758067",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-23693261764",
     "ar": "Southwark",
     "la": 51.502544,
     "ln": -0.08872,
@@ -34920,8 +34920,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2290270173",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-24009983091",
     "ar": "City of London",
     "la": 51.5120505,
     "ln": -0.0777872,
@@ -35488,8 +35488,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-2953688725",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-24421679001",
     "ar": "Westminster",
     "la": 51.5191572,
     "ln": -0.1489389,
@@ -35529,8 +35529,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-572907531",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-24487018377",
     "ar": "Islington",
     "la": 51.5338688,
     "ln": -0.1189421,
@@ -37460,8 +37460,8 @@
     "specs": [
       "gynaecology"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-8059462405",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-26022591205",
     "ar": "City of London",
     "la": 51.516949,
     "ln": -0.083805,
@@ -37620,8 +37620,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-9630334971",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-26127434606",
     "ar": "Lambeth",
     "la": 51.4974948,
     "ln": -0.1201011,
@@ -38182,8 +38182,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-4160491831",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-26643564775",
     "ar": "Redbridge",
     "la": 51.575776,
     "ln": 0.023488,
@@ -38549,8 +38549,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-550649345",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-2698412388",
     "ar": "Brent",
     "la": 51.547532,
     "ln": -0.233873,
@@ -38671,7 +38671,7 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Inadequate",
+    "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-27109768921",
     "ar": "Barking & Dagenham",
     "la": 51.5393817,
@@ -39516,8 +39516,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-551388737",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28122822389",
     "ar": "Bromley",
     "la": 51.3997419,
     "ln": 0.0162381,
@@ -40910,7 +40910,7 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-4123625543",
     "ar": "Sutton",
     "la": 51.356657,
@@ -41052,8 +41052,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-415220690",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-4275983140",
     "ar": "Greenwich",
     "la": 51.478803,
     "ln": 0.085815,
@@ -41293,8 +41293,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-550017768",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-4598741935",
     "ar": "Merton",
     "la": 51.411219,
     "ln": -0.231169,
@@ -42000,7 +42000,7 @@
     "specs": [
       "psychiatry"
     ],
-    "cqc": "Requires improvement",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-524233225",
     "ar": "Croydon",
     "la": 51.3010108,
@@ -42405,8 +42405,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-2166893538",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-5588555895",
     "ar": "Camden",
     "la": 51.5280354,
     "ln": -0.1281211,
@@ -42607,8 +42607,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Outstanding",
-    "cu": "https://www.cqc.org.uk/location/1-545606146",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-5680292717",
     "ar": "Kingston",
     "la": 51.414011,
     "ln": -0.3050664,
@@ -44413,8 +44413,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Inadequate",
-    "cu": "https://www.cqc.org.uk/location/1-614990605",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-8117906171",
     "ar": "Croydon",
     "la": 51.3704921,
     "ln": -0.0991096,
@@ -44635,8 +44635,8 @@
       "consultant",
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-18125733921",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-8361343070",
     "ar": "Merton",
     "la": 51.410667,
     "ln": -0.232729,
@@ -45484,8 +45484,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-540168119",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-9251688718",
     "ar": "Barnet",
     "la": 51.614985,
     "ln": -0.243591,
@@ -45604,8 +45604,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-250423066",
+    "cqc": "Requires improvement",
+    "cu": "https://www.cqc.org.uk/location/1-9435484438",
     "ar": "Kingston",
     "la": 51.410048,
     "ln": -0.26224,
@@ -45665,8 +45665,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Outstanding",
-    "cu": "https://www.cqc.org.uk/location/1-2147328388",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-9490797738",
     "ar": "Merton",
     "la": 51.4207162,
     "ln": -0.2097041,
@@ -46409,7 +46409,7 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
+    "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-28493430438",
     "ar": "Southwark",
     "la": 51.5010956,
@@ -46669,8 +46669,8 @@
     "specs": [
       "gynaecology"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1997877116",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28825798517",
     "ar": "Greenwich",
     "la": 51.4988813,
     "ln": 0.089913,
@@ -47033,8 +47033,8 @@
     "specs": [
       "urgent-care"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-984411924",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-26724637989",
     "ar": "Bromley",
     "la": 51.366243,
     "ln": 0.059146,

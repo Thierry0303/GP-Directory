@@ -2064,6 +2064,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.evida.uk": {
+"checked": "2026-08-22",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.eyesat22a.com": {
 "checked": "2026-08-10",
 "ok": true,
@@ -5321,6 +5328,13 @@
 },
 "https://www.umediagnostics.com": {
 "checked": "2026-08-10",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
+"https://www.unbound.living": {
+"checked": "2026-08-22",
 "ok": true,
 "really_ok": true,
 "status": "200",
