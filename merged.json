@@ -17167,8 +17167,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-12619188295",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-10841286992",
     "ar": "Kensington & Chelsea",
     "la": 51.5029371,
     "ln": -0.1917717,
@@ -17871,7 +17871,7 @@
     "specs": [
       "psychiatry"
     ],
-    "cqc": "Requires improvement",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-114045387",
     "ar": "Waltham Forest",
     "la": 51.6104275,
@@ -19890,7 +19890,7 @@
     "specs": [
       "hospital"
     ],
-    "cqc": "Requires improvement",
+    "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-1265559130",
     "ar": "Enfield",
     "la": 51.6145225,
@@ -22770,8 +22770,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-14192259089",
     "ar": "Camden",
     "la": 51.5263257,
     "ln": -0.140629,
@@ -23051,8 +23051,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-120437786",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-14423536183",
     "ar": "Redbridge",
     "la": 51.5924583,
     "ln": 0.0252816,
@@ -26549,8 +26549,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-1150357230",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-17709972033",
     "ar": "Westminster",
     "la": 51.521314,
     "ln": -0.14781,
@@ -29392,8 +29392,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-19887122828",
     "ar": "Bexley",
     "la": 51.443396,
     "ln": 0.151632,
@@ -29797,8 +29797,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-20017082238",
     "ar": "Camden",
     "la": 51.5179688,
     "ln": -0.1188912,
@@ -31111,8 +31111,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-20709062028",
     "ar": "Hammersmith & Fulham",
     "la": 51.5092123,
     "ln": -0.2377532,
@@ -31675,8 +31675,8 @@
     "specs": [
       "aesthetic"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-12693846813",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-21732602058",
     "ar": "Westminster",
     "la": 51.517067,
     "ln": -0.145838,
@@ -32378,8 +32378,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-12112084925",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-22152660465",
     "ar": "",
     "la": 51.6848858,
     "ln": -0.0337299,
@@ -32619,8 +32619,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-12173929198",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-22159391476",
     "ar": "Westminster",
     "la": 51.5135647,
     "ln": -0.1472922,
@@ -35002,8 +35002,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1162610386",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-24085713787",
     "ar": "Westminster",
     "la": 51.5196758,
     "ln": -0.147044,
@@ -36454,8 +36454,8 @@
     "specs": [
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1210196831",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-25270937305",
     "ar": "City of London",
     "la": 51.5095757,
     "ln": -0.0820707,
@@ -36675,8 +36675,8 @@
       "consultant",
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-114617347",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-25396288127",
     "ar": "City of London",
     "la": 51.5119675,
     "ln": -0.0859047,
@@ -38832,8 +38832,8 @@
       "gynaecology",
       "sexual-health"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-11188426198",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-27193318230",
     "ar": "Bromley",
     "la": 51.4076621,
     "ln": 0.0557404,
@@ -40749,8 +40749,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-3947887340",
     "ar": "Redbridge",
     "la": 51.604367,
     "ln": 0.031604,
@@ -46369,8 +46369,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-11414735972",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28492530816",
     "ar": "Redbridge",
     "la": 51.5491936,
     "ln": 0.0967909,
