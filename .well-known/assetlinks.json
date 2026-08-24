@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "directory.londongp.twa",
+        "sha256_cert_fingerprints": ["8C:92:DC:0A:B0:CB:F2:96:8C:C5:4C:2E:D9:56:6E:F2:FE:D6:D3:97:A8:78:44:C1:CF:9F:F6:21:5C:04:BB:B5"]
+      }
+    }]
