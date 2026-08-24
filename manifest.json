@@ -10,6 +10,7 @@
   "background_color": "#f5f5f3",
   "theme_color": "#003087",
   "lang": "en-GB",
+  "categories": ["medical", "health", "lifestyle"],
   "icons": [
     {
       "src": "/icon-192.png",
@@ -28,6 +29,18 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Find NHS GP",
+      "url": "/?type=NHS",
+      "description": "Search NHS GP practices"
+    },
+    {
+      "name": "Browse boroughs",
+      "url": "/boroughs/",
+      "description": "Browse all London boroughs"
     }
   ]
 }
