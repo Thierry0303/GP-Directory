@@ -29555,7 +29555,7 @@
     "localAuthority": "Southwark",
     "lat": 51.4934902,
     "lon": -0.101512,
-    "providerName": "",
+    "providerName": "Doctorum Limited",
     "ar": "Southwark"
   },
   {
@@ -29574,7 +29574,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5182006,
     "lon": -0.1470175,
-    "providerName": "",
+    "providerName": "Dose Hair Limited",
     "ar": "Westminster"
   },
   {
@@ -29593,7 +29593,7 @@
     "localAuthority": "Haringey",
     "lat": 51.5914636,
     "lon": -0.0777582,
-    "providerName": "",
+    "providerName": "Bazire Medical Limited",
     "ar": "Haringey"
   },
   {
@@ -29612,7 +29612,7 @@
     "localAuthority": "Hackney",
     "lat": 51.5280837,
     "lon": -0.0793895,
-    "providerName": "",
+    "providerName": "Unbound Living Technologies Ltd",
     "ar": "Hackney"
   },
   {
@@ -29631,7 +29631,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5131588,
     "lon": -0.1563451,
-    "providerName": "",
+    "providerName": "Marylebone Health Group Ltd",
     "ar": "Westminster"
   },
   {
@@ -29650,7 +29650,7 @@
     "localAuthority": "Westminster",
     "lat": 51.51931,
     "lon": -0.145052,
-    "providerName": "",
+    "providerName": "Evida Ltd",
     "ar": "Westminster"
   }
 ]
