@@ -546,7 +546,7 @@
 "strikes": 0
 },
 "https://www.barbanenteclinic.co.uk": {
-"checked": "2026-07-26",
+"checked": "2026-08-25",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -5635,11 +5635,11 @@
 "strikes": 0
 },
 "https://www.yourmenopausecare.co.uk": {
-"checked": "2026-07-26",
+"checked": "2026-08-25",
 "ok": true,
-"really_ok": false,
-"status": "503",
-"strikes": 1
+"really_ok": true,
+"status": "200",
+"strikes": 0
 },
 "https://www.yourtravelclinic.com": {
 "checked": "2026-08-10",
