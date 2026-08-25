@@ -9,6 +9,14 @@ Slug convention: lowercase, "&" dropped, spaces → "-".
   "Richmond upon Thames"    -> "richmond-upon-thames"
 
 If build_borough_pages.py uses a different slug, change SLUG_STYLE below.
+
+NOTE (amended): header/nav markup and CSS below now matches
+index.template.html's navy header exactly — same logo styling, same
+main-nav bar with all 8 links (Search, Boroughs, NHS Services, Private
+Clinics, Dentists, Guides, Methodology, Sources), same responsive
+wrapping. Previously this page had its own separate plain-white header
+with only 4 nav links (missing NHS Services, Private Clinics, Dentists,
+Guides entirely) — a real navigation gap, not just a style mismatch.
 """
 
 import json, re, sys
@@ -122,25 +130,32 @@ def main():
 <meta property="og:type" content="website">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#1a1a1a;font-size:16px;line-height:1.6}}
-a{{color:#003087;text-decoration:none}}
-.hdr{{padding:22px 24px;border-bottom:1px solid #e5e5e3;background:#fff}}
-.hdr-in{{max-width:980px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}}
-.brand a{{font-weight:700;color:#003087;font-size:1.05rem}}
-.nav{{display:flex;gap:18px;font-size:.95rem}}
-.nav a{{color:#555}}
-.nav a:hover,.nav a.active{{color:#003087;font-weight:600}}
-.wrap{{max-width:980px;margin:0 auto;padding:36px 24px}}
-.crumbs{{font-size:13px;color:#666;margin-bottom:14px}}
-.crumbs a{{color:#003087}}
-h1{{font-family:Georgia,serif;color:#003087;font-size:2.1rem;margin-bottom:10px;line-height:1.15;font-weight:700}}
-.lede{{color:#444;margin-bottom:26px;font-size:1.05rem;max-width:680px}}
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f5f5f3;color:#1a1a1a;font-size:15px;line-height:1.6}}
+a{{color:inherit;text-decoration:none}}
+
+/* Header — matches homepage (index.template.html) exactly */
+.hdr{{background:#003087;color:#fff;padding:0}}
+.hdr-top{{padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.08)}}
+.hdr-in{{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}}
+.logo h1{{font-family:Georgia,serif;font-size:1.4rem;font-weight:700;letter-spacing:-0.02em;line-height:1.1}}
+.logo h1 em{{color:#B5D4F4;font-style:italic;font-weight:400}}
+.main-nav{{background:rgba(0,0,0,.18);border-bottom:4px solid #0072CE}}
+.main-nav-in{{max-width:980px;margin:0 auto;padding:10px 24px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.88rem;align-items:center}}
+.main-nav a{{color:rgba(255,255,255,.78);font-weight:500;transition:color .12s;padding:4px 0;white-space:nowrap}}
+.main-nav a:hover,.main-nav a.active{{color:#fff}}
+.main-nav a.active{{border-bottom:2px solid #B5D4F4}}
+
+.wrap{{max-width:980px;margin:0 auto;padding:32px 24px 60px}}
+.crumbs{{font-size:13px;color:#888;margin-bottom:14px}}
+.crumbs a{{color:#0072CE}}
+h1{{font-family:Georgia,serif;color:#003087;font-size:1.9rem;margin-bottom:10px;line-height:1.15;font-weight:700}}
+.lede{{color:#555;margin-bottom:26px;font-size:1rem;max-width:680px}}
 .stats{{display:flex;gap:32px;background:#EDF4FC;border:1px solid #B5D4F4;border-radius:10px;padding:18px 22px;margin-bottom:30px;font-size:.95rem;flex-wrap:wrap}}
 .stats .stat strong{{display:block;color:#003087;font-size:1.5rem;font-weight:700;line-height:1}}
 .stats .stat span{{color:#555;font-size:.9rem;margin-top:2px;display:block}}
 .grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}}
-.row{{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid #e5e5e3;border-radius:10px;padding:14px 18px;transition:all .15s;gap:10px}}
-.row:hover{{border-color:#003087;background:#f7faff;text-decoration:none;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,48,135,.07)}}
+.row{{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid #ddd;border-radius:12px;padding:14px 18px;transition:all .15s;gap:10px}}
+.row:hover{{border-color:#0072CE;box-shadow:0 3px 14px rgba(0,48,135,.08);transform:translateY(-1px)}}
 .row-empty{{opacity:.6}}
 .row-empty:hover{{opacity:.9}}
 .name{{font-weight:600;color:#003087}}
@@ -149,28 +164,40 @@ h1{{font-family:Georgia,serif;color:#003087;font-size:2.1rem;margin-bottom:10px;
 .cnt-nhs{{background:#EDF4FC;color:#003087}}
 .cnt-private{{background:#F4F0E8;color:#7a5a1e}}
 .cnt-empty{{background:#F0F0EF;color:#777;font-weight:400}}
-footer{{background:#003087;color:rgba(255,255,255,.65);text-align:center;padding:22px 24px;font-size:13px;margin-top:50px}}
-footer a{{color:rgba(255,255,255,.9);margin:0 6px}}
-@media(max-width:760px){{
+footer{{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:16px 24px;font-size:11.5px;margin-top:40px}}
+footer a{{color:rgba(255,255,255,.8);margin:0 6px}}
+@media(max-width:600px){{
+  .hdr-top{{padding:10px 16px}}
+  .logo h1{{font-size:1.15rem}}
+  .main-nav-in{{padding:8px 16px;gap:6px 14px;font-size:.82rem}}
+  .wrap{{padding:22px 16px 40px}}
+  h1{{font-size:1.5rem}}
   .grid{{grid-template-columns:1fr}}
-  h1{{font-size:1.6rem}}
   .stats{{gap:20px}}
-  .hdr-in{{flex-direction:column;align-items:flex-start;gap:10px}}
-  .wrap{{padding:24px 18px}}
 }}
 </style>
 </head>
 <body>
 <header class="hdr">
-  <div class="hdr-in">
-    <div class="brand"><a href="/">London GP Directory</a></div>
-    <nav class="nav">
+  <div class="hdr-top">
+    <div class="hdr-in">
+      <div class="logo">
+        <h1>London GP <em>Directory</em></h1>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="Main navigation">
+    <div class="main-nav-in">
       <a href="/">Search</a>
       <a href="/boroughs/" class="active">Boroughs</a>
+      <a href="/nhs-services/">NHS Services</a>
+      <a href="/private/">Private Clinics</a>
+      <a href="/dentists/">Dentists</a>
+      <a href="/guides/">Guides</a>
       <a href="/methodology.html">Methodology</a>
       <a href="/sources.html">Sources</a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 <main class="wrap">
   <div class="crumbs"><a href="/">Home</a> &rsaquo; Boroughs</div>
