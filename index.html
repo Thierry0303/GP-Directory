@@ -52,22 +52,38 @@ a{text-decoration:none;color:inherit}
 .clr{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.2);color:#fff;padding:11px 15px;border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;display:none}
 .type-zone{background:#fff;border-bottom:1px solid #e5e5e3}
 .type-inner{max-width:1300px;margin:0 auto;padding:14px 24px}
-.type-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.type-tabs{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .type-tab{padding:8px 16px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#555;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
 .type-tab:hover:not(.active){border-color:#003087;color:#003087}
 .type-tab.active{background:#003087;color:#fff;border-color:#003087}
 .type-tab-count{font-size:11px;font-weight:500;opacity:.7;padding:1px 6px;border-radius:99px;background:rgba(255,255,255,.15)}
 .type-tab:not(.active) .type-tab-count{background:#f0f0ee;color:#888}
 .specialty-zone{margin-top:10px;display:none}
-.specialty-zone.active{display:flex;flex-wrap:wrap;gap:5px}
-.specialty-chip{padding:5px 11px;border-radius:99px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#666;transition:all .12s;text-transform:capitalize}
+.specialty-zone.active{display:flex;flex-wrap:nowrap;gap:5px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.specialty-zone.active::-webkit-scrollbar{display:none}
+.specialty-chip{padding:5px 11px;border-radius:99px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:12px;color:#666;transition:all .12s;text-transform:capitalize;flex-shrink:0;white-space:nowrap}
 .specialty-chip:hover:not(.active){border-color:#0072CE;color:#0072CE}
 .specialty-chip.active{background:#0072CE;color:#fff;border-color:#0072CE}
 .specialty-chip-count{font-size:10px;opacity:.7;margin-left:3px}
+
+/* Mobile filter trigger button — hidden on desktop, shown on mobile via media query below */
+.filters-btn{display:none;margin-left:auto;align-items:center;gap:6px;padding:8px 14px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#003087}
+.filters-btn .fcount{background:#003087;color:#fff;font-size:11px;font-weight:700;border-radius:99px;padding:1px 7px;display:none}
+.filters-btn .fcount.show{display:inline-block}
+
 .layout{max-width:1300px;margin:0 auto;padding:20px 24px 48px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
 .sidebar{position:sticky;top:20px}
 .panel{background:#fff;border:1px solid #ddd;border-radius:12px;overflow:hidden;margin-bottom:12px}
 .panel-hdr{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#999;padding:10px 14px 7px;border-bottom:1px solid #f0f0ee}
+#filterGroup .panel-hdr{cursor:pointer;display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:none;user-select:none}
+#filterGroup .panel-hdr .hdr-title{flex:1}
+#filterGroup .panel-hdr .panel-count{font-size:10px;font-weight:700;color:#003087;background:#EDF4FC;padding:1px 6px;border-radius:99px;display:none}
+#filterGroup .panel-hdr .panel-count.show{display:inline-block}
+#filterGroup .panel-hdr .chev{font-size:11px;color:#bbb;transition:transform .18s}
+#filterGroup .panel.collapsed .panel-hdr{border-bottom:none}
+#filterGroup .panel:not(.collapsed) .panel-hdr{border-bottom:1px solid #f0f0ee}
+#filterGroup .panel.collapsed .chev{transform:rotate(-90deg)}
+#filterGroup .panel.collapsed .panel-body{display:none}
 .panel select{width:100%;padding:9px 14px;border:none;font-family:inherit;font-size:13px;color:#444;background:#fff;cursor:pointer;appearance:none}
 .opts{padding:5px 0;max-height:220px;overflow-y:auto}
 .opts label{display:flex;align-items:center;gap:9px;padding:5px 14px;cursor:pointer;font-size:13px}
@@ -132,10 +148,40 @@ a{text-decoration:none;color:inherit}
 .pg:disabled{opacity:.3;cursor:not-allowed}
 footer{background:#003087;color:rgba(255,255,255,.5);text-align:center;padding:16px 24px;font-size:11.5px}
 footer a{color:rgba(255,255,255,.8)}
+
+/* Filter sheet backdrop — only ever shown on mobile, JS toggles .open */
+.filter-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.42);z-index:998}
+.filter-backdrop.open{display:block}
+
 @media(max-width:900px){
   .layout{grid-template-columns:1fr;gap:14px}
   .sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .nhs-panel{grid-column:1/-1}
+  .filters-btn{display:inline-flex}
+
+  /* The filter group (Sort + CQC + Borough) becomes a bottom sheet on mobile */
+  #filterGroup{display:none;grid-column:1/-1}
+  #filterGroup.open{
+    display:block;
+    position:fixed;
+    left:0;right:0;bottom:0;
+    max-height:82vh;
+    overflow-y:auto;
+    background:#f5f5f3;
+    border-radius:16px 16px 0 0;
+    box-shadow:0 -6px 28px rgba(0,0,0,.22);
+    z-index:999;
+    padding:14px 14px 20px;
+    margin:0;
+  }
+  #filterGroup.open .panel{margin-bottom:10px}
+  .sheet-hdr{display:flex;align-items:center;justify-content:space-between;padding:4px 4px 12px}
+  .sheet-hdr h3{font-family:Georgia,serif;color:#003087;font-size:1.1rem}
+  .sheet-close{background:#f0f0ee;border:none;width:30px;height:30px;border-radius:99px;font-size:16px;color:#555;cursor:pointer}
+  .sheet-actions{display:flex;gap:8px;margin-top:6px}
+  .sheet-actions button{flex:1;padding:11px;border-radius:8px;font-family:inherit;font-size:13.5px;font-weight:600;cursor:pointer}
+  .sheet-apply{background:#003087;color:#fff;border:none}
+  .sheet-clear{background:#fff;color:#555;border:1.5px solid #ddd}
 }
 @media(max-width:600px){
   .hdr-top{padding:10px 16px}
@@ -150,6 +196,8 @@ footer a{color:rgba(255,255,255,.8)}
   .layout{padding:14px 16px 32px}
   .sidebar{grid-template-columns:1fr}
   #grid{grid-template-columns:1fr}
+  .filters-btn{width:100%;justify-content:center;margin-left:0;margin-top:8px}
+  .type-tabs{width:100%}
 }
 .anp-y{background:#e7f6ec;color:#0F6E56;border:1px solid #bfe5cd;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
 .anp-n{background:#fdeeee;color:#a33;border:1px solid #f2cfcf;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px}
@@ -215,6 +263,9 @@ footer a{color:rgba(255,255,255,.8)}
       <button class="type-tab" data-type="All" role="tab" aria-selected="false">
         All <span class="type-tab-count" id="cntAll">0</span>
       </button>
+      <button class="filters-btn" id="filtersBtn" onclick="openFilterSheet()">
+        &#x2699;&#xFE0F; Filters <span class="fcount" id="fCount">0</span>
+      </button>
     </div>
     <div class="specialty-zone" id="specialtyZone" role="tablist" aria-label="Filter by specialty"></div>
   </div>
@@ -231,6 +282,7 @@ footer a{color:rgba(255,255,255,.8)}
     <a class="borough-more" href="/boroughs/">All 32 &rsaquo;</a>
   </div>
 </nav>
+<div class="filter-backdrop" id="filterBackdrop" onclick="closeFilterSheet()"></div>
 <div class="layout">
   <aside class="sidebar">
     <div class="nhs-panel">
@@ -238,20 +290,41 @@ footer a{color:rgba(255,255,255,.8)}
       <p>NHS practice phone numbers &amp; addresses sourced from the <strong>NHS ODS FHIR API</strong>. Private clinics from <strong>CQC</strong>. Refreshed weekly.</p>
       <div class="nhs-tag">Updated: 25 August 2026</div>
     </div>
-    <div class="panel">
-      <div class="panel-hdr">Sort by</div>
-      <select id="sortSel" onchange="render()">
-        <option value="name">Name (A&#x2013;Z)</option>
-        <option value="dist">Distance (near&#x2013;far)</option>
-        <option value="score_d">Patient score (high&#x2013;low)</option>
-        <option value="score_a">Patient score (low&#x2013;high)</option>
-        <option value="contact_d">Contact ease (high&#x2013;low)</option>
-        <option value="area">Area (A&#x2013;Z)</option>
-      </select>
-    </div>
     <div class="panel" id="anpPanel"><div class="panel-hdr">Availability</div><div class="opts"><label><input type="checkbox" id="anpChk" onchange="page=1;render()">Accepting new patients <span class="badge" id="anpCt"></span></label></div></div>
-    <div class="panel"><div class="panel-hdr">CQC rating</div><div class="opts" id="cqcOpts"></div></div>
-    <div class="panel"><div class="panel-hdr">Borough</div><div class="opts" id="areaOpts"></div></div>
+
+    <!-- Sort + CQC + Borough: normal sidebar panels on desktop, becomes a
+         bottom sheet on mobile via the #filterGroup.open CSS above -->
+    <div id="filterGroup">
+      <div class="sheet-hdr">
+        <h3>Filters</h3>
+        <button class="sheet-close" onclick="closeFilterSheet()" aria-label="Close filters">&#x2715;</button>
+      </div>
+      <div class="panel collapsed" id="sortPanel">
+        <div class="panel-hdr" onclick="togglePanel('sortPanel')"><span class="hdr-title">Sort by</span><span class="chev">&#x25BC;</span></div>
+        <div class="panel-body">
+          <select id="sortSel" onchange="render()">
+            <option value="name">Name (A&#x2013;Z)</option>
+            <option value="dist">Distance (near&#x2013;far)</option>
+            <option value="score_d">Patient score (high&#x2013;low)</option>
+            <option value="score_a">Patient score (low&#x2013;high)</option>
+            <option value="contact_d">Contact ease (high&#x2013;low)</option>
+            <option value="area">Area (A&#x2013;Z)</option>
+          </select>
+        </div>
+      </div>
+      <div class="panel collapsed" id="cqcPanel">
+        <div class="panel-hdr" onclick="togglePanel('cqcPanel')"><span class="hdr-title">CQC rating</span><span class="panel-count" id="cqcPanelCount">0</span><span class="chev">&#x25BC;</span></div>
+        <div class="panel-body opts" id="cqcOpts"></div>
+      </div>
+      <div class="panel" id="areaPanel">
+        <div class="panel-hdr" onclick="togglePanel('areaPanel')"><span class="hdr-title">Borough</span><span class="panel-count" id="areaPanelCount">0</span><span class="chev">&#x25BC;</span></div>
+        <div class="panel-body opts" id="areaOpts"></div>
+      </div>
+      <div class="sheet-actions">
+        <button class="sheet-clear" onclick="clearAllFilters()">Clear all</button>
+        <button class="sheet-apply" onclick="closeFilterSheet()">Show results</button>
+      </div>
+    </div>
   </aside>
   <main>
     <div class="results-bar"><p id="resCt">Loading&#x2026;</p></div>
@@ -318,6 +391,37 @@ function nearMe(){
 const PAGE = 24;
 let page = 1, filtered = [], selType = 'NHS', selSpec = 'all';
 const selCQC = new Set(), selArea = new Set();
+
+/* --- Mobile filter bottom-sheet controls --- */
+function openFilterSheet(){
+  document.getElementById('filterGroup').classList.add('open');
+  document.getElementById('filterBackdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeFilterSheet(){
+  document.getElementById('filterGroup').classList.remove('open');
+  document.getElementById('filterBackdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function togglePanel(id){
+  document.getElementById(id).classList.toggle('collapsed');
+}
+function updateFilterCount(){
+  const n = selCQC.size + selArea.size;
+  const el = document.getElementById('fCount');
+  if(el){ el.textContent = n; el.classList.toggle('show', n > 0); }
+  const cqcEl = document.getElementById('cqcPanelCount');
+  if(cqcEl){ cqcEl.textContent = selCQC.size; cqcEl.classList.toggle('show', selCQC.size > 0); }
+  const areaEl = document.getElementById('areaPanelCount');
+  if(areaEl){ areaEl.textContent = selArea.size; areaEl.classList.toggle('show', selArea.size > 0); }
+}
+function clearAllFilters(){
+  selCQC.clear(); selArea.clear();
+  document.querySelectorAll('#cqcOpts input[type=checkbox], #areaOpts input[type=checkbox]').forEach(c => c.checked = false);
+  updateFilterCount();
+  page = 1; render();
+}
+
 function cqcClass(r){ if(!r)return'cqc-N';if(r==='Outstanding')return'cqc-O';if(r==='Good')return'cqc-G';if(r.startsWith('Requires'))return'cqc-R';if(r==='Inadequate')return'cqc-I';return'cqc-N'; }
 function cqcLabel(r){ return r||'Not rated'; }
 function updateAnpUI(){
@@ -364,7 +468,7 @@ function buildFilters(){
   document.getElementById('cqcOpts').innerHTML = ['Outstanding','Good','Requires improvement','Inadequate',''].filter(k=>cqcC[k]).map(k=>`<label><input type="checkbox" onchange="toggle('cqc','${k}')">${k||'Not rated'}<span class="badge">${cqcC[k]}</span></label>`).join('');
   document.getElementById('areaOpts').innerHTML = Object.entries(areaC).sort((a,b)=>a[0].localeCompare(b[0])).map(([ar,c])=>`<label><input type="checkbox" onchange="toggle('area','${ar}')">${ar}<span class="badge">${c}</span></label>`).join('');
 }
-function toggle(type,val){ const s = type==='cqc'?selCQC:selArea; s.has(val)?s.delete(val):s.add(val); page=1; render(); }
+function toggle(type,val){ const s = type==='cqc'?selCQC:selArea; s.has(val)?s.delete(val):s.add(val); updateFilterCount(); page=1; render(); }
 function clearSearch(){ document.getElementById('q').value=''; document.getElementById('clrBtn').style.display='none'; geo=null; page=1; render(); }
 function render(){
   const q = document.getElementById('q').value.trim().toLowerCase();
@@ -425,6 +529,7 @@ const _urlType = new URLSearchParams(location.search).get('type');
 if (_urlType && ['NHS','Private','All'].includes(_urlType)) selType = _urlType;
 document.getElementById('q').addEventListener('input',()=>{page=1;render();maybeGeocode();});
 document.querySelectorAll('.type-tab').forEach(t => t.addEventListener('click', () => selectType(t.dataset.type)));
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeFilterSheet(); });
 DATA_READY.then(() => {
   updateAnpUI();
   updateTypeCounts();
@@ -435,7 +540,6 @@ DATA_READY.then(() => {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
 }
-
 </script>
 </body>
 </html>

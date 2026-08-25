@@ -17227,8 +17227,8 @@
     "specs": [
       "gynaecology"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-10495490315",
+    "cqc": "Inadequate",
+    "cu": "https://www.cqc.org.uk/location/1-10893062639",
     "ar": "Haringey",
     "la": 51.5961844,
     "ln": -0.0689675,
@@ -22870,8 +22870,8 @@
     "specs": [
       "diagnostic"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-108384875",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-14251455562",
     "ar": "Westminster",
     "la": 51.520391,
     "ln": -0.1473465,
@@ -28585,8 +28585,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Outstanding",
-    "cu": "https://www.cqc.org.uk/location/1-10716659568",
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-19512754896",
     "ar": "Hackney",
     "la": 51.5215861,
     "ln": -0.0829918,
@@ -35448,8 +35448,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Requires improvement",
-    "cu": "https://www.cqc.org.uk/location/1-10577533941",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-24419951127",
     "ar": "Westminster",
     "la": 51.5218672,
     "ln": -0.1485695,
@@ -37119,8 +37119,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-10530502312",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-25778434832",
     "ar": "City of London",
     "la": 51.5165437,
     "ln": -0.0781457,
@@ -39253,8 +39253,8 @@
     "specs": [
       "private-gp"
     ],
-    "cqc": "Good",
-    "cu": "https://www.cqc.org.uk/location/1-1086695206",
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-27842102890",
     "ar": "Redbridge",
     "la": 51.5780565,
     "ln": 0.0702202,
