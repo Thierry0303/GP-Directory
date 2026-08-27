@@ -12314,5 +12314,23 @@
     "lon": -0.0759233,
     "providerName": "Oral Surgery Ltd",
     "ar": "Hackney"
+  },
+  {
+    "cqc_id": "1-27881948807",
+    "name": "The Chelsea Practice",
+    "address": "43 Chelsea Manor Street, London",
+    "postcode": "SW3 5DD",
+    "phone": "02073497330",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-27881948807",
+    "localAuthority": "Kensington and Chelsea",
+    "lat": 51.484924,
+    "lon": -0.173784,
+    "providerName": "",
+    "ar": "Kensington & Chelsea"
   }
 ]

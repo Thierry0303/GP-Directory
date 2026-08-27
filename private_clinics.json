@@ -29652,5 +29652,24 @@
     "lon": -0.145052,
     "providerName": "Evida Ltd",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-29277426795",
+    "ods_code": "",
+    "name": "Emerald Health Clinic",
+    "address": "3 More London Place, London",
+    "postcode": "SE1 2RE",
+    "phone": "01727647979",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29277426795",
+    "localAuthority": "Southwark",
+    "lat": 51.504159,
+    "lon": -0.0797469,
+    "providerName": "",
+    "ar": "Southwark"
   }
 ]
