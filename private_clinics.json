@@ -29122,7 +29122,7 @@
     "ods_code": "",
     "name": "Your Menopause Care With Rupa",
     "address": "",
-    "postcode": "TW4 7LX",
+    "postcode": "",
     "phone": "",
     "website": "https://www.yourmenopausecare.co.uk",
     "specialties": [
@@ -29131,8 +29131,8 @@
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-28893211146",
     "localAuthority": "Hounslow",
-    "lat": 51.4693831,
-    "lon": -0.3939988,
+    "lat": null,
+    "lon": null,
     "providerName": "Menopause Care (London) Limited",
     "ar": "Hounslow"
   },
