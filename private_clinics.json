@@ -29121,9 +29121,9 @@
     "cqc_id": "1-28893211146",
     "ods_code": "",
     "name": "Your Menopause Care With Rupa",
-    "address": "103 Basildene Road, Hounslow",
-    "postcode": "TW4 7LX",
-    "phone": "07956371792",
+    "address": "",
+    "postcode": "",
+    "phone": "",
     "website": "https://www.yourmenopausecare.co.uk",
     "specialties": [
       "gynaecology"
@@ -29131,8 +29131,8 @@
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-28893211146",
     "localAuthority": "Hounslow",
-    "lat": 51.4693831,
-    "lon": -0.3939988,
+    "lat": null,
+    "lon": null,
     "providerName": "Menopause Care (London) Limited",
     "ar": "Hounslow"
   },
