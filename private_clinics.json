@@ -29121,9 +29121,9 @@
     "cqc_id": "1-28893211146",
     "ods_code": "",
     "name": "Your Menopause Care With Rupa",
-    "address": "",
-    "postcode": "",
-    "phone": "",
+    "address": "103 Basildene Road, Hounslow",
+    "postcode": "TW4 7LX",
+    "phone": "07956371792",
     "website": "https://www.yourmenopausecare.co.uk",
     "specialties": [
       "gynaecology"
@@ -29131,8 +29131,8 @@
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-28893211146",
     "localAuthority": "Hounslow",
-    "lat": null,
-    "lon": null,
+    "lat": 51.4693831,
+    "lon": -0.3939988,
     "providerName": "Menopause Care (London) Limited",
     "ar": "Hounslow"
   },
@@ -29671,5 +29671,24 @@
     "lon": -0.0797469,
     "providerName": "",
     "ar": "Southwark"
+  },
+  {
+    "cqc_id": "1-29345502343",
+    "ods_code": "",
+    "name": "Panacea Clinic Limited",
+    "address": "44 Skylines Village, Limeharbour, London",
+    "postcode": "E14 9TS",
+    "phone": "02034880577",
+    "website": "https://www.panaceaclinic.co.uk/",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29345502343",
+    "localAuthority": "Tower Hamlets",
+    "lat": 51.4995221,
+    "lon": -0.0115665,
+    "providerName": "",
+    "ar": "Tower Hamlets"
   }
 ]

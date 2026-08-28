@@ -46600,9 +46600,9 @@
   {
     "o": "1-28893211146",
     "n": "Your Menopause Care With Rupa",
-    "a": "",
-    "p": "",
-    "ph": "",
+    "a": "103 Basildene Road, Hounslow",
+    "p": "TW4 7LX",
+    "ph": "07956371792",
     "s": null,
     "c": null,
     "pcn": "gynaecology",
@@ -46612,8 +46612,8 @@
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-28893211146",
     "ar": "Hounslow",
-    "la": null,
-    "ln": null,
+    "la": 51.4693831,
+    "ln": -0.3939988,
     "type": "Private",
     "web": "https://www.yourmenopausecare.co.uk"
   },
@@ -47180,5 +47180,25 @@
     "ln": -0.0797469,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29345502343",
+    "n": "Panacea Clinic Limited",
+    "a": "44 Skylines Village, Limeharbour, London",
+    "p": "E14 9TS",
+    "ph": "02034880577",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-519002719",
+    "ar": "Tower Hamlets",
+    "la": 51.4995221,
+    "ln": -0.0115665,
+    "type": "Private",
+    "web": "https://www.panaceaclinic.co.uk/"
   }
 ]

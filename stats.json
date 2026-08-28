@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2476,
-  "total_records_incl_non_london": 2548,
+  "total_records": 2477,
+  "total_records_incl_non_london": 2549,
   "excluded_non_london": 72,
   "nhs_practice_count": 979,
-  "private_clinic_count": 1497,
+  "private_clinic_count": 1498,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -62,7 +62,7 @@
     },
     "Tower Hamlets": {
       "nhs": 27,
-      "private": 34,
+      "private": 35,
       "dentist": 0
     },
     "City of London": {
