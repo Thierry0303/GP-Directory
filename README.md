@@ -87,22 +87,20 @@ Full rebuild: ODS + GPPS + workforce + CQC + list sizes. Recomputes every derive
 
 Both workflows are public on the [Actions tab](https://github.com/Thierry0303/GP-Directory/actions). If a source is unavailable on refresh day, the previous values are retained and the "data last verified" stamp on the page shows when each metric was last refreshed.
 
-### Updating GP Patient Survey scores (once a year)
+### Updating GP Patient Survey scores (automatic)
 
 Practice satisfaction and contact-ease scores come from the annual GP Patient
-Survey. The refresh applies them automatically from the committed
-`gpps_slim.csv` (via `apply_gpps_scores.py`, the first step of the refresh), so
-day-to-day this needs no attention.
+Survey. This is now hands-off: the `Refresh GP Patient Survey scores` workflow
+runs monthly (and on demand from the Actions tab), downloads the survey,
+regenerates `gpps_slim.csv`, and commits it if anything changed; the daily
+refresh then applies it site-wide via `apply_gpps_scores.py`. The download works
+from GitHub's runners — gp-patient.co.uk serves an incomplete TLS chain, which
+the workflow repairs by fetching the missing intermediate CA (verification stays
+on), and the download URL is built from the survey's stable yearly path.
 
-**Automatic attempt:** the `Refresh GP Patient Survey scores` workflow runs
-monthly (and on demand from the Actions tab). It downloads the new survey,
-regenerates `gpps_slim.csv`, and commits it if anything changed; the next daily
-refresh then applies it site-wide.
-
-**If that workflow goes red:** gp-patient.co.uk has historically blocked
-data-centre IPs, so the download may be refused from GitHub's runners, or the
-URL path may change year to year. Either way nothing breaks — just do the one
-step locally:
+**Fallback (only if that workflow ever goes red** — e.g. the site changes its
+URL path or is unreachable): nothing breaks, and you can regenerate the file
+locally:
 
 ```bash
 # 1. Download "Practice data (weighted)" (CSV) from https://gp-patient.co.uk/downloads
