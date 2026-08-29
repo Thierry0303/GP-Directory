@@ -4,18 +4,23 @@ name: Refresh GP Patient Survey scores
 # regenerates gpps_slim.csv, and commits it when the scores change. The daily
 # Full refresh then applies them site-wide (apply_gpps_scores.py).
 #
-# The correct download link is discovered by scraping the public downloads page,
-# so this keeps working when the survey year / URL path changes. gp-patient.co.uk
-# serves an incomplete TLS chain, so we rebuild the CA bundle with the missing
-# intermediate rather than disabling verification. If the site is ever
-# unreachable or its page layout changes, the job fails without touching
-# anything and the README documents the local fallback.
+# gp-patient.co.uk serves an incomplete TLS chain, so we rebuild the CA bundle
+# with the missing intermediate rather than disabling verification. The download
+# URL follows a stable yearly pattern; if the survey ever changes the path,
+# re-run with the csv_url input (right-click the CSV button on
+# https://gp-patient.co.uk/downloads -> Copy link). If the site is unreachable
+# the job fails without touching anything; the README documents the local
+# fallback.
 
 on:
   workflow_dispatch:
     inputs:
+      year:
+        description: "Survey year (used to build the download URL)"
+        required: false
+        default: ""
       csv_url:
-        description: "Full CSV download URL (skips auto-discovery if set)"
+        description: "Full CSV download URL (overrides the year-based pattern)"
         required: false
         default: ""
   schedule:
@@ -26,7 +31,6 @@ permissions:
 
 env:
   GPPS_HOST: gp-patient.co.uk
-  DOWNLOADS_PAGE: https://gp-patient.co.uk/downloads
 
 jobs:
   refresh-scores:
@@ -59,50 +63,22 @@ jobs:
           fi
           echo "bundle=$BUNDLE" >> "$GITHUB_OUTPUT"
 
-      - name: Discover CSV download URL
+      - name: Resolve download URL
         id: url
         run: |
           set -uo pipefail
-          UA="Mozilla/5.0 (compatible; GP-Directory-refresh/1.0)"
-          OVERRIDE="${{ github.event.inputs.csv_url }}"
-          if [ -n "$OVERRIDE" ]; then
-            echo "Using provided csv_url."
-            echo "url=$OVERRIDE" >> "$GITHUB_OUTPUT"; exit 0
-          fi
-          curl -fsSL --cacert "${{ steps.ca.outputs.bundle }}" -A "$UA" \
-            --max-time 120 "$DOWNLOADS_PAGE" -o /tmp/downloads.html
-          # Pull every FileDownload link, then pick the practice-level, weighted,
-          # CSV one (the raw per-practice data — not the Excel or region files).
-          python3 - <<'PY' > /tmp/csv_url.txt
-          import html, re, sys
-          page = open("/tmp/downloads.html", encoding="utf-8", errors="replace").read()
-          links = [html.unescape(m) for m in re.findall(r'''(?:href=["']|)((?:https?://[^"'<> ]+)?/FileDownload/Download[^"'<> ]+)''', page)]
-          def score(u):
-              lu = u.lower()
-              s = 0
-              if "practice" in lu: s += 2
-              if "practice_data" in lu or "practice-data" in lu: s += 3
-              if "weighted" in lu: s += 2
-              if lu.endswith(".csv") or "csv" in lu: s += 3
-              if "excel" in lu or lu.endswith(".xlsx"): s -= 5
-              if "region" in lu or "national" in lu or "ccg" in lu or "pcn" in lu: s -= 3
-              return s
-          cands = sorted(set(links), key=score, reverse=True)
-          for u in cands[:15]:
-              print("CAND", score(u), u, file=sys.stderr)
-          best = cands[0] if cands and score(cands[0]) > 0 else ""
-          if best and best.startswith("/"):
-              best = "https://gp-patient.co.uk" + best
-          print(best)
-          PY
-          echo "---- candidates ----"; sed -n 's/^/  /p' /tmp/downloads.html >/dev/null 2>&1 || true
-          URL="$(cat /tmp/csv_url.txt)"
+          YEAR="${{ github.event.inputs.year }}"
+          [ -z "$YEAR" ] && YEAR="$(date -u +%Y)"
+          URL="${{ github.event.inputs.csv_url }}"
           if [ -z "$URL" ]; then
-            echo "::error::Could not find the practice CSV link on $DOWNLOADS_PAGE. Re-run with a csv_url input, or refresh locally (see README)."
-            exit 1
+            REDIR="${YEAR}/survey-results/practice-results/practice-data-csv/GPPS_${YEAR}_Practice_data_(weighted)_(csv)_PUBLIC.csv"
+            # URL-encode the slashes in the fileRedirect value.
+            REDIR_ENC="${REDIR//\//%2F}"
+            URL="https://${GPPS_HOST}/FileDownload/Download?fileRedirect=${REDIR_ENC}"
           fi
-          echo "Resolved CSV URL: $URL"
-          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "year=$YEAR" >> "$GITHUB_OUTPUT"
+          echo "url=$URL"   >> "$GITHUB_OUTPUT"
+          echo "Using: $URL"
 
       - name: Download practice CSV
         run: |
@@ -114,7 +90,7 @@ jobs:
           bytes=$(wc -c < gpps_practice.csv)
           echo "Downloaded $bytes bytes"
           if [ "$bytes" -lt 1000000 ]; then
-            echo "::error::Downloaded file is too small ($bytes bytes) — not the CSV. First bytes:"; head -c 300 gpps_practice.csv || true; exit 1
+            echo "::error::Downloaded file is too small ($bytes bytes) — likely the URL path changed for ${{ steps.url.outputs.year }}. Re-run with a csv_url input, or refresh locally (see README). First bytes:"; head -c 300 gpps_practice.csv || true; exit 1
           fi
           if ! head -1 gpps_practice.csv | grep -qi "overallexp"; then
             echo "::error::CSV header has no 'overallexp' column — not the expected GPPS practice file."; exit 1
@@ -134,7 +110,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add gpps_slim.csv gps.json
-          git commit -m "Refresh GP Patient Survey scores"
+          git commit -m "Refresh GP Patient Survey scores (${{ steps.url.outputs.year }})"
           for i in 1 2 3; do
             git pull --rebase origin main && git push origin main && exit 0
             sleep 5
