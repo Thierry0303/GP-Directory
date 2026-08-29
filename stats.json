@@ -1,14 +1,14 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2477,
-  "total_records_incl_non_london": 2549,
+  "total_records": 2476,
+  "total_records_incl_non_london": 2548,
   "excluded_non_london": 72,
   "nhs_practice_count": 979,
-  "private_clinic_count": 1498,
+  "private_clinic_count": 1497,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
-  "avg_patient_score": 75.9,
+  "avg_patient_score": 76.8,
   "per_borough": {
     "Barnet": {
       "nhs": 34,
@@ -152,7 +152,7 @@
     },
     "Hounslow": {
       "nhs": 27,
-      "private": 20,
+      "private": 19,
       "dentist": 0
     },
     "Harrow": {

@@ -1,39 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://londongp.directory/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://londongp.directory/practice/barking-and-dagenham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/barnet/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/bexley/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/brent/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/bromley/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/camden/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/city-of-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/croydon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/ealing/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/enfield/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/greenwich/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/hackney/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/haringey/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/harrow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/havering/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/hillingdon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/hounslow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/islington/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/kensington-and-chelsea/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/kingston/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/lambeth/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/lewisham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/merton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/newham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/richmond/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/southwark/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/sutton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/tower-hamlets/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/waltham-forest/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/wandsworth/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/</loc><lastmod>2026-08-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://londongp.directory/about.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://londongp.directory/methodology.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://londongp.directory/sources.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://londongp.directory/corrections.html</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://londongp.directory/boroughs/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/aesthetic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/cardiology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/consultant/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/dermatology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/diagnostic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/endocrinology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/ent/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/gastroenterology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/gynaecology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/neurology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/oncology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/ophthalmology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/orthopaedics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/paediatrics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/physiotherapy/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/plastic-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/private-gp/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/psychiatry/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/respiratory/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/sexual-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/travel-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/urgent-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/urology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/vascular/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/private/weight-loss/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://londongp.directory/dentists/barking-and-dagenham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/barnet/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/bexley/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/brent/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/bromley/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/camden/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/city-of-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/croydon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/ealing/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/enfield/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/essex/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/greenwich/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/hackney/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/hammersmith-and-fulham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/haringey/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/harrow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/havering/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/hertfordshire/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/hillingdon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/hounslow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/islington/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/kensington-and-chelsea/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/kent/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/kingston-upon-thames/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/lambeth/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/lewisham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/merton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/newham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/redbridge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/richmond-upon-thames/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/southwark/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/surrey/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/sutton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/tower-hamlets/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/waltham-forest/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/wandsworth/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/dentists/westminster/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/nhs-services/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/nhs-services/nhs-community/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/nhs-services/nhs-diagnostic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/nhs-services/nhs-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/nhs-services/nhs-mental-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/nhs-services/nhs-urgent-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://londongp.directory/guides/how-to-register-with-a-london-gp/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/guides/how-to-switch-gp-in-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/guides/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/abbey-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/ashton-gardens-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/babyvue-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -52,6 +98,7 @@
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/heathway-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/hedgemans-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/highgrove-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/barking-and-dagenham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/john-smith-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/king-edwards-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barking-and-dagenham/laburnum-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -102,6 +149,7 @@
   <url><loc>https://londongp.directory/practice/barnet/health-fusion-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/hendon-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/hendon-way-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/barnet/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/inhealth-community-diagnostic-centre-golders-green/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/inhealth-mri-barnet-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/jai-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -114,7 +162,6 @@
   <url><loc>https://londongp.directory/practice/barnet/london-iryo-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/london-lifestyle-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/barnet/millway-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/millway-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/mindof/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/barnet/mulberry-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -162,6 +209,7 @@
   <url><loc>https://londongp.directory/practice/bexley/crayford-town-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bexley/erith-urgent-care-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bexley/head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/bexley/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/bexley/ingleton-avenue-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bexley/lakeside-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bexley/lyndhurst-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -202,10 +250,11 @@
   <url><loc>https://londongp.directory/practice/brent/gp-hub-brondesbury/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/hazeldene-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/hilltop-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/brent/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/brent/ith-health-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/jai-medical-centre-brent/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/brent/kenton-bridge-medical-centre-dr-golden/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/kenton-bridge-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/brent/kenton-bridge-medical-centre-dr-golden/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/kilburn-park-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/kilburn-primary-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/kings-edge-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -234,7 +283,6 @@
   <url><loc>https://londongp.directory/practice/brent/sudbury-primary-care-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/the-fryent-way-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/the-law-medical-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/brent/the-law-medical-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/the-lonsdale-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/the-stonebridge-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/the-sunflower-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -252,8 +300,8 @@
   <url><loc>https://londongp.directory/practice/brent/willesden-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/willow-tree-family-doctors/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/your-little-self/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/brent/zoomdoc-head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/brent/zoomdoc/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/brent/zoomdoc-head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/addington-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/anerley-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/anp-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -267,11 +315,10 @@
   <url><loc>https://londongp.directory/practice/bromley/bromley-urgent-care-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/chelsfield-park-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/chelsfield-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/bromley/chislehurst-neuro-rehabilitation-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/chislehurst/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/bromley/chislehurst-neuro-rehabilitation-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/corner-ways-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/crown-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/bromley/dysart-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/dysart-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/eden-park-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/elm-house-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -280,6 +327,7 @@
   <url><loc>https://londongp.directory/practice/bromley/forge-close-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/green-street-green-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/highland-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/bromley/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/integura/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/ja-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/bromley/knoll-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -369,19 +417,19 @@
   <url><loc>https://londongp.directory/practice/camden/hampstead-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/harley-street-healthcare-gray-s-inn-road/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/camden/head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/healthcare-facility/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/healthy-aging/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/holborn-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/hsl-analytics-llp/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/camden/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/camden/institute-of-sport-exercise-and-health-iseh/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/italian-doctors-medical-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/james-wigg-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/jenna-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/joey-hq/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/keats-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/camden/kings-cross-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/kings-cross/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/camden/kings-cross-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/koval-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/la-rose-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/camden/lanthorn-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -445,8 +493,8 @@
   <url><loc>https://londongp.directory/practice/city-of-london/broadgate-spine-and-joint-clinic-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/bupa-health-centre-basinghall/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/central-medical-solutions/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/city-of-london/city-and-hackney-integrated-primary-care-cic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/city/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/city-of-london/city-and-hackney-integrated-primary-care-cic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/cleveland-clinic-moorgate-outpatient-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/cosmedics-city/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/derma-revive-skin-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -460,6 +508,7 @@
   <url><loc>https://londongp.directory/practice/city-of-london/harpal-clinic-st-paul-s/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/hca-healthcare-uk-new-broad-street-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/health-management-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/city-of-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/japan-green-medical-centre-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/jk-aesthetics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/city-of-london/liverpool-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -520,6 +569,7 @@
   <url><loc>https://londongp.directory/practice/croydon/hartland-way-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/headley-drive-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/hexpress-health-support-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/croydon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/keston-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/leander-family-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/lennard-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -533,7 +583,6 @@
   <url><loc>https://londongp.directory/practice/croydon/northway-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/old-coulsdon-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/parkside-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/croydon/portland-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/portland-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/purley-gp-hub/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/croydon/queenhill-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -599,6 +648,7 @@
   <url><loc>https://londongp.directory/practice/ealing/hillcrest-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/hillview-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/image-diagnostic-technology-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/ealing/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/inhealth-community-diagnostic-centre-ealing/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/islip-manor-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/japan-green-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -641,8 +691,8 @@
   <url><loc>https://londongp.directory/practice/ealing/waterside-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/west-end-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/westseven-gp/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/ealing/window-to-the-womb-ealing/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/window-to-the-womb/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/ealing/window-to-the-womb-ealing/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/woodbridge-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/ealing/yeading-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/enfield/acorn-andrology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -669,6 +719,7 @@
   <url><loc>https://londongp.directory/practice/enfield/grovelands-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/enfield/hey-baby-4d-enfield/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/enfield/highlands-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/enfield/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/enfield/inhealth-community-diagnostic-centre-north-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/enfield/keats-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/enfield/latymer-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -721,12 +772,11 @@
   <url><loc>https://londongp.directory/practice/greenwich/greenwich-private-doctors/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/health-and-aesthetic-clinic-limited-t-a-health-and-aesthetics-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/holly-house-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/greenwich/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/manor-brook-pms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/new-eltham-and-blackfen-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/nova-aesthetic-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/plumbridge-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/greenwich/plumbridge-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/greenwich/plumstead-and-wickham-lane-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/plumstead-and-wickham-lane-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/plumstead-h-c-pms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/primecare-pms-south-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -734,7 +784,6 @@
   <url><loc>https://londongp.directory/practice/greenwich/royal-arsenal-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/st-marks-pms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/step-healthcare-services-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/greenwich/thamesmead-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/thamesmead-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/thamesmead-kidney-treatment-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/greenwich/trinity-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -761,6 +810,7 @@
   <url><loc>https://londongp.directory/practice/hackney/healstead-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hackney/healy-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hackney/homemed-healthcare-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/hackney/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/hackney/indra-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hackney/latimer-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hackney/leadale-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -822,6 +872,7 @@
   <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/hammersmith-private-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/hammersmith-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/jandm-skincare-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/lovemylife-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hammersmith-and-fulham/north-end-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -865,7 +916,6 @@
   <url><loc>https://londongp.directory/practice/haringey/bridge-house-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/bruce-grove-primary-health-care-ctr/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/charlton-house-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/haringey/charlton-house-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/cheshire-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/chhp-research/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/doctors-4-you/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -885,6 +935,7 @@
   <url><loc>https://londongp.directory/practice/haringey/highgate-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/hornsey-central-neighbourhood-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/hornsey-park-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/haringey/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/js-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/lawrence-house-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/lordship-lane-primary-care-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -913,8 +964,6 @@
   <url><loc>https://londongp.directory/practice/haringey/welbourne-med-prac-welbourne-h-c/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/west-green-ent-service/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/west-green-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/haringey/west-green-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/haringey/westbury-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/haringey/westbury-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/belmont-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/cygnet-hospital-harrow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -932,6 +981,7 @@
   <url><loc>https://londongp.directory/practice/harrow/headstone-lane-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/headstone-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/honeypot-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/harrow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/kernel-diagnostic-laboratories-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/kings-road-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/harrow/lanfranc-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -973,13 +1023,13 @@
   <url><loc>https://londongp.directory/practice/havering/cranham-village-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/evolutio-ophthalmology-clinic-victoria-road/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/haiderian-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/havering/haiderian-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/harlow-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/havering-health-lynwood-medical-centre-hub/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/heartstone-group/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/hgc-romford-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/high-street-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/imaginatal-3/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/havering/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/havering/inhealth-community-diagnostic-centre-hornchurch/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/inhealth-pathology-romford/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/kings-park-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -987,7 +1037,6 @@
   <url><loc>https://londongp.directory/practice/havering/mi-ear-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/modern-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/nuffield-health-romford-fitness-and-wellbeing-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/havering/petersfield-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/petersfield-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/pharma-aesthetics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/rainham-and-upminster-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -997,16 +1046,14 @@
   <url><loc>https://londongp.directory/practice/havering/st-edwards-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/st-george-s-country-park-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/st-george-s-health-and-wellbeing-hub/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/havering/st-george-s-health-and-wellbeing-hub/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/straight-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/suttons-avenue-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/the-greenwood-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/the-new-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/the-robins-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/the-rosewood-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/havering/the-rosewood-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/havering/the-surgery-dr-s-r-dey/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/the-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/havering/the-surgery-dr-s-r-dey/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/tic-romford/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/val-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/havering/western-road-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1030,6 +1077,7 @@
   <url><loc>https://londongp.directory/practice/hillingdon/hesa-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hillingdon/hey-baby-4d-hayes/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hillingdon/hillingdon-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/hillingdon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/hillingdon/kincora-doctors-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hillingdon/ladygate-lane-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hillingdon/london-clinicare-trading-as-kuon-healthcare/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1077,6 +1125,7 @@
   <url><loc>https://londongp.directory/practice/hounslow/hca-healthcare-uk-chiswick-outpatients/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/holly-road-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/hounslow-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/hounslow/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/islesworth-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/kingfisher-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/little-park-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1102,7 +1151,6 @@
   <url><loc>https://londongp.directory/practice/hounslow/west-middlesex-mri/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/west4gps/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/hounslow/willow-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/hounslow/your-menopause-care-with-rupa/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/amwell-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/andover-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/archway-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1122,9 +1170,8 @@
   <url><loc>https://londongp.directory/practice/islington/highbury-grange-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/holloway-surgical-centre-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/hornsey-rise-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/islington/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/islington/islington-central-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/islington/islington-central-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/islington/killick-street-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/killick-street-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/london-professional-aesthetics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/london-uk-headquarters/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1135,7 +1182,6 @@
   <url><loc>https://londongp.directory/practice/islington/partnership-primary-care-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/pure-sports-medicine-finsbury-square/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/reliable-scan-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/islington/ritchie-street-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/ritchie-street-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/skin-analytics-uk-base/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/snatch-and-glow-islington/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1158,7 +1204,6 @@
   <url><loc>https://londongp.directory/practice/islington/the-mittal-hair-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/the-northern-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/the-rise-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/islington/the-village-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/the-village-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/thriva-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/islington/vira-health-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1223,6 +1268,7 @@
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/hum2n-chelsea/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/humanpeople/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/hupe-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/kensington-and-chelsea/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/integrated-care-centre-st-charles-centre-for-health-and-well-being/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/integrated-care-centre-violet-melchett-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/kenric-li/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1240,8 +1286,8 @@
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/mallucci-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/meanwhile-garden-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/medserena-upright-mri-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/kensington-and-chelsea/montrose-london-medical-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/montrose-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/kensington-and-chelsea/montrose-london-medical-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/moore-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/mz-cl/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/no-23-skin/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1279,7 +1325,6 @@
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-exmoor-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-foreland-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-golborne-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-golborne-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-good-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-hill-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kensington-and-chelsea/the-lovely-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1312,8 +1357,8 @@
   <url><loc>https://londongp.directory/practice/kingston/heartsure/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/holmwood-corner-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/hook-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/kingston/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/inhealth-mri-kingston-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/kingston/kingston-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/kingston-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/koncept-medical-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/lambert-sports-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1339,6 +1384,7 @@
   <url><loc>https://londongp.directory/practice/kingston/the-skin-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/transcend-consulting-rooms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/kingston/window-to-the-womb/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/kingston-upon-thames/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/akerman-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/apollo-radiology-international-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/beckett-house-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1363,10 +1409,10 @@
   <url><loc>https://londongp.directory/practice/lambeth/herne-hill-road-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/hetherington-at-the-pavilion/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/hetherington-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/lambeth/hetherington-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/hey-baby-4d-clapham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/holistic-gynaecology-london-oval/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/hurley-and-riverside-practices/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/lambeth/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/inhealth-waterloo/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/knights-hill-surgery-suite-1/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/l-a-healthcare-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1390,7 +1436,6 @@
   <url><loc>https://londongp.directory/practice/lambeth/somers-place-kidney-unit/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/springfield-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/stockwell-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/lambeth/streatham-common-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/streatham-common-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/streatham-high-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lambeth/telesphorus-health-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1427,11 +1472,12 @@
   <url><loc>https://londongp.directory/practice/lewisham/holistic-gynaecology-clinic-london-hq/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/ico-health-group-chinbrook-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/ico-health-group-moorside-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/lewisham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/kingfisher-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/lee-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/lewisham/lewisham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/lewisham-dialysis-center/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/lewisham-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/lewisham/lewisham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/modality-lewisham-ml/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/new-cross-centre-hurley-group/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/lewisham/nightingale-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1469,6 +1515,7 @@
   <url><loc>https://londongp.directory/practice/merton/functional-medicine-wimbledon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/grand-drive-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/health-and-education-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/merton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/merton/lambton-road-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/merton-health-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/merton-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1483,7 +1530,6 @@
   <url><loc>https://londongp.directory/practice/merton/riverhouse-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/stratum-clinics-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/tamworth-house-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/merton/the-family-treatment-service/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/the-family-treatment-service/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/the-gp-surgery-wimbledon/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/merton/the-mitcham-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1513,10 +1559,11 @@
   <url><loc>https://londongp.directory/practice/newham/e12-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/e12-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/east-end-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/newham/essex-lodge-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/essex-lodge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/newham/essex-lodge-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/glen-road-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/greengate-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/newham/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/newham/inhealth-community-diagnostic-centre-stratford/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/lathom-road-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/newham/liberty-bridge-road-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1568,18 +1615,15 @@
   <url><loc>https://londongp.directory/practice/redbridge/forest-edge-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/fullwell-cross-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/gants-hill-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/gants-hill-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/glebelands-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/glebelands-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/goodmayes-circumcision-service/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/grove-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/harley-fitzrovia-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/head-office/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/hegy/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/ilford-lane-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/ilford-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/ilford-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/redbridge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/kenwood-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/king-george-s-eucc/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/london-circumcision-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1588,7 +1632,6 @@
   <url><loc>https://londongp.directory/practice/redbridge/medetick-uk-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/medivist/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/newbury-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/oak-tree-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/oak-tree-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/olive-health-and-travel-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/partnership-of-east-london-co-operatives-home-visiting-and-out-of-hours/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1612,7 +1655,6 @@
   <url><loc>https://londongp.directory/practice/redbridge/the-palms-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/the-scan-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/the-shrubberies-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/redbridge/the-shrubberies-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/the-vintry/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/the-willows-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/redbridge/thmg-sk-n-london-south-woodford-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1632,14 +1674,13 @@
   <url><loc>https://londongp.directory/practice/richmond/cedars-at-grace-anderson/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/cross-deep-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/essex-house-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/richmond/essex-house-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/esthe-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/evergreen-richmond-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/richmond/fast-track-cardiac-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/fast-track-cardiac-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/glebe-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/hampton-hill-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/hampton-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/richmond/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/jubilee-surgery-boohan/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/medicaoptima-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/menopause-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1668,6 +1709,7 @@
   <url><loc>https://londongp.directory/practice/richmond/vantive-education-centre-south/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/vineyard-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/richmond/woodlawn-medical-centre-kudra/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/richmond-upon-thames/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/aesthetics-by-lauren-turner/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/albany-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/albion-street-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1691,15 +1733,16 @@
   <url><loc>https://londongp.directory/practice/southwark/extended-access-clinic-bermondsey-spa-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/falmouth-road-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/forest-hill-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/southwark/hca-healthcare-uk-london-bridge-hospital-leaders-in-oncology-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/hca-healthcare-uk-london-bridge-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/southwark/hca-healthcare-uk-london-bridge-hospital-leaders-in-oncology-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/hca-healthcare-uk-tooley-street-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/hexarad-tower-bridge-road/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/hippocrates-digital-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/improving-health-limited-extended-primary-care/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/southwark/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/keats-house-consulting-rooms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/southwark/london-bridge-healthcare/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/london-bridge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/southwark/london-bridge-healthcare/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/menwell-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/neurophys-hq/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/new-mill-street-medical-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1711,7 +1754,6 @@
   <url><loc>https://londongp.directory/practice/southwark/park-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/parkside-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/passport-health-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/southwark/paxton-green-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/paxton-green-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/penrose-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/southwark/se1-medical-aesthetics-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1745,6 +1787,7 @@
   <url><loc>https://londongp.directory/practice/sutton/first-health-medical-and-skin-care-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/sutton/hackbridge-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/sutton/hey-baby-4d-sutton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/sutton/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/sutton/james-o-riordan-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/sutton/maldon-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/sutton/manor-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1785,6 +1828,7 @@
   <url><loc>https://londongp.directory/practice/tower-hamlets/harford-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/tower-hamlets/harley-grove-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/tower-hamlets/hca-healthcare-uk-upper-bank-street-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/tower-hamlets/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/tower-hamlets/island-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/tower-hamlets/jm-radiology-reporting/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/tower-hamlets/jubilee-street-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1836,7 +1880,6 @@
   <url><loc>https://londongp.directory/practice/waltham-forest/dr-mohammed-green-man-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/dr-shantir-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/e4-primary-care-network-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/waltham-forest/e4-primary-care-network-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/fortis-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/francis-road-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/gp-cts-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1847,6 +1890,7 @@
   <url><loc>https://londongp.directory/practice/waltham-forest/high-road-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/higham-hill-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/highams-lodge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/waltham-forest/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/kingshead-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/kiyani-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/waltham-forest/langthorne-sharma-family-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1910,12 +1954,13 @@
   <url><loc>https://londongp.directory/practice/wandsworth/haider-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/heathbridge-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/holybourne-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/wandsworth/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/junction-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/lavender-hill-group-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/mayfield-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/melissa-coupe-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/wandsworth/micas-mayfield-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/micas/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/wandsworth/micas-mayfield-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/nightingale-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/open-door-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/wandsworth/oyster-wharf/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1973,8 +2018,8 @@
   <url><loc>https://londongp.directory/practice/westminster/65-medical-london-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/86-harley-street-the-wimpole-street-clinic-for-women-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/96-harley-street-the-department-of-psychological-medicine-at-96/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/across-the-lifespan-75-harley-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/across-the-lifespan/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/across-the-lifespan-75-harley-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/adam-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/adhd-medics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/adhd-specialist/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -1996,8 +2041,8 @@
   <url><loc>https://londongp.directory/practice/westminster/an-medical-services-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/andreea-medical-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/aneira-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/anna-de-leo-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/anna-de-leo/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/anna-de-leo-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/apn-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/aria/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/art-clinic-by-dr-priya-verma/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2097,7 +2142,6 @@
   <url><loc>https://londongp.directory/practice/westminster/dr-todd-mitchell-consultant-psychiatrist/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/dr-toro/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/drducu-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/drducu-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/drmedispa-and-yourhairdoc/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/drshocares/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/echelon-health-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2122,9 +2166,8 @@
   <url><loc>https://londongp.directory/practice/westminster/focus-clinics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/food-allergy-immunotherapy-limited-duchess-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/fortes-hair-and-skin-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/fortius-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/fortius-clinic-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/fortius-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/fortius-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/founders-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/frontiere-medicale-europe-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/fyc-innovation-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2135,14 +2178,13 @@
   <url><loc>https://londongp.directory/practice/westminster/gogodoc/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/grand-union-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/great-chapel-street-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/great-chapel-street-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/grosvenor-gardens-healthcare/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/ground-floor-lanark-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/half-penny-steps-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/hannah-london-beauty-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-city-clinic-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/harley-health-village-69/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-health-village/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/harley-health-village-69/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-mind-care-psychiatrists/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-private-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-audiovestibular-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2152,11 +2194,10 @@
   <url><loc>https://londongp.directory/practice/westminster/harley-street-dr/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-eye-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-healthcare-96-harley-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/harley-street-hospital-coremed/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/harley-street-hospital-coremed/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-injectables/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-medical-centre-ume/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/harley-street-medical-doctors/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-medical-doctors/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-mental-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/harley-street-physicians/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2191,6 +2232,7 @@
   <url><loc>https://londongp.directory/practice/westminster/hotaki-cosmetic-dermatology/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/hsip-at-104-harley-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/imperial-college-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/infinity-eye-clinic-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/inhealth-community-diagnostic-centre-fitzrovia/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/injectual-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2203,7 +2245,6 @@
   <url><loc>https://londongp.directory/practice/westminster/khalique-medical-practice-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/kind-clinics-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/kindt-clinics-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/king-edward-vii-s-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/king-edward-vii-s-hospital/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/kings-college-health-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/kings-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2235,8 +2276,8 @@
   <url><loc>https://londongp.directory/practice/westminster/london-laboratory-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/london-lauriston-clinic-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/london-lung-laboratory-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/london-medical-aesthetic-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/london-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/london-medical-aesthetic-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/london-neurology-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/london-pms-and-menopause-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/london-private-ultrasound/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2295,8 +2336,8 @@
   <url><loc>https://londongp.directory/practice/westminster/nuriss-skincare-and-wellness-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/nuvia-health-london-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/ocl-vision/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/one-heart-clinic-marylebone/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/one-heart-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/one-heart-clinic-marylebone/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/one-welbeck-endoscopy-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/one-welbeck-skin-health-and-allergy/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/one-welbeck-surgery/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2381,8 +2422,8 @@
   <url><loc>https://londongp.directory/practice/westminster/skate-medical-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/skin-doctor-clinics/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/skinhorizon-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/soho-square-general-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/soho/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/soho-square-general-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/solice-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/sonoworld-diagnostic-services-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/south-westminster-centre-for-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2393,10 +2434,10 @@
   <url><loc>https://londongp.directory/practice/westminster/style-medica/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/systime-health-ltd/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/tawazun-health/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/tempus-belgravia/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/tempus/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/ten-harley-street-medical-consulting-rooms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/tempus-belgravia/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/ten-harley-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/ten-harley-street-medical-consulting-rooms/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-a-lounge/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-adhd-centre-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-aesthetics-doctor/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2468,7 +2509,6 @@
   <url><loc>https://londongp.directory/practice/westminster/the-re-pair-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-recovery-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-retina-clinic-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/the-retina-clinic-london/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-tyburn-private-medical-practice/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-wellington-women-s-clinic/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/the-wellness-laboratory/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -2483,11 +2523,10 @@
   <url><loc>https://londongp.directory/practice/westminster/ultrasound-diagnostic-services/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/unilabs-ltd-100a-new-cavendish-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/unilabs-ltd-cavendish-street/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://londongp.directory/practice/westminster/until/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/until-marylebone/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/until-medical/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/until-soho/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/until/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://londongp.directory/practice/westminster/until/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/vdoc/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/vesta-partners-limited/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://londongp.directory/practice/westminster/victoria-medical-centre/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
