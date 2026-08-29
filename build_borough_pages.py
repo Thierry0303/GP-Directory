@@ -84,11 +84,15 @@ def render_card(d):
     page_url = f"/practice/{bslug}/{pslug}/" if pslug and bslug else ""
     name_html = (f'<a class="card-name-link" href="{page_url}">{name}</a>'
                  if page_url else name)
+    # Omit the address line entirely when address and postcode are both blank
+    # (e.g. contact details suppressed for data protection).
+    card_addr = (f'<div class="card-addr">{addr}{", " + pc if pc else ""}</div>'
+                 if (addr or pc) else "")
     return (f'<div class="card" data-type="{rec_type}" data-specs="{",".join(specs)}">'
             f'<div class="card-top"><div class="card-name">{name_html}</div>'
             f'<span class="cqc {cc}">{cqc_label}</span></div>'
             f'<div class="card-badges">{type_badge}{spec_badges}</div>'
-            f'<div class="card-addr">{addr}{", " + pc if pc else ""}</div>'
+            f'{card_addr}'
             f'{metrics}'
             f'<div class="card-foot">{phone_html}<div class="actions">{actions}</div></div>'
             f'</div>')

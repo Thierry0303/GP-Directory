@@ -182,9 +182,12 @@ def render_private_card(p):
     page_url = _page_urls().get(p.get("cqc_id", ""), "")
     name_html = (f'<a class="card-name-link" href="{page_url}">{p["name"]}</a>'
                  if page_url else p['name'])
+    # Omit the address line when address and postcode are both blank
+    # (e.g. contact details suppressed for data protection).
+    addr_line = (f'\n  <div class="card-addr">{p.get("address","")}{", " + p["postcode"] if p.get("postcode") else ""}</div>'
+                 if (p.get('address') or p.get('postcode')) else '')
     return f"""<div class="card" data-borough="{borough}" data-type="private">
-  <div class="card-name">{name_html}</div>
-  <div class="card-addr">{p.get('address','')}{', ' + p['postcode'] if p.get('postcode') else ''}</div>
+  <div class="card-name">{name_html}</div>{addr_line}
   <div class="card-tags">
     <span class="tag private">Private</span>
     {borough_tag}{spec_tags}{badge}
@@ -207,9 +210,10 @@ def render_nhs_card(g):
         actions.append(f'<a class="btn btn-nhs" href="{page_url}">View</a>')
     name_html = (f'<a class="card-name-link" href="{page_url}">{g.get("n","")}</a>'
                  if page_url else g.get('n',''))
+    addr_line = (f'\n  <div class="card-addr">{g.get("a","")}{", " + g["p"] if g.get("p") else ""}</div>'
+                 if (g.get('a') or g.get('p')) else '')
     return f"""<div class="card" data-borough="{borough}" data-type="nhs">
-  <div class="card-name">{name_html}</div>
-  <div class="card-addr">{g.get('a','')}{', ' + g['p'] if g.get('p') else ''}</div>
+  <div class="card-name">{name_html}</div>{addr_line}
   <div class="card-tags">
     <span class="tag nhs">NHS</span>
     {f'<span class="tag borough">{borough}</span>' if borough else ''}
