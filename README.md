@@ -87,6 +87,22 @@ Full rebuild: ODS + GPPS + workforce + CQC + list sizes. Recomputes every derive
 
 Both workflows are public on the [Actions tab](https://github.com/Thierry0303/GP-Directory/actions). If a source is unavailable on refresh day, the previous values are retained and the "data last verified" stamp on the page shows when each metric was last refreshed.
 
+### Updating GP Patient Survey scores (once a year)
+
+Practice satisfaction and contact-ease scores come from the annual GP Patient
+Survey. The refresh applies them automatically from the committed
+`gpps_slim.csv` (via `apply_gpps_scores.py`, the first step of the refresh), so
+day-to-day this needs no attention. When Ipsos publishes a new survey (annually),
+regenerate that file — the survey site blocks data-centre IPs, so this one step
+is run locally, not in CI:
+
+```bash
+# 1. Download "Practice data (weighted)" (CSV) from https://gp-patient.co.uk/downloads
+# 2. Shrink the ~97 MB file to the ~130 KB gpps_slim.csv:
+python3 extract_gpps_scores.py "GPPS_20XX_Practice_data_(weighted)_(csv)_PUBLIC.csv"
+# 3. Commit the regenerated gpps_slim.csv. The next refresh applies it site-wide.
+```
+
 ---
 
 ## Running locally

@@ -30,6 +30,13 @@ jobs:
       # before private clinics even exist, so any counts it writes are
       # always wrong. index.html is now only written at the very end,
       # by regenerate_index_from_stats.py.
+      # ---- 1a. Apply GP Patient Survey scores into gps.json BEFORE the NHS
+      #          refresh reads it, so satisfaction / contact-ease figures are
+      #          carried into every practice. Source of truth is the committed
+      #          gpps_slim.csv (regenerated locally once a year — the survey
+      #          site blocks CI IPs; see apply_gpps_scores.py). ----
+      - name: Apply GP Patient Survey scores
+        run: python apply_gpps_scores.py
       - name: NHS refresh
         run: python refresh_nhs_data.py
       - name: Strip non-GP NHS records
