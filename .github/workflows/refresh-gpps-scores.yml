@@ -51,10 +51,41 @@ jobs:
           echo "url=$URL"   >> "$GITHUB_OUTPUT"
           echo "Using: $URL"
 
+      - name: Build CA bundle with missing intermediate
+        id: ca
+        run: |
+          set -uo pipefail
+          URL="${{ steps.url.outputs.url }}"
+          HOST=$(printf '%s' "$URL" | sed -E 's#^https?://([^/]+)/.*#\1#')
+          BUNDLE=/tmp/gpps_cabundle.pem
+          cp /etc/ssl/certs/ca-certificates.crt "$BUNDLE"
+          # gp-patient.co.uk serves an incomplete chain (no intermediate). We do
+          # NOT disable verification; instead we fetch the issuer named in the
+          # leaf's Authority Information Access extension and append it, so the
+          # chain still validates to a trusted root.
+          LEAF=$(openssl s_client -connect "$HOST:443" -servername "$HOST" </dev/null 2>/dev/null | openssl x509 2>/dev/null || true)
+          AIA=$(printf '%s' "$LEAF" | openssl x509 -noout -text 2>/dev/null \
+                | grep -o 'CA Issuers - URI:http[^ ]*' | sed 's/^.*URI://' | head -1)
+          if [ -n "$AIA" ]; then
+            echo "Fetching intermediate from: $AIA"
+            curl -fsSL --max-time 60 "$AIA" -o /tmp/inter.raw || true
+            if openssl x509 -inform DER -in /tmp/inter.raw -out /tmp/inter.pem 2>/dev/null \
+               || openssl x509 -inform PEM -in /tmp/inter.raw -out /tmp/inter.pem 2>/dev/null; then
+              cat /tmp/inter.pem >> "$BUNDLE"
+              echo "Intermediate appended to CA bundle."
+            else
+              echo "::warning::Could not parse fetched intermediate; proceeding with system bundle."
+            fi
+          else
+            echo "::warning::No CA Issuers URI found in leaf certificate; proceeding with system bundle."
+          fi
+          echo "bundle=$BUNDLE" >> "$GITHUB_OUTPUT"
+
       - name: Download practice CSV
         run: |
           set -o pipefail
           curl --fail --location --retry 3 --retry-delay 10 --max-time 900 \
+            --cacert "${{ steps.ca.outputs.bundle }}" \
             -A "Mozilla/5.0 (compatible; GP-Directory-refresh/1.0)" \
             -o gpps_practice.csv \
             "${{ steps.url.outputs.url }}"
