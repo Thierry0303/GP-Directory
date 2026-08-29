@@ -1,15 +1,16 @@
 name: Refresh GP Patient Survey scores
 
-# Attempts to download the annual GP Patient Survey "Practice data (weighted)"
-# CSV, regenerate gpps_slim.csv, and commit it. The daily Full refresh then
-# applies the new scores site-wide (via apply_gpps_scores.py).
+# Downloads the annual GP Patient Survey "Practice data (weighted)" CSV,
+# regenerates gpps_slim.csv, and commits it when the scores change. The daily
+# Full refresh then applies them site-wide (apply_gpps_scores.py).
 #
-# IMPORTANT: gp-patient.co.uk has historically blocked data-centre IPs. If it
-# blocks GitHub's runners the download step fails and this workflow goes red —
-# nothing else is touched, and the committed gpps_slim.csv stays valid. In that
-# case fall back to the local step documented in the README. The survey is
-# published once a year (usually summer), so this runs monthly to catch it and
-# is a no-op whenever the data has not changed.
+# gp-patient.co.uk serves an incomplete TLS chain, so we rebuild the CA bundle
+# with the missing intermediate rather than disabling verification. The download
+# URL follows a stable yearly pattern; if the survey ever changes the path,
+# re-run with the csv_url input (right-click the CSV button on
+# https://gp-patient.co.uk/downloads -> Copy link). If the site is unreachable
+# the job fails without touching anything; the README documents the local
+# fallback.
 
 on:
   workflow_dispatch:
@@ -19,7 +20,7 @@ on:
         required: false
         default: ""
       csv_url:
-        description: "Full CSV download URL (overrides the year-based guess if the path has changed)"
+        description: "Full CSV download URL (overrides the year-based pattern)"
         required: false
         default: ""
   schedule:
@@ -27,6 +28,9 @@ on:
 
 permissions:
   contents: write
+
+env:
+  GPPS_HOST: gp-patient.co.uk
 
 jobs:
   refresh-scores:
@@ -38,14 +42,39 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Build CA bundle with missing intermediate
+        id: ca
+        run: |
+          set -uo pipefail
+          BUNDLE=/tmp/gpps_cabundle.pem
+          cp /etc/ssl/certs/ca-certificates.crt "$BUNDLE"
+          # The server omits the intermediate CA; fetch the issuer named in the
+          # leaf certificate's AIA extension and append it (verification stays on).
+          LEAF=$(openssl s_client -connect "$GPPS_HOST:443" -servername "$GPPS_HOST" </dev/null 2>/dev/null | openssl x509 2>/dev/null || true)
+          AIA=$(printf '%s' "$LEAF" | openssl x509 -noout -text 2>/dev/null \
+                | grep -o 'CA Issuers - URI:http[^ ]*' | sed 's/^.*URI://' | head -1)
+          if [ -n "$AIA" ]; then
+            echo "Fetching intermediate: $AIA"
+            curl -fsSL --max-time 60 "$AIA" -o /tmp/inter.raw || true
+            if openssl x509 -inform DER -in /tmp/inter.raw -out /tmp/inter.pem 2>/dev/null \
+               || openssl x509 -inform PEM -in /tmp/inter.raw -out /tmp/inter.pem 2>/dev/null; then
+              cat /tmp/inter.pem >> "$BUNDLE"; echo "Intermediate appended."
+            fi
+          fi
+          echo "bundle=$BUNDLE" >> "$GITHUB_OUTPUT"
+
       - name: Resolve download URL
         id: url
         run: |
+          set -uo pipefail
           YEAR="${{ github.event.inputs.year }}"
           [ -z "$YEAR" ] && YEAR="$(date -u +%Y)"
           URL="${{ github.event.inputs.csv_url }}"
           if [ -z "$URL" ]; then
-            URL="https://gp-patient.co.uk/FileDownload/Download?fileRedirect=${YEAR}%2Fsurvey-results%2Fpractice-results%2Fpractice-results-csv%2FGPPS_${YEAR}_Practice_data_(weighted)_(csv)_PUBLIC.csv"
+            REDIR="${YEAR}/survey-results/practice-results/practice-data-csv/GPPS_${YEAR}_Practice_data_(weighted)_(csv)_PUBLIC.csv"
+            # URL-encode the slashes in the fileRedirect value.
+            REDIR_ENC="${REDIR//\//%2F}"
+            URL="https://${GPPS_HOST}/FileDownload/Download?fileRedirect=${REDIR_ENC}"
           fi
           echo "year=$YEAR" >> "$GITHUB_OUTPUT"
           echo "url=$URL"   >> "$GITHUB_OUTPUT"
@@ -55,21 +84,16 @@ jobs:
         run: |
           set -o pipefail
           curl --fail --location --retry 3 --retry-delay 10 --max-time 900 \
+            --cacert "${{ steps.ca.outputs.bundle }}" \
             -A "Mozilla/5.0 (compatible; GP-Directory-refresh/1.0)" \
-            -o gpps_practice.csv \
-            "${{ steps.url.outputs.url }}"
-          # Guard against an HTML error page served with 200: require a real,
-          # sizeable CSV whose header carries a GPPS column.
+            -o gpps_practice.csv "${{ steps.url.outputs.url }}"
           bytes=$(wc -c < gpps_practice.csv)
           echo "Downloaded $bytes bytes"
           if [ "$bytes" -lt 1000000 ]; then
-            echo "::error::Downloaded file is too small ($bytes bytes) — likely blocked or the URL path changed for ${{ steps.url.outputs.year }}. Re-run with a csv_url input, or refresh locally (see README)."
-            head -c 500 gpps_practice.csv || true
-            exit 1
+            echo "::error::Downloaded file is too small ($bytes bytes) — likely the URL path changed for ${{ steps.url.outputs.year }}. Re-run with a csv_url input, or refresh locally (see README). First bytes:"; head -c 300 gpps_practice.csv || true; exit 1
           fi
           if ! head -1 gpps_practice.csv | grep -qi "overallexp"; then
-            echo "::error::CSV header has no 'overallexp' column — not the expected GPPS practice file."
-            exit 1
+            echo "::error::CSV header has no 'overallexp' column — not the expected GPPS practice file."; exit 1
           fi
 
       - name: Regenerate gpps_slim.csv
@@ -81,8 +105,7 @@ jobs:
         run: |
           python3 apply_gpps_scores.py
           if git diff --quiet -- gpps_slim.csv gps.json; then
-            echo "No score changes — nothing to commit."
-            exit 0
+            echo "No score changes — nothing to commit."; exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
