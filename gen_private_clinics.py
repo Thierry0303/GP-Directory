@@ -31,6 +31,17 @@ try:
 except Exception:
     DEAD_LINKS = set()
 
+# CQC location IDs whose contact details must be suppressed for
+# data-protection removal requests. Address, postcode, phone and
+# geo-coordinates are blanked at generation time (see main()), so a full
+# refresh from the CQC cache can never restore them. The clinic name, CQC
+# link and website are kept. Maintained in contact_suppressions.json.
+try:
+    _sup = json.loads((ROOT / "contact_suppressions.json").read_text())
+    CONTACT_SUPPRESSED = set(_sup.get("location_ids", []))
+except Exception:
+    CONTACT_SUPPRESSED = set()
+
 FEES = ROOT / "private_fees.json"
 
 # NHS GP practice ODS code pattern: letter (not V/X) + 5 digits.
@@ -340,6 +351,21 @@ def main():
     before = len(output)
     output = deduplicate(output)
     print(f"Deduplicated: {before:,} -> {len(output):,} ({before-len(output)} duplicates removed)")
+
+    # Data-protection: blank contact details for suppressed location IDs.
+    # Applied AFTER deduplicate() because dedup keys on postcode — blanking
+    # it earlier would drop the record entirely instead of just its contacts.
+    if CONTACT_SUPPRESSED:
+        n = 0
+        for r in output:
+            if r.get("cqc_id") in CONTACT_SUPPRESSED:
+                r["address"] = ""
+                r["postcode"] = ""
+                r["phone"] = ""
+                r["lat"] = None
+                r["lon"] = None
+                n += 1
+        print(f"Suppressed contact details for {n} location(s) (data protection)")
     OUT.write_text(json.dumps(output, indent=2))
     print(f"\nWrote {len(output):,} private clinics to {OUT.name}")
     print(f"\nBy specialty:")
