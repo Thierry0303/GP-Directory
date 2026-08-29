@@ -112,7 +112,11 @@ def render_borough_page(borough, records, all_boroughs, today):
     other_boroughs = sorted(b for b in all_boroughs if b != borough)
     borough_links = " ".join(f'<a href="/practice/{slugify(b)}/">{b}</a>' for b in other_boroughs[:8])
     nhs_with_score = [r for r in nhs if r.get("s")]
-    avg_nhs_score = (sum(r.get("s") for r in nhs_with_score) / max(1, len(nhs_with_score)))
+    avg_nhs_score = (sum(r.get("s") for r in nhs_with_score) / len(nhs_with_score)
+                     if nhs_with_score else None)
+    # Show a dash rather than a misleading "0.0%" when no NHS practice in this
+    # borough has a GP Patient Survey score yet.
+    avg_nhs_display = f'{avg_nhs_score:.1f}%' if avg_nhs_score is not None else '—'
     good_or_outstanding = sum(1 for r in records if (r.get("cqc") or "") in ("Good", "Outstanding"))
     json_ld = json.dumps({
         "@context": "https://schema.org",
@@ -226,7 +230,7 @@ def render_borough_page(borough, records, all_boroughs, today):
         f'<div class="stat"><strong>{len(nhs)}</strong><span>NHS practices</span></div>'
         f'<div class="stat"><strong>{len(priv)}</strong><span>Private clinics</span></div>'
         f'<div class="stat"><strong>{good_or_outstanding}</strong><span>Good or Outstanding</span></div>'
-        f'<div class="stat"><strong>{avg_nhs_score:.1f}%</strong><span>Avg NHS patient score</span></div>'
+        f'<div class="stat"><strong>{avg_nhs_display}</strong><span>Avg NHS patient score</span></div>'
         '</div></div></div>\n'
         '</header>\n'
         '<div class="type-zone"><div class="type-inner">'
