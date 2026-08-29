@@ -1,0 +1,95 @@
+name: Refresh GP Patient Survey scores
+
+# Attempts to download the annual GP Patient Survey "Practice data (weighted)"
+# CSV, regenerate gpps_slim.csv, and commit it. The daily Full refresh then
+# applies the new scores site-wide (via apply_gpps_scores.py).
+#
+# IMPORTANT: gp-patient.co.uk has historically blocked data-centre IPs. If it
+# blocks GitHub's runners the download step fails and this workflow goes red —
+# nothing else is touched, and the committed gpps_slim.csv stays valid. In that
+# case fall back to the local step documented in the README. The survey is
+# published once a year (usually summer), so this runs monthly to catch it and
+# is a no-op whenever the data has not changed.
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Survey year (used to build the download URL)"
+        required: false
+        default: ""
+      csv_url:
+        description: "Full CSV download URL (overrides the year-based guess if the path has changed)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "0 6 1 * *"   # 1st of each month, 06:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-scores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Resolve download URL
+        id: url
+        run: |
+          YEAR="${{ github.event.inputs.year }}"
+          [ -z "$YEAR" ] && YEAR="$(date -u +%Y)"
+          URL="${{ github.event.inputs.csv_url }}"
+          if [ -z "$URL" ]; then
+            URL="https://gp-patient.co.uk/FileDownload/Download?fileRedirect=${YEAR}%2Fsurvey-results%2Fpractice-results%2Fpractice-results-csv%2FGPPS_${YEAR}_Practice_data_(weighted)_(csv)_PUBLIC.csv"
+          fi
+          echo "year=$YEAR" >> "$GITHUB_OUTPUT"
+          echo "url=$URL"   >> "$GITHUB_OUTPUT"
+          echo "Using: $URL"
+
+      - name: Download practice CSV
+        run: |
+          set -o pipefail
+          curl --fail --location --retry 3 --retry-delay 10 --max-time 900 \
+            -A "Mozilla/5.0 (compatible; GP-Directory-refresh/1.0)" \
+            -o gpps_practice.csv \
+            "${{ steps.url.outputs.url }}"
+          # Guard against an HTML error page served with 200: require a real,
+          # sizeable CSV whose header carries a GPPS column.
+          bytes=$(wc -c < gpps_practice.csv)
+          echo "Downloaded $bytes bytes"
+          if [ "$bytes" -lt 1000000 ]; then
+            echo "::error::Downloaded file is too small ($bytes bytes) — likely blocked or the URL path changed for ${{ steps.url.outputs.year }}. Re-run with a csv_url input, or refresh locally (see README)."
+            head -c 500 gpps_practice.csv || true
+            exit 1
+          fi
+          if ! head -1 gpps_practice.csv | grep -qi "overallexp"; then
+            echo "::error::CSV header has no 'overallexp' column — not the expected GPPS practice file."
+            exit 1
+          fi
+
+      - name: Regenerate gpps_slim.csv
+        run: |
+          python3 extract_gpps_scores.py gpps_practice.csv
+          rm -f gpps_practice.csv          # never commit the ~97 MB source
+
+      - name: Apply scores and commit if changed
+        run: |
+          python3 apply_gpps_scores.py
+          if git diff --quiet -- gpps_slim.csv gps.json; then
+            echo "No score changes — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gpps_slim.csv gps.json
+          git commit -m "Refresh GP Patient Survey scores (${{ steps.url.outputs.year }})"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep 5
+          done
+          exit 1

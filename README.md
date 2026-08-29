@@ -92,9 +92,17 @@ Both workflows are public on the [Actions tab](https://github.com/Thierry0303/GP
 Practice satisfaction and contact-ease scores come from the annual GP Patient
 Survey. The refresh applies them automatically from the committed
 `gpps_slim.csv` (via `apply_gpps_scores.py`, the first step of the refresh), so
-day-to-day this needs no attention. When Ipsos publishes a new survey (annually),
-regenerate that file — the survey site blocks data-centre IPs, so this one step
-is run locally, not in CI:
+day-to-day this needs no attention.
+
+**Automatic attempt:** the `Refresh GP Patient Survey scores` workflow runs
+monthly (and on demand from the Actions tab). It downloads the new survey,
+regenerates `gpps_slim.csv`, and commits it if anything changed; the next daily
+refresh then applies it site-wide.
+
+**If that workflow goes red:** gp-patient.co.uk has historically blocked
+data-centre IPs, so the download may be refused from GitHub's runners, or the
+URL path may change year to year. Either way nothing breaks — just do the one
+step locally:
 
 ```bash
 # 1. Download "Practice data (weighted)" (CSV) from https://gp-patient.co.uk/downloads
@@ -102,6 +110,9 @@ is run locally, not in CI:
 python3 extract_gpps_scores.py "GPPS_20XX_Practice_data_(weighted)_(csv)_PUBLIC.csv"
 # 3. Commit the regenerated gpps_slim.csv. The next refresh applies it site-wide.
 ```
+
+(If only the download URL changed, you can instead re-run the workflow from the
+Actions tab and paste the correct link into its `csv_url` input.)
 
 ---
 
