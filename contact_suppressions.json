@@ -1,0 +1,6 @@
+{
+  "_comment": "Data-protection contact suppressions. For each CQC location ID listed here, the address, postcode, phone and geo-coordinates (lat/lon) are blanked at generation time in gen_private_clinics.py, so they propagate blank through private_clinics.json -> merged.json/data.json -> every generated page and a daily full refresh cannot restore them. Add an ID here to honour a removal request; the clinic name, CQC link and website are preserved.",
+  "location_ids": [
+    "1-28893211146"
+  ]
+}
