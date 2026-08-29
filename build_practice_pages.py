@@ -179,7 +179,7 @@ def render_aside(practice, neighbours):
     addr = html.escape(", ".join(b for b in (practice.get("a", ""), practice.get("p", "")) if b))
     pcn = html.escape(str(practice.get("pcn", "")))
     ph = practice.get("ph", "")
-    addr_block = f'<strong>Address</strong>{addr}'
+    addr_block = f'<strong>Address</strong>{addr}' if addr else ''
     if ph:
         addr_block += f'<br><br><strong>Phone</strong><a href="tel:{normalise_phone(ph)}" style="color:#003087">{html.escape(ph)}</a>'
     if pcn and not is_priv(practice):
@@ -192,7 +192,8 @@ def render_aside(practice, neighbours):
             f'<li><a href="/practice/{slug(n["ar"])}/{slug(n["n"])}/">{html.escape(n["n"])}</a></li>'
             for n in neighbours
         ) + "</ul>"
-    return f'<aside class="aside"><div class="addr-block">{addr_block}</div>{nbs}</aside>'
+    addr_html = f'<div class="addr-block">{addr_block}</div>' if addr_block else ''
+    return f'<aside class="aside">{addr_html}{nbs}</aside>'
 
 def render_metrics(practice):
     blocks = []
@@ -404,6 +405,15 @@ def render_page(practice, neighbours):
     ph = practice.get("ph", "")
     s = practice.get("s")
 
+    # Hero meta line — omit entirely when there is neither address nor phone
+    # (e.g. contact details suppressed for data protection).
+    _hero_bits = ""
+    if addr_short:
+        _hero_bits += f"<span>{addr_short_h}</span>"
+    if ph:
+        _hero_bits += f"<span><a href='tel:{normalise_phone(ph)}'>{html.escape(ph)}</a></span>"
+    hero_meta_html = f'<div class="hero-meta">{_hero_bits}</div>' if _hero_bits else ""
+
     priv = is_priv(practice)
     if priv:
         labels = spec_labels(practice)
@@ -435,9 +445,13 @@ def render_page(practice, neighbours):
         "@id": canonical,
         "name": name,
         "url": canonical,
-        "address": normalise_for_schema(practice.get("a", ""), practice.get("p", "")),
         "areaServed": {"@type": "AdministrativeArea", "name": borough},
     }
+    # Only advertise a postal address when we actually have one — records with
+    # suppressed contact details (data protection) must not emit an empty
+    # PostalAddress.
+    if practice.get("a") or practice.get("p"):
+        ld["address"] = normalise_for_schema(practice.get("a", ""), practice.get("p", ""))
     if priv:
         ld["@type"] = "MedicalClinic"
         specs = [SCHEMA_SPECIALTY[s] for s in practice.get("specs", []) if s in SCHEMA_SPECIALTY]
@@ -524,10 +538,7 @@ def render_page(practice, neighbours):
     <div class="eyebrow">{eyebrow_kind} &middot; <a href="/practice/{bslug}/">More in {borough_h}</a></div>
     <h1>{name_h}</h1>
     {cqc_html}
-    <div class="hero-meta">
-      {"<span>" + addr_short_h + "</span>" if addr_short else ""}
-      {"<span><a href='tel:" + normalise_phone(ph) + "'>" + html.escape(ph) + "</a></span>" if ph else ""}
-    </div>
+    {hero_meta_html}
   </div>
 </section>
 
