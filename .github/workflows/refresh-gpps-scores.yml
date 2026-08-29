@@ -1,25 +1,21 @@
 name: Refresh GP Patient Survey scores
 
-# Attempts to download the annual GP Patient Survey "Practice data (weighted)"
-# CSV, regenerate gpps_slim.csv, and commit it. The daily Full refresh then
-# applies the new scores site-wide (via apply_gpps_scores.py).
+# Downloads the annual GP Patient Survey "Practice data (weighted)" CSV,
+# regenerates gpps_slim.csv, and commits it when the scores change. The daily
+# Full refresh then applies them site-wide (apply_gpps_scores.py).
 #
-# IMPORTANT: gp-patient.co.uk has historically blocked data-centre IPs. If it
-# blocks GitHub's runners the download step fails and this workflow goes red —
-# nothing else is touched, and the committed gpps_slim.csv stays valid. In that
-# case fall back to the local step documented in the README. The survey is
-# published once a year (usually summer), so this runs monthly to catch it and
-# is a no-op whenever the data has not changed.
+# The correct download link is discovered by scraping the public downloads page,
+# so this keeps working when the survey year / URL path changes. gp-patient.co.uk
+# serves an incomplete TLS chain, so we rebuild the CA bundle with the missing
+# intermediate rather than disabling verification. If the site is ever
+# unreachable or its page layout changes, the job fails without touching
+# anything and the README documents the local fallback.
 
 on:
   workflow_dispatch:
     inputs:
-      year:
-        description: "Survey year (used to build the download URL)"
-        required: false
-        default: ""
       csv_url:
-        description: "Full CSV download URL (overrides the year-based guess if the path has changed)"
+        description: "Full CSV download URL (skips auto-discovery if set)"
         required: false
         default: ""
   schedule:
@@ -27,6 +23,10 @@ on:
 
 permissions:
   contents: write
+
+env:
+  GPPS_HOST: gp-patient.co.uk
+  DOWNLOADS_PAGE: https://gp-patient.co.uk/downloads
 
 jobs:
   refresh-scores:
@@ -38,48 +38,71 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Resolve download URL
-        id: url
-        run: |
-          YEAR="${{ github.event.inputs.year }}"
-          [ -z "$YEAR" ] && YEAR="$(date -u +%Y)"
-          URL="${{ github.event.inputs.csv_url }}"
-          if [ -z "$URL" ]; then
-            URL="https://gp-patient.co.uk/FileDownload/Download?fileRedirect=${YEAR}%2Fsurvey-results%2Fpractice-results%2Fpractice-results-csv%2FGPPS_${YEAR}_Practice_data_(weighted)_(csv)_PUBLIC.csv"
-          fi
-          echo "year=$YEAR" >> "$GITHUB_OUTPUT"
-          echo "url=$URL"   >> "$GITHUB_OUTPUT"
-          echo "Using: $URL"
-
       - name: Build CA bundle with missing intermediate
         id: ca
         run: |
           set -uo pipefail
-          URL="${{ steps.url.outputs.url }}"
-          HOST=$(printf '%s' "$URL" | sed -E 's#^https?://([^/]+)/.*#\1#')
           BUNDLE=/tmp/gpps_cabundle.pem
           cp /etc/ssl/certs/ca-certificates.crt "$BUNDLE"
-          # gp-patient.co.uk serves an incomplete chain (no intermediate). We do
-          # NOT disable verification; instead we fetch the issuer named in the
-          # leaf's Authority Information Access extension and append it, so the
-          # chain still validates to a trusted root.
-          LEAF=$(openssl s_client -connect "$HOST:443" -servername "$HOST" </dev/null 2>/dev/null | openssl x509 2>/dev/null || true)
+          # The server omits the intermediate CA; fetch the issuer named in the
+          # leaf certificate's AIA extension and append it (verification stays on).
+          LEAF=$(openssl s_client -connect "$GPPS_HOST:443" -servername "$GPPS_HOST" </dev/null 2>/dev/null | openssl x509 2>/dev/null || true)
           AIA=$(printf '%s' "$LEAF" | openssl x509 -noout -text 2>/dev/null \
                 | grep -o 'CA Issuers - URI:http[^ ]*' | sed 's/^.*URI://' | head -1)
           if [ -n "$AIA" ]; then
-            echo "Fetching intermediate from: $AIA"
+            echo "Fetching intermediate: $AIA"
             curl -fsSL --max-time 60 "$AIA" -o /tmp/inter.raw || true
             if openssl x509 -inform DER -in /tmp/inter.raw -out /tmp/inter.pem 2>/dev/null \
                || openssl x509 -inform PEM -in /tmp/inter.raw -out /tmp/inter.pem 2>/dev/null; then
-              cat /tmp/inter.pem >> "$BUNDLE"
-              echo "Intermediate appended to CA bundle."
-            else
-              echo "::warning::Could not parse fetched intermediate; proceeding with system bundle."
+              cat /tmp/inter.pem >> "$BUNDLE"; echo "Intermediate appended."
             fi
-          else
-            echo "::warning::No CA Issuers URI found in leaf certificate; proceeding with system bundle."
           fi
           echo "bundle=$BUNDLE" >> "$GITHUB_OUTPUT"
+
+      - name: Discover CSV download URL
+        id: url
+        run: |
+          set -uo pipefail
+          UA="Mozilla/5.0 (compatible; GP-Directory-refresh/1.0)"
+          OVERRIDE="${{ github.event.inputs.csv_url }}"
+          if [ -n "$OVERRIDE" ]; then
+            echo "Using provided csv_url."
+            echo "url=$OVERRIDE" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          curl -fsSL --cacert "${{ steps.ca.outputs.bundle }}" -A "$UA" \
+            --max-time 120 "$DOWNLOADS_PAGE" -o /tmp/downloads.html
+          # Pull every FileDownload link, then pick the practice-level, weighted,
+          # CSV one (the raw per-practice data — not the Excel or region files).
+          python3 - <<'PY' > /tmp/csv_url.txt
+          import html, re, sys
+          page = open("/tmp/downloads.html", encoding="utf-8", errors="replace").read()
+          links = [html.unescape(m) for m in re.findall(r'''(?:href=["']|)((?:https?://[^"'<> ]+)?/FileDownload/Download[^"'<> ]+)''', page)]
+          def score(u):
+              lu = u.lower()
+              s = 0
+              if "practice" in lu: s += 2
+              if "practice_data" in lu or "practice-data" in lu: s += 3
+              if "weighted" in lu: s += 2
+              if lu.endswith(".csv") or "csv" in lu: s += 3
+              if "excel" in lu or lu.endswith(".xlsx"): s -= 5
+              if "region" in lu or "national" in lu or "ccg" in lu or "pcn" in lu: s -= 3
+              return s
+          cands = sorted(set(links), key=score, reverse=True)
+          for u in cands[:15]:
+              print("CAND", score(u), u, file=sys.stderr)
+          best = cands[0] if cands and score(cands[0]) > 0 else ""
+          if best and best.startswith("/"):
+              best = "https://gp-patient.co.uk" + best
+          print(best)
+          PY
+          echo "---- candidates ----"; sed -n 's/^/  /p' /tmp/downloads.html >/dev/null 2>&1 || true
+          URL="$(cat /tmp/csv_url.txt)"
+          if [ -z "$URL" ]; then
+            echo "::error::Could not find the practice CSV link on $DOWNLOADS_PAGE. Re-run with a csv_url input, or refresh locally (see README)."
+            exit 1
+          fi
+          echo "Resolved CSV URL: $URL"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
 
       - name: Download practice CSV
         run: |
@@ -87,20 +110,14 @@ jobs:
           curl --fail --location --retry 3 --retry-delay 10 --max-time 900 \
             --cacert "${{ steps.ca.outputs.bundle }}" \
             -A "Mozilla/5.0 (compatible; GP-Directory-refresh/1.0)" \
-            -o gpps_practice.csv \
-            "${{ steps.url.outputs.url }}"
-          # Guard against an HTML error page served with 200: require a real,
-          # sizeable CSV whose header carries a GPPS column.
+            -o gpps_practice.csv "${{ steps.url.outputs.url }}"
           bytes=$(wc -c < gpps_practice.csv)
           echo "Downloaded $bytes bytes"
           if [ "$bytes" -lt 1000000 ]; then
-            echo "::error::Downloaded file is too small ($bytes bytes) — likely blocked or the URL path changed for ${{ steps.url.outputs.year }}. Re-run with a csv_url input, or refresh locally (see README)."
-            head -c 500 gpps_practice.csv || true
-            exit 1
+            echo "::error::Downloaded file is too small ($bytes bytes) — not the CSV. First bytes:"; head -c 300 gpps_practice.csv || true; exit 1
           fi
           if ! head -1 gpps_practice.csv | grep -qi "overallexp"; then
-            echo "::error::CSV header has no 'overallexp' column — not the expected GPPS practice file."
-            exit 1
+            echo "::error::CSV header has no 'overallexp' column — not the expected GPPS practice file."; exit 1
           fi
 
       - name: Regenerate gpps_slim.csv
@@ -112,13 +129,12 @@ jobs:
         run: |
           python3 apply_gpps_scores.py
           if git diff --quiet -- gpps_slim.csv gps.json; then
-            echo "No score changes — nothing to commit."
-            exit 0
+            echo "No score changes — nothing to commit."; exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add gpps_slim.csv gps.json
-          git commit -m "Refresh GP Patient Survey scores (${{ steps.url.outputs.year }})"
+          git commit -m "Refresh GP Patient Survey scores"
           for i in 1 2 3; do
             git pull --rebase origin main && git push origin main && exit 0
             sleep 5
