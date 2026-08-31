@@ -29,17 +29,18 @@ CATEGORIES = [
 CSS = """*{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#1a1a1a;font-size:16px;line-height:1.6}
 a{color:#003087;text-decoration:none}
-.hdr{padding:22px 24px;border-bottom:1px solid #e5e5e3;background:#fff}
-.hdr-in{max-width:980px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.brand a{font-weight:700;color:#003087;font-size:1.05rem}
-.nav{display:flex;gap:18px;font-size:.95rem}
-.nav a{color:#555}
-.nav a:hover,.nav a.active{color:#003087;font-weight:600}
+.site-nav{background:#003087;padding:12px 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.site-nav a{color:rgba(255,255,255,.8);font-size:.85rem}
+.site-nav a:hover,.site-nav a.active{color:#fff}
+.site-nav .brand{font-family:Georgia,serif;font-size:1.05rem;font-weight:700;color:#fff;margin-right:14px}
+.site-nav .brand em{color:#B5D4F4;font-style:italic;font-weight:400}
+.page-header{background:#003087;color:#fff;padding:32px 24px;border-bottom:4px solid #0072CE}
+.page-header .ph-in{max-width:980px;margin:0 auto}
 .wrap{max-width:980px;margin:0 auto;padding:36px 24px}
-.crumbs{font-size:13px;color:#666;margin-bottom:14px}
-.crumbs a{color:#003087}
-h1{font-family:Georgia,serif;color:#003087;font-size:2rem;margin-bottom:10px;line-height:1.15}
-.lede{color:#444;margin-bottom:26px;max-width:680px}
+.crumbs{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:14px}
+.crumbs a{color:#B5D4F4}
+.page-header h1{font-family:Georgia,serif;color:#fff;font-size:1.9rem;margin-bottom:10px;line-height:1.15}
+.page-header .lede{color:rgba(255,255,255,.82);margin-bottom:0;max-width:680px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .row{display:flex;flex-direction:column;background:#fff;border:1px solid #e5e5e3;border-radius:10px;padding:14px 18px;transition:all .15s;min-height:120px}
 .row h3{margin-bottom:6px}
@@ -58,18 +59,15 @@ h1{font-family:Georgia,serif;color:#003087;font-size:2rem;margin-bottom:10px;lin
 footer{background:#003087;color:rgba(255,255,255,.65);text-align:center;padding:18px 24px;font-size:13px;margin-top:50px}
 footer a{color:rgba(255,255,255,.9);margin:0 6px}"""
 
-NAV = """<header class="hdr">
-  <div class="hdr-in">
-    <div class="brand"><a href="/">London GP Directory</a></div>
-    <nav class="nav">
-      <a href="/">Search</a>
-      <a href="/boroughs/">Boroughs</a>
-      <a href="/nhs-services/" class="{nhs_active}">NHS Services</a>
-      <a href="/private/">Private clinics</a>
-      <a href="/methodology.html">Methodology</a>
-    </nav>
-  </div>
-</header>"""
+NAV = """<nav class="site-nav">
+  <a class="brand" href="/">London GP <em>Directory</em></a>
+  <a href="/">Search</a>
+  <a href="/boroughs/">Boroughs</a>
+  <a href="/nhs-services/" class="{nhs_active}">NHS Services</a>
+  <a href="/private/">Private Clinics</a>
+  <a href="/methodology.html">Methodology</a>
+  <a href="/sources.html">Sources</a>
+</nav>"""
 
 FOOTER = f"""<footer>
   London GP Directory · Updated {date.today().strftime('%d %B %Y').lstrip('0')} ·
@@ -108,10 +106,12 @@ def index_page(grouped):
 .row .meta a,.row .meta{{position:relative;z-index:1}}
 </style></head><body>
 {NAV.format(nhs_active='active')}
-<main class="wrap">
+<div class="page-header"><div class="ph-in">
 <div class="crumbs"><a href="/">Home</a> &rsaquo; NHS Services</div>
 <h1>NHS services in London</h1>
 <p class="lede">Beyond GP practices, NHS-funded healthcare in London covers urgent care centres, hospitals, mental health services, community nursing, diagnostic centres and the ambulance service. Browse by category.</p>
+</div></div>
+<main class="wrap">
 <div class="grid">{''.join(cards)}</div>
 </main>
 {FOOTER}</body></html>"""
@@ -177,10 +177,12 @@ def category_page(slug_key, label, blurb, records):
 .row .meta a,.row .meta{{position:relative;z-index:1}}
 </style></head><body>
 {NAV.format(nhs_active='active')}
-<main class="wrap">
+<div class="page-header"><div class="ph-in">
 <div class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/nhs-services/">NHS Services</a> &rsaquo; {label}</div>
 <h1>{label} in London</h1>
 <p class="lede">{blurb} {len(records)} {('service' if len(records)==1 else 'services')} currently listed.</p>
+</div></div>
+<main class="wrap">
 <div class="grid">{grid}</div>
 </main>
 {FOOTER}</body></html>"""
