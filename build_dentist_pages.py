@@ -28,6 +28,7 @@ NAV = """<nav class="site-nav">
   <a href="/nhs-services/">NHS Services</a>
   <a href="/private/">Private Clinics</a>
   <a href="/dentists/" class="active">Dentists</a>
+  <a href="/guides/">Guides</a>
   <a href="/methodology.html">Methodology</a>
   <a href="/sources.html">Sources</a>
 </nav>"""
