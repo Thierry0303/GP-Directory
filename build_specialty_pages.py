@@ -58,6 +58,40 @@ SPECIALTY_META = {
 # NHS GPs appear on the "private-gp" page as an alternative option
 NHS_INCLUDE_SPECS = {"private-gp"}
 
+# ---------------------------------------------------------------------------
+# Affiliate offers (monetisation).
+#
+# Clearly-labelled, contextual "where to get this" links shown ONLY on the
+# commercially-relevant specialty pages below, and ONLY once a real tracked
+# URL is filled in. Leave "url" empty ("") and NOTHING renders — the page
+# stays 100% clean until you paste an approved affiliate deep link.
+#
+# These are plain outbound links (rel="sponsored"): no scripts, no cookies
+# set on this site, so no consent banner is required. Keep them off the
+# core GP/NHS listings so the directory stays visibly independent.
+#
+# To activate: apply to the Boots / Holland & Barrett programmes (e.g. via
+# AWIN), then paste your tracked deep link into "url" and rebuild.
+# ---------------------------------------------------------------------------
+AFFILIATE_OFFERS = {
+    "travel-health": [
+        {"merchant": "Boots",            "title": "Travel vaccinations & antimalarials", "blurb": "Book travel jabs and buy antimalarial tablets from Boots pharmacies.", "url": ""},
+        {"merchant": "Holland & Barrett", "title": "Travel health essentials",            "blurb": "Rehydration sachets, insect repellent and travel first-aid.",         "url": ""},
+    ],
+    "private-gp": [
+        {"merchant": "Boots",            "title": "Online Doctor & Pharmacy",             "blurb": "Online consultations, prescriptions and repeat medication delivery.", "url": ""},
+    ],
+    "sexual-health": [
+        {"merchant": "Boots",            "title": "Home STI test kits & contraception",   "blurb": "Discreet home testing kits and contraception from Boots pharmacy.",   "url": ""},
+    ],
+    "weight-loss": [
+        {"merchant": "Holland & Barrett", "title": "Vitamins & wellbeing",                "blurb": "Nutrition, supplements and wellbeing products.",                      "url": ""},
+    ],
+    "paediatrics": [
+        {"merchant": "Amazon", "title": "Family & child health essentials", "blurb": "A handpicked selection of family and everyday health products on Amazon.", "url": "https://www.amazon.co.uk/mh?_encoding=UTF8&_encoding=UTF8&s=B0BDJFDX1P&ip=false&am=true&pd_rd_w=cZaKX&content-id=amzn1.sym.9cbe525c-c184-478b-8eb6-e9138d2e7fb8%3Aamzn1.symc.8e854421-084c-45e4-bb3f-875dbb4ff45a&pf_rd_p=9cbe525c-c184-478b-8eb6-e9138d2e7fb8&pf_rd_r=MMXNQAZRAM5WVZVHAHFQ&pd_rd_wg=m2MQa&pd_rd_r=e7d2ce21-1c89-4e81-9fb4-a7d95c704359&linkCode=ll2&tag=londonparents-21&linkId=d5a870ff353affb8598c57f1ce5439da&ref_=as_li_ss_tl"},
+    ],
+}
+
 NAV = """<nav class="site-nav">
   <a class="brand" href="/">London GP <em>Directory</em></a>
   <a href="/">Search</a>
@@ -68,6 +102,7 @@ NAV = """<nav class="site-nav">
   <a href="/guides/">Guides</a>
   <a href="/methodology.html">Methodology</a>
   <a href="/sources.html">Sources</a>
+  <a class="support-btn" href="https://ko-fi.com/thierry81" target="_blank" rel="noopener" style="background:#FF5E5B;color:#fff;padding:6px 13px;border-radius:999px;font-weight:700;font-size:.8rem;white-space:nowrap">☕ Support</a>
 </nav>"""
 
 CSS = """<style>
@@ -132,6 +167,16 @@ a{text-decoration:none;color:inherit}
 .spec-count{font-size:.75rem;color:#888;margin-top:6px}
 .spec-count strong{color:#003087}
 .back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+.affiliate-box{margin-top:32px;padding:16px 18px;background:#fff;border:1px solid #e8e8e8;border-radius:12px;border-left:3px solid #B5D4F4}
+.affiliate-box .aff-label{font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a93a8;display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.affiliate-box .aff-label::after{content:"";flex:1;height:1px;background:#eee}
+.aff-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.aff-item{display:block;padding:12px 14px;border:1px solid #eee;border-radius:9px;color:inherit;transition:border-color .15s,box-shadow .15s}
+.aff-item:hover{border-color:#003087;box-shadow:0 2px 8px rgba(0,48,135,.08)}
+.aff-item .aff-merchant{font-size:.66rem;font-weight:700;color:#0072CE;text-transform:uppercase;letter-spacing:.05em}
+.aff-item .aff-title{font-weight:700;color:#003087;font-size:.9rem;margin:2px 0 3px}
+.aff-item .aff-blurb{font-size:.78rem;color:#666}
+.aff-disc{font-size:.7rem;color:#999;margin-top:12px}
 footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-top:1px solid #e8e8e8;margin-top:40px}
 .hidden{display:none!important}
 @media(max-width:600px){.cards{grid-template-columns:1fr}.stats{gap:16px}}
@@ -262,6 +307,30 @@ FILTER_JS = """
 </script>
 """
 
+def render_affiliate_box(spec):
+    """Clearly-labelled 'Sponsored' box for commercially-relevant specialties.
+    Renders only offers that have a real URL filled in; returns '' otherwise,
+    so pages stay clean until affiliate links are added."""
+    offers = [o for o in AFFILIATE_OFFERS.get(spec, []) if o.get("url")]
+    if not offers:
+        return ""
+    items = "".join(
+        f'''<a class="aff-item" href="{o["url"]}" target="_blank" rel="sponsored noopener nofollow">
+      <div class="aff-merchant">{o["merchant"]}</div>
+      <div class="aff-title">{o["title"]}</div>
+      <div class="aff-blurb">{o["blurb"]}</div>
+    </a>''' for o in offers
+    )
+    # Amazon Associates require this exact phrase near the links.
+    amazon_line = (' As an Amazon Associate we earn from qualifying purchases.'
+                   if any(o["merchant"].lower() == "amazon" for o in offers) else '')
+    return f"""
+  <div class="affiliate-box">
+    <div class="aff-label">Sponsored</div>
+    <div class="aff-items">{items}</div>
+    <p class="aff-disc">These are advertisements. We may earn a commission if you buy through them — this never affects which practices or clinics we list or how we rank them.{amazon_line}</p>
+  </div>"""
+
 def build_specialty_page(spec, meta, private_records, nhs_records):
     emoji = meta.get('emoji','🩺')
     label = meta.get('label', spec.title())
@@ -314,6 +383,7 @@ def build_specialty_page(spec, meta, private_records, nhs_records):
   <div class="section-title">💊 Private {label} <span class="count">{len(private_records)}</span></div>
   <div class="cards">{priv_cards}</div>
   {nhs_section}
+  {render_affiliate_box(spec)}
 </div>
 <footer>
   Data: CQC · NHS ODS · GP Patient Survey · London GP Directory<br>

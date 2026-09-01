@@ -68,6 +68,16 @@ a{text-decoration:none;color:inherit}
 .spec-count{font-size:.75rem;color:#888;margin-top:6px}
 .spec-count strong{color:#003087}
 .back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+.affiliate-box{margin-top:32px;padding:16px 18px;background:#fff;border:1px solid #e8e8e8;border-radius:12px;border-left:3px solid #B5D4F4}
+.affiliate-box .aff-label{font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a93a8;display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.affiliate-box .aff-label::after{content:"";flex:1;height:1px;background:#eee}
+.aff-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.aff-item{display:block;padding:12px 14px;border:1px solid #eee;border-radius:9px;color:inherit;transition:border-color .15s,box-shadow .15s}
+.aff-item:hover{border-color:#003087;box-shadow:0 2px 8px rgba(0,48,135,.08)}
+.aff-item .aff-merchant{font-size:.66rem;font-weight:700;color:#0072CE;text-transform:uppercase;letter-spacing:.05em}
+.aff-item .aff-title{font-weight:700;color:#003087;font-size:.9rem;margin:2px 0 3px}
+.aff-item .aff-blurb{font-size:.78rem;color:#666}
+.aff-disc{font-size:.7rem;color:#999;margin-top:12px}
 footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-top:1px solid #e8e8e8;margin-top:40px}
 .hidden{display:none!important}
 @media(max-width:600px){.cards{grid-template-columns:1fr}.stats{gap:16px}}
@@ -84,6 +94,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <a href="/guides/">Guides</a>
   <a href="/methodology.html">Methodology</a>
   <a href="/sources.html">Sources</a>
+  <a class="support-btn" href="https://ko-fi.com/thierry81" target="_blank" rel="noopener" style="background:#FF5E5B;color:#fff;padding:6px 13px;border-radius:999px;font-weight:700;font-size:.8rem;white-space:nowrap">☕ Support</a>
 </nav>
 <div class="page-header">
   <h1>🦴 Orthopaedics & Sports Medicine in London</h1>
@@ -213,6 +224,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="card-actions"><span class="btn-phone">📞 07999555909</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-28705890981" target="_blank" rel="noopener">CQC</a></div>
 </div></div>
+  
   
 </div>
 <footer>
