@@ -221,6 +221,7 @@ def render_borough_page(borough, records, all_boroughs, today):
         '<a href="/">Search</a><a href="/boroughs/">Boroughs</a><a href="/nhs-services/">NHS Services</a>'
         '<a href="/private/">Private Clinics</a><a href="/dentists/">Dentists</a><a href="/guides/">Guides</a>'
         '<a href="/methodology.html">Methodology</a><a href="/sources.html">Sources</a>'
+        '<a class="support-btn" href="https://ko-fi.com/thierry81" target="_blank" rel="noopener" style="background:#FF5E5B;color:#fff;padding:6px 13px;border-radius:999px;font-weight:700;font-size:.8rem;white-space:nowrap">&#9749; Support</a>'
         '</div></nav>\n'
         '  <div class="hdr-page-title"><div class="hdr-page-title-in">'
         f'<div class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/boroughs/">Boroughs</a> &rsaquo; <strong>{borough}</strong></div>'

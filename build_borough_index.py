@@ -196,6 +196,7 @@ footer a{{color:rgba(255,255,255,.8);margin:0 6px}}
       <a href="/guides/">Guides</a>
       <a href="/methodology.html">Methodology</a>
       <a href="/sources.html">Sources</a>
+      <a class="support-btn" href="https://ko-fi.com/thierry81" target="_blank" rel="noopener" style="background:#FF5E5B;color:#fff;padding:6px 13px;border-radius:999px;font-weight:700;font-size:.8rem;white-space:nowrap">☕ Support</a>
     </div>
   </nav>
 </header>
