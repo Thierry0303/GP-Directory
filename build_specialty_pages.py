@@ -73,13 +73,24 @@ NHS_INCLUDE_SPECS = {"private-gp"}
 # To activate: apply to the Boots / Holland & Barrett programmes (e.g. via
 # AWIN), then paste your tracked deep link into "url" and rebuild.
 # ---------------------------------------------------------------------------
+# One reusable Amazon offer (family/everyday health storefront), shown on the
+# general/family-relevant pages. Swap the url for a specific dp/ASIN link any
+# time for better conversion.
+_AMZ_FAMILY = {"merchant": "Amazon", "title": "Family & everyday health essentials",
+               "blurb": "A handpicked selection of family and everyday health products on Amazon.",
+               "url": "https://www.amazon.co.uk/mh?_encoding=UTF8&_encoding=UTF8&s=B0BDJFDX1P&ip=false&am=true&pd_rd_w=cZaKX&content-id=amzn1.sym.9cbe525c-c184-478b-8eb6-e9138d2e7fb8%3Aamzn1.symc.8e854421-084c-45e4-bb3f-875dbb4ff45a&pf_rd_p=9cbe525c-c184-478b-8eb6-e9138d2e7fb8&pf_rd_r=MMXNQAZRAM5WVZVHAHFQ&pd_rd_wg=m2MQa&pd_rd_r=e7d2ce21-1c89-4e81-9fb4-a7d95c704359&linkCode=ll2&tag=londonparents-21&linkId=d5a870ff353affb8598c57f1ce5439da&ref_=as_li_ss_tl"}
+
 AFFILIATE_OFFERS = {
+    # "_index" is the /private/ specialties landing page (see build_index_page).
+    "_index": [_AMZ_FAMILY],
     "travel-health": [
         {"merchant": "Boots",            "title": "Travel vaccinations & antimalarials", "blurb": "Book travel jabs and buy antimalarial tablets from Boots pharmacies.", "url": ""},
         {"merchant": "Holland & Barrett", "title": "Travel health essentials",            "blurb": "Rehydration sachets, insect repellent and travel first-aid.",         "url": ""},
+        _AMZ_FAMILY,
     ],
     "private-gp": [
         {"merchant": "Boots",            "title": "Online Doctor & Pharmacy",             "blurb": "Online consultations, prescriptions and repeat medication delivery.", "url": ""},
+        _AMZ_FAMILY,
     ],
     "sexual-health": [
         {"merchant": "Boots",            "title": "Home STI test kits & contraception",   "blurb": "Discreet home testing kits and contraception from Boots pharmacy.",   "url": ""},
@@ -87,9 +98,7 @@ AFFILIATE_OFFERS = {
     "weight-loss": [
         {"merchant": "Holland & Barrett", "title": "Vitamins & wellbeing",                "blurb": "Nutrition, supplements and wellbeing products.",                      "url": ""},
     ],
-    "paediatrics": [
-        {"merchant": "Amazon", "title": "Family & child health essentials", "blurb": "A handpicked selection of family and everyday health products on Amazon.", "url": "https://www.amazon.co.uk/mh?_encoding=UTF8&_encoding=UTF8&s=B0BDJFDX1P&ip=false&am=true&pd_rd_w=cZaKX&content-id=amzn1.sym.9cbe525c-c184-478b-8eb6-e9138d2e7fb8%3Aamzn1.symc.8e854421-084c-45e4-bb3f-875dbb4ff45a&pf_rd_p=9cbe525c-c184-478b-8eb6-e9138d2e7fb8&pf_rd_r=MMXNQAZRAM5WVZVHAHFQ&pd_rd_wg=m2MQa&pd_rd_r=e7d2ce21-1c89-4e81-9fb4-a7d95c704359&linkCode=ll2&tag=londonparents-21&linkId=d5a870ff353affb8598c57f1ce5439da&ref_=as_li_ss_tl"},
-    ],
+    "paediatrics": [_AMZ_FAMILY],
 }
 
 NAV = """<nav class="site-nav">
@@ -433,6 +442,7 @@ def build_hub_page(specialty_counts):
 </div>
 <div class="content">
   <div class="spec-grid">{cards}</div>
+  {render_affiliate_box("_index")}
 </div>
 <footer>
   Data: CQC · NHS ODS · GP Patient Survey · London GP Directory<br>
