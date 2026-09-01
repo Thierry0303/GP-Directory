@@ -87,6 +87,9 @@ AFFILIATE_OFFERS = {
     "weight-loss": [
         {"merchant": "Holland & Barrett", "title": "Vitamins & wellbeing",                "blurb": "Nutrition, supplements and wellbeing products.",                      "url": ""},
     ],
+    "paediatrics": [
+        {"merchant": "Amazon", "title": "Family & child health essentials", "blurb": "A handpicked selection of family and everyday health products on Amazon.", "url": "https://www.amazon.co.uk/mh?_encoding=UTF8&_encoding=UTF8&s=B0BDJFDX1P&ip=false&am=true&pd_rd_w=cZaKX&content-id=amzn1.sym.9cbe525c-c184-478b-8eb6-e9138d2e7fb8%3Aamzn1.symc.8e854421-084c-45e4-bb3f-875dbb4ff45a&pf_rd_p=9cbe525c-c184-478b-8eb6-e9138d2e7fb8&pf_rd_r=MMXNQAZRAM5WVZVHAHFQ&pd_rd_wg=m2MQa&pd_rd_r=e7d2ce21-1c89-4e81-9fb4-a7d95c704359&linkCode=ll2&tag=londonparents-21&linkId=d5a870ff353affb8598c57f1ce5439da&ref_=as_li_ss_tl"},
+    ],
 }
 
 NAV = """<nav class="site-nav">
