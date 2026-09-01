@@ -2,16 +2,19 @@
 //
 // Required for PWA installability (and therefore for TWA/App-store
 // wrapping). Strategy:
-//   - Static shell (index.html, this file's own dependencies): cache-first,
-//     so the app opens instantly even on a poor connection.
 //   - /data.json (the live practice data): network-first, falling back to
-//     cache when offline. This data refreshes daily via the GitHub Actions
-//     pipeline — the app should always try to get the freshest copy, but
-//     shouldn't go blank if the user opens it with no signal.
-//   - Everything else (borough pages, practice pages, etc.): network-first
-//     with cache fallback, same reasoning.
+//     cache when offline.
+//   - HTML pages and every other same-origin GET: network-first, falling
+//     back to cache (and, for navigations, to the cached homepage) when
+//     offline. This means a fresh deploy is always picked up on the next
+//     visit — the SW never traps visitors on a stale cached page.
+//   - A small static shell is precached so the app still opens offline.
+//
+// NOTE: bump CACHE_NAME on any change that must invalidate old caches. The
+// activate handler deletes every cache whose name != CACHE_NAME, so bumping
+// the version purges stale entries for existing visitors.
 
-const CACHE_NAME = 'londongp-v1';
+const CACHE_NAME = 'londongp-v2';
 const PRECACHE_URLS = [
   '/',
   '/manifest.json',
@@ -45,38 +48,27 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  const isDataRequest = request.url.includes('/data.json');
-
-  if (isDataRequest) {
-    // Network-first for live data — always try fresh, fall back to
-    // whatever we last cached if the network fails.
-    event.respondWith(
-      fetch(request)
-        .then(response => {
+  // Network-first for everything (live data, HTML pages, static assets),
+  // with a cache fallback so the app still works offline. Successful
+  // responses are cached for that offline fallback.
+  event.respondWith(
+    fetch(request)
+      .then(response => {
+        if (response && response.ok) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-          return response;
-        })
-        .catch(() => caches.match(request))
-    );
-    return;
-  }
-
-  // Cache-first for the app shell and static assets.
-  event.respondWith(
-    caches.match(request).then(cached => {
-      if (cached) return cached;
-      return fetch(request).then(response => {
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-        return response;
-      }).catch(() => {
-        // Offline and not cached — for navigations, fall back to the
-        // cached homepage rather than a browser error page.
-        if (request.mode === 'navigate') {
-          return caches.match('/');
         }
-      });
-    })
+        return response;
+      })
+      .catch(() =>
+        caches.match(request).then(cached => {
+          if (cached) return cached;
+          // Offline and not cached — for navigations, fall back to the
+          // cached homepage rather than a browser error page.
+          if (request.mode === 'navigate') {
+            return caches.match('/');
+          }
+        })
+      )
   );
 });
