@@ -321,11 +321,14 @@ def render_affiliate_box(spec):
       <div class="aff-blurb">{o["blurb"]}</div>
     </a>''' for o in offers
     )
+    # Amazon Associates require this exact phrase near the links.
+    amazon_line = (' As an Amazon Associate we earn from qualifying purchases.'
+                   if any(o["merchant"].lower() == "amazon" for o in offers) else '')
     return f"""
   <div class="affiliate-box">
     <div class="aff-label">Sponsored</div>
     <div class="aff-items">{items}</div>
-    <p class="aff-disc">These are advertisements. We may earn a commission if you buy through them — this never affects which practices or clinics we list or how we rank them.</p>
+    <p class="aff-disc">These are advertisements. We may earn a commission if you buy through them — this never affects which practices or clinics we list or how we rank them.{amazon_line}</p>
   </div>"""
 
 def build_specialty_page(spec, meta, private_records, nhs_records):
