@@ -381,6 +381,7 @@ def build_specialty_page(spec, meta, private_records, nhs_records):
 </div>
 <div class="content">
   <a class="back" href="/private/">← All specialties</a>
+  {render_affiliate_box(spec)}
   <div class="filter-bar">
     <span class="filter-label">Borough:</span>{borough_chips}
     <div class="type-switch">
@@ -392,7 +393,6 @@ def build_specialty_page(spec, meta, private_records, nhs_records):
   <div class="section-title">💊 Private {label} <span class="count">{len(private_records)}</span></div>
   <div class="cards">{priv_cards}</div>
   {nhs_section}
-  {render_affiliate_box(spec)}
 </div>
 <footer>
   Data: CQC · NHS ODS · GP Patient Survey · London GP Directory<br>
@@ -441,8 +441,8 @@ def build_hub_page(specialty_counts):
   </div>
 </div>
 <div class="content">
-  <div class="spec-grid">{cards}</div>
   {render_affiliate_box("_index")}
+  <div class="spec-grid">{cards}</div>
 </div>
 <footer>
   Data: CQC · NHS ODS · GP Patient Survey · London GP Directory<br>
