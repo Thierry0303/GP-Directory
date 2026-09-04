@@ -9,6 +9,14 @@
       "destination": "/robots.txt"
     },
     {
+      "source": "/jwks.json",
+      "destination": "/jwks.json"
+    },
+    {
+      "source": "/.well-known/:path*",
+      "destination": "/.well-known/:path*"
+    },
+    {
       "source": "/provider/:path*",
       "destination": "/provider/:path*"
     },
