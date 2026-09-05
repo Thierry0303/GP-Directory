@@ -29689,5 +29689,43 @@
     "lon": -0.0115665,
     "providerName": "Panacea Clinic Limited",
     "ar": "Tower Hamlets"
+  },
+  {
+    "cqc_id": "1-28958481508",
+    "ods_code": "",
+    "name": "Nettle Health",
+    "address": "6 Morphou Road, London",
+    "postcode": "NW7 1ED",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28958481508",
+    "localAuthority": "Barnet",
+    "lat": 51.6129733,
+    "lon": -0.2054571,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-29463091506",
+    "ods_code": "",
+    "name": "River Place Health Centre",
+    "address": "River Place Health Centre, Essex Road, London",
+    "postcode": "N1 2DE",
+    "phone": "02037706101",
+    "website": "",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29463091506",
+    "localAuthority": "Islington",
+    "lat": 51.5405129,
+    "lon": -0.0965607,
+    "providerName": "",
+    "ar": "Islington"
   }
 ]

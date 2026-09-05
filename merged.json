@@ -47180,5 +47180,45 @@
     "ln": -0.0115665,
     "type": "Private",
     "web": "https://www.panaceaclinic.co.uk/"
+  },
+  {
+    "o": "1-28958481508",
+    "n": "Nettle Health",
+    "a": "6 Morphou Road, London",
+    "p": "NW7 1ED",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28958481508",
+    "ar": "Barnet",
+    "la": 51.6129733,
+    "ln": -0.2054571,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-29463091506",
+    "n": "River Place Health Centre",
+    "a": "River Place Health Centre, Essex Road, London",
+    "p": "N1 2DE",
+    "ph": "02037706101",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29463091506",
+    "ar": "Islington",
+    "la": 51.5405129,
+    "ln": -0.0965607,
+    "type": "Private",
+    "web": ""
   }
 ]

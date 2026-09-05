@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2476,
-  "total_records_incl_non_london": 2548,
+  "total_records": 2478,
+  "total_records_incl_non_london": 2550,
   "excluded_non_london": 72,
   "nhs_practice_count": 979,
-  "private_clinic_count": 1497,
+  "private_clinic_count": 1499,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -12,7 +12,7 @@
   "per_borough": {
     "Barnet": {
       "nhs": 34,
-      "private": 48,
+      "private": 49,
       "dentist": 0
     },
     "Brent": {
@@ -47,7 +47,7 @@
     },
     "Islington": {
       "nhs": 29,
-      "private": 33,
+      "private": 34,
       "dentist": 0
     },
     "Hackney": {
