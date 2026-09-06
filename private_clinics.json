@@ -29727,5 +29727,24 @@
     "lon": -0.0965607,
     "providerName": "",
     "ar": "Islington"
+  },
+  {
+    "cqc_id": "1-28921027642",
+    "ods_code": "",
+    "name": "Calibre HQ",
+    "address": "FORA Broadwick, 33 Broadwick Street, London",
+    "postcode": "W1F 0DQ",
+    "phone": "07482256111",
+    "website": "https://www.getcalibre.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28921027642",
+    "localAuthority": "Westminster",
+    "lat": 51.513316,
+    "lon": -0.1361327,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
