@@ -29706,7 +29706,7 @@
     "localAuthority": "Barnet",
     "lat": 51.6129733,
     "lon": -0.2054571,
-    "providerName": "",
+    "providerName": "Nettle Health Ltd",
     "ar": "Barnet"
   },
   {
@@ -29725,7 +29725,7 @@
     "localAuthority": "Islington",
     "lat": 51.5405129,
     "lon": -0.0965607,
-    "providerName": "",
+    "providerName": "Islington GP Group Limited",
     "ar": "Islington"
   },
   {
@@ -29744,7 +29744,7 @@
     "localAuthority": "Westminster",
     "lat": 51.513316,
     "lon": -0.1361327,
-    "providerName": "",
+    "providerName": "ABR Health Ventures Limited",
     "ar": "Westminster"
   }
 ]

@@ -2253,6 +2253,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.getcalibre.com": {
+"checked": "2026-09-07",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.ghbclinic.co.uk": {
 "checked": "2026-08-10",
 "ok": true,
