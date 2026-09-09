@@ -55,10 +55,16 @@ jobs:
         run: python clean_nhs_records.py
 
       # ---- 2. CQC cache (incremental — only fetches NEW location IDs) ----
+      # Guarded: a slow/unresponsive CQC API must never block the build +
+      # commit + deploy. On timeout/failure we fall back to the last committed
+      # cache (CQC data is non-critical enrichment; the site works without a
+      # refresh of it).
       - name: Update CQC London cache
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python build_cqc_london_cache.py
+        continue-on-error: true
+        timeout-minutes: 25
 
       # ---- 2b. Verify external links (CQC website URLs go stale) ----
       - name: Check external links
@@ -79,10 +85,15 @@ jobs:
         run: python merge_into_dataset.py
       - name: Normalize website URLs
         run: python normalize_urls.py
+      # Guarded: this CQC-API step hung ~44 min and timed out the whole job on
+      # 2026-09-09, blocking the deploy. Bounded + non-fatal so the pipeline
+      # always reaches the build/commit steps.
       - name: Backfill missing CQC ratings
         env:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python enrich_cqc_ratings.py
+        continue-on-error: true
+        timeout-minutes: 10
       - name: Drop non-GMS NHS records
         run: python drop_non_gms.py
       - name: Fix borough assignments
@@ -92,6 +103,7 @@ jobs:
           CQC_KEY: ${{ secrets.CQC_KEY }}
         run: python fetch_cqc_domain_ratings.py
         continue-on-error: true
+        timeout-minutes: 15
 
       # ---- 4b. Canonical stats — MUST run after all cleanup above and
       #          before any page-building step below. compute_stats.py
