@@ -42,6 +42,34 @@ def cqc_class(r):
     if r == "Inadequate":  return "cqc-I"
     return "cqc-N"
 
+_WEEK = [("Monday", "Mon"), ("Tuesday", "Tue"), ("Wednesday", "Wed"),
+         ("Thursday", "Thu"), ("Friday", "Fri"), ("Saturday", "Sat"),
+         ("Sunday", "Sun")]
+
+def hours_summary(oh):
+    """Compact one-line opening-hours summary for a card, e.g.
+    'Mon–Fri 08:00–18:30'. Collapses runs of consecutive days that share the
+    same hours; shows only open days to stay compact."""
+    if not isinstance(oh, dict) or not oh:
+        return ""
+    seq = [(i, abbr, oh.get(full)) for i, (full, abbr) in enumerate(_WEEK)
+           if full in oh and oh.get(full) and oh[full].lower() != "closed"]
+    groups = []
+    for i, abbr, val in seq:
+        if groups and groups[-1]["val"] == val and groups[-1]["end_i"] == i - 1:
+            groups[-1]["end"] = abbr
+            groups[-1]["end_i"] = i
+        else:
+            groups.append({"start": abbr, "end": abbr, "end_i": i, "val": val})
+    if not groups:
+        return ""
+    parts = [(g["start"] if g["start"] == g["end"] else f'{g["start"]}–{g["end"]}')
+             + " " + g["val"] for g in groups[:2]]
+    txt = ", ".join(parts)
+    if len(groups) > 2:
+        txt += ", …"
+    return f'<div class="card-hours">🕒 {txt}</div>'
+
 def render_card(d):
     rec_type = d.get("type") or "NHS"
     is_priv = rec_type == "Private"
@@ -76,8 +104,9 @@ def render_card(d):
         web_btn = f'<a class="pill pill-web" href="{web}" target="_blank">Website</a>' if web else ""
         actions = web_btn + cqc_btn
     else:
+        web_btn = f'<a class="pill pill-web" href="{web}" target="_blank">Website</a>' if web else ""
         actions = (f'<a class="pill pill-reg" href="https://gp-registration.nhs.uk/{o}" target="_blank">Register</a>'
-                   + cqc_btn
+                   + cqc_btn + web_btn
                    + f'<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X{o}" target="_blank">NHS</a>')
     pslug = slugify(d.get("n", ""))
     bslug = slugify(d.get("ar", ""))
@@ -93,6 +122,7 @@ def render_card(d):
             f'<span class="cqc {cc}">{cqc_label}</span></div>'
             f'<div class="card-badges">{type_badge}{spec_badges}</div>'
             f'{card_addr}'
+            f'{hours_summary(d.get("oh"))}'
             f'{metrics}'
             f'<div class="card-foot">{phone_html}<div class="actions">{actions}</div></div>'
             f'</div>')
@@ -194,6 +224,7 @@ def render_borough_page(borough, records, all_boroughs, today):
         '.type-badge.t-priv{background:#FAE7F3;color:#A02670}\n'
         '.spec-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize}\n'
         '.card-addr{font-size:11.5px;color:#888;margin-bottom:10px}\n'
+        '.card-hours{font-size:11.5px;color:#0F6E56;margin:-4px 0 10px}\n'
         '.metrics{display:flex;gap:12px;margin-bottom:12px}\n'
         '.metric{flex:1}\n'
         '.m-lbl{font-size:9px;text-transform:uppercase;color:#aaa;margin-bottom:2px}\n'
