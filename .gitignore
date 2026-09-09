@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# NHS API key — must never be committed
+apikey_prod.txt
+apikey.txt

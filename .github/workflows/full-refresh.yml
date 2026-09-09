@@ -37,6 +37,18 @@ jobs:
       #          site blocks CI IPs; see apply_gpps_scores.py). ----
       - name: Apply GP Patient Survey scores
         run: python apply_gpps_scores.py
+
+      # ---- 1b. NHS Service Search enrichment (official name, address, phone,
+      #          website, precise coordinates, opening hours). Writes
+      #          nhs_service_search.json, which the NHS refresh below merges in.
+      #          Skips gracefully if the secret is missing or the API blips —
+      #          refresh_nhs_data.py then falls back to the last committed cache. ----
+      - name: Fetch NHS Service Search enrichment
+        env:
+          NHS_SERVICE_SEARCH_KEY: ${{ secrets.NHS_SERVICE_SEARCH_KEY }}
+        run: python fetch_nhs_service_search.py
+        continue-on-error: true
+
       - name: NHS refresh
         run: python refresh_nhs_data.py
       - name: Strip non-GP NHS records
@@ -119,9 +131,13 @@ jobs:
             exit 0
           fi
           git commit -m "Full refresh ($(date -u +%Y-%m-%d))"
+          # Push back to the branch this run was triggered on: scheduled runs
+          # use the default branch (main) exactly as before; a manual run on a
+          # feature branch commits there (Vercel preview), never prod.
+          BRANCH="${{ github.ref_name }}"
           for i in {1..3}; do
-            git pull --rebase origin main
-            if git push origin main; then exit 0; fi
+            git pull --rebase origin "$BRANCH"
+            if git push origin HEAD:"$BRANCH"; then exit 0; fi
             sleep 5
           done
           exit 1

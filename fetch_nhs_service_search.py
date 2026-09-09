@@ -1,208 +1,210 @@
 #!/usr/bin/env python3
 """
-Replace NHS-contract names in gps.json with the official names from the
-NHS Directory of Healthcare Services (Service Search) API.
+Enrich London GP data from the NHS Directory of Healthcare Services
+(Service Search) API v3 — the authoritative source NHS.uk itself uses.
 
-This is the authoritative source NHS.uk itself uses. Unlike scraping
-NHS.uk directly, this API is designed for automated access and works
-from GitHub Actions.
+For every ODS code in gps.json this fetches the official record and writes a
+cache, nhs_service_search.json (ODS -> fields), which refresh_nhs_data.py then
+merges into the site. Pulls: official name, address, postcode, phone, website,
+precise coordinates, live status, and opening hours.
 
-Endpoint
---------
-  POST https://api.service.nhs.uk/service-search-api/search?api-version=3
-
-Authentication
---------------
-  Header: subscription-key: <KEY>      (most NHS Digital APIs)
-  Or:     apikey: <KEY>                 (fallback)
-  Or:     Ocp-Apim-Subscription-Key: <KEY>  (older NHS APIs)
-
-The script tries the standard header first and falls back automatically.
+Proven production method (verified end-to-end):
+    GET https://api.service.nhs.uk/service-search-api?api-version=3
+        &search=<ODS>&searchMode=all&searchFields=ODSCode&$top=1
+    Header: apikey: <KEY>
+(v1/v2 were retired 2 Feb 2026 — v3 only. Auth is a simple API key, no JWT.)
 
 Setup
 -----
-1. Subscribe to "Directory of Healthcare Services (Service Search) API"
-   at https://digital.nhs.uk/developer/api-catalogue → get a key.
-2. Add a GitHub secret `NHS_SERVICE_SEARCH_KEY` = your key.
-3. Run the workflow.
-
-Output
-------
-Each renamed record gets:
-  name           ← official NHS name (e.g. "The Old Surgery")
-  official_name  ← preserved original contract name
+1. Put your PRODUCTION API key in the env var NHS_SERVICE_SEARCH_KEY, e.g.
+      Windows PowerShell:  $env:NHS_SERVICE_SEARCH_KEY = "<your key>"
+      macOS/Linux:         export NHS_SERVICE_SEARCH_KEY="<your key>"
+   (or drop it in a local file apikey_prod.txt next to this script — that file
+    is git-ignored and must never be committed).
+2. pip install requests
+3. python fetch_nhs_service_search.py
+4. Commit the regenerated nhs_service_search.json (public NHS data — safe to
+   commit; your key is not).
 """
 
-import json, os, sys, time, urllib.request, urllib.error
+import json, os, sys, time, uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
 from collections import Counter
+from pathlib import Path
+
+import requests
 
 ROOT = Path(__file__).resolve().parent
 GPS_JSON = ROOT / "gps.json"
+OUT_JSON = ROOT / "nhs_service_search.json"
 
-BASE_URL = "https://api.service.nhs.uk/service-search-api/search?api-version=3"
+URL = "https://api.service.nhs.uk/service-search-api"
+API_VERSION = "3"
+WEEK_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday",
+              "Friday", "Saturday", "Sunday"]
 
-# The Service Search API uses HTTP Bearer authentication, per the API docs:
-#   Authorization: Bearer <token>
-# We also keep some legacy candidate headers in case the auth changes or the
-# subscription tier uses a different scheme.
-AUTH_HEADER_CANDIDATES = [
-    ("Authorization", "Bearer "),     # HTTP Bearer (the documented one)
-    ("subscription-key", ""),         # APIM key-style (fallback)
-    ("apikey", ""),
-    ("Ocp-Apim-Subscription-Key", ""),
-]
 
-# Determined at runtime — set on first successful response.
-WORKING_AUTH_HEADER = None
+def read_key() -> str:
+    key = os.environ.get("NHS_SERVICE_SEARCH_KEY", "").strip()
+    if not key:
+        f = ROOT / "apikey_prod.txt"
+        if f.exists():
+            key = f.read_text(encoding="utf-8-sig", errors="replace").strip()
+    if not key:
+        sys.exit("Set NHS_SERVICE_SEARCH_KEY (or put your key in apikey_prod.txt).")
+    return key
 
-def query_nhs(ods, key, timeout=10):
-    """Query Service Search for one ODS code. Returns (status, name)."""
-    global WORKING_AUTH_HEADER
-    body = json.dumps({
-        "search": ods,
-        "searchMode": "all",
-        "searchFields": "ODSCode",
-        "top": 1,
-        "select": "ODSCode,OrganisationName,OrganisationType,OrganisationSubType",
-    }).encode("utf-8")
-    base_headers = {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "User-Agent": "londongp.directory/1.0",
-    }
-    # Try the working header first; otherwise iterate candidates.
-    if WORKING_AUTH_HEADER:
-        candidates = [WORKING_AUTH_HEADER]
-    else:
-        candidates = AUTH_HEADER_CANDIDATES
 
-    last_err = None
-    for header_name, value_prefix in candidates:
+def _contact(contacts, method):
+    """First ContactValue whose ContactMethodType matches (e.g. Website)."""
+    for c in contacts or []:
+        if (c.get("ContactMethodType") or "").lower() == method.lower():
+            v = (c.get("ContactValue") or "").strip()
+            if v:
+                return v
+    return ""
+
+
+def _website(contacts):
+    w = _contact(contacts, "Website")
+    if w and not w.lower().startswith(("http://", "https://")):
+        w = "https://" + w
+    return w
+
+
+def _address(rec):
+    parts = [rec.get("Address1"), rec.get("Address2"), rec.get("Address3"),
+             rec.get("City")]
+    addr = ", ".join(p.strip() for p in parts if p and p.strip())
+    return addr.title() if addr.isupper() else addr
+
+
+def _opening_hours(times):
+    """Build {Weekday: 'HH:MM-HH:MM' or 'Closed'} from the 'General' entries
+    (the practice's overall open hours; 'Surgery' = split consulting sessions).
+    Falls back to Surgery if a practice has no General entries."""
+    def collect(kind):
+        by_day = {}
+        for t in times or []:
+            if (t.get("OpeningTimeType") or "") != kind:
+                continue
+            day = t.get("Weekday")
+            if day not in WEEK_ORDER:
+                continue
+            if t.get("IsOpen") and t.get("OpeningTime") and t.get("ClosingTime"):
+                by_day.setdefault(day, []).append(
+                    f'{t["OpeningTime"]}–{t["ClosingTime"]}')
+            else:
+                by_day.setdefault(day, by_day.get(day, []))  # ensure key exists
+        return by_day
+
+    src = collect("General") or {}
+    if not src:
+        src = collect("Surgery") or {}
+    if not src:
+        return None
+    out = {}
+    for day in WEEK_ORDER:
+        if day in src:
+            ranges = src[day]
+            out[day] = ", ".join(ranges) if ranges else "Closed"
+    return out or None
+
+
+def query(ods, key, timeout=20):
+    params = {"api-version": API_VERSION, "search": ods, "searchMode": "all",
+              "searchFields": "ODSCode", "$top": "1"}
+    headers = {"apikey": key, "Accept": "application/json",
+               "X-Request-ID": str(uuid.uuid4())}
+    for attempt in range(3):
         try:
-            req = urllib.request.Request(
-                BASE_URL,
-                data=body,
-                headers={**base_headers, header_name: f"{value_prefix}{key}"},
-                method="POST",
-            )
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-                data = json.loads(r.read())
-            # Set the working header so future calls go straight to it.
-            if WORKING_AUTH_HEADER is None:
-                WORKING_AUTH_HEADER = (header_name, value_prefix)
-                print(f"  AUTH OK with header: {header_name} (prefix: '{value_prefix}')")
-            # Response is either {value: [...]} or just [...] depending on API version
-            results = data.get("value", data) if isinstance(data, dict) else data
-            if not results:
-                return ("not-found", None)
-            top = results[0]
-            name = (top.get("OrganisationName") or "").strip()
-            # Make sure the result is actually for THIS ODS code.
-            if (top.get("ODSCode") or "").upper() != ods.upper():
-                return ("wrong-ods", None)
-            if not name:
-                return ("no-name", None)
-            return ("ok", name)
-        except urllib.error.HTTPError as e:
-            if e.code == 401:
-                last_err = ("401", header_name)
-                continue
-            if e.code == 404:
-                return ("not-found", None)
-            if e.code in (429, 503):
-                time.sleep(1)
-                continue
-            return ("http-error", f"{e.code}")
+            r = requests.get(URL, params=params, headers=headers, timeout=timeout)
         except Exception as e:
-            return ("error", str(e)[:40])
+            return ("error", str(e)[:60])
+        if r.status_code in (429, 503):
+            time.sleep(1 + attempt)
+            continue
+        if r.status_code == 401:
+            return ("auth-failed", r.text[:120])
+        if r.status_code != 200:
+            return ("http-%d" % r.status_code, r.text[:120])
+        recs = (r.json() or {}).get("value", [])
+        if not recs:
+            return ("not-found", None)
+        rec = recs[0]
+        if (rec.get("ODSCode") or "").upper() != ods.upper():
+            return ("wrong-ods", None)
+        contacts = rec.get("Contacts") or []
+        lat, lng = rec.get("Latitude"), rec.get("Longitude")
+        return ("ok", {
+            "name": (rec.get("OrganisationName") or "").strip(),
+            "status": rec.get("OrganisationStatus") or "",
+            "type": rec.get("OrganisationType") or "",
+            "address": _address(rec),
+            "postcode": (rec.get("Postcode") or "").strip(),
+            "phone": _contact(contacts, "Telephone"),
+            "website": _website(contacts),
+            "lat": round(lat, 6) if isinstance(lat, (int, float)) else None,
+            "lng": round(lng, 6) if isinstance(lng, (int, float)) else None,
+            "opening": _opening_hours(rec.get("OpeningTimes")),
+        })
+    return ("throttled", None)
 
-    return ("auth-failed", str(last_err))
 
 def main():
-    key = os.environ.get("NHS_SERVICE_SEARCH_KEY")
-    if not key:
-        sys.exit("NHS_SERVICE_SEARCH_KEY env var not set. Add it as a GitHub secret.")
-
+    key = read_key()
     if not GPS_JSON.exists():
         sys.exit(f"{GPS_JSON} not found.")
     data = json.loads(GPS_JSON.read_text())
-    if not isinstance(data, list):
-        sys.exit("gps.json is not a JSON array.")
-    print(f"Loaded {len(data)} records.")
+    ods_codes = sorted({(r.get("ods_code") or "").strip().upper()
+                        for r in data if (r.get("ods_code") or "").strip()})
+    print(f"Loaded {len(data)} records; {len(ods_codes)} unique ODS codes.\n")
 
-    ods_codes = [(i, (r.get("ods_code") or "").strip().upper())
-                 for i, r in enumerate(data)]
-    ods_codes = [(i, c) for i, c in ods_codes if c]
-    print(f"Looking up {len(ods_codes)} ODS codes via Service Search API…\n")
+    # Warmup to fail fast on a bad key / wrong subscription.
+    print("Warmup:", ods_codes[0])
+    st, val = query(ods_codes[0], key)
+    print("  ->", st, (val or {}).get("name") if isinstance(val, dict) else val, "\n")
+    if st in ("auth-failed",) or (st != "ok" and st != "not-found"):
+        sys.exit(f"ABORT: warmup returned {st}: {val}. "
+                 "Check the key is your enabled production Service Search key.")
 
-    # Do a single warmup call first to settle on the right auth header
-    # before fanning out (otherwise every worker tries 3 headers).
-    print("Warmup call to determine auth header…")
-    warmup_status, warmup_name = query_nhs(ods_codes[0][1], key)
-    print(f"  warmup: {warmup_status}  name={warmup_name}\n")
-    if WORKING_AUTH_HEADER is None and warmup_status != "ok":
-        sys.exit(f"ABORT: warmup failed with {warmup_status}. "
-                 "Likely the subscription key is invalid, the wrong API was "
-                 "subscribed, or the endpoint moved. Check the GitHub secret "
-                 "and the API portal subscription status.")
-
-    status_counts = Counter()
-    sample_renames = []
-    record_status = {}
-
-    with ThreadPoolExecutor(max_workers=15) as pool:
-        futures = {pool.submit(query_nhs, c, key): (i, c) for i, c in ods_codes}
+    cache, status_counts = {}, Counter()
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        futs = {pool.submit(query, c, key): c for c in ods_codes}
         done = 0
-        for fut in as_completed(futures):
-            i, ods = futures[fut]
+        for fut in as_completed(futs):
+            ods = futs[fut]
+            st, val = fut.result()
+            status_counts[st] += 1
+            if st == "ok" and isinstance(val, dict):
+                cache[ods] = val
             done += 1
-            try:
-                status, name = fut.result()
-            except Exception as e:
-                status, name = "exception", str(e)[:40]
-            status_counts[status] += 1
-            record_status[i] = status
-
-            if status == "ok" and name:
-                old = (data[i].get("name") or "").strip()
-                if name != old:
-                    if "official_name" not in data[i]:
-                        data[i]["official_name"] = old
-                    data[i]["name"] = name
-                    if len(sample_renames) < 25:
-                        sample_renames.append((ods, old, name))
-
             if done % 100 == 0 or done == len(ods_codes):
-                ok = sum(1 for s in record_status.values() if s == "ok")
-                print(f"  {done}/{len(ods_codes)} done — "
-                      f"ok: {ok}, "
-                      f"not-found: {sum(1 for s in record_status.values() if s == 'not-found')}, "
-                      f"errors: {sum(1 for s in record_status.values() if s not in ('ok','not-found'))}")
+                print(f"  {done}/{len(ods_codes)} — ok:{status_counts['ok']} "
+                      f"not-found:{status_counts['not-found']} "
+                      f"other:{done - status_counts['ok'] - status_counts['not-found']}")
 
-    print(f"\nStatus counts:")
+    print("\nStatus counts:")
     for s, n in status_counts.most_common():
-        print(f"  {s:15s} {n}")
+        print(f"  {s:14s} {n}")
 
-    if sample_renames:
-        print(f"\nSample renames ({len(sample_renames)}):")
-        for ods, old, new in sample_renames:
-            print(f"  {ods:8s} {old[:35]:35s}  →  {new}")
+    # Coverage sanity check.
+    with_hours = sum(1 for v in cache.values() if v.get("opening"))
+    with_web = sum(1 for v in cache.values() if v.get("website"))
+    with_geo = sum(1 for v in cache.values() if v.get("lat"))
+    print(f"\nEnriched {len(cache)} practices — "
+          f"coords:{with_geo}, website:{with_web}, opening hours:{with_hours}")
 
-    # Drop records the API says don't exist
-    kept = [r for i, r in enumerate(data) if record_status.get(i) != "not-found"]
-    dropped = len(data) - len(kept)
-    print(f"\nKept:    {len(kept)}")
-    print(f"Dropped: {dropped} (Service Search returned no result)")
+    if len(cache) < len(ods_codes) * 0.5:
+        sys.exit(f"ABORT: only {len(cache)}/{len(ods_codes)} enriched (<50%). "
+                 "Not overwriting the cache — investigate before committing.")
 
-    # Safety: refuse to drop more than 25%
-    if dropped > len(data) * 0.25:
-        sys.exit(f"\nABORT: would drop {dropped}/{len(data)} > 25%. "
-                 "Likely an API issue. gps.json left unchanged.")
+    OUT_JSON.write_text(json.dumps(cache, indent=2, ensure_ascii=False,
+                                   sort_keys=True))
+    print(f"\nWrote {OUT_JSON.name} ({len(cache)} records, "
+          f"{OUT_JSON.stat().st_size // 1024} KB).")
+    print("Next: python refresh_nhs_data.py  (merges this in), then rebuild pages.")
 
-    GPS_JSON.write_text(json.dumps(kept, indent=2))
-    print(f"\nWrote {GPS_JSON} — {len(kept)} records.")
 
 if __name__ == "__main__":
     main()
