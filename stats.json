@@ -1,17 +1,17 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2480,
-  "total_records_incl_non_london": 2552,
-  "excluded_non_london": 72,
-  "nhs_practice_count": 979,
-  "private_clinic_count": 1501,
+  "total_records": 2484,
+  "total_records_incl_non_london": 2554,
+  "excluded_non_london": 70,
+  "nhs_practice_count": 981,
+  "private_clinic_count": 1503,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
   "avg_patient_score": 76.8,
   "per_borough": {
     "Barnet": {
-      "nhs": 34,
+      "nhs": 35,
       "private": 49,
       "dentist": 0
     },
@@ -42,7 +42,7 @@
     },
     "Camden": {
       "nhs": 31,
-      "private": 85,
+      "private": 86,
       "dentist": 0
     },
     "Islington": {
@@ -96,7 +96,7 @@
       "dentist": 0
     },
     "Bexley": {
-      "nhs": 15,
+      "nhs": 16,
       "private": 14,
       "dentist": 0
     },
@@ -147,7 +147,7 @@
     },
     "Kingston": {
       "nhs": 16,
-      "private": 26,
+      "private": 27,
       "dentist": 0
     },
     "Hounslow": {

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>London GP Directory — Find &amp; Compare NHS GP Practices in London</title>
-<meta name="description" content="Free directory of NHS GP practices and private clinics in London. Compare 979 NHS practices and 1501 CQC-registered private clinics by patient survey scores, CQC rating and contact details. Updated weekly.">
+<meta name="description" content="Free directory of NHS GP practices and private clinics in London. Compare 981 NHS practices and 1503 CQC-registered private clinics by patient survey scores, CQC rating and contact details. Updated weekly.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#003087">
 <link rel="canonical" href="https://londongp.directory/">
@@ -19,7 +19,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="London GP Directory">
 <meta property="og:title" content="London GP Directory — Find &amp; Compare NHS GP Practices">
-<meta property="og:description" content="Free directory of London healthcare: 979 NHS GP practices and 1501 private clinics with patient scores, CQC ratings and contact details.">
+<meta property="og:description" content="Free directory of London healthcare: 981 NHS GP practices and 1503 private clinics with patient scores, CQC ratings and contact details.">
 <meta property="og:url" content="https://londongp.directory/">
 <meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://londongp.directory/og-image.png">
@@ -124,6 +124,7 @@ a{text-decoration:none;color:inherit}
 .borough-more{flex-shrink:0;padding:6px 13px;border-radius:99px;background:#003087;color:#fff;font-size:12.5px;font-weight:700;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
 .borough-more:hover{opacity:.9}
 .card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
+.card-hours{font-size:11.5px;color:#0F6E56;margin:-4px 0 10px}
 .metrics{display:flex;gap:12px;margin-bottom:12px}
 .metric{flex:1}
 .m-lbl{font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#aaa;margin-bottom:2px}
@@ -221,8 +222,8 @@ footer a{color:rgba(255,255,255,.8)}
         <p>Find &amp; compare NHS GP practices &amp; private clinics across London</p>
       </div>
       <div class="hdr-stats">
-        <div><strong>979</strong><span>NHS practices</span></div>
-        <div><strong>1501</strong><span>private clinics</span></div>
+        <div><strong>981</strong><span>NHS practices</span></div>
+        <div><strong>1503</strong><span>private clinics</span></div>
         <div><strong>101</strong><span>areas</span></div>
         <div><strong>121</strong><span>PCNs</span></div>
         <div><strong id="avgScore">76</strong><span>avg score %</span></div>
@@ -346,6 +347,21 @@ footer a{color:rgba(255,255,255,.8)}
 let DATA = [];
 const DATA_READY = fetch('/data.json').then(r => r.json()).then(d => { DATA = d; }).catch(() => { document.getElementById('grid').innerHTML = '<div class="empty"><h3>Could not load practice data. Please refresh.</h3></div>'; });
 const slugify = s => (s||'').toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+const _WK = [['Monday','Mon'],['Tuesday','Tue'],['Wednesday','Wed'],['Thursday','Thu'],['Friday','Fri'],['Saturday','Sat'],['Sunday','Sun']];
+function hoursSummary(oh){
+  if(!oh || typeof oh !== 'object') return '';
+  const seq = _WK.map((w,i)=>[i,w[1],oh[w[0]]]).filter(x=>x[2] && String(x[2]).toLowerCase()!=='closed');
+  const groups = [];
+  for(const [i,abbr,val] of seq){
+    const g = groups[groups.length-1];
+    if(g && g.val===val && g.endI===i-1){ g.end=abbr; g.endI=i; }
+    else groups.push({start:abbr,end:abbr,endI:i,val:val});
+  }
+  if(!groups.length) return '';
+  let txt = groups.slice(0,2).map(g=>(g.start===g.end?g.start:g.start+'–'+g.end)+' '+g.val).join(', ');
+  if(groups.length>2) txt += ', …';
+  return `<div class="card-hours">🕒 ${txt}</div>`;
+}
 let geo = null;                       // {lat, lon, label} when location search active
 const PC_FULL = /^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/;
 const PC_OUT  = /^[A-Za-z]{1,2}\d[A-Za-z\d]?$/;
@@ -505,7 +521,9 @@ function render(){
     const cVal = d.c?`<div class="m-val">${d.c.toFixed(1)}%</div>`:`<div class="m-na">&#x2014;</div>`;
     const phone = d.ph?`<a class="card-phone" href="tel:${d.ph.replace(/\s/g,'')}">${d.ph}</a>`:'<span></span>';
     const cqcBtn = d.cu?`<a class="pill pill-cqc" href="${d.cu}" target="_blank">CQC</a>`:'';
-    const actionBtns = isPriv ? `${d.web?`<a class="pill pill-web" href="${d.web}" target="_blank">Website &#x2192;</a>`:''}${cqcBtn}` : `<a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>${cqcBtn}<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>`;
+    const webBtn = d.web?`<a class="pill pill-web" href="${d.web}" target="_blank">Website &#x2192;</a>`:'';
+    const actionBtns = isPriv ? `${webBtn}${cqcBtn}` : `<a class="pill pill-reg" href="https://gp-registration.nhs.uk/${d.o}" target="_blank">Register &#x2192;</a>${cqcBtn}${webBtn}<a class="pill pill-ods" href="https://www.nhs.uk/services/gp-surgery/-/X${d.o}" target="_blank">NHS</a>`;
+    const hoursLine = hoursSummary(d.oh);
     const typeBadge = isPriv ? `<span class="type-badge t-priv">Private</span>` : `<span class="type-badge t-nhs">NHS</span>`;
     const anpBadge = (!isPriv && d.anp===true) ? `<span class="anp-y">Accepting new patients</span>` : (!isPriv && d.anp===false) ? `<span class="anp-n">Not accepting new patients</span>` : '';
     const dm = distMi(d);
@@ -515,7 +533,7 @@ function render(){
     const metricsBlock = isPriv ? '' : `<div class="metrics"><div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div><div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div></div>`;
     const pageUrl = d.ar && slugify(d.n) ? `/practice/${slugify(d.ar)}/${slugify(d.n)}/` : '';
     const nameHtml = pageUrl ? `<a class="card-name-link" href="${pageUrl}">${d.n}</a>` : d.n;
-    return `<div class="card"><div class="card-top"><div class="card-name">${nameHtml}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${feeChip}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
+    return `<div class="card"><div class="card-top"><div class="card-name">${nameHtml}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${feeChip}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${hoursLine}${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
   }).join('');
   renderPager(pages);
 }
