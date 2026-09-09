@@ -175,15 +175,70 @@ def spec_labels(practice):
     return [SPEC_LABELS.get(s, s.replace("-", " ").title())
             for s in practice.get("specs", [])]
 
+WEEK_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday",
+              "Friday", "Saturday", "Sunday"]
+
+def opening_hours_schema(oh):
+    """schema.org openingHoursSpecification[] from the 'oh' dict, for rich
+    results. Skips closed days; handles multiple ranges per day."""
+    if not isinstance(oh, dict) or not oh:
+        return None
+    spec = []
+    for day in WEEK_ORDER:
+        txt = oh.get(day)
+        if not txt or txt.lower() == "closed":
+            continue
+        for rng in txt.split(","):
+            rng = rng.strip().replace("–", "-")
+            if "-" not in rng:
+                continue
+            opens, closes = (x.strip() for x in rng.split("-", 1))
+            if opens and closes:
+                spec.append({
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": f"https://schema.org/{day}",
+                    "opens": opens, "closes": closes,
+                })
+    return spec or None
+
+def render_hours(practice):
+    """Opening-hours table from Service Search 'oh' data (Weekday -> text)."""
+    oh = practice.get("oh")
+    if not isinstance(oh, dict) or not oh:
+        return ""
+    rows = []
+    for day in WEEK_ORDER:
+        if day not in oh:
+            continue
+        txt = oh[day] or "Closed"
+        closed = txt.lower() == "closed"
+        val = f'<span style="color:#999">Closed</span>' if closed else html.escape(txt)
+        rows.append(f'<tr><th style="text-align:left;font-weight:600;padding:2px 10px 2px 0;white-space:nowrap">{day[:3]}</th>'
+                    f'<td style="padding:2px 0">{val}</td></tr>')
+    if not rows:
+        return ""
+    return ('<div class="hours-block" style="margin-top:16px">'
+            '<strong>Opening hours</strong>'
+            f'<table style="border-collapse:collapse;font-size:14px;margin-top:4px">{"".join(rows)}</table>'
+            '<p style="font-size:11.5px;color:#999;margin:6px 0 0">Source: NHS Directory of Healthcare Services</p>'
+            '</div>')
+
 def render_aside(practice, neighbours):
     addr = html.escape(", ".join(b for b in (practice.get("a", ""), practice.get("p", "")) if b))
     pcn = html.escape(str(practice.get("pcn", "")))
     ph = practice.get("ph", "")
+    web = practice.get("web", "")
     addr_block = f'<strong>Address</strong>{addr}' if addr else ''
     if ph:
         addr_block += f'<br><br><strong>Phone</strong><a href="tel:{normalise_phone(ph)}" style="color:#003087">{html.escape(ph)}</a>'
+    if web and not is_priv(practice):
+        web_label = web.replace("https://", "").replace("http://", "").rstrip("/")
+        addr_block += (f'<br><br><strong>Website</strong>'
+                       f'<a href="{html.escape(web)}" target="_blank" rel="noopener" style="color:#003087">'
+                       f'{html.escape(web_label)}</a>')
     if pcn and not is_priv(practice):
         addr_block += f'<br><br><strong>PCN</strong>{pcn}'
+    hours_html = render_hours(practice) if not is_priv(practice) else ""
 
     nbs = ""
     if neighbours:
@@ -193,7 +248,7 @@ def render_aside(practice, neighbours):
             for n in neighbours
         ) + "</ul>"
     addr_html = f'<div class="addr-block">{addr_block}</div>' if addr_block else ''
-    return f'<aside class="aside">{addr_html}{nbs}</aside>'
+    return f'<aside class="aside">{addr_html}{hours_html}{nbs}</aside>'
 
 def render_metrics(practice):
     blocks = []
@@ -238,6 +293,9 @@ def render_actions(practice):
     ph = practice.get("ph", "")
     if ph:
         out.append(f'<a class="btn btn-secondary" href="tel:{normalise_phone(ph)}">Call {html.escape(ph)}</a>')
+    web = practice.get("web", "")
+    if web:
+        out.append(f'<a class="btn btn-secondary" href="{html.escape(web)}" target="_blank" rel="noopener">Practice website</a>')
     if ods:
         out.append(f'<a class="btn btn-secondary" href="https://www.nhs.uk/services/gp-surgery/-/X{ods}" target="_blank" rel="noopener">View on NHS</a>')
     cu = practice.get("cu")
@@ -373,9 +431,10 @@ def render_faq(practice):
          f"in London. Practice catchment areas are set by the practice itself — "
          f"call to confirm whether your address is in their boundary."),
         ("Where is the data on this page from?",
-         f"Phone numbers and addresses come directly from the NHS Organisation "
-         f"Data Service (ODS) and are refreshed weekly. Patient survey scores "
-         f"come from the NHS GP Patient Survey. CQC ratings come from the "
+         f"Practice name, address, phone, website and opening hours come from the "
+         f"NHS Directory of Healthcare Services (Service Search) API — the same "
+         f"authoritative source NHS.uk uses — refreshed regularly. Patient survey "
+         f"scores come from the NHS GP Patient Survey. CQC ratings come from the "
          f"Care Quality Commission."),
     ]
     if ph:
@@ -462,11 +521,16 @@ def render_page(practice, neighbours):
     else:
         ld["medicalSpecialty"] = "PrimaryCare"
         ld["isPartOf"] = {"@type": "GovernmentOrganization", "name": "NHS England"}
+        if practice.get("web"):
+            ld["sameAs"] = practice["web"]
     if ph:
         ld["telephone"] = ph
     la, ln = practice.get("la"), practice.get("ln")
     if la and ln:
         ld["geo"] = {"@type": "GeoCoordinates", "latitude": la, "longitude": ln}
+    ohspec = opening_hours_schema(practice.get("oh"))
+    if ohspec:
+        ld["openingHoursSpecification"] = ohspec
     if s:
         ld["aggregateRating"] = {
             "@type": "AggregateRating",

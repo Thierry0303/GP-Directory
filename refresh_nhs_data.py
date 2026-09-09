@@ -54,6 +54,18 @@ base_by_ods = {d["ods_code"]: d for d in BASE_DATA}
 ods_codes = list(base_by_ods.keys())
 print(f"  {len(ods_codes)} genuine GP practices")
 
+# Authoritative enrichment from the NHS Directory of Healthcare Services
+# (Service Search) API v3, produced by fetch_nhs_service_search.py. Keyed by
+# ODS code (uppercase). Optional — the pipeline still runs without it.
+SS_FILE = Path("nhs_service_search.json")
+SS = {}
+if SS_FILE.exists():
+    try:
+        SS = {k.upper(): v for k, v in json.loads(SS_FILE.read_text()).items()}
+        print(f"  loaded Service Search enrichment for {len(SS)} practices")
+    except Exception as e:
+        print(f"  WARNING: could not read {SS_FILE}: {e}")
+
 def fetch(ods):
     url = (f"https://directory.spineservices.nhs.uk/STU3/Organization"
            f"?identifier=https%3A%2F%2Ffhir.nhs.uk%2FId%2Fods-organization-code%7C{ods}"
@@ -224,35 +236,62 @@ def area(pc):
     return BOROUGH_MAP.get(d, "")
 
 print("Building merged dataset...")
+# Field priority: Service Search (ss, authoritative) > Spine ODS (live) > base.
 merged = []
+ss_pruned = 0
 for ods in ods_codes:
     live = results.get(ods) or {}
     if live.get("inactive"): continue
+    ss = SS.get(ods) or {}
+    # Prune practices the Service Search API marks as no longer visible/open.
+    if ss.get("status") and ss["status"].lower() != "visible":
+        ss_pruned += 1
+        continue
     base = base_by_ods.get(ods, {})
     pcn = (base.get("gpps_pcn","") or "").replace(" PCN","").replace(" Pcn","").strip()
-    pc = live.get("postcode") or base.get("postcode","") or ""
-    lat, lng = geo(pc)
-    n = live.get("name") or base.get("name","")
-    a = live.get("address") or base.get("address","")
-    merged.append({
+    pc = ss.get("postcode") or live.get("postcode") or base.get("postcode","") or ""
+    n = ss.get("name") or live.get("name") or base.get("name","")
+    a = ss.get("address") or live.get("address") or base.get("address","")
+    # Precise coordinates from Service Search; else the practice's own coords
+    # from gps.json; else the postcode-district centroid as a last resort.
+    if ss.get("lat") is not None and ss.get("lng") is not None:
+        lat, lng = ss["lat"], ss["lng"]
+    elif base.get("lat") is not None and base.get("lng") is not None:
+        lat, lng = base["lat"], base["lng"]
+    else:
+        lat, lng = geo(pc)
+    rec = {
         "o": ods,
         "n": n.title() if n.isupper() else n,
         "a": a.title() if a.isupper() else a,
         "p": pc,
-        "ph": live.get("phone") or base.get("phone","") or "",
+        "ph": ss.get("phone") or live.get("phone") or base.get("phone","") or "",
         "s": base.get("gpps_overall_pct"),
         "c": base.get("gpps_contact_pct"),
         "pcn": pcn,
         "cqc": base.get("cqc_rating",""),
         "cu": base.get("cqc_url",""),
         "ar": area(pc),
-        "la": round(lat,5) if lat else None,
-        "ln": round(lng,5) if lng else None,
+        "la": round(lat,6) if lat else None,
+        "ln": round(lng,6) if lng else None,
         **{ck: base[fk] for ck, fk in
            (("t","gpps_trust_pct"), ("nm","gpps_needs_met_pct"),
             ("rc","gpps_reception_pct"), ("ct","gpps_continuity_pct"))
            if base.get(fk) is not None},
-    })
+    }
+    # Website + opening hours from Service Search (only when present).
+    if ss.get("website"):
+        rec["web"] = ss["website"]
+    if ss.get("opening"):
+        rec["oh"] = ss["opening"]
+    merged.append(rec)
+
+if SS:
+    ss_geo = sum(1 for r in merged if r.get("la") and SS.get(r["o"], {}).get("lat"))
+    print(f"  Service Search: {ss_geo} precise coords, "
+          f"{sum(1 for r in merged if r.get('web'))} websites, "
+          f"{sum(1 for r in merged if r.get('oh'))} opening-hours, "
+          f"{ss_pruned} pruned as not-visible")
 
 # Accepting-new-patients flags (written by fetch_accepting_patients.py)
 ANP_FILE = Path("accepting_patients.json")
