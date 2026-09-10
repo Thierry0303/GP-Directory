@@ -70,6 +70,9 @@ a{text-decoration:none;color:inherit}
 .filters-btn{display:none;margin-left:auto;align-items:center;gap:6px;padding:8px 14px;border-radius:99px;border:1.5px solid #ddd;background:#fff;cursor:pointer;font-family:inherit;font-size:13.5px;font-weight:600;color:#003087}
 .filters-btn .fcount{background:#003087;color:#fff;font-size:11px;font-weight:700;border-radius:99px;padding:1px 7px;display:none}
 .filters-btn .fcount.show{display:inline-block}
+/* Mobile bottom-sheet chrome — hidden on desktop, shown in the mobile media query below */
+.sheet-close{display:none}
+.sheet-actions{display:none}
 
 .layout{max-width:1300px;margin:0 auto;padding:20px 24px 48px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
 .sidebar{position:sticky;top:20px}
@@ -178,7 +181,7 @@ footer a{color:rgba(255,255,255,.8)}
   #filterGroup.open .panel{margin-bottom:10px}
   .sheet-hdr{display:flex;align-items:center;justify-content:space-between;padding:4px 4px 12px}
   .sheet-hdr h3{font-family:Georgia,serif;color:#003087;font-size:1.1rem}
-  .sheet-close{background:#f0f0ee;border:none;width:30px;height:30px;border-radius:99px;font-size:16px;color:#555;cursor:pointer}
+  .sheet-close{display:inline-flex;align-items:center;justify-content:center;background:#f0f0ee;border:none;width:30px;height:30px;border-radius:99px;font-size:16px;color:#555;cursor:pointer}
   .sheet-actions{display:flex;gap:8px;margin-top:6px}
   .sheet-actions button{flex:1;padding:11px;border-radius:8px;font-family:inherit;font-size:13.5px;font-weight:600;cursor:pointer}
   .sheet-apply{background:#003087;color:#fff;border:none}
