@@ -266,10 +266,14 @@ def display_name(rec):
         name, re.IGNORECASE
     )
     if looks_like_address:
-        # Keep provider name short to avoid bloating card display
-        if len(prov) > 50:
-            prov = prov[:47] + "..."
-        return f"{name} — {prov}"
+        # Lead with the provider (the actual clinic/company name) and keep the
+        # address as a locator suffix, so the card reads as a name — not an
+        # address. Skip the suffix when the provider already contains it.
+        if len(prov) > 60:
+            prov = prov[:57] + "..."
+        if name.lower() in prov.lower():
+            return prov
+        return f"{prov} — {name}"
     return name
 
 def to_merge_shape(rec, specs):
