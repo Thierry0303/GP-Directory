@@ -250,7 +250,7 @@ def render_borough_page(borough, records, all_boroughs, today):
         '  <div class="hdr-top"><div class="hdr-in"><div class="logo"><h1>London GP <em>Directory</em></h1></div></div></div>\n'
         '  <nav class="main-nav" aria-label="Main navigation"><div class="main-nav-in">'
         '<a href="/">Search</a><a href="/boroughs/">Boroughs</a><a href="/nhs-services/">NHS Services</a>'
-        '<a href="/private/">Private Clinics</a><a href="/dentists/">Dentists</a><a href="/guides/">Guides</a>'
+        '<a href="/private/">Private Clinics</a><a href="/dentists/">Dentists</a><a href="/pharmacies/">Pharmacies</a><a href="/guides/">Guides</a>'
         '<a href="/methodology.html">Methodology</a><a href="/sources.html">Sources</a>'
         '<a class="support-btn" href="https://ko-fi.com/thierry81" target="_blank" rel="noopener" style="background:#FF5E5B;color:#fff;padding:6px 13px;border-radius:999px;font-weight:700;font-size:.8rem;white-space:nowrap">&#9749; Support</a>'
         '</div></nav>\n'
