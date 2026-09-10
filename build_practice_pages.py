@@ -593,7 +593,7 @@ def render_page(practice, neighbours):
     <a href="/boroughs/">Boroughs</a>
     <a href="/nhs-services/">NHS Services</a>
     <a href="/private/">Private Clinics</a>
-    <a href="/dentists/">Dentists</a>
+    <a href="/dentists/">Dentists</a><a href="/pharmacies/">Pharmacies</a>
     <a href="/guides/">Guides</a>
     <a href="/methodology.html">Methodology</a>
     <a href="/sources.html">Sources</a>

@@ -49,6 +49,16 @@ jobs:
         run: python fetch_nhs_service_search.py
         continue-on-error: true
 
+      # ---- 1c. London pharmacies, direct from Service Search (ODS-keyed).
+      #          Writes pharmacies.json for build_pharmacy_pages.py. Bounded +
+      #          non-fatal: a blip falls back to the last committed dataset. ----
+      - name: Fetch London pharmacies
+        env:
+          NHS_SERVICE_SEARCH_KEY: ${{ secrets.NHS_SERVICE_SEARCH_KEY }}
+        run: python fetch_pharmacies.py
+        continue-on-error: true
+        timeout-minutes: 15
+
       - name: NHS refresh
         run: python refresh_nhs_data.py
       - name: Strip non-GP NHS records
@@ -129,6 +139,8 @@ jobs:
         run: python build_borough_index.py
       - name: Build NHS services pages
         run: python build_nhs_services_pages.py
+      - name: Build pharmacy pages
+        run: python build_pharmacy_pages.py
       - name: Build unified sitemap
         run: python build_sitemap_unified.py
 
