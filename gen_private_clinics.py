@@ -266,14 +266,13 @@ def display_name(rec):
         name, re.IGNORECASE
     )
     if looks_like_address:
-        # Lead with the provider (the actual clinic/company name) and keep the
-        # address as a locator suffix, so the card reads as a name — not an
-        # address. Skip the suffix when the provider already contains it.
-        if len(prov) > 60:
-            prov = prov[:57] + "..."
-        if name.lower() in prov.lower():
-            return prov
-        return f"{prov} — {name}"
+        # The CQC location name is just an address (e.g. "10 Harley Street").
+        # Use the provider (the actual clinic/company name) as the display
+        # name and drop the address — it's already shown on its own line on
+        # the card, so repeating it makes the name read like an address.
+        if len(prov) > 70:
+            prov = prov[:67] + "..."
+        return prov
     return name
 
 def to_merge_shape(rec, specs):
