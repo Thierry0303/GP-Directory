@@ -29860,5 +29860,24 @@
     "lon": -0.1921627,
     "providerName": "",
     "ar": "Wandsworth"
+  },
+  {
+    "cqc_id": "1-27655290069",
+    "ods_code": "",
+    "name": "E & J Bio UK Ltd",
+    "address": "305, Neasden Lane, London",
+    "postcode": "NW10 1QR",
+    "phone": "02071268511",
+    "website": "https://www.ejbio.co.uk",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-27655290069",
+    "localAuthority": "Brent",
+    "lat": 51.5601188,
+    "lon": -0.2527654,
+    "providerName": "",
+    "ar": "Brent"
   }
 ]

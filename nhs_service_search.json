@@ -2345,17 +2345,19 @@
     "lng": -0.364268,
     "name": "KS Medical Centre",
     "opening": {
-      "Friday": "08:00–13:00, 14:00–19:00",
-      "Monday": "08:00–13:00, 14:00–19:00",
-      "Thursday": "08:00–14:00",
-      "Tuesday": "08:00–13:00, 14:00–19:00",
-      "Wednesday": "08:00–13:00, 14:00–19:00"
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02085743986",
     "postcode": "UB1 3HY",
     "status": "Visible",
     "type": "GpBranch",
-    "website": ""
+    "website": "https://www.ksmedicalcentre.co.uk/"
   },
   "E85013": {
     "address": "20 Church Road, Hanwell, London",

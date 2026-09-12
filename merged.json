@@ -19188,12 +19188,15 @@
     "ar": "Ealing",
     "la": 51.513733,
     "ln": -0.364268,
+    "web": "https://www.ksmedicalcentre.co.uk/",
     "oh": {
-      "Friday": "08:00\u201313:00, 14:00\u201319:00",
-      "Monday": "08:00\u201313:00, 14:00\u201319:00",
-      "Thursday": "08:00\u201314:00",
-      "Tuesday": "08:00\u201313:00, 14:00\u201319:00",
-      "Wednesday": "08:00\u201313:00, 14:00\u201319:00"
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -56923,5 +56926,25 @@
     "ln": -0.1921627,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-27655290069",
+    "n": "E & J Bio UK Ltd",
+    "a": "305, Neasden Lane, London",
+    "p": "NW10 1QR",
+    "ph": "02071268511",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-27655290069",
+    "ar": "Brent",
+    "la": 51.5601188,
+    "ln": -0.2527654,
+    "type": "Private",
+    "web": "https://www.ejbio.co.uk"
   }
 ]
