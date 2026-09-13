@@ -1903,6 +1903,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.ejbio.co.uk": {
+"checked": "2026-09-13",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.ekdermatology.co.uk": {
 "checked": "2026-09-09",
 "ok": true,
