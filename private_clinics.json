@@ -29763,7 +29763,7 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.411291,
     "lon": -0.292362,
-    "providerName": "",
+    "providerName": "South East London Doctors Co Operative Limited",
     "ar": "Kingston"
   },
   {
@@ -29782,7 +29782,7 @@
     "localAuthority": "Camden",
     "lat": 51.550319,
     "lon": -0.1377068,
-    "providerName": "",
+    "providerName": "Camden Health Partners Limited",
     "ar": "Camden"
   },
   {
@@ -29801,7 +29801,7 @@
     "localAuthority": "Kingston upon Thames",
     "lat": 51.411291,
     "lon": -0.292362,
-    "providerName": "",
+    "providerName": "Verve Healthcare Limited",
     "ar": "Kingston"
   },
   {
@@ -29820,7 +29820,7 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.5099884,
     "lon": -0.1924291,
-    "providerName": "",
+    "providerName": "Futura Clinic Ltd",
     "ar": "Kensington & Chelsea"
   },
   {
@@ -29839,7 +29839,7 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.5255553,
     "lon": -0.2075833,
-    "providerName": "",
+    "providerName": "Golborne Medical Centre",
     "ar": "Kensington & Chelsea"
   },
   {
@@ -29858,7 +29858,7 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4537082,
     "lon": -0.1921627,
-    "providerName": "",
+    "providerName": "Revitalis Medical Ltd",
     "ar": "Wandsworth"
   },
   {
@@ -29877,7 +29877,7 @@
     "localAuthority": "Brent",
     "lat": 51.5601188,
     "lon": -0.2527654,
-    "providerName": "",
+    "providerName": "E & J Bio UK Ltd",
     "ar": "Brent"
   }
 ]
