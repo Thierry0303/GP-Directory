@@ -98,6 +98,18 @@ def borough_from_postcode(pc):
         return BOROUGH_MAP.get(m.group(1), "")
     return ""
 
+def _group(name, provider):
+    """The parent provider/group (e.g. 'HCA International Limited') when it adds
+    brand info beyond the clinic name — so a search for 'Bupa'/'HCA'/'Nuffield'
+    surfaces every facility, not just those with the brand in their own name."""
+    prov = (provider or "").strip()
+    nm = (name or "").strip()
+    if not prov:
+        return ""
+    if prov.lower() == nm.lower() or prov.lower() in nm.lower():
+        return ""
+    return prov
+
 def normalise_private(r):
     pc = (r.get("postcode") or "").strip()
     addr = r.get("address") or ""
@@ -105,6 +117,7 @@ def normalise_private(r):
     specialties = r.get("specialties") or []
     spec_str = ", ".join(specialties)
     cqc_rating = r.get("cqc_rating") or ""
+    grp = _group(r.get("name"), r.get("providerName"))
     return {
         "o":    r.get("cqc_id") or r.get("ods_code") or "",
         "n":    r.get("name") or "",
@@ -122,6 +135,7 @@ def normalise_private(r):
         "ln":   r.get("lon"),
         "type": "Private",
         "web":  r.get("website") or "",
+        **({"grp": grp} if grp else {}),
         **({"fee": r["fee_from"], "feeChk": r.get("fee_checked","")} if r.get("fee_from") else {}),
     }
 

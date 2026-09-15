@@ -127,6 +127,7 @@ a{text-decoration:none;color:inherit}
 .borough-more{flex-shrink:0;padding:6px 13px;border-radius:99px;background:#003087;color:#fff;font-size:12.5px;font-weight:700;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:4px}
 .borough-more:hover{opacity:.9}
 .card-addr{font-size:11.5px;color:#888;margin-bottom:10px;line-height:1.4}
+.card-grp{font-size:11px;color:#5B2C83;font-weight:600;margin-bottom:6px}
 .card-hours{font-size:11.5px;color:#0F6E56;margin:-4px 0 10px}
 .metrics{display:flex;gap:12px;margin-bottom:12px}
 .metric{flex:1}
@@ -498,7 +499,7 @@ function render(){
     const recType = d.type || 'NHS';
     if(selType !== 'All' && recType !== selType) return false;
     if(selType === 'Private' && selSpec !== 'all' && !(d.specs||[]).includes(selSpec)) return false;
-    const ms = !q || !!geo || d.n.toLowerCase().includes(q) || (d.p||'').toLowerCase().includes(q) || (d.a||'').toLowerCase().includes(q) || (d.ar||'').toLowerCase().includes(q) || (d.pcn||'').toLowerCase().includes(q) || (d.specs||[]).some(s => s.toLowerCase().includes(q));
+    const ms = !q || !!geo || d.n.toLowerCase().includes(q) || (d.grp||'').toLowerCase().includes(q) || (d.p||'').toLowerCase().includes(q) || (d.a||'').toLowerCase().includes(q) || (d.ar||'').toLowerCase().includes(q) || (d.pcn||'').toLowerCase().includes(q) || (d.specs||[]).some(s => s.toLowerCase().includes(q));
     const mc = selCQC.size===0 || selCQC.has(d.cqc||'');
     const ma = selArea.size===0 || selArea.has(d.ar||'');
     const manp = !(document.getElementById('anpChk').checked && recType==='NHS') || d.anp===true;
@@ -536,7 +537,7 @@ function render(){
     const metricsBlock = isPriv ? '' : `<div class="metrics"><div class="metric"><div class="m-lbl">Satisfaction</div><div class="m-track">${sBar}</div>${sVal}</div><div class="metric"><div class="m-lbl">Contact ease</div><div class="m-track">${cBar}</div>${cVal}</div></div>`;
     const pageUrl = d.ar && slugify(d.n) ? `/practice/${slugify(d.ar)}/${slugify(d.n)}/` : '';
     const nameHtml = pageUrl ? `<a class="card-name-link" href="${pageUrl}">${d.n}</a>` : d.n;
-    return `<div class="card"><div class="card-top"><div class="card-name">${nameHtml}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${feeChip}${specBadges}</div>${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${hoursLine}${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
+    return `<div class="card"><div class="card-top"><div class="card-name">${nameHtml}</div><span class="cqc ${cc}">${cqcLabel(d.cqc)}</span></div><div class="card-badges">${typeBadge}${anpBadge}${distChip}${feeChip}${specBadges}</div>${d.grp?`<div class="card-grp">Part of ${d.grp}</div>`:''}${d.ar?`<a href="/practice/${slugify(d.ar)}/" class="area-tag">${d.ar}</a>`:''}<div class="card-addr">${d.a}${d.p?', '+d.p:''}</div>${hoursLine}${metricsBlock}<div class="card-foot">${phone}<div class="actions">${actionBtns}</div></div>${d.pcn?`<div class="card-pcn">${d.pcn}</div>`:''}</div>`;
   }).join('');
   renderPager(pages);
 }

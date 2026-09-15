@@ -121,7 +121,8 @@ def render_card(d):
             f'<div class="card-top"><div class="card-name">{name_html}</div>'
             f'<span class="cqc {cc}">{cqc_label}</span></div>'
             f'<div class="card-badges">{type_badge}{spec_badges}</div>'
-            f'{card_addr}'
+            + (f'<div class="card-grp">Part of {d.get("grp","")}</div>' if d.get("grp") else "")
+            + f'{card_addr}'
             f'{hours_summary(d.get("oh"))}'
             f'{metrics}'
             f'<div class="card-foot">{phone_html}<div class="actions">{actions}</div></div>'
@@ -224,6 +225,7 @@ def render_borough_page(borough, records, all_boroughs, today):
         '.type-badge.t-priv{background:#FAE7F3;color:#A02670}\n'
         '.spec-badge{font-size:10px;padding:2px 8px;border-radius:99px;background:#F5F0E8;color:#7A5D2F;text-transform:capitalize}\n'
         '.card-addr{font-size:11.5px;color:#888;margin-bottom:10px}\n'
+        '.card-grp{font-size:11px;color:#5B2C83;font-weight:600;margin-bottom:6px}\n'
         '.card-hours{font-size:11.5px;color:#0F6E56;margin:-4px 0 10px}\n'
         '.metrics{display:flex;gap:12px;margin-bottom:12px}\n'
         '.metric{flex:1}\n'
