@@ -149,6 +149,7 @@ a{text-decoration:none;color:inherit}
 .card .card-actions,.card .card-actions a{position:relative;z-index:1}
 .card-name{font-family:Georgia,serif;font-weight:700;font-size:.9rem;color:#003087;margin-bottom:4px;line-height:1.3}
 .card-addr{font-size:.78rem;color:#777;margin-bottom:8px}
+.card-grp{font-size:.72rem;color:#5B2C83;font-weight:600;margin:2px 0 6px}
 .card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
 .tag{padding:2px 8px;border-radius:8px;font-size:.68rem;font-weight:600}
 .tag.private{background:#f0fdf4;color:#166534}
@@ -242,8 +243,12 @@ def render_private_card(p):
     # (e.g. contact details suppressed for data protection).
     addr_line = (f'\n  <div class="card-addr">{p.get("address","")}{", " + p["postcode"] if p.get("postcode") else ""}</div>'
                  if (p.get('address') or p.get('postcode')) else '')
+    _prov = (p.get('providerName') or '').strip()
+    _nm = (p.get('name') or '').strip()
+    grp_line = (f'\n  <div class="card-grp">Part of {_prov}</div>'
+                if _prov and _prov.lower() != _nm.lower() and _prov.lower() not in _nm.lower() else '')
     return f"""<div class="card" data-borough="{borough}" data-type="private">
-  <div class="card-name">{name_html}</div>{addr_line}
+  <div class="card-name">{name_html}</div>{grp_line}{addr_line}
   <div class="card-tags">
     <span class="tag private">Private</span>
     {borough_tag}{spec_tags}{badge}
