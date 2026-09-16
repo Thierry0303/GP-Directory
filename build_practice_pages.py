@@ -286,6 +286,7 @@ def render_actions(practice):
         cu = practice.get("cu")
         if cu:
             out.append(f'<a class="btn btn-secondary" href="{html.escape(cu)}" target="_blank" rel="noopener">CQC registration</a>')
+        out.append('<a class="btn btn-secondary" href="https://www.phin.org.uk/" target="_blank" rel="noopener">Find a consultant (PHIN)</a>')
         return f'<div class="actions">{"".join(out)}</div>' if out else ""
     ods = practice.get("o", "")
     if ods:
