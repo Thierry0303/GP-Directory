@@ -56946,5 +56946,45 @@
     "ln": -0.2527654,
     "type": "Private",
     "web": "https://www.ejbio.co.uk"
+  },
+  {
+    "o": "1-29571028649",
+    "n": "The Carepoint Practice",
+    "a": "Pinner Road, Northwood",
+    "p": "HA6 1DE",
+    "ph": "01923843380",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29571028649",
+    "ar": "Hillingdon",
+    "la": 51.6041105,
+    "ln": -0.4130741,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-29700135454",
+    "n": "Blackfen Private GP and Specialist Clinic",
+    "a": "258 Blackfen Road, Sidcup",
+    "p": "DA15 8PW",
+    "ph": "02082260424",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29700135454",
+    "ar": "Bexley",
+    "la": 51.4503518,
+    "ln": 0.1032921,
+    "type": "Private",
+    "web": "https://www.blackfenprivategp.com"
   }
 ]

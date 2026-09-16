@@ -29879,5 +29879,43 @@
     "lon": -0.2527654,
     "providerName": "E & J Bio UK Ltd",
     "ar": "Brent"
+  },
+  {
+    "cqc_id": "1-29571028649",
+    "ods_code": "",
+    "name": "The Carepoint Practice",
+    "address": "Pinner Road, Northwood",
+    "postcode": "HA6 1DE",
+    "phone": "01923843380",
+    "website": "",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29571028649",
+    "localAuthority": "Hillingdon",
+    "lat": 51.6041105,
+    "lon": -0.4130741,
+    "providerName": "",
+    "ar": "Hillingdon"
+  },
+  {
+    "cqc_id": "1-29700135454",
+    "ods_code": "",
+    "name": "Blackfen Private GP and Specialist Clinic",
+    "address": "258 Blackfen Road, Sidcup",
+    "postcode": "DA15 8PW",
+    "phone": "02082260424",
+    "website": "https://www.blackfenprivategp.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29700135454",
+    "localAuthority": "Bexley",
+    "lat": 51.4503518,
+    "lon": 0.1032921,
+    "providerName": "",
+    "ar": "Bexley"
   }
 ]
