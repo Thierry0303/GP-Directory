@@ -678,6 +678,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.blackfenprivategp.com": {
+"checked": "2026-09-16",
+"ok": true,
+"really_ok": true,
+"status": "403",
+"strikes": 0
+},
 "https://www.blisschemist.co.uk": {
 "checked": "2026-09-09",
 "ok": true,

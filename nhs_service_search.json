@@ -15204,26 +15204,6 @@
     "type": "GpBranch",
     "website": "https://www.novumhealth.co.uk"
   },
-  "G85642": {
-    "address": "Blackfriars Medical Pract, 45 Colombo Street, London",
-    "lat": 51.505363,
-    "lng": -0.105761,
-    "name": "Blackfriars Medical Practice",
-    "opening": {
-      "Friday": "08:00–18:30",
-      "Monday": "08:00–18:30",
-      "Saturday": "Closed",
-      "Sunday": "Closed",
-      "Thursday": "08:00–18:30",
-      "Tuesday": "08:00–18:30",
-      "Wednesday": "08:00–18:30"
-    },
-    "phone": "02079286216",
-    "postcode": "SE1 8EE",
-    "status": "Visible",
-    "type": "GpBranch",
-    "website": "http://www.blackfriarsmedicalpractice.nhs.uk/"
-  },
   "G85644": {
     "address": "The Gardens, London",
     "lat": 51.460629,
