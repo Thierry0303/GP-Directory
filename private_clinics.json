@@ -29917,5 +29917,43 @@
     "lon": 0.1032921,
     "providerName": "",
     "ar": "Bexley"
+  },
+  {
+    "cqc_id": "1-29070165225",
+    "ods_code": "",
+    "name": "Holosyn Main Office",
+    "address": "26 Pangbourne Drive, Stanmore",
+    "postcode": "HA7 4QT",
+    "phone": "07877359519",
+    "website": "https://www.holosyn.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29070165225",
+    "localAuthority": "Harrow",
+    "lat": 51.6190357,
+    "lon": -0.2924246,
+    "providerName": "",
+    "ar": "Harrow"
+  },
+  {
+    "cqc_id": "1-29702738035",
+    "ods_code": "",
+    "name": "Window to the Womb, Kensington",
+    "address": "Unit 4, 160 North End Road, West Kensington, London",
+    "postcode": "W14 9PR",
+    "phone": "02081027727",
+    "website": "https://www.windowtothewomb.co.uk/find-a-clinic/kensington-baby-scan-clinic/",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29702738035",
+    "localAuthority": "Hammersmith and Fulham",
+    "lat": 51.4879195,
+    "lon": -0.2040767,
+    "providerName": "",
+    "ar": "Hammersmith & Fulham"
   }
 ]

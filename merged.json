@@ -9301,15 +9301,25 @@
     "n": "Blackfriars Medical Practice",
     "a": "Blackfriars Medical Pract, 45 Colombo Street, London",
     "p": "SE1 8EE",
-    "ph": "020 79286216",
+    "ph": "02079286216",
     "s": 68.0,
     "c": 70.3,
     "pcn": "NORTH SOUTHWARK",
     "cqc": "Good",
     "cu": "http://www.cqc.org.uk/location/1-556158120",
     "ar": "Southwark",
-    "la": 51.505365,
-    "ln": -0.10575,
+    "la": 51.505363,
+    "ln": -0.105761,
+    "web": "http://www.blackfriarsmedicalpractice.nhs.uk/",
+    "oh": {
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
+    },
     "type": "NHS"
   },
   {
@@ -58189,5 +58199,45 @@
     "ln": 0.1032921,
     "type": "Private",
     "web": "https://www.blackfenprivategp.com"
+  },
+  {
+    "o": "1-29070165225",
+    "n": "Holosyn Main Office",
+    "a": "26 Pangbourne Drive, Stanmore",
+    "p": "HA7 4QT",
+    "ph": "07877359519",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29070165225",
+    "ar": "Harrow",
+    "la": 51.6190357,
+    "ln": -0.2924246,
+    "type": "Private",
+    "web": "https://www.holosyn.co.uk"
+  },
+  {
+    "o": "1-29702738035",
+    "n": "Window to the Womb, Kensington",
+    "a": "Unit 4, 160 North End Road, West Kensington, London",
+    "p": "W14 9PR",
+    "ph": "02081027727",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29702738035",
+    "ar": "Hammersmith & Fulham",
+    "la": 51.4879195,
+    "ln": -0.2040767,
+    "type": "Private",
+    "web": "https://www.windowtothewomb.co.uk/find-a-clinic/kensington-baby-scan-clinic/"
   }
 ]
