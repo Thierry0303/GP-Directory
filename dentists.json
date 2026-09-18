@@ -266,7 +266,8 @@
     "localAuthority": "Lambeth",
     "lat": 51.451976,
     "lon": -0.1248,
-    "providerName": "Prisoner Centred Dental Care Limited"
+    "providerName": "Prisoner Centred Dental Care Limited",
+    "ar": "Lambeth"
   },
   {
     "cqc_id": "1-1054621685",
