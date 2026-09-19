@@ -11144,25 +11144,15 @@
     "n": "Balham Health Centre",
     "a": "120 Bedford Hill, Balham, London",
     "p": "SW12 9HS",
-    "ph": "02086738268",
+    "ph": "020 86738268",
     "s": 87.9,
     "c": 85.2,
     "pcn": "BALHAM, TOOTING & FURZEDOWN",
     "cqc": "Good",
     "cu": "http://www.cqc.org.uk/location/1-535063260",
     "ar": "Wandsworth",
-    "la": 51.440804,
-    "ln": -0.149026,
-    "web": "https://www.balhamhealthcentre.co.uk/",
-    "oh": {
-      "Friday": "09:00\u201313:00, 16:00\u201319:00",
-      "Monday": "09:00\u201313:00, 16:00\u201319:30",
-      "Saturday": "Closed",
-      "Sunday": "Closed",
-      "Thursday": "09:00\u201313:00, 16:00\u201318:30",
-      "Tuesday": "09:00\u201313:00, 16:00\u201318:30",
-      "Wednesday": "09:00\u201313:00, 16:00\u201318:30"
-    },
+    "la": 51.440805,
+    "ln": -0.149014,
     "type": "NHS"
   },
   {
@@ -19140,7 +19130,7 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "08:00\u201313:00",
+      "Saturday": "08:00\u201312:30",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
@@ -58239,5 +58229,26 @@
     "ln": -0.2040767,
     "type": "Private",
     "web": "https://www.windowtothewomb.co.uk/find-a-clinic/kensington-baby-scan-clinic/"
+  },
+  {
+    "o": "1-29663496615",
+    "n": "The Blackwell Clinic - Sundridge Park",
+    "a": "1A Sundridge Parade, Plaistow Lane, Bromley",
+    "p": "BR1 4DT",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "sexual-health, weight-loss",
+    "specs": [
+      "sexual-health",
+      "weight-loss"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29663496615",
+    "ar": "Bromley",
+    "la": 51.4143774,
+    "ln": 0.0201756,
+    "type": "Private",
+    "web": ""
   }
 ]

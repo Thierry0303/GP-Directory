@@ -8663,7 +8663,7 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
-      "Saturday": "08:00–13:00",
+      "Saturday": "08:00–12:30",
       "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
@@ -18397,26 +18397,6 @@
     "status": "Visible",
     "type": "GpBranch",
     "website": "http://www.mertonmedical.com"
-  },
-  "H85637": {
-    "address": "120 Bedford Hill, Balham, London",
-    "lat": 51.440804,
-    "lng": -0.149026,
-    "name": "Balham Health Centre",
-    "opening": {
-      "Friday": "09:00–13:00, 16:00–19:00",
-      "Monday": "09:00–13:00, 16:00–19:30",
-      "Saturday": "Closed",
-      "Sunday": "Closed",
-      "Thursday": "09:00–13:00, 16:00–18:30",
-      "Tuesday": "09:00–13:00, 16:00–18:30",
-      "Wednesday": "09:00–13:00, 16:00–18:30"
-    },
-    "phone": "02086738268",
-    "postcode": "SW12 9HS",
-    "status": "Visible",
-    "type": "GpBranch",
-    "website": "https://www.balhamhealthcentre.co.uk/"
   },
   "H85649": {
     "address": "58 High Street Colliers Wood, Colliers Wood, London",

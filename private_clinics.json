@@ -29955,5 +29955,25 @@
     "lon": -0.2040767,
     "providerName": "",
     "ar": "Hammersmith & Fulham"
+  },
+  {
+    "cqc_id": "1-29663496615",
+    "ods_code": "",
+    "name": "The Blackwell Clinic - Sundridge Park",
+    "address": "1A Sundridge Parade, Plaistow Lane, Bromley",
+    "postcode": "BR1 4DT",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "sexual-health",
+      "weight-loss"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29663496615",
+    "localAuthority": "Bromley",
+    "lat": 51.4143774,
+    "lon": 0.0201756,
+    "providerName": "",
+    "ar": "Bromley"
   }
 ]
