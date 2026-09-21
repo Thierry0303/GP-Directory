@@ -29896,7 +29896,7 @@
     "localAuthority": "Hillingdon",
     "lat": 51.6041105,
     "lon": -0.4130741,
-    "providerName": "",
+    "providerName": "The Carepoint Practice",
     "ar": "Hillingdon"
   },
   {
@@ -29915,7 +29915,7 @@
     "localAuthority": "Bexley",
     "lat": 51.4503518,
     "lon": 0.1032921,
-    "providerName": "",
+    "providerName": "Blackfen Private GP Ltd",
     "ar": "Bexley"
   },
   {
@@ -29934,7 +29934,7 @@
     "localAuthority": "Harrow",
     "lat": 51.6190357,
     "lon": -0.2924246,
-    "providerName": "",
+    "providerName": "Holosyn Ltd",
     "ar": "Harrow"
   },
   {
@@ -29953,7 +29953,7 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4879195,
     "lon": -0.2040767,
-    "providerName": "",
+    "providerName": "Parmi Diagnostics Slough Limited",
     "ar": "Hammersmith & Fulham"
   },
   {
@@ -29973,7 +29973,7 @@
     "localAuthority": "Bromley",
     "lat": 51.4143774,
     "lon": 0.0201756,
-    "providerName": "",
+    "providerName": "The Blackwell Clinic Ltd",
     "ar": "Bromley"
   }
 ]

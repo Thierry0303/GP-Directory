@@ -58188,7 +58188,8 @@
     "la": 51.4503518,
     "ln": 0.1032921,
     "type": "Private",
-    "web": "https://www.blackfenprivategp.com"
+    "web": "https://www.blackfenprivategp.com",
+    "grp": "Blackfen Private GP Ltd"
   },
   {
     "o": "1-29070165225",
@@ -58208,7 +58209,8 @@
     "la": 51.6190357,
     "ln": -0.2924246,
     "type": "Private",
-    "web": "https://www.holosyn.co.uk"
+    "web": "https://www.holosyn.co.uk",
+    "grp": "Holosyn Ltd"
   },
   {
     "o": "1-29702738035",
@@ -58228,7 +58230,8 @@
     "la": 51.4879195,
     "ln": -0.2040767,
     "type": "Private",
-    "web": "https://www.windowtothewomb.co.uk/find-a-clinic/kensington-baby-scan-clinic/"
+    "web": "https://www.windowtothewomb.co.uk/find-a-clinic/kensington-baby-scan-clinic/",
+    "grp": "Parmi Diagnostics Slough Limited"
   },
   {
     "o": "1-29663496615",
@@ -58249,6 +58252,7 @@
     "la": 51.4143774,
     "ln": 0.0201756,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "The Blackwell Clinic Ltd"
   }
 ]
