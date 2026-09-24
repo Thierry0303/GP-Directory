@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2493,
-  "total_records_incl_non_london": 2563,
+  "total_records": 2495,
+  "total_records_incl_non_london": 2565,
   "excluded_non_london": 70,
   "nhs_practice_count": 981,
-  "private_clinic_count": 1512,
+  "private_clinic_count": 1514,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -22,7 +22,7 @@
     },
     "Hammersmith & Fulham": {
       "nhs": 27,
-      "private": 32,
+      "private": 33,
       "dentist": 0
     },
     "Ealing": {
@@ -97,7 +97,7 @@
     },
     "Bexley": {
       "nhs": 16,
-      "private": 15,
+      "private": 16,
       "dentist": 0
     },
     "Bromley": {

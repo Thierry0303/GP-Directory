@@ -29975,5 +29975,43 @@
     "lon": 0.0201756,
     "providerName": "The Blackwell Clinic Ltd",
     "ar": "Bromley"
+  },
+  {
+    "cqc_id": "1-29556102020",
+    "ods_code": "",
+    "name": "Augmentive Head Office",
+    "address": "Fora, 1 Lyric Square, London",
+    "postcode": "W6 0NB",
+    "phone": "07498352155",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29556102020",
+    "localAuthority": "Hammersmith and Fulham",
+    "lat": 51.4933931,
+    "lon": -0.2263397,
+    "providerName": "",
+    "ar": "Hammersmith & Fulham"
+  },
+  {
+    "cqc_id": "1-29804915215",
+    "ods_code": "",
+    "name": "The Skin Investment Clinic Bexley",
+    "address": "41A Bourne Road, Bexley",
+    "postcode": "DA5 1LW",
+    "phone": "07879426110",
+    "website": "",
+    "specialties": [
+      "dermatology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29804915215",
+    "localAuthority": "Bexley",
+    "lat": 51.443396,
+    "lon": 0.151632,
+    "providerName": "",
+    "ar": "Bexley"
   }
 ]
