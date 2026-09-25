@@ -7915,7 +7915,7 @@
     "n": "Sydenham Green Group Practice",
     "a": "26 Holmshaw Close, Sydenham, London",
     "p": "SE26 4TH",
-    "ph": "020 8138 2970",
+    "ph": "02081382970",
     "s": 71.9,
     "c": 68.7,
     "pcn": "APLOS HEALTH",
@@ -58292,6 +58292,46 @@
     "ar": "Bexley",
     "la": 51.443396,
     "ln": 0.151632,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-29609303756",
+    "n": "IMY Diagnostics",
+    "a": "Unit 13, Ground Floor, Skylines Business Village, Limeharbour, London",
+    "p": "E14 9TS",
+    "ph": "07555040842",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29609303756",
+    "ar": "Tower Hamlets",
+    "la": 51.4993298,
+    "ln": -0.0133137,
+    "type": "Private",
+    "web": "https://www.imydiagnostics.com"
+  },
+  {
+    "o": "1-29332022537",
+    "n": "Sarvam Health",
+    "a": "10 Peterborough Road, Harrow",
+    "p": "HA1 2BQ",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29332022537",
+    "ar": "Harrow",
+    "la": 51.5776346,
+    "ln": -0.3338575,
     "type": "Private",
     "web": ""
   }

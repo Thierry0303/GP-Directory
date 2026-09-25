@@ -30013,5 +30013,43 @@
     "lon": 0.151632,
     "providerName": "",
     "ar": "Bexley"
+  },
+  {
+    "cqc_id": "1-29609303756",
+    "ods_code": "",
+    "name": "IMY Diagnostics",
+    "address": "Unit 13, Ground Floor, Skylines Business Village, Limeharbour, London",
+    "postcode": "E14 9TS",
+    "phone": "07555040842",
+    "website": "https://www.imydiagnostics.com",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29609303756",
+    "localAuthority": "Tower Hamlets",
+    "lat": 51.4993298,
+    "lon": -0.0133137,
+    "providerName": "",
+    "ar": "Tower Hamlets"
+  },
+  {
+    "cqc_id": "1-29332022537",
+    "ods_code": "",
+    "name": "Sarvam Health",
+    "address": "10 Peterborough Road, Harrow",
+    "postcode": "HA1 2BQ",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29332022537",
+    "localAuthority": "Harrow",
+    "lat": 51.5776346,
+    "lon": -0.3338575,
+    "providerName": "",
+    "ar": "Harrow"
   }
 ]
