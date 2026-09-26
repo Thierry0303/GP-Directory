@@ -2771,6 +2771,13 @@
 "status": "403",
 "strikes": 0
 },
+"https://www.imydiagnostics.com": {
+"checked": "2026-09-26",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.infinityeyeclinic.com": {
 "checked": "2026-09-09",
 "ok": true,
@@ -5145,7 +5152,7 @@
 "strikes": 0
 },
 "https://www.thesurgeryharrowroadwembley.co.uk": {
-"checked": "2026-08-27",
+"checked": "2026-09-26",
 "ok": true,
 "really_ok": true,
 "status": "202",
