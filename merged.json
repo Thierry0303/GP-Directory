@@ -58334,5 +58334,65 @@
     "ln": -0.3338575,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-28922983694",
+    "n": "Lola Health - London",
+    "a": "11 Vernham Road, London",
+    "p": "SE18 3EY",
+    "ph": "02081789368",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28922983694",
+    "ar": "Greenwich",
+    "la": 51.4805436,
+    "ln": 0.0739383,
+    "type": "Private",
+    "web": "https://www.lolahealth.com"
+  },
+  {
+    "o": "1-29528692865",
+    "n": "Skin Doctor London",
+    "a": "91a, New Cavendish Street, London",
+    "p": "W1W 6XF",
+    "ph": "02075802155",
+    "s": null,
+    "c": null,
+    "pcn": "dermatology",
+    "specs": [
+      "dermatology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29528692865",
+    "ar": "Westminster",
+    "la": 51.5203035,
+    "ln": -0.1423771,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-28084717383",
+    "n": "Skinova Aesthetics",
+    "a": "227 Aldborough Road South, Ilford",
+    "p": "IG3 8HZ",
+    "ph": "02046100942",
+    "s": null,
+    "c": null,
+    "pcn": "aesthetic",
+    "specs": [
+      "aesthetic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28084717383",
+    "ar": "Redbridge",
+    "la": 51.5705156,
+    "ln": 0.0952606,
+    "type": "Private",
+    "web": "https://www.skinovaaesthetics.com"
   }
 ]
