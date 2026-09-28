@@ -29992,7 +29992,7 @@
     "localAuthority": "Hammersmith and Fulham",
     "lat": 51.4933931,
     "lon": -0.2263397,
-    "providerName": "",
+    "providerName": "Augmentive Ltd",
     "ar": "Hammersmith & Fulham"
   },
   {
@@ -30011,7 +30011,7 @@
     "localAuthority": "Bexley",
     "lat": 51.443396,
     "lon": 0.151632,
-    "providerName": "",
+    "providerName": "The Skin Investment Clinic Limited",
     "ar": "Bexley"
   },
   {
@@ -30030,7 +30030,7 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.4993298,
     "lon": -0.0133137,
-    "providerName": "",
+    "providerName": "IMY Diagnostics Centre Limited",
     "ar": "Tower Hamlets"
   },
   {
@@ -30049,7 +30049,7 @@
     "localAuthority": "Harrow",
     "lat": 51.5776346,
     "lon": -0.3338575,
-    "providerName": "",
+    "providerName": "Sarvam Services Ltd",
     "ar": "Harrow"
   },
   {
@@ -30068,7 +30068,7 @@
     "localAuthority": "Greenwich",
     "lat": 51.4805436,
     "lon": 0.0739383,
-    "providerName": "",
+    "providerName": "Lola Health Ltd",
     "ar": "Greenwich"
   },
   {
@@ -30080,6 +30080,7 @@
     "phone": "02075802155",
     "website": "",
     "specialties": [
+      "consultant",
       "dermatology"
     ],
     "cqc_rating": "",
@@ -30087,7 +30088,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5203035,
     "lon": -0.1423771,
-    "providerName": "",
+    "providerName": "DR SZ Medical Ltd",
     "ar": "Westminster"
   },
   {
@@ -30106,7 +30107,7 @@
     "localAuthority": "Redbridge",
     "lat": 51.5705156,
     "lon": 0.0952606,
-    "providerName": "",
+    "providerName": "Skinova Aesthetics Ltd",
     "ar": "Redbridge"
   }
 ]

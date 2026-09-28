@@ -58273,7 +58273,8 @@
     "la": 51.4933931,
     "ln": -0.2263397,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Augmentive Ltd"
   },
   {
     "o": "1-29804915215",
@@ -58293,7 +58294,8 @@
     "la": 51.443396,
     "ln": 0.151632,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "The Skin Investment Clinic Limited"
   },
   {
     "o": "1-29609303756",
@@ -58313,7 +58315,8 @@
     "la": 51.4993298,
     "ln": -0.0133137,
     "type": "Private",
-    "web": "https://www.imydiagnostics.com"
+    "web": "https://www.imydiagnostics.com",
+    "grp": "IMY Diagnostics Centre Limited"
   },
   {
     "o": "1-29332022537",
@@ -58333,7 +58336,8 @@
     "la": 51.5776346,
     "ln": -0.3338575,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Sarvam Services Ltd"
   },
   {
     "o": "1-28922983694",
@@ -58353,7 +58357,8 @@
     "la": 51.4805436,
     "ln": 0.0739383,
     "type": "Private",
-    "web": "https://www.lolahealth.com"
+    "web": "https://www.lolahealth.com",
+    "grp": "Lola Health Ltd"
   },
   {
     "o": "1-29528692865",
@@ -58363,8 +58368,9 @@
     "ph": "02075802155",
     "s": null,
     "c": null,
-    "pcn": "dermatology",
+    "pcn": "consultant, dermatology",
     "specs": [
+      "consultant",
       "dermatology"
     ],
     "cqc": "",
@@ -58373,7 +58379,8 @@
     "la": 51.5203035,
     "ln": -0.1423771,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "DR SZ Medical Ltd"
   },
   {
     "o": "1-28084717383",
@@ -58393,6 +58400,7 @@
     "la": 51.5705156,
     "ln": 0.0952606,
     "type": "Private",
-    "web": "https://www.skinovaaesthetics.com"
+    "web": "https://www.skinovaaesthetics.com",
+    "grp": "Skinova Aesthetics Ltd"
   }
 ]

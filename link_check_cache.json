@@ -3128,6 +3128,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.lolahealth.com": {
+"checked": "2026-09-28",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.london-aesthetic-medicine.com": {
 "checked": "2026-09-09",
 "ok": true,
@@ -4004,7 +4011,7 @@
 "strikes": 0
 },
 "https://www.panaceaclinic.co.uk/": {
-"checked": "2026-08-29",
+"checked": "2026-09-28",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -4558,6 +4565,13 @@
 },
 "https://www.skinmedical.com": {
 "checked": "2026-09-09",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
+"https://www.skinovaaesthetics.com": {
+"checked": "2026-09-28",
 "ok": true,
 "really_ok": true,
 "status": "200",
