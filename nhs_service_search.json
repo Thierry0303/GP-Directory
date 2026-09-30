@@ -16208,6 +16208,26 @@
     "type": "GpBranch",
     "website": "http://www.halingparkmedicalpractice.nhs.uk"
   },
+  "H83034": {
+    "address": "87 Whitehorse Road, Croydon",
+    "lat": 51.385868,
+    "lng": -0.097377,
+    "name": "Whitehorse Practice",
+    "opening": {
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
+    },
+    "phone": "02086841162",
+    "postcode": "CR0 2JJ",
+    "status": "Visible",
+    "type": "GpBranch",
+    "website": "https://www.thewhitehorsepractice.nhs.uk"
+  },
   "H83037": {
     "address": "84A Auckland Road, Upper Norwood, London",
     "lat": 51.409531,
@@ -17591,6 +17611,8 @@
     "opening": {
       "Friday": "07:30–18:30",
       "Monday": "07:30–19:00",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "07:30–19:00",
       "Tuesday": "07:30–19:00",
       "Wednesday": "07:30–19:00"

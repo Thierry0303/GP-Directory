@@ -21301,6 +21301,8 @@
     "oh": {
       "Friday": "07:30\u201318:30",
       "Monday": "07:30\u201319:00",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "07:30\u201319:00",
       "Tuesday": "07:30\u201319:00",
       "Wednesday": "07:30\u201319:00"
@@ -25345,8 +25347,8 @@
   },
   {
     "o": "H83034",
-    "n": "The Whitehorse Practice",
-    "a": "87 Whitehorse Road, Croydon, Surrey",
+    "n": "Whitehorse Practice",
+    "a": "87 Whitehorse Road, Croydon",
     "p": "CR0 2JJ",
     "ph": "02086841162",
     "s": 67.3,
@@ -25355,8 +25357,18 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-544293891",
     "ar": "Croydon",
-    "la": null,
-    "ln": null,
+    "la": 51.385868,
+    "ln": -0.097377,
+    "web": "https://www.thewhitehorsepractice.nhs.uk",
+    "oh": {
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
+    },
     "type": "NHS"
   },
   {
