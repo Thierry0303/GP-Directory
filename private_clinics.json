@@ -30128,5 +30128,43 @@
     "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-27019773683",
+    "ods_code": "",
+    "name": "MeiLustre & Medical Limited",
+    "address": "110 High Street, Hounslow",
+    "postcode": "TW3 1NA",
+    "phone": "07701065062",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-27019773683",
+    "localAuthority": "Hounslow",
+    "lat": 51.4698957,
+    "lon": -0.3589445,
+    "providerName": "",
+    "ar": "Hounslow"
+  },
+  {
+    "cqc_id": "1-29701271750",
+    "ods_code": "",
+    "name": "360 Med",
+    "address": "120 Fortis Green Road, London",
+    "postcode": "N10 3HN",
+    "phone": "07951164253",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29701271750",
+    "localAuthority": "Haringey",
+    "lat": 51.5905135,
+    "lon": -0.1466746,
+    "providerName": "",
+    "ar": "Haringey"
   }
 ]
