@@ -30126,7 +30126,7 @@
     "localAuthority": "Westminster",
     "lat": 51.517391,
     "lon": -0.146009,
-    "providerName": "",
+    "providerName": "Harley Street Evening Doctors Ltd",
     "ar": "Westminster"
   },
   {
@@ -30145,13 +30145,13 @@
     "localAuthority": "Hounslow",
     "lat": 51.4698957,
     "lon": -0.3589445,
-    "providerName": "",
+    "providerName": "MeiLustre & Medical Limited",
     "ar": "Hounslow"
   },
   {
     "cqc_id": "1-29701271750",
     "ods_code": "",
-    "name": "360 Med",
+    "name": "Safe and Sound Ultrasound Ltd",
     "address": "120 Fortis Green Road, London",
     "postcode": "N10 3HN",
     "phone": "07951164253",
@@ -30164,7 +30164,7 @@
     "localAuthority": "Haringey",
     "lat": 51.5905135,
     "lon": -0.1466746,
-    "providerName": "",
+    "providerName": "Safe and Sound Ultrasound Ltd",
     "ar": "Haringey"
   }
 ]
