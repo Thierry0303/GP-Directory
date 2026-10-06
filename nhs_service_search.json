@@ -12415,15 +12415,17 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–20:00",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–20:00"
     },
-    "phone": "0208 304 8334",
+    "phone": "02083048334",
     "postcode": "DA6 7LP",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://albionsurgery.com/"
+    "website": ""
   },
   "G83010": {
     "address": "Hind Crescent, Northumberland Heath, Erith",

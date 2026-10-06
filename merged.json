@@ -15575,7 +15575,7 @@
     "n": "The Albion Surgery",
     "a": "6 Pincott Road, Bexleyheath",
     "p": "DA6 7LP",
-    "ph": "0208 304 8334",
+    "ph": "02083048334",
     "s": 70.9,
     "c": 60.4,
     "pcn": "",
@@ -15584,10 +15584,11 @@
     "ar": "Bexley",
     "la": 51.453976,
     "ln": 0.147411,
-    "web": "http://albionsurgery.com/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201320:00",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201320:00"
