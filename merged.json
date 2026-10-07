@@ -16876,8 +16876,8 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
-      "Tuesday": "08:00\u201318:30",
-      "Wednesday": "08:00\u201320:00"
+      "Tuesday": "08:00\u201320:00",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -58466,5 +58466,45 @@
     "ln": -0.1466746,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29730443963",
+    "n": "Peppy Health Limited",
+    "a": "WeWork, Aviation House,, 125 Kingsway, London",
+    "p": "WC2B 6NH",
+    "ph": "07703388096",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29730443963",
+    "ar": "Camden",
+    "la": 51.5169616,
+    "ln": -0.1205759,
+    "type": "Private",
+    "web": "https://www.peppy.health"
+  },
+  {
+    "o": "1-29819432473",
+    "n": "London Wall",
+    "a": "Future Care Medical, 66 London Wall, London",
+    "p": "EC2M 5TN",
+    "ph": "02074678300",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29819432473",
+    "ar": "City of London",
+    "la": 51.5168294,
+    "ln": -0.0862629,
+    "type": "Private",
+    "web": "https://www.autismcliniclondon.com"
   }
 ]

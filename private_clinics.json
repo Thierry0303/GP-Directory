@@ -30166,5 +30166,43 @@
     "lon": -0.1466746,
     "providerName": "Safe and Sound Ultrasound Ltd",
     "ar": "Haringey"
+  },
+  {
+    "cqc_id": "1-29730443963",
+    "ods_code": "",
+    "name": "Peppy Health Limited",
+    "address": "WeWork, Aviation House,, 125 Kingsway, London",
+    "postcode": "WC2B 6NH",
+    "phone": "07703388096",
+    "website": "https://www.peppy.health",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29730443963",
+    "localAuthority": "Camden",
+    "lat": 51.5169616,
+    "lon": -0.1205759,
+    "providerName": "",
+    "ar": "Camden"
+  },
+  {
+    "cqc_id": "1-29819432473",
+    "ods_code": "",
+    "name": "London Wall",
+    "address": "Future Care Medical, 66 London Wall, London",
+    "postcode": "EC2M 5TN",
+    "phone": "02074678300",
+    "website": "https://www.autismcliniclondon.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29819432473",
+    "localAuthority": "City of London",
+    "lat": 51.5168294,
+    "lon": -0.0862629,
+    "providerName": "",
+    "ar": "City of London"
   }
 ]
