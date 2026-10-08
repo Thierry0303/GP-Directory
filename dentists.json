@@ -12333,5 +12333,23 @@
     "lon": -0.173784,
     "providerName": "The Chelsea Practice",
     "ar": "Kensington & Chelsea"
+  },
+  {
+    "cqc_id": "1-29716328705",
+    "name": "DE Westfield London",
+    "address": "Unit SU2015, Westfield, Ariel Way, Shepherd\u2019s Bush, London",
+    "postcode": "W12 7GF",
+    "phone": "01517290000",
+    "website": "https://www.dentalexcellenceuk.co.uk",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29716328705",
+    "localAuthority": "Hammersmith and Fulham",
+    "lat": 51.507023,
+    "lon": -0.2194807,
+    "providerName": "",
+    "ar": "Hammersmith & Fulham"
   }
 ]

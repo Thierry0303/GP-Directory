@@ -58506,5 +58506,25 @@
     "ln": -0.0862629,
     "type": "Private",
     "web": "https://www.autismcliniclondon.com"
+  },
+  {
+    "o": "1-29810556270",
+    "n": "Psychnet LLP",
+    "a": "10 Harley Street, London",
+    "p": "W1G 9PF",
+    "ph": "07547320612",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29810556270",
+    "ar": "Westminster",
+    "la": 51.517391,
+    "ln": -0.146009,
+    "type": "Private",
+    "web": ""
   }
 ]

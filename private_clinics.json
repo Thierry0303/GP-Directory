@@ -30204,5 +30204,24 @@
     "lon": -0.0862629,
     "providerName": "",
     "ar": "City of London"
+  },
+  {
+    "cqc_id": "1-29810556270",
+    "ods_code": "",
+    "name": "Psychnet LLP",
+    "address": "10 Harley Street, London",
+    "postcode": "W1G 9PF",
+    "phone": "07547320612",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29810556270",
+    "localAuthority": "Westminster",
+    "lat": 51.517391,
+    "lon": -0.146009,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
