@@ -4621,9 +4621,9 @@
     "website": "https://www.glendalemedicalcentre.nhs.uk/"
   },
   "E86041": {
-    "address": "Neal Close, Acre Way, Northwood",
-    "lat": 51.604465,
-    "lng": -0.411537,
+    "address": "76-78 Pinner Road, London",
+    "lat": 51.603954,
+    "lng": -0.41349,
     "name": "Acre Surgery",
     "opening": {
       "Friday": "08:00–18:30",
@@ -4635,7 +4635,7 @@
       "Wednesday": "08:00–18:30"
     },
     "phone": "01923820844",
-    "postcode": "HA6 1TQ",
+    "postcode": "HA6 1BT",
     "status": "Visible",
     "type": "GpBranch",
     "website": ""
@@ -7822,9 +7822,9 @@
     "website": "http://www.swisscottagesurgery.nhs.uk"
   },
   "F83666": {
-    "address": "Andover Medical Centre, 270-282 Hornsey Road, London",
-    "lat": 51.561768,
-    "lng": -0.116446,
+    "address": "Andover Med Ctr 1St Floor, 7 Newington Barrow Way, London",
+    "lat": 51.562042,
+    "lng": -0.114083,
     "name": "The Andover Medical Centre",
     "opening": {
       "Friday": "08:00–18:30",
@@ -7836,7 +7836,7 @@
       "Wednesday": "08:00–18:30"
     },
     "phone": "02072816956",
-    "postcode": "N7 7QZ",
+    "postcode": "N7 7EP",
     "status": "Visible",
     "type": "GpBranch",
     "website": "https://www.theandovermedicalcentre.co.uk"
@@ -11373,7 +11373,7 @@
     "address": "Hainault Health Centre, Manford Way, Chigwell",
     "lat": 51.608059,
     "lng": 0.103722,
-    "name": "The Willows Practice",
+    "name": "The Willows & Drive Medical Practice",
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
