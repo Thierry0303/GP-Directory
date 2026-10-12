@@ -41,7 +41,7 @@ SPECIALTY_META = {
     "aesthetic":         {"emoji": "✨", "label": "Aesthetic & Cosmetic Medicine",  "desc": "Private cosmetic and aesthetic medicine clinics in London for Botox, fillers, anti-wrinkle treatments and skin rejuvenation."},
     "plastic-surgery":   {"emoji": "💎", "label": "Plastic & Reconstructive Surgery", "desc": "Private plastic surgeons in London offering rhinoplasty, breast surgery, reconstruction and cosmetic surgical procedures."},
     "sexual-health":     {"emoji": "🩺", "label": "Sexual Health",                 "desc": "Private sexual health clinics in London for STI testing, HIV care, contraception and genitourinary medicine."},
-    "diagnostic":        {"emoji": "🔭", "label": "Diagnostics & Imaging",         "desc": "Private diagnostic imaging and health screening clinics in London offering MRI, CT scans, ultrasound and blood tests."},
+    "diagnostic":        {"emoji": "🩻", "label": "Scans, X-rays & Tests",         "desc": "Private scan, X-ray and test clinics in London — MRI, CT and ultrasound scans, X-rays, ECGs, blood tests and health screening."},
     "physiotherapy":     {"emoji": "💪", "label": "Physiotherapy & Rehab",         "desc": "Private physiotherapists, chiropractors and osteopaths in London for injury recovery and musculoskeletal treatment."},
     "travel-health":     {"emoji": "✈️", "label": "Travel Health & Vaccines",       "desc": "Private travel health clinics in London for vaccinations, malaria prevention and travel medicine advice."},
     "respiratory":       {"emoji": "🫀", "label": "Respiratory & Lung Health",     "desc": "Private respiratory physicians in London for asthma, COPD, sleep apnoea and lung conditions."},
