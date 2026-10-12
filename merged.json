@@ -21538,7 +21538,7 @@
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
-      "Wednesday": "08:00\u201320:00"
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -58505,7 +58505,8 @@
     "la": 51.5168294,
     "ln": -0.0862629,
     "type": "Private",
-    "web": "https://www.autismcliniclondon.com"
+    "web": "https://www.autismcliniclondon.com",
+    "grp": "Autism Clinic London Limited"
   },
   {
     "o": "1-29810556270",
@@ -58545,7 +58546,8 @@
     "la": 51.5192636,
     "ln": -0.1482716,
     "type": "Private",
-    "web": "https://www.lcrh.co.uk"
+    "web": "https://www.lcrh.co.uk",
+    "grp": "Lynne Chapman Reproductive Health (LCRH) Ltd"
   },
   {
     "o": "1-29994073645",
@@ -58565,7 +58567,8 @@
     "la": 51.4961049,
     "ln": -0.1310085,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "BioCheck Health Limited"
   },
   {
     "o": "1-29977442018",
@@ -58605,7 +58608,8 @@
     "la": 51.5449116,
     "ln": -0.1403651,
     "type": "Private",
-    "web": "https://www.theskininvestmentclinic.com/"
+    "web": "https://www.theskininvestmentclinic.com/",
+    "grp": "The Skin Investment Clinic Limited"
   },
   {
     "o": "1-29978546744",
@@ -58626,6 +58630,7 @@
     "la": 51.5510602,
     "ln": -0.1148574,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Islington GP Group Limited"
   }
 ]
