@@ -41,7 +41,7 @@ SPECIALTY_META = {
     "aesthetic":         {"emoji": "✨", "label": "Aesthetic & Cosmetic Medicine",  "desc": "Private cosmetic and aesthetic medicine clinics in London for Botox, fillers, anti-wrinkle treatments and skin rejuvenation."},
     "plastic-surgery":   {"emoji": "💎", "label": "Plastic & Reconstructive Surgery", "desc": "Private plastic surgeons in London offering rhinoplasty, breast surgery, reconstruction and cosmetic surgical procedures."},
     "sexual-health":     {"emoji": "🩺", "label": "Sexual Health",                 "desc": "Private sexual health clinics in London for STI testing, HIV care, contraception and genitourinary medicine."},
-    "diagnostic":        {"emoji": "🔭", "label": "Diagnostics & Imaging",         "desc": "Private diagnostic imaging and health screening clinics in London offering MRI, CT scans, ultrasound and blood tests."},
+    "diagnostic":        {"emoji": "🩻", "label": "Scans, X-rays & Tests",         "desc": "Private scan, X-ray and test clinics in London — MRI, CT and ultrasound scans, X-rays, ECGs, blood tests and health screening."},
     "physiotherapy":     {"emoji": "💪", "label": "Physiotherapy & Rehab",         "desc": "Private physiotherapists, chiropractors and osteopaths in London for injury recovery and musculoskeletal treatment."},
     "travel-health":     {"emoji": "✈️", "label": "Travel Health & Vaccines",       "desc": "Private travel health clinics in London for vaccinations, malaria prevention and travel medicine advice."},
     "respiratory":       {"emoji": "🫀", "label": "Respiratory & Lung Health",     "desc": "Private respiratory physicians in London for asthma, COPD, sleep apnoea and lung conditions."},
@@ -177,6 +177,12 @@ a{text-decoration:none;color:inherit}
 .spec-count{font-size:.75rem;color:#888;margin-top:6px}
 .spec-count strong{color:#003087}
 .back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+.phin-callout{display:flex;gap:14px;align-items:flex-start;background:#EDF4FC;border:1px solid #B5D4F4;border-left:4px solid #0072CE;border-radius:12px;padding:14px 18px;margin:0 0 20px}
+.phin-callout .phin-ico{font-size:1.6rem;line-height:1;flex-shrink:0}
+.phin-callout strong{color:#003087;font-size:.98rem}
+.phin-callout p{margin:4px 0 0;font-size:.86rem;color:#444;line-height:1.5}
+.phin-callout a{color:#0072CE;font-weight:600;text-decoration:underline}
+.phin-callout .phin-btn{display:inline-block;margin-top:8px;background:#003087;color:#fff;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none}
 .affiliate-box{margin-top:32px;padding:16px 18px;background:#fff;border:1px solid #e8e8e8;border-radius:12px;border-left:3px solid #B5D4F4}
 .affiliate-box .aff-label{font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a93a8;display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .affiliate-box .aff-label::after{content:"";flex:1;height:1px;background:#eee}
@@ -225,6 +231,19 @@ def _page_urls():
             if b and n and (ROOT / "practice" / b / n / "index.html").exists():
                 _PAGE_URLS[r.get("o", "")] = f"/practice/{b}/{n}/"
     return _PAGE_URLS
+
+PHIN_CALLOUT = (
+    '<div class="phin-callout">'
+    '<div class="phin-ico">👨‍⚕️</div>'
+    '<div><strong>Looking for a specific consultant?</strong>'
+    '<p>This directory lists CQC-registered clinics and hospitals — not individual '
+    'doctors. To find a named private consultant, their fees and how often they '
+    'treat a condition, search PHIN: the official, government-mandated source for '
+    'private consultant information in the UK. Most private clinics also accept the '
+    'major insurers (Bupa, AXA Health, Aviva, Vitality) — confirm cover with the clinic.</p>'
+    '<a class="phin-btn" href="https://www.phin.org.uk/" target="_blank" rel="noopener">'
+    'Find a consultant on PHIN &rarr;</a></div></div>'
+)
 
 def render_private_card(p):
     rating  = p.get('cqc_rating','')
@@ -386,6 +405,7 @@ def build_specialty_page(spec, meta, private_records, nhs_records):
 </div>
 <div class="content">
   <a class="back" href="/private/">← All specialties</a>
+  {PHIN_CALLOUT}
   {render_affiliate_box(spec)}
   <div class="filter-bar">
     <span class="filter-label">Borough:</span>{borough_chips}
@@ -446,6 +466,7 @@ def build_hub_page(specialty_counts):
   </div>
 </div>
 <div class="content">
+  {PHIN_CALLOUT}
   {render_affiliate_box("_index")}
   <div class="spec-grid">{cards}</div>
 </div>
