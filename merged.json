@@ -58632,5 +58632,25 @@
     "type": "Private",
     "web": "",
     "grp": "Islington GP Group Limited"
+  },
+  {
+    "o": "1-29809341261",
+    "n": "MEDICARE INSOURCING SERVICES LIMITED",
+    "a": "Unit 17.1, The Leather Market, Weston Street, London",
+    "p": "SE1 3ER",
+    "ph": "02037893190",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29809341261",
+    "ar": "Southwark",
+    "la": 51.4996518,
+    "ln": -0.0845191,
+    "type": "Private",
+    "web": "https://www.medicare.uk.com"
   }
 ]
