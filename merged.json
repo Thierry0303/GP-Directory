@@ -58652,5 +58652,25 @@
     "ln": -0.0845191,
     "type": "Private",
     "web": "https://www.medicare.uk.com"
+  },
+  {
+    "o": "1-29888971799",
+    "n": "Wellscan Diagnostics",
+    "a": "38 Colston Avenue, Carshalton",
+    "p": "SM5 2NU",
+    "ph": "07547779706",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29888971799",
+    "ar": "Sutton",
+    "la": 51.3678372,
+    "ln": -0.1696148,
+    "type": "Private",
+    "web": ""
   }
 ]

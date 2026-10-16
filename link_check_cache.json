@@ -679,10 +679,10 @@
 "strikes": 0
 },
 "https://www.blackfenprivategp.com": {
-"checked": "2026-09-16",
+"checked": "2026-10-16",
 "ok": true,
 "really_ok": true,
-"status": "403",
+"status": "202",
 "strikes": 0
 },
 "https://www.blisschemist.co.uk": {
@@ -3431,6 +3431,13 @@
 },
 "https://www.medicaoptima.co.uk": {
 "checked": "2026-10-09",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
+"https://www.medicare.uk.com": {
+"checked": "2026-10-16",
 "ok": true,
 "really_ok": true,
 "status": "200",

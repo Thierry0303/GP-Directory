@@ -30338,5 +30338,24 @@
     "lon": -0.0845191,
     "providerName": "",
     "ar": "Southwark"
+  },
+  {
+    "cqc_id": "1-29888971799",
+    "ods_code": "",
+    "name": "Wellscan Diagnostics",
+    "address": "38 Colston Avenue, Carshalton",
+    "postcode": "SM5 2NU",
+    "phone": "07547779706",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29888971799",
+    "localAuthority": "Sutton",
+    "lat": 51.3678372,
+    "lon": -0.1696148,
+    "providerName": "",
+    "ar": "Sutton"
   }
 ]
