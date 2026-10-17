@@ -4991,7 +4991,7 @@
     "postcode": "W10 5PG",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.golbornemedical-drramasamy.co.uk"
+    "website": "https://golbornemedical.co.uk/"
   },
   "E87026": {
     "address": "Unit 5, 1-31 Elkstone Road, London",
@@ -9164,9 +9164,9 @@
     "website": "http://www.thewickhealthcentre.co.uk"
   },
   "F84621": {
-    "address": "The Medical Centre, 1A Madinah Road, Hackney, London",
-    "lat": 51.547771,
-    "lng": -0.067193,
+    "address": "Richmond Road Medical Centre, 136 Richmond Road, London",
+    "lat": 51.543053,
+    "lng": -0.065518,
     "name": "SANDRINGHAM PRACTICE",
     "opening": {
       "Friday": "08:00–18:30",
@@ -9178,7 +9178,7 @@
       "Wednesday": "08:00–18:30"
     },
     "phone": "02072750022",
-    "postcode": "E8 1PG",
+    "postcode": "E8 3HN",
     "status": "Visible",
     "type": "GpBranch",
     "website": "http://www.sandringhampractice.nhs.uk/"

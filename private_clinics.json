@@ -30357,5 +30357,44 @@
     "lon": -0.1696148,
     "providerName": "",
     "ar": "Sutton"
+  },
+  {
+    "cqc_id": "1-30101380075",
+    "ods_code": "",
+    "name": "Dr Bushra Al Rubeyi",
+    "address": "130 Harley Street, London",
+    "postcode": "W1G 7JU",
+    "phone": "02036335999",
+    "website": "",
+    "specialties": [
+      "consultant",
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30101380075",
+    "localAuthority": "Westminster",
+    "lat": 51.522373,
+    "lon": -0.148257,
+    "providerName": "",
+    "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-29636671110",
+    "ods_code": "",
+    "name": "The Wellness",
+    "address": "Unit 4, 10 Portman Square, London",
+    "postcode": "W1H 6AZ",
+    "phone": "02039513429",
+    "website": "https://www.thewellnesslondon.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29636671110",
+    "localAuthority": "Westminster",
+    "lat": 51.5167024,
+    "lon": -0.1546597,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]

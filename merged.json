@@ -2089,7 +2089,7 @@
     "ar": "Kensington & Chelsea",
     "la": 51.523949,
     "ln": -0.206748,
-    "web": "http://www.golbornemedical-drramasamy.co.uk",
+    "web": "https://golbornemedical.co.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -24837,8 +24837,8 @@
   {
     "o": "F84621",
     "n": "Sandringham Practice",
-    "a": "The Medical Centre, 1A Madinah Road, Hackney, London",
-    "p": "E8 1PG",
+    "a": "Richmond Road Medical Centre, 136 Richmond Road, London",
+    "p": "E8 3HN",
     "ph": "02072750022",
     "s": 71.9,
     "c": 68.6,
@@ -24846,8 +24846,8 @@
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-2017556160",
     "ar": "Hackney",
-    "la": 51.547771,
-    "ln": -0.067193,
+    "la": 51.543053,
+    "ln": -0.065518,
     "web": "http://www.sandringhampractice.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
@@ -58672,5 +58672,46 @@
     "ln": -0.1696148,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-30101380075",
+    "n": "Dr Bushra Al Rubeyi",
+    "a": "130 Harley Street, London",
+    "p": "W1G 7JU",
+    "ph": "02036335999",
+    "s": null,
+    "c": null,
+    "pcn": "consultant, private-gp",
+    "specs": [
+      "consultant",
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30101380075",
+    "ar": "Westminster",
+    "la": 51.522373,
+    "ln": -0.148257,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-29636671110",
+    "n": "The Wellness",
+    "a": "Unit 4, 10 Portman Square, London",
+    "p": "W1H 6AZ",
+    "ph": "02039513429",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29636671110",
+    "ar": "Westminster",
+    "la": 51.5167024,
+    "ln": -0.1546597,
+    "type": "Private",
+    "web": "https://www.thewellnesslondon.com"
   }
 ]
