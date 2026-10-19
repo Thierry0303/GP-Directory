@@ -30336,7 +30336,7 @@
     "localAuthority": "Southwark",
     "lat": 51.4996518,
     "lon": -0.0845191,
-    "providerName": "",
+    "providerName": "Medicare Insourcing Services Limited",
     "ar": "Southwark"
   },
   {
@@ -30355,7 +30355,7 @@
     "localAuthority": "Sutton",
     "lat": 51.3678372,
     "lon": -0.1696148,
-    "providerName": "",
+    "providerName": "Wellscan Diagnostics Ltd",
     "ar": "Sutton"
   },
   {
@@ -30375,7 +30375,7 @@
     "localAuthority": "Westminster",
     "lat": 51.522373,
     "lon": -0.148257,
-    "providerName": "",
+    "providerName": "Dr Bushra Al-Rubeyi & Associates Limited",
     "ar": "Westminster"
   },
   {
@@ -30394,7 +30394,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5167024,
     "lon": -0.1546597,
-    "providerName": "",
+    "providerName": "The London Wellness Clinic Ltd",
     "ar": "Westminster"
   }
 ]

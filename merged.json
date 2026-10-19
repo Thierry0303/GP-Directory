@@ -58671,7 +58671,8 @@
     "la": 51.3678372,
     "ln": -0.1696148,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Wellscan Diagnostics Ltd"
   },
   {
     "o": "1-30101380075",
@@ -58692,7 +58693,8 @@
     "la": 51.522373,
     "ln": -0.148257,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Dr Bushra Al-Rubeyi & Associates Limited"
   },
   {
     "o": "1-29636671110",
@@ -58712,6 +58714,7 @@
     "la": 51.5167024,
     "ln": -0.1546597,
     "type": "Private",
-    "web": "https://www.thewellnesslondon.com"
+    "web": "https://www.thewellnesslondon.com",
+    "grp": "The London Wellness Clinic Ltd"
   }
 ]
