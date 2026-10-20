@@ -14348,12 +14348,13 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
-      "Saturday": "09:00–12:30",
+      "Saturday": "09:00–13:00",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
     },
-    "phone": "02086742083 (ext. 0208674278)",
+    "phone": "02086742083",
     "postcode": "SW2 3DY",
     "status": "Visible",
     "type": "GpBranch",
