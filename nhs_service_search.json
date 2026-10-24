@@ -14588,6 +14588,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"

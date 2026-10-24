@@ -8522,6 +8522,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
