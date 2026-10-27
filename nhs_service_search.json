@@ -1406,7 +1406,7 @@
     "lng": -0.377062,
     "name": "Hatch End Medical Centre",
     "opening": {
-      "Friday": "08:00–19:00",
+      "Friday": "08:00–18:30",
       "Monday": "08:00–19:00",
       "Saturday": "Closed",
       "Sunday": "Closed",
@@ -1418,7 +1418,7 @@
     "postcode": "HA5 4RD",
     "status": "Visible",
     "type": "GpBranch",
-    "website": ""
+    "website": "https://www.hatchendmc.co.uk"
   },
   "E84057": {
     "address": "85 Crowshott Avenue, Stanmore",

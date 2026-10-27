@@ -30396,5 +30396,24 @@
     "lon": -0.1546597,
     "providerName": "The London Wellness Clinic Ltd",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30194740002",
+    "ods_code": "",
+    "name": "Interchange Building",
+    "address": "Interchange Building, 1st Floor, 81-85 Station Road, Croydon",
+    "postcode": "CR0 2RD",
+    "phone": "07778021574",
+    "website": "",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30194740002",
+    "localAuthority": "Croydon",
+    "lat": 51.379541,
+    "lon": -0.101436,
+    "providerName": "",
+    "ar": "Croydon"
   }
 ]

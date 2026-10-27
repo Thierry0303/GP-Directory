@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2515,
-  "total_records_incl_non_london": 2585,
+  "total_records": 2516,
+  "total_records_incl_non_london": 2586,
   "excluded_non_london": 70,
   "nhs_practice_count": 981,
-  "private_clinic_count": 1534,
+  "private_clinic_count": 1535,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -122,7 +122,7 @@
     },
     "Croydon": {
       "nhs": 38,
-      "private": 35,
+      "private": 36,
       "dentist": 0
     },
     "Richmond": {

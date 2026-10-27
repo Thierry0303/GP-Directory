@@ -20763,8 +20763,9 @@
     "ar": "Harrow",
     "la": 51.606243,
     "ln": -0.377062,
+    "web": "https://www.hatchendmc.co.uk",
     "oh": {
-      "Friday": "08:00\u201319:00",
+      "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201319:00",
       "Saturday": "Closed",
       "Sunday": "Closed",
@@ -58719,5 +58720,25 @@
     "type": "Private",
     "web": "https://www.thewellnesslondon.com",
     "grp": "The London Wellness Clinic Ltd"
+  },
+  {
+    "o": "1-30194740002",
+    "n": "Interchange Building",
+    "a": "Interchange Building, 1st Floor, 81-85 Station Road, Croydon",
+    "p": "CR0 2RD",
+    "ph": "07778021574",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30194740002",
+    "ar": "Croydon",
+    "la": 51.379541,
+    "ln": -0.101436,
+    "type": "Private",
+    "web": ""
   }
 ]
