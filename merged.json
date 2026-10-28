@@ -14980,13 +14980,13 @@
     "ln": -0.319299,
     "web": "https://www.corftonroadsurgery.co.uk",
     "oh": {
-      "Friday": "08:00\u201318:30",
-      "Monday": "08:00\u201318:30",
+      "Friday": "09:00\u201318:00",
+      "Monday": "09:00\u201318:00",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201318:30",
-      "Tuesday": "08:00\u201318:30",
-      "Wednesday": "08:00\u201318:30"
+      "Thursday": "09:00\u201318:00",
+      "Tuesday": "09:00\u201318:00",
+      "Wednesday": "09:00\u201318:00"
     },
     "type": "NHS"
   },
@@ -19465,13 +19465,13 @@
     "ln": -0.151199,
     "web": "http://www.shotfieldmedicalpractice.co.uk",
     "oh": {
-      "Friday": "08:00\u201319:00",
-      "Monday": "08:00\u201319:00",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201319:00",
-      "Tuesday": "08:00\u201319:00",
-      "Wednesday": "08:00\u201319:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },

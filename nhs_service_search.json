@@ -3528,13 +3528,13 @@
     "lng": -0.319299,
     "name": "The Corfton Road Surgery",
     "opening": {
-      "Friday": "08:00–18:30",
-      "Monday": "08:00–18:30",
+      "Friday": "09:00–18:00",
+      "Monday": "09:00–18:00",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00–18:30",
-      "Tuesday": "08:00–18:30",
-      "Wednesday": "08:00–18:30"
+      "Thursday": "09:00–18:00",
+      "Tuesday": "09:00–18:00",
+      "Wednesday": "09:00–18:00"
     },
     "phone": "02089974215",
     "postcode": "W13 8AG",
@@ -18331,13 +18331,13 @@
     "lng": -0.151199,
     "name": "Shotfield Medical Practice",
     "opening": {
-      "Friday": "08:00–19:00",
-      "Monday": "08:00–19:00",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00–19:00",
-      "Tuesday": "08:00–19:00",
-      "Wednesday": "08:00–19:00"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02086697612",
     "postcode": "SM6 0HY",
