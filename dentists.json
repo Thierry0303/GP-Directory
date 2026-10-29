@@ -12351,5 +12351,95 @@
     "lon": -0.2194807,
     "providerName": "Dr Robert John Hughes",
     "ar": "Hammersmith & Fulham"
+  },
+  {
+    "cqc_id": "1-30231049898",
+    "name": "Invisiblebraces4u Battersea",
+    "address": "49 Kersley Street, London",
+    "postcode": "SW11 4PR",
+    "phone": "02037450494",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30231049898",
+    "localAuthority": "Wandsworth",
+    "lat": 51.4728259,
+    "lon": -0.1654738,
+    "providerName": "",
+    "ar": "Wandsworth"
+  },
+  {
+    "cqc_id": "1-30231049599",
+    "name": "Invisiblebraces4u Acton",
+    "address": "191a High Street, London",
+    "postcode": "W3 9DD",
+    "phone": "02037450494",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30231049599",
+    "localAuthority": "Ealing",
+    "lat": 51.5073264,
+    "lon": -0.2723961,
+    "providerName": "",
+    "ar": "Ealing"
+  },
+  {
+    "cqc_id": "1-30250584147",
+    "name": "Invisiblebraces4u Mottingham",
+    "address": "100-102, William Barefoot Drive, London",
+    "postcode": "SE9 3BB",
+    "phone": "02037450494",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30250584147",
+    "localAuthority": "Greenwich",
+    "lat": 51.4294443,
+    "lon": 0.0570249,
+    "providerName": "",
+    "ar": "Greenwich"
+  },
+  {
+    "cqc_id": "1-30250268577",
+    "name": "Invisiblebraces4u Camden",
+    "address": "158 Kentish Town Road, London",
+    "postcode": "NW5 2AG",
+    "phone": "02037450494",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30250268577",
+    "localAuthority": "Camden",
+    "lat": 51.5467888,
+    "lon": -0.1413558,
+    "providerName": "",
+    "ar": "Camden"
+  },
+  {
+    "cqc_id": "1-30250268854",
+    "name": "Invisiblebraces4u Islington",
+    "address": "103-104, Upper Street, London",
+    "postcode": "N1 1QN",
+    "phone": "02037450494",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30250268854",
+    "localAuthority": "Islington",
+    "lat": 51.5377395,
+    "lon": -0.1029924,
+    "providerName": "",
+    "ar": "Islington"
   }
 ]

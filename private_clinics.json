@@ -30415,5 +30415,24 @@
     "lon": -0.101436,
     "providerName": "",
     "ar": "Croydon"
+  },
+  {
+    "cqc_id": "1-29970563766",
+    "ods_code": "",
+    "name": "Aesthetic by Maria",
+    "address": "10 Adam & Eve Mews, London",
+    "postcode": "W8 6UJ",
+    "phone": "07494281058",
+    "website": "https://www.aestheticbymaria.co.uk",
+    "specialties": [
+      "aesthetic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29970563766",
+    "localAuthority": "Kensington and Chelsea",
+    "lat": 51.4994019,
+    "lon": -0.1946203,
+    "providerName": "",
+    "ar": "Kensington & Chelsea"
   }
 ]
