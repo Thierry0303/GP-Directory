@@ -335,6 +335,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.aestheticbymaria.co.uk": {
+"checked": "2026-10-30",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
+},
 "https://www.aestheticsbydranj.co.uk": {
 "checked": "2026-10-09",
 "ok": true,

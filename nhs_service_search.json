@@ -9787,7 +9787,7 @@
     "postcode": "E12 6AQ",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.newhamtransitionalpractice.co.uk/"
+    "website": "https://newhamtransitionalpractice.nhs.uk/"
   },
   "F84741": {
     "address": "Shrewsbury Road, London",
@@ -14978,13 +14978,13 @@
     "lng": -0.095736,
     "name": "The Corner Surgery",
     "opening": {
-      "Friday": "08:00–19:00",
-      "Monday": "08:00–19:00",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00–19:00",
-      "Tuesday": "08:00–19:00",
-      "Wednesday": "08:00–19:00"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02072744507",
     "postcode": "SE5 9NS",

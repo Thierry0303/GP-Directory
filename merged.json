@@ -4896,7 +4896,7 @@
     "ar": "Newham",
     "la": 51.547783,
     "ln": 0.053848,
-    "web": "http://www.newhamtransitionalpractice.co.uk/",
+    "web": "https://newhamtransitionalpractice.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -9007,13 +9007,13 @@
     "ln": -0.095736,
     "web": "https://www.thecornersurgery.nhs.uk",
     "oh": {
-      "Friday": "08:00\u201319:00",
-      "Monday": "08:00\u201319:00",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201319:00",
-      "Tuesday": "08:00\u201319:00",
-      "Wednesday": "08:00\u201319:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
