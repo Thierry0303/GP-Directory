@@ -14687,6 +14687,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -18030,11 +18032,11 @@
       "Tuesday": "08:00–20:00",
       "Wednesday": "08:00–20:00"
     },
-    "phone": "0208 644 5187",
+    "phone": "02086445187",
     "postcode": "SM3 9EY",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.stonecotsurgery.co.uk"
+    "website": "http://www.stonecotsurgery.nhs.uk"
   },
   "H85077": {
     "address": "Wakehurst Road, Battersea, London",
@@ -19350,26 +19352,6 @@
     "status": "Visible",
     "type": "GpBranch",
     "website": "http://www.pavilionmedicalcentre.co.uk/"
-  },
-  "Y03082": {
-    "address": "Harold Wood Polyclinic, St Clements Avenue, Off Gubbins Lane, Harold Wood",
-    "lat": 51.593185,
-    "lng": 0.225714,
-    "name": "Harold Wood UTC",
-    "opening": {
-      "Friday": "08:00–21:00",
-      "Monday": "08:00–21:00",
-      "Saturday": "08:00–21:00",
-      "Sunday": "08:00–21:00",
-      "Thursday": "08:00–21:00",
-      "Tuesday": "08:00–21:00",
-      "Wednesday": "08:00–21:00"
-    },
-    "phone": "00000 000000",
-    "postcode": "RM3 0FE",
-    "status": "Visible",
-    "type": "GpBranch",
-    "website": "http://haroldwoodgpwalkin.co.uk"
   },
   "Y03135": {
     "address": "96 Umfreville Road, London",

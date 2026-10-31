@@ -8650,6 +8650,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -16683,7 +16685,7 @@
     "n": "Stonecot Surgery",
     "a": "115-117 Epsom Road, Sutton",
     "p": "SM3 9EY",
-    "ph": "0208 644 5187",
+    "ph": "02086445187",
     "s": 79.7,
     "c": 73.3,
     "pcn": "",
@@ -16692,7 +16694,7 @@
     "ar": "Sutton",
     "la": 51.386555,
     "ln": -0.210026,
-    "web": "http://www.stonecotsurgery.co.uk",
+    "web": "http://www.stonecotsurgery.nhs.uk",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201320:00",
@@ -19373,28 +19375,18 @@
   },
   {
     "o": "Y03082",
-    "n": "Harold Wood UTC",
-    "a": "Harold Wood Polyclinic, St Clements Avenue, Off Gubbins Lane, Harold Wood",
+    "n": "Kings Park Surgery",
+    "a": "Gubbins Lane, Harold Wood, Romford, Essex",
     "p": "RM3 0FE",
-    "ph": "00000 000000",
+    "ph": "01708792000",
     "s": null,
     "c": null,
     "pcn": "",
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-551713614",
     "ar": "Havering",
-    "la": 51.593185,
-    "ln": 0.225714,
-    "web": "http://haroldwoodgpwalkin.co.uk",
-    "oh": {
-      "Friday": "08:00\u201321:00",
-      "Monday": "08:00\u201321:00",
-      "Saturday": "08:00\u201321:00",
-      "Sunday": "08:00\u201321:00",
-      "Thursday": "08:00\u201321:00",
-      "Tuesday": "08:00\u201321:00",
-      "Wednesday": "08:00\u201321:00"
-    },
+    "la": null,
+    "ln": null,
     "type": "NHS"
   },
   {
