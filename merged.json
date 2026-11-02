@@ -11136,7 +11136,7 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201320:00",
-      "Saturday": "09:00\u201317:00",
+      "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201319:00",
       "Tuesday": "08:00\u201320:00",
@@ -16904,6 +16904,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -58731,7 +58733,8 @@
     "la": 51.379541,
     "ln": -0.101436,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Vantage Medical Consultants Limited"
   },
   {
     "o": "1-29970563766",
@@ -58751,6 +58754,49 @@
     "la": 51.4994019,
     "ln": -0.1946203,
     "type": "Private",
-    "web": "https://www.aestheticbymaria.co.uk"
+    "web": "https://www.aestheticbymaria.co.uk",
+    "grp": "Aesthetic by Maria Limited"
+  },
+  {
+    "o": "1-28454457321",
+    "n": "Smart MRI (Located inside Tessa Jowell Health Centre, London)",
+    "a": "Tessa Jowell GP Surgery, 72h East Dulwich Grove, London",
+    "p": "SE22 8EY",
+    "ph": "02030920646",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28454457321",
+    "ar": "Southwark",
+    "la": 51.4592397,
+    "ln": -0.080509,
+    "type": "Private",
+    "web": "https://www.smartmri.co.uk",
+    "grp": "Imaging Xtra Limited"
+  },
+  {
+    "o": "1-30235380545",
+    "n": "Cygnet Assessment and Therapy Service",
+    "a": "22 Barkham Terrace, London",
+    "p": "SE1 7PW",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "psychiatry",
+    "specs": [
+      "psychiatry"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30235380545",
+    "ar": "Southwark",
+    "la": 51.497206,
+    "ln": -0.109586,
+    "type": "Private",
+    "web": "",
+    "grp": "Cygnet Health Care Limited"
   }
 ]

@@ -30413,7 +30413,7 @@
     "localAuthority": "Croydon",
     "lat": 51.379541,
     "lon": -0.101436,
-    "providerName": "",
+    "providerName": "Vantage Medical Consultants Limited",
     "ar": "Croydon"
   },
   {
@@ -30432,7 +30432,45 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.4994019,
     "lon": -0.1946203,
-    "providerName": "",
+    "providerName": "Aesthetic by Maria Limited",
     "ar": "Kensington & Chelsea"
+  },
+  {
+    "cqc_id": "1-28454457321",
+    "ods_code": "",
+    "name": "Smart MRI (Located inside Tessa Jowell Health Centre, London)",
+    "address": "Tessa Jowell GP Surgery, 72h East Dulwich Grove, London",
+    "postcode": "SE22 8EY",
+    "phone": "02030920646",
+    "website": "https://www.smartmri.co.uk",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28454457321",
+    "localAuthority": "Southwark",
+    "lat": 51.4592397,
+    "lon": -0.080509,
+    "providerName": "Imaging Xtra Limited",
+    "ar": "Southwark"
+  },
+  {
+    "cqc_id": "1-30235380545",
+    "ods_code": "",
+    "name": "Cygnet Assessment and Therapy Service",
+    "address": "22 Barkham Terrace, London",
+    "postcode": "SE1 7PW",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "psychiatry"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30235380545",
+    "localAuthority": "Southwark",
+    "lat": 51.497206,
+    "lon": -0.109586,
+    "providerName": "Cygnet Health Care Limited",
+    "ar": "Southwark"
   }
 ]

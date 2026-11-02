@@ -12367,7 +12367,7 @@
     "localAuthority": "Wandsworth",
     "lat": 51.4728259,
     "lon": -0.1654738,
-    "providerName": "",
+    "providerName": "IB4U LTD",
     "ar": "Wandsworth"
   },
   {
@@ -12385,7 +12385,7 @@
     "localAuthority": "Ealing",
     "lat": 51.5073264,
     "lon": -0.2723961,
-    "providerName": "",
+    "providerName": "IB4U LTD",
     "ar": "Ealing"
   },
   {
@@ -12403,7 +12403,7 @@
     "localAuthority": "Greenwich",
     "lat": 51.4294443,
     "lon": 0.0570249,
-    "providerName": "",
+    "providerName": "IB4U LTD",
     "ar": "Greenwich"
   },
   {
@@ -12421,7 +12421,7 @@
     "localAuthority": "Camden",
     "lat": 51.5467888,
     "lon": -0.1413558,
-    "providerName": "",
+    "providerName": "IB4U LTD",
     "ar": "Camden"
   },
   {
@@ -12439,7 +12439,7 @@
     "localAuthority": "Islington",
     "lat": 51.5377395,
     "lon": -0.1029924,
-    "providerName": "",
+    "providerName": "IB4U LTD",
     "ar": "Islington"
   }
 ]

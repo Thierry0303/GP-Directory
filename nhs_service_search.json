@@ -13472,6 +13472,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -18395,7 +18397,7 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–20:00",
-      "Saturday": "09:00–17:00",
+      "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00–19:00",
       "Tuesday": "08:00–20:00",
