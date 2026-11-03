@@ -15004,6 +15004,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -15091,7 +15093,7 @@
     "postcode": "SW9 6AF",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "https://www.minetgreenhealthpractice.co.uk/"
+    "website": "https://www.minetgreenhealthpractice.nhs.uk/"
   },
   "G85136": {
     "address": "114-118 Lower Marsh, Waterloo, London",

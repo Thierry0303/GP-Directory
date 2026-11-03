@@ -9037,6 +9037,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -9133,7 +9135,7 @@
     "ar": "Lambeth",
     "la": 51.47657,
     "ln": -0.105572,
-    "web": "https://www.minetgreenhealthpractice.co.uk/",
+    "web": "https://www.minetgreenhealthpractice.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
