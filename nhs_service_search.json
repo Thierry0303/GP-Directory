@@ -6949,13 +6949,13 @@
     "lng": -0.137278,
     "name": "Ampthill & Regents Park Practice",
     "opening": {
-      "Friday": "09:00–17:00",
-      "Monday": "09:00–18:00",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "09:00–18:00",
-      "Tuesday": "09:00–18:00",
-      "Wednesday": "09:00–18:00"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02073837333",
     "postcode": "NW1 1TN",
@@ -13087,7 +13087,7 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00–18:30",
-      "Tuesday": "08:00–18:30",
+      "Tuesday": "08:00–20:00",
       "Wednesday": "08:00–18:30"
     },
     "phone": "02088550052",
@@ -13278,6 +13278,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -13286,7 +13288,7 @@
     "postcode": "BR5 2DQ",
     "status": "Visible",
     "type": "GpBranch",
-    "website": ""
+    "website": "https://www.poverestmedicalcentre.co.uk/"
   },
   "G84008": {
     "address": "14 Manor Road, Beckenham",
@@ -15409,7 +15411,7 @@
     "postcode": "SE24 0AU",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.hernehillroadgp.co.uk"
+    "website": "https://www.hernehillroadmedicalpractice.nhs.uk/"
   },
   "G85695": {
     "address": "Akerman Health Centre, 60 Patmos Road, London",
@@ -16931,11 +16933,13 @@
     "lng": -0.315099,
     "name": "Twickenham Park Surgery",
     "opening": {
-      "Friday": "08:15–13:00, 14:00–18:00",
-      "Monday": "08:15–19:30",
-      "Thursday": "08:15–13:00, 14:00–18:00",
-      "Tuesday": "08:15–13:00, 14:00–18:00",
-      "Wednesday": "08:15–13:00, 14:00–18:00"
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02088921991",
     "postcode": "TW1 2AR",
@@ -17620,13 +17624,13 @@
     "lng": -0.192824,
     "name": "Old Court House Surgery",
     "opening": {
-      "Friday": "07:30–18:30",
-      "Monday": "07:30–19:00",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "07:30–19:00",
-      "Tuesday": "07:30–19:00",
-      "Wednesday": "07:30–19:00"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02086435139",
     "postcode": "SM1 4AF",

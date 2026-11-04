@@ -3009,13 +3009,13 @@
     "ln": -0.137278,
     "web": "https://www.ampthillregentsparkpractice.nhs.uk/",
     "oh": {
-      "Friday": "09:00\u201317:00",
-      "Monday": "09:00\u201318:00",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "09:00\u201318:00",
-      "Tuesday": "09:00\u201318:00",
-      "Wednesday": "09:00\u201318:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -7371,7 +7371,7 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
-      "Tuesday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201320:00",
       "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
@@ -9547,7 +9547,7 @@
     "ar": "Lambeth",
     "la": 51.465549,
     "ln": -0.100471,
-    "web": "http://www.hernehillroadgp.co.uk",
+    "web": "https://www.hernehillroadmedicalpractice.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -18476,9 +18476,12 @@
     "ar": "Bromley",
     "la": 51.390011,
     "ln": 0.101279,
+    "web": "https://www.poverestmedicalcentre.co.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -19739,11 +19742,13 @@
     "ln": -0.315099,
     "web": "http://www.twickenhamparksurgery.co.uk/",
     "oh": {
-      "Friday": "08:15\u201313:00, 14:00\u201318:00",
-      "Monday": "08:15\u201319:30",
-      "Thursday": "08:15\u201313:00, 14:00\u201318:00",
-      "Tuesday": "08:15\u201313:00, 14:00\u201318:00",
-      "Wednesday": "08:15\u201313:00, 14:00\u201318:00"
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -21300,13 +21305,13 @@
     "ln": -0.192824,
     "web": "https://www.ochsurgery.co.uk",
     "oh": {
-      "Friday": "07:30\u201318:30",
-      "Monday": "07:30\u201319:00",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "07:30\u201319:00",
-      "Tuesday": "07:30\u201319:00",
-      "Wednesday": "07:30\u201319:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
