@@ -30472,5 +30472,24 @@
     "lon": -0.109586,
     "providerName": "Cygnet Health Care Limited",
     "ar": "Southwark"
+  },
+  {
+    "cqc_id": "1-30348320192",
+    "ods_code": "",
+    "name": "My Vital Metrics London Harley Street Lab",
+    "address": "98 Harley Street, London",
+    "postcode": "W1G 7HZ",
+    "phone": "02074594219",
+    "website": "https://www.myvitalmetrics.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30348320192",
+    "localAuthority": "Westminster",
+    "lat": 51.5210712,
+    "lon": -0.1477081,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]

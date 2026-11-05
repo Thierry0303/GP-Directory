@@ -5462,7 +5462,7 @@
     "ar": "Enfield",
     "la": 51.620686,
     "ln": -0.112014,
-    "web": "http://www.gpdoctor.co.uk/",
+    "web": "http://www.grovelandsmc.nhs.uk",
     "oh": {
       "Friday": "08:00\u201319:00",
       "Monday": "08:00\u201319:00",
@@ -14203,13 +14203,13 @@
     "ln": 0.020179,
     "web": "https://www.maynardcourtsurgery.co.uk",
     "oh": {
-      "Friday": "08:00\u201313:00, 14:00\u201318:30",
-      "Monday": "08:00\u201313:00, 14:00\u201318:30",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201313:00, 14:00\u201318:30",
-      "Tuesday": "08:00\u201313:00, 14:00\u201318:30",
-      "Wednesday": "08:00\u201313:00, 14:00\u201318:30"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -58805,5 +58805,25 @@
     "type": "Private",
     "web": "",
     "grp": "Cygnet Health Care Limited"
+  },
+  {
+    "o": "1-30348320192",
+    "n": "My Vital Metrics London Harley Street Lab",
+    "a": "98 Harley Street, London",
+    "p": "W1G 7HZ",
+    "ph": "02074594219",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30348320192",
+    "ar": "Westminster",
+    "la": 51.5210712,
+    "ln": -0.1477081,
+    "type": "Private",
+    "web": "https://www.myvitalmetrics.com"
   }
 ]

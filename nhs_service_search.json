@@ -5909,13 +5909,13 @@
     "lng": 0.020179,
     "name": "Maynard Court Surgery",
     "opening": {
-      "Friday": "08:00–13:00, 14:00–18:30",
-      "Monday": "08:00–13:00, 14:00–18:30",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00–13:00, 14:00–18:30",
-      "Tuesday": "08:00–13:00, 14:00–18:30",
-      "Wednesday": "08:00–13:00, 14:00–18:30"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "01992761387",
     "postcode": "EN9 3DU",
@@ -10453,7 +10453,7 @@
     "postcode": "N13 4RJ",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.gpdoctor.co.uk/"
+    "website": "http://www.grovelandsmc.nhs.uk"
   },
   "F85615": {
     "address": "759 High Road, Tottenham, London",
