@@ -7809,7 +7809,7 @@
   {
     "o": "G85020",
     "n": "Kingfisher Medical Centre",
-    "a": "3 Kingfisher Square, Staunton Street, Deptford, London",
+    "a": "Staunton Street, Deptford, London, London",
     "p": "SE8 5DA",
     "ph": "02086927373",
     "s": 81.6,
@@ -17160,7 +17160,7 @@
     "ar": "",
     "la": 51.700096,
     "ln": -0.035817,
-    "web": "http://www.wardenlodge.co.uk/",
+    "web": "https://www.wardenlodgemedicalpractice.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -20972,7 +20972,7 @@
     "oh": {
       "Friday": "08:00\u201319:00",
       "Monday": "08:00\u201319:00",
-      "Saturday": "08:30\u201311:00",
+      "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201319:00",
       "Tuesday": "08:00\u201319:00",
@@ -58825,5 +58825,65 @@
     "ln": -0.1477081,
     "type": "Private",
     "web": "https://www.myvitalmetrics.com"
+  },
+  {
+    "o": "1-30303498895",
+    "n": "SkinGlow Clinic",
+    "a": "216 Kensington Park Road, London",
+    "p": "W11 1NR",
+    "ph": "02073139641",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30303498895",
+    "ar": "Kensington & Chelsea",
+    "la": 51.5163958,
+    "ln": -0.2061993,
+    "type": "Private",
+    "web": "https://skinglowclinic.co.uk"
+  },
+  {
+    "o": "1-29744519568",
+    "n": "MMM Imaginatal Ltd Trading as Imaginatal",
+    "a": "Unit 2B 63-65 Princelet Street, Spitalfields, London",
+    "p": "E1 5LP",
+    "ph": "07970051491",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29744519568",
+    "ar": "Tower Hamlets",
+    "la": 51.5199135,
+    "ln": -0.0697874,
+    "type": "Private",
+    "web": "https://www.imaginatal.co.uk/whitechapel"
+  },
+  {
+    "o": "1-28493423594",
+    "n": "Trears Clinic Ltd - Harley Street",
+    "a": "10 Harley Street, London",
+    "p": "W1G 9PF",
+    "ph": "02074678300",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28493423594",
+    "ar": "Westminster",
+    "la": 51.517391,
+    "ln": -0.146009,
+    "type": "Private",
+    "web": "https://www.trearsclinic.com"
   }
 ]

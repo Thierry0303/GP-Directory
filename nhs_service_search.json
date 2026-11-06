@@ -96,7 +96,7 @@
     "postcode": "EN8 8NW",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.wardenlodge.co.uk/"
+    "website": "https://www.wardenlodgemedicalpractice.nhs.uk/"
   },
   "E82133": {
     "address": "13-15 High Street, Cheshunt, Waltham cross",
@@ -14029,7 +14029,7 @@
     "website": "http://www.hernehillgp.nhs.uk"
   },
   "G85020": {
-    "address": "3 Kingfisher Square, Staunton Street, Deptford, London",
+    "address": "Staunton Street, Deptford, London, London",
     "lat": 51.481876,
     "lng": -0.030489,
     "name": "Kingfisher Medical Centre",
@@ -16741,7 +16741,7 @@
     "opening": {
       "Friday": "08:00–19:00",
       "Monday": "08:00–19:00",
-      "Saturday": "08:30–11:00",
+      "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00–19:00",
       "Tuesday": "08:00–19:00",

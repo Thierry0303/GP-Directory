@@ -30491,5 +30491,62 @@
     "lon": -0.1477081,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30303498895",
+    "ods_code": "",
+    "name": "SkinGlow Clinic",
+    "address": "216 Kensington Park Road, London",
+    "postcode": "W11 1NR",
+    "phone": "02073139641",
+    "website": "https://skinglowclinic.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30303498895",
+    "localAuthority": "Kensington and Chelsea",
+    "lat": 51.5163958,
+    "lon": -0.2061993,
+    "providerName": "",
+    "ar": "Kensington & Chelsea"
+  },
+  {
+    "cqc_id": "1-29744519568",
+    "ods_code": "",
+    "name": "MMM Imaginatal Ltd Trading as Imaginatal",
+    "address": "Unit 2B 63-65 Princelet Street, Spitalfields, London",
+    "postcode": "E1 5LP",
+    "phone": "07970051491",
+    "website": "https://www.imaginatal.co.uk/whitechapel",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29744519568",
+    "localAuthority": "Tower Hamlets",
+    "lat": 51.5199135,
+    "lon": -0.0697874,
+    "providerName": "",
+    "ar": "Tower Hamlets"
+  },
+  {
+    "cqc_id": "1-28493423594",
+    "ods_code": "",
+    "name": "Trears Clinic Ltd - Harley Street",
+    "address": "10 Harley Street, London",
+    "postcode": "W1G 9PF",
+    "phone": "02074678300",
+    "website": "https://www.trearsclinic.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28493423594",
+    "localAuthority": "Westminster",
+    "lat": 51.517391,
+    "lon": -0.146009,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
