@@ -1701,6 +1701,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -14029,7 +14031,7 @@
     "website": "http://www.hernehillgp.nhs.uk"
   },
   "G85020": {
-    "address": "Staunton Street, Deptford, London, London",
+    "address": "3 Kingfisher Square, Staunton Street, Deptford, London",
     "lat": 51.481876,
     "lng": -0.030489,
     "name": "Kingfisher Medical Centre",
@@ -14094,7 +14096,7 @@
     "lng": 0.004406,
     "name": "Lewisham Medical Centre",
     "opening": {
-      "Friday": "08:00–18:30",
+      "Friday": "08:00–20:00",
       "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
@@ -15521,7 +15523,7 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
-      "Saturday": "Closed",
+      "Saturday": "09:00–16:00",
       "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
@@ -15643,7 +15645,7 @@
       "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00–18:30",
+      "Thursday": "08:00–20:00",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
     },

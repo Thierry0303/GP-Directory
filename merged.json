@@ -990,6 +990,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -7809,7 +7811,7 @@
   {
     "o": "G85020",
     "n": "Kingfisher Medical Centre",
-    "a": "Staunton Street, Deptford, London, London",
+    "a": "3 Kingfisher Square, Staunton Street, Deptford, London",
     "p": "SE8 5DA",
     "ph": "02086927373",
     "s": 81.6,
@@ -7900,7 +7902,7 @@
     "ln": 0.004406,
     "web": "https://www.lewishammedicalcentre.nhs.uk",
     "oh": {
-      "Friday": "08:00\u201318:30",
+      "Friday": "08:00\u201320:00",
       "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
@@ -9707,7 +9709,7 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "Closed",
+      "Saturday": "09:00\u201316:00",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
@@ -9865,7 +9867,7 @@
       "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201318:30",
+      "Thursday": "08:00\u201320:00",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
     },
@@ -58885,5 +58887,25 @@
     "ln": -0.146009,
     "type": "Private",
     "web": "https://www.trearsclinic.com"
+  },
+  {
+    "o": "1-26778714188",
+    "n": "Atlus Ltd",
+    "a": "Meridian Business Park, Unit G11, 159-163 Marlborough Road, London",
+    "p": "N19 4NF",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-26778714188",
+    "ar": "Islington",
+    "la": 51.5662231,
+    "ln": -0.1222385,
+    "type": "Private",
+    "web": ""
   }
 ]

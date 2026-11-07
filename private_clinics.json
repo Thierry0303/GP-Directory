@@ -30548,5 +30548,24 @@
     "lon": -0.146009,
     "providerName": "",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-26778714188",
+    "ods_code": "",
+    "name": "Atlus Ltd",
+    "address": "Meridian Business Park, Unit G11, 159-163 Marlborough Road, London",
+    "postcode": "N19 4NF",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-26778714188",
+    "localAuthority": "Islington",
+    "lat": 51.5662231,
+    "lon": -0.1222385,
+    "providerName": "",
+    "ar": "Islington"
   }
 ]

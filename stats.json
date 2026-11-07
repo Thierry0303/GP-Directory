@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2523,
-  "total_records_incl_non_london": 2593,
+  "total_records": 2524,
+  "total_records_incl_non_london": 2594,
   "excluded_non_london": 70,
   "nhs_practice_count": 981,
-  "private_clinic_count": 1542,
+  "private_clinic_count": 1543,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -47,7 +47,7 @@
     },
     "Islington": {
       "nhs": 29,
-      "private": 35,
+      "private": 36,
       "dentist": 0
     },
     "Hackney": {
