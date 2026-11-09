@@ -26658,7 +26658,7 @@
     "la": 51.5171826,
     "ln": -0.0853112,
     "type": "Private",
-    "web": "",
+    "web": "https://www.tohealthltd.co.uk",
     "grp": "ToHealth Ltd"
   },
   {
@@ -30208,7 +30208,7 @@
     "la": 51.5632865,
     "ln": 0.113743,
     "type": "Private",
-    "web": "",
+    "web": "https://www.goodmayesmedicalpractice.co.uk",
     "grp": "Dr Khalid Ismail Patel"
   },
   {
@@ -39423,7 +39423,7 @@
     "la": 51.526282,
     "ln": -0.1180151,
     "type": "Private",
-    "web": "",
+    "web": "https://www.medstar.app",
     "grp": "Medstar Clinic Ltd"
   },
   {
@@ -46932,7 +46932,7 @@
     "la": 51.5209301,
     "ln": -0.1123402,
     "type": "Private",
-    "web": "",
+    "web": "https://www.kovalclinic.co.uk",
     "grp": "Koval Prestige Health Limited"
   },
   {
@@ -52791,7 +52791,7 @@
     "la": 51.4380955,
     "ln": 0.0735252,
     "type": "Private",
-    "web": "",
+    "web": "https://www.wellingmedicalpractice.co.uk",
     "grp": "Welling Medical Practice"
   },
   {
@@ -53940,7 +53940,7 @@
     "la": 51.4530035,
     "ln": 0.228991,
     "type": "Private",
-    "web": "",
+    "web": "https://www.templehillsurgerydartford.co.uk",
     "grp": "DGS Health Ltd"
   },
   {
@@ -56172,7 +56172,7 @@
     "la": 51.517336,
     "ln": -0.146501,
     "type": "Private",
-    "web": "",
+    "web": "https://www.umediagnostics.com",
     "grp": "UME Diagnostics Limited"
   },
   {
@@ -58826,7 +58826,8 @@
     "la": 51.5210712,
     "ln": -0.1477081,
     "type": "Private",
-    "web": "https://www.myvitalmetrics.com"
+    "web": "https://www.myvitalmetrics.com",
+    "grp": "My Vital Metrics Ltd"
   },
   {
     "o": "1-30303498895",
@@ -58846,7 +58847,8 @@
     "la": 51.5163958,
     "ln": -0.2061993,
     "type": "Private",
-    "web": "https://skinglowclinic.co.uk"
+    "web": "https://skinglowclinic.co.uk",
+    "grp": "Skinglow Clinic Ltd"
   },
   {
     "o": "1-29744519568",

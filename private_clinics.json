@@ -880,7 +880,7 @@
     "address": "4 London Wall Buildings, London",
     "postcode": "EC2M 5NT",
     "phone": "0203829555",
-    "website": "",
+    "website": "https://www.tohealthltd.co.uk",
     "specialties": [
       "private-gp"
     ],
@@ -4114,7 +4114,7 @@
     "address": "Doctors Surgery, 595 Green Lane, Ilford",
     "postcode": "IG3 9RN",
     "phone": "02036687499",
-    "website": "",
+    "website": "https://www.goodmayesmedicalpractice.co.uk",
     "specialties": [
       "consultant",
       "urology"
@@ -12635,7 +12635,7 @@
     "address": "195-199, Gray's Inn Road, London",
     "postcode": "WC1X 8UL",
     "phone": "",
-    "website": "",
+    "website": "https://www.medstar.app",
     "specialties": [
       "private-gp"
     ],
@@ -19548,7 +19548,7 @@
     "address": "1-5, Portpool Lane, London",
     "postcode": "EC1N 7UU",
     "phone": "02039888777",
-    "website": "",
+    "website": "https://www.kovalclinic.co.uk",
     "specialties": [
       "private-gp"
     ],
@@ -24924,7 +24924,7 @@
     "address": "12 Avery Hill Road, New Eltham",
     "postcode": "SE9 2BD",
     "phone": "08444770975",
-    "website": "",
+    "website": "https://www.wellingmedicalpractice.co.uk",
     "specialties": [
       "gynaecology",
       "sexual-health"
@@ -25997,7 +25997,7 @@
     "address": "St. Edmunds Road, Dartford",
     "postcode": "DA1 5ND",
     "phone": "01322226090",
-    "website": "",
+    "website": "https://www.templehillsurgerydartford.co.uk",
     "specialties": [
       "private-gp"
     ],
@@ -28037,7 +28037,7 @@
     "address": "17 Harley Street, London",
     "postcode": "W1G 9QH",
     "phone": "02074676190",
-    "website": "",
+    "website": "https://www.umediagnostics.com",
     "specialties": [
       "diagnostic",
       "private-gp"
@@ -30489,7 +30489,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5210712,
     "lon": -0.1477081,
-    "providerName": "",
+    "providerName": "My Vital Metrics Ltd",
     "ar": "Westminster"
   },
   {
@@ -30508,7 +30508,7 @@
     "localAuthority": "Kensington and Chelsea",
     "lat": 51.5163958,
     "lon": -0.2061993,
-    "providerName": "",
+    "providerName": "Skinglow Clinic Ltd",
     "ar": "Kensington & Chelsea"
   },
   {
@@ -30527,7 +30527,7 @@
     "localAuthority": "Tower Hamlets",
     "lat": 51.5199135,
     "lon": -0.0697874,
-    "providerName": "",
+    "providerName": "MMM Imaginatal Ltd",
     "ar": "Tower Hamlets"
   },
   {
@@ -30546,7 +30546,7 @@
     "localAuthority": "Westminster",
     "lat": 51.517391,
     "lon": -0.146009,
-    "providerName": "",
+    "providerName": "Trears Clinic Ltd",
     "ar": "Westminster"
   },
   {
@@ -30565,7 +30565,7 @@
     "localAuthority": "Islington",
     "lat": 51.5662231,
     "lon": -0.1222385,
-    "providerName": "",
+    "providerName": "Atlus Ltd",
     "ar": "Islington"
   }
 ]
