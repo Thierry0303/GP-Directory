@@ -280,11 +280,11 @@
 "strikes": 0
 },
 "https://www.adhdme.care": {
-"checked": "2026-10-11",
-"ok": true,
+"checked": "2026-11-10",
+"ok": false,
 "really_ok": false,
 "status": "URLError",
-"strikes": 1
+"strikes": 2
 },
 "https://www.adhdmedics.com": {
 "checked": "2026-11-08",
@@ -1869,11 +1869,11 @@
 "strikes": 0
 },
 "https://www.edermatologist.uk": {
-"checked": "2026-10-11",
-"ok": true,
+"checked": "2026-11-10",
+"ok": false,
 "really_ok": false,
 "status": "URLError",
-"strikes": 1
+"strikes": 2
 },
 "https://www.edgcare.net": {
 "checked": "2026-11-08",
@@ -2247,10 +2247,10 @@
 "strikes": 0
 },
 "https://www.futuraclinic.net": {
-"checked": "2026-10-11",
+"checked": "2026-11-10",
 "ok": true,
 "really_ok": true,
-"status": "202",
+"status": "403",
 "strikes": 0
 },
 "https://www.futurecaremedical.com": {
@@ -2322,6 +2322,13 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
+},
+"https://www.goodmayesmedicalpractice.co.uk": {
+"checked": "2026-11-10",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
 },
 "https://www.gosh.nhs.uk": {
 "checked": "2026-11-08",
@@ -3002,6 +3009,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.kovalclinic.co.uk": {
+"checked": "2026-11-10",
+"ok": true,
+"really_ok": false,
+"status": "500",
+"strikes": 1
+},
 "https://www.kpgservices.com": {
 "checked": "2026-10-12",
 "ok": true,
@@ -3332,11 +3346,11 @@
 "strikes": 0
 },
 "https://www.manual.co": {
-"checked": "2026-10-11",
-"ok": true,
+"checked": "2026-11-10",
+"ok": false,
 "really_ok": false,
 "status": "429",
-"strikes": 1
+"strikes": 2
 },
 "https://www.mariestopes.org.uk": {
 "checked": "2026-11-08",
@@ -3505,6 +3519,13 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
+},
+"https://www.medstar.app": {
+"checked": "2026-11-10",
+"ok": true,
+"really_ok": false,
+"status": "503",
+"strikes": 1
 },
 "https://www.meliorclinics.co.uk/find-a-clinic/harley-street-london-botox-clinic": {
 "checked": "2026-11-08",
@@ -4843,6 +4864,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.templehillsurgerydartford.co.uk": {
+"checked": "2026-11-10",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
+},
 "https://www.tempusbelgravia.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5159,10 +5187,10 @@
 "strikes": 0
 },
 "https://www.theskininvestmentclinic.com/": {
-"checked": "2026-10-11",
+"checked": "2026-11-10",
 "ok": true,
 "really_ok": true,
-"status": "403",
+"status": "200",
 "strikes": 0
 },
 "https://www.theskinsurgery.co.uk": {
@@ -5270,12 +5298,19 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.topathome.co.uk": {
-"checked": "2026-10-11",
+"https://www.tohealthltd.co.uk": {
+"checked": "2026-11-10",
 "ok": true,
 "really_ok": false,
-"status": "404",
+"status": "TimeoutError",
 "strikes": 1
+},
+"https://www.topathome.co.uk": {
+"checked": "2026-11-10",
+"ok": false,
+"really_ok": false,
+"status": "404",
+"strikes": 2
 },
 "https://www.trailfinders.com": {
 "checked": "2026-11-08",
@@ -5410,6 +5445,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.umediagnostics.com": {
+"checked": "2026-11-10",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
+},
 "https://www.unbound.living": {
 "checked": "2026-10-21",
 "ok": true,
@@ -5535,6 +5577,13 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
+},
+"https://www.wellingmedicalpractice.co.uk": {
+"checked": "2026-11-10",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
 },
 "https://www.wellingtondiagnosticscentre.com": {
 "checked": "2026-11-08",

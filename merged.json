@@ -10503,7 +10503,7 @@
     "ar": "Merton",
     "la": 51.404804,
     "ln": -0.192075,
-    "web": "http://www.mordenhallmedicalcentre.co.uk",
+    "web": "http://www.mordenhallmedicalcentre.nhs.uk",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -10710,7 +10710,8 @@
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201320:00",
       "Saturday": "09:00\u201312:00",
-      "Thursday": "08:00\u201320:00",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
     },
@@ -14409,7 +14410,7 @@
     "ar": "Barking & Dagenham",
     "la": 51.535187,
     "ln": 0.152126,
-    "web": "http://heathwaymedicalcentre.com",
+    "web": "https://heathwaymedicalcentre.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -19954,7 +19955,7 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
-      "Tuesday": "08:00\u201318:30",
+      "Tuesday": "07:00\u201318:30",
       "Wednesday": "07:00\u201318:30"
     },
     "type": "NHS"
@@ -20843,7 +20844,7 @@
     "ar": "Barking & Dagenham",
     "la": 51.534004,
     "ln": 0.088179,
-    "web": "https://www.gpbarking.com",
+    "web": "https://whitehousesurgerybarking.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -26700,7 +26701,7 @@
     "la": 51.4848787,
     "ln": -0.2222866,
     "type": "Private",
-    "web": "https://www.edermatologist.uk"
+    "web": ""
   },
   {
     "o": "1-10797130515",
@@ -32057,7 +32058,7 @@
     "la": 51.5386817,
     "ln": 0.0519936,
     "type": "Private",
-    "web": "https://www.adhdme.care",
+    "web": "",
     "grp": "ADHDME Care Limited"
   },
   {
@@ -44744,7 +44745,7 @@
     "la": 51.5065947,
     "ln": -0.0961451,
     "type": "Private",
-    "web": "https://www.manual.co"
+    "web": ""
   },
   {
     "o": "1-23578704700",

@@ -6531,7 +6531,7 @@
     "postcode": "IG11 7UN",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "https://www.gpbarking.com"
+    "website": "https://whitehousesurgerybarking.nhs.uk/"
   },
   "F82619": {
     "address": "1 Harlow Road, Rainham",
@@ -6629,7 +6629,7 @@
     "postcode": "RM10 9HU",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://heathwaymedicalcentre.com"
+    "website": "https://heathwaymedicalcentre.nhs.uk/"
   },
   "F82638": {
     "address": "195 Rush Green Road, Romford",
@@ -16510,7 +16510,7 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00–18:30",
-      "Tuesday": "08:00–18:30",
+      "Tuesday": "07:00–18:30",
       "Wednesday": "07:00–18:30"
     },
     "phone": "02089775481",
@@ -17696,7 +17696,7 @@
     "postcode": "SW19 3DA",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.mordenhallmedicalcentre.co.uk"
+    "website": "http://www.mordenhallmedicalcentre.nhs.uk"
   },
   "H85038": {
     "address": "75-79 Miles Road, Mitcham",
@@ -17880,7 +17880,8 @@
       "Friday": "08:00–18:30",
       "Monday": "08:00–20:00",
       "Saturday": "09:00–12:00",
-      "Thursday": "08:00–20:00",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
     },
