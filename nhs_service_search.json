@@ -7110,11 +7110,11 @@
     "name": "Abbey Medical Centre",
     "opening": {
       "Friday": "08:00–18:30",
-      "Monday": "08:00–18:30",
+      "Monday": "08:00–20:00",
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00–18:30",
-      "Tuesday": "08:00–20:30",
+      "Tuesday": "08:00–20:00",
       "Wednesday": "08:00–18:30"
     },
     "phone": "02076042455",
@@ -11475,17 +11475,19 @@
     "lng": 0.024808,
     "name": "Southdene Surgery",
     "opening": {
-      "Friday": "08:00–19:00",
-      "Monday": "08:00–19:00",
-      "Thursday": "08:00–19:00",
-      "Tuesday": "07:15–19:00",
-      "Wednesday": "08:00–19:00"
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02085303731",
     "postcode": "E18 1BD",
     "status": "Visible",
     "type": "GpBranch",
-    "website": ""
+    "website": "https://www.southdenesurgery.co.uk/"
   },
   "F86074": {
     "address": "4Th Floor, Oliver Road Medical Centre, 75 Oliver Road, London",
@@ -14753,7 +14755,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
-      "Saturday": "09:00–12:00",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -17704,17 +17707,19 @@
     "lng": -0.174011,
     "name": "Cricket Green Medical Practice",
     "opening": {
-      "Friday": "08:00–19:00",
-      "Monday": "08:00–20:00",
-      "Thursday": "08:00–19:00",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
       "Tuesday": "08:00–20:00",
-      "Wednesday": "08:00–19:00"
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02086480822",
     "postcode": "CR4 3DA",
     "status": "Visible",
     "type": "GpBranch",
-    "website": ""
+    "website": "https://www.cricketgreen.co.uk"
   },
   "H85041": {
     "address": "2-4 Steerforth Street, London",

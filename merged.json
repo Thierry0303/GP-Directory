@@ -3142,11 +3142,11 @@
     "web": "http://www.abbeymc.co.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
-      "Monday": "08:00\u201318:30",
+      "Monday": "08:00\u201320:00",
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
-      "Tuesday": "08:00\u201320:30",
+      "Tuesday": "08:00\u201320:00",
       "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
@@ -6250,12 +6250,15 @@
     "ar": "Redbridge",
     "la": 51.594429,
     "ln": 0.024808,
+    "web": "https://www.southdenesurgery.co.uk/",
     "oh": {
-      "Friday": "08:00\u201319:00",
-      "Monday": "08:00\u201319:00",
-      "Thursday": "08:00\u201319:00",
-      "Tuesday": "07:15\u201319:00",
-      "Wednesday": "08:00\u201319:00"
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -8730,7 +8733,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "09:00\u201312:00",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -20922,12 +20926,15 @@
     "ar": "Merton",
     "la": 51.404579,
     "ln": -0.174011,
+    "web": "https://www.cricketgreen.co.uk",
     "oh": {
-      "Friday": "08:00\u201319:00",
-      "Monday": "08:00\u201320:00",
-      "Thursday": "08:00\u201319:00",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201320:00",
-      "Wednesday": "08:00\u201319:00"
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -25717,7 +25724,7 @@
     "la": 51.518024,
     "ln": -0.146214,
     "type": "Private",
-    "web": "https://www.opticalexpress.co.uk/store/london-harley-street.html",
+    "web": "",
     "grp": "Optical Express Limited"
   },
   {
@@ -25884,7 +25891,7 @@
     "la": 51.5332315,
     "ln": -0.4176021,
     "type": "Private",
-    "web": "https://www.privateultrasoundscan.org",
+    "web": "",
     "grp": "Private Ultrasound Scan Ltd"
   },
   {
@@ -26179,7 +26186,7 @@
     "la": 51.5212146,
     "ln": -0.1482501,
     "type": "Private",
-    "web": "https://www.drraghureddy.com"
+    "web": ""
   },
   {
     "o": "1-10404317679",
@@ -26242,7 +26249,7 @@
     "la": 51.6069825,
     "ln": -0.2325388,
     "type": "Private",
-    "web": "https://www.chaselodgehealth.com",
+    "web": "",
     "grp": "Chase Lodge Health Limited"
   },
   {
@@ -26326,7 +26333,7 @@
     "la": 51.5774342,
     "ln": 0.00347,
     "type": "Private",
-    "web": "https://www.londonhyperbaric.com",
+    "web": "",
     "grp": "LHM Healthcare Ltd"
   },
   {
@@ -26368,7 +26375,7 @@
     "la": 51.467864,
     "ln": -0.074257,
     "type": "Private",
-    "web": "https://www.dmchealthcare.co.uk/radiology-reporting",
+    "web": "",
     "grp": "DMC Imaging Ltd"
   },
   {
@@ -26701,7 +26708,7 @@
     "la": 51.4848787,
     "ln": -0.2222866,
     "type": "Private",
-    "web": ""
+    "web": "https://www.edermatologist.uk"
   },
   {
     "o": "1-10797130515",
@@ -26848,7 +26855,7 @@
     "la": 51.5961844,
     "ln": -0.0689675,
     "type": "Private",
-    "web": "https://www.charltonhouse.medicalcentre.co.uk"
+    "web": ""
   },
   {
     "o": "1-1088923354",
@@ -27627,7 +27634,7 @@
     "la": 51.4961085,
     "ln": -0.0245799,
     "type": "Private",
-    "web": "https://www.pharmacinta.o.uk",
+    "web": "",
     "grp": "Pro UK Health Ltd"
   },
   {
@@ -27733,7 +27740,7 @@
     "la": 51.520905,
     "ln": -0.148143,
     "type": "Private",
-    "web": "https://www.phpservice.co.uk",
+    "web": "",
     "grp": "Alix Daniel"
   },
   {
@@ -27795,7 +27802,7 @@
     "la": 51.5258071,
     "ln": 0.0238943,
     "type": "Private",
-    "web": "https://www.newhamgpcoop.com",
+    "web": "",
     "grp": "Newham GP Co-Operative Ltd"
   },
   {
@@ -28048,7 +28055,7 @@
     "la": 51.519871,
     "ln": -0.149281,
     "type": "Private",
-    "web": "https://www.wimpoleaesthetics.com",
+    "web": "",
     "grp": "Wimpole Aesthetic (Medical) Limited"
   },
   {
@@ -28475,7 +28482,7 @@
     "la": 51.520009,
     "ln": -0.147185,
     "type": "Private",
-    "web": "https://www.careoncologyclinic.com",
+    "web": "",
     "grp": "Clinics Operations Limited"
   },
   {
@@ -29142,7 +29149,7 @@
     "la": 51.5234814,
     "ln": -0.1967813,
     "type": "Private",
-    "web": "https://www.cityskindoctor.com",
+    "web": "",
     "grp": "London City Skin Doctors Ltd"
   },
   {
@@ -29268,7 +29275,7 @@
     "la": 51.4800179,
     "ln": 0.1797555,
     "type": "Private",
-    "web": "https://www.ultrasoundscanningservices.co.uk",
+    "web": "",
     "grp": "Ultraworld Scanning Services Ltd"
   },
   {
@@ -31386,7 +31393,7 @@
     "la": 51.4941429,
     "ln": -0.1918173,
     "type": "Private",
-    "web": "https://www.ghmsuk.co.uk",
+    "web": "",
     "grp": "Global Health Medical Services Limited"
   },
   {
@@ -31449,7 +31456,7 @@
     "la": 51.426783,
     "ln": 0.227413,
     "type": "Private",
-    "web": "https://www.bariatricconsultancytier3.com",
+    "web": "",
     "grp": "TBC Healthcare Limited"
   },
   {
@@ -31597,7 +31604,7 @@
     "la": 51.5216891,
     "ln": -0.0816597,
     "type": "Private",
-    "web": "https://www.xylaelectivecare.com",
+    "web": "",
     "grp": "ICS Operations Limited"
   },
   {
@@ -31618,7 +31625,7 @@
     "la": 51.4959049,
     "ln": -0.1697485,
     "type": "Private",
-    "web": "https://www.lamaisonmedicale.co.uk",
+    "web": "",
     "grp": "Browd Medical Limited"
   },
   {
@@ -32058,7 +32065,7 @@
     "la": 51.5386817,
     "ln": 0.0519936,
     "type": "Private",
-    "web": "",
+    "web": "https://www.adhdme.care",
     "grp": "ADHDME Care Limited"
   },
   {
@@ -32249,7 +32256,7 @@
     "la": 51.512774,
     "ln": -0.1337192,
     "type": "Private",
-    "web": "https://www.picoclinics.com/cinemahouse",
+    "web": "",
     "grp": "Pico London Ltd"
   },
   {
@@ -32883,7 +32890,7 @@
     "la": 51.5137267,
     "ln": -0.2993207,
     "type": "Private",
-    "web": "https://www.conceptoclinic.co.uk",
+    "web": "",
     "grp": "Dave's Healthcare Ltd"
   },
   {
@@ -33406,7 +33413,7 @@
     "la": 51.430298,
     "ln": -0.086094,
     "type": "Private",
-    "web": "https://www.lambethgpfederations.nhs.uk",
+    "web": "",
     "grp": "LHP LONDON LTD"
   },
   {
@@ -34093,7 +34100,7 @@
     "la": 51.485827,
     "ln": -0.181598,
     "type": "Private",
-    "web": "https://www.cmaclinic.co.uk",
+    "web": "",
     "grp": "SJL Healthcare Ltd"
   },
   {
@@ -34616,7 +34623,7 @@
     "la": 51.535511,
     "ln": -0.1053201,
     "type": "Private",
-    "web": "https://www.onlinedoctor.boots.com/",
+    "web": "",
     "grp": "Boots Digital Health Limited"
   },
   {
@@ -34888,7 +34895,7 @@
     "la": 51.4985023,
     "ln": -0.1650484,
     "type": "Private",
-    "web": "https://www.lec-london.uk",
+    "web": "",
     "grp": "Euroeyes London Knightsbridge Ltd"
   },
   {
@@ -34970,7 +34977,7 @@
     "la": 51.5819243,
     "ln": 0.0573328,
     "type": "Private",
-    "web": "https://www.beehivesolutions.co.uk"
+    "web": ""
   },
   {
     "o": "1-159646952",
@@ -35554,7 +35561,7 @@
     "la": 51.5235641,
     "ln": -0.1404424,
     "type": "Private",
-    "web": "https://www.fitzroviamedicalclinic.com",
+    "web": "",
     "grp": "Fitzrovia Medical Ltd"
   },
   {
@@ -35680,7 +35687,7 @@
     "la": 51.578083,
     "ln": -0.197839,
     "type": "Private",
-    "web": "https://www.999medical.com",
+    "web": "",
     "grp": "999 Medicine Limited"
   },
   {
@@ -35996,7 +36003,7 @@
     "la": 51.657676,
     "ln": -0.2010563,
     "type": "Private",
-    "web": "https://www.heallthfusionclinic.com",
+    "web": "",
     "grp": "Health Fusion Clinic Limited"
   },
   {
@@ -36123,7 +36130,7 @@
     "la": 51.5216734,
     "ln": -0.1437052,
     "type": "Private",
-    "web": "https://www.drrachelresetcoach.co.ukNorth West London CCG",
+    "web": "",
     "grp": "Dr Rachel Reset Coach Ltd"
   },
   {
@@ -36912,7 +36919,7 @@
     "la": 51.6039617,
     "ln": -0.4162596,
     "type": "Private",
-    "web": "https://www.harrowhealth.org.uk"
+    "web": ""
   },
   {
     "o": "1-18138993633",
@@ -37831,7 +37838,7 @@
     "la": 51.5153509,
     "ln": -0.1908619,
     "type": "Private",
-    "web": "https://www.doctov.co.uk",
+    "web": "",
     "grp": "Doctor V Ltd"
   },
   {
@@ -38273,7 +38280,7 @@
     "la": 51.4896295,
     "ln": -0.1226224,
     "type": "Private",
-    "web": "https://www.helios.org.uk"
+    "web": ""
   },
   {
     "o": "1-19213390455",
@@ -38799,7 +38806,7 @@
     "la": 51.6466532,
     "ln": -0.147262,
     "type": "Private",
-    "web": "https://www.surgicareaesthetics.co.uk"
+    "web": ""
   },
   {
     "o": "1-19611907351",
@@ -39027,7 +39034,7 @@
     "la": 51.4405182,
     "ln": 0.0880102,
     "type": "Private",
-    "web": "https://www.southeastlondonnumiscan.co.uk",
+    "web": "",
     "grp": "Numiscan South East London Limited"
   },
   {
@@ -39216,7 +39223,7 @@
     "la": 51.5148012,
     "ln": -0.1544195,
     "type": "Private",
-    "web": "https://www.kpgservices.com",
+    "web": "",
     "grp": "KP GP Services Ltd"
   },
   {
@@ -39823,7 +39830,7 @@
     "la": 51.584564,
     "ln": -0.502236,
     "type": "Private",
-    "web": "https://www.chiternprivate.co.uk"
+    "web": ""
   },
   {
     "o": "1-19898679875",
@@ -40161,7 +40168,7 @@
     "la": 51.5168651,
     "ln": -0.1478644,
     "type": "Private",
-    "web": "https://www.psychareclinic.com",
+    "web": "",
     "grp": "The Psychiatric Care Clinic Ltd"
   },
   {
@@ -42461,7 +42468,7 @@
     "la": 51.5203306,
     "ln": -0.0771069,
     "type": "Private",
-    "web": "https://www.nekohealth.com/gb/en"
+    "web": ""
   },
   {
     "o": "1-22144502697",
@@ -42875,7 +42882,7 @@
     "la": 51.4248197,
     "ln": 0.0578343,
     "type": "Private",
-    "web": "https://www.mdcpn.nhs.uk",
+    "web": "",
     "grp": "MDC PCN Health Ltd"
   },
   {
@@ -42918,7 +42925,7 @@
     "la": 51.5148012,
     "ln": -0.1544195,
     "type": "Private",
-    "web": "https://www.aneira.health",
+    "web": "",
     "grp": "Aneira Health LTD"
   },
   {
@@ -43714,7 +43721,7 @@
     "la": 51.517391,
     "ln": -0.146009,
     "type": "Private",
-    "web": "https://www.autismandadhddiagnsoticcentre.com",
+    "web": "",
     "grp": "Autism and ADHD Diagnostic Centre Limited"
   },
   {
@@ -44215,7 +44222,7 @@
     "la": 51.4052306,
     "ln": -0.0331825,
     "type": "Private",
-    "web": "https://www.bromleyhealthcare.nhs.uk",
+    "web": "",
     "grp": "Bromley Healthcare Community Interest Company"
   },
   {
@@ -44745,7 +44752,7 @@
     "la": 51.5065947,
     "ln": -0.0961451,
     "type": "Private",
-    "web": ""
+    "web": "https://www.manual.co"
   },
   {
     "o": "1-23578704700",
@@ -45035,7 +45042,7 @@
     "la": 51.5174342,
     "ln": -0.2165073,
     "type": "Private",
-    "web": "https://www.hupe.life"
+    "web": ""
   },
   {
     "o": "1-2374265233",
@@ -45412,7 +45419,7 @@
     "la": 51.5574318,
     "ln": -0.011157,
     "type": "Private",
-    "web": "https://www.pastelhealth.co.uk",
+    "web": "",
     "grp": "Pastel Health Ltd"
   },
   {
@@ -46038,7 +46045,7 @@
     "la": 51.517391,
     "ln": -0.146009,
     "type": "Private",
-    "web": "https://www.ukpsychiatryservices.co.uk"
+    "web": ""
   },
   {
     "o": "1-24633966951",
@@ -46518,7 +46525,7 @@
     "la": 51.522464,
     "ln": -0.150462,
     "type": "Private",
-    "web": "https://www.thelondonclinic.co.uk/consultants/dr-christopher-rowland-payne",
+    "web": "",
     "grp": "Dr Rowland Payne Dermatology Ltd"
   },
   {
@@ -46871,7 +46878,7 @@
     "la": 51.514171,
     "ln": -0.12331,
     "type": "Private",
-    "web": "https://www.nekohealth.com/gb/en"
+    "web": ""
   },
   {
     "o": "1-25314543942",
@@ -47100,7 +47107,7 @@
     "la": 51.6088225,
     "ln": 0.0669978,
     "type": "Private",
-    "web": "https://www.theweightlossdocs.co.uk",
+    "web": "",
     "grp": "Sanovis Medical Limited"
   },
   {
@@ -47246,7 +47253,7 @@
     "la": 51.5123139,
     "ln": -0.1495191,
     "type": "Private",
-    "web": "https://www.heleneclinic.co.uk",
+    "web": "",
     "grp": "Helene Therapeutics Limited"
   },
   {
@@ -47311,7 +47318,7 @@
     "la": 51.39729,
     "ln": -0.103533,
     "type": "Private",
-    "web": "https://www.brigstockfamilypractice.com",
+    "web": "",
     "grp": "Communitas Clinics Ltd"
   },
   {
@@ -48620,7 +48627,7 @@
     "la": 51.575776,
     "ln": 0.023488,
     "type": "Private",
-    "web": "https://www.fmcmarketing.co.uk",
+    "web": "",
     "grp": "FMC Marketing Limited"
   },
   {
@@ -49250,7 +49257,7 @@
     "la": 51.4931027,
     "ln": -0.1464944,
     "type": "Private",
-    "web": "https://www.nekohealth.com"
+    "web": ""
   },
   {
     "o": "1-27138883967",
@@ -50039,7 +50046,7 @@
     "la": 51.4928754,
     "ln": -0.2643584,
     "type": "Private",
-    "web": "https://ww.Urospot.co.uk",
+    "web": "",
     "grp": "MCXMC Ltd"
   },
   {
@@ -50964,7 +50971,7 @@
     "la": 51.519019,
     "ln": -0.058106,
     "type": "Private",
-    "web": "https://www.gpcaregroup.org.uk",
+    "web": "",
     "grp": "Tower Hamlets GP Care Group CIC"
   },
   {
@@ -51321,7 +51328,7 @@
     "la": 51.6494924,
     "ln": -0.1830134,
     "type": "Private",
-    "web": "https://www.ellenmede.org",
+    "web": "",
     "grp": "Oak Tree Forest Limited"
   },
   {
@@ -51701,7 +51708,7 @@
     "la": 51.51741,
     "ln": -0.147738,
     "type": "Private",
-    "web": "https://www.imagingcentrelondon.com"
+    "web": ""
   },
   {
     "o": "1-4435810330",
@@ -51910,7 +51917,7 @@
     "la": 51.5301018,
     "ln": -0.1308189,
     "type": "Private",
-    "web": "https://www.camdenhubs.co.uk",
+    "web": "",
     "grp": "AT Medics Limited"
   },
   {
@@ -51953,7 +51960,7 @@
     "la": 51.5435074,
     "ln": -0.2002582,
     "type": "Private",
-    "web": "https://www.camdenhubs.co.uk",
+    "web": "",
     "grp": "AT Medics Limited"
   },
   {
@@ -52100,7 +52107,7 @@
     "la": 51.4894192,
     "ln": -0.1899012,
     "type": "Private",
-    "web": "https://www.doctors24hours.co.uk",
+    "web": "",
     "grp": "Zafash Medical Services Ltd"
   },
   {
@@ -52497,7 +52504,7 @@
     "la": 51.5140848,
     "ln": -0.3198158,
     "type": "Private",
-    "web": "https://www.medicplusclnic.co.uk",
+    "web": "",
     "grp": "Private Health Clinic Ltd"
   },
   {
@@ -53062,7 +53069,7 @@
     "la": 51.431445,
     "ln": 0.1020548,
     "type": "Private",
-    "web": "https://www.stationroadsurgery-sidcup.nhs.uk"
+    "web": ""
   },
   {
     "o": "1-5619779985",
@@ -53103,7 +53110,7 @@
     "la": 51.6053401,
     "ln": -0.0734464,
     "type": "Private",
-    "web": "https://www.federated4health.com",
+    "web": "",
     "grp": "Haringey GP Group Ltd"
   },
   {
@@ -53124,7 +53131,7 @@
     "la": 51.5840026,
     "ln": -0.1313358,
     "type": "Private",
-    "web": "https://www.federated4health.com",
+    "web": "",
     "grp": "Haringey GP Group Ltd"
   },
   {
@@ -53145,7 +53152,7 @@
     "la": 51.606556,
     "ln": -0.126493,
     "type": "Private",
-    "web": "https://www.federated4health.com",
+    "web": "",
     "grp": "Haringey GP Group Ltd"
   },
   {
@@ -53480,7 +53487,7 @@
     "la": 51.5192694,
     "ln": -0.1469308,
     "type": "Private",
-    "web": "https://www.theironclinic.co.uk",
+    "web": "",
     "grp": "The Iron Clinic London Limited"
   },
   {
@@ -53671,7 +53678,7 @@
     "la": 51.517082,
     "ln": -0.0578862,
     "type": "Private",
-    "web": "https://www.qmul.ac.uk/blizard/research/core-facilities/pathology-core-facility/",
+    "web": "",
     "grp": "Queen Mary, University Of London Foundation"
   },
   {
@@ -54386,7 +54393,7 @@
     "la": 51.5086212,
     "ln": -0.1422111,
     "type": "Private",
-    "web": "https://www.lanserhof.com/en/london",
+    "web": "",
     "grp": "Mayfair Medicum Ltd"
   },
   {
@@ -54428,7 +54435,7 @@
     "la": 51.5161853,
     "ln": -0.1480938,
     "type": "Private",
-    "web": "https://www.asi.healthcare",
+    "web": "",
     "grp": "ASI London A Limited"
   },
   {
@@ -54491,7 +54498,7 @@
     "la": 51.547027,
     "ln": -0.178903,
     "type": "Private",
-    "web": "https://www.vantagedx.com",
+    "web": "",
     "grp": "Vantage Diagnostics Ltd"
   },
   {
@@ -54722,7 +54729,7 @@
     "la": 51.495258,
     "ln": -0.185377,
     "type": "Private",
-    "web": "https://www.mri-london.com",
+    "web": "",
     "grp": "Medserena Upright MRI Ltd"
   },
   {
@@ -54973,7 +54980,7 @@
     "la": 51.519023,
     "ln": -0.1484111,
     "type": "Private",
-    "web": "https://www.harleysurgicalcentre.com",
+    "web": "",
     "grp": "Harley Surgical Centre LTD"
   },
   {
@@ -55080,7 +55087,7 @@
     "la": 51.3704921,
     "ln": -0.0991096,
     "type": "Private",
-    "web": "https://www.edridgeroadchc.co.uk",
+    "web": "",
     "grp": "East Croydon Medical Centre"
   },
   {
@@ -56152,7 +56159,7 @@
     "la": 51.5147454,
     "ln": -0.0879327,
     "type": "Private",
-    "web": "https://www.syronawomen.com"
+    "web": ""
   },
   {
     "o": "1-9224101166",
@@ -56194,7 +56201,7 @@
     "la": 51.614985,
     "ln": -0.243591,
     "type": "Private",
-    "web": "https://www.ultrasounddiagnosticcentre.com",
+    "web": "",
     "grp": "Medical Ultrasound Diagnostic Imaging Ltd"
   },
   {
@@ -56993,7 +57000,7 @@
     "la": 51.4732796,
     "ln": -0.013912,
     "type": "Private",
-    "web": "https://www.plumbridgemedicalcentre.nhs.net"
+    "web": ""
   },
   {
     "o": "1-28493077598",
@@ -58910,5 +58917,25 @@
     "ln": -0.1222385,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-30363047805",
+    "n": "Cedars-Sinai UK Ltd",
+    "a": "76 New Cavendish Street, London",
+    "p": "W1G 9TB",
+    "ph": "02046153000",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30363047805",
+    "ar": "Westminster",
+    "la": 51.519291,
+    "ln": -0.146696,
+    "type": "Private",
+    "web": "https://www.cedars-sinai.co.uk"
   }
 ]
