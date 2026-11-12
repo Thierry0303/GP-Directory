@@ -6915,6 +6915,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–20:00",
       "Tuesday": "08:00–20:00",
       "Wednesday": "08:00–18:30"
@@ -6923,7 +6925,7 @@
     "postcode": "N19 3NU",
     "status": "Visible",
     "type": "GpBranch",
-    "website": ""
+    "website": "https://www.archwaymedicalcentre.nhs.uk/"
   },
   "F83005": {
     "address": "20 Gower Street, London",

@@ -83,13 +83,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://ww.Urospot.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.101hs.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -173,13 +166,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.999medical.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.Hg-mindworks.com": {
 "checked": "2026-11-08",
@@ -278,6 +264,13 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
+},
+"https://www.adhdme.care": {
+"checked": "2026-11-12",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
 },
 "https://www.adhdmedics.com": {
 "checked": "2026-11-08",
@@ -405,13 +398,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.aneira.health": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.apn.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -446,13 +432,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.asi.healthcare": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.askinology.com": {
 "checked": "2026-11-08",
@@ -502,13 +481,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.autismandadhddiagnsoticcentre.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.autismcliniclondon.com": {
 "checked": "2026-11-08",
@@ -566,34 +538,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.bariatricconsultancytier3.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.baringroadmedicalcentre.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.barnet.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.bartsandthelondion.nhs.uk/proposed-merger": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.bartshealth.nhs.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -621,20 +565,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.bcf.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.beehivesolutions.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.behold.ai": {
 "checked": "2026-11-11",
@@ -755,13 +685,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.brigstockfamilypractice.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.brigstockskinandlaser.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -775,13 +698,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.bromleyhealthcare.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.brovighealth.com": {
 "checked": "2026-11-08",
@@ -839,13 +755,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.camdenhubs.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.cancercentrelondon.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -881,13 +790,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.careoncologyclinic.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.cavendishclinic.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -897,6 +799,13 @@
 },
 "https://www.cavendishimaging.com": {
 "checked": "2026-11-08",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
+"https://www.cedars-sinai.co.uk": {
+"checked": "2026-11-12",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -923,26 +832,12 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.charltonhouse.medicalcentre.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.chartwelldiagnostics.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.chaselodgehealth.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.chelsea-pensioners.co.uk": {
 "checked": "2026-11-08",
@@ -957,13 +852,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.chelwest.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.cheniesmews.com": {
 "checked": "2026-11-08",
@@ -992,13 +880,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.chiternprivate.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.christosdimitriou.co.uk": {
 "checked": "2026-11-08",
@@ -1140,13 +1021,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.cityskindoctor.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
-},
 "https://www.cityultrasound.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -1224,13 +1098,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.cmaclinic.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.cnwl.nhs.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -1258,13 +1125,6 @@
 "really_ok": true,
 "status": "403",
 "strikes": 0
-},
-"https://www.conceptoclinic.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.cosmedics.co.uk": {
 "checked": "2026-11-08",
@@ -1483,26 +1343,12 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.dmchealthcare.co.uk/radiology-reporting": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
-},
 "https://www.doctorprithvi.com": {
 "checked": "2026-11-08",
 "ok": true,
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.doctors24hours.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.doctors4you.co": {
 "checked": "2026-11-08",
@@ -1538,13 +1384,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.doctov.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.dottorelondon.com": {
 "checked": "2026-11-08",
@@ -1777,20 +1616,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.drrachelresetcoach.co.ukNorth West London CCG": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "InvalidURL",
-"strikes": 2
-},
-"https://www.drraghureddy.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
-},
 "https://www.drsambunting.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -1847,19 +1672,19 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.eastlondon.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.echelon.health": {
 "checked": "2026-11-08",
 "ok": true,
 "really_ok": true,
 "status": "403",
 "strikes": 0
+},
+"https://www.edermatologist.uk": {
+"checked": "2026-11-12",
+"ok": true,
+"really_ok": false,
+"status": "URLError",
+"strikes": 1
 },
 "https://www.edgcare.net": {
 "checked": "2026-11-08",
@@ -1874,13 +1699,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.edridgeroadchc.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.effectdoctors.com": {
 "checked": "2026-11-08",
@@ -1911,7 +1729,7 @@
 "strikes": 0
 },
 "https://www.ejbio.co.uk": {
-"checked": "2026-10-13",
+"checked": "2026-11-12",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -1951,13 +1769,6 @@
 "really_ok": true,
 "status": "403",
 "strikes": 0
-},
-"https://www.ellenmede.org": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.ellernmede.org": {
 "checked": "2026-11-08",
@@ -2106,13 +1917,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.federated4health.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.fertility-academy.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -2148,13 +1952,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.fitzroviamedicalclinic.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.fksclinic.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -2175,13 +1972,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.fmcmarketing.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "500",
-"strikes": 2
 },
 "https://www.focusclinics.com": {
 "checked": "2026-11-08",
@@ -2288,13 +2078,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.ghmsuk.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.globalbreastfeedingclinic.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -2323,26 +2106,12 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.gpcaregroup.org.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.gpcts.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.greenwichccg.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.grimaldi.md": {
 "checked": "2026-11-08",
@@ -2456,13 +2225,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.harleysurgicalcentre.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.harleytherapy.co.uk/todd-mitchell.htm": {
 "checked": "2026-11-08",
 "ok": true,
@@ -2490,13 +2252,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.harrowhealth.org.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.harrowhealthcare.co.uk": {
 "checked": "2026-11-08",
@@ -2532,13 +2287,6 @@
 "really_ok": true,
 "status": "403",
 "strikes": 0
-},
-"https://www.heallthfusionclinic.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.healthbridgedirect.co.uk": {
 "checked": "2026-11-08",
@@ -2581,20 +2329,6 @@
 "really_ok": true,
 "status": "403",
 "strikes": 0
-},
-"https://www.heleneclinic.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.helios.org.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.hertilityhealth.com": {
 "checked": "2026-11-08",
@@ -2736,13 +2470,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.hupe.life": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.idtscans.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -2763,13 +2490,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.imagingcentrelondon.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.imperial.nhs.uk": {
 "checked": "2026-11-08",
@@ -3002,13 +2722,6 @@
 "status": "500",
 "strikes": 1
 },
-"https://www.kpgservices.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
-},
 "https://www.kuonhealthcare.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -3023,33 +2736,12 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.lamaisonmedicale.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
-},
 "https://www.lambertsportsclinic.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.lambethgpfederations.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.lanserhof.com/en/london": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.laroseclinic.co.uk/": {
 "checked": "2026-11-08",
@@ -3064,13 +2756,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.lec-london.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.lewishamandgreenwich.nhs.uk": {
 "checked": "2026-11-08",
@@ -3240,13 +2925,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.londonhyperbaric.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "500",
-"strikes": 2
-},
 "https://www.londonmedical.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -3331,6 +3009,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.manual.co": {
+"checked": "2026-11-12",
+"ok": true,
+"really_ok": false,
+"status": "429",
+"strikes": 1
+},
 "https://www.mariestopes.org.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -3386,13 +3071,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.mdcpn.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.medefer.com": {
 "checked": "2026-11-08",
@@ -3456,13 +3134,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.medicplusclnic.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.mediihealth.com": {
 "checked": "2026-11-08",
@@ -3625,13 +3296,6 @@
 "status": "403",
 "strikes": 0
 },
-"https://www.mri-london.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.msichoices.org.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -3695,20 +3359,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.nekohealth.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "429",
-"strikes": 2
-},
-"https://www.nekohealth.com/gb/en": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "429",
-"strikes": 2
-},
 "https://www.nelft.nhs.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -3736,13 +3386,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.newhamgpcoop.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.newmillstreet.com": {
 "checked": "2026-11-08",
@@ -3898,13 +3541,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.onlinedoctor.boots.com/": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.onlinemenopausecentre.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -3925,13 +3561,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.opticalexpress.co.uk/store/london-harley-street.html": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.opticalexpress.co.uk/store/london-westfield-white-city.html": {
 "checked": "2026-11-08",
@@ -4045,13 +3674,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.pastelhealth.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.patrickmallucci.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -4072,13 +3694,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.pharmacinta.o.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.phiclinic.com": {
 "checked": "2026-11-08",
@@ -4108,26 +3723,12 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.phpservice.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.physioandmore.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.picoclinics.com/cinemahouse": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.pixieandsera.com": {
 "checked": "2026-11-08",
@@ -4149,20 +3750,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.plumbridgemedicalcentre.nhs.net": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.plumsteadhealth.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.portobelloclinic.com": {
 "checked": "2026-11-08",
@@ -4199,13 +3786,6 @@
 "status": "403",
 "strikes": 0
 },
-"https://www.privateultrasoundscan.org": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.problemshared.net": {
 "checked": "2026-11-08",
 "ok": true,
@@ -4219,13 +3799,6 @@
 "really_ok": false,
 "status": "URLError",
 "strikes": 1
-},
-"https://www.psychareclinic.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.psychiatrycentre.co.uk": {
 "checked": "2026-11-08",
@@ -4261,13 +3834,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.qmul.ac.uk/blizard/research/core-facilities/pathology-core-facility/": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.queensquare.com": {
 "checked": "2026-11-08",
@@ -4619,13 +4185,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.slam.nhs.uk/about-us/clinical-academic-groups/older-adults-and-dementia": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
-},
 "https://www.sleepandhealth.org": {
 "checked": "2026-11-08",
 "ok": true,
@@ -4660,13 +4219,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.southeastlondonnumiscan.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.southlondonmedical.com": {
 "checked": "2026-11-08",
@@ -4710,13 +4262,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.stationroadsurgery-sidcup.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.stgeorges.nhs.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -4759,13 +4304,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.surgicareaesthetics.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.suvera.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -4779,20 +4317,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.swlstg-tr.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "RemoteDisconnected",
-"strikes": 2
-},
-"https://www.syronawomen.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.talktoadam.com": {
 "checked": "2026-11-08",
@@ -4814,13 +4338,6 @@
 "really_ok": true,
 "status": "403",
 "strikes": 0
-},
-"https://www.tavi-port.org": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.tcfp.org.uk": {
 "checked": "2026-11-08",
@@ -5046,13 +4563,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.theironclinic.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.thekpclinic.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5080,13 +4590,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.thelondonclinic.co.uk/consultants/dr-christopher-rowland-payne": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "404",
-"strikes": 2
 },
 "https://www.thelondoncosmeticclinic.co.uk": {
 "checked": "2026-11-08",
@@ -5193,13 +4696,6 @@
 "status": "202",
 "strikes": 0
 },
-"https://www.theweightlossdocs.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.thewellcentre.org": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5284,6 +4780,13 @@
 "status": "TimeoutError",
 "strikes": 1
 },
+"https://www.topathome.co.uk": {
+"checked": "2026-11-12",
+"ok": true,
+"really_ok": false,
+"status": "404",
+"strikes": 1
+},
 "https://www.trailfinders.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5312,13 +4815,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.uclh.adolescentserviceatbrandon@nhs.net": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.uclh.nhs.uk/Pages/Home.asp": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5346,13 +4842,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.ukpsychiatryservices.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.uksono.com": {
 "checked": "2026-11-08",
@@ -5395,20 +4884,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.ultrasounddiagnosticcentre.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
-"https://www.ultrasoundscanningservices.co.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.ultrasoundservices.co.uk": {
 "checked": "2026-11-08",
@@ -5458,13 +4933,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.vantagedx.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.viavi.com": {
 "checked": "2026-11-08",
@@ -5620,13 +5088,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.whippsx.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.whitegiraffe.clinic": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5669,13 +5130,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.wimpoleaesthetics.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.windowtothewomb.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5697,13 +5151,6 @@
 "status": "200",
 "strikes": 0
 },
-"https://www.wlmht.nhs.uk": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
-},
 "https://www.womenshealthdulwich.com": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5717,13 +5164,6 @@
 "really_ok": true,
 "status": "200",
 "strikes": 0
-},
-"https://www.xylaelectivecare.com": {
-"checked": "2026-11-11",
-"ok": false,
-"really_ok": false,
-"status": "URLError",
-"strikes": 2
 },
 "https://www.yourlittleself.com": {
 "checked": "2026-11-08",
