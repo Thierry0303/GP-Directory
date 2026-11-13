@@ -1499,7 +1499,7 @@
     "ar": "Hammersmith & Fulham",
     "la": 51.47628,
     "ln": -0.215818,
-    "web": "https://palacesurgery.co.uk",
+    "web": "https://www.palacesurgery.nhs.uk",
     "oh": {
       "Friday": "08:00\u201319:00",
       "Monday": "08:00\u201319:00",
@@ -4186,7 +4186,7 @@
     "ar": "Tower Hamlets",
     "la": 51.511253,
     "ln": -0.028732,
-    "web": "http://www.limehousepractice.co.uk/",
+    "web": "https://www.limehousepractice.nhs.uk",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -58958,6 +58958,26 @@
     "ar": "Camden",
     "la": 51.528568,
     "ln": -0.131758,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30377877546",
+    "n": "Alternaleaf",
+    "a": "123 Pentonville Road, London",
+    "p": "N1 9LG",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30377877546",
+    "ar": "Islington",
+    "la": 51.5312299,
+    "ln": -0.1130963,
     "type": "Private",
     "web": ""
   }

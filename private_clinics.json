@@ -30605,5 +30605,24 @@
     "lon": -0.131758,
     "providerName": "",
     "ar": "Camden"
+  },
+  {
+    "cqc_id": "1-30377877546",
+    "ods_code": "",
+    "name": "Alternaleaf",
+    "address": "123 Pentonville Road, London",
+    "postcode": "N1 9LG",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30377877546",
+    "localAuthority": "Islington",
+    "lat": 51.5312299,
+    "lon": -0.1130963,
+    "providerName": "",
+    "ar": "Islington"
   }
 ]
