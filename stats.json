@@ -1,10 +1,10 @@
 {
   "generated_from": "merged.json",
-  "total_records": 2527,
-  "total_records_incl_non_london": 2597,
+  "total_records": 2529,
+  "total_records_incl_non_london": 2599,
   "excluded_non_london": 70,
   "nhs_practice_count": 981,
-  "private_clinic_count": 1546,
+  "private_clinic_count": 1548,
   "dentist_count": 0,
   "borough_count": 33,
   "pcn_count": 176,
@@ -32,7 +32,7 @@
     },
     "Westminster": {
       "nhs": 30,
-      "private": 552,
+      "private": 553,
       "dentist": 0
     },
     "Kensington & Chelsea": {
@@ -92,7 +92,7 @@
     },
     "Greenwich": {
       "nhs": 29,
-      "private": 19,
+      "private": 20,
       "dentist": 0
     },
     "Bexley": {

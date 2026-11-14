@@ -30624,5 +30624,43 @@
     "lon": -0.1130963,
     "providerName": "",
     "ar": "Islington"
+  },
+  {
+    "cqc_id": "1-29915643839",
+    "ods_code": "",
+    "name": "Child Connect Limited - Hudson House",
+    "address": "Office G.01, Hudson House, 8 Tavistock Street, London",
+    "postcode": "WC2E 7PP",
+    "phone": "07450240766",
+    "website": "https://www.childconnect.co.uk",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-29915643839",
+    "localAuthority": "Westminster",
+    "lat": 51.5112953,
+    "lon": -0.1216451,
+    "providerName": "",
+    "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30176997499",
+    "ods_code": "",
+    "name": "Abbeyslade PMS",
+    "address": "111 Basildon Road, Abbey Wood, London",
+    "postcode": "SE2 0ER",
+    "phone": "02083113917",
+    "website": "https://www.basildonroadsurgery.co.uk",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30176997499",
+    "localAuthority": "Greenwich",
+    "lat": 51.4879482,
+    "lon": 0.107535,
+    "providerName": "",
+    "ar": "Greenwich"
   }
 ]

@@ -16036,7 +16036,7 @@
     "ar": "",
     "la": 51.708549,
     "ln": -0.037391,
-    "web": "https://highstreetsurgerycheshunt.co.uk/",
+    "web": "https://highstsurgerycheshunt.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -58980,5 +58980,45 @@
     "ln": -0.1130963,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-29915643839",
+    "n": "Child Connect Limited - Hudson House",
+    "a": "Office G.01, Hudson House, 8 Tavistock Street, London",
+    "p": "WC2E 7PP",
+    "ph": "07450240766",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29915643839",
+    "ar": "Westminster",
+    "la": 51.5112953,
+    "ln": -0.1216451,
+    "type": "Private",
+    "web": "https://www.childconnect.co.uk"
+  },
+  {
+    "o": "1-30176997499",
+    "n": "Abbeyslade PMS",
+    "a": "111 Basildon Road, Abbey Wood, London",
+    "p": "SE2 0ER",
+    "ph": "02083113917",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "Good",
+    "cu": "https://www.cqc.org.uk/location/1-30176997499",
+    "ar": "Greenwich",
+    "la": 51.4879482,
+    "ln": 0.107535,
+    "type": "Private",
+    "web": "https://www.basildonroadsurgery.co.uk"
   }
 ]
