@@ -615,6 +615,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.basildonroadsurgery.co.uk": {
+"checked": "2026-11-15",
+"ok": true,
+"really_ok": true,
+"status": "202",
+"strikes": 0
+},
 "https://www.baxterhealthcare.co.uk/patients_and_caregivers/therapies/renal/education_resources": {
 "checked": "2026-11-09",
 "ok": true,
@@ -693,10 +700,10 @@
 "strikes": 0
 },
 "https://www.blackfenprivategp.com": {
-"checked": "2026-10-16",
+"checked": "2026-11-15",
 "ok": true,
 "really_ok": true,
-"status": "202",
+"status": "403",
 "strikes": 0
 },
 "https://www.blisschemist.co.uk": {
@@ -3465,7 +3472,7 @@
 "strikes": 0
 },
 "https://www.medicare.uk.com": {
-"checked": "2026-10-16",
+"checked": "2026-11-15",
 "ok": true,
 "really_ok": true,
 "status": "200",

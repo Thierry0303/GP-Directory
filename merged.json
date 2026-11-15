@@ -59020,5 +59020,86 @@
     "ln": 0.107535,
     "type": "Private",
     "web": "https://www.basildonroadsurgery.co.uk"
+  },
+  {
+    "o": "1-29635102193",
+    "n": "Tan&Co",
+    "a": "Clinicity, 36 Great Titchfield Street, London",
+    "p": "W1W 8BQ",
+    "ph": "07448425606",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-29635102193",
+    "ar": "Westminster",
+    "la": 51.5175847,
+    "ln": -0.1399221,
+    "type": "Private",
+    "web": "https://www.tanco.uk"
+  },
+  {
+    "o": "1-30179400111",
+    "n": "Kry UK",
+    "a": "8 Devonshire Square, London",
+    "p": "EC2M 4YJ",
+    "ph": "07922422680",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30179400111",
+    "ar": "City of London",
+    "la": 51.5169448,
+    "ln": -0.077927,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30469090250",
+    "n": "Church Elm Lane Medical Practice",
+    "a": "Church Elm Lane, Dagenham",
+    "p": "RM10 9RR",
+    "ph": "02084653000",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology, sexual-health",
+    "specs": [
+      "gynaecology",
+      "sexual-health"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30469090250",
+    "ar": "Barking & Dagenham",
+    "la": 51.5402089,
+    "ln": 0.1553899,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30469849285",
+    "n": "VYV House of Life",
+    "a": "17 Hanover Square, Mayfair, London",
+    "p": "W1S 1BN",
+    "ph": "07304491547",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30469849285",
+    "ar": "Westminster",
+    "la": 51.5142885,
+    "ln": -0.1447262,
+    "type": "Private",
+    "web": ""
   }
 ]
