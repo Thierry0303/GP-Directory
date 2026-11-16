@@ -30584,7 +30584,7 @@
     "localAuthority": "Westminster",
     "lat": 51.519291,
     "lon": -0.146696,
-    "providerName": "",
+    "providerName": "Cedars-Sinai UK Ltd",
     "ar": "Westminster"
   },
   {
@@ -30603,7 +30603,7 @@
     "localAuthority": "Camden",
     "lat": 51.528568,
     "lon": -0.131758,
-    "providerName": "",
+    "providerName": "Zonder Health Ltd",
     "ar": "Camden"
   },
   {
@@ -30622,7 +30622,7 @@
     "localAuthority": "Islington",
     "lat": 51.5312299,
     "lon": -0.1130963,
-    "providerName": "",
+    "providerName": "Montu Group UK Ltd",
     "ar": "Islington"
   },
   {
@@ -30641,7 +30641,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5112953,
     "lon": -0.1216451,
-    "providerName": "",
+    "providerName": "Child Connect Limited",
     "ar": "Westminster"
   },
   {
@@ -30653,6 +30653,7 @@
     "phone": "02083113917",
     "website": "https://www.basildonroadsurgery.co.uk",
     "specialties": [
+      "consultant",
       "gynaecology"
     ],
     "cqc_rating": "Good",
@@ -30660,7 +30661,7 @@
     "localAuthority": "Greenwich",
     "lat": 51.4879482,
     "lon": 0.107535,
-    "providerName": "",
+    "providerName": "Dr Jyoti Kaur Chand",
     "ar": "Greenwich"
   },
   {
@@ -30679,7 +30680,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5175847,
     "lon": -0.1399221,
-    "providerName": "",
+    "providerName": "Tanco Care Ltd",
     "ar": "Westminster"
   },
   {
@@ -30698,7 +30699,7 @@
     "localAuthority": "City of London",
     "lat": 51.5169448,
     "lon": -0.077927,
-    "providerName": "",
+    "providerName": "Digital Medical Supply UK Limited",
     "ar": "City of London"
   },
   {
@@ -30718,7 +30719,7 @@
     "localAuthority": "Barking and Dagenham",
     "lat": 51.5402089,
     "lon": 0.1553899,
-    "providerName": "",
+    "providerName": "Church Elm Lane Medical Practice",
     "ar": "Barking & Dagenham"
   },
   {
@@ -30737,7 +30738,7 @@
     "localAuthority": "Westminster",
     "lat": 51.5142885,
     "lon": -0.1447262,
-    "providerName": "",
+    "providerName": "VYV Collective Ltd",
     "ar": "Westminster"
   }
 ]

@@ -4836,6 +4836,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.tanco.uk": {
+"checked": "2026-11-16",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.tapgp.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
