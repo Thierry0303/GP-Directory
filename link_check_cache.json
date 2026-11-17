@@ -2702,7 +2702,7 @@
 "strikes": 0
 },
 "https://www.holosyn.co.uk": {
-"checked": "2026-10-18",
+"checked": "2026-11-17",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -5264,7 +5264,7 @@
 "strikes": 0
 },
 "https://www.thewellnesslondon.com": {
-"checked": "2026-10-18",
+"checked": "2026-11-17",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -5733,10 +5733,10 @@
 "strikes": 0
 },
 "https://www.windowtothewomb.co.uk/find-a-clinic/kensington-baby-scan-clinic/": {
-"checked": "2026-10-18",
+"checked": "2026-11-17",
 "ok": true,
 "really_ok": true,
-"status": "403",
+"status": "200",
 "strikes": 0
 },
 "https://www.withemerald.com/": {
