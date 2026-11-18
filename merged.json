@@ -5951,7 +5951,7 @@
     "ar": "Redbridge",
     "la": 51.5928,
     "ln": 0.023956,
-    "web": "http://www.glebelandspractice.nhs.uk",
+    "web": "https://www.glebelandspractice.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -23009,9 +23009,10 @@
     "ln": -0.070668,
     "web": "http://beechwoodmci.co.uk",
     "oh": {
-      "Friday": "08:00\u201320:00",
+      "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "08:00\u201311:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -59129,5 +59130,25 @@
     "ln": -0.0729375,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-30379000671",
+    "n": "Bodylogics Partners Ltd",
+    "a": "Bodylogics Barnet, 3 Henry Road, Barnet",
+    "p": "EN4 8BL",
+    "ph": "02083689220",
+    "s": null,
+    "c": null,
+    "pcn": "weight-loss",
+    "specs": [
+      "weight-loss"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30379000671",
+    "ar": "Barnet",
+    "la": 51.6469223,
+    "ln": -0.1673405,
+    "type": "Private",
+    "web": "https://www.bodylogics.co.uk"
   }
 ]

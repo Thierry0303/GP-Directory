@@ -30759,5 +30759,24 @@
     "lon": -0.0729375,
     "providerName": "",
     "ar": "Tower Hamlets"
+  },
+  {
+    "cqc_id": "1-30379000671",
+    "ods_code": "",
+    "name": "Bodylogics Partners Ltd",
+    "address": "Bodylogics Barnet, 3 Henry Road, Barnet",
+    "postcode": "EN4 8BL",
+    "phone": "02083689220",
+    "website": "https://www.bodylogics.co.uk",
+    "specialties": [
+      "weight-loss"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30379000671",
+    "localAuthority": "Barnet",
+    "lat": 51.6469223,
+    "lon": -0.1673405,
+    "providerName": "",
+    "ar": "Barnet"
   }
 ]

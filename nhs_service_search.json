@@ -8386,9 +8386,10 @@
     "lng": -0.070668,
     "name": "Beechwood Medical Centre",
     "opening": {
-      "Friday": "08:00–20:00",
+      "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
-      "Saturday": "08:00–11:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
@@ -11121,7 +11122,7 @@
     "postcode": "E18 2AB",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.glebelandspractice.nhs.uk"
+    "website": "https://www.glebelandspractice.nhs.uk/"
   },
   "F86022": {
     "address": "61 Cleveland Road, Ilford",
