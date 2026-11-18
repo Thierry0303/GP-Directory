@@ -31,6 +31,8 @@ jobs:
       # with stub fields. refresh_nhs_data.py (step 1) then enriches them on the
       # same run.  Non-fatal so a transient ODS outage never blocks the build.
       - name: Discover missing GP practices
+        env:
+          NHS_SERVICE_SEARCH_KEY: ${{ secrets.NHS_SERVICE_SEARCH_KEY }}
         run: python fetch_missing_practices.py
         continue-on-error: true
 
