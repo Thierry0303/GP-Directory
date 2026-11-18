@@ -30778,5 +30778,81 @@
     "lon": -0.1673405,
     "providerName": "",
     "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-10022600059",
+    "ods_code": "",
+    "name": "The HLH Imaging Group Ltd",
+    "address": "44 Fitzalan Road, London",
+    "postcode": "N3 3PD",
+    "phone": "07951747344",
+    "website": "https://www.heartlunghealth.com",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "Good",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10022600059",
+    "localAuthority": "Barnet",
+    "lat": 51.5938743,
+    "lon": -0.2029899,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-15522672153",
+    "ods_code": "",
+    "name": "Delta Clinics",
+    "address": "4 Hendon Lane, London",
+    "postcode": "N3 1TR",
+    "phone": "02034410450",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-15522672153",
+    "localAuthority": "Barnet",
+    "lat": 51.6001355,
+    "lon": -0.1962927,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-26963512662",
+    "ods_code": "",
+    "name": "Health Space 307",
+    "address": "307 Regents Park Road, London",
+    "postcode": "N3 1DP",
+    "phone": "02033693307",
+    "website": "https://www.healthspace307.com",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-26963512662",
+    "localAuthority": "Barnet",
+    "lat": 51.5993165,
+    "lon": -0.1963583,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-28880530986",
+    "ods_code": "",
+    "name": "ADHD Lifestyle Academy - Remote Clinical Advice Service",
+    "address": "83 Fortis Green, Haringey, London",
+    "postcode": "N2 9HU",
+    "phone": "07855951310",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28880530986",
+    "localAuthority": "Haringey",
+    "lat": 51.5901975,
+    "lon": -0.1580202,
+    "providerName": "",
+    "ar": "Haringey"
   }
 ]

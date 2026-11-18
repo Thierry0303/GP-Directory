@@ -12441,5 +12441,95 @@
     "lon": -0.1029924,
     "providerName": "IB4U LTD",
     "ar": "Islington"
+  },
+  {
+    "cqc_id": "1-10449618435",
+    "name": "East Finchley Smiles",
+    "address": "144 High Road, London",
+    "postcode": "N2 9ED",
+    "phone": "02084443436",
+    "website": "https://www.eastfinchleysmiles.co.uk",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-10449618435",
+    "localAuthority": "Barnet",
+    "lat": 51.5912719,
+    "lon": -0.1648343,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-1503522366",
+    "name": "Smile Cliniq Limited",
+    "address": "138 Ballards Lane, Finchley, London",
+    "postcode": "N3 2PA",
+    "phone": "02083431133",
+    "website": "https://www.smilecliniq.com",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-1503522366",
+    "localAuthority": "Barnet",
+    "lat": 51.6049823,
+    "lon": -0.1881397,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-228214595",
+    "name": "Mr Aun Ki Fang",
+    "address": "113A Ballards Lane, Finchley, London",
+    "postcode": "N3 1XY",
+    "phone": "02083460983",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-228214595",
+    "localAuthority": "Barnet",
+    "lat": 51.604383,
+    "lon": -0.189718,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-3485794929",
+    "name": "110 Total Dentistry",
+    "address": "110-112 Ballards Lane, London",
+    "postcode": "N3 2DN",
+    "phone": "02079987657",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-3485794929",
+    "localAuthority": "Barnet",
+    "lat": 51.6041972,
+    "lon": -0.18903,
+    "providerName": "",
+    "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-6525662847",
+    "name": "Mydentist-Ballards Lane-Finchley",
+    "address": "200 Ballards Lane, London",
+    "postcode": "N3 2NA",
+    "phone": "02083430480",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-6525662847",
+    "localAuthority": "Barnet",
+    "lat": 51.6079019,
+    "lon": -0.1832586,
+    "providerName": "",
+    "ar": "Barnet"
   }
 ]

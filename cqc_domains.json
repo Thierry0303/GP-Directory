@@ -32,6 +32,14 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-10022600059": {
+"_fetched": "2026-11-18",
+"inspected": "2022-07-29",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Requires improvement"
+},
 "1-10040354180": {
 "_fetched": "2026-11-12",
 "caring": "Good",
@@ -3486,6 +3494,9 @@
 },
 "1-15522197430": {
 "_fetched": "2026-11-12"
+},
+"1-15522672153": {
+"_fetched": "2026-11-18"
 },
 "1-15523017298": {
 "_fetched": "2026-11-11"
@@ -7405,6 +7416,9 @@
 "1-26941055525": {
 "_fetched": "2026-11-14"
 },
+"1-26963512662": {
+"_fetched": "2026-11-18"
+},
 "1-26966381495": {
 "_fetched": "2026-11-14"
 },
@@ -7900,6 +7914,9 @@
 },
 "1-28864025994": {
 "_fetched": "2026-11-03"
+},
+"1-28880530986": {
+"_fetched": "2026-11-18"
 },
 "1-28881772775": {
 "_fetched": "2026-10-29"
@@ -8845,6 +8862,16 @@
 "1-3996963196": {
 "_fetched": "2026-11-14",
 "inspected": "2022-11-21"
+},
+"1-4011815900": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-01-11",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-4015671914": {
 "_fetched": "2026-11-11",
@@ -10019,6 +10046,16 @@
 "_fetched": "2026-11-14",
 "inspected": "2022-05-20"
 },
+"1-525624918": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2020-02-05",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-527864783": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -10352,6 +10389,10 @@
 "1-538804637": {
 "_fetched": "2026-11-11",
 "inspected": "2022-06-21"
+},
+"1-538813836": {
+"_fetched": "2026-11-18",
+"inspected": "2017-01-12"
 },
 "1-538824034": {
 "_fetched": "2026-11-10",
@@ -10820,6 +10861,16 @@
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
+"wellLed": "Good"
+},
+"1-542228265": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2021-09-09",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Requires improvement",
 "wellLed": "Good"
 },
 "1-542243120": {
@@ -14478,6 +14529,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-569417662": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-04-30",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-569455063": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -15209,6 +15270,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2018-11-29",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-583635876": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2021-05-20",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
