@@ -200,6 +200,53 @@ def load_seed_codes() -> list[str]:
     return out
 
 
+LONDON_LAS = {
+    "Barking and Dagenham","Barnet","Bexley","Brent","Bromley","Camden",
+    "City of London","Croydon","Ealing","Enfield","Greenwich","Hackney",
+    "Hammersmith and Fulham","Haringey","Harrow","Havering","Hillingdon",
+    "Hounslow","Islington","Kensington and Chelsea","Kingston upon Thames",
+    "Lambeth","Lewisham","Merton","Newham","Redbridge","Richmond upon Thames",
+    "Southwark","Sutton","Tower Hamlets","Waltham Forest","Wandsworth",
+    "Westminster",
+}
+
+
+def cqc_gap_candidates(have: set[str], pcs: set[str]) -> list[str]:
+    """
+    Registered London GP-style ODS codes in the CQC cache that are absent from
+    gps.json AND whose postcode has no practice in gps.json. Catches gaps
+    inside districts that otherwise have practices. Candidates are only
+    *candidates*: CQC keeps merged/closed practices, so each is verified
+    against Service Search before being added.
+    """
+    import gzip, re
+    f = ROOT / "cqc_london_cache.json.gz"
+    if not f.exists():
+        return []
+    try:
+        data = json.load(gzip.open(f, "rt", encoding="utf-8"))
+    except Exception as e:
+        print(f"  WARNING: could not read CQC cache: {e}")
+        return []
+    fmt = re.compile(r"^[A-HJ-NP-U]\d{5}$")      # practice-style, excludes Y/V
+    out: dict[str, str] = {}
+    for loc in data.values():
+        ods = (loc.get("odsCode") or "").strip().upper()
+        if not fmt.match(ods) or ods in have or ods in out:
+            continue
+        if loc.get("registrationStatus") != "Registered":
+            continue
+        if loc.get("localAuthority") not in LONDON_LAS:
+            continue
+        if "Doctors/Gps" not in (loc.get("gacServiceTypes") or []):
+            continue
+        pc = re.sub(r"\s", "", loc.get("postcode") or "").upper()
+        if pc in pcs:
+            continue
+        out[ods] = pc
+    return sorted(out)
+
+
 def load_cqc_index() -> dict[str, list[dict]]:
     """ODS code -> CQC locations, from the incremental CQC cache (if present)."""
     import gzip
@@ -295,7 +342,29 @@ def main() -> None:
     new_records: list[dict] = []
     seen_ods: set[str] = set(existing_ods)
 
+    report: dict[str, list] = {"added": [], "rejected_not_gp_or_inactive": []}
     with requests.Session() as session:
+        # CQC gap check: candidates inside districts that already have practices.
+        pcs = {__import__("re").sub(r"\s", "", p.get("postcode", "")).upper()
+               for p in practices}
+        cands = cqc_gap_candidates(existing_ods, pcs)
+        print(f"  CQC gap candidates to verify: {len(cands)}")
+        def _verify(ods):
+            return ods, fetch_by_ods(ods, key, session)
+        with ThreadPoolExecutor(max_workers=5) as ex:
+            for ods, rec in ex.map(_verify, cands):
+                if rec and _is_gp(rec) and (rec.get("Postcode") or "").strip():
+                    dist = get_district(rec.get("Postcode") or "")
+                    if dist in BOROUGH_MAP:
+                        new_records.append(record_from_ss(rec, BOROUGH_MAP[dist]))
+                        seen_ods.add(ods)
+                        report["added"].append(ods)
+                        continue
+                report["rejected_not_gp_or_inactive"].append(ods)
+        print(f"  verified & added: {len(report['added'])}, "
+              f"rejected: {len(report['rejected_not_gp_or_inactive'])}")
+        (ROOT / "gap_check_report.json").write_text(json.dumps(report, indent=2))
+
         # Seed list: explicit ODS codes resolved via the proven lookup.
         for ods in load_seed_codes():
             if ods in seen_ods:
