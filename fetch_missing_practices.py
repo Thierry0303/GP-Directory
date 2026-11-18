@@ -125,7 +125,10 @@ BOROUGH_MAP: dict[str, str] = {
 def _get_json(url: str, retries: int = 3) -> dict:
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"Accept": "application/json"})
+            # ODS API returns 406 if Accept header is too strict — omit it and
+            # append _format=json to the query string instead (already done in
+            # fetch_icb_practices; individual org lookups return JSON by default).
+            req = urllib.request.Request(url)
             with urllib.request.urlopen(req, timeout=10) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
