@@ -741,6 +741,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.bodylogics.co.uk": {
+"checked": "2026-11-18",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.bodyvie.com": {
 "checked": "2026-11-08",
 "ok": true,
