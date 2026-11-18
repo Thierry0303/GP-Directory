@@ -200,6 +200,37 @@ def load_seed_codes() -> list[str]:
     return out
 
 
+def load_cqc_index() -> dict[str, list[dict]]:
+    """ODS code -> CQC locations, from the incremental CQC cache (if present)."""
+    import gzip
+    f = ROOT / "cqc_london_cache.json.gz"
+    idx: dict[str, list[dict]] = {}
+    if not f.exists():
+        return idx
+    try:
+        data = json.load(gzip.open(f, "rt", encoding="utf-8"))
+    except Exception as e:
+        print(f"  WARNING: could not read CQC cache: {e}")
+        return idx
+    vals = data.values() if isinstance(data, dict) else data
+    for loc in vals:
+        ods = (loc.get("odsCode") or "").strip().upper()
+        if ods:
+            idx.setdefault(ods, []).append(loc)
+    return idx
+
+
+def cqc_url_for(rec: dict, idx: dict[str, list[dict]]) -> str:
+    """Pick the CQC location for this practice (prefer matching postcode)."""
+    locs = idx.get(rec["ods_code"], [])
+    if not locs:
+        return ""
+    pc = rec.get("postcode", "").replace(" ", "").upper()
+    best = next((l for l in locs
+                 if (l.get("postcode") or "").replace(" ", "").upper() == pc), locs[0])
+    return f"https://www.cqc.org.uk/location/{best['locationId']}"
+
+
 def record_from_ss(rec: dict, borough: str) -> dict:
     """Build a gps.json-compatible record from a Service Search hit."""
     ods = (rec.get("ODSCode") or "").strip().upper()
@@ -300,6 +331,17 @@ def main() -> None:
     if not new_records:
         print("Nothing to add.")
         return
+
+    # Without a CQC link, drop_non_gms.py discards the record as "not a
+    # registerable GP". Take it from the CQC cache so real practices survive.
+    cqc_idx = load_cqc_index()
+    linked = 0
+    for rec in new_records:
+        url = cqc_url_for(rec, cqc_idx)
+        if url:
+            rec["cqc_url"] = url
+            linked += 1
+    print(f"  CQC link found in cache for {linked}/{len(new_records)}")
 
     new_records.sort(key=lambda r: (r.get("postcode", ""), r.get("name", "")))
     for rec in new_records:
