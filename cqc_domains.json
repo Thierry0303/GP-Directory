@@ -50,6 +50,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-10064397392": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2020-01-30",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Requires improvement",
+"wellLed": "Good"
+},
 "1-10065813653": {
 "_fetched": "2026-11-12"
 },
@@ -768,6 +778,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-11246861703": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-12-13",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-112545754": {
 "_fetched": "2026-08-22",
 "caring": "Good",
@@ -902,6 +922,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2022-04-25",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-11440256380": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2022-05-17",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -3944,6 +3974,9 @@
 "1-17120765306": {
 "_fetched": "2026-11-12"
 },
+"1-17130858399": {
+"_fetched": "2026-11-18"
+},
 "1-1716239296": {
 "_fetched": "2026-11-12",
 "caring": "Good",
@@ -4023,6 +4056,16 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-17429717762": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Requires improvement",
+"inspected": "2022-08-04",
+"overall": "Requires improvement",
+"responsive": "Good",
+"safe": "Requires improvement",
+"wellLed": "Requires improvement"
 },
 "1-17534907209": {
 "_fetched": "2026-11-13"
@@ -5123,6 +5166,16 @@
 "1-20369531810": {
 "_fetched": "2026-11-13"
 },
+"1-2037856202": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-03-28",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-20392351379": {
 "_fetched": "2026-11-13"
 },
@@ -5691,6 +5744,16 @@
 "1-21802214728": {
 "_fetched": "2026-11-13"
 },
+"1-2180983569": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-08-15",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-2182464814": {
 "_fetched": "2026-11-13",
 "caring": "Good",
@@ -5875,6 +5938,9 @@
 },
 "1-22158010239": {
 "_fetched": "2026-11-13"
+},
+"1-22158619315": {
+"_fetched": "2026-11-18"
 },
 "1-22159030045": {
 "_fetched": "2026-11-13"
@@ -7080,6 +7146,26 @@
 "1-25817169238": {
 "_fetched": "2026-11-14"
 },
+"1-25823156032": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-09-01",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-25823875614": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-11-15",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-25826267507": {
 "_fetched": "2026-11-14"
 },
@@ -7368,6 +7454,9 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-26834100555": {
+"_fetched": "2026-11-18"
+},
 "1-26859552157": {
 "_fetched": "2026-11-14"
 },
@@ -7396,6 +7485,16 @@
 },
 "1-26922646805": {
 "_fetched": "2026-11-14"
+},
+"1-26923359989": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Requires improvement",
+"inspected": "2023-08-30",
+"overall": "Requires improvement",
+"responsive": "Good",
+"safe": "Requires improvement",
+"wellLed": "Good"
 },
 "1-2692552239": {
 "_fetched": "2026-11-10",
@@ -8130,6 +8229,16 @@
 },
 "1-29804915215": {
 "_fetched": "2026-10-25"
+},
+"1-2980614680": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2020-01-22",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-29809341261": {
 "_fetched": "2026-11-15"
@@ -9335,6 +9444,16 @@
 "1-4803033309": {
 "_fetched": "2026-11-14"
 },
+"1-482189920": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2022-10-06",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-482726029": {
 "_fetched": "2026-11-14",
 "caring": "Good",
@@ -9360,6 +9479,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2023-01-31",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-483719807": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-10-16",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -9462,6 +9591,16 @@
 "safe": "Requires improvement",
 "wellLed": "Good"
 },
+"1-493180760": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-10-16",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-493951095": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -9494,6 +9633,16 @@
 },
 "1-494192598": {
 "_fetched": "2026-11-11"
+},
+"1-494193335": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2018-08-09",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-4946425128": {
 "_fetched": "2026-11-14",
@@ -9666,6 +9815,10 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-497617672": {
+"_fetched": "2026-11-18",
+"inspected": "2019-03-25"
+},
 "1-497761837": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -9709,6 +9862,10 @@
 "responsive": "Requires improvement",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-501722575": {
+"_fetched": "2026-11-18",
+"inspected": "2017-08-09"
 },
 "1-5028487508": {
 "_fetched": "2026-11-14",
@@ -9754,6 +9911,26 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-504850325": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-09-12",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-504903829": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-05-16",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-5051235113": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -9764,15 +9941,55 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-505152769": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-01-24",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-5051935092": {
 "_fetched": "2026-11-10",
 "inspected": "2022-03-21"
+},
+"1-505532207": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2018-05-22",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-505542103": {
 "_fetched": "2026-11-14",
 "caring": "Good",
 "effective": "Good",
 "inspected": "2020-09-22",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-506348126": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-06-21",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-506699311": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2018-12-05",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -9835,6 +10052,16 @@
 "safe": "Inadequate",
 "wellLed": "Inadequate"
 },
+"1-509665017": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-01-19",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-509910553": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -9844,6 +10071,26 @@
 "responsive": "Inadequate",
 "safe": "Inadequate",
 "wellLed": "Inadequate"
+},
+"1-509917429": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Requires improvement",
+"inspected": "2023-06-26",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-510009314": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2021-06-14",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-510083447": {
 "_fetched": "2026-11-10",
@@ -9858,6 +10105,50 @@
 "responsive": "Good",
 "safe": "Requires improvement",
 "wellLed": "Requires improvement"
+},
+"1-510204645": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2018-02-27",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-510221406": {
+"_fetched": "2026-11-18",
+"inspected": "2017-04-25"
+},
+"1-510267969": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2020-01-20",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-510295169": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-10-28",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-510305825": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-07-03",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-5103654513": {
 "_fetched": "2026-11-14",
@@ -9943,6 +10234,20 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-514335207": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-09-27",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-514820819": {
+"_fetched": "2026-11-18",
+"inspected": "2016-12-15"
+},
 "1-515086523": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -9967,6 +10272,36 @@
 "_fetched": "2026-11-10",
 "inspected": "2018-08-14"
 },
+"1-516079414": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-05-10",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-516567879": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-10-20",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-516596338": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2018-01-23",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-516623797": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -9976,6 +10311,10 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-517196855": {
+"_fetched": "2026-11-18",
+"inspected": "2017-10-18"
 },
 "1-517847013": {
 "_fetched": "2026-11-11",
@@ -9997,9 +10336,29 @@
 "safe": "Good",
 "wellLed": "Outstanding"
 },
+"1-518586101": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2022-11-01",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-519868002": {
 "_fetched": "2026-11-14",
 "inspected": "2023-07-12"
+},
+"1-520122034": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2021-03-09",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-520170225": {
 "_fetched": "2026-11-11"
@@ -10024,6 +10383,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-521092040": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-09-11",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-5212445921": {
 "_fetched": "2026-11-14",
 "inspected": "2022-08-11"
@@ -10041,6 +10410,16 @@
 "1-5232119796": {
 "_fetched": "2026-11-10",
 "inspected": "2019-04-09"
+},
+"1-523566356": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-11-10",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-524233225": {
 "_fetched": "2026-11-14",
@@ -10076,6 +10455,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-530288648": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Requires improvement",
+"inspected": "2023-01-10",
+"overall": "Requires improvement",
+"responsive": "Good",
+"safe": "Requires improvement",
+"wellLed": "Requires improvement"
+},
 "1-530564911": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -10100,11 +10489,35 @@
 "_fetched": "2026-11-14",
 "inspected": "2018-05-17"
 },
+"1-533274630": {
+"_fetched": "2026-11-18",
+"inspected": "2017-01-19"
+},
+"1-533497761": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-07-05",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-533592711": {
 "_fetched": "2026-11-14",
 "caring": "Good",
 "effective": "Good",
 "inspected": "2023-07-03",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-534696568": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-08-17",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -10150,9 +10563,29 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-535822969": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-04-19",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-5373877841": {
 "_fetched": "2026-11-10",
 "inspected": "2021-10-07"
+},
+"1-537602333": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-03-08",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-537610547": {
 "_fetched": "2026-11-11",
@@ -10574,6 +11007,10 @@
 "safe": "Requires improvement",
 "wellLed": "Good"
 },
+"1-540506784": {
+"_fetched": "2026-11-18",
+"inspected": "2022-10-12"
+},
 "1-540525527": {
 "_fetched": "2026-11-10",
 "inspected": "2016-10-26"
@@ -10597,6 +11034,20 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2018-06-21",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-541116005": {
+"_fetched": "2026-11-18",
+"inspected": "2017-11-08"
+},
+"1-541116878": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-07-27",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -11023,6 +11474,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-542632589": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-03-15",
+"overall": "Good",
+"responsive": "Outstanding",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-542658973": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -11106,6 +11567,16 @@
 "1-542981758": {
 "_fetched": "2026-11-10",
 "inspected": "2016-02-16"
+},
+"1-542988058": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2022-07-21",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-543004503": {
 "_fetched": "2026-11-10",
@@ -11199,6 +11670,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-543811515": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-01-17",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-543846160": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -11244,6 +11725,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2016-12-14",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-543878465": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-07-23",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -11401,6 +11892,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-544344892": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-03-16",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-544348179": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -11486,6 +11987,10 @@
 "1-544640116": {
 "_fetched": "2026-11-11",
 "inspected": "2017-07-13"
+},
+"1-544647382": {
+"_fetched": "2026-11-18",
+"inspected": "2016-11-10"
 },
 "1-544652987": {
 "_fetched": "2026-11-10",
@@ -11771,6 +12276,16 @@
 "_fetched": "2026-11-10",
 "inspected": "2019-03-13"
 },
+"1-546095318": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-05-12",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-546109592": {
 "_fetched": "2026-11-10",
 "inspected": "2023-05-16"
@@ -11802,6 +12317,16 @@
 "inspected": "2017-02-13",
 "overall": "Good",
 "responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-546191259": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-04-26",
+"overall": "Good",
+"responsive": "Requires improvement",
 "safe": "Good",
 "wellLed": "Good"
 },
@@ -12293,6 +12818,10 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-548317352": {
+"_fetched": "2026-11-18",
+"inspected": "2017-09-06"
+},
 "1-548330892": {
 "_fetched": "2026-11-11",
 "caring": "Requires improvement",
@@ -12453,6 +12982,10 @@
 "_fetched": "2026-11-11",
 "inspected": "2023-01-18"
 },
+"1-549227595": {
+"_fetched": "2026-11-18",
+"inspected": "2017-06-12"
+},
 "1-549230365": {
 "_fetched": "2026-11-12",
 "caring": "Good",
@@ -12512,6 +13045,10 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-549349043": {
+"_fetched": "2026-11-18",
+"inspected": "2023-10-04"
 },
 "1-5493757143": {
 "_fetched": "2026-11-14",
@@ -12735,6 +13272,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-550093537": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2018-02-13",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-550118475": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -12939,6 +13486,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-551034159": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-05-18",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-551048365": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -13097,6 +13654,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-552427993": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-06-28",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-552466894": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -13155,6 +13722,14 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-552643698": {
+"_fetched": "2026-11-18",
+"inspected": "2016-07-21"
+},
+"1-552661885": {
+"_fetched": "2026-11-18",
+"inspected": "2022-11-24"
+},
 "1-552683925": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -13164,6 +13739,10 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-552691436": {
+"_fetched": "2026-11-18",
+"inspected": "2019-11-14"
 },
 "1-552701566": {
 "_fetched": "2026-11-10",
@@ -13215,11 +13794,31 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-552878460": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-11-30",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-552881693": {
 "_fetched": "2026-11-10",
 "caring": "Good",
 "effective": "Good",
 "inspected": "2018-12-13",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-552900837": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2021-06-16",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -13256,6 +13855,10 @@
 "1-553246300": {
 "_fetched": "2026-11-11",
 "inspected": "2016-02-23"
+},
+"1-553864576": {
+"_fetched": "2026-11-18",
+"inspected": "2015-11-26"
 },
 "1-553882385": {
 "_fetched": "2026-11-10",
@@ -13296,6 +13899,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2017-05-09",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-554713049": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-11-07",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -13355,6 +13968,10 @@
 "_fetched": "2026-11-11",
 "inspected": "2019-03-21"
 },
+"1-556330457": {
+"_fetched": "2026-11-18",
+"inspected": "2017-05-23"
+},
 "1-556353202": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -13384,6 +14001,16 @@
 "caring": "Good",
 "effective": "Requires improvement",
 "inspected": "2022-12-07",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-556904802": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-07-18",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -13459,6 +14086,10 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-558026189": {
+"_fetched": "2026-11-18",
+"inspected": "2016-03-03"
+},
 "1-558037294": {
 "_fetched": "2026-11-11",
 "inspected": "2016-10-07"
@@ -13502,6 +14133,16 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-558144456": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-04-20",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Requires improvement"
 },
 "1-558145329": {
 "_fetched": "2026-11-11",
@@ -13645,6 +14286,10 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-559610416": {
+"_fetched": "2026-11-18",
+"inspected": "2023-05-04"
+},
 "1-559650700": {
 "_fetched": "2026-11-11",
 "caring": "Requires improvement",
@@ -13692,6 +14337,16 @@
 "1-559846295": {
 "_fetched": "2026-11-11",
 "inspected": "2019-04-01"
+},
+"1-559854074": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-11-02",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-559926380": {
 "_fetched": "2026-11-11",
@@ -13793,6 +14448,16 @@
 "safe": "Requires improvement",
 "wellLed": "Good"
 },
+"1-562029218": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2019-12-02",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-562265948": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -13867,6 +14532,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-564472477": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2015-11-20",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Outstanding"
+},
 "1-564499987": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -13939,6 +14614,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-565571942": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-06-14",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-565604154": {
 "_fetched": "2026-11-11",
 "inspected": "2023-04-06"
@@ -14005,6 +14690,10 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-566398006": {
+"_fetched": "2026-11-18",
+"inspected": "2018-02-22"
+},
 "1-566408015": {
 "_fetched": "2026-11-10",
 "inspected": "2021-09-08"
@@ -14028,6 +14717,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2017-06-13",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-566469442": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2022-04-05",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -14239,6 +14938,10 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-567822295": {
+"_fetched": "2026-11-18",
+"inspected": "2019-02-12"
+},
 "1-567834277": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -14400,6 +15103,10 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-568506944": {
+"_fetched": "2026-11-18",
+"inspected": "2023-10-31"
 },
 "1-568996478": {
 "_fetched": "2026-11-11",
@@ -14567,6 +15274,10 @@
 "_fetched": "2026-11-11",
 "inspected": "2016-10-14"
 },
+"1-569519352": {
+"_fetched": "2026-11-18",
+"inspected": "2018-12-11"
+},
 "1-569545801": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -14624,6 +15335,16 @@
 "1-569728647": {
 "_fetched": "2026-11-10",
 "inspected": "2019-01-08"
+},
+"1-569756066": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-11-29",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
 },
 "1-569924826": {
 "_fetched": "2026-11-11",
@@ -14897,6 +15618,10 @@
 "_fetched": "2026-11-11",
 "inspected": "2019-01-03"
 },
+"1-572237282": {
+"_fetched": "2026-11-18",
+"inspected": "2018-03-15"
+},
 "1-572264100": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -14912,6 +15637,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2017-08-03",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-572351495": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2017-05-10",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -15010,6 +15745,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2018-03-31",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-572931726": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-11-28",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -15123,6 +15868,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-576765354": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-07-20",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-578145911": {
 "_fetched": "2026-11-11",
 "caring": "Good",
@@ -15201,6 +15956,16 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-582036744": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-05-12",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-582124351": {
 "_fetched": "2026-11-11",
 "inspected": "2017-09-05"
@@ -15224,6 +15989,10 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-582326413": {
+"_fetched": "2026-11-18",
+"inspected": "2017-03-13"
 },
 "1-582393811": {
 "_fetched": "2026-11-10",
@@ -15479,6 +16248,16 @@
 "safe": "Good",
 "wellLed": "Outstanding"
 },
+"1-585109177": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2020-07-01",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-585133416": {
 "_fetched": "2026-11-10",
 "caring": "Good",
@@ -15509,11 +16288,35 @@
 "safe": "Good",
 "wellLed": "Good"
 },
+"1-586187273": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2022-02-25",
+"overall": "Good",
+"responsive": "Requires improvement",
+"safe": "Good",
+"wellLed": "Good"
+},
 "1-586205460": {
 "_fetched": "2026-11-11",
 "caring": "Good",
 "effective": "Good",
 "inspected": "2016-07-05",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-586215185": {
+"_fetched": "2026-11-18",
+"inspected": "2023-11-23"
+},
+"1-586228936": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-03-03",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -15552,6 +16355,16 @@
 "caring": "Good",
 "effective": "Good",
 "inspected": "2016-12-20",
+"overall": "Good",
+"responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-589456746": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2016-07-19",
 "overall": "Good",
 "responsive": "Good",
 "safe": "Good",
@@ -15953,6 +16766,10 @@
 "responsive": "Good",
 "safe": "Good",
 "wellLed": "Good"
+},
+"1-648195581": {
+"_fetched": "2026-11-18",
+"inspected": "2016-12-08"
 },
 "1-6487216514": {
 "_fetched": "2026-11-14",
@@ -17051,6 +17868,16 @@
 "inspected": "2021-11-03",
 "overall": "Good",
 "responsive": "Good",
+"safe": "Good",
+"wellLed": "Good"
+},
+"1-9068060386": {
+"_fetched": "2026-11-18",
+"caring": "Good",
+"effective": "Good",
+"inspected": "2023-08-21",
+"overall": "Good",
+"responsive": "Requires improvement",
 "safe": "Good",
 "wellLed": "Good"
 },
