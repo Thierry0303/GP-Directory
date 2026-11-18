@@ -25,6 +25,15 @@ jobs:
         run: python fetch_accepting_patients.py
         continue-on-error: true
 
+      # ---- 0b. Discover new GP practices not yet in gps.json ----
+      # Queries the NHS ODS API (public, no key) for every active GP practice
+      # across the 5 London ICBs and appends any that are missing from gps.json
+      # with stub fields. refresh_nhs_data.py (step 1) then enriches them on the
+      # same run.  Non-fatal so a transient ODS outage never blocks the build.
+      - name: Discover missing GP practices
+        run: python fetch_missing_practices.py
+        continue-on-error: true
+
       # ---- 1. NHS GP data (canonical via FHIR) ----
       # NOTE: refresh_nhs_data.py must NOT write index.html — it runs
       # before private clinics even exist, so any counts it writes are
