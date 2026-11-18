@@ -30740,5 +30740,24 @@
     "lon": -0.1447262,
     "providerName": "VYV Collective Ltd",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30353363375",
+    "ods_code": "",
+    "name": "Medical Wellness London Limited",
+    "address": "61 Mansell Street, London",
+    "postcode": "E1 8AN",
+    "phone": "02046367333",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30353363375",
+    "localAuthority": "Tower Hamlets",
+    "lat": 51.5125643,
+    "lon": -0.0729375,
+    "providerName": "",
+    "ar": "Tower Hamlets"
   }
 ]
