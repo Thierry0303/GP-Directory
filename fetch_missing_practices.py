@@ -28,6 +28,15 @@ import urllib.error
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+try:
+    import requests as _requests
+    _USE_REQUESTS = True
+except ImportError:
+    _USE_REQUESTS = False
+
+# User-Agent that the ODS REST API accepts (urllib's default gets 406)
+_UA = "Mozilla/5.0 (compatible; londongp-directory/1.0; +https://londongp.directory)"
+
 ROOT = Path(__file__).resolve().parent
 GPS_JSON = ROOT / "gps.json"
 
@@ -123,22 +132,20 @@ BOROUGH_MAP: dict[str, str] = {
 
 
 def _get_json(url: str, retries: int = 3) -> dict:
+    headers = {"User-Agent": _UA, "Accept": "application/json"}
     for attempt in range(retries):
         try:
-            # ODS API returns 406 if Accept header is too strict — omit it and
-            # append _format=json to the query string instead (already done in
-            # fetch_icb_practices; individual org lookups return JSON by default).
-            req = urllib.request.Request(url)
-            with urllib.request.urlopen(req, timeout=10) as r:
-                return json.loads(r.read())
-        except urllib.error.HTTPError as e:
-            if e.code == 404:
-                return {}
-            if attempt < retries - 1:
-                time.sleep(2 ** attempt)
-                continue
-            raise
-        except Exception:
+            if _USE_REQUESTS:
+                r = _requests.get(url, headers=headers, timeout=10)
+                if r.status_code == 404:
+                    return {}
+                r.raise_for_status()
+                return r.json()
+            else:
+                req = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(req, timeout=10) as r:
+                    return json.loads(r.read())
+        except Exception as e:
             if attempt < retries - 1:
                 time.sleep(2 ** attempt)
                 continue
