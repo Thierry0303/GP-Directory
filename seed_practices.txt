@@ -1,0 +1,2 @@
+# ODS codes always ensured present in gps.json (resolved via Service Search)
+F85029   # Abernethy House Surgery, EN1 3EB, Enfield

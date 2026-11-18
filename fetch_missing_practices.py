@@ -134,35 +134,70 @@ def get_district(postcode: str) -> str:
     return pc.split()[0] if " " in pc else pc[:-3] if len(pc) >= 5 else pc
 
 
-def search_gps_in_district(district: str, key: str,
-                            session: requests.Session) -> list[dict]:
-    """
-    Return all GP practice records from NHS Service Search for a postcode
-    district.  Uses free-text search on the postcode prefix — returns up
-    to 100 results (more than any single London district has).
-    """
-    params = {
-        "api-version": SS_VERSION,
-        "search": district,
-        "searchMode": "all",
-        "searchFields": "Postcode",
-        "$filter": "OrganisationType eq 'GP'",
-        "$top": "100",
-    }
+def _ss_get(session, key, params):
     headers = {"apikey": key, "Content-Type": "application/json"}
     for attempt in range(3):
         try:
             r = session.get(SS_URL, params=params, headers=headers, timeout=15)
             r.raise_for_status()
-            data = r.json()
-            return data.get("value", [])
+            return r.json().get("value", [])
         except Exception as e:
             if attempt < 2:
                 time.sleep(2 ** attempt)
             else:
-                print(f"  WARNING: Service Search failed for {district}: {e}")
-                return []
+                print(f"  WARNING: Service Search failed ({params.get('search')}): {e}")
     return []
+
+
+def _is_gp(rec: dict) -> bool:
+    t = (rec.get("OrganisationType") or "").lower()
+    return "gp" in t or (rec.get("OrganisationTypeID") or "").upper() == "GPB"
+
+
+_debug_printed = False
+
+
+def search_gps_in_district(district: str, key: str,
+                            session: requests.Session) -> list[dict]:
+    """Try several query shapes; filter to GPs client-side."""
+    global _debug_printed
+    variants = [
+        {"search": f"{district}*", "searchFields": "Postcode"},
+        {"search": district, "searchFields": "Postcode"},
+        {"search": f"{district} GP", "searchFields": "OrganisationName,Postcode"},
+        {"search": district},
+    ]
+    for v in variants:
+        params = {"api-version": SS_VERSION, "searchMode": "all", "$top": "100", **v}
+        hits = _ss_get(session, key, params)
+        gps = [h for h in hits if _is_gp(h)]
+        if gps:
+            return gps
+        if hits and not _debug_printed:
+            _debug_printed = True
+            print(f"  DEBUG: {len(hits)} non-GP hits for {v}; sample types: "
+                  f"{sorted({h.get('OrganisationType') for h in hits})[:5]}")
+    return []
+
+
+def fetch_by_ods(ods: str, key: str, session: requests.Session) -> dict | None:
+    """Proven lookup (same call as fetch_nhs_service_search.py)."""
+    params = {"api-version": SS_VERSION, "search": ods, "searchMode": "all",
+              "searchFields": "ODSCode", "$top": "1"}
+    hits = _ss_get(session, key, params)
+    return hits[0] if hits else None
+
+
+def load_seed_codes() -> list[str]:
+    f = ROOT / "seed_practices.txt"
+    if not f.exists():
+        return []
+    out = []
+    for line in f.read_text().splitlines():
+        line = line.split("#")[0].strip().upper()
+        if line:
+            out.append(line)
+    return out
 
 
 def record_from_ss(rec: dict, borough: str) -> dict:
@@ -225,15 +260,23 @@ def main() -> None:
     if missing_districts:
         print(f"  {', '.join(missing_districts)}")
 
-    if not missing_districts:
-        print("All expected districts are covered. Nothing to discover.")
-        return
-
-    print(f"\nQuerying NHS Service Search for GP practices in missing districts...")
+    print(f"\nQuerying NHS Service Search...")
     new_records: list[dict] = []
     seen_ods: set[str] = set(existing_ods)
 
     with requests.Session() as session:
+        # Seed list: explicit ODS codes resolved via the proven lookup.
+        for ods in load_seed_codes():
+            if ods in seen_ods:
+                continue
+            rec = fetch_by_ods(ods, key, session)
+            if not rec:
+                print(f"  seed {ods}: not found in Service Search")
+                continue
+            borough = BOROUGH_MAP.get(get_district(rec.get("Postcode") or ""), "")
+            new_records.append(record_from_ss(rec, borough))
+            seen_ods.add(ods)
+            print(f"  seed {ods}: added")
         for district in missing_districts:
             borough = BOROUGH_MAP[district]
             hits = search_gps_in_district(district, key, session)
