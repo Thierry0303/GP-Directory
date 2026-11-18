@@ -3,63 +3,48 @@
 fetch_missing_practices.py
 --------------------------
 Discovers active London GP practices missing from gps.json by querying
-the NHS ODS API for every London ICB, then back-fills them.
+the NHS Service Search API (v3) for every postcode district that should
+have practices but has fewer than expected, plus any district entirely
+absent from gps.json.
 
-Run manually or add to the full-refresh workflow BEFORE refresh_nhs_data.py:
-    python fetch_missing_practices.py
+Requires NHS_SERVICE_SEARCH_KEY (same secret used by fetch_nhs_service_search.py).
 
-No API key required — ODS is a public API.
+Run order in full-refresh.yml: BEFORE apply_gpps_scores.py and
+refresh_nhs_data.py, so new practices get enriched on the same run.
 
 What it does:
-  1. Queries ODS for every active GP practice (RO177) across the 5 London ICBs
-  2. Diffs against existing gps.json ODS codes
-  3. Fetches full detail for each missing practice from the ODS FHIR API
-  4. Appends them to gps.json with null GPPS/CQC fields (enriched on next run)
-  5. Prints a clear summary of what was added
+  1. Builds the set of London postcode districts expected to have GP
+     practices (derived from BOROUGH_MAP below).
+  2. For every district absent from gps.json, queries the NHS Service
+     Search API for GP practices in that district.
+  3. Diffs returned ODS codes against gps.json.
+  4. For each missing ODS code fetches the full Service Search record and
+     appends a new entry to gps.json.
+  5. Prints a clear summary.
 """
 
 from __future__ import annotations
 
 import json
-import re
+import os
+import sys
 import time
-import urllib.request
-import urllib.error
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-try:
-    import requests as _requests
-    _USE_REQUESTS = True
-except ImportError:
-    _USE_REQUESTS = False
-
-# User-Agent that the ODS REST API accepts (urllib's default gets 406)
-_UA = "Mozilla/5.0 (compatible; londongp-directory/1.0; +https://londongp.directory)"
+import requests
 
 ROOT = Path(__file__).resolve().parent
 GPS_JSON = ROOT / "gps.json"
 
-# London ICB ODS codes (the 5 Integrated Care Boards covering all 32 boroughs
-# + City of London).  Using the commissioning-body relationship (RE4) to scope
-# the query to practices actually commissioned in London.
-# Source: https://directory.spineservices.nhs.uk/ORD/2-0-0/organisations?
-#           PrimaryRoleId=RO98&Status=Active  (filtered to ICB role)
-LONDON_ICBS = [
-    "QMJ",   # NHS North East London ICB
-    "QMF",   # NHS North Central London ICB
-    "QRV",   # NHS North West London ICB
-    "QKK",   # NHS South East London ICB
-    "QWE",   # NHS South West London ICB
-]
+SS_URL = "https://api.service.nhs.uk/service-search-api"
+SS_VERSION = "3"
 
-ODS_BASE = "https://directory.spineservices.nhs.uk/ORD/2-0-0"
-
-# Postcode-district → borough mapping (outer London coverage only — inner is
-# already handled via the BOROUGH_MAP in refresh_nhs_data.py).
+# All London postcode districts → borough.  Every district here is expected
+# to have at least one GP practice.
 BOROUGH_MAP: dict[str, str] = {
     "EN1":"Enfield","EN2":"Enfield","EN3":"Enfield","EN4":"Enfield",
-    "EN7":"Enfield","EN8":"Enfield","EN9":"Enfield",
+    "EN5":"Barnet","EN7":"Enfield","EN8":"Enfield","EN9":"Enfield",
     "N1":"Islington","N2":"Barnet","N3":"Barnet","N4":"Haringey",
     "N5":"Islington","N6":"Haringey","N7":"Islington","N8":"Haringey",
     "N9":"Enfield","N10":"Haringey","N11":"Barnet","N12":"Barnet",
@@ -83,15 +68,17 @@ BOROUGH_MAP: dict[str, str] = {
     "SE17":"Southwark","SE18":"Greenwich","SE19":"Bromley","SE20":"Bromley",
     "SE21":"Southwark","SE22":"Southwark","SE23":"Lewisham","SE24":"Lambeth",
     "SE25":"Croydon","SE26":"Lewisham","SE27":"Lambeth","SE28":"Greenwich",
-    "SW1P":"Westminster","SW1V":"Westminster","SW1W":"Westminster","SW1X":"Westminster",
-    "SW1E":"Westminster","SW1A":"Westminster","SW1H":"Westminster",
+    "SW1P":"Westminster","SW1V":"Westminster","SW1W":"Westminster",
+    "SW1X":"Westminster","SW1E":"Westminster","SW1A":"Westminster",
+    "SW1H":"Westminster",
     "SW2":"Lambeth","SW3":"Kensington & Chelsea","SW4":"Lambeth",
     "SW5":"Kensington & Chelsea","SW6":"Hammersmith & Fulham",
     "SW7":"Kensington & Chelsea","SW8":"Lambeth","SW9":"Lambeth",
     "SW10":"Kensington & Chelsea","SW11":"Wandsworth","SW12":"Wandsworth",
     "SW13":"Richmond","SW14":"Richmond","SW15":"Wandsworth","SW16":"Lambeth",
     "SW17":"Wandsworth","SW18":"Wandsworth","SW19":"Merton","SW20":"Merton",
-    "W1":"Westminster","W2":"Westminster","W3":"Ealing","W4":"Hounslow",
+    "W1D":"Westminster","W1H":"Westminster","W1K":"Westminster",
+    "W1T":"Westminster","W2":"Westminster","W3":"Ealing","W4":"Hounslow",
     "W5":"Ealing","W6":"Hammersmith & Fulham","W7":"Ealing",
     "W8":"Kensington & Chelsea","W9":"Westminster","W10":"Kensington & Chelsea",
     "W11":"Kensington & Chelsea","W12":"Hammersmith & Fulham",
@@ -102,10 +89,8 @@ BOROUGH_MAP: dict[str, str] = {
     "BR5":"Bromley","BR6":"Bromley","BR7":"Bromley","BR8":"Bromley",
     "CR0":"Croydon","CR2":"Croydon","CR3":"Croydon","CR4":"Merton",
     "CR5":"Croydon","CR6":"Croydon","CR7":"Croydon","CR8":"Croydon",
-    "CR9":"Croydon",
     "DA1":"Bexley","DA5":"Bexley","DA6":"Bexley","DA7":"Bexley","DA8":"Bexley",
     "DA14":"Bexley","DA15":"Bexley","DA16":"Bexley","DA17":"Bexley","DA18":"Bexley",
-    "EN5":"Barnet",
     "HA0":"Brent","HA1":"Harrow","HA2":"Harrow","HA3":"Harrow","HA4":"Hillingdon",
     "HA5":"Harrow","HA6":"Hillingdon","HA7":"Harrow","HA8":"Barnet","HA9":"Brent",
     "IG1":"Redbridge","IG2":"Redbridge","IG3":"Redbridge","IG4":"Redbridge",
@@ -131,26 +116,15 @@ BOROUGH_MAP: dict[str, str] = {
 }
 
 
-def _get_json(url: str, retries: int = 3) -> dict:
-    headers = {"User-Agent": _UA, "Accept": "application/json"}
-    for attempt in range(retries):
-        try:
-            if _USE_REQUESTS:
-                r = _requests.get(url, headers=headers, timeout=10)
-                if r.status_code == 404:
-                    return {}
-                r.raise_for_status()
-                return r.json()
-            else:
-                req = urllib.request.Request(url, headers=headers)
-                with urllib.request.urlopen(req, timeout=10) as r:
-                    return json.loads(r.read())
-        except Exception as e:
-            if attempt < retries - 1:
-                time.sleep(2 ** attempt)
-                continue
-            raise
-    return {}
+def read_key() -> str:
+    key = os.environ.get("NHS_SERVICE_SEARCH_KEY", "").strip()
+    if not key:
+        f = ROOT / "apikey_prod.txt"
+        if f.exists():
+            key = f.read_text(encoding="utf-8-sig", errors="replace").strip()
+    if not key:
+        sys.exit("Set NHS_SERVICE_SEARCH_KEY (or put your key in apikey_prod.txt).")
+    return key
 
 
 def get_district(postcode: str) -> str:
@@ -160,63 +134,63 @@ def get_district(postcode: str) -> str:
     return pc.split()[0] if " " in pc else pc[:-3] if len(pc) >= 5 else pc
 
 
-def borough_from_postcode(postcode: str) -> str:
-    return BOROUGH_MAP.get(get_district(postcode), "")
+def search_gps_in_district(district: str, key: str,
+                            session: requests.Session) -> list[dict]:
+    """
+    Return all GP practice records from NHS Service Search for a postcode
+    district.  Uses free-text search on the postcode prefix — returns up
+    to 100 results (more than any single London district has).
+    """
+    params = {
+        "api-version": SS_VERSION,
+        "search": district,
+        "searchMode": "all",
+        "searchFields": "Postcode",
+        "$filter": "OrganisationType eq 'GP'",
+        "$top": "100",
+    }
+    headers = {"apikey": key, "Content-Type": "application/json"}
+    for attempt in range(3):
+        try:
+            r = session.get(SS_URL, params=params, headers=headers, timeout=15)
+            r.raise_for_status()
+            data = r.json()
+            return data.get("value", [])
+        except Exception as e:
+            if attempt < 2:
+                time.sleep(2 ** attempt)
+            else:
+                print(f"  WARNING: Service Search failed for {district}: {e}")
+                return []
+    return []
 
 
-def fetch_icb_practices(icb_code: str) -> list[str]:
-    """Return all active GP practice ODS codes commissioned by an ICB."""
-    ods_codes = []
-    url = (f"{ODS_BASE}/organisations"
-           f"?PrimaryRoleId=RO177"
-           f"&RelTypeId=RE4"
-           f"&TargetOrgId={icb_code}"
-           f"&Status=Active"
-           f"&_format=json"
-           f"&_count=1000")
-    while url:
-        data = _get_json(url)
-        orgs = data.get("Organisations", [])
-        ods_codes.extend(o["OrgId"] for o in orgs)
-        # Pagination via Links
-        url = None
-        for link in data.get("Links", []):
-            if link.get("rel") == "next":
-                url = link.get("href")
-                break
-    return ods_codes
-
-
-def fetch_practice_detail(ods_code: str) -> dict | None:
-    """Fetch name, address, postcode, phone from ODS for a single practice."""
-    data = _get_json(f"{ODS_BASE}/organisations/{ods_code}")
-    org = data.get("Organisation")
-    if not org:
-        return None
-    if org.get("Status", "").lower() != "active":
-        return None
-
-    name_raw = org.get("Name", "")
+def record_from_ss(rec: dict, borough: str) -> dict:
+    """Build a gps.json-compatible record from a Service Search hit."""
+    ods = (rec.get("ODSCode") or "").strip().upper()
+    name_raw = rec.get("OrganisationName") or ""
     name = name_raw.title() if name_raw.isupper() else name_raw
 
-    geo = org.get("GeoLoc", {}).get("Location", {})
-    lines = [
-        geo.get("AddrLn1", ""),
-        geo.get("AddrLn2", ""),
-        geo.get("AddrLn3", ""),
-        geo.get("Town", ""),
-    ]
-    address = ", ".join(l for l in lines if l)
-    postcode = geo.get("PostCode", "").strip()
+    parts = [rec.get("Address1"), rec.get("Address2"),
+             rec.get("Address3"), rec.get("City")]
+    address = ", ".join(p.strip() for p in parts if p and p.strip())
+    if address.isupper():
+        address = address.title()
+
+    postcode = (rec.get("Postcode") or "").strip()
 
     phone = ""
-    for contact in (org.get("Contacts") or {}).get("Contact", []):
-        if contact.get("type") == "tel":
-            phone = contact.get("value", "")
-            break
+    for c in (rec.get("Contacts") or []):
+        if (c.get("ContactMethodType") or "").lower() == "telephone":
+            phone = (c.get("ContactValue") or "").strip()
+            if phone:
+                break
+
+    lat = rec.get("Latitude")
+    lng = rec.get("Longitude")
 
     return {
-        "ods_code": ods_code,
+        "ods_code": ods,
         "name": name,
         "address": address,
         "postcode": postcode,
@@ -227,77 +201,71 @@ def fetch_practice_detail(ods_code: str) -> dict | None:
         "gpps_pcn": "",
         "cqc_rating": "",
         "cqc_url": "",
-        "lat": None,
-        "lng": None,
-        "ar": borough_from_postcode(postcode),
+        "lat": round(lat, 6) if isinstance(lat, (int, float)) else None,
+        "lng": round(lng, 6) if isinstance(lng, (int, float)) else None,
+        "ar": borough,
     }
 
 
 def main() -> None:
+    key = read_key()
+
     print("Loading gps.json...")
     practices: list[dict] = json.loads(GPS_JSON.read_text())
     existing_ods = {p["ods_code"].upper() for p in practices}
-    print(f"  {len(existing_ods)} practices already in gps.json")
+    existing_districts = {get_district(p.get("postcode", "")) for p in practices}
+    print(f"  {len(existing_ods)} practices, {len(existing_districts)} postcode districts")
 
-    # --- Step 1: collect all ODS codes from London ICBs ---
-    print("\nQuerying ODS for active London GP practices by ICB...")
-    all_london_ods: set[str] = set()
-    for icb in LONDON_ICBS:
-        codes = fetch_icb_practices(icb)
-        print(f"  ICB {icb}: {len(codes)} practices")
-        all_london_ods.update(c.upper() for c in codes)
-    print(f"  Total from ODS: {len(all_london_ods)} unique practice codes")
+    # Find districts in BOROUGH_MAP that are entirely absent from gps.json
+    missing_districts = sorted(
+        d for d in BOROUGH_MAP if d not in existing_districts
+    )
+    print(f"\n  Postcode districts with no practices in gps.json: "
+          f"{len(missing_districts)}")
+    if missing_districts:
+        print(f"  {', '.join(missing_districts)}")
 
-    missing = all_london_ods - existing_ods
-    print(f"\n  Missing from gps.json: {len(missing)}")
-
-    if not missing:
-        print("Nothing to add — gps.json is complete.")
+    if not missing_districts:
+        print("All expected districts are covered. Nothing to discover.")
         return
 
-    # --- Step 2: fetch detail for each missing practice ---
-    print(f"\nFetching detail for {len(missing)} missing practices (20 concurrent)...")
+    print(f"\nQuerying NHS Service Search for GP practices in missing districts...")
     new_records: list[dict] = []
-    failed: list[str] = []
+    seen_ods: set[str] = set(existing_ods)
 
-    with ThreadPoolExecutor(max_workers=20) as ex:
-        futures = {ex.submit(fetch_practice_detail, ods): ods for ods in missing}
-        done = 0
-        for future in as_completed(futures):
-            ods = futures[future]
-            done += 1
-            try:
-                rec = future.result()
-                if rec:
-                    new_records.append(rec)
-                else:
-                    failed.append(ods)
-            except Exception as e:
-                print(f"  ERROR {ods}: {e}")
-                failed.append(ods)
-            if done % 20 == 0 or done == len(missing):
-                print(f"  {done}/{len(missing)} fetched, {len(new_records)} ok")
+    with requests.Session() as session:
+        for district in missing_districts:
+            borough = BOROUGH_MAP[district]
+            hits = search_gps_in_district(district, key, session)
+            added = 0
+            for rec in hits:
+                ods = (rec.get("ODSCode") or "").strip().upper()
+                if not ods or ods in seen_ods:
+                    continue
+                # Confirm it's actually in this district
+                pc_district = get_district(rec.get("Postcode") or "")
+                if pc_district != district:
+                    continue
+                new_records.append(record_from_ss(rec, borough))
+                seen_ods.add(ods)
+                added += 1
+            print(f"  {district} ({borough}): {len(hits)} hits, {added} new")
 
-    # --- Step 3: report and append ---
     print(f"\nResults:")
-    print(f"  Added: {len(new_records)}")
-    if failed:
-        print(f"  Failed (will be retried on next run): {', '.join(sorted(failed))}")
+    print(f"  New practices found: {len(new_records)}")
 
-    # Sort new records by postcode for a clean diff
+    if not new_records:
+        print("Nothing to add.")
+        return
+
     new_records.sort(key=lambda r: (r.get("postcode", ""), r.get("name", "")))
-
     for rec in new_records:
         print(f"  + {rec['ods_code']}  {rec['name']:<45}  {rec['postcode']}  {rec['ar']}")
 
-    if not new_records:
-        print("No valid records to add.")
-        return
-
     practices.extend(new_records)
     GPS_JSON.write_text(json.dumps(practices, indent=2, ensure_ascii=False))
-    print(f"\ngps.json updated: {len(practices)} total practices (+{len(new_records)} new)")
-    print("Run refresh_nhs_data.py next to enrich the new records with live ODS data.")
+    print(f"\ngps.json updated: {len(practices)} total (+{len(new_records)} new)")
+    print("refresh_nhs_data.py will enrich the new records on this run.")
 
 
 if __name__ == "__main__":
