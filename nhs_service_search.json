@@ -8485,19 +8485,19 @@
     "lng": -0.074138,
     "name": "STROUTS PLACE MEDICAL CENTRE",
     "opening": {
-      "Friday": "08:30–18:30",
-      "Monday": "08:30–18:30",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:30–18:30",
-      "Tuesday": "08:30–18:30",
-      "Wednesday": "08:30–18:30"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
-    "phone": "0208 187 2000",
+    "phone": "02081872000",
     "postcode": "E2 7QU",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.stroutsplace.nhs.uk"
+    "website": "https://stroutsplace.nhs.uk"
   },
   "F84052": {
     "address": "Greengate Street, Plaistow, London",
@@ -13560,11 +13560,11 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
-      "Saturday": "08:00–10:30",
+      "Saturday": "08:00–12:00",
       "Sunday": "Closed",
-      "Thursday": "08:00–20:00",
-      "Tuesday": "08:00–20:00",
-      "Wednesday": "08:00–20:00"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02086500173",
     "postcode": "BR3 3FD",
@@ -15095,7 +15095,7 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00–18:30",
-      "Tuesday": "07:30–18:30",
+      "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
     },
     "phone": "02039303533",
@@ -17563,7 +17563,7 @@
     "postcode": "SW19 4DL",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.francisgrovesurgery.co.uk"
+    "website": "http://www.francisgrovesurgery.nhs.uk"
   },
   "H85027": {
     "address": "35A High Street Wimbledon, London",
@@ -18197,14 +18197,15 @@
     "lng": -0.218044,
     "name": "St Pauls Cottage Surgery",
     "opening": {
-      "Friday": "08:30–18:30",
-      "Monday": "08:30–20:00",
-      "Saturday": "08:30–11:30",
-      "Thursday": "08:30–20:00",
-      "Tuesday": "08:30–20:00",
-      "Wednesday": "08:30–18:30"
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–20:00",
+      "Saturday": "08:00–11:30",
+      "Sunday": "Closed",
+      "Thursday": "08:00–20:00",
+      "Tuesday": "08:00–20:00",
+      "Wednesday": "08:00–18:30"
     },
-    "phone": "020 3092 2556",
+    "phone": "02030922556",
     "postcode": "SW19 6EW",
     "status": "Visible",
     "type": "GpBranch",

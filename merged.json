@@ -9151,7 +9151,7 @@
       "Saturday": "Closed",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
-      "Tuesday": "07:30\u201318:30",
+      "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
@@ -10432,7 +10432,7 @@
     "ar": "Merton",
     "la": 51.419823,
     "ln": -0.209043,
-    "web": "http://www.francisgrovesurgery.co.uk",
+    "web": "http://www.francisgrovesurgery.nhs.uk",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -11009,7 +11009,7 @@
     "n": "St Pauls Cottage Surgery",
     "a": "114 Augustus Road, London",
     "p": "SW19 6EW",
-    "ph": "020 3092 2556",
+    "ph": "02030922556",
     "s": 82.0,
     "c": 82.1,
     "pcn": "BROCKLEBANK",
@@ -11020,12 +11020,13 @@
     "ln": -0.218044,
     "web": "http://www.stpaulscottage-surgery.co.uk",
     "oh": {
-      "Friday": "08:30\u201318:30",
-      "Monday": "08:30\u201320:00",
-      "Saturday": "08:30\u201311:30",
-      "Thursday": "08:30\u201320:00",
-      "Tuesday": "08:30\u201320:00",
-      "Wednesday": "08:30\u201318:30"
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201320:00",
+      "Saturday": "08:00\u201311:30",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201320:00",
+      "Tuesday": "08:00\u201320:00",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -18577,7 +18578,7 @@
     "n": "Strouts Place Medical Centre",
     "a": "3 Strouts Place, Pelter Street, London",
     "p": "E2 7QU",
-    "ph": "0208 187 2000",
+    "ph": "02081872000",
     "s": 76.1,
     "c": 82.7,
     "pcn": "",
@@ -18586,15 +18587,15 @@
     "ar": "Tower Hamlets",
     "la": 51.52948,
     "ln": -0.074138,
-    "web": "http://www.stroutsplace.nhs.uk",
+    "web": "https://stroutsplace.nhs.uk",
     "oh": {
-      "Friday": "08:30\u201318:30",
-      "Monday": "08:30\u201318:30",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:30\u201318:30",
-      "Tuesday": "08:30\u201318:30",
-      "Wednesday": "08:30\u201318:30"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -19580,11 +19581,11 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "08:00\u201310:30",
+      "Saturday": "08:00\u201312:00",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201320:00",
-      "Tuesday": "08:00\u201320:00",
-      "Wednesday": "08:00\u201320:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
