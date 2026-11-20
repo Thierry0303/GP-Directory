@@ -4062,6 +4062,8 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
       "Wednesday": "08:00\u201318:30"
@@ -17682,11 +17684,13 @@
     "ln": -0.411206,
     "web": "http://www.townfielddoctorssurgery.co.uk/index.aspx",
     "oh": {
-      "Friday": "08:30\u201318:30",
-      "Monday": "08:30\u201318:30",
-      "Thursday": "08:30\u201318:30",
-      "Tuesday": "08:30\u201318:30",
-      "Wednesday": "08:30\u201318:30"
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },

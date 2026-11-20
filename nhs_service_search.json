@@ -5255,11 +5255,13 @@
     "lng": -0.411206,
     "name": "Townfield Doctors Surgery",
     "opening": {
-      "Friday": "08:30–18:30",
-      "Monday": "08:30–18:30",
-      "Thursday": "08:30–18:30",
-      "Tuesday": "08:30–18:30",
-      "Wednesday": "08:30–18:30"
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02085735856",
     "postcode": "UB3 3DZ",
@@ -9677,6 +9679,8 @@
     "opening": {
       "Friday": "08:00–18:30",
       "Monday": "08:00–18:30",
+      "Saturday": "Closed",
+      "Sunday": "Closed",
       "Thursday": "08:00–18:30",
       "Tuesday": "08:00–18:30",
       "Wednesday": "08:00–18:30"
