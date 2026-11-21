@@ -30854,5 +30854,24 @@
     "lon": -0.1580202,
     "providerName": "",
     "ar": "Haringey"
+  },
+  {
+    "cqc_id": "1-30163508503",
+    "ods_code": "",
+    "name": "Health Partners Group Ltd",
+    "address": "Boston House, 63-64 New Broad Street, London",
+    "postcode": "EC2M 1JJ",
+    "phone": "01273023131",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30163508503",
+    "localAuthority": "City of London",
+    "lat": 51.5167596,
+    "lon": -0.0836425,
+    "providerName": "",
+    "ar": "City of London"
   }
 ]

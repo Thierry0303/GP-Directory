@@ -12531,5 +12531,23 @@
     "lon": -0.1832586,
     "providerName": "",
     "ar": "Barnet"
+  },
+  {
+    "cqc_id": "1-28456245204",
+    "name": "Maxident Clinic Limited",
+    "address": "161 Bromley Road, Catford, London",
+    "postcode": "SE6 2NZ",
+    "phone": "02086980491",
+    "website": "",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28456245204",
+    "localAuthority": "Lewisham",
+    "lat": 51.435616,
+    "lon": -0.0176052,
+    "providerName": "",
+    "ar": "Lewisham"
   }
 ]

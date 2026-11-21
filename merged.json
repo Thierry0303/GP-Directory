@@ -7834,7 +7834,7 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "Closed",
+      "Saturday": "09:00\u201316:00",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
@@ -8608,7 +8608,7 @@
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
-      "Saturday": "09:00\u201312:00",
+      "Saturday": "09:00\u201316:00",
       "Sunday": "Closed",
       "Thursday": "08:00\u201318:30",
       "Tuesday": "08:00\u201318:30",
@@ -61950,6 +61950,26 @@
     "ar": "Haringey",
     "la": 51.5901975,
     "ln": -0.1580202,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30163508503",
+    "n": "Health Partners Group Ltd",
+    "a": "Boston House, 63-64 New Broad Street, London",
+    "p": "EC2M 1JJ",
+    "ph": "01273023131",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30163508503",
+    "ar": "City of London",
+    "la": 51.5167596,
+    "ln": -0.0836425,
     "type": "Private",
     "web": ""
   }
