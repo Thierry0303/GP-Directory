@@ -9688,7 +9688,7 @@
     "ar": "Lambeth",
     "la": 51.437469,
     "ln": -0.09127,
-    "web": "http://www.theodhc.co.uk/",
+    "web": "http://www.olddairyhealthcentre.nhs.uk",
     "oh": {
       "Friday": "07:30\u201318:30",
       "Monday": "07:30\u201318:30",
@@ -19706,7 +19706,7 @@
     "ar": "Redbridge",
     "la": 51.573559,
     "ln": 0.12493,
-    "web": "http://www.chadwellheathsurgery.nhs.uk",
+    "web": "https://www.chadwellheathsurgery.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -61972,5 +61972,65 @@
     "ln": -0.0836425,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-30468225765",
+    "n": "Metabofix Ltd",
+    "a": "13 Oyster Wharf, 18 Lombard Road, London",
+    "p": "SW11 3RJ",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30468225765",
+    "ar": "Wandsworth",
+    "la": 51.4713981,
+    "ln": -0.1777127,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30299407952",
+    "n": "Tawazun Health Ltd",
+    "a": "The Consulting Rooms, 23 Harley Street, Lower Ground Floor, London",
+    "p": "W1G 9QN",
+    "ph": "07904313145",
+    "s": null,
+    "c": null,
+    "pcn": "diagnostic",
+    "specs": [
+      "diagnostic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30299407952",
+    "ar": "Westminster",
+    "la": 51.5175917,
+    "ln": -0.1466098,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30573543695",
+    "n": "Vire Clinic",
+    "a": "4 Harley Street, London",
+    "p": "W1G 9PB",
+    "ph": "02076310156",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30573543695",
+    "ar": "Westminster",
+    "la": 51.517183,
+    "ln": -0.145931,
+    "type": "Private",
+    "web": "https://www.viremen.com"
   }
 ]

@@ -30873,5 +30873,62 @@
     "lon": -0.0836425,
     "providerName": "",
     "ar": "City of London"
+  },
+  {
+    "cqc_id": "1-30468225765",
+    "ods_code": "",
+    "name": "Metabofix Ltd",
+    "address": "13 Oyster Wharf, 18 Lombard Road, London",
+    "postcode": "SW11 3RJ",
+    "phone": "",
+    "website": "",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30468225765",
+    "localAuthority": "Wandsworth",
+    "lat": 51.4713981,
+    "lon": -0.1777127,
+    "providerName": "",
+    "ar": "Wandsworth"
+  },
+  {
+    "cqc_id": "1-30299407952",
+    "ods_code": "",
+    "name": "Tawazun Health Ltd",
+    "address": "The Consulting Rooms, 23 Harley Street, Lower Ground Floor, London",
+    "postcode": "W1G 9QN",
+    "phone": "07904313145",
+    "website": "",
+    "specialties": [
+      "diagnostic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30299407952",
+    "localAuthority": "Westminster",
+    "lat": 51.5175917,
+    "lon": -0.1466098,
+    "providerName": "",
+    "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30573543695",
+    "ods_code": "",
+    "name": "Vire Clinic",
+    "address": "4 Harley Street, London",
+    "postcode": "W1G 9PB",
+    "phone": "02076310156",
+    "website": "https://www.viremen.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30573543695",
+    "localAuthority": "Westminster",
+    "lat": 51.517183,
+    "lon": -0.145931,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
