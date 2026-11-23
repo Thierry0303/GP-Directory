@@ -12457,7 +12457,7 @@
     "localAuthority": "Barnet",
     "lat": 51.5912719,
     "lon": -0.1648343,
-    "providerName": "",
+    "providerName": "East Finchley Smiles Limited",
     "ar": "Barnet"
   },
   {
@@ -12475,7 +12475,7 @@
     "localAuthority": "Barnet",
     "lat": 51.6049823,
     "lon": -0.1881397,
-    "providerName": "",
+    "providerName": "Smile Cliniq Limited",
     "ar": "Barnet"
   },
   {
@@ -12493,12 +12493,12 @@
     "localAuthority": "Barnet",
     "lat": 51.604383,
     "lon": -0.189718,
-    "providerName": "",
+    "providerName": "Mr. Aun Ki Fang",
     "ar": "Barnet"
   },
   {
     "cqc_id": "1-3485794929",
-    "name": "110 Total Dentistry",
+    "name": "110 Total Dentistry \u2014 110 Total Dentistry Limited",
     "address": "110-112 Ballards Lane, London",
     "postcode": "N3 2DN",
     "phone": "02079987657",
@@ -12511,7 +12511,7 @@
     "localAuthority": "Barnet",
     "lat": 51.6041972,
     "lon": -0.18903,
-    "providerName": "",
+    "providerName": "110 Total Dentistry Limited",
     "ar": "Barnet"
   },
   {
@@ -12529,7 +12529,7 @@
     "localAuthority": "Barnet",
     "lat": 51.6079019,
     "lon": -0.1832586,
-    "providerName": "",
+    "providerName": "Whitecross Dental Care Limited",
     "ar": "Barnet"
   },
   {
@@ -12547,7 +12547,7 @@
     "localAuthority": "Lewisham",
     "lat": 51.435616,
     "lon": -0.0176052,
-    "providerName": "",
+    "providerName": "Maxident Clinic Limited",
     "ar": "Lewisham"
   }
 ]

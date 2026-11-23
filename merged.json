@@ -9586,13 +9586,13 @@
     "ln": -0.105736,
     "web": "http://www.akermanmedicalpractice.com",
     "oh": {
-      "Friday": "08:00\u201320:00",
-      "Monday": "08:00\u201320:00",
-      "Saturday": "10:00\u201317:00",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
+      "Saturday": "09:00\u201314:00",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201320:00",
-      "Tuesday": "08:00\u201320:00",
-      "Wednesday": "08:00\u201320:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -15987,7 +15987,7 @@
     "ar": "",
     "la": 51.713791,
     "ln": -0.055273,
-    "web": "http://www.stockwelllodge.org.uk",
+    "web": "http://www.stockwelllodge.nhs.uk",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -61911,7 +61911,8 @@
     "la": 51.6001355,
     "ln": -0.1962927,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Alfie Medical Ltd"
   },
   {
     "o": "1-26963512662",
@@ -61931,7 +61932,8 @@
     "la": 51.5993165,
     "ln": -0.1963583,
     "type": "Private",
-    "web": "https://www.healthspace307.com"
+    "web": "https://www.healthspace307.com",
+    "grp": "Safe and Sound Ultrasound Ltd"
   },
   {
     "o": "1-28880530986",
@@ -61951,7 +61953,8 @@
     "la": 51.5901975,
     "ln": -0.1580202,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "ADHD Lifestyle Academy Ltd"
   },
   {
     "o": "1-30163508503",
@@ -61971,7 +61974,8 @@
     "la": 51.5167596,
     "ln": -0.0836425,
     "type": "Private",
-    "web": ""
+    "web": "",
+    "grp": "Health Partners Group Limited"
   },
   {
     "o": "1-30468225765",
@@ -62031,6 +62035,7 @@
     "la": 51.517183,
     "ln": -0.145931,
     "type": "Private",
-    "web": "https://www.viremen.com"
+    "web": "https://www.viremen.com",
+    "grp": "Vire Clinics Limited"
   }
 ]

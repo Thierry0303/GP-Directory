@@ -560,7 +560,7 @@
 "strikes": 0
 },
 "https://www.barbanenteclinic.co.uk": {
-"checked": "2026-10-24",
+"checked": "2026-11-23",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -5557,6 +5557,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://www.viremen.com": {
+"checked": "2026-11-23",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://www.visamedicals.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -5803,7 +5810,7 @@
 "strikes": 0
 },
 "https://www.yourmenopausecare.co.uk": {
-"checked": "2026-10-24",
+"checked": "2026-11-23",
 "ok": true,
 "really_ok": true,
 "status": "200",

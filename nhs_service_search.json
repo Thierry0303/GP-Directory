@@ -76,7 +76,7 @@
     "postcode": "EN7 6HL",
     "status": "Visible",
     "type": "GpBranch",
-    "website": "http://www.stockwelllodge.org.uk"
+    "website": "http://www.stockwelllodge.nhs.uk"
   },
   "E82123": {
     "address": "Glen Luce, Turners Hill, Cheshunt, Waltham Cross",
@@ -17230,13 +17230,13 @@
     "lng": -0.105736,
     "name": "Akerman Medical Practice",
     "opening": {
-      "Friday": "08:00–20:00",
-      "Monday": "08:00–20:00",
-      "Saturday": "10:00–17:00",
+      "Friday": "08:00–18:30",
+      "Monday": "08:00–18:30",
+      "Saturday": "09:00–14:00",
       "Sunday": "Closed",
-      "Thursday": "08:00–20:00",
-      "Tuesday": "08:00–20:00",
-      "Wednesday": "08:00–20:00"
+      "Thursday": "08:00–18:30",
+      "Tuesday": "08:00–18:30",
+      "Wednesday": "08:00–18:30"
     },
     "phone": "02035820000",
     "postcode": "SW9 6AF",
