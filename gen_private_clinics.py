@@ -122,7 +122,8 @@ NAME_PATTERNS = [
                          r"thrombosis|deep\s+vein)"),
     ("diagnostic",       r"\b(?:diagnostic|imaging|radiology|scan(?:ning)?\s+(?:clinic|centre)|"
                          r"\bmri\b|\bx-?ray\b|ultrasound|ct\s+scan|pet\s+scan|"
-                         r"echocardio|ecg\b)"),
+                         r"echocardio|ecg\b|blood\s+test|phlebotom|patholog|"
+                         r"\bdexa\b|bone\s+densit|health\s+screen)"),
     ("aesthetic",        r"\b(?:aesthet|botox|laser\s+hair|cosmetic(?!\s+surg)|"
                          r"filler|anti-aging|anti-?wrinkle|rejuvenat|beauty\s+clinic)"),
     ("weight-loss",      r"\b(?:slimming|weight\s+(?:loss|management)|bariatric|"
@@ -161,6 +162,12 @@ def classify_specialties(rec):
     for key, pat in NAME_PATTERNS:
         if re.search(pat, text):
             specs.add(key)
+
+    # Structured signal: CQC registers this location for diagnosis/screening
+    # (scans, X-rays, ultrasound, blood tests, health screening) — tag it as
+    # diagnostic even if the name already matched another specialty.
+    if "Diagnosis/screening" in rec.get("gacServiceTypes", []):
+        specs.add("diagnostic")
 
     # 2. Regulated-activity hints (only when the name tells us nothing —
     #    a full-service hospital registers many activities)
