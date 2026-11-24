@@ -16193,7 +16193,7 @@
     "ar": "Brent",
     "la": 51.549713,
     "ln": -0.306771,
-    "web": "http://www.premiermedicalcentre.nhs.uk/",
+    "web": "https://premiermedicalcentre.nhs.uk/",
     "oh": {
       "Friday": "08:00\u201318:30",
       "Monday": "08:00\u201318:30",
@@ -62037,5 +62037,25 @@
     "type": "Private",
     "web": "https://www.viremen.com",
     "grp": "Vire Clinics Limited"
+  },
+  {
+    "o": "1-30363047453",
+    "n": "MeAlign Online Clinic",
+    "a": "53 Tregunter Road, London",
+    "p": "SW10 9LG",
+    "ph": "07487654322",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30363047453",
+    "ar": "Kensington & Chelsea",
+    "la": 51.4861902,
+    "ln": -0.186658,
+    "type": "Private",
+    "web": "https://www.mealign.com"
   }
 ]

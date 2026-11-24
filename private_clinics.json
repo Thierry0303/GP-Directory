@@ -30930,5 +30930,24 @@
     "lon": -0.145931,
     "providerName": "Vire Clinics Limited",
     "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30363047453",
+    "ods_code": "",
+    "name": "MeAlign Online Clinic",
+    "address": "53 Tregunter Road, London",
+    "postcode": "SW10 9LG",
+    "phone": "07487654322",
+    "website": "https://www.mealign.com",
+    "specialties": [
+      "private-gp"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30363047453",
+    "localAuthority": "Kensington and Chelsea",
+    "lat": 51.4861902,
+    "lon": -0.186658,
+    "providerName": "",
+    "ar": "Kensington & Chelsea"
   }
 ]
