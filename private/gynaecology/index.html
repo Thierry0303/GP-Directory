@@ -69,6 +69,12 @@ a{text-decoration:none;color:inherit}
 .spec-count{font-size:.75rem;color:#888;margin-top:6px}
 .spec-count strong{color:#003087}
 .back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+.phin-callout{display:flex;gap:14px;align-items:flex-start;background:#EDF4FC;border:1px solid #B5D4F4;border-left:4px solid #0072CE;border-radius:12px;padding:14px 18px;margin:0 0 20px}
+.phin-callout .phin-ico{font-size:1.6rem;line-height:1;flex-shrink:0}
+.phin-callout strong{color:#003087;font-size:.98rem}
+.phin-callout p{margin:4px 0 0;font-size:.86rem;color:#444;line-height:1.5}
+.phin-callout a{color:#0072CE;font-weight:600;text-decoration:underline}
+.phin-callout .phin-btn{display:inline-block;margin-top:8px;background:#003087;color:#fff;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none}
 .affiliate-box{margin-top:32px;padding:16px 18px;background:#fff;border:1px solid #e8e8e8;border-radius:12px;border-left:3px solid #B5D4F4}
 .affiliate-box .aff-label{font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a93a8;display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .affiliate-box .aff-label::after{content:"";flex:1;height:1px;background:#eee}
@@ -101,13 +107,14 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <h1>🌸 Gynaecology & Women's Health in London</h1>
   <p>Private gynaecologists in London covering fertility, menopause, obstetrics and women's health specialist care.</p>
   <div class="stats">
-    <div class="stat"><strong id="countPriv">138 private</strong><span>Private providers</span></div>
+    <div class="stat"><strong id="countPriv">133 private</strong><span>Private providers</span></div>
     
     <div class="stat"><strong>29</strong><span>Boroughs</span></div>
   </div>
 </div>
 <div class="content">
   <a class="back" href="/private/">← All specialties</a>
+  <div class="phin-callout"><div class="phin-ico">👨‍⚕️</div><div><strong>Looking for a specific consultant?</strong><p>This directory lists CQC-registered clinics and hospitals — not individual doctors. To find a named private consultant, their fees and how often they treat a condition, search PHIN: the official, government-mandated source for private consultant information in the UK. Most private clinics also accept the major insurers (Bupa, AXA Health, Aviva, Vitality) — confirm cover with the clinic.</p><a class="phin-btn" href="https://www.phin.org.uk/" target="_blank" rel="noopener">Find a consultant on PHIN &rarr;</a></div></div>
   
   <div class="filter-bar">
     <span class="filter-label">Borough:</span><button class="filter-chip active" data-borough="">All London</button><button class="filter-chip" data-borough="Barking and Dagenham">Barking and Dagenham</button><button class="filter-chip" data-borough="Barnet">Barnet</button><button class="filter-chip" data-borough="Bexley">Bexley</button><button class="filter-chip" data-borough="Brent">Brent</button><button class="filter-chip" data-borough="Bromley">Bromley</button><button class="filter-chip" data-borough="Camden">Camden</button><button class="filter-chip" data-borough="City of London">City of London</button><button class="filter-chip" data-borough="Croydon">Croydon</button><button class="filter-chip" data-borough="Ealing">Ealing</button><button class="filter-chip" data-borough="Enfield">Enfield</button><button class="filter-chip" data-borough="Greenwich">Greenwich</button><button class="filter-chip" data-borough="Hammersmith and Fulham">Hammersmith and Fulham</button><button class="filter-chip" data-borough="Haringey">Haringey</button><button class="filter-chip" data-borough="Harrow">Harrow</button><button class="filter-chip" data-borough="Havering">Havering</button><button class="filter-chip" data-borough="Hertfordshire">Hertfordshire</button><button class="filter-chip" data-borough="Hillingdon">Hillingdon</button><button class="filter-chip" data-borough="Hounslow">Hounslow</button><button class="filter-chip" data-borough="Islington">Islington</button><button class="filter-chip" data-borough="Kensington and Chelsea">Kensington and Chelsea</button><button class="filter-chip" data-borough="Kingston upon Thames">Kingston upon Thames</button><button class="filter-chip" data-borough="Lambeth">Lambeth</button><button class="filter-chip" data-borough="Lewisham">Lewisham</button><button class="filter-chip" data-borough="Merton">Merton</button><button class="filter-chip" data-borough="Newham">Newham</button><button class="filter-chip" data-borough="Richmond upon Thames">Richmond upon Thames</button><button class="filter-chip" data-borough="Southwark">Southwark</button><button class="filter-chip" data-borough="Tower Hamlets">Tower Hamlets</button><button class="filter-chip" data-borough="Westminster">Westminster</button>
@@ -117,7 +124,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
       
     </div>
   </div>
-  <div class="section-title">💊 Private Gynaecology & Women's Health <span class="count">138</span></div>
+  <div class="section-title">💊 Private Gynaecology & Women's Health <span class="count">133</span></div>
   <div class="cards"><div class="card" data-borough="Greenwich" data-type="private">
   <div class="card-name"><a class="card-name-link" href="/practice/greenwich/abbeyslade-pms/">Abbeyslade PMS</a></div>
   <div class="card-grp">Part of Dr Jyoti Kaur Chand</div>
@@ -264,16 +271,6 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   </div>
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22160778447" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.centralhealthlondon.com" target="_blank" rel="noopener">Website</a></div>
 </div>
-<div class="card" data-borough="Westminster" data-type="private">
-  <div class="card-name"><a class="card-name-link" href="/practice/westminster/central-london/">Central London</a></div>
-  <div class="card-grp">Part of Mulchand (UK) Limited</div>
-  <div class="card-addr">8-9 Ivor Place, London, NW1 6BY</div>
-  <div class="card-tags">
-    <span class="tag private">Private</span>
-    <span class="tag borough">Westminster</span><span class="tag spec">gynaecology</span><span class="tag spec">sexual-health</span><span class="cqc-badge cqc-G">Good</span>
-  </div>
-  <div class="card-actions"><span class="btn-phone">📞 07930875341</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-11823573969" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.clarewellclinics.co.uk" target="_blank" rel="noopener">Website</a></div>
-</div>
 <div class="card" data-borough="Kingston upon Thames" data-type="private">
   <div class="card-name"><a class="card-name-link" href="/practice/kingston/central-surgery-surbiton/">Central Surgery, Surbiton</a></div>
   <div class="card-grp">Part of Central Surgery Surbiton Ltd</div>
@@ -292,16 +289,6 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
     <span class="tag borough">Haringey</span><span class="tag spec">gynaecology</span><span class="cqc-badge cqc-I">Inadequate</span>
   </div>
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-10893062639" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.charltonhouse.medicalcentre.co.uk" target="_blank" rel="noopener">Website</a></div>
-</div>
-<div class="card" data-borough="Camden" data-type="private">
-  <div class="card-name"><a class="card-name-link" href="/practice/camden/chelseas-doctors-limited-bridge-clinic/">Chelseas Doctors Limited @ Bridge Clinic.</a></div>
-  <div class="card-grp">Part of Chelsea Doctors Ltd</div>
-  <div class="card-addr">1-5 Christopher Place, Chalton Street, London, NW1 1JF</div>
-  <div class="card-tags">
-    <span class="tag private">Private</span>
-    <span class="tag borough">Camden</span><span class="tag spec">gynaecology</span><span class="tag spec">sexual-health</span>
-  </div>
-  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24432867636" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Barking and Dagenham" data-type="private">
   <div class="card-name"><a class="card-name-link" href="/practice/barking-and-dagenham/church-elm-lane-medical-practice/">Church Elm Lane Medical Practice</a></div>
@@ -435,16 +422,6 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
     <span class="tag borough">Enfield</span><span class="tag spec">gynaecology</span>
   </div>
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-16421411100" target="_blank" rel="noopener">CQC</a></div>
-</div>
-<div class="card" data-borough="Newham" data-type="private">
-  <div class="card-name"><a class="card-name-link" href="/practice/newham/essex-lodge-surgery/">Essex Lodge Surgery</a></div>
-  <div class="card-grp">Part of Essex Lodge i-Health Ltd</div>
-  <div class="card-addr">94 Greengate Street, London, E13 0AS</div>
-  <div class="card-tags">
-    <span class="tag private">Private</span>
-    <span class="tag borough">Newham</span><span class="tag spec">gynaecology</span><span class="tag spec">weight-loss</span><span class="cqc-badge cqc-G">Good</span>
-  </div>
-  <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-1026565684" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Richmond upon Thames" data-type="private">
   <div class="card-name"><a class="card-name-link" href="/practice/richmond/evergreen-richmond-medical/">Evergreen Richmond Medical</a></div>
@@ -815,7 +792,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-addr">46 Harley Street, London, W1G 9PT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
-    <span class="tag borough">Westminster</span><span class="tag spec">gynaecology</span><span class="cqc-badge cqc-G">Good</span>
+    <span class="tag borough">Westminster</span><span class="tag spec">diagnostic</span><span class="tag spec">gynaecology</span><span class="cqc-badge cqc-G">Good</span>
   </div>
   <div class="card-actions"><span class="btn-phone">📞 02075800207</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-12696471695" target="_blank" rel="noopener">CQC</a></div>
 </div>
@@ -1033,15 +1010,6 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
     <span class="tag borough">Greenwich</span><span class="tag spec">gynaecology</span><span class="cqc-badge cqc-RI">Requires improvement</span>
   </div>
   <div class="card-actions"><span class="btn-phone">📞 02086927591</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-24769367298" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.plumbridgemedicalcentre.nhs.net" target="_blank" rel="noopener">Website</a></div>
-</div>
-<div class="card" data-borough="Greenwich" data-type="private">
-  <div class="card-name"><a class="card-name-link" href="/practice/greenwich/plumstead-and-wickham-lane-surgery/">Plumstead and Wickham Lane Surgery</a></div>
-  <div class="card-addr">253 Wickham Lane, London, SE2 0NX</div>
-  <div class="card-tags">
-    <span class="tag private">Private</span>
-    <span class="tag borough">Greenwich</span><span class="tag spec">gynaecology</span>
-  </div>
-  <div class="card-actions"><span class="btn-phone">📞 02088550052</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-22137663169" target="_blank" rel="noopener">CQC</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
   <div class="card-name"><a class="card-name-link" href="/practice/croydon/portland-medical-centre/">Portland Medical Centre</a></div>
@@ -1353,16 +1321,6 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
     <span class="tag borough">Lambeth</span><span class="tag spec">gynaecology</span><span class="tag spec">sexual-health</span><span class="cqc-badge cqc-G">Good</span>
   </div>
   <div class="card-actions"><span class="btn-phone">📞 02084731584</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-681486807" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.thewellcentre.org" target="_blank" rel="noopener">Website</a></div>
-</div>
-<div class="card" data-borough="Kensington and Chelsea" data-type="private">
-  <div class="card-name">The Women's Wellness Centre</div>
-  <div class="card-grp">Part of Chelsea Doctors Ltd</div>
-  <div class="card-addr">274-276 Fulham Road, Fulham, London, SW10 9EW</div>
-  <div class="card-tags">
-    <span class="tag private">Private</span>
-    <span class="tag borough">Kensington and Chelsea</span><span class="tag spec">gynaecology</span><span class="tag spec">sexual-health</span>
-  </div>
-  <div class="card-actions"><span class="btn-phone">📞 02077514488</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-20243249310" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://womenswellnesscentre.co.uk/" target="_blank" rel="noopener">Website</a></div>
 </div>
 <div class="card" data-borough="Croydon" data-type="private">
   <div class="card-name">TOP AT HOME</div>

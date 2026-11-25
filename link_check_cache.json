@@ -2828,7 +2828,7 @@
 "strikes": 0
 },
 "https://www.imydiagnostics.com": {
-"checked": "2026-10-26",
+"checked": "2026-11-25",
 "ok": true,
 "really_ok": true,
 "status": "200",
@@ -3449,6 +3449,13 @@
 "really_ok": false,
 "status": "URLError",
 "strikes": 1
+},
+"https://www.mealign.com": {
+"checked": "2026-11-25",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
 },
 "https://www.medefer.com": {
 "checked": "2026-11-08",
@@ -5250,7 +5257,7 @@
 "strikes": 0
 },
 "https://www.thesurgeryharrowroadwembley.co.uk": {
-"checked": "2026-10-26",
+"checked": "2026-11-25",
 "ok": true,
 "really_ok": true,
 "status": "202",

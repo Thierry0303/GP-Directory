@@ -69,6 +69,12 @@ a{text-decoration:none;color:inherit}
 .spec-count{font-size:.75rem;color:#888;margin-top:6px}
 .spec-count strong{color:#003087}
 .back{display:inline-flex;align-items:center;gap:6px;color:#003087;font-size:.85rem;margin-bottom:16px}
+.phin-callout{display:flex;gap:14px;align-items:flex-start;background:#EDF4FC;border:1px solid #B5D4F4;border-left:4px solid #0072CE;border-radius:12px;padding:14px 18px;margin:0 0 20px}
+.phin-callout .phin-ico{font-size:1.6rem;line-height:1;flex-shrink:0}
+.phin-callout strong{color:#003087;font-size:.98rem}
+.phin-callout p{margin:4px 0 0;font-size:.86rem;color:#444;line-height:1.5}
+.phin-callout a{color:#0072CE;font-weight:600;text-decoration:underline}
+.phin-callout .phin-btn{display:inline-block;margin-top:8px;background:#003087;color:#fff;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none}
 .affiliate-box{margin-top:32px;padding:16px 18px;background:#fff;border:1px solid #e8e8e8;border-radius:12px;border-left:3px solid #B5D4F4}
 .affiliate-box .aff-label{font-size:.62rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a93a8;display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .affiliate-box .aff-label::after{content:"";flex:1;height:1px;background:#eee}
@@ -108,6 +114,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
 </div>
 <div class="content">
   <a class="back" href="/private/">← All specialties</a>
+  <div class="phin-callout"><div class="phin-ico">👨‍⚕️</div><div><strong>Looking for a specific consultant?</strong><p>This directory lists CQC-registered clinics and hospitals — not individual doctors. To find a named private consultant, their fees and how often they treat a condition, search PHIN: the official, government-mandated source for private consultant information in the UK. Most private clinics also accept the major insurers (Bupa, AXA Health, Aviva, Vitality) — confirm cover with the clinic.</p><a class="phin-btn" href="https://www.phin.org.uk/" target="_blank" rel="noopener">Find a consultant on PHIN &rarr;</a></div></div>
   
   <div class="filter-bar">
     <span class="filter-label">Borough:</span><button class="filter-chip active" data-borough="">All London</button><button class="filter-chip" data-borough="Barnet">Barnet</button><button class="filter-chip" data-borough="Bexley">Bexley</button><button class="filter-chip" data-borough="Bromley">Bromley</button><button class="filter-chip" data-borough="Camden">Camden</button><button class="filter-chip" data-borough="City of London">City of London</button><button class="filter-chip" data-borough="Croydon">Croydon</button><button class="filter-chip" data-borough="Enfield">Enfield</button><button class="filter-chip" data-borough="Greenwich">Greenwich</button><button class="filter-chip" data-borough="Hillingdon">Hillingdon</button><button class="filter-chip" data-borough="Islington">Islington</button><button class="filter-chip" data-borough="Kensington and Chelsea">Kensington and Chelsea</button><button class="filter-chip" data-borough="Kingston upon Thames">Kingston upon Thames</button><button class="filter-chip" data-borough="Lambeth">Lambeth</button><button class="filter-chip" data-borough="Richmond upon Thames">Richmond upon Thames</button><button class="filter-chip" data-borough="Surrey">Surrey</button><button class="filter-chip" data-borough="Sutton">Sutton</button><button class="filter-chip" data-borough="Westminster">Westminster</button>
@@ -391,7 +398,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-addr">Chase Farm Hospital Dermatology, 127 The Ridgeway, Zone C Mohs Lab,, Enfield, EN2 8JL</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
-    <span class="tag borough">Enfield</span><span class="tag spec">dermatology</span>
+    <span class="tag borough">Enfield</span><span class="tag spec">dermatology</span><span class="tag spec">diagnostic</span>
   </div>
   <div class="card-actions"><a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-25353229208" target="_blank" rel="noopener">CQC</a></div>
 </div>
@@ -530,7 +537,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-addr">Basildon House, 7 Moorgate, London, EC2R 6AF</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
-    <span class="tag borough">City of London</span><span class="tag spec">dermatology</span><span class="cqc-badge cqc-G">Good</span>
+    <span class="tag borough">City of London</span><span class="tag spec">dermatology</span><span class="tag spec">diagnostic</span><span class="cqc-badge cqc-G">Good</span>
   </div>
   <div class="card-actions"><span class="btn-phone">📞 0207734117</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-2835244850" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.themoleclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>
@@ -540,7 +547,7 @@ footer{text-align:center;padding:32px 24px;font-size:.78rem;color:#999;border-to
   <div class="card-addr">46 Harley Street, London, W1G 9PT</div>
   <div class="card-tags">
     <span class="tag private">Private</span>
-    <span class="tag borough">Westminster</span><span class="tag spec">dermatology</span><span class="cqc-badge cqc-G">Good</span>
+    <span class="tag borough">Westminster</span><span class="tag spec">dermatology</span><span class="tag spec">diagnostic</span><span class="cqc-badge cqc-G">Good</span>
   </div>
   <div class="card-actions"><span class="btn-phone">📞 02077341177</span> <a class="btn btn-cqc" href="https://www.cqc.org.uk/location/1-7600938415" target="_blank" rel="noopener">CQC</a> <a class="btn btn-web" href="https://www.themoleclinic.co.uk" target="_blank" rel="noopener">Website</a></div>
 </div>

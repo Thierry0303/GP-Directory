@@ -28798,10 +28798,9 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "gynaecology, weight-loss",
+    "pcn": "diagnostic",
     "specs": [
-      "gynaecology",
-      "weight-loss"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-1026565684",
@@ -30077,9 +30076,9 @@
     "ph": "02076284001",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-11301317210",
@@ -31092,10 +31091,9 @@
     "ph": "07930875341",
     "s": null,
     "c": null,
-    "pcn": "gynaecology, sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "gynaecology",
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-11823573969",
@@ -32577,8 +32575,9 @@
     "ph": "02075800207",
     "s": null,
     "c": null,
-    "pcn": "gynaecology",
+    "pcn": "diagnostic, gynaecology",
     "specs": [
+      "diagnostic",
       "gynaecology"
     ],
     "cqc": "Good",
@@ -32976,9 +32975,9 @@
     "ph": "01923835814",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128758337",
@@ -32997,9 +32996,9 @@
     "ph": "01689877855",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128758401",
@@ -33018,9 +33017,9 @@
     "ph": "02083187722",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128758547",
@@ -33060,9 +33059,9 @@
     "ph": "02084574500",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128766778",
@@ -33081,9 +33080,9 @@
     "ph": "02088723872",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128758653",
@@ -33123,9 +33122,9 @@
     "ph": "02077802500",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128766965",
@@ -33144,9 +33143,9 @@
     "ph": "02084664000",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-128767290",
@@ -33921,9 +33920,9 @@
     "ph": "02083226000",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-131838369",
@@ -34300,8 +34299,9 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "travel-health",
+    "pcn": "diagnostic, travel-health",
     "specs": [
+      "diagnostic",
       "travel-health"
     ],
     "cqc": "",
@@ -37714,8 +37714,9 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "Good",
@@ -37984,9 +37985,9 @@
     "ph": "02071127502",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-16353921349",
@@ -39574,9 +39575,9 @@
     "ph": "07732689330",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-18068994788",
@@ -41689,8 +41690,9 @@
     "ph": "02082473352",
     "s": null,
     "c": null,
-    "pcn": "oncology",
+    "pcn": "diagnostic, oncology",
     "specs": [
+      "diagnostic",
       "oncology"
     ],
     "cqc": "Good",
@@ -42210,9 +42212,10 @@
     "ph": "01992351033",
     "s": null,
     "c": null,
-    "pcn": "cardiology",
+    "pcn": "cardiology, diagnostic",
     "specs": [
-      "cardiology"
+      "cardiology",
+      "diagnostic"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-19886917631",
@@ -42821,10 +42824,9 @@
     "ph": "02077514488",
     "s": null,
     "c": null,
-    "pcn": "gynaecology, sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "gynaecology",
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-20243249310",
@@ -45145,9 +45147,9 @@
     "ph": "02088550052",
     "s": null,
     "c": null,
-    "pcn": "gynaecology",
+    "pcn": "diagnostic",
     "specs": [
-      "gynaecology"
+      "diagnostic"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-22137663169",
@@ -45517,8 +45519,9 @@
     "ph": "07595378340",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "",
@@ -48574,10 +48577,9 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "gynaecology, sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "gynaecology",
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-24432867636",
@@ -49073,8 +49075,9 @@
     "ph": "08000121565",
     "s": null,
     "c": null,
-    "pcn": "psychiatry",
+    "pcn": "diagnostic, psychiatry",
     "specs": [
+      "diagnostic",
       "psychiatry"
     ],
     "cqc": "",
@@ -49719,9 +49722,10 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "dermatology",
+    "pcn": "dermatology, diagnostic",
     "specs": [
-      "dermatology"
+      "dermatology",
+      "diagnostic"
     ],
     "cqc": "",
     "cu": "https://www.cqc.org.uk/location/1-25353229208",
@@ -51261,8 +51265,9 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "",
@@ -51282,8 +51287,9 @@
     "ph": "02078560511",
     "s": null,
     "c": null,
-    "pcn": "gastroenterology",
+    "pcn": "diagnostic, gastroenterology",
     "specs": [
+      "diagnostic",
       "gastroenterology"
     ],
     "cqc": "",
@@ -52413,8 +52419,9 @@
     "ph": "02075803145",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "",
@@ -52888,9 +52895,10 @@
     "ph": "0207734117",
     "s": null,
     "c": null,
-    "pcn": "dermatology",
+    "pcn": "dermatology, diagnostic",
     "specs": [
-      "dermatology"
+      "dermatology",
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-2835244850",
@@ -53119,9 +53127,9 @@
     "ph": "02034881457",
     "s": null,
     "c": null,
-    "pcn": "sexual-health",
+    "pcn": "diagnostic",
     "specs": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc": "Requires improvement",
     "cu": "https://www.cqc.org.uk/location/1-3055109492",
@@ -53730,9 +53738,10 @@
     "ph": "",
     "s": null,
     "c": null,
-    "pcn": "cardiology",
+    "pcn": "cardiology, diagnostic",
     "specs": [
-      "cardiology"
+      "cardiology",
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-3667274464",
@@ -55618,8 +55627,9 @@
     "ph": "02039682030",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "Good",
@@ -56519,8 +56529,9 @@
     "ph": "0207224529",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "Good",
@@ -57551,9 +57562,10 @@
     "ph": "02077341177",
     "s": null,
     "c": null,
-    "pcn": "dermatology",
+    "pcn": "dermatology, diagnostic",
     "specs": [
-      "dermatology"
+      "dermatology",
+      "diagnostic"
     ],
     "cqc": "Good",
     "cu": "https://www.cqc.org.uk/location/1-7600938415",
@@ -57676,8 +57688,9 @@
     "ph": "01689668220",
     "s": null,
     "c": null,
-    "pcn": "gastroenterology",
+    "pcn": "diagnostic, gastroenterology",
     "specs": [
+      "diagnostic",
       "gastroenterology"
     ],
     "cqc": "Good",
@@ -58855,8 +58868,9 @@
     "ph": "02075803145",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "Good",
@@ -61551,8 +61565,9 @@
     "ph": "02074594219",
     "s": null,
     "c": null,
-    "pcn": "private-gp",
+    "pcn": "diagnostic, private-gp",
     "specs": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc": "",

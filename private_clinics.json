@@ -349,8 +349,7 @@
     "phone": "",
     "website": "",
     "specialties": [
-      "gynaecology",
-      "weight-loss"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-1026565684",
@@ -1511,7 +1510,7 @@
     "phone": "02076284001",
     "website": "",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-11301317210",
@@ -2435,8 +2434,7 @@
     "phone": "07930875341",
     "website": "https://www.clarewellclinics.co.uk",
     "specialties": [
-      "gynaecology",
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-11823573969",
@@ -3791,6 +3789,7 @@
     "phone": "02075800207",
     "website": "",
     "specialties": [
+      "diagnostic",
       "gynaecology"
     ],
     "cqc_rating": "Good",
@@ -4174,7 +4173,7 @@
     "phone": "01923835814",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/bishops-wood-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128758337",
@@ -4193,7 +4192,7 @@
     "phone": "01689877855",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/chelsfield-park-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128758401",
@@ -4212,7 +4211,7 @@
     "phone": "02083187722",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/the-blackheath-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128758547",
@@ -4250,7 +4249,7 @@
     "phone": "02084574500",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/hendon-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128766778",
@@ -4269,7 +4268,7 @@
     "phone": "02088723872",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/the-clementine-churchill-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128758653",
@@ -4307,7 +4306,7 @@
     "phone": "02077802500",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/the-london-independent-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128766965",
@@ -4326,7 +4325,7 @@
     "phone": "02086555500",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/shirley-oaks-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128767270",
@@ -4345,7 +4344,7 @@
     "phone": "02084664000",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/the-sloane-hospital",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-128767290",
@@ -5071,7 +5070,7 @@
     "phone": "02083226000",
     "website": "https://www.circlehealthgroup.co.uk/hospitals/syon-clinic",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-131838369",
@@ -5413,6 +5412,7 @@
     "phone": "",
     "website": "",
     "specialties": [
+      "diagnostic",
       "travel-health"
     ],
     "cqc_rating": "",
@@ -8529,6 +8529,7 @@
     "phone": "",
     "website": "https://www.theharleystreetclinic.com",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "Good",
@@ -8778,7 +8779,7 @@
     "phone": "02071127502",
     "website": "",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-16353921349",
@@ -10244,7 +10245,7 @@
     "phone": "07732689330",
     "website": "https://www.clevelandcliniclondon.uk",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-18068994788",
@@ -12216,6 +12217,7 @@
     "phone": "02082473352",
     "website": "https://www.cancercentrelondon.co.uk",
     "specialties": [
+      "diagnostic",
       "oncology"
     ],
     "cqc_rating": "Good",
@@ -12694,7 +12696,8 @@
     "phone": "01992351033",
     "website": "",
     "specialties": [
-      "cardiology"
+      "cardiology",
+      "diagnostic"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-19886917631",
@@ -13250,8 +13253,7 @@
     "phone": "02077514488",
     "website": "https://womenswellnesscentre.co.uk/",
     "specialties": [
-      "gynaecology",
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-20243249310",
@@ -15414,7 +15416,7 @@
     "phone": "02088550052",
     "website": "",
     "specialties": [
-      "gynaecology"
+      "diagnostic"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-22137663169",
@@ -15757,6 +15759,7 @@
     "phone": "07595378340",
     "website": "https://www.360medicx.co.uk",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "",
@@ -18557,8 +18560,7 @@
     "phone": "",
     "website": "",
     "specialties": [
-      "gynaecology",
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-24432867636",
@@ -19016,6 +19018,7 @@
     "phone": "08000121565",
     "website": "",
     "specialties": [
+      "diagnostic",
       "psychiatry"
     ],
     "cqc_rating": "",
@@ -19607,7 +19610,8 @@
     "phone": "",
     "website": "",
     "specialties": [
-      "dermatology"
+      "dermatology",
+      "diagnostic"
     ],
     "cqc_rating": "",
     "cqc_url": "https://www.cqc.org.uk/location/1-25353229208",
@@ -21019,6 +21023,7 @@
     "phone": "",
     "website": "",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "",
@@ -21038,6 +21043,7 @@
     "phone": "02078560511",
     "website": "https://www.theliverclinic.com",
     "specialties": [
+      "diagnostic",
       "gastroenterology"
     ],
     "cqc_rating": "",
@@ -22072,6 +22078,7 @@
     "phone": "02075803145",
     "website": "https://www.58harleystreet.co.uk",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "",
@@ -22510,7 +22517,8 @@
     "phone": "0207734117",
     "website": "https://www.themoleclinic.co.uk",
     "specialties": [
-      "dermatology"
+      "dermatology",
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-2835244850",
@@ -22739,7 +22747,7 @@
     "phone": "02034881457",
     "website": "",
     "specialties": [
-      "sexual-health"
+      "diagnostic"
     ],
     "cqc_rating": "Requires improvement",
     "cqc_url": "https://www.cqc.org.uk/location/1-3055109492",
@@ -23298,7 +23306,8 @@
     "phone": "",
     "website": "",
     "specialties": [
-      "cardiology"
+      "cardiology",
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-3667274464",
@@ -25022,6 +25031,7 @@
     "phone": "02039682030",
     "website": "https://www.eyesat22a.com",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "Good",
@@ -25847,6 +25857,7 @@
     "phone": "0207224529",
     "website": "",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "Good",
@@ -26808,7 +26819,8 @@
     "phone": "02077341177",
     "website": "https://www.themoleclinic.co.uk",
     "specialties": [
-      "dermatology"
+      "dermatology",
+      "diagnostic"
     ],
     "cqc_rating": "Good",
     "cqc_url": "https://www.cqc.org.uk/location/1-7600938415",
@@ -26924,6 +26936,7 @@
     "phone": "01689668220",
     "website": "",
     "specialties": [
+      "diagnostic",
       "gastroenterology"
     ],
     "cqc_rating": "Good",
@@ -28001,6 +28014,7 @@
     "phone": "02075803145",
     "website": "https://www.harleystreetphysicians.co.uk",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "Good",
@@ -30482,6 +30496,7 @@
     "phone": "02074594219",
     "website": "https://www.myvitalmetrics.com",
     "specialties": [
+      "diagnostic",
       "private-gp"
     ],
     "cqc_rating": "",
