@@ -19609,13 +19609,13 @@
     "ln": -0.113092,
     "web": "https://cuffleyvillagesurgery.co.uk/",
     "oh": {
-      "Friday": "08:00\u201314:00",
-      "Monday": "08:00\u201312:00, 13:00\u201318:30",
+      "Friday": "08:00\u201318:30",
+      "Monday": "08:00\u201318:30",
       "Saturday": "Closed",
       "Sunday": "Closed",
-      "Thursday": "08:00\u201312:00, 13:00\u201318:30",
-      "Tuesday": "08:00\u201312:00, 13:00\u201318:30",
-      "Wednesday": "08:00\u201314:00"
+      "Thursday": "08:00\u201318:30",
+      "Tuesday": "08:00\u201318:30",
+      "Wednesday": "08:00\u201318:30"
     },
     "type": "NHS"
   },
@@ -62072,5 +62072,45 @@
     "ln": -0.186658,
     "type": "Private",
     "web": "https://www.mealign.com"
+  },
+  {
+    "o": "1-28267728047",
+    "n": "The Elgin clinic",
+    "a": "40 Elgin Avenue, London",
+    "p": "W9 3QT",
+    "ph": "02072860747",
+    "s": null,
+    "c": null,
+    "pcn": "gynaecology",
+    "specs": [
+      "gynaecology"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-28267728047",
+    "ar": "Westminster",
+    "la": 51.5248199,
+    "ln": -0.1984439,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30642001165",
+    "n": "Medi Plus Aesthetic Ltd",
+    "a": "75 - 77 George Street, London",
+    "p": "W1U 8AQ",
+    "ph": "07771116587",
+    "s": null,
+    "c": null,
+    "pcn": "aesthetic",
+    "specs": [
+      "aesthetic"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30642001165",
+    "ar": "Westminster",
+    "la": 51.5171124,
+    "ln": -0.1567254,
+    "type": "Private",
+    "web": ""
   }
 ]

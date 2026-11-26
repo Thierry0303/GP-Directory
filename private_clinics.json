@@ -30964,5 +30964,43 @@
     "lon": -0.186658,
     "providerName": "",
     "ar": "Kensington & Chelsea"
+  },
+  {
+    "cqc_id": "1-28267728047",
+    "ods_code": "",
+    "name": "The Elgin clinic",
+    "address": "40 Elgin Avenue, London",
+    "postcode": "W9 3QT",
+    "phone": "02072860747",
+    "website": "",
+    "specialties": [
+      "gynaecology"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-28267728047",
+    "localAuthority": "Westminster",
+    "lat": 51.5248199,
+    "lon": -0.1984439,
+    "providerName": "",
+    "ar": "Westminster"
+  },
+  {
+    "cqc_id": "1-30642001165",
+    "ods_code": "",
+    "name": "Medi Plus Aesthetic Ltd",
+    "address": "75 - 77 George Street, London",
+    "postcode": "W1U 8AQ",
+    "phone": "07771116587",
+    "website": "",
+    "specialties": [
+      "aesthetic"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30642001165",
+    "localAuthority": "Westminster",
+    "lat": 51.5171124,
+    "lon": -0.1567254,
+    "providerName": "",
+    "ar": "Westminster"
   }
 ]
