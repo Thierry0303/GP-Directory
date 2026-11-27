@@ -12549,5 +12549,23 @@
     "lon": -0.0176052,
     "providerName": "Maxident Clinic Limited",
     "ar": "Lewisham"
+  },
+  {
+    "cqc_id": "1-30630273339",
+    "name": "The Clinic at Barnes",
+    "address": "8-9, Rocks Lane, London",
+    "postcode": "SW13 0DB",
+    "phone": "02036421777",
+    "website": "https://www.theclinicatbarnes.co.uk",
+    "tags": [
+      "private"
+    ],
+    "cqc_rating": "",
+    "cqc_url": "https://www.cqc.org.uk/location/1-30630273339",
+    "localAuthority": "Richmond upon Thames",
+    "lat": 51.4747009,
+    "lon": -0.2391125,
+    "providerName": "",
+    "ar": "Richmond"
   }
 ]

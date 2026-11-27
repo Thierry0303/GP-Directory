@@ -62112,5 +62112,86 @@
     "ln": -0.1567254,
     "type": "Private",
     "web": ""
+  },
+  {
+    "o": "1-30364652885",
+    "n": "Blackberry Orthopaedic Clinic Croydon",
+    "a": "Interchange, Station Road, Croydon",
+    "p": "CR0 2RD",
+    "ph": "02076562000",
+    "s": null,
+    "c": null,
+    "pcn": "orthopaedics",
+    "specs": [
+      "orthopaedics"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30364652885",
+    "ar": "Croydon",
+    "la": 51.3799092,
+    "ln": -0.1003147,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30563178700",
+    "n": "North Westminster Centre",
+    "a": "Ground Floor, 165 Lanark Road, London",
+    "p": "W9 1NZ",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30563178700",
+    "ar": "Westminster",
+    "la": 51.530503,
+    "ln": -0.1855896,
+    "type": "Private",
+    "web": ""
+  },
+  {
+    "o": "1-30642893695",
+    "n": "Sadiqi Solutions Ltd",
+    "a": "704 Lea Bridge Road, London",
+    "p": "E10 6AW",
+    "ph": "07784924470",
+    "s": null,
+    "c": null,
+    "pcn": "private-gp",
+    "specs": [
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30642893695",
+    "ar": "Waltham Forest",
+    "la": 51.5769362,
+    "ln": -0.0100605,
+    "type": "Private",
+    "web": "https://www.sadiqimedicalcentre.co.uk"
+  },
+  {
+    "o": "1-30642897865",
+    "n": "Dr Ito Clinic",
+    "a": "25 Wimpole Street, London",
+    "p": "W1G 8GL",
+    "ph": "",
+    "s": null,
+    "c": null,
+    "pcn": "consultant, private-gp",
+    "specs": [
+      "consultant",
+      "private-gp"
+    ],
+    "cqc": "",
+    "cu": "https://www.cqc.org.uk/location/1-30642897865",
+    "ar": "Westminster",
+    "la": 51.518731,
+    "ln": -0.148275,
+    "type": "Private",
+    "web": "https://dritoclinic.co.uk"
   }
 ]
