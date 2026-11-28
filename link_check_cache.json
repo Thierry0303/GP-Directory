@@ -27,6 +27,13 @@
 "status": "200",
 "strikes": 0
 },
+"https://dritoclinic.co.uk": {
+"checked": "2026-11-28",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
 "https://drjoy.co.uk": {
 "checked": "2026-11-08",
 "ok": true,
@@ -4488,6 +4495,13 @@
 },
 "https://www.rtnmentalhealth.co.uk": {
 "checked": "2026-11-08",
+"ok": true,
+"really_ok": true,
+"status": "200",
+"strikes": 0
+},
+"https://www.sadiqimedicalcentre.co.uk": {
+"checked": "2026-11-28",
 "ok": true,
 "really_ok": true,
 "status": "200",
